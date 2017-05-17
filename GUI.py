@@ -3,6 +3,7 @@ import searching_function as sf
 import isotopeDataExportingDat as ided
 root = Tk()
 root.title("Data Extraction")
+import sys
 
 class Application(Frame):
     def __init__(self,master):
@@ -169,6 +170,19 @@ class guioutputs:
     J=app.spinVar
     isoUp=app.upBoundIsoVar
     E=app.upBoundEnergyVar
+
+    ##These if statements either kill the program or input preset values if the
+    ##user leaves a section blank.
+    if Z == '' or J == '':
+        print "YOU SUCK, FIGURE IT OUT"
+        sys.exit()
+    if isoLow == '':
+        isoLow = 1
+    if isoUp == '':
+        isoUp = 299
+    if E == '':
+        E = 9999999
+    
     
 #These are the Q and A variables for the mass extraction part the program
     Qlow= app.qLowVar

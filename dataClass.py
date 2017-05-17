@@ -28,13 +28,13 @@ class data:##This is the main data class
         self.f = open("Data/"+str(ENSDF),'rU')
         ##Each line of the file is split into list so the code can parse through each line easier
 
-        #Initializes a to be a string that I know is not in the code for the break function
+        #Initializes a to be apple, a string that should not appear in the data file
+        #This is used to stop the code after it goes through the first block
         a = 'apple'
         for line in self.f:
             line = line.split()
 
-            ##The aforementioned break function that stops the code after the first set of data
-            ##Allows only the evaluated gammas to be plotted rather than all data in the file
+            ##Break function used to stop code after the evaluated nuclear data
             if len(line) == 0 and \
                a.lower() == b.lower():
                 break
@@ -45,7 +45,8 @@ class data:##This is the main data class
                 c = line[1] ##This second entry contains what type of data and information is in the list line. The ENSDF website has a complete list of
                             ##each line type. I used L since L lines have experimental data.
 
-            ##Resets a to be apple so the break function works properly and does not stop after the first block, but rather stops after the first block of the correct isotope
+            ##This resets a to be apple every time there is a blank line
+            ##This ensures that the first block wanted will be read rather than the first block in the file
             if(len(line) == 0):
                 a = 'apple'
 
@@ -286,5 +287,5 @@ class data:##This is the main data class
                 self.data=newData##changes data to the new data.
             else:
                 if(UI):
-                    raw_input("Warning:No data filtered/selected for "+ self.name +". Pres enter to continue.")
+                    print "Warning:No data filtered/selected for "+ self.name +"."
                 self.data=[[0.0,"NO_DATA"]]##Enters a dummy entry to file with something.
