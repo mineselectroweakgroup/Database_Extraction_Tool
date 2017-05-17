@@ -34,12 +34,7 @@ The GUI should  not close when the submits button are clicked. The user should b
 The user should never have to interact with the shell (i.e. 'Press Enter to Continue' is not good.), everything should be self contained within the GUI frame.
 
 - Plots do NOT appear inside GUI
-In addition (or if the user requests) to being stored in the Outputs/gnuPlot directory the plots should also appear in the GUI frame. 
-
-- Plots all data, should only output evaluated nuclear structure data
-First section for each isotope in the ensdf.xxx files is the information we want, every section afterwards are individual experiments which we do not want. 
-
-- ?Requires inputs into all Evaluated Nuclear Structure fields to produce plots
+In addition (or if the user requests) to being stored in the Outputs/gnuPlot directory the plots should also appear in the GUI frame.
 
 - How to handle Theory and Sym inputs
 
