@@ -7,7 +7,7 @@ Outline of Program
     obtained from the two databases and allow for the user to study properties
     of excited nuclei more systematically.
 
-Version Upload 05.17.2017 @ SOMETIME -M.S. Martin:
+Version Upload 05.17.2017 @ 1430MT -M.S. Martin:
     Updated README.md file to include project description.
     Created a way for the program to interpret blank entries into the left side
     of the GUI. Now some blank entries will kill the program while some will

@@ -287,5 +287,5 @@ class data:##This is the main data class
                 self.data=newData##changes data to the new data.
             else:
                 if(UI):
-                    print "Warning:No data filtered/selected for "+ self.name +"."
+                    print "Warning:No data filtered/selected for "+ self.name +"."#Prints a statement telling user than no file was found
                 self.data=[[0.0,"NO_DATA"]]##Enters a dummy entry to file with something.
