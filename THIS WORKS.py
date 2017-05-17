@@ -23,6 +23,5 @@ ided.pltFileExp(userInput[0],userInput[1],userInput[2],True,userInput[3],True)
 #1. Click the submit button on the left and the GUI closes
 #2. Any messages that appear in the shell should appear in textbox
 #3. Plots do NOT appear inside GUI
-#4. Requires inputs into all Evaluated Nuclear Structure fields to produce plots
-#5. How to handle Theory and Sym inputs
-#6. Formatting......
+#4. How to handle Theory and Sym inputs
+#5. Formatting......
