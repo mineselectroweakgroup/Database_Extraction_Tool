@@ -1,0 +1,477 @@
+280      COMMENTS                                                05NDS    200512
+280    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+280  2 H CUT=12-Aug-2005$                                                       
+280   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+280   C  AUTH$M. GUPTA(a)                                                       
+280   C  INST$National Nuclear Data Center                                      
+280  #C       Brookhaven National Laboratory                                    
+280  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+280  #C                                                                         
+280   c  INST$Manipal Academy of Higher Education,                              
+280  #c  Manipal, KA 576 104, INDIA                                             
+280  #c  e-mail: mohini.gupta@manipal.edu                                       
+280   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+280  #c  Manipal, KA 576 104, INDIA                                             
+280   C  AUTH$THOMAS W. BURROWS                                                 
+280   C  INST$National Nuclear Data Center                                      
+280  #C       Brookhaven National Laboratory                                    
+280  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+280  #C       e-mail: burrows@bnl.gov                                           
+280   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+280  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+280  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+280  4C  RECEIVED BY August 12, 2005.                                           
+280   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+280  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+280  3C  DATE WERE CONSIDERED.                                                  
+280   C  CIT$NDS 106, 251 (2005)                                                
+280   c  COMM$                                                                  
+280  @c  {UAcronyms and notations used in this evaluation:}                     
+280  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+280  #c  BGS Berkeley Gas Filled Separator                                      
+280  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+280  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+280  #c  EVR Evaporation Residue                                                
+280  #c  GARIS Gas-filled Recoil Ion Separator                                  
+280  #c  RILAC RIKEN Linear Accelerator facility                                
+280  #c  SHIP Separator for Heavy Ion reaction Products                         
+280  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+280  2c  and detection of previous EVR or |a                                    
+280  #c  TKE Total Kinetic Energy                                               
+280  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+280  2c  Reactions, JINR, Dubna, Russia                                         
+280  #c                                                                         
+280  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+280  2c  (Z=110-112,114,116,118):}                                              
+280  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+280  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+280  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+280  5c  the evaluators have relied on the judgement of the JWP in              
+280  6c  determining the strength of the arguments made in the various papers.  
+280  7c  In the cases where there are new data or where the JWP has not yet     
+280  8c  assigned a priority of discovery for an element, the evaluators have   
+280  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+280  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+280  Bc  the data.                                                              
+280  #c                                                                         
+280  #c  In the above context, with respect to Z=112 and the collective works of
+280  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+280  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+280  4c  references therein.                                                    
+280  #c                                                                         
+280  @c                                                                         
+280  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+280  2c  discovery of an element and not a specific nuclide. The purpose of     
+280  3c  this evaluation is to present the "best" set of nuclear properties     
+280  4c  for those nuclides reported between A=266 and A=294 based on data      
+280  5c  currently available and {Bnot} to establish a priority of discovery for
+280  6c  any element.                                                           
+280  !c                                                                         
+280  #c  It is well known that alpha decay chains seen                          
+280  ac  in cold fusion reactions tend to terminate in known mass regions.      
+280  2c  The method of |a-|a or |a-SF correlations for identifying the          
+280  3c  parent has therefore been used with confidence.                        
+280  3c  Experiments carried out with hot fusion reactions,                     
+280  4c  result in alpha decay chains beginning and ending with hitherto unknown
+280  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+280  6c  in an attempt to identify the parent and daughters. The latter method  
+280  7c  is not as accurate as the first since a greater probability of         
+280  8c  randomness is inherant to the technique. As such, independent          
+280  9c  verification and confirmation of the data gains added importance.      
+280  ac  These facts should be taken into account when considering the suggested
+280  ac  properties of nuclei created following a hot fusion reaction as for    
+280  ac  the synthesis of Z=114 and above.                                      
+280  #c                                                                         
+280  #c  Finally, with regard to the some of the                                
+280  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+280  ac  2004Mo15 have pointed out that mass assignments which are based        
+280  ac  on the excitation energy of the compound nucleus may be off by a       
+280  ac  single unit. This may also be due in part to uncertainties in the beam 
+280  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+280  ac  Once again, collateral information is required to establish the charge 
+280  ac  and approximate A of the nucleus.                                      
+280  #c                                                                         
+280  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+280  2c  have not been adopted, the evaluators have used the approximations in  
+280  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+280  4c  exponential distribution to estimate the standard uncertainty (68%     
+280  5c  confidence level) in T{-1/2}:                                          
+280  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+280  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+280  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+280  9c  of events. For one and two events, the exact values given in Table 1   
+280  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+280  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+280  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+280  #c                                                                         
+280  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+280  ac  Calculations of T{-1/2}                                                
+280  2c  performed in the present evaluation used the relationship:             
+280  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+280  #c  where Z refers to the atomic                                           
+280  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+280  6c  and:                                                                   
+280  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+280  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+280  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+280  3c  parameter set used in these evaluations. We note that these systematics
+280  6c  are only an indication of |a-decay half-lives from the ground state    
+280  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+280  8c  the element under consideration. The use of this formalism in the      
+280  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+280  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+280  ac  estimate a Hindrance Factor (HF) for a given transition,               
+280  ac  attributable to the odd neutron or proton. This quantity is            
+280  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+280  ac  The HF so computed is an approximate indication.                       
+280  #c                                                                         
+280  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+280  2c  References.                                                            
+280  #c                                                                         
+280  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+280  2c  trans-fermium elements is the manifestation of shell effects in the    
+280  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+280  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+280  5c  important as QF is expected to play a greater role on the hindrance of 
+280  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+280  7c  the "island" of stability. An understanding of this mechanism is       
+280  8c  necessary to establishing the most favorable reactions for producing   
+280  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+280  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+280  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+280  Cc  to both the mass asymmetry in the entrance channel as well as the      
+280  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+280  Ec  deformations of target/projectile nuclei and their relative orientation
+280  Fc  to each other in the process of CN formation, may also play an         
+280  Gc  important role in reducing the probability of forming a compound       
+280  Hc  system. In the face of extremely low yields and a steep decrease of    
+280  Ic  production cross-sections already in evidence with available stable    
+280  Jc  beam-target combinations, the influence of all possible mitigating     
+280  Kc  factors must be accurately determined in order to                      
+280  Lc  optimize the probability of successful fusion. The formation of a      
+280  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+280  Nc  survives QF going on to form a compact compound system which must then 
+280  Oc  face competition from fission.                                         
+280  #c                                                                         
+280  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+280  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+280  3c  in collaboration with investigators from Belgium, France, and Italy.   
+280  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+280  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+280  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+280  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+280  8c  spectrometer "Corset". These experiments were inspired by              
+280  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+280  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+280  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+280  Cc  such experiments are planned or underway to investigate the various    
+280  Dc  effects.                                                               
+280  #c                                                                         
+280  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+280  2c  and references cited in these papers.                                  
+280  #c                                                                         
+280  !c  {UExperimental Estimates of Fission Barriers:}                         
+280  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+280  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+280  4c  the experimentally derived barrier heights are respectively:           
+280  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+280  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+280  #c                                                                         
+280  #c  2002It04, in an analysis of available experimental data, derive the    
+280  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+280  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+280  #c                                                                         
+280  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+280  2c  Two possibilities have been proposed in an attempt to understand the   
+280  ac  the {+289}114, {+287}114 observations:                                 
+280  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+280  ac  belongs to a rare decay mode originating from                          
+280  4c  an isomeric state, or that                                             
+280  #c  (ii) the sequence may actually originate from                          
+280  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+280  7c  Levels).                                                               
+280  #c  The evaluators believe that further investigations                     
+280  ac  are required to support either hypothesis.                             
+280  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+280  9c  unobserved. Also, T{-1/2}                                              
+280  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+280  ac  is much larger than that observed by 2004Og12 and                      
+280  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+280  ac  agreement. Such inconsistencies need to be better understood.          
+280  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+280  2c  respects. 2004OgZZ report more statistics in some cases.               
+280  #c                                                                         
+280  @c  {UOther comments on {+289}114 and {+283}112}                           
+280  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+280  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+280  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+280  4c  classified the evidence as being "very weak",                          
+280  5c  with no convincing supporting arguments for the possible production of 
+280  6c  SHE. We make the following general observations:                       
+280  #c                                                                         
+280  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+280  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+280  ac  by the Dubna-JINR collaborations for all isotopes of                   
+280  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+280  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+280  ac  {+287}114 (15 events) and {+286}114                                    
+280  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+280  ac  the |?34 min decay sequence postulated as originating from             
+280  5c  a rare decay mode of {+289}114, does not seem very likely.             
+280  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+280  7c  {+289}114 decays observed are genetically linked                       
+280  8c  and not the result of a background decay sequence. These               
+280  BC  discrepancies have to be resolved, along with some others.             
+280  #c                                                                         
+280  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+280  ac  (see also 2004Og02) with VASSILISSA, have not                          
+280  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+280  3c  lack of internal consistency through the collective measurements       
+280  ac  and the data are inconclusive as pointed                               
+280  4c  out by experimenters (reasons given in each paper). Decay properties of
+280  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+280  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+280  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+280  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+280  8c  by them. See {+283}112 Adopted Levels for details.                     
+280  #c                                                                         
+280  #c  These observations by the experimenters are consistent with the        
+280  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+280  3c  of the various arguments put                                           
+280  3c  forward therein, the following comments may be made here:              
+280  #c                                                                         
+280  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+280  #c  190 MeV and 212 MeV (1999Og05)                                         
+280  #c  65 MeV and 170 MeV  (2004Og02)                                         
+280  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+280  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+280  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+280  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+280  4c  plane and side detectors). With one exception, all the energies        
+280  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+280  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+280  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+280  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+280  9c  the second experiment) after EVR implantation resulted in              
+280  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+280  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+280  #c                                                                         
+280  #c  2. 2000Ar03 statement that correlations  between the fission events    
+280  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+280  3c  'backward' analysis of the data was reported in                        
+280  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+280  5c  evidently in contradiction with those made by the                      
+280  6c  experimenters. A more complete analysis would be beneficial.           
+280  #c                                                                         
+280  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+280  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+280  ac  quoted from an earlier                                                 
+280  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+280  4c  assignments. The proposed assignment of Z=114 to both parents may      
+280  5c  be incorrect taking into account new data which do not support         
+280  6c  these observations and for reasons already mentioned.                  
+280  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+280  !c                                                                         
+280  #c  CONCLUSIONS:                                                           
+280  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+280  ac  are not conclusive. Overall, the                                       
+280  2c  results from the VASSILISSA experiments are at variance with data from 
+280  3c  experiments using DGFRS. The latter investigations are done using      
+280  4c  more stringent methods, and have greater statistics, offering better   
+280  5c  internal consistency. Some obvious discrepancies and other             
+280  ac  inconsistencies between the two sets of                                
+280  6c  data remain and need to be resolved or adequately explained as does the
+280  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+280  8c  by 2005Gr19 and 2002Lo11.                                              
+280  #c                                                                         
+280  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+280  2c  from earlier work are not reproduced to date.                          
+280  #c                                                                         
+280  @c  {UTheoretical Calculations:}                                           
+280  @c  1995Mo29: |b2 based on the finite-range droplet                        
+280  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+280  3c  with "global" parameters.                                              
+280  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+280  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+280  3c  J|p simultaneously obtained with the calculated masses and             
+280  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+280  5c  A=239.                                                                 
+280  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+280  2c  model for the macroscopic part and the Strutinski shell correction,    
+280  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+280  4c  part.                                                                  
+280  @c  2005GaZX: |b2 based on self consistent calculations                    
+280  2c  within the framework of the Relativistic Mean Field (RMF)              
+280  3c  theory with very few "globally" fit parameters and employing the       
+280  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+280  5c  sets in use exhibit similar systematics, these results are expected to 
+280  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+280  #c                                                                         
+280  @c  {UOther Measurements:}                                                 
+280  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+280  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+280  3c  (Blocking technique in single crystals).                               
+280  #c                                                                         
+280   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+280  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+280  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+280  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+280  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+280  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+280  7c  additional information that they readily provided during this          
+280  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+280  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+280  Ac  Singh for helpful discussions. We thank A. Marinov                     
+280  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+280  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+280  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+280  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+280  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+280  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+280  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+280  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+280  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+280  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+280  Lc  insights, and suggestions until her untimely demise are hereby         
+280  Mc  acknowledged.                                                          
+280   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+280  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+280  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+280      REFERENCES                                                       200512
+280    R 1966VI04 JOUR JINCA 28 741                                             
+280    R 1984SC13 JOUR ZPAAD 316 19                                             
+280    R 1987MU15 JOUR ZPAAD 328 49                                             
+280    R 1992BA77 JOUR PPNPD 29 453                                             
+280    R 1995MO29 JOUR ADNDA 59 185                                             
+280    R 1997MO25 JOUR ADNDA 66 131                                             
+280    R 1998DA24 JOUR ARNUA 48 401                                             
+280    R 1999OG05 JOUR ZAANE 5 63                                               
+280    R 1999OG07 JOUR NATUA 400 242                                            
+280    R 1999OG10 JOUR PRLTA 83 3154                                            
+280    R 2000AR03 JOUR ZAANE 7 23                                               
+280    R 2000FI12 JOUR NDSBA 90 391                                             
+280    R 2000OG05 JOUR PRVCA 62 041604                                          
+280    R 2000ZL02 JOUR ZAANE 8 81                                               
+280    R 2001AK11 JOUR NDSBA 94 131                                             
+280    R 2001KA70 JOUR PACHA 73 959                                             
+280    R 2001OG01 JOUR PRVCA 63 011301                                          
+280    R 2002HI20 JOUR PRLTA 89 282701                                          
+280    R 2002IT04 JOUR PRVCA 65 044602                                          
+280    R 2002LO11 JOUR PPNPD 48 123                                             
+280    R 2002LO15 JOUR PRVCA 66 044617                                          
+280    R 2003AU02 JOUR NUPAB 729 3                                              
+280    R 2003AU03 JOUR NUPAB 729 337                                            
+280    R 2003GE09 JOUR PRVCA 68 061303                                          
+280    R 2003KA71 JOUR PACHA 75 1601                                            
+280    R 2003MU15 JOUR YAFIA 66 1051                                            
+280    R 2003MU26 JOUR APOBB 34 2073                                            
+280    R 2003OGZY REPT JINR-E7-2003-178,Oganessian                              
+280    R 2004BA86 JOUR JPGPE 30 B35                                             
+280    R 2004DA11 JOUR NUPAB 734 148                                            
+280    R 2004DMZZ REPT JINR-E12-2004-157,Dmitriev                               
+280    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+280    R 2004GUZW PREPRINT Gupta                                                
+280    R 2004IT05 JOUR NUPAB 734 136                                            
+280    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+280    R 2004MO15 JOUR NUPAB 734 188                                            
+280    R 2004OG02 JOUR ZAANE 19 3                                               
+280    R 2004OG03 JOUR PRVCA 69 021601                                          
+280    R 2004OG07 JOUR PRVCA 69 054607                                          
+280    R 2004OG12 JOUR PRVCA 70 064609                                          
+280    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+280    R 2004PRZW PREPRINT Prokhorova                                           
+280    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+280    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+280    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+280DS    ADOPTED LEVELS: NOT OBSERVED                            05NDS    200512
+280DS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+280DS2 H CUT=12-Aug-2005$                                                       
+280DS  Q -3.6E3    SY6.9E3   SY4.3E3   SY9.55E3  SY    2012WA38                 
+280DS CQ Note: Current evaluation has used the following Q record               
+280DS  Q -4360     SY 7200   SY 3930   SY 9300     SY  2003AU03                 
+280DS CQ Q-,SN$ESTIMATED UNCERTAINTY=1130 KEV                                   
+280DS CQ SP$ESTIMATED UNCERTAINTY=1110 KEV                                      
+280DS CQ QA$ESTIMATED UNCERTAINTY=200 KEV                                       
+280DS C  2000OG05, 2001OG01: IN ALPHA-DECAY CHAIN OF 28814, AT DUBNA WITH       
+280DS2C  244PU+48CA {IVIA} THE 4{IN} EVAPORATION CHANNEL WITH A CROSS-SECTION OF
+280DS3C  AP 1 PICOBARN. SEE 28814 Adopted Levels FOR DETAILS. TWO IDENTICAL     
+280DS4C  GENETICALLY CORRELATED EVENT SEQUENCES WERE RECORDED OF THE TYPE       
+280DS5C  ^EVR-|a1-|a2-SF; THE TWO SF EVENTS WERE DETERMINED TO BE FROM 280DS    
+280DS6C  WITH TOTAL ENERGIES OF 221 (156+65) AND 213 (171+42) MEV. THE          
+280DS7C  PROBABILITY OF RANDOMNESS FOR THE SEQUENCE WAS ESTIMATED TO BE 5E-13.  
+280DS C  THEORY: SEE ALSO Nuclear Structure References                          
+280DS C  ASSIGNMENT: REASSIGNED BY 2004OG07.                                    
+280DS C  2003AU02 ADOPTED T=11 S 6 (FROM t=6.93 S, 14.3 S, AND 7.4 S) AND       
+280DS2C  %SF=100 BASED ON 2001OG01.                                             
+                                                                                
+280RG    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+280RG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+280RG2 H CUT=12-Aug-2005$                                                       
+280RG  Q -1.9E3    SY5.8E3   SY2.6E3   SY1.019E4 SY    2012WA38                 
+280RG CQ Note: Current evaluation has used the following Q record               
+280RG  Q -2390     SY 6200   SY 2060   SY 9.87E3    6  2003AU03,2004OG03        
+280RG CQ Q-$ESTIMATED UNCERTAINTY=980 KEV                                       
+280RG CQ SN$ESTIMATED UNCERTAINTY=1000 KEV                                      
+280RG CQ SP$ESTIMATED UNCERTAINTY=1050 KEV                                      
+280RG CQ QA$FROM EA=9.75 MEV 6 (2004OG03). OTHER: 9.98 MEV 30 (2003AU03):       
+280RG C  2003OGZY AND 2004OG03: IDENTIFICATION OF NEW NUCLIDES: 28815, 28413,   
+280RG2C  280RG, 276MT, 272BH, AND 268DB. 280RG OBSERVED AS GRAND-DAUGHTER OF    
+280RG3C  28815.                                                                 
+280RG C  REACTION: 243AM(48CA,3N) E(LAB)=248 MEV CORRESPONDING TO               
+280RG2C  AN EXCITATION ENERGY OF 38.0 TO 42.5 MEV AT THE TARGET CENTER.         
+280RGAC  EXPERIMENTS PERFORMED BY THE DUBNA-^LLNL COLLABORATION.                
+280RGAC  Z=115 WAS FORMED AT A CROSS-SECTION OF 2.7 pb {I+48-16}.               
+280RG C  THREE SIMILAR DECAY CHAINS WITH FIVE                                   
+280RG2C  CONSECUTIVE ALPHA DECAYS WERE DETECTED IN A TIME INTERVAL OF 20 S      
+280RG3C  (IN THE BEAM-OFF MODE FOLLOWING THE FIRST RECOIL EXPECTED TO BELONG TO 
+280RG4C  Z=115) TERMINATED BY AN SF EVENT WITH A RELEASE OF TOTAL KINETIC ENERGY
+280RG5C  OF AP 220 MEV. THESE EVENTS WERE ASSIGNED                              
+280RG6C  TO THE (48CA,3N) CHANNEL WITH THE PRODUCTION OF THE PARENT NUCLIDE     
+280RG6C  28815; THE THIRD EVENT IN THE CHAIN WAS ASSIGNED TO 280RG.             
+280RG7C  PROPERTIES OF 280RG FROM THE                                           
+280RG8C  THREE CHAINS ARE LISTED BELOW BY EVENT.                                
+280RG t    {TV}Event #1: Energy of the evaporation residue=10.4 MeV             
+280RG2t       E{-|a}=9720 keV         t=3.146 s    - assigned to {+280}Rg       
+280RG3t  {TV}Event #2: Energy of the evaporation residue=11.0 MeV               
+280RG4t       E{-|a}=9760 keV         t=10.599 s   - assigned to {+280}Rg       
+280RG5t  {TV}Event #3: Energy of the evaporation residue=9.1 MeV                
+280RG6t       E{-|a}=9760 keV         t=1.793 s    - assigned to {+280}Rg       
+280RG C  THEORY: 1997MO25, 2003MU15, 2003GE09, 2004BA86, 2004GUZW AND Nuclear   
+280RG2C  Science References                                                     
+280RG C  ASSIGNMENT: GRANDDAUGHTER OF 28815 PRODUCED BY 243AM(48CA,3N) E=248    
+280RG2C  MEV (2003OGZY,2004OG03) AND E=243 MEV, CHEM (2004DMZZ). THE EVALUATORS 
+280RG3C  SUGGEST THAT 2004DMZZ OFFERS INDEPENDENT SUPPORT TO THE SYNTHESIS OF   
+280RG4C  28815 (2004OG03) HAVING PRECISELY DETERMINED THE ATOMIC NUMBER FOR     
+280RG5C  Z=105 BY ISOLATION OF Group ^V ELEMENTS. THE PROPERTIES ARE IN         
+280RG6C  AGREEMENT WITH 268DB MEASURED IN THE THREE CHAINS SEEN EARLIER BY      
+280RG7C  2004OG03, THEREBY PROVIDING EVIDENCE IN FAVOR OF THE SYNTHESIS OF      
+280RG8C  28815 AND DAUGHTERS. HOWEVER, SINCE THE IDENTIFICATION RELIES          
+280RG9C  ON THE MEASUREMENT OF SF FRAGMENTS, THE POSSIBILITY THAT THE OBSERVED  
+280RGaC  NUCLEUS IS ACTUALLY 268RF FOLLOWING (UNDETECTED) EC FROM THE PARENT    
+280RGaC  268DB, CANNOT BE EXCLUDED.                                             
+280RG  XA28413 A DECAY: TENTATIVE                                               
+280RG  L X                               3.6 S   +43-13                        ?
+280RG CL J$|W(p)=13/2+; |W(n)=15/2- FROM 1997MO25 (THEORY)                      
+280RG CL T$FROM 2004OG03. T(CALC)=0.42 S FROM Viola-Seaborg SYSTEMATICS FOR     
+280RG2CL QA=9.87 MEV                                                            
+280RG2 L %A AP 100                                                              
+280RG CL %A$FROM THREE EVENTS                                                   
+280RG CL $B2(THEORY): 0.117 FROM 1995MO29; 0.200 FROM 2003MU15; 0.179 FROM      
+280RG2CL 2005GAZX                                                               
+280RGX L XREF=A                                                                 
+                                                                                
+280RG    28413 A DECAY: TENTATIVE      2004OG03                  05NDS    200512
+280RG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+280RG2 H CUT=12-Aug-2005$                                                       
+280RG C  SEE 28413 Adopted Levels FOR DETAILS.                                  
+28413  P X                             0.48 S    +58-17         10150     60    
+28413 CP T$FROM 2004OG03                                                        
+28413 CP QP$FROM 2004OG03                                                       
+280RG  N                       1.0     AP                                       
+280RG  L X                               3.6 S   +43-13                        ?
+280RG CL E,T$FROM THE Adopted Levels                                            
+280RG  A 10.00E3   6                                                           ?
+280RG CA E$FROM 2004OG03                                                        
+                                                                                

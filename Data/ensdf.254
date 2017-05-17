@@ -1,0 +1,1188 @@
+254      COMMENTS                                                05NDS    200511
+254    H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254  2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254   C  TITL$ Nuclear Data Sheet for A = 254                                   
+254   C  AUTH$ A. Bhagwat                                                       
+254   C  INST$Department of Physics, ^I.I.T.-Bombay, Powai, Mumbai, 400 076,    
+254  2C  India.                                                                 
+254   C  AUTH$ N. J. Thompson                                                   
+254   C  INST$Department of Physics, University of Surrey, Guildford, Surrey,   
+254  2C  ^GU2 ^7XH, UK.                                                         
+254   C  AUTH$ J. K. Tuli                                                       
+254   C  INST$ ^NNDC, Brookhaven National Laboratory Upton, ^NY 11973-5000, USA.
+254   C  ABST$ The experimental results for the structure and decay studies     
+254  2C  for the ^A = 254 isobaric chain, Z=93 to 108, have been reviewed.      
+254  3C  These data are                                                         
+254  3C  summarized and presented together with the adopted levels, decay       
+254  4C  schemes and radiation                                                  
+254  4C  properties. Theoretical studies are given as comments. The following   
+254  5C  nuclides for A=254 have not been observed and only their theoretical or
+254  6C  systematic studies have been reported: Z=93(Np) to Z=97 (Bk); Z=105    
+254  7C  (Db) to Z=108 (Hs). NEW                                                
+254  5C  MEASUREMENTS HAVE BEEN REPORTED IN 254NO.                              
+254   C  CUT$JULY 15, 2005.                                                     
+254   C  CIT$NDS 105, 959 (2005).                                               
+254   C  FUND$Work for one of the evaluators (^JKT) has been sponsored by the   
+254  xC  Office of Nuclear Physics, Office of Science, ^US Department of        
+254  xC  Energy, under contract no. ^DE-^AC02-76^CH00016.                       
+                                                                                
+254      REFERENCES                                              05NDS    200511
+254    R 1954CH23 JOUR PHRVA 94 1080                                            
+254    R 1954FI14 JOUR PHRVA 94 209                                             
+254    R 1955BE99 CONF Geneva(Peaceful Uses Atomic Energy) Vol.7, p.261         
+254    R 1955HA35 JOUR PHRVA 99 337                                             
+254    R 1956FI11 JOUR PHRVA 102 180                                            
+254    R 1956JO09 JOUR PHRVA 102 203                                            
+254    R 1957HU70 JOUR PHRVA 107 1294                                           
+254    R 1958GH40 JOUR PRLTA 1 18                                               
+254    R 1958SC35 JOUR JINCA 6 1                                                
+254    R 1962UN01 JOUR NUPHA 36 284                                             
+254    R 1963HO07 JOUR AFYSA 23 35                                              
+254    R 1963PH01 JOUR JINCA 25 1085                                            
+254    R 1965BE40 JOUR NUPHA 65 1                                               
+254    R 1965ME02 JOUR JINCA 27 33                                              
+254    R 1965SO04 JOUR AERVA 3 No2 117                                          
+254    R 1966DO04 JOUR AENGA 20 223                                             
+254    R 1966FL04 REPT JINR-E7-3043                                             
+254    R 1966MC02 JOUR PHRVA 144 1031                                           
+254    R 1966ZA04 JOUR AENGA 20 230                                             
+254    R 1967FI03 JOUR NUPAB A96 440                                            
+254    R 1967GH01 JOUR PRLTA 18 401                                             
+254    R 1967LE24 BOOK Table of Isotopes, 6th Ed., John Wiley and Sons          
+254    R 1967MI03 JOUR AENGA 22 90                                              
+254    R 1968BE21 JOUR NUPAB A121 433                                           
+254    R 1968HU06 JOUR BAPSA 13 604, DF7                                        
+254    R 1969PA08 JOUR NUPAB A133 400                                           
+254    R 1970FI12 JOUR NUPAB A154 407                                           
+254    R 1970NE08 JOUR NUPAB A149 217                                           
+254    R 1971AD08 JOUR YAFIA 14 1144                                            
+254    R 1971ES01 JOUR PRVCA C4 632                                             
+254    R 1971PO20 JOUR PRLTA 27 293                                             
+254    R 1971SC03 JOUR PYLBB 34B 245                                            
+254    R 1973AH04 JOUR NUPAB A208 287                                           
+254    R 1973BA19 JOUR NUPAB A206 131                                           
+254    R 1973GH03 JOUR PRVCA C7 2032                                            
+254    R 1973IV01 JOUR IANFA 37 911                                             
+254    R 1973TA30 JOUR ADNDA 12 101                                             
+254    R 1974HO05 JOUR HPACA 46 724                                             
+254    R 1975AH04 JOUR JINCA 37 1851                                            
+254    R 1975GO05 JOUR PLRAA A11 499                                            
+254    R 1975OG01 JOUR NUPAB A239 157                                           
+254    R 1975TE01 JOUR NUPAB A255 509                                           
+254    R 1976BEZY REPT ORNL-5111,P58,Bemis                                      
+254    R 1976IV04 JOUR FECAA 7 450                                              
+254    R 1976IW02 JOUR PTPKA 55 115                                             
+254    R 1976RA02 JOUR PRVCA C13 229                                            
+254    R 1977VAYN JOUR ARNUA 27 1                                               
+254    R 1978PO09 JOUR NUKLA 23 125                                             
+254    R 1979OR02 JOUR YAFIA 30 618                                             
+254    R 1979PO23 JOUR JPSLB 40 L465                                            
+254    R 1980HO01 JOUR PRVCA C21 637                                            
+254    R 1980HO04 JOUR PRVCA C21 972                                            
+254    R 1980LO12 JOUR NUPAB 345 134                                            
+254    R 1981LU06 JOUR ZPAAD 303 115                                            
+254    R 1981MU06 JOUR ZPAAD 300 107                                            
+254    R 1981OT01 JOUR PYLBB 98 225                                             
+254    R 1983BO15 JOUR APOBB 14 287                                             
+254    R 1983CW01 JOUR NUPAB 410 254                                            
+254    R 1984KU05 JOUR YAFIA 39 281                                             
+254    R 1984OG03 JOUR RAACA 37 113                                             
+254    R 1985CW01 JOUR NUPAB 444 1                                              
+254    R 1985HE22 JOUR ZPAAD 322 557                                            
+254    R 1985LO17 JOUR ZPAAD 322 695                                            
+254    R 1985OK04 JOUR RAACA 38 1                                               
+254    R 1985PO11 JOUR PRVCA 32 572                                             
+254    R 1985ST22 JOUR PYLBB 161 227                                            
+254    R 1986BA43 JOUR PYLBB 176 7                                              
+254    R 1986LE09 JOUR NUPAB 454 338                                            
+254    R 1986PO15 JOUR ZPAAD 325 435                                            
+254    R 1987GU03 JOUR ZPAAD 326 221                                            
+254    R 1987MO16 JOUR NUPAB 469 1                                              
+254    R 1988HU13 JOUR YTHLD 10 314                                             
+254    R 1988IO04 JOUR RRPQA 33 1071                                            
+254    R 1988PO05 JOUR RADKA 30 10                                              
+254    R 1988SA35 JOUR PHSTB T23 43                                             
+254    R 1988TU07 JOUR ZPAAD 331 363                                            
+254    R 1989CW01 JOUR NUPAB 491 281                                            
+254    R 1989LA07 JOUR PHSTB 39 422                                             
+254    R 1989ME06 JOUR PRVCA 39 1876                                            
+254    R 1989MU09 JOUR ZPAAD 333 163                                            
+254    R 1989ST20 JOUR NUPAB 504 589                                            
+254    R 1990PAZT REPT GSI-90-1,P80,Patyk                                       
+254    R 1991RY01 JOUR ADNDA 47 205                                             
+254    R 1991SO15 JOUR YAFIA 54 1232                                            
+254    R 1992BH03 JOUR PRVCA 45 2803                                            
+254    R 1993MO18 JOUR NUPAB 563 21                                             
+254    R 1994HU18 JOUR YAFIA 57,No 7,1165                                       
+254    R 1995BA47 JOUR ZPAAD 352 321                                            
+254    R 1995EF04 JOUR BRSPE 59 919                                             
+254    R 1996LO08 JOUR APOBB 27 531                                             
+254    R 1997HE29 JOUR ZPAAD 359 415                                            
+254    R 1997MO25 JOUR ADNDA 66 131                                             
+254    R 1997PO18 JOUR BRSPE 61 606                                             
+254    R 1998AK04 JOUR NDSBA 84 1                                               
+254    R 1999HE11 JOUR JPGPE 25 877                                             
+254    R 1999LE42 JOUR ZAANE 6 63                                               
+254    R 1999RE02 JOUR PRLTA 82 509                                             
+254    R 2000HO27 JOUR PACHA 72 1525                                            
+254    R 2000RE05 JOUR PRLTA 84 3542                                            
+254    R 2001AM09 JOUR APOBB 32 2519                                            
+254    R 2001GA20 JOUR ZAANE 10 21                                              
+254    R 2001MU06 JOUR PYLBB 500 241                                            
+254    R 2002BU04 JOUR APOBB 33 313                                             
+254    R 2002BU28 JOUR PRLTA 89 202501                                          
+254    R 2002HE24 JOUR ZAANE 15 205                                             
+254    R 2002PR01 JOUR APOBB 33 405                                             
+254    R 2002RE35 JOUR PTPSA 146 498                                            
+254    R 2002WA22 JOUR PRVCA 66 014310                                          
+254    R 2003AF02 JOUR PRVCA 67 024309                                          
+254    R 2003AU03 JOUR NUPAB 729 337                                            
+254    R 2003BE41 JOUR NUPAB 723 354                                            
+254    R 2003BU23 JOUR APOBB 34 2107                                            
+254    R 2003RE32 JOUR NUPAB 722 543c                                           
+254    R 2003WA32 JOUR NUPAB 729 129                                            
+254    R 2003WU06 JOUR CPLEE 20 1702                                            
+254    R 2004BA17 JOUR IMPEE 13 353                                             
+254    R 2004BO34 JOUR ZAANE 21 391                                             
+254    R 2004GM02 JOUR APHPF 19 155                                             
+254    R 2004HU11 JOUR PRVCA 69 064324                                          
+254    R 2004MA01 JOUR NIMAE 516 529                                            
+254    R 2004RE25 JOUR APHPF 19 127                                             
+254    R 2004RO01 JOUR ANEND 31 323                                             
+254    R 2005CW01 JOUR ZAANE 23 387                                             
+254    R 2005LA04 JOUR PRVCA 71 024312                                          
+254    R 2005SE08 JOUR PRVCA 71 044324                                          
+254    R 2005XU01 JOUR PRVCA 71 014309                                          
+254    R 2005ZU02 JOUR ZAANE 23 249                                             
+                                                                                
+254U     COMMENTS                                                ENSDF    201506
+254U   H TYP=FUL$AUT=A.A. Sonzogni and B. Singh$CIT=ENSDF$CUT=23-Jun-2015$      
+254U  C  TITL$NUCLEAR DATA SHEETS FOR 254U                                      
+254U  c  AUTH$A.A. Sonzogni                                                     
+254U  c  INST$National Nuclear Data Center                                      
+254U #c       Brookhaven National Laboratory,                                   
+254U #c       Upton, New York, USA                                              
+254U  c  AUTH$B. Singh                                                          
+254U  c  INST$Department of Physics and Astronomy,                              
+254U #c       McMaster University, Hamilton, Ontario,                           
+254U #c       Canada, L8S 4M1                                                   
+254U  c  ABST$Information is presented here about the possible production of    
+254U 2c  the {+254}U nuclide in the study by 1960Di03 of debris of the first    
+254U 3c  large-scale thermonuclear test (Ivy Mike) of November 1, 1952 in the   
+254U 4c  Pacific Ocean.                                                         
+254U  c  CUT$Literature available up to June 23, 2015 has been consulted.       
+254U  c  ACKN$We thank Michael Thoennessen (NSCL-MSU) for useful comments.      
+254U  C  CIT$ENSDF                                                              
+254U  c  FUND$                                                                  
+                                                                                
+254U     ADOPTED LEVELS:TENTATIVE                                ENSDF    201506
+254U   H TYP=FUL$AUT=A.A. Sonzogni and B. Singh$CIT=ENSDF$CUT=22-Jun-2015       
+254U   Q 4380      CA 4510   CA 10620  CA 1680    CA   1997MO25                 
+254U  cQ $S(2n)=7730, S(2p)=19520, Q(|b{+-}n)=820 (theory,1997Mo25)             
+254U  c  1960Di03: {+254}U measured indirectly through the detection of         
+254U 2c  {+254}Cf (T{-1/2}=60.5 d) in the debris of the first large-scale       
+254U 3c  thermonuclear test (Ivy Mike) of November 1, 1952 in the Pacific       
+254U 4c  Ocean. Airborne and condensed samples were collected, followed by      
+254U 5c  chemical extraction and purification. The isotopic composition of Pu,  
+254U 6c  Am and Cm fractions were determined by using mass spectrometers,       
+254U 7c  while the abundances of all the transcurium elements were measured by  
+254U 8c  the detection of radiations, primarily |a particles. Mass abundance    
+254U 9c  of A=239-255 uranium isotopes at zero time were deduced which varied   
+254U ac  from 1.0 for {+239}U to 5.7|*10{+-11} for {+255}U. The heavy uranium   
+254U bc  isotopes are expected to be produced in an environment of unusually    
+254U cc  high neutron flux (time-integrated flux of |?10{+24} n/cm{+2})         
+254U dc  through successive neutron captures in {+238}U, with neutron energies  
+254U ec  of 14-MeV from deuterium-tritium fusion, and few MeV from the fission  
+254U fc  of {+235}U. The {+254}Cf fraction can be formed in {+254}U --> {+254}Np
+254U gc  --> {+254}Pu --> {+254}Am --> {+254}Cm  --> {+254}Bk  --> {+254}Cf     
+254U hc  |b{+-} decay chain.                                                    
+254U  c  One should note that there are no Adopted Levels data sets for         
+254U 2c  {+254}Np, {+254}Pu, {+254}Am, {+254}Cm and {+254}Bk.                   
+254U  c  See also related articles: 1956Fi11, 1967Ho20, 1966Rg01 and 1969In01   
+254U  c  Theoretical structure calculations:                                    
+254U  c  2014Ro09, 2013Gi06: calculated fission barriers                        
+254U  c  2010To07: calculated proton and neutron single-particle spectra,       
+254U 2c  S(n), rms charge radius                                                
+254U   L 0            0+                                                       ?
+254U 2 L %B-=? $ %B-N=?                                                         
+254U  CL $Theoretical %B-N=0.64 (2003Mo09)                                      
+254U  cL $Through the detection of {+254}Cf (T{-1/2}=60.5 d) in the debries of  
+254U 2cL the thermonuclear test, abundance of {+254}U was deduced to be         
+254U 3cL 4.2|*10{+-11} {I3} relative to 1.000 {I4} for {+239}U (1960Di03)       
+254U  cL $|b{+-} is expected to be the dominant decay mode of {+254}U, since    
+254U 2cL the theoretical half-life for |a decay is >10{+20} s (1997Mo25)        
+254U  cL T$|b decay half-life = 1.1 s (theory,2003Mo09)                         
+                                                                                
+254CF    ADOPTED LEVELS                                          05NDS    200511
+254CF  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254CF2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254CF  XA254ES EC DECAY (39.3 H)                                                
+254CF  Q -650      136032    126.9E3   SY5927    5     2012WA38                 
+254CF CQ Note: Current evaluation has used the following Q record               
+254CF  Q -651      13 6032   12 6880   SY 5927   5     2003AU03                 
+254CF C                                                                         
+254CF C  THEORETICAL STUDIES:                                                   
+254CF C  THE PARTIAL HALF-LIFE FOR ALPHA DECAY WAS CALCULATED BY 1979PO23,      
+254CF2C  2003RE32.                                                              
+254CF C  FOR CALCULATED PARTIAL HALF-LIFE FOR SF DECAY SEE,                     
+254CF2C  1974HO05, 1976RA02, 1978PO09, 1987MO16, 1989ST20, 1992BH03, 2005XU01.  
+254CF C  POSSIBILITY FOR PIONIC DECAY WAS STUDIED BY 1988IO04.                  
+254CF C  FISSION BARRIER WAS CALCULATED BY 1971AD08, 1984KU05, 2004BO34.        
+254CF C  FISSION-FRAGMENT DISTRIBUTION WAS MEASURED BY 1980HO01, 1981LU06,      
+254CF2C  1981OT01. FOR CALCULATIONS OF FISSION FRAGMENT AVERAGE TOTAL KINETIC   
+254CF3C  ENERGY, SEE 1974HO05, 1986LE09, 1995EF04.                              
+254CF C  FOR CALCULATIONS OF THE ENERGY OF 2+ GAMMA-VIBRATIONAL STATE AND BE2   
+254CF2C  TRANSITION PROBABILITY TO THE GS, SEE 1965BE40.                        
+254CF C  EQUILIBRIUM DEFORMATIONS WERE CALCULATED BY 1983BO15.                  
+254CF C  ^RMF (relativistic mean field) CALCULATIONS OF THE GROUND STATE        
+254CF2C  PROPERTIES AND THE ALPHA DECAY                                         
+254CF2C  Q VALUES REPORTED IN 2005LA04.                                         
+254CF  L 0.0          0+               60.5 D    2                              
+254CF2 L %A=0.31 2 $ %SF=99.69 2                                                
+254CF CL           FROM THE ALPHA AND FISSION COUNTS, THE BRANCHING RATIO WAS   
+254CF2CL DETERMINED BY 1968BE21 TO BE ALPHA/FISSION=0.00310 16. EARLIER         
+254CF3CL MEASUREMENT: %A AP 0.2, %SF AP 99.8 (^F. ASARO, ^I. PERLMAN- QUOTED BY 
+254CF4CL 1967LE24, P.151 AND 445 (1966))                                        
+254CF CL T         T1/2=60.5 D 2, MEASURED BY 1963PH01, IS                      
+254CF2CL ADOPTED. THIS VALUE WAS ALSO RECOMMENDED BY 1965ME02. THE PARTIAL SF   
+254CF3CL HALF-LIFE OF 60.9 D 9 WAS RECOMMENDED BY 2000HO27; THE SF BRANCHING    
+254CF4CL OF 99.69% 2 YIELDS T1/2=60.7 D 9.                                      
+254CF5CL REPORTED HALF-LIVES: 60 D 10 (1955BE99),                               
+254CF6CL 85 D 15 (1955HA35), 56.2 D (1956FI11; REANALYZED BY 1957HU70),         
+254CF7CL 60.3 D 11 (1957HU70; REVISED BY 1965ME02), 60.5 D 2 (1963PH01),        
+254CF8CL 61.9 D 11 (1965ME02).                                                  
+                                                                                
+254CF    254ES EC DECAY (39.3 H)                                 05NDS    200511
+254CF  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254CF2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254ES  P 84.2      25 2+               39.3 H    2              651       13    
+254CF  N                        7.6E-4 7                                        
+254CF C                                                                         
+254CF C  THE 254ES (GS) EC DECAY, though expected,  HAS NOT BEEN OBSERVED.      
+254CF C  NO EXCITED STATES OF 254CF HAVE BEEN OBSERVED EITHER VIA REACTION      
+254CF2C  OR BY DECAY. THE Q+ VALUE OF 730 KEV LIMITS THE NUMBER OF              
+254CF3C  STATES THAT CAN BE POPULATED IN THE 39.3-H 254ES EC DECAY.             
+254CF C  AN EC DECAY FROM THE 2+ PARENT TO 0+ GS WOULD BE A SECOND-FORBIDDEN    
+254CF2C  BETA TRANSITION, AND A BRANCH TO 2+ OF THE GS BAND WOULD BE            
+254CF3C  K-FORBIDDEN. BECAUSE OF THE EXPECTED ORBITAL FOR THE PROTON            
+254CF4C  TRANSFORMING INTO A NEUTRON STATE DURING THE EC DECAY,                 
+254CF5C  ADDITIONAL FORBIDDENNESS MAY BE ENCOUNTERED. A CALCULATED              
+254CF6C  LOWER LIMIT OF 9.9 FOR THE LOGFT OF AN EC DECAY TO 2+ OF               
+254CF7C  GS BAND MAY BE CONSIDERED CONSISTENT FOR THESE FORBIDDENESSES.         
+254CF C  IF A 3+ STATE WITH CONF=((NU 3/2[613])(NU 9/2[615])) IS AT LOW         
+254CF2C  ENERGY IN 254CF, SINCE THE 2+ PARENT IS PREDOMINANTLY                  
+254CF3C  CONF=((PI 7/2[633])(NU 3/2[622])), THE EC BRANCH WILL BE AN ALLOWED    
+254CF4C  DECAY WHERE 254ES PROTON IN THE { PI 7/2[633] } ORBITAL WILL MAKE      
+254CF5C  A TRANSITION TO THE 254CF NEUTRON STATE IN NU 9/2[615] ORBITAL.        
+254CF C  OTHER POSSIBILITIES INCLUDE A TRANSITION OF A PROTON FROM A FILLED     
+254CF2C  PI 3/2[521] STATE TO THE NU 3/2[622] STATE, THUS, TO A 2-              
+254CF3C  FINAL LEVEL WITH CONF=((PI 7/2[633])(PI 3/2[521])), IF THE             
+254CF4C  LEVEL ENERGY OF THIS STATE IS LOW ENOUGH.                              
+                                                                                
+254ES    ADOPTED LEVELS, GAMMAS                                  05NDS    200511
+254ES  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254ES2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254ES  XA258MD A DECAY (51.5 D)                                                 
+254ES  Q 1088      4 5094    5 4599    8 6615.7  15    2012WA38                 
+254ES CQ Note: Current evaluation has used the following Q record               
+254ES  Q 1088      3  5093   4  4598   7 6615.7  15    2003AU03                 
+254ES PN                                                                     6  
+254ES C                                                                         
+254ES C  FOR CALCULATIONS OF FISSION BARRIER, SEE, 1984KU05.                    
+254ES C  FOR ANALYSIS OF SF HALF-LIVES WITH RESPECT TO liquid-drop model SEE    
+254ES2C  2004RO01,                                                              
+254ES2C  1987GU03.                                                              
+254ES CL E         ALL EXCITED LEVELS, EXCEPT THE 39.3-H ISOMER, WERE           
+254ES2CL POPULATED IN 258MD A DECAY.                                            
+254ES CG E         FROM 258MD A DECAY.                                          
+254ES CG RI        RELATIVE PHOTON INTENSITY, NORMALIZED TO 100 FOR THE         
+254ES2CG STRONGEST GAMMA DEEXCITING EACH LEVEL.                                 
+254ES CL BAND(A)   PROBABLE GS BAND.                                            
+254ES2CL Band parameter ^A=5.0. It IS POSSIBLY                                  
+254ES2CL KPI=7+, CONF=((PI 7/2[633])(NU 7/2[613])). SEE ALSO COMMENT FOR JPI(GS)
+254ES  L 0.0         (7+)              275.7 D   5                          A   
+254ESX L XREF=A                                                                 
+254ES CL T         MEASUREMENT BY 1975AH04. OTHER MEASURED HALF-LIVES ARE       
+254ES2CL 266 D 4 (1988PO05), 276 D 76 (1962UN01), 480 D 70 (1958SC35).          
+254ES CL J         ANALOGY TO 253ES SUGGESTS PI 7/2[633] FOR THE 99TH PROTON,   
+254ES2CL AND ANALOGY TO 255FM SUGGESTS { NU 7/2[613] } FOR THE 155TH NEUTRON    
+254ES3CL STATE. FAVORED A TO (7+) 250BK, ALPHA(THETA) FROM ORIENTED NUCLEI      
+254ES4CL (2005SE08)                                                             
+254ES4CL A HIGH-SPIN ASSIGNMENT FOR THE 254ES GS IS CONSISTENT WITH WEAK BETA   
+254ES5CL AND EC BRANCHES TO 254FM AND 254CF. NO ALPHA BRANCH FROM 51.5-D 258MD  
+254ES6CL IS EXPECTED. THE OBSERVATION OF A WEAK ALPHA SUGGESTS SOME ADMIXTURE   
+254ES7CL WITH OTHER CONFIGURATIONS.                                             
+254ES2 L %A AP 100 $ %B-=1.74E-4 8 $ %SF<3E-6 $ %EC=?                           
+254ES CL           1985OK04 DETERMINED B- DECAY/TOTAL=1.74E-6 8 FROM RELATIVE   
+254ES2CL INTENSITIES OF 254ES AND 254FM ALPHAS; 254FM WAS IN EQUILIBRIUM        
+254ES3CL WITH 254ES. EARLIER MEASUREMENT: %B-<2E-4 (1966MC02).                  
+254ES CL           %SF<3E-6 IS FROM T1/2(SF)>2.5E+7 Y, MEASURED BY 1967FI03.    
+254ES2CL OTHER MEASUREMENT: 1965ME02.                                           
+254ES CL           A PARTIAL HALF-LIFE OF AP 8E+3 S FOR EC DECAY, CALCULATED BY 
+254ES2CL 1973TA30 FROM THE BETA GROSS THEORY, SUGGESTS %EC AP 0.03%.            
+254ES  L 80.1      2 (8+)                                                   A   
+254ESX L XREF=A                                                                 
+254ES CL J         ASSIGNMENT WAS MADE BY 1993MO18 FROM THE LEVEL'S ENERGY.     
+254ES2CL THE ROTATIONAL BAND PARAMETER, A=5.0 (DEDUCED FROM THE LEVEL ENERGY),  
+254ES3CL FITS THE LOCAL REGION. GAMMA TO GS AND GAMMA FROM (8-) STATE AT 447.9  
+254ES4CL KEV ARE CONSISTENT WITH THIS ASSIGNMENT.                               
+254ES  G 80.1      2                                                            
+254ES  L 84.2      25 2+               39.3 H    2                           M1 
+254ES CL T         MEASUREMENT OF 1962UN01. OTHER MEASUREMENTS:                 
+254ES2CL 37 H 1 (1954FI14), 38.5 H 10 (1956JO09).                               
+254ES2 L %A=0.32 1 $ %B-=98 2 $ %EC=0.076 7 $ %IT<3 $ %SF<0.045 $               
+254ES CL           %B-/%A=302 9 WAS OBTAINED BY 1973AH04 FROM INTENSITIES OF    
+254ES2CL 39-H 254ES AND 254FM ALPHAS.                                           
+254ES CL           %EC/%B-=7.8E-4 6 WAS DEDUCED BY 1963PH01 FROM THE RATES OF   
+254ES2CL ALPHA EMISSION AND SPONTANEOUS FISSION IN 254FM AND 254CF DAUGHTERS,   
+254ES3CL CHEMICALLY SEPARATED FROM 254ES.                                       
+254ES CL           %IT<3 WAS DEDUCED BY 1973AH04 BY FOLLOWING GROWTH IN THE     
+254ES2CL 6429A PEAK OF 275.7-D 254ES.                                           
+254ES CL           %SF IS CALCULATED FROM T1/2(SF)>10 Y, LISTED BY 1954FI14.    
+254ES CL           ALL BRANCHINGS ARE ADOPTED FROM THE EXPERIMENTAL B-/ALPHA,   
+254ES2CL EC/B-, T1/2(SF), AND THE UPPER LIMIT FOR ISOMERIC TRANSITION GIVEN     
+254ES3CL ABOVE. OTHER MEASUREMENTS: %B-/%A=382 30 (1967FI03).                   
+254ES3 L MOMM1=2.90 7 $ MOME2=3.7 5 (1975GO05) $                                
+254ES CL J         SPIN WAS MEASURED BY 1975GO05 BY USING ATOMIC-BEAM           
+254ES2CL RESONANCE METHOD; PARITY IS FROM THE HINDRANCE FACTOR OF 6382A TO THE  
+254ES3CL POSITIVE-PARITY LEVEL AT 211-KEV IN 250BK. THE MEASURED MOMM1 IS       
+254ES4CL IN AGREEMENT WITH CALCULATIONS (SEE 1975GO05) FOR A STATE WITH         
+254ES5CL 2+,(PI 7/2[633],NU 3/2[622]) CONFIGURATION.                            
+254ES CL           FROM THEIR MEASURED SPECTROSCOPIC QUADRUPOLE MOMENT,         
+254ES2CL 1975GO05 CALCULATED THE DEFORMATION PARAMETER, EPSILON=0.21.           
+254ES CL E$From 2003WA32, OBTAINED FROM QA(254ES 39.3 H)=6699.9 20,             
+254ES2CL EA=6383.9 20, 6383.9 20 RECALIBRATED ALPHA FROM 39.3 H 2 254ES LEVEL   
+254ES3CL TO THE 211.82-KEV, 35.587 LEVELS in 250BK, respectively.               
+254ES3CL IN 250BK.                                                              
+254ES  L 171.1     2 (9+)                                                   A   
+254ESX L XREF=A                                                                 
+254ES CL           ASSIGNMENT WAS PROPOSED BY 1993MO18. ENERGY FIT TO THE GS    
+254ES2CL BAND, AND GAMMA'S TO (7+), (8+) MEMBERS OF THE BAND ARE CONSISTENT     
+254ES3CL WITH JPI=(9+).                                                         
+254ES  G 91.0      3 26      16                                                 
+254ES2 G FL=80.1                                                                
+254ES  G 171.1     2 100     33                                                 
+254ES  L 214.7     2                                                           ?
+254ESX L XREF=A                                                                 
+254ES CL           EXISTENCE OF A LEVEL AT 214.7 KEV IS NOT CERTAIN, AS IT      
+254ES2CL RELIES ON ONE GAMMA PROPOSED TO DECAY TO GROUND STATE, AND ONE         
+254ES3CL GAMMA PLACED TO BE FED FROM THE 402-KEV LEVEL. IF THE 189.1-           
+254ES4CL AND 214.7-KEV GAMMAS DO INDEED CASCADE, ORDER OF THEIR PLACEMENT COULD 
+254ES5CL ALSO BE REVERSED.                                                      
+254ES CL           1993MO18 SUGGESTED THAT THIS LEVEL MAY BE THE                
+254ES2CL 6- (PI 3/2[521],NU 9/2[615]) STATE. A GAMMA TRANSITION FROM THIS LEVEL 
+254ES3CL TO THE GS WITH 7+(PI 7/2[633],NU 7/2[613]) CONFIGURATION WOULD BE      
+254ES4CL HIGHLY HINDERED. THE 214.7G IS NOT ADOPTED.                            
+254ES  L 289.9     3                                                           ?
+254ESX L XREF=A                                                                 
+254ES CL           EXISTENCE OF THIS LEVEL IS NOT CERTAIN. THE LEVEL WAS        
+254ES2CL POSTULATED BY 1993MO18 FROM EXPECTATION OF A 7- MEMBER OF 6-           
+254ES3CL ROTATIONAL BAND PROPOSED AT 214.7 KEV.                                 
+254ES  L 376.8     2                                                            
+254ESX L XREF=A                                                                 
+254ES CL J         GAMMAS TO (7+), (8+) AND (9+) SUGGEST JPI=(7+,8,9+).         
+254ES2CL 1993MO18 PROPOSED THAT THIS LEVEL COULD BE THE 8- MEMBER OF THE        
+254ES3CL SUGGESTED 6- (PI 3/2[521],NU 9/2[615]) BAND. IF 258MD GS CONFIGURATION 
+254ES4CL IS 8- (PI 7/2[514],NU 9/2[615]), HINDRANCE FACTOR OF 28 FOR THE 6788A  
+254ES5CL IS NOT CONSISTENT WITH THE PROPOSED CONFIGURATION (HF OF AN ALPHA      
+254ES6CL TRANSITION BETWEEN THOSE STATES IS EXPECTED TO BE >>100)               
+254ES CL           THE 86.9G WAS PLACED BETWEEN THIS LEVEL AND THE PROPOSED     
+254ES2CL 7- LEVEL AT 289.9 KEV. THIS GAMMA HAS NOT BEEN ADOPTED.                
+254ES  G 205.7     2 22      8                                                  
+254ES  G 296.7     2 100     7                                                  
+254ES2 G FL=80.1                                                                
+254ES  G 376.8     4 31      13                                                 
+254ES  L 402       5                                                            
+254ESX L XREF=A                                                                 
+254ES CL           1993MO18 PLACED AN OBSERVED 189.1G TO DEEXCITE THIS LEVEL    
+254ES2CL IN CASCADE WITH THE 214.7 KEV. THE 189.1G IS NOT ADOPTED.              
+254ES  L 447.9     1 (8-)                                                       
+254ESX L XREF=A                                                                 
+254ES CL J         FAVORED A DECAY FROM 51.5-D 258MD. CONFIGURATION OF THIS     
+254ES2CL STATE SHOULD BE THE SAME AS THAT OF THE PARENT 51.5-D, 258MD WHICH     
+254ES3CL PROBABLY 8- with  MAIN CONF=((PI 7/2[514])(NU 9/2[615])). IF           
+254ES4CL THE GROUND STATE (7+) HAS CONF=((PI 7/2[633])(NU 7/2[613])), LARGE     
+254ES5CL ADMIXTURES IN GS OR IN 447.9-KEV LEVEL CONFIGURATIONS ARE EXPECTED     
+254ES6CL BECAUSE OF THE 447.9-KEV GAMMA TRANSITION WHICH WOULD BE FORBIDDEN     
+254ES7CL (SINCE OTHERWISE, IT WOULD REQUIRE BOTH THE PROTON AND THE NEUTRON     
+254ES8CL STATES TO CHANGE)                                                      
+254ES CL           BY ASSUMING THAT THE 80.0- AND 171.1-KEV LEVELS ARE THE 8+   
+254ES2CL AND 9+ STATES OF THE GS ROTATIONAL BAND, THE AUTHORS OF 1993MO18       
+254ES3CL POINTED OUT THAT THE RELATIVE INTENSITIES OF THE 276.8-, 376.8- AND    
+254ES4CL 447.9-KEV GAMMAS DO NOT AGREE WITH THE EXPECTED RELATIVE IG'S TO 7+,   
+254ES5CL 8+, 9+ ROTATIONAL BAND MEMBERS; AND THEY PROPOSED THAT THE 447.9-KEV   
+254ES6CL LEVEL HAS AN ADMIXTURE FROM ANOTHER ROTATIONAL BAND.                   
+254ES  G 71.1      1 8.0     5                                                  
+254ES  G 276.8     1 20.2    19                                                 
+254ES  G 367.8     1 100     7                                                  
+254ES2 G FL=80.1                                                                
+254ES  G 447.9     1 37      4                                                  
+254ES  L 469.2     2                                                            
+254ESX L XREF=A                                                                 
+254ES  G 298.1     3 47      14                                                 
+254ES  G 389.1     2 100     23                                                 
+254ES2 G FL=80.1                                                                
+                                                                                
+254ES    258MD A DECAY (51.5 D)        1993MO18                  05NDS    200511
+254ES  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254ES2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+258MD  P 0.0          (8-)             51.5 D    3              7271.3    19    
+254ES  N                       1.0                                              
+254ES PN                                                                     5  
+254ES C                                                                         
+254ES CG           THE DECAY SCHEME IS GIVEN HERE AS CONSTRUCTED BY 1993MO18.   
+254ES2CG THE DECAY WAS BASED ON LEVELS POPULATED BY ALPHA'S AND                 
+254ES3CG GAMMA-ENERGY FIT.                                                      
+254ES CG           RELATIVE PHOTON INTENSITIES ARE NOT NORMALIZED FOR ABSOLUTE  
+254ES2CG INTENSITIES, SINCE INCONSISTENT NORMALIZATION FACTORS OF NR=0.056 25   
+254ES3CG AND 0.008 4 ARE OBTAINED WHEN INTENSITY BALANCES AT THE 469.2- AND     
+254ES4CG 447.9-KEV LEVELS ARE USED, RESPECTIVELY.                               
+254ES CG           THE DECAY SCHEME IS CONSIDERED BY THE EVALUATOR TO BE        
+254ES2CG INCOMPLETE, AND SOME LEVELS TO BE TENTATIVE. SEE A FOOTNOTE FOR 214.7, 
+254ES3CG 289.9 LEVELS, AND COMMENTS FOR THE 86.6, 214.7 GAMMAS. SEE ALSO        
+254ES4CG ADOPTED LEVELS, GAMMAS.                                                
+254ES TG                                                                        
+254ES TG           EINSTEINIUM X-RAYS (1993MO18):                               
+254ES2TG                                                                        
+254ES3TG              E(X-RAY)             I(X-RAY)                             
+254ES4TG                          RELATIVE TO IG(367.8G)=1000                   
+254ES4TG              --------    ---------------------------                   
+254ES5TG              112.4 2               22 3             XKA2               
+254ES6TG              117.9 2               36 4             XKA1               
+254ES7TG              133.4 4               13 3             XKB1+XKB3          
+254ES8TG              136.8 3                7 3             XKB2               
+254ES9TG                                                                        
+254ES2TG                                                                        
+254ES TA           POSSIBLE ADDITIONAL ALPHA'S:                                 
+254ES2TA                                                                        
+254ES4TA            ENERGY REGION          IA (RELATIVE)@                       
+254ES5TA            -------------        --------------------                   
+254ES6TA            6800 - 6980               LE 5.4                            
+254ES7TA            7000 - 7070               LE 1.0                            
+254ES8TA            7090 - 7140               LE 0.20                           
+254ES9TA                                                                        
+254ES2TA           @ RELATIVE TO IA'S GIVEN WITH THIS A DECAY SET HERE          
+254ES3TA                                                                        
+254ES CG E         MEASURED BY 1993MO18. GAMMAS WERE OBSERVED IN COINCIDENCE    
+254ES2CG WITH ALPHAS.                                                           
+254ES CG RI        RELATIVE PHOTON INTENSITY, MEASURED BY 1993MO18.             
+254ES CG M         MULTIPOLARITIES ARE NOT DETERMINED EXPERIMENTALLY. THEY ARE  
+254ES2CG FROM JPI'S OF LEVELS ASSIGNED BY 1993MO18. ALTHOUGH THE MEASURED I(XK) 
+254ES3CG IS CONSISTENT WITH CALCULATED I(XK) BY USING KC'S FOR ASSUMED          
+254ES4CG MULTIPOLARITIES, COMBINATION OF OTHER MULTIPOLARITIES ARE NOT          
+254ES5CG EXCLUDED. THE MULTIPOLARITIES SHOWN HERE ARE NOT ADOPTED.              
+254ES CL E(Q)      EXISTENCE OF THIS LEVEL IS QUESTIONABLE. SEE ADOPTED LEVELS  
+254ES2CL FOR A COMMENT.                                                         
+254ES CL J$ADOPTED VALUES. ASSIGNMENTS OF 1993MO18 are GIVEN AS COMMENTS.       
+254ES CA E         MEASUREMENTS OF 1993MO18. EARLIER MEASUREMENTS: 1968HU06,    
+254ES2CA 1970FI12, 1980HO04                                                     
+254ES CA IA        RELATIVE ALPHA INTENSITIES, MEASURED BY 1993MO18. IA'S       
+254ES2CA HAVE BEEN NORMALIZED HERE SUCH THAT THE SUM OF IA'S IS 100,            
+254ES3CA EXCLUDING THOSE FOR EA GE 6800 WHERE ONLY UPPER LIMITS WERE GIVEN.     
+254ES CA IA(W)     SINCE CONTRIBUTIONS FROM CONVERSION-ELECTRON SUMMING COULD   
+254ES2CA NOT BE ESTIMATED FOR THESE ALPHA'S, ONLY UPPER LIMITS WERE GIVEN BY    
+254ES3CA 1993MO18                                                               
+254ES CA HF        R0(254ES)=1.49 1 IS USED IN CALCULATIONS                     
+254ES  G 56.7      2 5.4     13                                                 
+254ES  L 0.0          (7+)                                                      
+254ES  A 7159      2 0.20    LE 5.4E+4 GE                                   W   
+254ES  L 80.1      2  (8+)                                                      
+254ES CL J         1993MO18 ASSIGNED THIS LEVEL TO BE 8+ MEMBER OF GS           
+254ES2CL ROTATIONAL BAND. THE LARGE LOWER LIMIT FOR HF IS CONSISTENT WITH       
+254ES3CL THIS ASSIGNMENT; HOWEVER, OTHER PROBABILITIES ARE NOT EXCLUDED.        
+254ES  A 7080      2 0.20    LE 2.6E+4 GE                                   W   
+254ES  G 80.1      2 24.3    23 [M1+E2]                45     25                
+254ESS G LC=32 18 $ MC=9.0 54 $ NC+=3.6 22 $                                    
+254ES  L 171.1     2 (9+)                                                       
+254ES CL J         1993MO18 ASSIGNED THIS LEVEL TO BE THE 9+ MEMBER OF GS       
+254ES2CL ROTATIONAL BAND. THE CALCULATED LARGE LOWER LIMIT FOR HF IS CONSISTENT 
+254ES3CL WITH THIS ASSIGNMENT.                                                  
+254ES  A 6990      2 0.20    LE 1.1E+4 GE                                   W   
+254ES  G 91.0      3 3.0     18 [M1+E2]                26     13                
+254ESS G LC=19 9 $ MC=5.2 27 $ NC+=2.1 11 $                                     
+254ES  G 171.1     2 11      4  [E2]                   2.36                     
+254ESS G KC=0.1517 $ LC=1.582 $ MC=0.4507 $ NC+=0.1801 $                        
+254ES  L 214.7     2                                                        Q   
+254ES CL J$6-                                                                   
+254ES  G 214.7     2 12      5  [E1]                   0.0976                   
+254ESS G KC=0.0745 $ LC=0.01726 $ MC=0.00425 $ NC+=0.00158 $                    
+254ES CG           SEE A COMMENT ON 189.1G ABOUT PLACEMENT OF THIS TRANSITION.  
+254ES  L 289.9     3                                                            
+254ES CL J$7-                                                                   
+254ES  L 376.8     2                                                            
+254ES CL J$8-                                                                   
+254ES  A 6788      2 9.9     10 28     10                                       
+254ES  G 86.9      2 5.6     15 [M1+E2]                32     16                
+254ESS G LC=23 12 $ MC=6.3 35 $ NC+=2.5 14 $                                    
+254ES CG           SINCE OBSERVATION OF THE 289.9-KEV LEVEL IS TENTATIVE,       
+254ES2CG PLACEMENT OF THIS TRANSITION IS CONSIDERED QUESTIONABLE BY THE         
+254ES3CG EVALUATOR, AND IS NOT SHOWN IN ADOPTED LEVELS.                         
+254ES  G 205.7     2 12      4  [E1]                   0.1075                   
+254ESS G KC=0.0819 $ LC=0.01913 $ MC=0.004713 $ NC+=0.001756 $                  
+254ES  G 296.7     2 54      9 [E1]                    0.0485                   
+254ESS G KC=0.03759 $ LC=0.00812 $ MC=0.001998 $ NC+=0.000745 $                 
+254ES  G 376.8     4 17      7  [E1]                   0.0296                   
+254ESS G KC=0.02316 $ LC=0.004801 $ MC=0.001177 $ NC+=0.000439 $                
+254ES  L 402       5                                                            
+254ES CL J$(7-,8-)                                                              
+254ES  A 6763      4 20.8    12 10.4   8                                        
+254ES  G 189.1     2 10      4  [M1,E2]                4.5    29                
+254ESS G KC=2.9 28 $ LC=1.13 11 $ MC=0.298 7 $ NC+=0.1175 11 $                  
+254ES CG           PLACEMENT OF THIS TRANSITION WAS BASED ON ENERGY SUM OF      
+254ES2CG 189.1+214.7 GAMMAS. THE 402-KEV LEVEL IS ESTABLISHED BY ALPHA DECAY    
+254ES3CG TO THIS LEVEL. HOWEVER, THE PROPOSED PLACEMENTS OF THESE TWO GAMMA     
+254ES4CG ARE CONSIDERED TENTATIVE, AND THEY ARE NOT SHOWN IN THE ADOPTED        
+254ES5CG LEVELS, GAMMAS SECTION.                                                
+254ES  L 447.9     1 (8-)                                                       
+254ES  A 6718      2 65.8    13 2.1    1                                        
+254ES  G 71.1      1 80      5 [M1,E2]                 76     48                
+254ESS G LC=54 34 $ MC=15 10 $ NC+=6 4                                          
+254ES  G 276.8     1 202     19 [E1]                   0.0561                   
+254ESS G KC=0.0434 $ LC=0.00951 $ MC=0.00234 $ NC+=0.000872 $                   
+254ES  G 367.8     1 1.00E+3 7  [E1]                   0.0311                   
+254ESS G KC=0.0243 $ LC=0.00506 $ MC=0.00310 $ NC+=0.000463 $                   
+254ES  G 447.9     1 3.7E+2  4  [E1]                   0.0210                   
+254ESS G KC=0.0165 $ LC=0.00334 $ MC=0.000815 $ NC+=0.000305 $                  
+254ES  L 469.2     2                                                            
+254ES CL J$9-                                                                   
+254ES  A 6697      2 3.4     14 32     14                                       
+254ES  G 298.1     3 19      6  [E1]                   0.0480                   
+254ESS G KC=0.0372 $ LC=0.00803 $ MC=0.00198 $ NC+=0.000737 $                   
+254ES  G 389.1     2 40      9  [E1]                   0.0277                   
+254ESS G KC=0.0217 $ LC=0.00448 $ MC=0.00110 $ NC+=0.000410 $                   
+                                                                                
+254FM    ADOPTED LEVELS, GAMMAS                                  05NDS    200511
+254FM  H TYP=ERR$AUT=B. Singh$DAT=22-SEP-2013$COM=Added RI for some single G's$ 
+254FM  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254FM2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254FM  XA254ES B- DECAY (275.7 D)                                               
+254FM  XB254ES B- DECAY (39.3 H)                                                
+254FM  Q -2.55E3   SY6516    4 5399    3 7307.5  19    2012WA38                 
+254FM CQ Note: Current evaluation has used the following Q record               
+254FM  Q -2610     SY 6517   4  5398.5 29 7307.5 19    2003AU03                 
+254FM PN                                                                     6  
+254FM c                                                                         
+254FM c  Theoretical studies:                                                   
+254FM c  The 2+ |g-vibrational state's energy, contributions of proton and      
+254FM2c  neutron states to its wave function, and B(E2) values for gammas       
+254FM c  Deexciting the state were calculated by 1965Be40.                      
+254FM c  Energies of 0+, 0-, 1-, 2- collective states, and B(EL) reduced        
+254FM2c  transition probabilities for deexciting gammas were calculated by      
+254FM3c  1965So04.                                                              
+254FM c  Energies of two-quasiparticle proton, two-quasiparticle neutron, and   
+254FM2c  single-phonon states, and B(EL) values for gammas deexciting single-   
+254FM3c  phonon states were calculated by 1976Iv04. See also 1973Iv01.          
+254FM c  Energies of K=0-, 1-, 2-, 3- octupole states and their rotational      
+254FM2c  band members, and B(E3; 0+ to 3-) values were calculated by 1970Ne08.  
+254FM c                                                                         
+254FM c  Total potential energies were calculated as functions of deformations  
+254FM2c  by 1969Pa08.                                                           
+254FM c  For calculations of equilibrium deformations, see 1983Bo15.            
+254FM c                                                                         
+254FM c  For calculations of fission barrier and/or ground-state SF half-lives, 
+254FM2c  see, 1971Sc03, 1976Iw02, 1976Ra02, 1978Po09, 1980Lo12,                 
+254FM3c  1983Bo15, 1983Cw01, 1985Lo17, 1985St22, 1987Mo16, 1988Hu13, 1989Cw01,  
+254FM4c  1989St20, 1992Bh03, 1996Lo08, 2002Wa22, 2004Ba17, 2004Bo34.            
+254FM c  For calculations of T{-1/2}(|a), see 1979Po23, 1997Mo25.               
+254FM c  For RMF calculation of ground-state properties, see 2005La04.          
+254FM c  See 1988Sa35 for calculations of partial half-life for Sn emission.    
+254FM c                                                                         
+254FM c  For calculations of fission fragment kinetic energy distributions,     
+254FM2c  see 1995Ba47, 1995Ef04.                                                
+254FM c                                                                         
+254FM CL BAND(A)   GROUND-STATE BAND                                            
+254FM CL BAND(B)   K=2+ BAND                                                    
+254FM cG E,M       From 39.3-h {+254}Es |b{+-} decay                            
+254FM cG RI        Relative photon intensities deexciting each level,           
+254FM2cG measured in 39.3-h {+254}Es |b{+-} decay.                              
+254FM cL J$From band assignments, unless given explicitly.                      
+254FM  L 0.0          0+               3.240 H   2                          A   
+254FMX L XREF=B                                                                 
+254FM2 L %A=99.9408 3 $ %SF=0.0592 3 $                                          
+254FM cL           %|a/%SF=1689 {I8}, weighted                                  
+254FM2cL average of 1695 {I8} and 1664 {I17}, measured by 1967Fi03. Other       
+254FM3cL measurements: 1956Jo09.                                                
+254FM cL T         measurement by 1967Fi03. Earlier measurements:               
+254FM2cL 3.2 h (1954Ch23), 3.24 h {I1} (1956Jo09).                              
+254FM  L 45.000    15 2+                                                    A   
+254FMX L XREF=B                                                                 
+254FM  G 45.000    15 100       [E2]                    1190                    
+254FM  L 149.350   22 4+                                                    A   
+254FMX L XREF=B                                                                 
+254FM  G 104.350   15  100      E2                      22.4                    
+254FM  L 693.67    7  2+                                                    B   
+254FMX L XREF=B                                                                 
+254FM cL J         693.67|g to 0+ g.s. is E2.                                   
+254FM  G 544.28    10 3.1    3  E2                      0.0619                  
+254FM  G 648.69    7  100    7  E2(+M1)                 0.042                   
+254FM  G 693.67    7  86     6  E2                      0.036                   
+254FM  L 733.65    5 (3)+                                                   B   
+254FMX L XREF=B                                                                 
+254FM cL J         E2 transitions to 2+ and 4+. |b feeding from 2+ {+254}Es     
+254FM2cL rules out 4+, and no |g to 0+ g.s. suggests J|p|=2+.                   
+254FM  G 39.85     11                                                          S
+254FM  G 584.18    10 23.2   16 E2(+M1)                 0.053                   
+254FM  G 688.68    2  100    8  E2(+M1)                 0.037                   
+                                                                                
+254FM    254ES B- DECAY (275.7 D)                                05NDS    200511
+254FM  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254FM2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254ES  P 0.0         (7+)              275.7 D   5              1088      4     
+254FM  N                       1.74E-6 8                                        
+254FM C                                                                         
+254FM C  THE B- DECAY SCHEME OF 254ES HAS NOT BEEN STUDIED. THIS DECAY MODE     
+254FM2C  AND THE BETA BRANCHING OF 1.74E-4% FOR 275.7-D 254ES WAS DEDUCED BY    
+254FM3C  1985OK04 FROM THEIR OBSERVATION OF 7.19-MEV 254FM ALPHA.               
+                                                                                
+254FM    254ES B- DECAY (39.3 H)       1973AH04                  05NDS    200511
+254FM  H TYP=ERR$AUT=J. Tuli$DAT=11-Jul-2014$COM=corrected NR to agree with PN$ 
+254FM  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254FM2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254FM C  1973AH04: Measured A, G, X, AG, ACE; s, Au-Si surface-barrier          
+254FM2C  detectors, GELI                                                        
+254FM C  1962UN01: Measured B-, CE, G, X; s, scin                               
+254ES  P 84.2      252+                39.3 H    2              1088      4     
+254FM  N 1.02                  0.98    2 1.0                                    
+254FM PN 1.0                             1.0                                 3  
+254FM C                                                                         
+254FM TG           X-RAYS (Fm):                                                 
+254FM TG                                                                        
+254FM2TG                                 I(X-RAY)                               
+254FM3TG          E(X-RAY)       PER 100 39-H 254ES B- DECAYS                   
+254FM4TG          1973AH04               1973AH04                               
+254FM5TG         ----------      ----------------------------                   
+254FM6TG         115.280 15              0.51 5            XKA2                 
+254FM7TG         121.065 15              0.77 7            XKA1                 
+254FM8TG         135.18 4                                  XKB3                 
+254FM9TG                                 0.33 4            I(XKB3+XKB1)         
+254FM2TG         136.55 4                                  XKB1                 
+254FM3TG         140.49 4                                  XKB2+XKB4            
+254FM4TG                                 0.110 15          I(XKB2+XKB4+O x-rays)
+254FM5TG         141.72 5                                                       
+254FM6TG                                                                        
+254FM8TG  OTHER MEASUREMENTS:                                                   
+254FM9TG                                                                        
+254FM2TG        I(L X-RAYS):I(K X-RAYS):I(651G)=90 15:6 1:100 (1962UN01).       
+254FM3TG                                                                        
+254FM CG           THE MEASURED TOTAL INTENSITY OF I(XK)=1.72 10 IS IN          
+254FM2CG GOOD AGREEMENT WITH THE TOTAL I(XK)=1.73 7, CALCULATED BY THE          
+254FM3CG THE EVALUATOR FROM RI'S AND KC'S                                       
+254FM CG           PRECISE ATOMIC-ELECTRON BINDING ENERGIES IN FERMIUM WERE     
+254FM2CG MEASURED BY 1971PO20.                                                  
+254FM CG           (B-)(G), (G)(G) COINCIDENCE DATA WERE TAKEN BY 1962UN01.     
+254FM CG                                                                        
+254FM CG E         MEASUREMENTS BY 1973AH04. OTHERS: 1962UN01, 1963HO07         
+254FM CG RI        PER 100 B- DECAYS, OBTAINED BY 1973AH04 FROM ALPHA-COUNT     
+254FM2CG RATE OF 254FM WHICH WAS IN EQUILIBRIUM WITH 39-H 254ES.                
+254FM CG M         MULTIPOLARITIES ARE FROM CE DATA OF 1962UN01.                
+254FM2CG THE INTENSITIES OF 1962UN01 QUOTED HERE ARE PER 100 BETA DECAYS (THEY  
+254FM3CG WERE MEASURED RELATIVE TO THE TOTAL BETA SPECTRUM). OTHER              
+254FM4CG MEASUREMENTS: 1963HO07.                                                
+254FM  L 0.0          0+               3.240 H   2                              
+254FM  L 45.000    15 2+                                                        
+254FM  B 1127      2 27      3           8.4     2                              
+254FMS B EAV=358.8 17                                                           
+254FM CB E         MEASURED BY 1962UN01 (KURIE PLOT). THE SHAPE OF THE BETA     
+254FM2CB SPECTRUM SHOWED THAT ANY CONTRIBUTION FROM A L=2 COMPONENT WAS         
+254FM3CB INSIGNIFICANT. ANY POSSIBLE SECOND-FORBIDDEN BETA BRANCH TO THE 0+     
+254FM4CB GS IS ASSUMED NEGLIGIBLE.                                              
+254FM CB IB        IB(TO 45.00 LEVEL)=27 3 PER 100 B- DECAYS, DEDUCED FROM      
+254FM2CB IB(TO 693.67 LEVEL)+IB(TO 733.52 LEVEL)=73 3, MAY INCLUDE SOME IB TO   
+254FM3CB THE GROUND STATE. THE INTENSITY BALANCE OF -0.1 21 AT THE 149.35 LEVEL 
+254FM4CB INDICATE NO BETA FEEDING TO THAT LEVEL. SEE A COMMENT ON I(45.00G)     
+254FM5CB BECAUSE OF THE INTENSITY IMBALANCE AT THE GS                           
+254FM  G 45.000    15 0.049  5 [E2]                    1190                     
+254FMS G LC=860.3 $ MC=247.4                                                    
+254FM CG           THE INTENSITY IMBALANCE AT THE GS STATE, ASSUMING NO BETA    
+254FM2CG FEEDING TO IT, IMPLIES THAT RI(45.000G) MAY HAVE BEEN UNDER ESTIMATED, 
+254FM3CG AND SUGGESTS RI(45.000G)=0.062 15. THIS INTENSITY YIELDS               
+254FM4CG IB(TO 45.00 LEVEL)=31 3 WHICH IS IN GOOD AGREEMENT WITH THE IB         
+254FM5CG DEDUCED FROM THE BETA BRANCHES TO THE HIGHER LEVELS.                   
+254FM  L 149.350   22 4+                                                        
+254FM  G 104.350   15 0.180  17 E2                     22.4                     
+254FMS G LC=15.9 $ MC=4.58 $ NC+=1.86                                           
+254FM CG           ICE(L):ICE(M+N+O)=3.0 4 :1.0 2 (1962UN01).                   
+254FM  L 693.67    7  2+                                                        
+254FM  B             73      3                                                  
+254FMS B EAV=135.7 15                                                           
+254FM CB           IB(TO 693.67 LEVEL)+IB(TO 733.52 LEVEL)=73 3 PER 100         
+254FM2CB B- DECAY, DEDUCED FROM SUM OF TRANSITION INTENSITIES OF GAMMAS         
+254FM3CB DECAYING FROM THESE TWO LEVELS TO THE GS BAND.                         
+254FM CB           IB(TO 693.67 LEVEL)=57 3-TI(39.85G); THEREFORE,              
+254FM2CB 54<IB<76, AND 6.7<LOGFT<6.9.                                           
+254FM  G 544.28    10 0.90   8  E2                     0.0619                   
+254FMS G KC=0.0342 $ LC=0.0208                                                  
+254FM CG           ICE(K)=0.027 8 (1962UN01).                                   
+254FM  G 648.69    7  29     2  E2(+M1)                 0.042                   
+254FMS G KC=0.0257 $ LC=0.0123 $ MC+=0.004                                      
+254FM CG           ICE(K):ICE(L):ICE(M+N+O)=0.78 2:0.37 3:0.13 4 (1962UN01).    
+254FM  G 693.67    7  24.8   17 E2                     0.036                    
+254FMS G KC=0.02304 $ LC=0.01012                                                
+254FM CG           ICE(K):ICE(L):ICE(M+N+O)=0.83 3:0.38 4:0.15 4 (1962UN01).    
+254FM  L 733.65    5 (3)+                                                       
+254FM  B                                                                        
+254FMS B EAV=123.2 14                                                           
+254FM CB           IB(TO 733.52 LEVEL)=16.1 11+TI(39.85G); THEREFORE,           
+254FM2CB 15<IB<76, AND 6.6<LOGFT<7.3.                                           
+254FM  G 39.85     11                                                          S
+254FM CG           TRANSITION HAS NOT BEEN OBSERVED. EG IS FROM LEVEL SCHEME.   
+254FM  G 584.18    10 2.9    2  E2(+M1)                0.053                    
+254FMS G KC=0.0305 $ LC=0.0167                                                  
+254FM CG           ICE(K)=0.123 13 (1962UN01).                                  
+254FM  G 688.52    7  12.5   9  E2(+M1)                0.037                    
+254FMS G KC=0.0233 $ LC=0.0103                                                  
+254FM CG           ICE(K)=0.11 4 (1962UN01).                                    
+                                                                                
+254MD    ADOPTED LEVELS                                          05NDS    200511
+254MD  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254MD2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254MD  XA258LR A DECAY                                                          
+254MD  Q -1.27E3   SY5.79E3  SY3.18E3  SY7.80E3  SY    2012WA38                 
+254MD CQ Note: Current evaluation has used the following Q record               
+254MD  Q -1210     SY 5860   SY 3120   SY 7860   SY    2003AU03                 
+254MD C                                                                         
+254MD C  ASSIGNMENT: 253ES(46-MEV 4HE,3N); CHEMISTRY, PARENT OF 254FM (1970FI12)
+254MD C                                                                         
+254MD C  THEORETICAL STUDIES:                                                   
+254MD C  FOR FISSION BARRIER CALCULATIONS, SEE 1985CW01.                        
+254MD C  FOR SPONTANEOUS FISSION HALF-LIFE CALCULATIONS, SEE 1985LO17.          
+254MD C  DECAY BY 48CA EMISSION WAS STUDIED, AND ITS PARTIAL HALF-LIFE AND      
+254MD2C  48CA/ALPHA BRANCHING RATIO WERE CALCULATED BY 1985PO11, 1986PO15.      
+254MD C  PARTIAL HALF-LIFE OF GS FOR A DECAY WAS CALCULATED BY 1997MO25 AS      
+254MD2C  28.3 M.                                                                
+254MD C  RMF CALCULATION OF BINDING ENERGIES, BETA, ALPHA DECAY Q VALUES ALSO   
+254MD2C  THE CALCULATION OF ALPHA DECAY HALF-LIVES 2002RE35                     
+254MD C                                                                         
+254MD CL           FOR THE GS CONFIGURATION, ANALOGY TO 255MD AND TO 257MD      
+254MD2CL SUGGESTS PI 7/2[514] ORBITAL FOR THE 101TH PROTON AND ANALOGY TO 251CF 
+254MD3CL AND TO 249CM SUGGESTS NU 1/2[620] ORBITAL FOR THE 153RD NEUTRON.       
+254MD4CL ENERGIES OF THE PI 1/2[521] AND THE { NU 7/2[613] } NILSSON STATES     
+254MD5CL SHOULD BE LOW. COMBINATIONS OF THESE QUASIPARTICLE STATES SUGGESTS THE 
+254MD6CL FOLLOWING POSSIBLE CONFIGURATIONS FOR THE GS AND LOW-ENERGY STATES:    
+254MD3TL 3-,(PI 7/2[514],NU 1/2[620]), 4-,(PI 7/2[514],NU 1/2[620]),            
+254MD4TL 3-,(PI 1/2[521],NU 7/2[613]), 4-,(PI 1/2[521],NU 7/2[613]),            
+254MD5TL 0-,(PI 7/2[514],NU 7/2[613]), 7-,(PI 7/2[514],NU 7/2[613]),            
+254MD6TL 0-,(PI 1/2[521],NU 1/2[620]), 1-,(PI 1/2[521],NU 1/2[620]).            
+254MD7TL                                                                        
+254MD CL E         EXCITED LEVEL ENERGIES ARE FROM 258LR A DECAY. THESE LEVELS  
+254MD2CL SHOULD NOT BE CONSIDERED WELL ESTABLISHED. SEE COMMENTS WITH THE       
+254MD3CL 258LR A DECAY DATA.                                                    
+254MD  L 0.0+X                         10 M      3                           M1 
+254MD2 L %EC LE 100                                                             
+254MD CL           NO ALPHAS ASSOCIATED WITH 254MD DECAY COULD BE IDENTIFIED    
+254MD2CL BY 1970FI12. THE AUTHORS POINTED OUT THAT 254FM AND 256MD ISOTOPES     
+254MD3CL WERE ALSO PRESENT IN THE SOURCE, AND ANY ALPHAS FROM 254MD WOULD BE    
+254MD4CL INDISTINGUISHABLE SINCE THEY WOULD FALL IN THE ENERGY REGION           
+254MD5CL OF MAIN ALPHAS FROM 254FM AND 256MD DECAYS.                            
+254MD CL T         MEASURED BY 1970FI12 FROM THE GROWTH OF 254FM. THE FERMIUM   
+254MD2CL FRACTION WAS MILKED IMMEDIATELY AFTER THE IRRADIATION.                 
+254MD  L 0.0+Y                         28 M      8                           M2 
+254MD CL T         DETERMINED BY 1970FI12 FROM RELATIVE ABUNDANCES OF 254FM AND 
+254MD2CL 255FM IN SUCCESSIVE MILKING FOLLOWING 1-HOUR IRRADIATIONS AND          
+254MD3CL CHEMICAL PURIFICATIONS OF RECOIL ATOMS. THE HALF-LIFE WAS DERIVED      
+254MD4CL RELATIVE TO 255MD HALF-LIFE; T1/2(255MD)=27 M 2 WAS MEASURED BY        
+254MD5CL THE AUTHORS.                                                           
+254MD2 L %EC LE 100                                                             
+254MD CL           NO ALPHAS FROM THIS STATE COULD BE IDENTIFIED (1970FI12).    
+254MD  L 83        30                                                           
+254MDX L XREF=A                                                                 
+254MD  L 114       30                                                           
+254MDX L XREF=A                                                                 
+254MD  L 144       30                                                           
+254MDX L XREF=A                                                                 
+254MD  L 175       30                                                           
+254MDX L XREF=A                                                                 
+                                                                                
+254MD    258LR A DECAY                                           05NDS    200511
+254MD  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254MD2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+258LR  P 0.0                           4.1 S     3              8900      20    
+254MD  N                       0.95    GT                                       
+254MD C                                                                         
+254MD C  THE 258LR SOURCE WAS PRODUCED BY 1971ES01 IN 15N BOMBARDMENTS OF       
+254MD2C  249CF AND 248CM TARGETS, AND 12C, 13C BOMBARDMENTS OF 249CF TARGET;    
+254MD3C  THE AUTHORS USED 11B AND 10B BEAMS ON 249CF TARGET.                    
+254MD C                                                                         
+254MD C  THE CALCULATED ALPHA HINDRANCE FACTORS FOR BOTH SETS OF EA AND         
+254MD2C  IA'S, MEASURED BY TWO DIFFERENT GROUPS, AS WELL AS THE LEVEL SPACINGS  
+254MD3C  INDICATE SOME ABNORMALITIES, PERHAPS, THE POSSIBLE EXISTENCE OF SOME   
+254MD4C  IMPURITIES IN THEIR SOURCES.                                           
+254MD C                                                                         
+254MD CA E         ALPHA ENERGIES MEASURED BY 1971ES01 AND 1976BEZY DIFFER BY   
+254MD2CA 30-50 KEV. THE PUBLISHED DATA OF 1971ES01 ARE LISTED HERE, AND         
+254MD3CA THOSE OF 1976BEZY ARE QUOTED FOR COMPARISON.                           
+254MD CA E         THE ORIGINAL ENERGIES HAVE NOT BEEN ADJUSTED FOR CHANGES IN  
+254MD2CA CALIBRATION ENERGIES, AS THE CHANGES WOULD BE WELL WITHIN THE          
+254MD3CA UNCERTAINTIES FOR EA'S:                                                
+254MD4CA EA(213FR)=6773, EA(211PO)=7443 AND EA(253ES)=6640 WERE USED BY         
+254MD5CA 1971ES01, AND EA(244CM)=5804.9, EA(243AM)=5274.8 AND EA(249CF)=5813.5  
+254MD6CA WERE USED BY 1976BEZY FOR ENERGY CALIBRATION. 1991RY01 RECOMMENDS      
+254MD7CA EA(244CM)=5804.77 5, EA(243AM)=5275.3 10, EA(249CF)=5812.8 16;         
+254MD8CA EA(213FR)=6775 2, EA(211PO)=7449.3 13, EA(253ES)=6632.51 5 HAVE        
+254MD9CA BEEN ADOPTED IN THE NUCLEAR DATA SHEETS.                               
+254MD CA IA        ALPHA INTENSITY PER 100 A DECAYS. IA'S OF 1971ES01 AND       
+254MD2CA 1976BEZY ARE NOT IN PERFECT AGREEMENT. IA'S MEASURED BY 1971ES01       
+254MD3CA ARE LISTED; IA'S MEASURED BY 1976BEZY ARE ALSO QUOTED.                 
+254MD CA HF        R0(254MD)=1.48 1, DEDUCED FROM R0 SYSTEMATICS GIVEN IN       
+254MD2CA 1998AK04, IS USED IN CALCULATIONS. THE CALCULATED HF'S AND THE         
+254MD3CA LEVEL SPACINGS ARE QUITE DIFFERENT FROM THAT FOR THE NORMAL BEHAVIOR   
+254MD4CA IN THIS REGION. THEY MAY INDICATE PERHAPS SOME IMPURITY IN THE SOURCE, 
+254MD5CA OR THAT THE DEDUCED PARTIAL A-DECAY HALF-LIVES ARE NOT CORRECT.        
+254MD CL E         CALCULATED FROM EA'S OF 1971ES01 AND QA(258LR)=8900 20,      
+254MD2CL RECOMMENDED BY 2003AU03.                                               
+254MD  L 83        30                                                           
+254MD CL           IF EA=8648 10 (1976BEZY) IS USED, QA=8900 20 GIVES           
+254MD2CL E(LEVEL)=116 23.                                                       
+254MD  A 8680      20 7      2 4.7     AP                                       
+254MD CA           EA=8648 10 AND IA=10 2 WERE MEASURED BY 1976BEZY. WHEN       
+254MD2CA THESE MEASUREMENTS ARE USED, HF AP 2.6.                                
+254MD  L 114       30                                                           
+254MD CL           IF EA=8614 10 (1976BEZY), THEN E(LEVEL)=150 23.              
+254MD  A 8650      20 16     3 1.7     AP                                       
+254MD CA           EA=8614 10 AND IA=35 5 WERE MEASURED BY 1976BEZY. WHEN       
+254MD2CA THESE MEASUREMENTS ARE USED, HF AP 0.6.                                
+254MD  L 144       30                                                           
+254MD CL           IF EA=8589 10 (1976BEZY), THEN E(LEVEL)=176 23.              
+254MD  A 8620      20 47     3 0.5     AP                                       
+254MD CA           EA=8589 10 AND IA=45 7 WERE MEASURED BY 1976BEZY. WHEN       
+254MD2CA THESE MEASUREMENTS ARE USED, HF AP 0.4.                                
+254MD  L 175       30                                                           
+254MD CL           IF EA=8540 20 (1976BEZY), THEN E(LEVEL)=226 30.              
+254MD  A 8590      20 30     4 0.6     AP                                       
+254MD CA           EA=8540 20 AND IA=10 5 WERE MEASURED BY 1976BEZY. WHEN       
+254MD2CA THESE MEASUREMENTS ARE USED, HF AP 1.2.                                
+                                                                                
+254NO    ADOPTED LEVELS, GAMMAS                                  05NDS    200511
+254NO  H TYP=ERR$AUT=B. Singh$DAT=22-SEP-2013$COM=Added RI for some single G's$ 
+254NO  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254NO2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254NO  XA258RF A DECAY                                                          
+254NO  XB208PB(48CA,2NG)                                                        
+254NO  Q -5.1E3    SY7707    133.74E3  SY8226    9     2012WA38                 
+254NO CQ Note: Current evaluation has used the following Q record               
+254NO  Q -5120     SY 7810   SY 3870   SY 8226   13    2003AU03                 
+254NO c                                                                         
+254NO t  Assignment:                                                            
+254NO2t             {+238}U({+22}Ne,6n); excitation                         1966
+254NO+t  Do04                                                                   
+254NO3t             {+243}Am({+15}N,4n); parent of {+250}Fm                     
+254NO+t  1966Za04                                                               
+254NO4t             {+246}Cm({+12}C,4n); excitation                         1967
+254NO+t  Gh01                                                                   
+254NO5t             {+242}Pu({+16}O,4n); excitation                         1967
+254NO+t  Mi03                                                                   
+254NO6t                    parent of {+250}Fm; chemistry        1958Gh40,1966Do0
+254NO+t  4                                                                      
+254NO7t             {+208}Pb({+48}Ca,2n); chemistry; grandparent of {+246}Cf    
+254NO+t  1988Tu07                                                               
+254NO8t                             measured a/Q, <A>                2004Ma01   
+254NO8t                                                                         
+254NO c  Theoretical studies:                                                   
+254NO c  For calculation of fission barrier, see, 1973Ba19,1983Cw01,            
+254NO2c  1990PaZT, 1992Bh03, 2004Bo34.                                          
+254NO c  For theoretical calculation of SF half-life, see 1976Ra02, 1978Po09,   
+254NO2c  1983Bo15, 1986Ba43, 1987Mo16, 1989St20, 1990PaZT, 1992Bh03, 2005Xu01.  
+254NO c  For theoretical calculation of partial half-life for |a decay, see     
+254NO2c  1976Ra02, 1979Po23, 1997Mo25, 2003Wu06.                                
+254NO c  For calculation of deformation parameters, see, 1983Bo15, 2005La04,    
+254NO2c  2003Af02.                                                              
+254NO c  Theoretical energies of K|p=0+ and 2+ vibrational states and B(E2)     
+254NO2c  values for deexciting |g transitions, energies of K|p=0-,1-,2-         
+254NO3c  octupole-vibrational states and B(E3) values for the deexciting |g     
+254NO4c  transitions were calculated by 1973Iv01 and 1976Iv04. See 1976Iv04     
+254NO2c  for calculated structures of single-phonon states.                     
+254NO c  See 1976Iv04 and 1991So15 for calculations of two-quasiparticle        
+254NO2c  states' energies.                                                      
+254NO c  For calculation of rotational bands moments of inertia, see 2003Be41.  
+254NO cG           All data from {+208}Pb({+48}Ca,2n|g).                        
+254NO CL BAND(A)   GS ROTATIONAL BAND.                                          
+254NO2cL The ENERGy of 2+ state was                                             
+254NO3cL estimated by 1999Le42 from the rotational band formula.                
+254NO  L 0.0          0+               51 S      10                         A   
+254NOX L XREF=B                                                                 
+254NO cL T         the measured half-lives are 50 s {I10} (1966Do04),           
+254NO2cL 52 s {I5} (1967Gh01; the original T{-1/2} of 55 s {I5}, measured       
+254NO3cL relative to T{-1/2}({+214}Ra)=2.6 s, was corrected by 1999Le42 for     
+254NO4cL {+214}Ra half-life), 75 s {I15} (1967Mi03), 68 s {I+36-18} (1985He22), 
+254NO5cL 53 s {I+46-24} (1988Tu07), 54 s {I+8-6} (1989La07), 53 s {I20}         
+254NO6cL (1994Hu18), 48 s {I3} (1999Le42). T{-1/2}=51 s {I10}, unweighted       
+254NO7cL average of these results, excluding the large values (75 s {I15} and   
+254NO8cL 68 s {I+36-18}), is adopted with an increased uncertainty because of   
+254NOxcL the dispersion of the measured values.                                 
+254NO2 L %A=90 4$ %EC=10 4$ %SF=0.17 5                                          
+254NO cL           |a, |b and fission branchings were deduced by 1988Tu07       
+254NO2cL as %|a=90 {I4}, %|e=10 {I4}, %SF=0.25 {I+20-11} from |a and fission    
+254NO3cL activities of {+254}No, |a activities of {+254}Fm and {+246}Cf.        
+254NO cL           %SF=0.17 {I5} was deduced by 1989La07 by comparing g.s. SF   
+254NO2cL activity yield with |a activity yields for {+246}Cf and {+242}Cm.      
+254NO cL           %SF=0.17 {I2} was obtained by 1994Hu18 from the ratio of     
+254NO2cL |a and SF events.                                                      
+254NO cL           Earlier measurements: T{-1/2}(SF)>25 h was estimated by      
+254NO2cL 1966Fl04; %|e|?10 was deduced by 1979Or02.                             
+254NO  L       44.210 2+                                                    A  S
+254NOX L XREF=B                                                                 
+254NO  G 44.2      4  100       [E2]                   1530   70               S
+254NO cG E         from level energy. This transition has not been observed.    
+254NO  L      145.312 4+                                                    A   
+254NOX L XREF=B                                                                 
+254NO  G 101.1     6  100      E2                       30                      
+254NO  L      304.212 6+                                                    A   
+254NOX L XREF=B                                                                 
+254NO  G 158.9     3  100      E2                       3.79                    
+254NO  L      518.313 8+                                                    A   
+254NOX L XREF=B                                                                 
+254NO  G 214.1     3  100      E2                       1.15                    
+254NO  L      785.513 10+                                                   A   
+254NOX L XREF=B                                                                 
+254NO  G 267.2     3  100      E2                       0.517                   
+254NO  L     1103.714(12+)                                                  A   
+254NOX L XREF=B                                                                 
+254NO  G 318.2     3  100      [E2]                     0.291                   
+254NO  L     1470.214(14+)                                                  A   
+254NOX L XREF=B                                                                 
+254NO  G 366.5     3  100      [E2]                     0.191                   
+254NO  L     1884.217(16+)                                                  A   
+254NOX L XREF=B                                                                 
+254NO  G 414.0     10 100      [E2]                     0.136                   
+254NO  L     2340.220(18+)                                                  A   
+254NOX L XREF=B                                                                 
+254NO  G   456                 [E2]                                             
+254NO  L   2839      (20+)                                                  A  ?
+254NOX L XREF=B                                                                 
+254NO  G   498                 [E2]                                            ?
+254NO  L 0+X                           0.28 S    4                           M1 
+254NO DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
+254NO cL           Assignment: parent of {+254}No g.s. (8.10-MeV |a),           
+254NO2cL and grandparent of {+250}Fm (7.44-MeV |a) (1973Gh03)                   
+254NO cL           Produced in {+249}Cf({+12}C), {+246}Cm({+12}C,4n) reactions  
+254NOxcL (1973Gh03).                                                            
+254NO2 L %IT>80                                                                 
+254NO cL           The IT decay mode was inferred from the growth of {+254}No   
+254NO2cL g.s. No |g transitions deexciting the level have been observed.        
+254NO cL           No |a emission or SF could be attributed to the 0.28-s       
+254NO2cL isomeric state, and an upper limit of 20% was set by 1973Gh03.         
+254NO3cL No SF decay was detected also by 1988Tu07.                             
+254NO cL           An upper limit for T{-1/2}(SF) was obtained by 1989La07 as   
+254NO2cL T{-1/2}(SF; isomeric state)/T{-1/2}(SF; g.s.)|>0.005, if the isomeric  
+254NO3cL ratio in their {+208}Pb({+48}Ca,2n) experiment could be assumed to be  
+254NO4cL the same as that measured by 1973Gh03 in {+246}Cm({+12}C,4n) reaction  
+254NO5cL [|s(isomeric state)/|s(g.s.)|?0.4]. The adopted T{-1/2}(SF) of g.s.    
+254NO6cL yields T{-1/2}(SF; isomer)|>150 s {I55}, %SF|<0.19 {I7} or %SF<0.26.   
+254NO cL T         measured by 1973Gh03 from the decay of 8.10-MeV |a of        
+254NO2cL {+254}No g.s., interpreted as the g.s. being fed from an isomeric      
+254NO3cL state. T{-1/2}>1 ms (2003Bu23)                                         
+254NO cL           From its half-life for decay by |g, 1973Gh03 suggested       
+254NO2cL that this state is probably a high-spin state, and suggested that this 
+254NO3cL two-quasiparticle K isomer might have one of the following possible    
+254NO4cL configurations: 8-(|n 7/2[624],n 9/2[734]),                            
+254NO5cL 8-(|n 9/2[734],|n 7/2[613]), 8-(|p 7/2[514],|p 9/2[624]).              
+254NO cL E         level energy has not been experimentally determined.         
+254NO cL           Level energies for various configurations were calculated    
+254NO2cL by 1976Iv04. Some of their calculations for high-spin states are       
+254NO tL                                                                        
+254NO3tL           E(8-(|n 9/2[734],|n 7/2[613]))=1200                          
+254NO4tL           E(7+(|n 9/2[624],|n 7/2[613]))=1200                          
+254NO4tL           E(8-(|p 7/2[514],|p 9/2[624]))=1100                          
+254NO5tL           E(8-(|n 7/2[624],|n 9/2[734]))=1600.                         
+254NO tL                                                                        
+254NO2tL           Theoretical calculations by 1991So15 give level energies as  
+254NO2tL           E(8-(|n 9/2[734],|n 7/2[613]))=1400                          
+254NO3tL           E(8-(|p 7/2[514],|p 9/2[624]))=1440                          
+254NO4tL           E(8-(|n 7/2[624],|n 9/2[734]))=1700.                         
+254NO cL           Another study of the isomeric state using ce(t) with low     
+254NO2cL statistics and half-life nearly 0.3 s has been reported in 2003Bu23.   
+254NO3cL K|p value is expected to be greater than 8- at an excitation energy of 
+254NO4cL the order 1 MeV to 1.5 MeV.                                            
+                                                                                
+254NO    258RF A DECAY                                           05NDS    200511
+254NO  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254NO2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+258RF  P 0.0          0+               12 MS     2              9250      SY    
+254NO  N                       0.13    2                                        
+254NO C  NO ALPHAS HAVE BEEN OBSERVED IN 258RF DECAY. ITS ALPHA DECAY HAS BEEN  
+254NO2C  INFERRED FROM OBSERVATION OF ALPHAS FROM ITS DESCENDENT 246CF.         
+254NO C  ENERGY OF AN ALPHA  TRANSITION TO THE 254NO GS IS EXPECTED TO BE       
+254NO2C  9185 200, CALCULATED FROM THE QA OF 9250 200 (2003AU03)                
+254NO C  THE INTENSITY OF THIS ALPHA CAN BE ESTIMATED TO BE ABOUT               
+254NO2C  IA(TO 254NO GS)=85+-15 PER 100 ALPHA DECAYS FROM SYSTEMATICS OF        
+254NO3C  GS TO GS ALPHA INTENSITIES FOR EVEN-EVEN NUCLEI IN THIS REGION. BY     
+254NO4C  USING IA(TO GS)=85 15 PER 100 A DECAYS, T1/2(258RF)=12 MS 2,           
+254NO5C  %A(258RF)=13 2, QA(258RF)=9250, AND BY REQUIRING HF(ALPHA TO GS)=1.0,  
+254NO6C  THE CALCULATIONS GIVE R0(254NO)=1.472 30 WHICH IS IN EXCELLENT         
+254NO7C  AGREEMENT WITH THE EXPECTED VALUE OF R0(254NO)=1.471 10                
+254NO8C  (EXTRAPOLATED FROM R0'S GIVEN IN 1998AK04)                             
+                                                                                
+254NO    208PB(48CA,2NG)               1999LE42,1999RE02,2000RE0505NDS    200511
+254NO  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254NO2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254NO C  RECOIL GATING AND RECOIL DECAY TAGGING TECHNIQUES WERE USED TO         
+254NO2C  TO STUDY THE EXCITED LEVELS AND THE DECAY SCHEME.                      
+254NO C  THE PROMPT GAMMA-RAYS WERE OBSERVED WITH A Ge DETECTOR ARRAY,          
+254NO2C  CONSISTED OF FOUR CLOVER DETECTORS. THE DETECTORS WERE OPERATED        
+254NO3C  WITHOUT COMPTON SUPPRESSION; THREE OF THE DETECTORS WERE SEGMENTED.    
+254NO C  THREE MINI-ORANGE ELECTRON SPECTROMETERS WERE USED TO DETECT           
+254NO2C  POSSIBLE TRANSITIONS FROM VIBRATIONAL STATES AT ABOUT 700 KEV.         
+254NO C  THE QUADRUPOLE DEFORMATION OF BETA(2)=0.27 3 WAS DEDUCED BY 1999LE42   
+254NO2C  FROM E(2+ STATE)=44.2 4, EXTRAPOLATED FROM NEIGHBORING E(2+ STATES).   
+254NO C  2004RE25: SAME AUTHORS AS 1999RE02.                                    
+254NO C  2004HU11,2002HE24,2002BU28: E=216 MEV. MEASURED CE, CE-CE COIN,        
+254NO2C  ^SACRED ELECTRON SPECTROMETER IN CONJUNCTION WITH RECOIL SEPARATOR     
+254NO3C  ^RITU. 2002BU28, 2003BU23 REPORT ISOMER IN 254NO.                      
+254NO4C  OTHERS (SAME GROUP): 2002BU04, 2001AM09                                
+254NO CG TI        RELATIVE TRANSITION INTENSITIES, TAKEN FROM 1999LE42, WERE   
+254NO2CG BASED ON THE RECOIL DECAY TAGGING SPECTRUM; THEY INCLUDE CONTRIBUTIONS 
+254NO3CG FROM THE CALCULATED CONVERSION ELECTRONS FOR E2 MULTIPOLARITY. THESE   
+254NO4CG TRANSITION INTENSITIES WERE NORMALIZED BY 1999LE42 TO 100 AT 158.9G.   
+254NO CG E(S),RI(S)$FROM 2004HU11.                                              
+254NO CG E(T)$From level energies. The 2+ level energy estimated by 1999LE42 fro
+254NO2CG Harris parameters extracted for the GS rotational band.                
+254NO CL BAND(A)   GS BAND. NO INDICATION OF A BACKBENT WAS FOUND.              
+254NO  L   0.0        0+                                                    A   
+254NO  L   44.2    4 (2+)                                                   A  S
+254NO  G   44.2    4                                                        T  S
+254NO  L      145.3 8(4+)                                                   A   
+254NO  G   101.1   6           E2                               147       12S   
+254NO CG M$L1+L2:L3:M=73.2 9:78.6 9:95 2 (2004HU11)                             
+254NO  L      304.2 8(6+)                                                   A   
+254NO  G   158.9   3           E2                      3.79     100       32    
+254NO CG M$L1+L2:L3:M=128.9 9:136.4 9:152 2 (2004HU11)                          
+254NO  L      518.3 9(8+)                                                   A   
+254NO  G   214.1   3           E2                      1.15      80        7    
+254NO CG M$L1+L2:L3:M=185.9 12:192.6 12:206 3 (2004HU11)                        
+254NO CG TI$FROM 2004HU11. TI=84 16 (1999LE42)                                  
+254NO  L      785.5 9(10+)                                                  A   
+254NO  G   267.2   3           E2                      0.517     60        7    
+254NO CG M$L1+L2:L3:M=237.8 14:245.6 14:258 4 (2004HU11)                        
+254NO CG TI$FROM 2004HU11. TI=72 13 (1999LE42)                                  
+254NO  L     1103.710(12+)                                                  A   
+254NO  G   318.2   3           [E2]                    0.291     38       9     
+254NO  L     1470.210(14+)                                                  A   
+254NO  G   366.5   3           [E2]                    0.191     53       11    
+254NO  L     1884.214(16+)                                                  A   
+254NO  G   414.0   10          [E2]                    0.136     29       10    
+254NO  L     2340.218(18+)                                                  A   
+254NO  G   456                                                                  
+254NO  L   2839      (20+)                                                  A  ?
+254NO  G   498                                                                 ?
+254NO CG           ASSIGNMENT IS TENTATIVE (2000RE05).                          
+254NO  L   0+X                         1 MS      GT                             
+254NO DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
+254NO CL E,T$FROM 2003BU23,2002BU28. EXPECTED HIGH-K ROTATIONAL BAND BUILT ON   
+254NO2CL THIS ISOMER.                                                           
+                                                                                
+254LR    ADOPTED LEVELS                                          05NDS    200511
+254LR  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254LR2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254LR  XA258DB A DECAY                                                          
+254LR  Q -3.3E3    SY6.8E3   SY1.8E3   SY8816    13    2012WA38                 
+254LR CQ Note: Current evaluation has used the following Q record               
+254LR  Q -3470     SY 6910   SY 1910   SY 8790   SY    2003AU03                 
+254LR C                                                                         
+254LR C  ASSIGNMENT: 208PB(48TI,pn), GRANDPARENT OF 246CF (6750A)   (1984OG03). 
+254LR C                                                                         
+254LR C  FOR CALCULATIONS OF FISSION BARRIER, SEE 1985CW01.                     
+254LR C  FOR CALCULATIONS OF EVAPORATION RESIDUE CROSS SECTIONS SEE 2005ZU02.   
+254LR CL           THE CALCULATED HF'S FOR THE OBSERVED ALPHA TRANSITIONS ARE   
+254LR2CL LARGER THAN 25, INDICATING THAT NONE OF THESE ALPHA'S IS A FAVORED     
+254LR3CL TRANSITION; THEREFORE, THE DATA INDICATES THAT THE MAIN CONFIGURATIONS 
+254LR4CL OF THESE EXCITED STATES ARE NOT IDENTICAL TO THAT OF 258DB G.S.        
+254LR CL E         ALL EXCITED LEVELS WERE OBSERVED IN 258DB A DECAY.           
+254LR  L 0.0                           13 S       3                             
+254LRX L XREF=A                                                                 
+254LR CL T         THE HALF-LIFE WAS MEASURED BY THE SAME GROUP IN SEVERAL      
+254LR2CL EXPERIMENTS: 10 S +7-5 (1981MU06), 13 S +3-2 (1985HE22),               
+254LR2CL 10.0 S +45-24 (1989MU09). SINCE SOMEWHAT BETTER STATISTICS WAS         
+254LR3CL ACHIEVED IN THE 1985HE22 EXPERIMENT, THEIR RESULT IS ADOPTED HERE.     
+254LR2 L %A=76 11 $ %EC=24 11 $ %SF<0.1                                         
+254LR CL           1985HE22 OBTAINED %EC=22 6 FROM THE NUMBER OF                
+254LR2CL OBSERVED CORRELATIONS OF THE 258DB ALPHAS WITH THE 254LR AND           
+254LR3CL 254NO ALPHAS, BY ASSUMING THAT %A(254NO)=100. THE A DECAY BRANCHING    
+254LR4CL OF 254NO WAS DETERMINED BY 1988TU07 TO BE 90% 4. CORRECTION FOR        
+254LR5CL THE 254NO ALPHA BRANCHING YIELDS %A(254LR)=76 11.                      
+254LR CL           %SF FROM 2000HO27                                            
+254LR CL           OTHER MEASUREMENT: %A=94 IS LISTED IN 1984OG03.              
+254LR CL           THE PARTIAL A DECAY HALF-LIFE OF GS WAS CALCULATED BY        
+254LR2CL 1997MO25 AS 158 S, AND BETA DECAY HALF-LIFE AS 18.0 S.                 
+254LR  L 100       75                                                           
+254LRX L XREF=A                                                                 
+254LR  L 205       75                                                           
+254LRX L XREF=A                                                                 
+254LR  L 240       75                                                           
+254LRX L XREF=A                                                                 
+254LR  L 325       75                                                           
+254LRX L XREF=A                                                                 
+254LR  L 396       75                                                           
+254LRX L XREF=A                                                                 
+                                                                                
+254LR    258DB A DECAY                 1985HE22,1999HE11         05NDS    200511
+254LR  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254LR2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254LR C                                                                         
+254LR C  FOUR EVENTS AT EG=22.5 6 WERE OBSERVED BY 1985HE22 IN COINCIDENCE WITH 
+254LR2C  9056 - 9129 ALPHA, ATTRIBUTED TO 9078A. THE  22.5-KEV PEAK WAS         
+254LR3C  ASSIGNED ON THE BASE OF ITS ENERGY TO XLB4, DUE TO L1 CONVERSION OF    
+254LR4C  A GAMMA DEEXCITING THE LEVEL POPULATED BY 9078A. THIS GAMMA TRANSITION 
+254LR5C  WAS ASSUMED TO BE M1, SINCE FOR AN E1 OR E2 TRANSITION, THE L2         
+254LR4C  CONVERSION LINE WOULD BE STRONGER THAN THE L1 CONVERSION LINE. IF      
+254LR5C  THIS GAMMA IS A TRANSITION BETWEEN THE 325- AND 240-KEV LEVELS,        
+254LR6C  EG AP 85 KEV.                                                          
+254LR7C  NO OTHER X-RAYS OR GAMMA TRANSITIONS WERE ASSIGNED TO 258DB A DECAY.   
+254LR C  2001GA20: MEASURED A, A(T). RESULTS IN GENERAL AGREEMENT WITH PREVIOUS 
+254LR2C  MEASUREMENTS.                                                          
+258DB  P 0.0                           4.3 S     11             9480      SY    
+258DB CP T$VALUE FROM A(T) 2001GA20                                             
+254LR  N                       0.67    9                                        
+254LR CA E         MEASUREMENTS BY 1985HE22 AND 1999HE11.                       
+254LR CA IA        ALPHA INTENSITY PER 100 ALPHA DECAYS, MEASURED BY 1985HE22.  
+254LR2CA UNCERTAINTIES WERE NOT GIVEN. ANY EFFECT DUE TO ENERGY SUMMING WITH    
+254LR3CA CONVERSION ELECTRONS HAS NOT BEEN INCLUDED.                            
+254LR CA HF        R0(254LR) AP 1.46, DEDUCED FROM R0'S GIVEN IN 1998AK04,      
+254LR2CA IS USED IN CALCULATIONS.                                               
+254LR CA E(A)      THESE TWO ALPHAS WERE NOT RESOLVED AND ONE PEAK AT 9172 15   
+254LR2CA WAS MEASURED IN THE EARLIER WORK BY 1985HE22. EA'S ARE FROM 1999HE11.  
+254LR CA HF(A)     THE LOWER LIMIT IS FOR IA=59.                                
+254LR CL E         DEDUCED FROM QA(258DB)=9480 SY (2003AU03) AND THE            
+254LR2CL MEASURED EA'S.                                                         
+254LR  L 0.0                                                                    
+254LR  L 100       75                                                           
+254LR  A 9299      15 8        513     AP                                       
+254LR  L 205       75                                                           
+254LR  A 9196      10           32     GE                                   A   
+254LR CA           IA(9196A)+IA(9161A)=59.                                      
+254LR  L 240       75                                                           
+254LR  A 9161      10           25     GE                                   A   
+254LR  L 325       75                                                           
+254LR  A 9078      15 28        34     AP                                       
+254LR  L 396       75                                                           
+254LR  A 9008      15 5        117     AP                                       
+                                                                                
+254RF    ADOPTED LEVELS                                          05NDS    200511
+254RF  H TYP=FUL$AUT=A. Bhagwat, N. J. Thompson, J. K. Tuli$                    
+254RF2 H CIT=NDS 105, 959 (2005).$CUT=15-Jul-2005$                              
+254RF  Q             8.4E3   SY2.7E3   SY9.21E3  SY    2012WA38                 
+254RF CQ Note: Current evaluation has used the following Q record               
+254RF  Q              8540   SY 2660   SY 9380   SY    2003AU03                 
+254RF C                                                                         
+254RF C  ASSIGNMENT: 206PB(50TI,2N), T1/2(SF) SYSTEMATICS (1997HE29).           
+254RF C                                                                         
+254RF C  THEORETICAL STUDIES:                                                   
+254RF C  FOR CALCULATED SF HALF-LIVES, SEE 1978PO09, 1985LO17, 1989ST20,        
+254RF2C  1992BH03; SF HALF-LIVES WITH RESPECT TO LDM 2004RO01.                  
+254RF C  FOR THEORETICAL CALCULATIONS OF FISSION BARRIERS, SEE 1983CW01.        
+254RF C  FOR CALCULATED PARTIAL ALPHA DECAY HALF-LIFE, SEE 1997MO25;            
+254RF2C  SEE 1997PO18 FOR SEMI-EMPIRICALLY OBTAINED T1/2(A), CALCULATED ALPHA   
+254RF C  ALPHA DECAY Q VALUES IN RMF FRAMEWORK 2004GM02                         
+254RF C  ROTATIONAL BANDS AND MI USING SKYRME MEAN FIELD FORMULATION 2003BE41   
+254RF C  CALCULATION OF 2+ LEVEL ENERGIES ALPHA DECAY Q VALUES AND BRANCHING    
+254RF2C  RATIO USING A macroscopic-microscopic MODEL 2001MU06.                  
+254RF C  DECAY HALF-LIVES FROM SEMI EMPIRICAL FORMULA 1997PO18.                 
+254RF  L 0.0         0+                23 US     3                              
+254RF CL T         MEASURED BY 1997HE29, 1999HE11. OTHER MEASUREMENTS:          
+254RF2CL < 3 MS (1975OG01), AP 5 MS (1975TE01). ASSIGNMENT OF OBSERVED          
+254RF3CL 5 MS SF ACTIVITY TO 254RF WAS INCONCLUSIVE                             
+254RF2CL (PRIVATE COMMUNICATION FROM Ter-Akopian TO 1997HE29)                   
+254RF2 L %SF LE 100 $                                                           
+254RF CL           ONLY ITS SF-DECAY MODE HAS BEEN DETECTED. AN UPPER LIMIT     
+254RF2CL OF 1.5% WAS GIVEN BY 1997HE29 FROM NON-OBSERVATION OF ALPHA'S AND      
+254RF3CL THE TOTAL NUMBER OF 155 SF EVENTS DETECTED.                            
+                                                                                

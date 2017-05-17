@@ -1,0 +1,682 @@
+278      COMMENTS                                                05NDS    200512
+278    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+278  2 H CUT=12-Aug-2005$                                                       
+278   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+278   C  AUTH$M. GUPTA(a)                                                       
+278   C  INST$National Nuclear Data Center                                      
+278  #C       Brookhaven National Laboratory                                    
+278  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+278  #C                                                                         
+278   c  INST$Manipal Academy of Higher Education,                              
+278  #c  Manipal, KA 576 104, INDIA                                             
+278  #c  e-mail: mohini.gupta@manipal.edu                                       
+278   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+278  #c  Manipal, KA 576 104, INDIA                                             
+278   C  AUTH$THOMAS W. BURROWS                                                 
+278   C  INST$National Nuclear Data Center                                      
+278  #C       Brookhaven National Laboratory                                    
+278  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+278  #C       e-mail: burrows@bnl.gov                                           
+278   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+278  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+278  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+278  4C  RECEIVED BY August 12, 2005.                                           
+278   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+278  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+278  3C  DATE WERE CONSIDERED.                                                  
+278   C  CIT$NDS 106, 251 (2005)                                                
+278   c  COMM$                                                                  
+278  @c  {UAcronyms and notations used in this evaluation:}                     
+278  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+278  #c  BGS Berkeley Gas Filled Separator                                      
+278  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+278  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+278  #c  EVR Evaporation Residue                                                
+278  #c  GARIS Gas-filled Recoil Ion Separator                                  
+278  #c  RILAC RIKEN Linear Accelerator facility                                
+278  #c  SHIP Separator for Heavy Ion reaction Products                         
+278  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+278  2c  and detection of previous EVR or |a                                    
+278  #c  TKE Total Kinetic Energy                                               
+278  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+278  2c  Reactions, JINR, Dubna, Russia                                         
+278  #c                                                                         
+278  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+278  2c  (Z=110-112,114,116,118):}                                              
+278  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+278  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+278  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+278  5c  the evaluators have relied on the judgement of the JWP in              
+278  6c  determining the strength of the arguments made in the various papers.  
+278  7c  In the cases where there are new data or where the JWP has not yet     
+278  8c  assigned a priority of discovery for an element, the evaluators have   
+278  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+278  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+278  Bc  the data.                                                              
+278  #c                                                                         
+278  #c  In the above context, with respect to Z=112 and the collective works of
+278  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+278  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+278  4c  references therein.                                                    
+278  #c                                                                         
+278  @c                                                                         
+278  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+278  2c  discovery of an element and not a specific nuclide. The purpose of     
+278  3c  this evaluation is to present the "best" set of nuclear properties     
+278  4c  for those nuclides reported between A=266 and A=294 based on data      
+278  5c  currently available and {Bnot} to establish a priority of discovery for
+278  6c  any element.                                                           
+278  !c                                                                         
+278  #c  It is well known that alpha decay chains seen                          
+278  ac  in cold fusion reactions tend to terminate in known mass regions.      
+278  2c  The method of |a-|a or |a-SF correlations for identifying the          
+278  3c  parent has therefore been used with confidence.                        
+278  3c  Experiments carried out with hot fusion reactions,                     
+278  4c  result in alpha decay chains beginning and ending with hitherto unknown
+278  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+278  6c  in an attempt to identify the parent and daughters. The latter method  
+278  7c  is not as accurate as the first since a greater probability of         
+278  8c  randomness is inherant to the technique. As such, independent          
+278  9c  verification and confirmation of the data gains added importance.      
+278  ac  These facts should be taken into account when considering the suggested
+278  ac  properties of nuclei created following a hot fusion reaction as for    
+278  ac  the synthesis of Z=114 and above.                                      
+278  #c                                                                         
+278  #c  Finally, with regard to the some of the                                
+278  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+278  ac  2004Mo15 have pointed out that mass assignments which are based        
+278  ac  on the excitation energy of the compound nucleus may be off by a       
+278  ac  single unit. This may also be due in part to uncertainties in the beam 
+278  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+278  ac  Once again, collateral information is required to establish the charge 
+278  ac  and approximate A of the nucleus.                                      
+278  #c                                                                         
+278  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+278  2c  have not been adopted, the evaluators have used the approximations in  
+278  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+278  4c  exponential distribution to estimate the standard uncertainty (68%     
+278  5c  confidence level) in T{-1/2}:                                          
+278  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+278  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+278  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+278  9c  of events. For one and two events, the exact values given in Table 1   
+278  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+278  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+278  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+278  #c                                                                         
+278  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+278  ac  Calculations of T{-1/2}                                                
+278  2c  performed in the present evaluation used the relationship:             
+278  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+278  #c  where Z refers to the atomic                                           
+278  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+278  6c  and:                                                                   
+278  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+278  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+278  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+278  3c  parameter set used in these evaluations. We note that these systematics
+278  6c  are only an indication of |a-decay half-lives from the ground state    
+278  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+278  8c  the element under consideration. The use of this formalism in the      
+278  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+278  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+278  ac  estimate a Hindrance Factor (HF) for a given transition,               
+278  ac  attributable to the odd neutron or proton. This quantity is            
+278  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+278  ac  The HF so computed is an approximate indication.                       
+278  #c                                                                         
+278  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+278  2c  References.                                                            
+278  #c                                                                         
+278  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+278  2c  trans-fermium elements is the manifestation of shell effects in the    
+278  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+278  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+278  5c  important as QF is expected to play a greater role on the hindrance of 
+278  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+278  7c  the "island" of stability. An understanding of this mechanism is       
+278  8c  necessary to establishing the most favorable reactions for producing   
+278  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+278  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+278  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+278  Cc  to both the mass asymmetry in the entrance channel as well as the      
+278  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+278  Ec  deformations of target/projectile nuclei and their relative orientation
+278  Fc  to each other in the process of CN formation, may also play an         
+278  Gc  important role in reducing the probability of forming a compound       
+278  Hc  system. In the face of extremely low yields and a steep decrease of    
+278  Ic  production cross-sections already in evidence with available stable    
+278  Jc  beam-target combinations, the influence of all possible mitigating     
+278  Kc  factors must be accurately determined in order to                      
+278  Lc  optimize the probability of successful fusion. The formation of a      
+278  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+278  Nc  survives QF going on to form a compact compound system which must then 
+278  Oc  face competition from fission.                                         
+278  #c                                                                         
+278  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+278  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+278  3c  in collaboration with investigators from Belgium, France, and Italy.   
+278  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+278  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+278  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+278  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+278  8c  spectrometer "Corset". These experiments were inspired by              
+278  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+278  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+278  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+278  Cc  such experiments are planned or underway to investigate the various    
+278  Dc  effects.                                                               
+278  #c                                                                         
+278  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+278  2c  and references cited in these papers.                                  
+278  #c                                                                         
+278  !c  {UExperimental Estimates of Fission Barriers:}                         
+278  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+278  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+278  4c  the experimentally derived barrier heights are respectively:           
+278  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+278  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+278  #c                                                                         
+278  #c  2002It04, in an analysis of available experimental data, derive the    
+278  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+278  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+278  #c                                                                         
+278  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+278  2c  Two possibilities have been proposed in an attempt to understand the   
+278  ac  the {+289}114, {+287}114 observations:                                 
+278  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+278  ac  belongs to a rare decay mode originating from                          
+278  4c  an isomeric state, or that                                             
+278  #c  (ii) the sequence may actually originate from                          
+278  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+278  7c  Levels).                                                               
+278  #c  The evaluators believe that further investigations                     
+278  ac  are required to support either hypothesis.                             
+278  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+278  9c  unobserved. Also, T{-1/2}                                              
+278  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+278  ac  is much larger than that observed by 2004Og12 and                      
+278  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+278  ac  agreement. Such inconsistencies need to be better understood.          
+278  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+278  2c  respects. 2004OgZZ report more statistics in some cases.               
+278  #c                                                                         
+278  @c  {UOther comments on {+289}114 and {+283}112}                           
+278  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+278  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+278  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+278  4c  classified the evidence as being "very weak",                          
+278  5c  with no convincing supporting arguments for the possible production of 
+278  6c  SHE. We make the following general observations:                       
+278  #c                                                                         
+278  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+278  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+278  ac  by the Dubna-JINR collaborations for all isotopes of                   
+278  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+278  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+278  ac  {+287}114 (15 events) and {+286}114                                    
+278  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+278  ac  the |?34 min decay sequence postulated as originating from             
+278  5c  a rare decay mode of {+289}114, does not seem very likely.             
+278  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+278  7c  {+289}114 decays observed are genetically linked                       
+278  8c  and not the result of a background decay sequence. These               
+278  BC  discrepancies have to be resolved, along with some others.             
+278  #c                                                                         
+278  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+278  ac  (see also 2004Og02) with VASSILISSA, have not                          
+278  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+278  3c  lack of internal consistency through the collective measurements       
+278  ac  and the data are inconclusive as pointed                               
+278  4c  out by experimenters (reasons given in each paper). Decay properties of
+278  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+278  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+278  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+278  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+278  8c  by them. See {+283}112 Adopted Levels for details.                     
+278  #c                                                                         
+278  #c  These observations by the experimenters are consistent with the        
+278  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+278  3c  of the various arguments put                                           
+278  3c  forward therein, the following comments may be made here:              
+278  #c                                                                         
+278  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+278  #c  190 MeV and 212 MeV (1999Og05)                                         
+278  #c  65 MeV and 170 MeV  (2004Og02)                                         
+278  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+278  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+278  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+278  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+278  4c  plane and side detectors). With one exception, all the energies        
+278  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+278  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+278  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+278  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+278  9c  the second experiment) after EVR implantation resulted in              
+278  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+278  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+278  #c                                                                         
+278  #c  2. 2000Ar03 statement that correlations  between the fission events    
+278  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+278  3c  'backward' analysis of the data was reported in                        
+278  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+278  5c  evidently in contradiction with those made by the                      
+278  6c  experimenters. A more complete analysis would be beneficial.           
+278  #c                                                                         
+278  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+278  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+278  ac  quoted from an earlier                                                 
+278  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+278  4c  assignments. The proposed assignment of Z=114 to both parents may      
+278  5c  be incorrect taking into account new data which do not support         
+278  6c  these observations and for reasons already mentioned.                  
+278  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+278  !c                                                                         
+278  #c  CONCLUSIONS:                                                           
+278  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+278  ac  are not conclusive. Overall, the                                       
+278  2c  results from the VASSILISSA experiments are at variance with data from 
+278  3c  experiments using DGFRS. The latter investigations are done using      
+278  4c  more stringent methods, and have greater statistics, offering better   
+278  5c  internal consistency. Some obvious discrepancies and other             
+278  ac  inconsistencies between the two sets of                                
+278  6c  data remain and need to be resolved or adequately explained as does the
+278  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+278  8c  by 2005Gr19 and 2002Lo11.                                              
+278  #c                                                                         
+278  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+278  2c  from earlier work are not reproduced to date.                          
+278  #c                                                                         
+278  @c  {UTheoretical Calculations:}                                           
+278  @c  1995Mo29: |b2 based on the finite-range droplet                        
+278  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+278  3c  with "global" parameters.                                              
+278  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+278  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+278  3c  J|p simultaneously obtained with the calculated masses and             
+278  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+278  5c  A=239.                                                                 
+278  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+278  2c  model for the macroscopic part and the Strutinski shell correction,    
+278  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+278  4c  part.                                                                  
+278  @c  2005GaZX: |b2 based on self consistent calculations                    
+278  2c  within the framework of the Relativistic Mean Field (RMF)              
+278  3c  theory with very few "globally" fit parameters and employing the       
+278  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+278  5c  sets in use exhibit similar systematics, these results are expected to 
+278  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+278  #c                                                                         
+278  @c  {UOther Measurements:}                                                 
+278  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+278  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+278  3c  (Blocking technique in single crystals).                               
+278  #c                                                                         
+278   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+278  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+278  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+278  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+278  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+278  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+278  7c  additional information that they readily provided during this          
+278  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+278  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+278  Ac  Singh for helpful discussions. We thank A. Marinov                     
+278  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+278  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+278  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+278  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+278  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+278  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+278  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+278  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+278  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+278  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+278  Lc  insights, and suggestions until her untimely demise are hereby         
+278  Mc  acknowledged.                                                          
+278   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+278  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+278  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+278      REFERENCES                                                       200512
+278    R 1966VI04 JOUR JINCA 28 741                                             
+278    R 1984SC13 JOUR ZPAAD 316 19                                             
+278    R 1987MU15 JOUR ZPAAD 328 49                                             
+278    R 1992BA77 JOUR PPNPD 29 453                                             
+278    R 1995MO29 JOUR ADNDA 59 185                                             
+278    R 1997MO25 JOUR ADNDA 66 131                                             
+278    R 1998DA24 JOUR ARNUA 48 401                                             
+278    R 1998HO13 JOUR RPPHA 61 639                                             
+278    R 1999CW01 JOUR PRLTA 83 1108                                            
+278    R 1999GRZM REPT GSI-Nachrichten 1-99,P5,Gross                            
+278    R 1999HOZV REPT GSI 99-1,P7,Hofmann                                      
+278    R 1999OG05 JOUR ZAANE 5 63                                               
+278    R 1999OG07 JOUR NATUA 400 242                                            
+278    R 1999OG10 JOUR PRLTA 83 3154                                            
+278    R 2000AR03 JOUR ZAANE 7 23                                               
+278    R 2000FI12 JOUR NDSBA 90 391                                             
+278    R 2000OG05 JOUR PRVCA 62 041604                                          
+278    R 2000OG07 JOUR YAFIA 63,No 10,1769                                      
+278    R 2000ZL02 JOUR ZAANE 8 81                                               
+278    R 2001AK11 JOUR NDSBA 94 131                                             
+278    R 2001KA70 JOUR PACHA 73 959                                             
+278    R 2002HI20 JOUR PRLTA 89 282701                                          
+278    R 2002IT04 JOUR PRVCA 65 044602                                          
+278    R 2002LO11 JOUR PPNPD 48 123                                             
+278    R 2002LO15 JOUR PRVCA 66 044617                                          
+278    R 2003KA71 JOUR PACHA 75 1601                                            
+278    R 2003MU15 JOUR YAFIA 66 1051                                            
+278    R 2003MU26 JOUR APOBB 34 2073                                            
+278    R 2004DA11 JOUR NUPAB 734 148                                            
+278    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+278    R 2004IT05 JOUR NUPAB 734 136                                            
+278    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+278    R 2004MO15 JOUR NUPAB 734 188                                            
+278    R 2004MO26 JOUR JUPSA 73 1738                                            
+278    R 2004MO40 JOUR ZAANE 21 257                                             
+278    R 2004MO42 JOUR JUPSA 73 2593                                            
+278    R 2004OG02 JOUR ZAANE 19 3                                               
+278    R 2004OG03 JOUR PRVCA 69 021601                                          
+278    R 2004OG10 JOUR PTPSA 154 406                                            
+278    R 2004OG12 JOUR PRVCA 70 064609                                          
+278    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+278    R 2004PRZW PREPRINT Prokhorova                                           
+278    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+278    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+278    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+278HS    ADOPTED LEVELS: NOT OBSERVED                            05NDS    200512
+278HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+278HS2 H CUT=12-Aug-2005$                                                       
+278HS  Q                                                                        
+278HS C  SEE 28914 Adopted Levels FOR DETAILS OF THE EXPERIMENTS.               
+278HS C  2004OG10: THE REINTERPRETATION OF ONE LONG LIVED DECAY CHAIN FIRST     
+278HS2C  OBSERVED IN 1999OG10 AT DUBNA, AND TENTATIVELY ASSIGNED TO THE DECAY OF
+278HS3C  28914, IS NOW PROPOSED AS POSSIBLY ORIGINATING FROM THE ^CN 29014      
+278HS4C  {IVIA} THE 2{IN} CHANNEL. THE SUBSEQUENT ALPHA-DECAYS WOULD THEN BE:   
+278HS5C  {+286}112|){+282}Ds|){+278}Hs (SF). THE CROSS-SECTION                  
+278HS5C  FOR THIS EVENT WAS AP 0.2                                              
+278HS6C  PICOBARN IN THE REACTION 244PU+48CA AT 236 MEV (^E*=35 MEV). THIS EVENT
+278HS7C  WAS NOT OBSERVED IN LATER EXPERIMENTS DONE AT ENERGIES OF ^E*=41-53 MEV
+278HS8C  (2000OG05,2000OG07). THE ALPHA PARTICLE ENERGY OF THE FIRST DECAY IS   
+278HS9C  AP 0.1 MEV LESS THAN THAT ATTRIBUTED TO 28914 FROM LATER WORK. AN      
+278HSAC  ALTERNATIVE INTERPRETATION BASED ON CALCULATIONS (1999CW01) IS THAT    
+278HSBC  THIS CHAIN MAY BELONG TO A RARE  DECAY BRANCH OF 28914 STARTING FROM   
+278HSCC  AN EXCITED STATE AND GOING TO LOW LYING LEVELS IN THE DAUGHTER GOVERNED
+278HSDC  BY THE APPROPRIATE SELECTION RULES. 3 MINUTE ALPHA-SF EVENT OBSERVED IN
+278HSEC  1999OG07 AT ^E*=32.6 MEV FOR 29014 AND ASSIGNED TO 28714 NOT SEEN BY   
+278HSFC  2004OG10.                                                              
+278HS C  ASSIGNMENT: ^IUPAP/^IUPAC ^JWP ASSESSMENT (2003KA71): DISCOVERY OF     
+278HS2C  Z=114 WAS NOT YET WARRANTED DUE TO UNSECURED CONNECTIONS TO KNOWN      
+278HS3C  DESCENDENTS AND THE ABSENCE OF FURTHER ELEMENTAL SIGNATURES SUCH AS    
+278HS4C  X-RAYS. THE EVALUATORS BELIEVE THAT THERE IS TOO LITTLE DATA TO SUPPORT
+278HS5C  THE ASSIGNMENT OF THIS DECAY CHAIN TO EITHER 29014 OR 28914 AND,       
+278HS6C  THEREFORE, 29014, 28612, 282DS AND 278HS REMAIN UNOBSERVED. SEE THE    
+278HS7C  General Comments FOR MORE DETAILS.                                     
+278HS C  THEORY: SEE Nuclear Science References                                 
+                                                                                
+278MT    COMMENTS                                                ENSDF    201008
+278MT  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+278MT C  TITL$NUCLEAR DATA SHEETS FOR 278MT                                     
+278MT c  AUTH$M. GUPTA                                                          
+278MT c  INST$Manipal University,                                               
+278MT#c       Manipal, KA 576 104, INDIA                                        
+278MT c  ABST$The ENSDF file corresponding to Nuclear Data Sheets for A=266-294 
+278MT2c  (2005Gu33) has been updated to include the recently reported           
+278MT3c  production of {+294}117 and its daughters by 2010Og01.                 
+278MT#c                                                                         
+278MT#c  See 2005Gu33 for acronyms and notations and evaluation methodology     
+278MTxc  used                                                                   
+278MTxc  in this evaluation. The purpose of this evaluation is to present the   
+278MT3c  "best" set of nuclear properties for those nuclides reported between   
+278MT4c  A=266 and A=294 based on data currently available and {Bnot} to        
+278MT5c  establish a priority of discovery for any element.                     
+278MT c  CUT$August 1, 2010. All references relevant to the production of       
+278MT2c  {+278}Mt or its daughters entered into the Nuclear Science References  
+278MT3c  File and papers and private communications received by this date were  
+278MTxc  considered.                                                            
+278MT c  ACKN$The evaluator is very grateful to J. Choquette and B. Singh,      
+278MT2c  McMaster University for compiling these data into XUNDL.               
+278MT C  CIT$ENSDF                                                              
+                                                                                
+278MT    ADOPTED LEVELS: Tentative                               ENSDF    201008
+278MT  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+278MT  Q -7.E2     SY5.2E3   SY3.2E3   SY9.46E3  SY    2012WA38                 
+278MT CQ Note: Current evaluation has used the following Q record               
+278MT  Q -1544     SY 5843   SY 2658   SY  9100     SY 2009AuZZ                 
+278MT CQ Q-$ESTIMATED UNCERTAINTY=1077 KEV                                      
+278MT CQ SN$ESTIMATED UNCERTAINTY=1216 KEV                                      
+278MT CQ SP$ESTIMATED UNCERTAINTY=1107 KEV                                      
+278MT CQ QA$ESTIMATED UNCERTAINTY=300 KEV.                                      
+278MTaCQ OTHERS:9689 keV {I190} from E|a=9.55 keV {I19} (2010Og01).             
+278MT c  2010Og01: This nuclide produced as the |a-decay descendent of          
+278MTac  {+294}117 in                                                           
+278MTac  the reaction {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center.    
+278MTac  This corresponded to an excitation energy of 35 MeV                    
+278MTac  for the 3n evaporation channel.                                        
+278MT2c  All experiments were carried out at Dubna, Russia, in collaboration    
+278MT3c  with RIAR (Russia) and LLNL; ORNL; University of Nevada and Vanderbilt 
+278MTac  University in USA, for a period of 70 days from July 27 - October 23,  
+278MTac  2009. See adopted levels for {+294}117 for experimental details.       
+278MTac  A single |a decay chain was detected and attributed to the parent      
+278MTac  nucleus.                                                               
+278MT t  {TV} The details are provided below:                                   
+278MT3t  E{-|a1}=10.81 MeV {I10}, t{-1}=112 ms                                  
+278MT+t       - {TV}assigned to {+294}117 decay                                 
+278MT4t  E{-|a2}= 9.95 MeV {I40}, t{-2}=0.023 s                                 
+278MT+t      - {TV}assigned to {+290}115 decay                                  
+278MT5t  E{-|a3}= 9.63 MeV {I10}, t{-3}=28.3 s                                  
+278MT+t       - {TV}assigned to {+286}113 decay                                 
+278MT6t  E{-|a4}= 9.00 MeV {I10}, t{-4}=0.74 s                                  
+278MT+t       - {TV}assigned to {+282}Rg decay                                  
+278MT5t  E{-|a5}= 9.55 MeV {I19}, t{-5}=11.0 s                                  
+278MT+t       - {TV}assigned to {+278}Mt decay                                  
+278MT6t  E{-|a6}= 8.80 MeV {I10}, t{-6}=1.3 m                                   
+278MT+t        - {TV}assigned to {+274}Bh decay                                 
+278MT7t  E(SF)=219 MeV {I5}, t(SF)=33.4 h   - {TV}assigned to {+270}Db decay.   
+278MT c  The estimate of randomness (1984Sc13) was 6|*10{+-11}.                 
+278MT c  Theory: see Nuclear Science References.                                
+278MT c  Assignment: Descendent of {+294}117 produced in the reaction           
+278MTac  {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center                  
+278MT2c  (2010Og01). The evaluator suggests that the                            
+278MT5c  properties attributed to {+278}Mt and its daughters should be          
+278MT6c  considered as tentative until confirmed independently.                 
+278MT  XA282RG A DECAY (0.5 S)                                                  
+278MT  L X                             7.6 S                                    
+278MT CL T$7.6 S {I+365-35} from the measured lifetime of 11 s                  
+278MTaCL using the methods of 1984Sc13.                                         
+278MT CL $T(CALC): 0.3 S FROM  Viola-Seaborg SYSTEMATICS for QA=9.689 MeV.      
+278MT CL $T(theory): 8.8 s from 2010So12.                                       
+278MT2 L %A AP 100$ %SF=?                                                       
+278MT cL %A$no SF decay events observed.                                        
+278MT CL $Q(|a)=9689 keV {I190} from E|a=9.55 MeV {I19}.                        
+278MT CL $Q(|a)(theory)=9270 keV from 2010So12.                                 
+278MT CL J$:|W(p)=9/2-; |W(n)=3/2+ FROM 1997MO25 (theory)                       
+278MT CL $B2:0.136 FROM 1995MO29;0.197 FROM 2003MU26 (theory)                   
+278MTX L XREF=A                                                                 
+                                                                                
+278MT    282RG A DECAY (0.5 S)         2010Og01                  ENSDF    201008
+278MT  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+282RG  P X                             0.5 S     +25-2          9.13      10    
+282RG CP T$from Adopted Levels using the methods of 1984Sc13.                   
+282RG CP QP$from E|a=9.00 MeV {I10} (2010Og01).                                 
+278MT  N                       1.0     AP                                       
+278MT  L X                             7.6 S                                    
+278MT CL T$7.6 S {I+365-35} using the methods of 1984Sc13.                      
+278MT  A 9.00      10                                                           
+278MT CA E$FROM 2010Og01.                                                       
+                                                                                
+278RG    COMMENTS                                                ENSDF    200711
+278RG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+278RG C  TITL$ENSDF UPDATE FOR A=266-294                                        
+278RG C  AUTH$M. GUPTA                                                          
+278RG c  INST$Manipal University,                                               
+278RG#c  Manipal, KA 576 104, INDIA                                             
+278RG C  AUTH$THOMAS W. BURROWS                                                 
+278RG C  INST$National Nuclear Data Center                                      
+278RG#C       Brookhaven National Laboratory                                    
+278RG#C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+278RG C  ABST$THE ENSDF FILE CORRESPONDING TO Nuclear Data Sheets FOR A=266-294 
+278RG2C  (2005GU33) HAS BEEN UPDATED TO INCLUDE THE RECENTLY REPORTED           
+278RG3C  PRODUCTION OF 28213 AND ITS DAUGHTERS BY 2007OG02 AND 2007OG01.        
+278RG#C                                                                         
+278RG#C  SEE 2005GU33 FOR ACRONYMS AND NOTATIONS AND EVALUATION METHODOLOGY USED
+278RG2C  IN THIS EVALUATION. THE PURPOSE OF THIS EVALUATION IS TO PRESENT THE   
+278RG3C  "best" SET OF NUCLEAR PROPERTIES FOR THOSE NUCLIDES REPORTED BETWEEN   
+278RG4C  A=266 AND A=294 BASED ON DATA CURRENTLY AVAILABLE AND {Bnot} TO        
+278RG5C  ESTABLISH A PRIORITY OF DISCOVERY FOR ANY ELEMENT.                     
+278RG C  CUT$November 5, 2007. ALL REFERENCES RELEVANT TO THE PRODUCTION OF 2821
+278RG2C  OR ITS DAUGHTERS ENTERED INTO THE Nuclear Science References File AND  
+278RG3C  PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS DATE WERE CONSIDERED
+278RG c  ACKN$The evaluators are very grateful to S. Geraedts and B. Singh,     
+278RG2c  McMaster University for compiling these data into XUNDL.               
+278RG C  CIT$ENSDF                                                              
+278RG C  FUND$PART OF THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.  
+278RG2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886                
+                                                                                
+278RG    ADOPTED LEVELS: Tentative                               ENSDF    200711
+278RG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+278RG  Q -2.5E3    SY5.8E3   SY2.1E3   SY1.085E4 5     2012WA38                 
+278RG CQ Note: Current evaluation has used the following Q record               
+278RG  Q -2520     SY 6130   SY 1740   SY 10846  81    2007OG02,2003AU03        
+278RG CQ Q-$ESTIMATED UNCERTAINTY=830 KEV (2003AU03)                            
+278RG CQ SN$ESTIMATED UNCERTAINTY=890 KEV (2003AU03)                            
+278RG CQ SP$ESTIMATED UNCERTAINTY=820 KEV (2003AU03)                            
+278RG CQ QA$FROM EA=10.69 MEV 8 (2007OG02). OTHERS: 10.72 MEV 30 (2003AU03.     
+278RG2CQ SYSTEMATICS).                                                          
+278RG C  2007OG02: DAUGHTER OF 28213 PRODUCED BY 237NP(48CA,3N), E(Lab)=244 MEV 
+278RG2C  AT TARGET CENTER. EXPERIMENTS WERE DONE AT DUBNA, RUSSIA, IN           
+278RG3C  COLLABORATION WITH ^LLNL, USA THROUGH JUNE-JULY 2006. SEE 28213 Adopted
+278RG4C  Levels FOR EXPERIMENTAL DETAILS. 2007OG01 GIVE PRELIMINARY RESULTS FOR 
+278RG5C  THIS STUDY. THE SECOND EVENT IN THE DECAY CHAIN IS ASSIGNED TO         
+278RG6C  278RG AND WAS MEASURED UNDER BEAM-OFF CONDITIONS.                      
+278RG t  {TV}Details of two decay chains are provided, one with four successive 
+278RG+t   {TV}|a decays followed by SF decay, and another with three successive 
+278RG+t   {TV}|a decays.                                                        
+278RG2t  {UFirst decay chain: EVR at 13.99 MeV  (Strip 6)}                      
+278RG3t  E{-|a1}=10.62 MeV {I8}, t{-1}=88.9 ms                                  
+278RG+t       - {TV}assigned to {+282}113 decay                                 
+278RG4t  E{-|a2}=10.69 MeV {I8}, t{-2}=6.2 ms                                   
+278RG+t        - {TV}assigned to {+278}Rg decay                                 
+278RG5t  E{-|a3}=10.0 MeV {I11}, t{-3}=472.6 ms                                 
+278RG+t      - {TV}assigned to {+274}Mt decay                                   
+278RG6t  E{-|a4}=8.93 MeV {I8},  t{-4}=87.98 s                                  
+278RG+t       - {TV}assigned to {+270}Bh decay                                  
+278RG7t  E(SF)=174 MeV, t(SF)=31.74 min - {TV}assigned to {+266}Db decay.       
+278RG8t  {TV}Experimenters note that the SF events could also be from           
+278RG+t   {TV}{+266}Rf SF decay, if {+266}Db decays by |e decay. The |a decay   
+278RG+t   {TV}mode  of {+266}Db is also possible.                               
+278RG9t  {U{TV}Second decay chain: EVR at 13.11 MeV (Strip 10)}                 
+278RGAt  E{-|a1}=10.64 MeV {I10}, t{-1}=122.7 ms                                
+278RG+t    - {TV}assigned to {+282}113 decay                                    
+278RGBt  E{-|a2}=10.80 MeV {I76}, t{-2}=5.8 ms                                  
+278RG+t      - {TV}assigned to {+278}Rg decay                                   
+278RGCt  E{-|a3}=9.76 MeV {I10},  t{-3}=810.1 ms                                
+278RG+t    - {TV}assigned to {+274}Mt decay                                     
+278RGDt  E{-|a4}=8.52 MeV {I10},  t{-4}=97.02 s                                 
+278RG+t     - {TV}assigned to {+270}Bh decay                                    
+278RG C  EXPERIMENTERS CALCULATED A HINDRANCE FACTOR FOR PARENT AND DAUGHTER OF 
+278RG2C  4-10 BY COMPUTING THE RATIO OF T(EXP)/T(CAL) USING THE Viola Seaborg   
+278RG3C  FORMULA FOR T(CAL). THE EVALUATORS NOTE THAT                           
+278RG4C  T(EXP)/T(^V-^S)=4.2 MS/{ 1.1 MS}=4 USING ADOPTED VALUE IS AN ESTIMATE. 
+278RG C  THEORY: SEE Nuclear Science References.                                
+278RG C  ASSIGNMENT: DAUGHTER OF 28213 PRODUCED BY 237NP(48CA,3N),              
+278RG2C  E(Lab)=244 MEV AT TARGET CENTER (2007OG02, 2007OG01). WHILE THE TWO    
+278RG3C  MEASURED ALPHA ENERGIES FOR 28213 DECAY MAY BE TAKEN AS SATISFYING THE 
+278RG4C  CRITERIA FOR REDUNDANCY AND BOTH HALF-LIVES AGREE WITHIN THE ASSOCIATED
+278RG5C  UNCERTAINTIES, THE EVALUATORS NOTE THAT THE PROPERTIES ATTRIBUTED TO   
+278RG6C  28213 AND ITS DAUGHTERS SHOULD BE CONSIDERED AS TENTATIVE UNTIL        
+278RG7C  CONFIRMED INDEPENDENTLY.                                               
+278RG  L X                             4.2 MS    +76-17                        ?
+278RG CL J$|W(p)=9/2-; |W(n)=11/2+ FROM 1997MO25 (THEORY)                       
+278RG CL T$FROM TWO EVENTS USING THE METHODS OF 1984SC13. OTHER: 1.1 MS FROM    
+278RG2CL Viola-Seaborg SYSTEMATICS ASSUMING QA=10.846 MEV                       
+278RG3 L %A AP 100$%SF=?                                                        
+278RG CL %A$NO SF DECAY EVENTS OBSERVED.                                        
+278RG CL $B2: 0.164  FROM 1995MO29; 0.207 FROM 2003MU15 (THEORY)                
+                                                                                
+278RG    28213 A DECAY: Tentative      2007OG02,2007OG01         ENSDF    200711
+278RG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+278RG C  ALL DATA ARE FROM 2007OG02. SEE 28213 Adopted Levels FOR DETAILS       
+28213  P X                             0.07 S    +14-3          10.78E3   7     
+28213 CP T$73 MS +134-29                                                        
+278RG  N                       1.0     AP                                       
+278RG CN BR$NO SF DECAY EVENTS OBSERVED.                                        
+278RG  L X                             4.2 MS    +76-17                        ?
+278RG3 L %A AP 100$%SF=?                                                        
+278RG  A 10.63E3   7                                                           ?
+278RG CA E$WEIGHTED AVERAGE (INTERNAL) OF 10.62 MEV 8 AND 10.64 MEV 10          
+                                                                                
+27813    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+27813  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+278132 H CUT=12-Aug-2005$                                                       
+27813  Q                       8.3E2   SY1.185E4 5     2012WA38                 
+27813 CQ Note: Current evaluation has used the following Q record               
+27813  Q                                  11.85E3  4   2004MO42                 
+27813 CQ QA$FROM EA=11.68 MEV 4                                                 
+27813 C  1998HO13: EXCITATION FUNCTIONS FOR THE PRODUCTION OF ODD-ELEMENTS WERE 
+278132C  UNDERTAKEN. CROSS SECTIONS MEASURED AT ^GSI/^SHIP USING 209BI TARGETS. 
+278133C  RESULTS FAVORED 70ZN FOR THE PRODUCTION OF Z=113. EXTENSIVE            
+278134C  SYSTEMATICS INDICATED A CROSS SECTION LIMIT OF BETWEEN 1 AND 0.3 pb    
+278135C  FOR 27813 WITH THE REACTION 209BI(70ZN,N) AND BETWEEN 1 AND 0.1 pb FOR 
+278136C  28314 WITH 208PB(76GE,N).                                              
+27813 C  1999GRZM, 1999HOZV: EXPERIMENTS OPTIMIZED TO OBSERVE Z=113 AT A CROSS  
+278132C  SECTION WINDOW OF 0.3 TO 1.0 pb IN THE REACTION 209BI(70ZN,N).         
+278133C  PRODUCTION RUNS WERE CARRIED OUT IN APRIL/MAY 1998 OVER TWO PERIODS    
+278134C  WITH TOTAL BEAM DOSES OF 4.5E+18 (25 DAYS)  AND 3.0E+18 (21 DAYS) OF   
+278135C  THE 70ZN PROJECTILE. TWO BEAM ENERGIES WERE USED: 4.97 AMeV AND 5.0    
+278136C  AMeV RESULTING IN ^CN EXCITATION ENERGIES OF 9.85 AND 11.57 MEV,       
+278137C  RESPECTIVELY. CROSS SECTION LIMITS OBTAINED WERE 0.9 AND 1.4 pb        
+278138C  FOR THE TWO ENERGIES AT THE 68% CONFIDENCE LEVEL. THE QUOTED WEIGHTED  
+278139C  AVERAGE EXCITATION ENERGY WAS 10.54 AMeV FOR AN EFFECTIVE CROSS-       
+27813AC  SECTION OF 0.6 pb (ARRIVED AT BY COMBINING THE TWO MEASURED            
+27813BC  CROSS-SECTIONS). NO EVENTS WERE OBSERVED IN EITHER RUN.                
+27813 C  2004MO42: COLD FUSION EXPERIMENT DONE AT ^RIKEN IN COLLABORATION       
+278132C  WITH Chinese SCIENTISTS IN 2003/2004. REACTION: 209BI(70ZN,N) AT A     
+278133C  BEAM ENERGY OF 352.6 MEV PROVIDED BY ^RILAC CORRESPONDING TO AN ENERGY 
+278134C  AT TARGET CENTER OF 349 MEV. THE ABSOLUTE ACCURACY OF THE BEAM ENERGY  
+278135C  WAS |+0.6 MEV. THE PRODUCTION CROSS-SECTION WAS 55 fb {I+150-45}.      
+278136C  SIXTEEN TARGETS WERE MOUNTED ON A ROTATING WHEEL (2000 RPM) WITH A     
+278137C  DIAMETER OF 30 CM. PRODUCTS FOLLOWING THE REACTION WERE SEPARATED      
+278138C  IN-FLIGHT BY ^GARIS (2004MO40) FILLED WITH He GAS, AND GUIDED INTO     
+278139C  A FOCAL PLANE DETECTOR CONSISTING OF A TIMING MODULE WITH              
+27813AC  MICROCHANNEL PLATES (^MCP) AND A ^SSD (Si SEMICONDUCTOR DETECTOR) BOX  
+27813BC  WHICH INCLUDED ONE DETECTOR WITH 16 POSITION SENSITIVE STRIPS (^PSD).  
+27813CC  ^EVR's WERE IMPLANTED IN THE ^PSD AFTER THEY PASS THROUGH THE TIMING   
+27813DC  COUNTERS. A TOTAL OF 1.7E+19 IONS IMPINGED ON THE TARGET; TRANSMISSION 
+27813EC  EFFICIENCY OF ^GARIS WAS 0.8 (2004MO26). THE EXCITATION ENERGY OF THE  
+27813FC  27913 ^CN WAS CALCULATED TO BE 14.1 MEV 20.                            
+27813aC  A SINGLE ^EVR-|a1-|a2-|a3-|a4-SF SEQUENCE WAS OBSERVED ON 23 JULY 2004:
+27813 t    {TV}Event #1: Energy of the evaporation residue=36.75 MeV            
+278132t       E{-|a1}=11.68 MeV {I4}   t{-1}=344 |ms    -   assigned to         
+27813+t   {+278}113                                                             
+278133t       E{-|a2}=11.15 MeV {I7}   t{-2}=9.26 ms   -   assigned to {+274}Rg 
+278134t       E{-|a3}=10.03 MeV {I7}   t{-3}=7.16 ms   -   assigned to {+270}Mt 
+278135t       E{-|a4}= 9.08 MeV {I4}   t{-4}=2.47 s    -   assigned to {+266}Bh 
+278136t       E(SF)=204.1 MeV   t(SF)=40.9 s -   assigned to {+262}Db           
+27813 D  THIS IS THE FIRST FEMTO-BARN CROSS-SECTION ENCOUNTERED SO FAR AND WELL 
+27813aD  BELOW THE LIMIT PREDICTED BY ^GSI.                                     
+27813aD  THE SMALLNESS MAY BE DUE TO THE COLD-FUSION LIMIT BEING REACHED:       
+27813aD  ALREADY ABOUT 1 pb IN THE GSI EXPERIMENT FOR 27712.                    
+27813aD  HIGHER CROSS-SECTIONS COULD BE EXPECTED BY HOT-FUSION, BUT THE         
+27813aD  NECESSARY BEAM-TARGET COMBINATIONS MAY NOT BE AVAILABLE. HENCE, THIS   
+27813aD  IS ALSO THE FIRST INSTANCE OF A DIRECT MEASUREMENT FOR Z=113. ONLY     
+27813aD  OTHER INSTANCE IS IN THE CASE OF 28313 (1 ATOM) AND 28413              
+27813aD  (3 ATOMS) AS DAUGHTERS OF Z=115 AS REPORTED IN 2003OGZY AND 2004OG03.  
+27813aD  SEE Adopted Levels FOR {+288,287}115 FOR DETAILS.                      
+27813 C  THEORY: SEE Nuclear Science References                                 
+27813 C  ASSIGMENTS: THE ASSIGNMENTS ARE THE {IMOST PROBABLE} ONES FOR THE      
+278132C  REACTION. ALSO, THE IDENTIFICATION OF THE PARENT AS 27813, ALPHA-DECAY 
+278133C  DAUGHTER 274RG, AND GRAND-DAUGHTER 270MT, ARE ALL RENDERED PLAUSIBLE   
+278134C  FOLLOWING A CONSISTENT COMPARISON OF THE 4{+th} AND 5{+th} EVENTS WITH 
+278135C  KNOWN DESCENDENTS. THE OBSERVATION OF EACH ISOTOPE IN THE SEQUENCE     
+278136C  SHOULD BE CONSIDERED AS TENTATIVE AND PENDING CONFIRMATION.            
+27813  L X                                                                     ?
+27813 CL J$|W(p)=3/2-; |W(n)=3/2+  FROM 1997MO25 (THEORY)                       
+278132 L T=0.24 MS +114-11                                                      
+27813 CL T$FROM |Dt=344 US; UNCERTAINTY ESTIMATED BY THE EVALUATORS.            
+278132CL T(CALC)=16.9 US FROM Viola-Seaborg SYSTEMATICS FOR QA=11.85 MEV.       
+278132 L %A AP 100                                                              
+27813 CL %A$ASSUMED FROM 1/1 EVENT                                              
+27813 CL $B2(THEORY): 0.184 FROM 1995MO29; 0.196 FROM 2005GAZX                  
+                                                                                

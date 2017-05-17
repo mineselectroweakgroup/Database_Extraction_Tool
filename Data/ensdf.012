@@ -1,0 +1,1801 @@
+ 12      COMMENTS                                                90NP     200006
+ 12    H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506 1 (1990)$  
+ 12  2 H CUT=1-Jun-1989$                                                        
+ 12   c  TITL$NUCLEAR DATA SHEETS FOR A=12                                      
+ 12   c  AUTH$F. AJZENBERG-SELOVE AND J.H. KELLEY                               
+ 12   c  INST$TRIANGLE UNIVERSITIES NUCLEAR LABORATORY                          
+ 12  #c       DURHAM, NORTH CAROLINA 27708-0308                                 
+ 12   c  ABST$Compilation of energy levels of A=12 Nuclei, with emphasis on the 
+ 12  2c  review of material leading to information about structure of the A=12  
+ 12  3c  system. This evaluation is adopted for ENSDF from 1990Aj01.            
+ 12   c  CUT$June 1, 1989                                                       
+ 12   c  FUND$This work is supported by the U.S. Department of Energy, Office   
+ 12  xc  of High Energy and Nuclear Physics, under contract DEFGO2-97-ER41042   
+ 12  xc  (North Carolina State University); contract no.  DEFGO2-97-ER41033     
+ 12  xc  (Duke University)                                                      
+ 12   c  CIT$NP A506 1 (1990)                                                   
+                                                                                
+ 12      REFERENCES                                                       200006
+ 12    R 1968AJ01 JOUR NUPAB A116 481                                           
+ 12    R 1972AL03 JOUR PRVCA C5 384                                             
+ 12    R 1974MC11 JOUR PRVCA C10 333                                            
+ 12    R 1975AJ01 JOUR NUPAB A246 505                                           
+ 12    R 1975AJ02 JOUR NUPAB A248 1                                             
+ 12    R 1977AD02 JOUR PRVCA C15 484                                            
+ 12    R 1978AL01 JOUR PRVCA C17 280                                            
+ 12    R 1978AL10 JOUR PRVCA C17 1525                                           
+ 12    R 1978AL29 JOUR PRVCA C18 2727                                           
+ 12    R 1978KE06 JOUR PRVCA C17 1929                                           
+ 12    R 1978LEZA BOOK Table of Isotopes, 7th Ed., John Wiley and Sons          
+ 12    R 1980AJ01 JOUR NUPAB A336 1                                             
+ 12    R 1981KA31 JOUR ZPAAD 301 183                                            
+ 12    R 1982BE42 JOUR PYLBB 116 7                                              
+ 12    R 1983BA62 JOUR AUJPA 36 649                                             
+ 12    R 1983DE53 JOUR NUPAB 411 337                                            
+ 12    R 1983NE11 JOUR PRVCA 28 1594                                            
+ 12    R 1984DU15 JOUR ZPAAD 319 237                                            
+ 12    R 1985AJ01 JOUR NUPAB 433 1                                              
+ 12    R 1985AN28 JOUR ADNDA 33 447                                             
+ 12    R 1985MO18 JOUR PRVCA 32 999                                             
+ 12    R 1985PO10 JOUR PYLBB 157 120                                            
+ 12    R 1986CH39 JOUR NUPAB 459 488                                            
+ 12    R 1986GI13 JOUR PRVCA 34 1895                                            
+ 12    R 1987BL18 JOUR NUPAB 471 453                                            
+ 12    R 1987FA05 JOUR PRVCA 35 1570                                            
+ 12    R 1987SA15 JOUR JPHGB 13 453                                             
+ 12    R 1988CO15 JOUR PYLBB 210 31                                             
+ 12    R 1988GO21 JOUR PYLBB 212 11                                             
+ 12    R 1988MA27 JOUR NUPAB 481 793                                            
+ 12    R 1988WA18 JOUR ADNDA 39 281                                             
+ 12    R 1989GR06 JOUR PRLTA 62 1837                                            
+ 12    R 1990AJ01 JOUR NUPAB 506 1                                              
+ 12    R 1996FIZY BOOK Table of Isotopes, 8th Ed., John Wiley and Sons          
+ 12    R 1997AU04 JOUR NUPAB 624 1                                              
+                                                                                
+ 12LI    ADOPTED LEVELS                1990AJ01                  90NP     200006
+ 12LI  H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12LI2 H CUT=1-JUN-1989$                                                        
+ 12LI c  {+12}Li is not observed in the 4.8 GeV proton bombardment of a uranium 
+ 12LI2c  target: it is particle unstable. The calculated value of its           
+ 12LI3c  mass excess is 52.93 MeV (1980AJ01): {+12}Li would then be unstable    
+ 12LI4c  with respect to {+11}Li+n, {+10}Li+2n, and {+9}Li+3n by 4.01, 2.96 and 
+ 12LI5c  3.76 MeV respectively. The ground state of {+12}Li is predicted to     
+ 12LI6c  have J|p=2- (1985Po10). See also 1980AJ01.                             
+ 12LI  Q 23842     16-120    15                        2012WA38                 
+ 12LI CQ Note: Current evaluation has used the following Q record               
+ 12LI  Q 27850                                                                  
+ 12LI cQ Q-        From the calculated mass excess({+12}Li)=52930 keV and the   
+ 12LI2cQ mass excess({+12}Be)=25077 keV {I15} (1988Wa18 and A. H. Wapstra,      
+ 12LI3cQ private communication).                                                
+                                                                                
+ 12BE    ADOPTED LEVELS                1990AJ01                  90NP     200006
+ 12BE  H TYP=MOD$AUT=J. Blachot$COM=added T reference$DAT=15-MAR-2001$          
+ 12BE  H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12BE2 H CUT=1-JUN-1989$                                                        
+ 12BE D  CORRECTED DSID (TWB. 940526)                                           
+ 12BE  XA10BE(T,P)                                                              
+ 12BE  XB14C(14C,16O)                                                           
+ 12BE cL E(A)      See discussion in 1982Be42                                   
+ 12BE cL E(B)      This state has an appreciable intrinsic |G; see 1978Al29     
+ 12BE  Q 11708.3   243170.7  2022939.5 20-8956.8 19    2012WA38                 
+ 12BE CQ Note: Current evaluation has used the following Q record               
+ 12BE  Q 11707.    153169.   16 23009. 30-8947.  17    1997AU04                 
+ 12BE  L 0           0+                21.3 MS   1                              
+ 12BE CL T$From 1995REZZ. Others: 24.4 MS 30 (1978AL10), 21.3 MS 22 (1986CU01)  
+ 12BE2CL , 24 MS 1 (1984DU15).                                                  
+ 12BE2 L ISPIN=2$ %B-=100 $ %B-N LE 1                                           
+ 12BE3 L XREF=+                                                                 
+ 12BE  L 2102      122+                                                     A   
+ 12BE2 L ISPIN=2 $ %IT=?                                                        
+ 12BE3 L XREF=AB                                                                
+ 12BE  L 2702      17                                                       A   
+ 12BE2 L XREF=AB                                                                
+ 12BE  L 4560      25                                                       B   
+ 12BE2 L XREF=A                                                                 
+ 12BE  L 5700      25                                                       B   
+ 12BE2 L XREF=A                                                                 
+                                                                                
+ 12BE    10BE(T,P)                     1990AJ01                  90NP     200006
+ 12BE  H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12BE2 H CUT=1-JUN-1989$                                                        
+ 12BE  L 0                                                                      
+ 12BE  L 2102                                                                   
+ 12BE  L 2702                                                                   
+ 12BE  L 4560                                                                   
+ 12BE  L 5700                                                                   
+                                                                                
+ 12BE    14C(14C,16O)                  1990AJ01                  90NP     200006
+ 12BE  H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12BE2 H CUT=1-JUN-1989$                                                        
+ 12BE  L 0                                                                      
+ 12BE  L 2.10E3                                                                 
+ 12BE  L 2.68E3     3 0+                                                        
+                                                                                
+ 12B     ADOPTED LEVELS, GAMMAS        1990AJ01                  90NP     200006
+ 12B   H TYP=MOD$AUT=J. Blachot$COM=added T reference$DAT=15-MAR-2001$          
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   XA12BE B- DECAY                                                          
+ 12B   XB6LI(7LI,P), 7LI(7LI,D)                                                 
+ 12B   XC9BE(6LI,3HE)                                                           
+ 12B   XD9BE(7LI,A)                                                             
+ 12B   XE10B(T,P)                                                               
+ 12B   XF11B(N,G)                                                               
+ 12B   XG11B(N,N) RES                                                           
+ 12B   XH11B(P,PI+)                                                             
+ 12B   XI11B(D,P)                                                               
+ 12B   XJ11B(7LI,6LI)                                                           
+ 12B   XK12C(G,PI+)                                                             
+ 12B   XL12C(D,2P)                                                              
+ 12B   XM12C(7LI,7BE)                                                           
+ 12B   XN12C(12C,12N)                                                           
+ 12B   XO12C(13C,13N)                                                           
+ 12B   XP13C(D,3HE)                                                             
+ 12B   XQ14C(P,3HE)                                                             
+ 12B  cL E(A)$ Decay mode not specified                                         
+ 12B  c  See also table 12.5 in 1990AJ01                                        
+ 12B  cG           |g data are from table 2 and table 12.5 in 1990AJ01 and      
+ 12B 2cG table 2 in 1980AJ01                                                    
+ 12B  cG E         From level energy difference; recoil correction applied      
+ 12B  cG RI        Per-cent photon branching from each level                    
+ 12B   Q 13369.4   143369.8  1414096.7 14-10001.314    2012WA38                 
+ 12B  CQ Note: Current evaluation has used the following Q record               
+ 12B   Q 13368.9   143370.4  1514094   6 -10002.215    1997AU04                 
+ 12B  PN                                                                     7  
+ 12B   L 0           1+                20.20 MS  2                              
+ 12B 2 L ISPIN=1$%B-=100$MOMM1=+1.00306 15 $MOME2=0.0134 14                     
+ 12B  CL T$From 1978AL01. Others: 20.9 MS 18 (1988SA04), 20.1 MS 4 (1995REZZ)   
+ 12B 3 L XREF=ABCDEFHIJKLMNOPQ                                                  
+ 12B   L 953.14    602+                180 FS    28                             
+ 12B 2 L XREF=BCDEHIJKLMNOPQ                                                    
+ 12B   G 953.10      100       M1                                               
+ 12B 2 G WIDTHG=2.53E-3 EV 40$BM1W=0.14 2                                       
+ 12B   L 1673.65   602-                35 FS     LT                             
+ 12B 2 L XREF=BCDEHIJKLMNO                                                      
+ 12B   G 720.34      3.2     4 E1                                               
+ 12B 2 G WIDTHG GT 4.2E-4 EV$BE1W GT 0.003                                      
+ 12B   G 1673.52     96.8    4 E1                                               
+ 12B 2 G WIDTHG GT 1.3E-2 EV$BE1W GT 0.008                                      
+ 12B   L 2620.8    121-                49 FS     LT                             
+ 12B 2 L XREF=BDEHIJMO                                                          
+ 12B   G 947.11      14      3 M1                                               
+ 12B 2 G WIDTHG GT 1.3E-3 EV$BM1W GT 0.07                                       
+ 12B   G 1667.54     80      3 E1                                               
+ 12B 2 G WIDTHG GT 7.5E-3 EV$BE1W GT 0.005                                      
+ 12B   G 2620.5      6       1 E1                                               
+ 12B 2 G WIDTHG GT 5.6E-4 EV$BE1W GT 9E-5                                       
+ 12B   L 2723      110+                                                         
+ 12B 2 L XREF=BDEIJMP                                                           
+ 12B   G 2722.7      85      GT                                                 
+ 12B   L 3389.1    153-                3.1 EV    6                              
+ 12B 2 L %IT=? $ %N=?                                                           
+ 12B 3 L XREF=BCDEFGHIJO                                                        
+ 12B   L 3759      6 2+                40 KEV    4                              
+ 12B 2 L %IT=? $ %N=?                                                           
+ 12B 3 L XREF=CDEFGHIP                                                          
+ 12B   L 4301      7 1-                9 KEV     4                              
+ 12B 2 L %IT=? $ %N=?                                                           
+ 12B 3 L XREF=DEFGH                                                             
+ 12B   L 4460        2-                                                         
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=GNO                                                               
+ 12B  cL WIDTH     Broad                                                        
+ 12B   L 4518      8 4-                110 KEV   20                             
+ 12B 2 L %IT=? $ %N=?                                                           
+ 12B 3 L XREF=DEFGHIJKLNO                                                       
+ 12B   L 5000      201+                50 KEV    15                             
+ 12B 2 L %IT=? $ %N=?                                                           
+ 12B 3 L XREF=DEFGHP                                                            
+ 12B   L 5612      8 3+                110 KEV   40                             
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DEGHJLQ                                                           
+ 12B   L 5726      8 3-                50 KEV    20                             
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DEGJ                                                              
+ 12B   L 6000        1-                                                         
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=G                                                                 
+ 12B  cL WIDTH     Broad                                                        
+ 12B   L 6600        1+                140 KEV                                  
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=G                                                                 
+ 12B   L 7060        1-                                                         
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=G                                                                 
+ 12B  cL WIDTH     Broad                                                        
+ 12B   L 7545      20                  14 KEV    LE                             
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DEG                                                               
+ 12B   L 7670        2-                45 KEV                                  ?
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=G                                                                 
+ 12B   L 7.7E+3    1 1-                1.9 MEV   1                              
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=O                                                                 
+ 12B   L 7836      201-                60 KEV    40                             
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DG                                                                
+ 12B   L 7937      20(1-)              27 KEV                                   
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=D                                                                 
+ 12B   L 8.1E+3    1                   0.9 MEV   2                              
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=D                                                                 
+ 12B   L 8120      20(3-)                                                       
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DEG                                                               
+ 12B   L 8240      303-                65 KEV                                   
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DG                                                                
+ 12B   L 8376      20                  40 KEV    20                             
+ 12B 2 L XREF=DE                                                                
+ 12B   L 8580      30(3-)              75 KEV                                   
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DEG                                                               
+ 12B   L 8707      20(3-)                                                       
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DG                                                                
+ 12B   L 9040      201-                95 KEV    20                             
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DEG                                                               
+ 12B   L 9175      20(2-)                                                       
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DG                                                                
+ 12B   L 9430      20                  85 KEV    30                             
+ 12B 2 L XREF=DE                                                                
+ 12B   L 9585      5 3-                34 KEV    5                              
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DEG                                                               
+ 12B   L 9758      20                                                           
+ 12B 2 L XREF=D                                                                 
+ 12B   L 9830                                                                  ?
+ 12B 2 L XREF=D                                                                 
+ 12B   L 10000     40                  100 KEV                                  
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DG                                                                
+ 12B   L 10110     40                                                           
+ 12B 2 L XREF=D                                                                 
+ 12B   L 10220     20                  25 KEV    LT                             
+ 12B 2 L XREF=DE                                                                
+ 12B   L 10435     20                  75 KEV    40                             
+ 12B 2 L XREF=D                                                                 
+ 12B   L 10590     20                  30 KEV    LT                             
+ 12B 2 L XREF=DE                                                                
+ 12B   L 10900     20                  30 KEV    10                             
+ 12B 2 L XREF=DE                                                                
+ 12B   L 11080                                                                 ?
+ 12B 2 L XREF=D                                                                 
+ 12B   L 11310     30                  130 KEV   60                             
+ 12B 2 L XREF=D                                                                 
+ 12B   L 11590     20                  75 KEV    25                             
+ 12B 2 L XREF=D                                                                 
+ 12B   L 12345     25                  100 KEV   30                             
+ 12B 2 L %N=?                                                                   
+ 12B 3 L XREF=DEG                                                               
+ 12B   L 12750     500+                85 KEV    40                             
+ 12B 2 L ISPIN=2                                                                
+ 12B 3 L XREF=DQ                                                                
+ 12B   L 13330     30                  50 KEV    20                             
+ 12B 2 L XREF=D                                                                 
+ 12B   L 13.4E+3   1                                                           ?
+ 12B 2 L XREF=E                                                                 
+ 12B  cL WIDTH     Broad                                                        
+ 12B   L 14.82E+3  10(2+)              200 KEV   LE                             
+ 12B 2 L ISPIN=2                                                                
+ 12B 3 L XREF=Q                                                                 
+ 12B  CL ISPIN$TENTATIVE                                                        
+ 12B   L 15500                                                                  
+ 12B 2 L XREF=D                                                                 
+ 12B   L 21.8E+3   40(3-)              1.3 MEV   4                          A  ?
+ 12B 2 L XREF=M                                                                 
+ 12B   L 23.9E+3   10(1-)              6 MEV     1                          A  ?
+ 12B 2 L XREF=M                                                                 
+                                                                                
+ 12B     12BE B- DECAY                 1990AJ01                  90NP     200006
+ 12B   H TYP=MOD$AUT=J. Blachot$COM=added T reference$DAT=15-MAR-2001$          
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B  D  ADDED EAV for B-. CORRECETED PUB FIELD 6/12/96- JKT                    
+ 12B   N                       1.0       1.0                                    
+ 12BE  P 0.0         0+                21.3 MS   1              11708     15    
+ 12B   L 0           1+                20.20 MS  2                              
+ 12B   B             100                 3.834   17                             
+ 12B S B EAV=5615 8                                                             
+ 12B  cB IB        the upper limit of the branching to a state which            
+ 12B 2cB subsequently decays by neutron emission is 1% (1978Al10,1984Du15)      
+                                                                                
+ 12B     6LI(7LI,P)                    1968AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 1.7E3                                                                  
+ 12B   L 2.6E3                                                                  
+ 12B  cL E$Unresolved                                                           
+ 12B   L 2.7E3                                                                  
+ 12B  cL E$Unresolved                                                           
+ 12B   L 3.4E3                                                                  
+                                                                                
+ 12B     7LI(7LI,D)                    1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                        204 FS    26                             
+ 12B   L 1.67E3                                                                 
+ 12B   L 2.63E3                        33 FS     LT                             
+ 12B  cL E$Unresolved                                                           
+ 12B   L 2.72E3                                                                 
+ 12B  cL E$Unresolved                                                           
+                                                                                
+ 12B     9BE(6LI,3HE)                  1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B  cL E$Additional unresolved states are also observed.                      
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 1.67E3                                                                 
+ 12B   L 3.38E3                                                                 
+ 12B   L 3.76E3                                                                 
+                                                                                
+ 12B     9BE(7LI,A)                    1990AJ01,1980AJ01         90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L  951      15                                                           
+ 12B   L 1674      15                                                           
+ 12B   L 2625      15                                                           
+ 12B   L 2724      15                                                           
+ 12B   L 3390      15                                                           
+ 12B   L 3.77E3     2                  40 KEV    20                             
+ 12B  CL           THETA{-N}{+2}=0.46 6                                         
+ 12B   L 4305      15                  30 KEV    LT                             
+ 12B   L 4534      15                                                           
+ 12B   L 4982      15                  40 KEV    20                             
+ 12B  CL           THETA{-N}{+2}=0.08 3                                         
+ 12B   L 5.57E3     3                                                           
+ 12B  CL           THETA{-N}{+2}=0.46 6                                         
+ 12B   L 5728      15                  50 KEV    20                             
+ 12B   L 7545      20                  30 KEV    LT                             
+ 12B   L 7836      20                  60 KEV    40                             
+ 12B   L 7937      20                  40 KEV    LT                             
+ 12B   L 8.1E3      1                  0.9 MEV    2                             
+ 12B   L 8120      20                                                           
+ 12B   L 8.24E3     3                  40 KEV    20                             
+ 12B   L 8376      20                                                           
+ 12B   L 8.58E3     3                                                           
+ 12B   L 8707      20                                                           
+ 12B   L 9.03E3     2                                                           
+ 12B   L 9175      20                                                           
+ 12B   L 9.43E3     2                  85 KEV    30                             
+ 12B  cL E$Unresolved                                                           
+ 12B   L 9585      20                  60 KEV    30                             
+ 12B   L 9758      20                                                           
+ 12B   L 9.83E3                                                                ?
+ 12B   L 10.00E3    4                                                           
+ 12B   L 10.11E3    4                                                           
+ 12B   L 10.21E3    3                  50 KEV    20                             
+ 12B   L 10435     20                  75 KEV    40                             
+ 12B   L 10.58E3    2                  50 KEV    30                             
+ 12B   L 10887     20                  40 KEV    20                             
+ 12B   L 11.08E3                                                               ?
+ 12B   L 11.31E3    3                  130 KEV   60                             
+ 12B   L 11.59E3    2                  75 KEV    25                             
+ 12B   L 12.33E3    3                  100 KEV   30                             
+ 12B   L 12.77E3    5                  85 KEV    40                             
+ 12B   L 13.33E3    3                  50 KEV    20                             
+ 12B   L 15.5E3                                                                 
+                                                                                
+ 12B     10B(T,P)                      1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0            (1,2,4,5)+                       2                        
+ 12B   L  955       8 (1,2,4,5)+                       2                        
+ 12B   L 1673       8 (2,3,4)-                         1                        
+ 12B   L 2627       8 (0,1,5,6)-                       3                        
+ 12B   L 2.72E3       (0,6,7)+                         4                       ?
+ 12B   L 3393       8                                                           
+ 12B   L 3754       8 (1,2,4,5)+       42 KEV     5    2                        
+ 12B   L 4297       8                  15 KEV    LT                             
+ 12B   L 4514       8                  95 KEV    15                             
+ 12B   L 5.00E3                        130 KEV   40                             
+ 12B   L 5612       8                  120 KEV   20                             
+ 12B   L 5724       8                  70 KEV    20                             
+ 12B   L 7.55E3                                                                ?
+ 12B   L 8.16E3     3                                                           
+ 12B   L 8.38E3                                                                ?
+ 12B   L 8.58E3                                                                ?
+ 12B   L 9.07E3     3                  95 KEV    20                             
+ 12B   L 9.44E3     3                                                           
+ 12B   L 9626      20                  34 KEV    10                             
+ 12B   L 10227     20                  25 KEV    LT                             
+ 12B   L 10.61E3    3                  30 KEV    LT                             
+ 12B   L 10.91E3    2                  27 KEV    10                             
+ 12B   L 12.36E3    3                                                           
+ 12B   L 13.4E3     1                                                           
+ 12B  cL WIDTH     Broad                                                        
+                                                                                
+ 12B     11B(N,G)                      1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 3389.5     5                                                           
+ 12B 2 L WIDTHG=25E-3 EV 8                                                      
+ 12B   L 3.76E3                                                                 
+ 12B 2 L WIDTHG=0.30 EV 15                                                      
+ 12B   L 4.31E3                                                                 
+ 12B 2 L WIDTHG=0.30 EV 15                                                      
+ 12B   L 4.54E3                                                                 
+ 12B 2 L WIDTHG=0.2 EV 1                                                        
+ 12B   L 5.00E3                                                                 
+ 12B 2 L WIDTHG=0.9 EV 5                                                        
+                                                                                
+ 12B     11B(N,N) RES                  1990AJ01,1975AJ01         90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 3389.1     5 3-               1.4 KEV   LT    2                        
+ 12B 2 L WIDTHN=3.1 EV 6                                                        
+ 12B   L 3763      10 2+               37 KEV     5    1                        
+ 12B   L 4310      10 1-               9 KEV      4    0                        
+ 12B   L 4.46E3       2-                               0,2                      
+ 12B  cL WIDTH     Broad                                                        
+ 12B   L 4.54E3     2 4-               130 KEV   20    2                        
+ 12B   L 5.00E3     2 1+               60 KEV    20    1                        
+ 12B   L 5.61E3     2 3+               110 KEV   40    1                        
+ 12B   L 5.74E3     2 3-               55 KEV    20    2                        
+ 12B   L 6.0E3        1-                               0,2                      
+ 12B  cL WIDTH     Broad                                                        
+ 12B   L 6.6E3        1+               140 KEV         1                        
+ 12B   L 7.06E3       1-                               0,2                      
+ 12B  cL WIDTH     Broad                                                        
+ 12B   L 7.54E3                        14 KEV    LE                             
+ 12B   L 7.67E3       2-               45 KEV          0,2                      
+ 12B   L 7.77E3       1-               90 KEV          0,2                      
+ 12B   L 7.88E3       1-                               0,2                     ?
+ 12B   L 8.12E3       3-                               2                       ?
+ 12B   L 8.23E3       3-               65 KEV          2                        
+ 12B   L 8.49E3       3-               75 KEV          2                        
+ 12B   L 8.70E3       3-                               2                       ?
+ 12B   L 9.03E3       1-               120 KEV         0,2                      
+ 12B   L 9.09E3       2-                               0,2                     ?
+ 12B   L 9578       5 3-               34 KEV     5    2                        
+ 12B   L 9.94E3                        100 KEV                                  
+ 12B   L 10.53E3                       65 KEV                                   
+ 12B   L 12.27E3                       120 KEV                                  
+                                                                                
+ 12B     11B(P,PI+)                    1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 1.67E3                                                                 
+ 12B   L 2.62E3                                                                 
+ 12B   L 3.39E3                                                                 
+ 12B   L 3.76E3                                                                 
+ 12B   L 4.30E3                                                                 
+ 12B  cL E$Unresolved                                                           
+ 12B   L 4.52E3                                                                 
+ 12B  cL E$Unresolved                                                           
+ 12B   L 5.00E3                                                                 
+ 12B   L 5.61E3                                                                 
+                                                                                
+ 12B     11B(D,P)                      1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0            1+                               1        0.69            
+ 12B   L 953.14    60 2+               180 FS    28    1        0.55            
+ 12B   G 953.10      100                                                        
+ 12B   L 1673.65   60 2-               35 FS     LT    0        0.57            
+ 12B   G 720.34      3.2     4                                                  
+ 12B   G 1673.52     96.8    4                                                  
+ 12B   L 2620.8    12 1-               49 FS     LT    0        0.75            
+ 12B   G 947.11      14      3                                                  
+ 12B   G 1667.54     80      3                                                  
+ 12B   G 2620.5      6       1                                                  
+ 12B   L 2723      11 0+                               1        0.21            
+ 12B   G 2722.7      85      GT                                                 
+ 12B   L 3383       9 3-                               2        0.58            
+ 12B   L 3.76E3       2+                               1                        
+ 12B   L 4.52E3                                        2                        
+                                                                                
+ 12B     11B(7LI,6LI)                  1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 1.67E3                                                                 
+ 12B   L 2.62E3                                                                 
+ 12B  cL E$Unresolved                                                           
+ 12B   L 2.72E3                                                                 
+ 12B  cL E$Unresolved                                                           
+ 12B   L 3.39E3                                                                 
+ 12B   L 4.52E3                                                                 
+ 12B   L 5.61E3                                                                 
+ 12B  cL E$Unresolved                                                           
+ 12B   L 5.73E3                                                                 
+ 12B  cL E$Unresolved                                                           
+                                                                                
+ 12B     12C(G,PI+)                    1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 4.5E3     AP                                                           
+ 12B   L 7.0E3                                                                  
+                                                                                
+ 12B     12C(D,2P)                     1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 4.5E3                                                                  
+ 12B  cL E$Unresolved                                                           
+ 12B   L 8.2E3                                                                  
+                                                                                
+ 12B     12C(7LI,7BE)                  1990AJ01,1985AJ01         90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 1.71E3                                                                 
+ 12B   L 2.70E3                                                                 
+ 12B   L 2.87E3                                                                 
+ 12B   L 4.52E3                                                                 
+ 12B   L 21.8E3     4 3-               1.3 MEV    4                             
+ 12B   L 23.9E3    10 1-               6.0 MEV   10                             
+                                                                                
+ 12B     12C(12C,12N)                  1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 1.67E3                                                                 
+ 12B   L 4.5E3                                                                  
+ 12B  cL E$Unresolved                                                           
+                                                                                
+ 12B     12C(13C,13N)                  1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 1.67E3                                                                 
+ 12B   L 2.62E3                                                                 
+ 12B   L 3.38E3                                                                 
+ 12B   L 4.5E3                                                                  
+ 12B  cL E$Unresolved                                                           
+ 12B   L 5.5E3     AP                                                           
+ 12B   L 7.7E3      1                  1.9 MEV    1                             
+ 12B   L 10.1E3                                                                 
+ 12B   L 18.2E3                                                                 
+                                                                                
+ 12B     13C(D,3HE)                    1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                      1.1       2     
+ 12B  cL S$C{+2}S=1.09                                                          
+ 12B   L 0.95E3                                                 2.0       5     
+ 12B  cL S$C{+2}S=2.17                                                          
+ 12B   L 2.72E3                                                                 
+ 12B  cL S$C{+2}S=0.14                                                          
+ 12B   L 3.76E3                                                                 
+ 12B  cL S$C{+2}S=0.07                                                          
+ 12B   L 5.00E3                                                                 
+ 12B  cL S$C{+2}S=0.22                                                          
+                                                                                
+ 12B     14C(P,3HE)                    1990AJ01                  90NP     200006
+ 12B   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12B 2 H CUT=1-JUN-1989$                                                        
+ 12B   L 0                                                                      
+ 12B   L 0.95E3                                                                 
+ 12B   L 5.61E3                                                                 
+ 12B   L 12.72E3    7                  200 KEV   LE                             
+ 12B 2 L ISPIN=2                                                                
+ 12B   L 14.82E3   10                  200 KEV   LE                             
+ 12B 2 L ISPIN=2                                                                
+                                                                                
+ 12C     ADOPTED LEVELS, GAMMAS        1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C  D  CORRECTED "ISPIN=" (TWB. 940526)                                       
+ 12C   XA12B B- DECAY                                                           
+ 12C   XB12N B+ DECAY                                                           
+ 12C   XC6LI(9BE,T)                                                             
+ 12C   XD9BE(3HE,G) RES                                                         
+ 12C   XE9BE(A,N)                                                               
+ 12C   XF10BE(3HE,N)                                                            
+ 12C   XG10B(3HE,P), (3HE,PA)                                                   
+ 12C   XH10B(6LI,A)                                                             
+ 12C   XI11B(P,G), (P,A)                                                        
+ 12C   XJ11B(P,N) RES                                                           
+ 12C   XK11B(P,P), (P,D)                                                        
+ 12C   XL11B(D,N)                                                               
+ 12C   XM11B(3HE,D)                                                             
+ 12C   XN11B(A,T)                                                               
+ 12C   XO11B(7LI,6HE)                                                           
+ 12C   XP12C(E,E)                                                               
+ 12C   XQ14C(P,T)                                                               
+ 12C   XR12C(G,G)                                                               
+ 12C   XS12C(PI,PI)                                                             
+ 12C   XT12C(N,N)                                                               
+ 12C   XU12C(P,P)                                                               
+ 12C   XV12C(P,PA)                                                              
+ 12C   XW12C(D,D)                                                               
+ 12C   XX12C(3HE,3HE)                                                           
+ 12C   XY12C(A,A)                                                               
+ 12C   XZ12C(6LI,6LI)                                                           
+ 12C   Xa12C(14N,14N)                                                           
+ 12C   Xb13C(PI+,P)                                                             
+ 12C   Xc13C(P,D)                                                               
+ 12C   Xd13C(D,T)                                                               
+ 12C   Xe14N(P,3HE)                                                             
+ 12C   Xf14N(D,A)                                                               
+ 12C   Xg15N(P,A)                                                               
+ 12C   Xh16O(D,6LI)                                                             
+ 12C   Xi16O(3HE,7BE)                                                           
+ 12C   Xj16O(A,8BE)                                                             
+ 12C  c  See also table 12.7 (1990AJ01) and table 12.12 (1980AJ01)              
+ 12C  cL E         See also reactions {+8}Be(|a,|g) and {+12}C(|g,n) and        
+ 12C 2cL {+12}C(|g,2n) in in 1990AJ01                                           
+ 12C  cL E(A)      See charge-dependent matrix element between                  
+ 12C 2cL {+12}C*(12710,15110) in table 12.10 (1990AJ01)                         
+ 12C  cL E(B)      See discussion in 1983Ne11                                   
+ 12C  cG E         From level energy difference; recoil correction applied      
+ 12C  cG E(C)      |G data based on |G{-|g0} of 1983De53 and on branching       
+ 12C 2cG ratios of 1972Al03: {+12}C*(15110) to {+12}C(0), {+12}C*(4439),        
+ 12C 3cG {+12}C*(7654), {+12}C*(12710) are 92 % 2, 2.3 % 3, 2.6 % 7,            
+ 12C 4cG  1.4 % 4 respectively. In addition, an undetected branching of 1.6 %   
+ 12C 5cG to {+12}C*(10300) is indicated in the |b{+-} decay work of 1972Al03.   
+ 12C 6cG See also 1980AJ01.                                                     
+ 12C  cL E(D)$ Decay mode not specified                                         
+ 12C   Q -17338.1  1018721.6 1015956.8 5 -7366.594     2012WA38                 
+ 12C  CQ Note: Current evaluation has used the following Q record               
+ 12C   Q -17338.1  1018721.8 1015957.0 4 -7366.5714    1997AU04                 
+ 12C   L 0           0+                STABLE                                   
+ 12C 2 L ISPIN=0                                                                
+ 12C 3 L XREF=ABCDEFGHILMNOPQRSTUVWXYZabcdefghij                                
+ 12C  cL           For ground state properties of {+12}C, see the references    
+ 12C 2cL given in 1990AJ01                                                      
+ 12C   L 4438.91   312+                10.8E-3 EV6                              
+ 12C 2 L ISPIN=0                                                                
+ 12C 3 L XREF=ABCDEFGHILMNOPRSTUWXYZabcdefghij                                  
+ 12C   G 4438.03               E2                                               
+ 12C 2 G WIDTHG=10.8E-3 EV 6$BE2W=4.65 26                                       
+ 12C   L 7654.20   150+                8.5 EV    10                             
+ 12C 2 L ISPIN=0 $ %IT=? $ %A=?                                                 
+ 12C 3 L XREF=ABCDEFGHIMNOPSTUXYZbcfghij                                        
+ 12C  cL           Also decays via pair production.                             
+ 12C 2CL           |G{-PI}=60.5|*10{+-6} EV {I39};                              
+ 12C 3CL           |G{-PI}/|G=6.8|*10{+-6} {I7}                                 
+ 12C  cL WIDTH     8.3 eV {I10} given in table 12.7 (1990AJ01).                 
+ 12C   G 3214.83               E2                                               
+ 12C 2 G WIDTHG=3.7E-3 EV 5$BE2W=8.0 11                                         
+ 12C   L 9641      5 3-                34 KEV    5                              
+ 12C 2 L ISPIN=0 $ %IT=? $ %A=?                                                 
+ 12C 3 L XREF=CEGHILMNOPRSTUXYZabchij                                           
+ 12C  CL           |G{-PI}+|G{-|g}<14|*10{+-3} EV;                              
+ 12C 2CL THIS IS BASED ON |G=34 KEV {I5}.                                       
+ 12C   G 9637                  E3                                               
+ 12C 2 G WIDTHG=3.1E-4 EV 4$BE3W=12 2                                           
+ 12C   L 10.3E+3   3 (0+)              3.0 MEV   7                              
+ 12C 2 L ISPIN=0 $ %A=?                                                         
+ 12C 3 L XREF=ABEZc                                                             
+ 12C   L 10844     161-                315 KEV   25                             
+ 12C 2 L ISPIN=0 $ %A=?                                                         
+ 12C 3 L XREF=EGLMNOTUWXYZ                                                      
+ 12C   L 11160     50(2+)              430 KEV   80                            ?
+ 12C 2 L ISPIN=0                                                                
+ 12C 3 L XREF=M                                                                 
+ 12C   L 11828     162-                260 KEV   25                             
+ 12C 2 L ISPIN=0  $ %IT=? $ %A=?                                                
+ 12C 3 L XREF=CGHLMNOPRTUWXY                                                    
+ 12C   L 12710     6 1+                18.1 EV   28                         A   
+ 12C 2 L ISPIN=0$WIDTHA=17.7 EV 28$WIDTHG0/WIDTH=1.93E-2 12                     
+ 12C 3 L %IT=? $ %A=?                                                           
+ 12C  cL           |G{-|g1}/|G{-|g0}=0.150 {I18}                                
+ 12C  cL           |G|a based on assuming |G=|G|a+|G{-|g0}+|G{-|g1};            
+ 12C 2cL the branching ratios for the 12710 to 4439 and 12710 to g.s.           
+ 12C 3cL Transitions are 13.0 % 14 and 87.0 % 14 respectively (1977AD02)        
+ 12C 4 L XREF=BCGHLMNOPRSUVWXYbcdef                                             
+ 12C   G 8268.03               M1                                               
+ 12C 2 G WIDTHG=5.3E-2 EV 10$BM1W=4.5E-3 8                                      
+ 12C   G 12703                 M1                                               
+ 12C 2 G WIDTHG=0.35 EV 5$BM1W=8.1E-3 12                                        
+ 12C   L 13352     17(2-)              375 KEV   40                             
+ 12C 2 L ISPIN=0 $ %IT=? $ %A=?                                                 
+ 12C 3 L XREF=GMRTU                                                             
+ 12C  cL J         probably 4- (D.J.Milliner, private communication)            
+ 12C   L 14083     154+                258 KEV   15                             
+ 12C 2 L ISPIN=0 $ %A=?                                                         
+ 12C 3 L XREF=CGPTUVYbcefghi                                                    
+ 12C   L 15110     3 1+                43.6 EV   13                         A   
+ 12C 2 L ISPIN=1$WIDTHA=1.8 EV 3$WIDTHG=41.8 EV 12                              
+ 12C 3 L %IT=? $ %A=?                                                           
+ 12C 4 L XREF=BGHLMNOPSTUWXYbcdef                                               
+ 12C   G 2400                  M1                                           C   
+ 12C 2 G WIDTHG=0.59 EV 17$BM1W=2.0 6                                           
+ 12C   G 7453.3                M1                                           C   
+ 12C 2 G WIDTHG=1.09 EV 14$BM1W=0.13 2                                          
+ 12C   G 10666.00              M1                                           C   
+ 12C 2 G WIDTHG=0.96 EV 13$BM1W=3.8E-2 5                                        
+ 12C   G 15100                 M1                                               
+ 12C 2 G WIDTHG=38.5 EV 8$BM1W=0.531 11                                         
+ 12C   L 15440     40(2+)              1.5 MEV   2                          D   
+ 12C 2 L ISPIN=0                                                                
+ 12C 3 L XREF=PUXYc                                                             
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 16105.8   7 2+                5.3 KEV   2                              
+ 12C 2 L ISPIN=1 $ %IT=? $ %P=? $ %A=?                                          
+ 12C 3 L XREF=FGILMNOPSTUXYbcdeg                                                
+ 12C   G 3395.3                M1                                               
+ 12C 2 G WIDTHG=0.19 EV 4$BM1W=0.23 5                                           
+ 12C   G 6463                  E1                                               
+ 12C 2 G WIDTHG=0.31 EV 6$BE1W=3.2E-3 6                                         
+ 12C   G 11661                 M1                                               
+ 12C 2 G WIDTHG=12.8 EV 15$BM1W=0.38 5                                          
+ 12C   G 16094.2               E2                                               
+ 12C 2 G WIDTHG=0.59 EV 11$BE2W=0.40 8                                          
+ 12C   L 16570       2-                300 KEV                                  
+ 12C 2 L ISPIN=1 $ %IT=? $ %P=? $ %A=?                                          
+ 12C 3 L XREF=GIKPUXc                                                           
+ 12C   G 16558                 M2                                               
+ 12C 2 G WIDTHG=4.80E-2 EV 8$BM2W=0.489 8                                       
+ 12C   L 17230       1-                1.15 MEV                                 
+ 12C 2 L ISPIN=1 $ %IT=? $ %P=? $ %A=?                                          
+ 12C 3 L XREF=IKLR                                                              
+ 12C   L 17760     200+                80 KEV    20                             
+ 12C 2 L ISPIN=1 $ %P=? $ %A=?                                                  
+ 12C 3 L XREF=FIKPcg                                                            
+ 12C   L 18160     70(1+)              240 KEV   50                             
+ 12C 2 L ISPIN=0 $ %IT=? $ %P=?                                                 
+ 12C 3 L XREF=Ic                                                                
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 18350     503-                220 KEV   50                         B   
+ 12C 2 L ISPIN=1 $ %IT=? $ %P=? $ %A=?                                          
+ 12C 3 L XREF=IKLMNORX                                                          
+ 12C   L 18350     502-                350 KEV   50                         B   
+ 12C 2 L ISPIN=0&1 $ %N=? $ %P=?                                                
+ 12C 3 L XREF=KLMNOPRSUVX                                                       
+ 12C   L 18.6E+3   1 (3-)              300 KEV                                 ?
+ 12C 2 L XREF=P                                                                 
+ 12C   L 18710                         100 KEV                                  
+ 12C 2 L ISPIN=1 $ %P=? $ %A=?                                                  
+ 12C 3 L XREF=I                                                                 
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 18800     402+                100 KEV   10                             
+ 12C 2 L ISPIN=1 $ %IT=? $ %N=? $ %P=?                                          
+ 12C 3 L XREF=IJKXc                                                             
+ 12C   L 19200       (1-)              1.1 MEV   AP                             
+ 12C 2 L ISPIN=1 $ %IT=? $ %N=? $ %P=? $ %A=?                                   
+ 12C 3 L XREF=IJKMXb                                                            
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 19400     30(2-)              480 KEV   40                         B   
+ 12C 2 L ISPIN=1 $ %IT=? $ %P=? $ %A=?                                          
+ 12C 3 L XREF=IPSUVf                                                            
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 19550     50(4-)              490 KEV   60                         B   
+ 12C 2 L ISPIN=1 $ %IT=? $ %P=? $ %A=?                                          
+ 12C 3 L XREF=LMPSXf                                                            
+ 12C  cL E         1983Ba62 suggests an isospin-mixed doublet with J|p=4-       
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 19690       1+                230 KEV   35                             
+ 12C 2 L %N=? $ %P=?                                                            
+ 12C 3 L XREF=JS                                                                
+ 12C   L 20.0E+3   1 (2+)              250 KEV   AP                             
+ 12C 2 L %IT=? $ %N=? $ %P=?                                                    
+ 12C 3 L XREF=JKPc                                                              
+ 12C   L 20270     50(1+)              140 KEV   50                             
+ 12C 2 L ISPIN=1 $ %N=? $ %P=?                                                  
+ 12C 3 L XREF=JKUc                                                              
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 20.5E+3   1 (3+)              300 KEV   50                             
+ 12C 2 L ISPIN=1 $ %IT=? $ %P=? $ %A=?                                          
+ 12C 3 L XREF=GILPRbcf                                                          
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 20620     60(3-)              200 KEV   40                             
+ 12C 2 L ISPIN=1 $ %IT=? $ %N=? $ %P=? $ %A=?                                   
+ 12C 3 L XREF=IJKLMUVbcf                                                        
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 20980                         270 KEV                                  
+ 12C 2 L %N=? $ %P=?                                                            
+ 12C 3 L XREF=J                                                                 
+ 12C   L 21.60E+3  103-,2+             1.20 MEV  15                             
+ 12C 2 L ISPIN=0 $ %IT=? $ %N=? $ %P=? $ %A=?                                   
+ 12C 3 L XREF=IJKPUVXY                                                          
+ 12C  cL E         probably unresolved states; if so, |G=1.4 MeV {I2} and       
+ 12C 2cL |G=0.43 MeV {I8} are reported.                                         
+ 12C   L 22.0E+3   1 1-                8.0E+2 KEV10                             
+ 12C 2 L ISPIN=1 $ %IT=? $ %N=? $ %P=?                                          
+ 12C 3 L XREF=JKPUV                                                             
+ 12C  cL WIDTH     See anomalies and maxima in yields of {+11}B(p,n) {+11}B(p,p)
+ 12C 2cL reactions in table 12.12 (1990AJ01)                                    
+ 12C   L 22400     401-                275 KEV   40                             
+ 12C 2 L ISPIN=1 $ %N=? $ %P=?                                                  
+ 12C 3 L XREF=JKMUYf                                                            
+ 12C   L 22650     701-                3.2 MEV                                  
+ 12C 2 L ISPIN=1 $ %IT=? $ %N=? $ %P=? $ %A=?                                   
+ 12C 3 L XREF=IJPRSUb                                                           
+ 12C   L 23040       (2-)              60 KEV                                   
+ 12C 2 L ISPIN=1 $ %N=? $ %P=?                                                  
+ 12C 3 L XREF=Jb                                                                
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 23520     301-                230 KEV   80                             
+ 12C 2 L ISPIN=1 $ %IT=? $ %N=? $ %P=? $ %A=?                                   
+ 12C 3 L XREF=FIJPUX                                                            
+ 12C   L 23920     80(1-)              0.4 MEV   1                              
+ 12C 2 L ISPIN=1 $ %IT=? $ %N=? $ %P=?                                          
+ 12C 3 L XREF=JPU                                                               
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 24430                         0.1 MEV                                  
+ 12C 2 L %N=? $ %P=?                                                            
+ 12C 3 L XREF=J                                                                 
+ 12C   L 24920                         0.92 MEV                                 
+ 12C 2 L %N=? $ %P=?                                                            
+ 12C 3 L XREF=JP                                                                
+ 12C   L 25.30E+3  15(1-)              0.51 MEV  10                             
+ 12C 2 L ISPIN=1 $ %N=? $ %P=?                                                  
+ 12C 3 L XREF=JUb                                                               
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 25400       1-                2 MEV     AP                             
+ 12C 2 L ISPIN=1 $ %IT=? $ %N=? $ %P=?                                          
+ 12C 3 L XREF=IPXYbc                                                            
+ 12C  cL WIDTH     See resonances in {+11}B(p,|g) and {+11}B(p,|a) reactions in 
+ 12C 2cL table 12.11 (1990AJ01)                                                 
+ 12C   L 25950                         0.4 MEV   AP                             
+ 12C 2 L %N=? $ %P=? $ %D=? $ %A=?                                              
+ 12C 3 L XREF=JU                                                                
+ 12C   L 26800                         270 KEV                                  
+ 12C 2 L %N=? $ %P=? $ %D=? $ %A=?                                              
+ 12C 3 L XREF=JP                                                                
+ 12C   L 27.0E+3   3 (1-)              1.4 MEV   2                              
+ 12C 2 L ISPIN=1 $ %IT=? $ %P=?                                                 
+ 12C 3 L XREF=IUWY                                                              
+ 12C  CL ISPIN$TENTATIVE                                                        
+ 12C   L 27595.0   240+                30 KEV    LE                             
+ 12C 2 L ISPIN=2                                                                
+ 12C 3 L XREF=FQ                                                                
+ 12C   L 27900                         350 KEV   AP                             
+ 12C 2 L %IT=? $ %N=? $ %P=? $ %3HE=?                                           
+ 12C 3 L XREF=IP                                                                
+ 12C   L 28200       1-                1.6 MEV                                  
+ 12C 2 L ISPIN=1 $ %IT=? $ %3HE=?                                               
+ 12C 3 L XREF=D                                                                 
+ 12C   L 28830     40                  1.54 MEV  9                              
+ 12C 2 L %IT=? $ %P=? $ %D=? $ %3HE=? $ %A=?                                    
+ 12C 3 L XREF=DIXY                                                              
+ 12C   L 29.4E+3   3                   1.4 MEV   2                              
+ 12C 2 L %IT=? $ %N=? $ %P=? $ %3H=? $ %3HE=?                                   
+ 12C 3 L XREF=IRU                                                               
+ 12C   L 29630     50                  200 KEV   LE                             
+ 12C 2 L ISPIN=2                                                                
+ 12C 3 L XREF=Q                                                                 
+ 12C   L 30290     30                  1.96 MEV  15                             
+ 12C 2 L %IT=? $ %3HE=? $ %A=?                                                  
+ 12C 3 L XREF=DP                                                                
+ 12C   L 31160     30                  2.10 MEV  15                             
+ 12C 2 L %IT=? $ %3HE=?                                                         
+ 12C 3 L XREF=D                                                                 
+ 12C   L 32290     40                  1.32 MEV  23                             
+ 12C 2 L %IT=? $ %N=? $ %P=? $ %3HE=?                                           
+ 12C 3 L XREF=DP                                                                
+ 12C  cL           Also decays via {+6}Li emission.                             
+ 12C   L 33.47E+3  21                  1.93 MEV  5                              
+ 12C 2 L %IT=? $ %3HE=?                                                         
+ 12C 3 L XREF=D                                                                 
+                                                                                
+ 12C     12B B- DECAY                  1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C  D  ADDED MISSING EAV'S (TWB. 980831)                                      
+ 12C  c  For earlier references see 1980AJ01                                    
+ 12C  cL J         From adopted levels                                          
+ 12C  cG E         From adopted gammas                                          
+ 12C   N                       1.0       1.0                                    
+ 12B   P 0.0         1+                20.20 MS  2              13369.3   13    
+ 12C   L 0           0+                                                         
+ 12C   B             97.22   30           4.066  2                              
+ 12C S B EAV=6438.60 65                                                         
+ 12C   L 4438.91   312+                                                         
+ 12C   B             1.23    5             5.126 18                             
+ 12C S B EAV=4234.58 67                                                         
+ 12C  cB IB        unweighted average of 1.283 {I40} (1978Al01) and 1.182 {I19} 
+ 12C 2cB (1981Ka31) both listed by 1990AJ01. The value from 1978Al01 is a       
+ 12C 3cB weighted average of 1.276 {I50} measured by them and 1.29 {I5}         
+ 12C xcB previously adopted by 1974Mc11.                                        
+ 12C   G 4438.03                                                                
+ 12C   L 7654.3    210+                                                         
+ 12C  cL E         based on the atomic mass of {+4}He ( A. H. Wapstra, private  
+ 12C 2cL communication) and the decay energy for the breakup of this state into 
+ 12C 3cL 3|a, 379.6 keV {I20}: see 1980AJ01                                     
+ 12C   B             1.5     3             4.13   9                             
+ 12C S B EAV=2644.2 13                                                          
+ 12C   G 3214.83                                                                
+ 12C   L 10.3E+3   3 (0+)              3.0 MEV   7                              
+ 12C   B             0.08    2             4.2   2                              
+ 12C S B EAV=1.35E3 15                                                          
+                                                                                
+ 12C     12N B+ DECAY                  1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C  D  RERAN LOGFT TO ADD "S E" RECORDS (TWB. 940307)                         
+ 12C  cL E         From adopted levels                                          
+ 12C  cL J         From adopted levels                                          
+ 12C  cG E         From adopted gammas                                          
+ 12C  cE IB(A)     Mean of values quoted in 1975Aj02                            
+ 12C  cE IB(B)     See 1980AJ01 for refrence                                    
+ 12C   N                       1.0       1.0                                    
+ 12N   P 0.0         1+                11.000 MS 16             17338.1   10    
+ 12C   L 0           0+                                                         
+ 12C   E               94.55 60            4.118  3             94.55     60    
+ 12C S E EAV=7922.9 5                                                           
+ 12C  cE           See 1978Al01                                                 
+ 12C   L 4438.91   312+                                                         
+ 12C   E               1.898 32            5.149  8             1.898     32    
+ 12C S E EAV=5711.6 5                                                           
+ 12C  cE IB        for other values see table 12.20 in 1980AJ01                 
+ 12C  cE           See 1981Ka31                                                 
+ 12C   G 4438.91     2.73    30                                                 
+ 12C   L 7654.20   150+                                                         
+ 12C   E                2.7  4             4.34   7             2.7       4 A   
+ 12C S E EAV=4113.4 5                                                           
+ 12C   G 3215.3      1.5     3                                                  
+ 12C   L 10.3E+3   3 (0+)                                                       
+ 12C   E               0.46  15            4.36  18             0.46      15A   
+ 12C S E EAV=2804 148                                                           
+ 12C   L 12710     6                                                            
+ 12C   E               0.31  12            3.51  17             0.31      12B   
+ 12C S E EAV=1625 3                                                             
+ 12C   L 15110     3                                                            
+ 12C   E              0.0044 15  8.E-6 3   3.30  15             4.4E-3    15B   
+ 12C S E EAV=495.2 14 $CK=0.001824 15$CL=0.0001020 9                            
+                                                                                
+ 12C     13B B-N DECAY                 1969JO21,1974AL12                  201303
+ 12C   H TYP=UPD$AUT=J. Kelley$CUT=01-AUG-2012$DAT=11-Mar-2013$                 
+ 12C 2 H CIT=NP A506, 1 (1990)$COM=Updated data set since full evaluation$      
+ 12C  C  1969J021: ^A BEAM OF 3 MEV TRITONS IMPINGED ON A THICK 11B TARGET      
+ 12C 2C  PRODUCING 13B NUCLEI VIA THE 11B(T,P) REACTION. THE TARGET WAS         
+ 12C 3C  IRRADIATED FOR 3 MS, WHILE COUNTING LASTED FOR 12 MS. THE TARGET WAS   
+ 12C 4C  SURROUNDED BY A 3 INCH BY 2 INCH BETA COUNTER SCINTILLATOR, A          
+ 12C 5C  1 INCH THICK BY 8 INCH DIAMETER ^NE102 NEUTRON DETECTOR AND A          
+ 12C 6C  5 INCH BY 5 INCH NAI GAMMA-RAY DETECTOR. NEUTRON ENERGIES WERE         
+ 12C 7C  DETERMINED BY TIME-OF-FLIGHT BETWEEN THE BETA AND NEUTRON DETECTORS.   
+ 12C 8C  POPULATION OF RELATIVELY STRONG NEUTRON BRANCHES FROM 13C(7.5,8.86 MEV)
+ 12C 9C  WERE OBSERVED.  SIGNIFICANTLY STRONGER BRANCHES TO 13C(0,3.68 MEV)     
+ 12C AC  WERE DEDUCED FROM THE BETA- AND BETA-GAMMA SPECTRA                     
+ 12C BC  (92.1% AND 7.6%, RESPECTIVELY).                                        
+ 12C  C  1974AL12: ^The EXPERIMENTAL SETUP WAS SIMILAR TO 1969JO21, EXCEPT A    
+ 12C 2C  LONGER NEUTRON FLIGHT PATH WAS USED AND HIGHER STATISTICS WERE         
+ 12C 3C  OBTAINED. WEAKER BRANCHES FROM 13C(8.86,9.90 MEV) WERE OBSERVED, AND   
+ 12C 4C  AN UPPER LIMIT ON DECAY FROM 13C(9.50 MEV) WAS ESTABLISHED.            
+ 13B   P 0           3/2-              17.33 MS  17             8490.9    11    
+ 13B  CP T,QP$from 2011AUZZ.                                                    
+ 12C   N 348.43      1         0.00286 37              1                        
+ 12C  PN                                                                     4  
+ 12C  CDNIP(A)$From (1969JO21).                                                 
+ 12C  CDNIP(B)$From (1974AL12).                                                 
+ 12C  CL E,J$From Adopted dataset for 12C in ENSDF database                     
+ 12C  CDNE$ EN DEDUCED FROM Q (2011AUZZ) AND 13C/12C LEVEL ENERGIES IN ENSDF.   
+ 12C   L 0.0         0+                                                         
+ 12C   DN 2401      3  0.094 20 7547                                            
+ 12C 2 DN FLAG=A                                                                
+ 12C   DN 3613     18  0.16   3 8860                                            
+ 12C 2 DN FLAG=A                                                                
+ 12C   DN 4203.2    1  0.01  LT 9500                                            
+ 12C 2 DN FLAG=B                                                                
+ 12C   DN 4570      5  0.022  7 9897                                            
+ 12C 2 DN FLAG=B                                                                
+ 12C   L 4438.9    3 2+                                                         
+ 12C   DN 472      5  0.001  AP 9897                                            
+ 12C 2 DN FLAG=B                                                                
+ 12C   G 4438         0.001                                                     
+                                                                                
+ 12C     13O B+P DECAY                 2005KN02                           201208
+ 12C   H TYP=UPD$AUT=J. Kelley$CUT=01-AUG-2012$CIT=ENSDF$                       
+ 12C 2 H COM=Updated data set since last full evaluation$                       
+ 12C  C  2005KN02: ^The 13O IONS WERE PRODUCED AT THE ^IGISOL FACILITY VIA      
+ 12C 2C  THE 12N(P,2N) REACTION                                                 
+ 12C 3C  BY IMPINGING AN EP AP 45 MEV BEAM ON A 1 MG/CM2 TARGET. THE 13O IONS   
+ 12C 4C  RECOILED OUT OF THE TARGET AND WERE COLLECTED IN A HELIUM CARRIER GAS  
+ 12C 5C  WHICH DELIVERED THEM TO THE MASS SEPARATOR. THE IONS WERE              
+ 12C 6C  IMPLANTED ON A 30 UG/CM2 CARBON FOIL. THE IMPLANTATION                 
+ 12C 7C  TARGET WAS SURROUNDED BY THREE POSITION SENSITIVE DELTA E-E            
+ 12C 8C  SI DETECTOR TELESCOPES WHICH TRIGGERED THE DATA ACQUISITION AND THE    
+ 12C 9C  ^ISOLDE ^Si BALL.                                                      
+ 12C  C  THE OBSERVED PROTON ENERGY SPECTRUM WAS ANALYZED USING                 
+ 12C 2C  BREIT-WIGNER PEAK SHAPES, AND THE BEST FIT PARAMETERS FOR DECAY        
+ 12C 3C  GROUPS WAS DEDUCED USING ^MINUIT. THE ABSOLUTE INTENSITY               
+ 12C 4C  FOR DECAY BRANCHES WAS NOT DIRECTLY MEASURED, HENCE THE RESULTS        
+ 12C 5C  ARE NORMALIZED TO A PRIOR MEASUREMENT OF THE STRONG 9.8% 20            
+ 12C 6C  13N^*(3502) DECAY TO 12C{-G.S.} (1990AS01).                            
+ 12C  C  THE 2005KN02 DATA SET HAS THE HIGHEST STATISTICS AND COVERS A BROADER  
+ 12C 2C  ENERGY RANGE, WHEN COMPARED TO THE PRIOR MEASUREMENTS                  
+ 12C 3C  (1965MC09,1970ES03,1990AS01); FURTHERMORE THE DISCUSSION ON THE        
+ 12C 4C  LINE SHAPE ANALYSIS SUGGESTS THE RESULTS OF 2005KN02 SHOULD BE         
+ 12C 5C  ADOPTED. NOTEWORTHY DIFFERENCES BETWEEN OTHER MEASUREMENTS ARE         
+ 12C 6C  FOR DECAY FROM 13N^*(8918), 2005KN03 OBSERVE A STRONGER                
+ 12C 7C  P{-1} BRANCH THAN EARLIER MEASUREMENTS. SECOND, NO EVIDENCE IS SEEN    
+ 12C 8C  FOR DECAY OF 13N^*(10360); THE DIFFERENCE IS ATTRIBUTED TO THE MORE    
+ 12C 9C  SOPHISTICATED LINESHAPE ANALYSIS.                                      
+ 12C  C  A SUBTLE NOTE TO UNDERSTAND THE 2005KN03 MANUSCRIPT: IN TABLE          
+ 12C 2C  2 THE 13N^*(15065) % OF ALL BETA-DECAYS VALUE INCLUDES UNOBSERVED      
+ 12C 3C  CONTRIBUTIONS FROM GAMMA DECAY, PROTON DECAY AND ALPHA DECAY.          
+ 13O   P 0           3/2-              8.58 MS   5              15825.7   95    
+ 13O  CP T$from 1991AJ01.                                                       
+ 13O  CP QP$from 2011AUZZ.                                                      
+ 12C  CL E,J$From Adopted dataset for 12C in ENSDF database                     
+ 12C  CDPE$ EP DEDUCED FROM Q (2011AUZZ) AND 13N/12C LEVEL ENERGIES IN ENSDF    
+ 12C 2CDP  EXCEPT WHERE NOTED.                                                  
+ 12C   N 1           1         0.113   23              0.098  20                
+ 12C   L 0.0         0+                                                         
+ 12C   DP1438.6    19 100      3502                                             
+ 12C   DP5015      8  0.09   4 7376                                             
+ 12C   DP6438      10 5.3    4 8918                                             
+ 12C   DP6953      7  1.40   13 9476                                            
+ 12C   DP9006      28 0.15   4 11700                                            
+ 12C   DP10450     83 0.11   9 13264                                            
+ 12C  CDP          EP , E(level)(13N) from (2005KN02) using (2011AUZZ).         
+ 12C   DP12111.8   4  0.049  7 15064                                            
+ 12C   DP12.33E3   18 0.04   3 15300                                            
+ 12C   L 4439        2+                                                         
+ 12C   DP 917      8  2.4    3 7376                                             
+ 12C   DP2341      10 4.5    3 8918                                             
+ 12C   DP2856      7  1.06   11 9476                                            
+ 12C   DP8014      1  0.030  5 15064                                            
+ 12C   L 7654        0+                                                         
+ 12C   DP5046.4    5  0.011  2 15064                                            
+                                                                                
+ 12C     6LI(9BE,T)                    1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C  c  Projectile:Energy:32 MeV                                               
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.64E3                                                                 
+ 12C   L 10.8E3                                                                 
+ 12C   L 11.8E3                                                                 
+ 12C   L 12.7E3                                                                 
+ 12C   L 14.1E3                                                                 
+                                                                                
+ 12C     9BE(3HE,G) RES                1990AJ01,1975AJ01         90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 27585      5                                                          ?
+ 12C   L 28.2E3       1-               1.6 MEV                                  
+ 12C 2 L ISPIN=1 $ WIDTHG0 GE 11.8 EV                                           
+ 12C 3 L WIDTHG1 GE 4.6 EV $ WIDTHG2 GE 11.3 EV                                 
+ 12C   G 20.53E3                                                                
+ 12C   G 28.16E3                                                                
+ 12C   L 28.83E3    3                  1.54 MEV   9                             
+ 12C   G 21.15E3                                                                
+ 12C   G 28.79E3                                                                
+ 12C   L 30.29E3    2                  1.96 MEV  15                             
+ 12C   G 25.82E3                                                                
+ 12C   L 31.16E3    2                  2.10 MEV  15                             
+ 12C   G 31.11E3                                                                
+ 12C   L 32.29E3    3                  1.32 MEV  23                             
+ 12C   G 24.61E3                                                                
+ 12C   G 27.82E3                                                                
+ 12C   L 33.47E3   14                  1.93 MEV   5                             
+ 12C   G 25.79E3                                                                
+ 12C   G 28.99E3                                                                
+                                                                                
+ 12C     9BE(A,N)                      1990AJ01,1980AJ01         90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                         57 FS      2                             
+ 12C 3 L WIDTHG=11.5E3 EV +5-32                                                 
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 10.1E3                                                                ?
+ 12C   L 10.8E3                                                                ?
+                                                                                
+ 12C     10BE(3HE,N)                   1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 16.1E3                                                                 
+ 12C   L 17.8E3                                                                 
+ 12C   L 23.53E3    4                  0.4 MEV   LT                             
+ 12C   L 27611     20 0+                                                        
+ 12C 2 L ISPIN=2                                                                
+                                                                                
+ 12C     10B(3HE,P)                    1990AJ01,1980AJ01         90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 4.44E3                                                                 
+ 12C   L 7655.6       0+                                                        
+ 12C   L 9645.6                        36 KEV     6                             
+ 12C   L 10849     25                  320 KEV   30                             
+ 12C   L 11841     25                  245 KEV   30                             
+ 12C   L 12713      6 1+               350 KEV   AP                             
+ 12C 2 L WIDTHG/WIDTH=0.025 10                                                  
+ 12C   L 13.29E3    3                  0.43 MEV  10                             
+ 12C   L 14083     15                  252 KEV   15                             
+ 12C   L 15108      6 1+                                                        
+ 12C 2 L ISPIN=1 $ WIDTHG/WIDTH GT 0.95                                         
+ 12C   L 16108      6 2+                                                        
+ 12C 2 L WIDTHG/WIDTH=2.6E-3 5                                                  
+ 12C   L 16.58E3                                                                
+ 12C   L 18.5E3    AP                                                           
+ 12C  cL WIDTH     Broad                                                        
+ 12C   L 19.5E3    AP                                                           
+ 12C  cL WIDTH     Broad                                                        
+ 12C   L 20.5E3     1 3+                                                        
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 22.E3                                                                  
+                                                                                
+ 12C     10B(6LI,A)                    1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 11.8E3                                                                 
+ 12C   L 12.7E3                                                                 
+ 12C   L 15.11E3                                                                
+ 12C 2 L ISPIN=1                                                                
+                                                                                
+ 12C     11B(P,G), (P,A)               1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 16105.8    7 2+               5.3 KEV    2                             
+ 12C 2 L ISPIN=1 $ WIDTHG0=0.58 EV $ WIDTHA0=290 EV 45 $ WIDTHP=21.7 EV 18      
+ 12C 3 L WIDTHG1=12.6 EV 18 $ WIDTHA1=6.3 KEV 5                                 
+ 12C   L 16576        2-               300 KEV                                  
+ 12C 2 L ISPIN=1 $ WIDTHG0 LT 0.4 EV $ WIDTHA0 LT 0.27 KEV $ WIDTHP=150 KEV     
+ 12C 3 L WIDTHG1=8.0 EV $ WIDTHA1=150 KEV                                       
+ 12C   L 17230        1-               1150 KEV                                 
+ 12C 2 L ISPIN=1 $ WIDTHG0=44 EV $ WIDTHA0=10 KEV $ WIDTHP=1 MEV                
+ 12C 3 L WIDTHG1=5. EV $ WIDTHA1=140 KEV                                        
+ 12C   L 17.79E3      0+               96 KEV     5                             
+ 12C 2 L ISPIN=1 $ WIDTHA0=4.6 KEV $ WIDTHP=76 KEV                              
+ 12C 3 L WIDTHA1=11.4 KEV                                                       
+ 12C   L 18.13E3      (1+)             0.60 MEV  10                             
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 18.38E3      3-               400 KEV   AP                             
+ 12C 2 L ISPIN=1 $ WIDTHG0 AP 2E-3 EV $ WIDTHA0=65 KEV $ WIDTHP=68 KEV          
+ 12C 3 L WIDTHG1=3.2 EV $ WIDTHA1=177 KEV                                       
+ 12C   L 18.39E3      0-               43 KEV                                   
+ 12C 2 L WIDTHG0 LT 0.5 EV $ WIDTHA0 LT 1 KEV $ WIDTHP=33 KEV                   
+ 12C 3 L WIDTHG1 LT 0.5 EV $ WIDTHA1 LT 5 KEV                                   
+ 12C   L 18.71E3                       100 KEV                                  
+ 12C 2 L ISPIN=1 $ WIDTHP LT 10 KEV                                             
+ 12C   L 18.81E3      2+               100 KEV                                  
+ 12C 2 L ISPIN=1 $ WIDTHG0=0.4 EV $ WIDTHA0 LT 0.2 KEV $ WIDTHP=97 KEV          
+ 12C 3 L WIDTHG1=2.0 EV $ WIDTHA1 LT 1.5 KEV                                    
+ 12C   L 19.2E3       (1-)             1100 KEV                                 
+ 12C 2 L ISPIN=1 $ WIDTHG0=25 EV $ WIDTHA0=50 KEV $ WIDTHP=300 KEV              
+ 12C 3 L WIDTHG1=10. EV $ WIDTHA1=200 KEV                                       
+ 12C   L 19.39E3      (2+)             1100 KEV                                 
+ 12C 2 L ISPIN=0 $ WIDTHG0 LT 3 EV $ WIDTHA0=20 KEV $ WIDTHP=450 KEV            
+ 12C 3 L WIDTHG1=3. EV $ WIDTHA1=450 KEV                                        
+ 12C   L 20.47E3                       180 KEV                                  
+ 12C   L 20.64E3      (3-)             275 KEV                                  
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 21.31E3                       30 KEV                                  ?
+ 12C   L 21.5E3                                                                 
+ 12C   L 22.1E3                        500 KEV                                  
+ 12C   L 22.6E3       (1-)             3200 KEV                                 
+ 12C 2 L ISPIN=1 $ WIDTHG0 GT 2500 KEV                                          
+ 12C   L 23.6E3                                                                 
+ 12C   L 25.4E3                        6500 KEV  AP                             
+ 12C   L 26.72E3      (1-)                                                      
+ 12C   L 27.4E3                        700 KEV   AP                             
+ 12C   L 27.9E3                        6000 KEV  AP                             
+ 12C   L 27.94E3                                                                
+ 12C   L 28.6E3                        2500 KEV  AP                             
+ 12C   L 29.0E3                                                                 
+ 12C   L 29.5E3                                                                 
+ 12C  cL WIDTH     Broad                                                        
+                                                                                
+ 12C     11B(P,N) RES                  1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 18.40E3                       44 KEV                                   
+ 12C   L 18.85E3                       92 KEV                                   
+ 12C   L 19.1E3                        458 KEV                                  
+ 12C   L 19.42E3                       46 KEV                                   
+ 12C   L 19.69E3                       183 KEV                                  
+ 12C   L 19.88E3                       92 KEV                                   
+ 12C   L 20.24E3                       156 KEV                                  
+ 12C   L 20.61E3                       174 KEV                                  
+ 12C   L 20.98E3                       367 KEV                                  
+ 12C   L 21.50E3                       513 KEV                                  
+ 12C   L 22.00E3                                                                
+ 12C  cL WIDTH     Broad                                                        
+ 12C   L 22.47E3                       312 KEV                                  
+ 12C   L 22.63E3                       330 KEV                                  
+ 12C   L 23.04E3                       60 KEV                                   
+ 12C   L 23.51E3                       348 KEV                                  
+ 12C   L 23.88E3                       165 KEV                                  
+ 12C   L 24.2E3                                                                 
+ 12C   L 24.43E3                       101 KEV                                  
+ 12C   L 24.92E3                       917 KEV                                  
+ 12C   L 25.24E3                       165 KEV                                  
+ 12C   L 25.95E3                       403 KEV                                  
+ 12C   L 26.83E3                       275 KEV                                  
+                                                                                
+ 12C     11B(P,P) RES                  1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 16.57E3                       303 KEV                                  
+ 12C   L 17.24E3                                                                
+ 12C   L 17.77E3                                                                
+ 12C   L 18.40E3                       43 KEV                                   
+ 12C   L 18.85E3                       92 KEV                                   
+ 12C   L 19.1E3                        458 KEV                                  
+ 12C   L 19.42E3                       46 KEV                                   
+ 12C   L 19.88E3                       92 KEV                                   
+ 12C   L 20.24E3                       303 KEV   37                             
+ 12C   L 20.61E3                       321 KEV   14                             
+ 12C   L 21.50E3                       266 KEV   23                             
+ 12C   L 22.00E3                       7.2 MEV   11                             
+ 12C   L 22.47E3                       660 KEV   83                             
+                                                                                
+ 12C     11B(D,N)                      1968AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C  c  See 1980AJ01 for spectroscopic factors                                 
+ 12C  cL S$LABEL= THETA{+2}                                                     
+ 12C  cL L$LABEL= L{-P}                                                         
+ 12C   L 0                                             1        0.11            
+ 12C   L 4.38E3     7                                  1        0.03            
+ 12C   L 7.57E3    11                                                           
+ 12C   L 9.6E3      1                                  2        0.02            
+ 12C   L 10.8E3     1                                  0                        
+ 12C   L 11.1E3     1                                                           
+ 12C   L 11.74E3    8                                  0                        
+ 12C   L 12.76E3    8                                  1                        
+ 12C   L 13.21E3    5                                                           
+ 12C   L 13.36E3    5                                                           
+ 12C   L 14.16E3    5                                                          ?
+ 12C   L 15.09E3    3                                  1                        
+ 12C   L 15.52E3    3                                                          ?
+ 12C   L 16.07E3    3                                  1                        
+ 12C   L 17.23E3                                                                
+                                                                                
+ 12C     11B(3HE,D)                    1968AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C  c  See 1980AJ01 for spectroscopic factors                                 
+ 12C  cL S$LABEL= (2J+1)S{-REL.}                                                
+ 12C  cL L$LABEL= L{-P}                                                         
+ 12C   L 0            0 TO 3+                          1        1               
+ 12C   L 4.44E3       0 TO 3+                          1        0.61            
+ 12C   L 7.66E3       0 TO 3+                          1        0.035           
+ 12C   L 9629.     10 0 TO 4-                          2        0.30            
+ 12C  CL           (2J+1)THETA{-P}{+2}=0.048                                    
+ 12C   L 10.1E3                                                                ?
+ 12C   L 10.84E3    2 1-,2-            320 KEV   30    0                        
+ 12C  CL           (2J+1)THETA{-P}{+2}=0.040                                    
+ 12C   L 11.82E3    2 1-,2-            300 KEV   30    0                        
+ 12C  CL           (2J+1)THETA{-P}{+2}=0.073                                    
+ 12C   L 12.70E3    1 0 TO 3+                          1        0.26            
+ 12C  CL           (2J+1)THETA{-P}{+2}=0.13                                     
+ 12C   L 13.38E3    2                  0.70 MEV  10                             
+ 12C   L 14.71E3    1                  15 KEV    LT                             
+                                                                                
+ 12C     11B(A,T)                      1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+                                                                                
+ 12C     11B(7LI,6HE)                  1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 10.8E3                                                                 
+ 12C   L 11.8E3                                                                 
+ 12C   L 12.7E3                                                                 
+ 12C   L 15.1E3                                                                 
+ 12C   L 16.1E3                                                                 
+ 12C   L 18.35E3    5 3- & 2-          350 KEV   50                             
+ 12C  cL E$Unresolved doublet                                                   
+                                                                                
+ 12C     12C(G,G)                      1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 4.4E3                                                                  
+ 12C   L 9.6E3      2                                                           
+ 12C   L 11.8E3     2                                                           
+ 12C   L 12.7E3                                                                 
+ 12C   L 13.3E3     2                                                           
+ 12C   L 17.2E3     2                                                           
+ 12C   L 18.3E3     2                                                           
+ 12C   L 20.5E3     2                                                           
+ 12C   L 26.5E3     4                                                           
+ 12C   L 29.5E3     3                                                           
+                                                                                
+ 12C     12C(E,E)                      1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0.0                                                                    
+ 12C   L 4.44E3       2+                                                        
+ 12C 2 L ISPIN=0 $ WIDTHG0=10.8E-3 EV 6                                         
+ 12C   L 7.65E3       0+                                                        
+ 12C 2 L ISPIN=0 $ WIDTHG0=6.0E-5 EV 4                                          
+ 12C   L 9.64E3       3-                                                        
+ 12C 2 L ISPIN=0 $ WIDTHG0=3.1E-4 EV 4                                          
+ 12C   L 10.84E3      1-                                                        
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 11.83E3      2-                                                        
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 12.71E3      1+               14.6 EV   26                             
+ 12C 2 L ISPIN=0 $ WIDTHG0=0.35 EV 5                                            
+ 12C   L 14.08E3      4+               0.3 MEV   AP                             
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 15.11E3      1+                                                        
+ 12C 2 L ISPIN=1 $ WIDTHG0=38.5 EV 8                                            
+ 12C   L 15.44E3                       1.5 MEV    2                             
+ 12C   L 16.11E3      2+                                                        
+ 12C 2 L ISPIN=1 $ WIDTHG0=0.35 EV 4                                            
+ 12C   L 16.57E3      2-                                                        
+ 12C 2 L ISPIN=1 $ WIDTHG0=48E-3 EV 8                                           
+ 12C   L 17.6E3     2                                                           
+ 12C   L 18.20E3    5 (2-)             0.30 MEV  10                             
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 18.6E3     1 (3-)                                                      
+ 12C   L 19.35E3   10 2-               0.40 MEV  10                             
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 19.59E3    4 4-               550 KEV   70                             
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 20.0E3     1 (2+)                                                      
+ 12C   L 20.56E3    5 3+               300 KEV   50                             
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 21.6E3     1 (3-)                                                      
+ 12C   L 22.0E3     1 (1-)                                                      
+ 12C   L 22.7E3     1 (2-)             0.45 MEV  15                             
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 23.8E3     1 (1-)                                                      
+ 12C   L 24.9E3                                                                 
+ 12C   L 25.5E3       (1-)                                                      
+ 12C   L 25.5E3       (3-)                                                      
+ 12C   L 26.4E3     3                                                           
+ 12C   L 27.8E3     2                                                           
+ 12C   L 30.2E3     4                                                           
+ 12C   L 32.3E3     3                                                           
+                                                                                
+ 12C     12C(PI,PI)                    1990AJ01,1985AJ01         90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 12.7E3                                                                 
+ 12C   L 15.1E3                                                                 
+ 12C   L 16.1E3                                                                 
+ 12C   L 18.25E3      2-                                                        
+ 12C   L 19.25E3      4-                                                        
+ 12C   L 19.4E3       2-                                                        
+ 12C   L 19.65E3                                                                
+ 12C   L 20.0E3     2                  3.2 MEV    3                             
+ 12C   L 22.7E3     4                  1.0 MEV    2                             
+                                                                                
+ 12C     12C(N,N)                      1990AJ01,1980AJ01         90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 10.3E3                                                                 
+ 12C   L 10.8E3                                                                 
+ 12C   L 11.8E3                                                                 
+ 12C   L 12.7E3                                                                 
+ 12C   L 13.4E3                                                                 
+ 12C   L 14.1E3                                                                 
+ 12C   L 15.1E3                                                                 
+ 12C   L 16.1E3                                                                 
+                                                                                
+ 12C     12C(P,PA)                     1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 12.7E3                                                                 
+ 12C   L 14.1E3                                                                 
+ 12C   L 19.7E3     5                                                           
+ 12C   L 21.1E3     3                                                           
+ 12C   L 21.6E3       (2+)                                                      
+ 12C   L 22.2E3     5                                                           
+ 12C   L 24.1E3       (2+)                                                      
+ 12C   L 26.3E3     5                                                           
+ 12C   L 26.6E3       (2+)                                                      
+                                                                                
+ 12C     12C(P,P)                      1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4439.0    11 2+               38 FS      5                             
+ 12C 2 L ISPIN=0 $ WIDTHG=12.0 EV 15                                            
+ 12C   L 7654.00   13 0+                                                        
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 9.64E3       3-                                                        
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 10.84E3      1-                                                        
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 11.83E3                                                                
+ 12C   L 12.71E3      1+                                                        
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 13.35E3                                                                
+ 12C   L 14.08E3      4+                                                        
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 15.11E3      1+                                                        
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 15.4E3     1 2+               1.41 MEV  15                             
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 16.11E3                                                                
+ 12C   L 16.57E3                                                                
+ 12C   L 18.30E3    3 (2-)             0.38 MEV   3                             
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 19.40E3    3 2-               0.48 MEV   4                             
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 20.27E3    5                  0.14 MEV   5                             
+ 12C   L 20.57E3    5 3-               0.35 MEV  10                             
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 21.65E3   10 3-               1.20 MEV  15                             
+ 12C 2 L ISPIN=0                                                                
+ 12C   L 21.95E3   15 1-               0.8 MEV    1                            ?
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 22.36E3    5                  0.30 MEV   5                            ?
+ 12C   L 22.6E3     1 1-               0.9 MEV    1                            ?
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 23.50E3    5 1-               0.23 MEV  10                             
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 23.92E3    8 1-               0.4 MEV    1                             
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 25.30E3   15 1-               0.51 MEV  10                            ?
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 25.8E3     3 (1-)             0.75 MEV  15                            ?
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 27.0E3     3 1-               1.4 MEV    2                            ?
+ 12C 2 L ISPIN=1                                                                
+ 12C   L 29.4E3     3 (2+)                                                     ?
+ 12C 2 L ISPIN=1                                                                
+                                                                                
+ 12C     12C(D,D)                      1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4440.5    11                                                           
+ 12C   L 10.8E3     2                                                           
+ 12C   L 11.8E3     2                                                           
+ 12C   L 12.7E3                                                                 
+ 12C   L 15.1E3                                                                 
+ 12C   L 18.3E3     3                                                           
+ 12C   L 20.6E3     3                                                           
+ 12C   L 21.9E3     3                                                           
+ 12C  cL WIDTH     Broad                                                        
+ 12C   L 27.E3     AP                                                           
+ 12C  cL WIDTH     Broad                                                        
+                                                                                
+ 12C     12C(3HE,3HE)                  1990AJ01,1985AJ01         90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                             0                        
+ 12C   L 4442.2    15                                  2                        
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                         3                        
+ 12C   L 10.83E3                                                                
+ 12C   L 10.84E3                                                                
+ 12C   L 12.7E3                                        0                        
+ 12C   L 14.08E3                                                                
+ 12C   L 15.11E3                                       0                        
+ 12C   L 15.2E3     3                  1.8 MEV    3    2                        
+ 12C   L 16.11E3                                       2                        
+ 12C   L 16.57E3                                                                
+ 12C   L 18.4E3     6                  0.4 MEV    1    2                        
+ 12C   L 18.90E3   15                  0.70 MEV  15    2                        
+ 12C   L 19.55E3                                                                
+ 12C   L 21.30E3   15                  1.4 MEV    2    2                        
+ 12C   L 23.5E3     2                  0.6 MEV    2    2                        
+ 12C   L 25.9E3     3                  2.2 MEV    3    2                        
+ 12C   L 28.8E3     4                  2.7 MEV    4    2                        
+                                                                                
+ 12C     12C(A,A)                      1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 10.8E3                                                                 
+ 12C   L 11.8E3                                                                 
+ 12C   L 14.0E3                                                                 
+ 12C   L 15.3E3                                                                 
+ 12C   L 18.4E3                                                                 
+ 12C   L 21.6E3                                                                 
+ 12C   L 24.0E3                                                                 
+ 12C   L 26.2E3                                                                 
+ 12C   L 29.2E3                                                                 
+                                                                                
+ 12C     12C(6LI,6LI)                  1975AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 10.8E3                                                                 
+ 12C   L 11.8E3                                                                 
+ 12C   L 12.7E3                                                                 
+ 12C   L 13.4E3                                                                 
+ 12C   L 14.1E3                                                                 
+                                                                                
+ 12C     12C(14N,14N)                  1975AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 10.8E3                                                                 
+ 12C   L 11.8E3                                                                 
+ 12C   L 12.7E3                                                                 
+ 12C   L 13.4E3                                                                 
+ 12C   L 14.1E3                                                                 
+                                                                                
+ 12C     13C(PI+,P)                    1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 12.7E3                                                                 
+ 12C   L 14.1E3                                                                 
+ 12C   L 15.1E3                                                                 
+ 12C   L 16.1E3                                                                 
+ 12C   L 19.1E3                                                                 
+ 12C   L 20.6E3                                                                 
+ 12C   L 22.9E3                                                                 
+ 12C   L 25.3E3                                                                 
+                                                                                
+ 12C     13C(P,D)                      1990AJ01,1985AJ01         90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+ 12C   L 10.3E3                                                                 
+ 12C   L 12.7E3                                                                 
+ 12C   L 15112      5                                                           
+ 12C   L 15.4E3                                                                 
+ 12C   L 16110      5                  20 KEV    LT                             
+ 12C   L 16.6E3                                                                 
+ 12C   L 17.76E3    2                  80 KEV    20                             
+ 12C   L 18.16E3    7                  240 KEV   50                             
+ 12C   L 18.80E3    4                  100 KEV   22                             
+ 12C   L 19.9E3                        400 KEV   AP                             
+ 12C   L 20.3E3                        220 KEV   AP                             
+ 12C   L 20.61E3    4                  210 KEV   AP                             
+ 12C   L 21.5E3     2                  200 KEV   LT                             
+ 12C   L 22.55E3    5                  200 KEV   LT                             
+ 12C   L 25.4E3     1                  0.5 MEV   GT                             
+                                                                                
+ 12C     13C(D,T)                      1985AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 12.71E3                                                                
+ 12C   L 15.11E3                                                                
+ 12C   L 16.11E3                                                                
+                                                                                
+ 12C     14C(P,T)                      1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 27595.0   24                  30 KEV    LT                             
+ 12C 2 L ISPIN=2                                                                
+ 12C   L 29.63E3    5                  200 KEV   LT                             
+ 12C 2 L ISPIN=2                                                                
+                                                                                
+ 12C     14N(P,3HE)                    1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0.                                                                     
+ 12C   L 4.4E3                                                                  
+ 12C   L 12.7E3                                                                 
+ 12C   L 14.1E3       4+                                                        
+ 12C   L 15.1E3                                                                 
+ 12C   L 16.1E3                                                                 
+                                                                                
+ 12C     14N(D,A)                      1985AJ01,1980AJ01         90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                 ?
+ 12C   L 12.71E3                                                                
+ 12C   L 14.08E3                                                                
+ 12C   L 19.5E3      (1,2,3)+                                                   
+ 12C   L 20.6E3      (2,3)+                                                     
+ 12C   L 22.5E3      (2,3)+                                                     
+                                                                                
+ 12C     15N(P,A)                      1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                         45 FS      6    1                        
+ 12C   L 7654.6    11                                  1                        
+ 12C   L 14.1E3       4+                               3                        
+ 12C   L 16.1E3       2+                               3                        
+ 12C   L 17.76E3                                       1                        
+                                                                                
+ 12C     16O(D,6LI)                    1990AJ01,1980AJ01         90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C  cL S$LABEL= S{-A}                                                         
+ 12C   L 0                                                      0.57            
+ 12C   L 4.4E3                                                  1.50            
+ 12C   L 7.7E3                                                  0.09            
+ 12C   L 9.6E3                                                  0.05            
+ 12C   L 14.1E3                                                 0.83            
+ 12C   L 19.5E3    15                                                           
+                                                                                
+ 12C     16O(3HE,7BE)                  1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C   L 0                                                                      
+ 12C   L 4.4E3                                                                  
+ 12C   L 7.7E3                                                                  
+ 12C   L 9.6E3                                                                  
+                                                                                
+ 12C     16O(A,8BE)                    1990AJ01                  90NP     200006
+ 12C   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12C 2 H CUT=1-JUN-1989$                                                        
+ 12C  cL S$LABEL= S{-A}                                                         
+ 12C   L 0                                                      0.25            
+ 12C   L 4.4E3                                                  1.07            
+ 12C   L 7.7E3                                                  0.05            
+ 12C   L 9.6E3                                                                  
+ 12C   L 14.1E3                                                 1.40            
+                                                                                
+ 12N     ADOPTED LEVELS                1990AJ01                  90NP     200006
+ 12N   H TYP=MOD$AUT=J. Blachot$COM=added T reference$DAT=15-MAR-2001$          
+ 12N   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12N 2 H CUT=1-JUN-1989$                                                        
+ 12N   XA10B(3HE,N)                                                             
+ 12N   XB12C(P,N)                                                               
+ 12N   XC12C(3HE,T)                                                             
+ 12N  cL E(A)      Probably corresponds to unresolved states. See states from   
+ 12N 2cL these reactions: {+10}B({+3}He,n), {+12}C({+3}He,t) and                
+ 12N xcL {+12}C({+13}C,{+13}B)                                                  
+ 12N  cL E(B)$ Decay mode not specified                                         
+ 12N   Q -14577    241.504E4 5 601.2   14-8008.4 14    2012WA38                 
+ 12N  CQ Note: Current evaluation has used the following Q record               
+ 12N   Q -14710    1815.69E+318 601.4  14-8007.8 15    1997AU04                 
+ 12N   L 0           1+                11.000 MS 16                             
+ 12N 2 L ISPIN=1$%EC+%B+=100$MOMM1=+0.4573 5 (1978LEZA)$ MOME2=+0.026 (1996FIZY)
+ 12N  CL T$From 1978AL01.                                                       
+ 12N 3 L XREF=ABC                                                               
+ 12N   L 960       122+                20 KEV    LT                             
+ 12N 2 L XREF=ABC                                                               
+ 12N   L 1191      8 2-                118 KEV   14                             
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=ABC                                                               
+ 12N   L 1800      301-                0.75 MEV  25                             
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=C                                                                 
+ 12N   L 2439      9 0+                68 KEV    21                             
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=AC                                                                
+ 12N   L 3132      8 2+,3-             220 KEV   20                             
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=AC                                                                
+ 12N   L 3558      9 (1)+              220 KEV   25                             
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=ABC                                                               
+ 12N   L 4140      102- & 4-           825 KEV   25                         A   
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=ABC                                                               
+ 12N   L 5348      133-                180 KEV   23                             
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=ABC                                                               
+ 12N   L 5600      11                  120 KEV   50                            ?
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=C                                                                 
+ 12N   L 6400      30(1-)              1200 KEV  30                         A   
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=C                                                                 
+ 12N   L 7400      50(1-)              1200 KEV  30                         A   
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=C                                                                 
+ 12N   L 7684      21                  200 KEV   32                         A   
+ 12N 2 L %P=?                                                                   
+ 12N 3 L XREF=ABC                                                               
+ 12N   L 8446      17                  90 KEV    30                         A   
+ 12N 2 L XREF=A                                                                 
+ 12N   L 9035      12                  35 KEV    LT                             
+ 12N 2 L XREF=A                                                                 
+ 12N   L 9.42E+3   10                  200 KEV   AP                            ?
+ 12N 2 L XREF=C                                                                 
+ 12N   L 9800      20                  0.45 MEV  10                         B   
+ 12N 2 L XREF=C                                                                 
+ 12N   L 10300     20                  0.45 MEV  10                         B   
+ 12N 2 L XREF=C                                                                 
+ 12N   L 11000     20                  0.35 MEV  10                         B   
+ 12N 2 L XREF=C                                                                 
+                                                                                
+ 12N     10B(3HE,N)                    1990AJ01                  90NP     200006
+ 12N   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12N 2 H CUT=1-JUN-1989$                                                        
+ 12N   L 0                             20 KEV    20    2                        
+ 12N   L 960       12                  16 KEV    20    2                        
+ 12N   L 1189      12                  140 KEV   25    1                        
+ 12N   L 1.72E3     8                                                          ?
+ 12N   L 2.4E3                                                                  
+ 12N   L 3114      15                  200 KEV   36    2                        
+ 12N   L 3533      15                  150 KEV   40    2                        
+ 12N   L 4250      30                  290 KEV   70                             
+ 12N   L 5320      12                  180 KEV   20    (0)                      
+ 12N   L 7629      20                  200 KEV   40                             
+ 12N   L 8446      17                  90 KEV    30                             
+ 12N   L 9035      12                  16 KEV    20                             
+                                                                                
+ 12N     12C(P,N)                      1975AJ01                  90NP     200006
+ 12N   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12N 2 H CUT=1-JUN-1989$                                                        
+ 12N   L 0                                                                      
+ 12N   L 1.0E3      1                                                           
+ 12N   L 3.7E3      2                                                           
+ 12N   L 4.2E3      2                                                           
+ 12N   L 5.3E3      2                                                           
+ 12N   L 7.5E3      3                                                           
+                                                                                
+ 12N     12C(3HE,T)                    1990AJ01                  90NP     200006
+ 12N   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12N 2 H CUT=1-JUN-1989$                                                        
+ 12N   L 0                                                                      
+ 12N   L 960                           20 KEV    LT                             
+ 12N   L 1193      10                  120 KEV   20                             
+ 12N   L 1.80E3     3                  0.75 MEV  25                             
+ 12N   L 2445      10                  110 KEV   20                             
+ 12N   L 3.14E3     1                  220 KEV   25                             
+ 12N   L 3.57E3     1                  260 KEV   30                             
+ 12N   L 4.14E3     1                  830 KEV   20                             
+ 12N   L 5.37E3     1                  150 KEV   30                             
+ 12N   L 5.60E3     1                  120 KEV   50                            ?
+ 12N   L 6.40E3     3                  1.20 MEV  30                             
+ 12N   L 7.40E3     5                  1.20 MEV  50                             
+ 12N   L 7.70E3     1                  200 KEV   50                             
+ 12N   L 8.86E3    10                  100 KEV   AP                            ?
+ 12N   L 9.42E3    10                  200 KEV   AP                             
+ 12N   L 9.80E3     2                  0.45 MEV  10                             
+ 12N   L 10.30E3    2                  0.45 MEV  10                             
+ 12N   L 11.00E3    2                  0.35 MEV  10                             
+                                                                                
+ 12O     ADOPTED LEVELS                1990AJ01                  90NP     200006
+ 12O   H TYP=FUL$AUT=F. AJZENBERG-SELOVE AND J.H. KELLEY$CIT=NP A506, 1 (1990)$ 
+ 12O 2 H CUT=1-JUN-1989$                                                        
+ 12O  c  {+12}O has been observed in the {+16}O(|a,{+8}He) reaction and in the  
+ 12O 2c  {+12}C(|p{++},|p{+-}) reaction: see 1985AJ01. The mass excess of       
+ 12O 3c  {+12}O is 32.06 MeV {I4} (1988Wa18). {+12}O is thus unstable to decay  
+ 12O 4c  into {+10}C+2p by 1.78 MeV. See also 1985An28, 1987Bl18 and 1987Sa15.  
+ 12O 5c  The |G of the ground state is |?400 keV {I250}. The diproton branching 
+ 12O 6c  ratio of {+12}O g.s. Is estimated to be 60 % 30. It is suggested that  
+ 12O 7c  the first T=2 state in {+12}N should occur at Ex=12.29 MeV {I2}.       
+ 12O 8c  There is some indication from the {+16}O(|a,{+8}He) work of an excited 
+ 12O 9c  state of {+12}O at Ex=1.0 MeV {I1}, which would imply an appreciable   
+ 12O Ac  downward shift from the position of the analog first excited state in  
+ 12O Bc  {+12}Be(1978Ke06). See also the spectrum shown as fig. 1 of 1985Mo18.  
+ 12O Cc  The {+12}C(|p{++},|p{+-}) reaction has been studied for E(|p+)=50 to   
+ 12O Dc  240 MeV: see 1985AJ01 and 1985Mo18, 1987Fa05, 1989Gr06. See also       
+ 12O xc  1986Gi13, 1986Ch39, 1988Co15, 1988Go21 and 1988Ma27.                   
+ 12O   Q                       -3.2E2  6 -5.57E3 3     2012WA38                 
+ 12O  CQ Note: Current evaluation has used the following Q record               
+ 12O   Q                       0.20E3  18-5471   30    1997AU04                 
+ 12O   L 0.0         0+                0.40 MEV  25                             
+ 12O 2 L ISPIN=2 $ %P=?                                                         
+ 12O  cL WIDTH     Approximate value                                            
+                                                                                

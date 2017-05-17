@@ -1,0 +1,1144 @@
+256      COMMENTS                                                99NDS    199908
+256    H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 249 (1999)$CUT=1-Oct-1998$       
+256   c  AUTH$Y. A. AKOVALI                                                     
+256   c  INST$Oak Ridge National Laboratory                                     
+256  #c       Oak Ridge, Tennessee 37831-6371, USA                              
+256   c  ABST$Available nuclear structure information for all nuclei with mass  
+256  2c  number A=256 is presented. Various decay and reaction data are         
+256  4c  evaluated and compared. Adopted data, levels, spin, parity and         
+256  5c  configuration assignments are given.                                   
+256   c  CUT$All data received prior to October 1998 are considered in adopting 
+256  2c  the properties given in this evaluation.                               
+256   C  CIT$NDS 87, 249 (1999)                                                 
+256   c  FUND$Research sponsored by the Oak Ridge National Laboratory, managed  
+256  xc  by Lockheed Martin Energy Research Corporation for the U.S. Department 
+256  xc  of Energy under contract number DE-AC05-96OR22464.                     
+                                                                                
+256      REFERENCES                                              99NDS    199908
+256    R 1955CH30 JOUR PHRVA 98 1519                                            
+256    R 1958PH40 JOUR PRLTA 1 215                                              
+256    R 1964DO10 JOUR AENGA 16 195                                             
+256    R 1964SO02 JOUR NUPHA 59 145                                             
+256    R 1965DO10 JOUR AENGA 19 109                                             
+256    R 1965SI14 JOUR PHRVA 140 B277                                           
+256    R 1966KU15 JOUR YAFIA 4 465                                              
+256    R 1967DR02 JOUR AENGA 22 127                                             
+256    R 1967GH01 JOUR PRLTA 18 401                                             
+256    R 1968FL01 JOUR NUPAB A106 476                                           
+256    R 1968FL05 JOUR YAFIA 7 239                                              
+256    R 1968FL08 JOUR YAFIA 7 977                                              
+256    R 1968HO13 JOUR NUPAB A115 225                                           
+256    R 1970DR08 JOUR YAFIA 12 268                                             
+256    R 1970FI12 JOUR NUPAB A154 407                                           
+256    R 1970GH02 JOUR PRLTA 24 1498                                            
+256    R 1971DR01 JOUR YAFIA 13 251                                             
+256    R 1971ES01 JOUR PRVCA C4 632                                             
+256    R 1971HO16 JOUR NUPAB A169 641                                           
+256    R 1972FL04 JOUR PRVCA C5 1725                                            
+256    R 1975OG01 JOUR NUPAB A239 157                                           
+256    R 1976BEZY REPT ORNL-5111,P58,Bemis                                      
+256    R 1976HOZB REPT CERN-76-13,P563                                          
+256    R 1977BE36 JOUR PRVCA C16 1146                                           
+256    R 1980HO04 JOUR PRVCA C21 972                                            
+256    R 1981LO15 JOUR JINCA 43 2239                                            
+256    R 1983OGZX REPT JINR-D7-83-644,Oganesyan                                 
+256    R 1984OG02 JOUR ZPAAD 319 215                                            
+256    R 1985HE06 JOUR ZPAAD 321 317                                            
+256    R 1985LO17 JOUR ZPAAD 322 695                                            
+256    R 1985MU11 JOUR ZPAAD 322 227                                            
+256    R 1985SO03 JOUR PRVCA 31 1801                                            
+256    R 1985WI10 JOUR PRVCA 32 488                                             
+256    R 1989HA10 JOUR PRVCA 39 1866                                            
+256    R 1990HO03 JOUR PRVCA 41 631                                             
+256    R 1991RY01 JOUR ADNDA 47 205                                             
+256    R 1993MO18 JOUR NUPAB 563 21                                             
+256    R 1995AU04 JOUR NUPAB 595 409                                            
+256    R 1997HE29 JOUR ZPAAD 359 415                                            
+256    R 1997MO25 JOUR ADNDA 66 131                                             
+256    R 1997PO18 JOUR BRSPE 61 606                                             
+256    R 1998AK04 JOUR NDSBA 84 1                                               
+                                                                                
+256CF    ADOPTED LEVELS                                          99NDS    199908
+256CF  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256CF  Q -1.E2     SY5.8E3   SY          5.56E3  SY    2012WA38                 
+256CF CQ Note: Current evaluation has used the following Q record               
+256CF  Q -141      SY 5835   SY          5558    SY    1995AU04                 
+256CF cQ $1995Au04 estimated |DQ(|b{+-})=324, |DQ(|a)=422, |DS(n)=359.          
+256CF c                                                                         
+256CF cL $Assignment: {+254}Cf(16-MeV t,p); the observed SF activity was        
+256CF2cL assigned by 1980Ho04 to {+256}Cf on the basis of production cross      
+256CF3cL section and the known SF properties of other nuclei that could be      
+256CF4cL produced in this reaction.                                             
+256CF  L 0.0          0+               12.3 M    12                             
+256CF cL T         measured by 1980Ho04.                                        
+256CF2 L %SF=100                                                                
+256CF cL $Only SF-decay mode has been observed. Possible |a decay               
+256CF2cL branch can be estimated by various methods.                            
+256CF cL $By requiring HF(|a to g.s. of {+252}Cm)=1.0, I|a=5.0|*10{+-7}% {I20}  
+256CF2cL is calculated; r{-0}({+252}Cm)=1.533 {I20} (estimated from local r{-0} 
+256CF3cL trend given in 1998Ak04) and Q(|a)({+256}Cf)=5558 are used in          
+256CF4cL calculations. The estimated intensity of 0.80 {I20} per |a decay for   
+256CF5cL the |a to g.s. gives %|a={ 6.2|*10{+-7} {I30}}.                        
+256CF cL $From semiempirical Geiger-Nuttal formula, 1997Po18 calculated         
+256CF2cL T{-1/2}(|a)=9|*10{+3} y. From this partial half-life, %|a=2.6|*10{+-7} 
+256CFxcL is obtained.                                                           
+256CF cL $Theoretical calculations of 1997Mo25 yield T{-1/2}(|a)={ 1|*10{+12} s}
+256CF2cL which corresponds to %|a=7.8|*10{+-8}.                                 
+                                                                                
+256ES    ADOPTED LEVELS                                          99NDS    199908
+256ES  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256ES  Q 1.70E3    SY4.98E3  SY4.91E3  SY6.23E3  SY    2012WA38                 
+256ES CQ Note: Current evaluation has used the following Q record               
+256ES  Q 1700      SY 4974   SY 4912   SY 6227   SY    1995AU04                 
+256ES cQ $1995Au04 estimated |DQ(|b{+-})=100, |DQ(|a)=224, |DS(n)=101.          
+256ES  L 0.0          (1+,0-)          25.4 M    24                             
+256ES2 L %B-=100                                                                
+256ES cL $Assignment: {+255}Es(thermal n), chem, parent of {+256}Fm (the        
+256ES2cL growth and decay of SF activity from {+256}Fm were observed by 1955Ch30
+256ES3cL and 1981Lo15).                                                         
+256ES cL T         measured by 1981Lo15. The authors could not exclude the      
+256ES2cL possibility that although no evidence was observed, some 7.6-h {+256}Es
+256ES3cL could have been produced in {+255}Es(thermal n) reaction. 1981Lo15     
+256ES4cL pointed out that if this isomeric state was also produced, then the    
+256ES5cL actual half-life should be slightly smaller than the given value.      
+256ES cL J         in analogy to {+253}Es and to {+257}Fm, the proton and       
+256ES2cL neutron states could be the |p 7/2[633] and                            
+256ES3cL |n 9/2[615] Nilsson orbitals,                                          
+256ES3cL coupled to J|p=1+. Other possible configuration could be               
+256ES4cL J|p=0-, |p 3/2[521], |n 3/2[622]. |b{+-} decay branch to {+256}Fm g.s. 
+256ES5cL with log| {Ift} of |?6.7, if the dominant branch is to the g.s., is    
+256ES6cL consistent with J|p=0- or J=1 for {+256}Es g.s.                        
+256ES cL E         the Gallagher-Moszkowski rule predicts the state with        
+256ES2cL 1+, { |p 7/2[633], |n 9/2[615]} configuration to be lower in energy    
+256ES3cL than the 8+, { |p 7/2[633], |n 9/2[615]} state. Similarly, the         
+256ES4cL 0-, { |p 3/2[521], |n 3/2[622]} state is expected to be lower than     
+256ES5cL the 3-, { |p 3/2[521], |n 3/2[622]} states. The low-spin               
+256ES6cL { 25.4-min} isomer                                                     
+256ES6cL is adopted as the ground state of {+256}Es on this basis only (no      
+256ES7cL experimental evidence).                                                
+256ES cL $Only the |b{+-} decay mode is observed. The theoretical               
+256ES2cL calculations by 1997Mo25 give T{-1/2}(|a)=1|*10{+10} s for |a          
+256ES3cL partial half-life.                                                     
+256ES  L 0.0+X        (8+)             7.6 H                                 M1 
+256ES cL T         measured by 1976HoZB.                                        
+256ES cL $Assignment: {+254}Es(t,p), chem, parent of {+256}Fm (1976HoZB).       
+256ES cL J         |b decays to the 1425.5-, 1560.2-keV levels in {+256}Fm and  
+256ES2cL no decay to low-spin states imply J=6,7,8. A possible configuration for
+256ES3cL this state, 8+,{ |p 7/2[633], |n 9/2[615]} is consistent with          
+256ES4cL |b{+-} decay to proposed 7-, |p 7/2[633], |p 7/2[514] state in {+256}Fm
+256ES5cL at { 1425.5 keV}.                                                      
+256ES2 L %B-=100                                                                
+256ES cL $No Es x-rays were observed, suggesting no isomeric transition         
+256ES2cL to {+256}Es g.s., and no |a's to {+252}Bk were found (1976HoZB).       
+256ES cL $|b-delayed-fission activity was observed by 1989Ha10, and             
+256ES2cL the |b-delayed-fission probability (measured number of delayed         
+256ES3cL fissions/number of |b{+-} decays of 7.6-h {+256}Es) was measured to be 
+256ESxcL 2|*10{+-5}.                                                            
+                                                                                
+256FM    ADOPTED LEVELS, GAMMAS                                  99NDS    199908
+256FM  H TYP=ERR$AUT=B. Singh$DAT=22-SEP-2013$COM=Added RI for some single G's$ 
+256FM  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256FM  Q -1.97E3   SY6385    8 5892    137027    5     2012WA38                 
+256FM CQ Note: Current evaluation has used the following Q record               
+256FM  Q -2130     53 6384   8  5892   13 7027   5     1995AU04                 
+256FM  XA256ES B- DECAY (25.4 M)                                                
+256FM  XB256ES B- DECAY (7.6 H)                                                 
+256FM  XE256MD EC DECAY                                                         
+256FM CL BAND(A)   K=0 GROUND-STATE BAND                                        
+256FM CL BAND(B)   K=2 GAMMA-VIBRATIONAL BAND.                                  
+256FM CL BAND(O)   K=2 OCTUPOLE-VIBRATIONAL BAND.                               
+256FM CL BAND(D)   K=3 BAND                                                     
+256FM CL BAND(E)   K=5 BAND                                                     
+256FM CL BAND(I)   K=7 BAND                                                     
+256FM cL J(A,B,O)  Assignments to band members are from depopulation patterns,  
+256FM2cL energy fit to rotational bands.                                        
+256FM cG E         From 7.6-h {+256}Es |b{+-} decay.                            
+256FM cG RI        Relative photon intensity deexciting each level.             
+256FM cG E(S)      Transition has not been observed; its energy is from level   
+256FM2cG scheme.                                                                
+256FM  L 0.0          0+               157.6 M   13                         A   
+256FMX L XREF=ABE                                                               
+256FM cL T         measurement of 1972Fl04; other measured half-lives:          
+256FM2cL 160 min {I10} (1958Ph40), 162 min {I6} (1965Si14), 157 min {I2}        
+256FM3cL (1968Ho13), 150 min {I4} (1981Lo15).                                   
+256FM2 L %A=8.1 3$ %SF=91.9 3                                                   
+256FM cL $Branching: |a/(|a+SF)=0.081 {I3} was determined by 1968Ho13           
+256FM2cL from |a and SF counts.                                                 
+256FM3cL Other measurement: SF/|a=35 {I10} (1965Si14).                          
+256FM cL $Emission of |a's, tritons and protons in the SF of {+256}Fm           
+256FM2cL was studied by 1985Wi10.                                               
+256FM  L 48.3         2+                                                    A   
+256FMX L XREF=B                                                                 
+256FM  G 48.3                   [E2]                     820      100       S  S
+256FM  L 159.9        4+                                                    A   
+256FMX L XREF=B                                                                 
+256FM  G 111.6        100       [E2]                     16.4                   
+256FM  L 332.6        6+                                                    A   
+256FMX L XREF=B                                                                 
+256FM  G 172.6        100       [E2]                     2.48                   
+256FM  L 563.7        8+                                                    A   
+256FMX L XREF=B                                                                 
+256FM  G 231.1        100       [E2]                     0.796                  
+256FM  L 682.3         (2+)                                                 B   
+256FMX L XREF=B                                                                 
+256FM cL J         relative photon intensities of transitions to 0+ and 2+      
+256FM2cL states of g.s. band suggest J|p=2+.                                    
+256FM  G 634.0       94                                                         
+256FM  G 682.3       100                                                        
+256FM  L 725.8         (3+)                                                 B   
+256FMX L XREF=B                                                                 
+256FM  G 566.0       23                                                         
+256FM  G 677.5       100                                                        
+256FM  L 783.4         (4+)                                                 B   
+256FMX L XREF=B                                                                 
+256FM  G 450.8       13                                                         
+256FM  G 623.5       100                                                        
+256FM  L 853.7         (5+)                                                 B   
+256FMX L XREF=B                                                                 
+256FM  G 693.8        100       [M1,E2]                 0.12  9                 
+256FM  L 881.8         (2-)                                                 O   
+256FMX L XREF=B                                                                 
+256FM cL J         |g transitions to the (2+),(3+) states of K=2                
+256FM2cL |g-vibrational band, and |g to only 2+ of the K=0 g.s. band; no        
+256FM3cL |g's to 0+,4+ of the K=0 g.s. band.                                    
+256FM  G 156         1.5                                                        
+256FM  G 199.3       26                                                         
+256FM  G 833.5       100                                                        
+256FM  L 922.6         (3-)                                                 O   
+256FMX L XREF=B                                                                 
+256FM  G 141         4                                                          
+256FM  G 197.4       35                                                        ?
+256FM  G 762.7       100                                                        
+256FM  L 939.2         (6+)                                                 B   
+256FMX L XREF=B                                                                 
+256FM  G 606.6        100       [M1,E2]                 0.18  14                
+256FM  L 978.5         (4-)                                                 O   
+256FMX L XREF=B                                                                 
+256FM  G 252.7        100       [E1]                    0.0697                  
+256FM  L 1039.4        (7+)                                                 B   
+256FMX L XREF=B                                                                 
+256FM  G 185.7       22                                                         
+256FM  G 706.8       100                                                        
+256FM  L 1045.5        (5-)                                                 O   
+256FMX L XREF=B                                                                 
+256FM  G 67.0                                                               S  S
+256FM  G 192                                                                    
+256FM  L 1100.0        (3+)                                                 D   
+256FMX L XREF=B                                                                 
+256FM cL J         |g transitions to 2+, (2-) and 4+ state rule out J<2,        
+256FM2cL 2-, J>3 for 1100.0 level; 218.1|g to (2-) might be E1, as deduced      
+256FM3cL from intensity balance at the 882.8 level in 7.6-h {+256}Es |b{+-}     
+256FM4cL decay. The probable J|p's, then, are 2+ and 3+. From the branching     
+256FM5cL ratios of deexciting gammas, 1989Ha10 suggested J|p=3+ which is        
+256FM6cL consistent with absence of |g to the 0+ g.s.                           
+256FM  G 178.0       19      LE                                             *   
+256FM  G 218.1       100                                                        
+256FM  G 316.4       18                                                         
+256FM  G 374.2       25                                                         
+256FM  G 417.6       27                                                         
+256FM  G 940.1       14                                                         
+256FM  G 1051.5      45                                                         
+256FM  L 1123.5       (6-)                                                  O   
+256FMX L XREF=B                                                                 
+256FM  G 78.0                                                               S  S
+256FM  G 269.5                                                                  
+256FM  L 1150.3       (8+)                                                  B  ?
+256FMX L XREF=B                                                                 
+256FM  G 211.2                                                              *  ?
+256FM  G 586.6                                                                 ?
+256FM  L 1150.8        (4+)                                                 D   
+256FMX L XREF=B                                                                 
+256FM  G 50.8                                                               S  S
+256FM  L 1214.0        (7-)                                                 O  ?
+256FMX L XREF=B                                                                 
+256FM  G 90.5                                                               S  S
+256FM  L 1251.9        (5+)                                                 E   
+256FMX L XREF=B                                                                 
+256FM cL J         |g transitions to (3+) and (4+) states of K=2 band,          
+256FM2cL but no |g to 2+ bandhead imply J|p of 5+ for the 1251.9 level.         
+256FM  G 397.2       82                                                        ?
+256FM  G 468.4       100                                                        
+256FM  G 526.1       91                                                         
+256FM  L 1328.7       (6+)                                                  E  ?
+256FMX L XREF=B                                                                 
+256FM cL J         from probable (E1) character of the 96.8|g from (7-)         
+256FM4cL isomeric state, 1989Ha10 proposed J|p of 6+ for the 1328.7 level.      
+256FM  G 76.8                                                               S  S
+256FM  G 178.0                                                              *   
+256FM  L 1425.5       (7-)             70 NS     5                          IM1 
+256FM cL T         obtained by 1989Ha10 from (|b)(231|g)(t) data. The observed  
+256FM2cL |b-delayed fission activities were consistent with this half-life.     
+256FMX L XREF=B                                                                 
+256FM cL $The partial half-life for fission was deduced by 1989Ha10 as          
+256FM2cL 0.8 ms +8.8-0.7 from the |b-delayed-fission probability of             
+256FM3cL 2|*10{+-5} (measured number of delayed fissions/total number of        
+256FM4cL |b{+-} decays of 7.6-h {+256}Es; two fission events were observed.)    
+256FM cL J         |g transitions to 8+ and (5-) states, relative photon        
+256FM2cL intensities of deexciting |g's, and nonobservation of transitions      
+256FM3cL to 5+, 4+ states suggest J|p=(7-). 1989Ha10 pointed out that this      
+256FM4cL level could be analogous to the 7-,two-quasiparticle state predicted   
+256FM5cL for {+254}Fm by 1964So02: K|p=7-, |p 7/2[633], |p 7/2[514].            
+256FM  G 96.8        13                                                         
+256FM  G 211.2       4.4     LE                                             *  ?
+256FM  G 275.3       5.8                                                       ?
+256FM  G 302.0       4.2                                                        
+256FM  G 380.0       1.9                                                        
+256FM  G 861.8       100                                                        
+256FM  G 1092.9      47                                                         
+256FM  L 1560.2                                                                 
+256FMX L XREF=B                                                                 
+256FM cL J         log| {Ift} for the |b branch from 7.6-h {+256}Es indicates an
+256FM2cL allowed transition, if completion of the decay scheme would not        
+256FM3cL decrease |b intensity considerably. If J|p(7.6-h {+256}Es parent)=8+,  
+256FM4cL then |p(1560 level)=+. From |g transition to the (7-) state,           
+256FM5cL J|p=7+ or 8+ may be deduced. Because of the assumptions made,          
+256FM6cL however, these suggested spins should be considered as very tentative. 
+256FM  G 134.7                                                                  
+                                                                                
+256FM    256ES B- DECAY (25.4 M)                                 99NDS    199908
+256FM  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256ES  P 0.0          (1+,0-)          25.4 M    24              1700     SY    
+256FM  N                        1.0       1.0                                   
+256FM c  Growth and decay of {+256}Fm spontaneous fission were observed by      
+256FM2c  1981Lo15. |b{+-} and |g's the 25.4-min {+256}Es decay were not         
+256FM3c  measured.                                                              
+256FM4c                                                                         
+256FM cB E         Q(|b{+-})({+256}Es)=1700 {I100} was obtained by 1995Au04     
+256FM2cB from Q(|b{+-}) systematics.                                            
+256FM  L 0.0          0+                                                        
+256FM  B                                                                        
+256FMS B EAV=575.5                                                              
+256FM cB IB        if J|p({+256}Es g.s.)=1+, the |b{+-} decay is expected to    
+256FM2cB feed the 2+ first excited state at 48.3 keV also. From the Alaga       
+256FM3cB rule, I|b(to 2+)/I|b(to 0+)=0.5 is calculated. If probable |b branches 
+256FM4cB to other excited levels are neglected, the Alaga rule suggests         
+256FM5cB I|b(to g.s.)=67% which may be taken as the upper limit by considering  
+256FM6cB other possible |b branches: I|b(to g.s.)|<67%, log| {Ift}|>6.7.        
+256FM  L 48.3         2+                                                        
+256FM  B                                                                        
+256FMS B EAV=557.1                                                              
+256FM cB $If I|b(to 2+)|<33%, then log| {Ift}|>7.0.                             
+                                                                                
+256FM    256ES B- DECAY (7.6 H)                                  99NDS    199908
+256FM  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256ES  P 0+X          (8+)             7.6 H     AP              1700     SY    
+256FM cG $The 7.6-h {+256}Es |b{+-} decay scheme is presented as constructed    
+256FM2cG by 1989Ha10 from their |g|g- and |b|g-coincidence data. Because of some
+256FM3cG missing transition intensities due to expected but unobserved          
+256FM4cG transitions and because of the large number of unplaced |g's,          
+256FM5cG the absolute normalization per 100 |b{+-} decay given here             
+256FM6cG may be considered as approximate.                                      
+256FM  N 2.5       5            1.0                                             
+256FM cN NR$The absolute photon intensity is obtained by the evaluator          
+256FM2cN by assuming that the sum of |b feedings to the 1425.5- and             
+256FM3cN 1560.2-keV levels represents 100% of the |b{+-} decay. Therefore, 39.4 
+256FM4cN relative units for photons=100%, or 1 relative unit=2.54%.             
+256FM5cN Uncertainty for the normalization factor is taken conservatively       
+256FM6cN as |+20%.                                                              
+256FM c                                                                         
+256FM c  Fermium K and L x-rays and delayed SF activities were observed by      
+256FM2c  1976HoZB.                                                              
+256FM cG E         Measurements of 1989Ha10. For transitions with I|g|>1.0,     
+256FM2cG uncertainty is { 0.15 keV} (1989Ha10). For gammas that were observed   
+256FM3cG in coincidence spectra and not resolved in singles, uncertainty        
+256FM4cG was typically { 1.5 keV} (1989Ha10).                                   
+256FM cG RI        Relative photon intensity, measured by 1989Ha10. Measured    
+256FM2cG uncertainties for I|g's are not available.                             
+256FM cG E(A)      |g was not resolved in singles spectrum (1989Ha10).          
+256FM cG E(S)      The transition was not observed. E|g is from decay scheme.   
+256FM cG M         Multipolarities have not been determined experimentally.     
+256FM2cG The conversion coefficients for low-energy |g's are calculated         
+256FM3cG for multipolarities placed in square brackets (which indicates that    
+256FM4cG they are from the level scheme).                                       
+256FM CL BAND(A)   K=0 GROUND-STATE BAND                                        
+256FM CL BAND(B)   K=2 GAMMA-VIBRATIONAL BAND.                                  
+256FM CL BAND(O)   K=2 OCTUPOLE-VIBRATIONAL BAND.                               
+256FM CL BAND(D)   K=3 BAND                                                     
+256FM CL BAND(E)   K=5 BAND                                                     
+256FM CL BAND(I)   K=7                                                          
+256FM  G 103.6       0.80                                                       
+256FM  G 105.8       5.12                                                       
+256FM  G 126.0       0.71                                                       
+256FM  G 150.2       1.16                                                       
+256FM  G 158.9       0.31                                                       
+256FM  G 165.2       0.50                                                       
+256FM  G 181.5       0.28                                                       
+256FM  G 190.1       0.55                                                       
+256FM  G 229.0       0.65                                                       
+256FM  G 232.7       0.58                                                       
+256FM  G 240.3       0.36                                                       
+256FM  G 242.0       0.79                                                       
+256FM  G 247.4       0.38                                                       
+256FM  G 252         0.07                                                   A   
+256FM cG $|g was seen in coincidence with 677.5|g (1989Ha10).                   
+256FM  G 255.3       0.55                                                       
+256FM  G 258.2       0.65                                                       
+256FM  G 264.1       0.38                                                       
+256FM  G 277.3       0.60                                                       
+256FM  G 297.5       0.52                                                       
+256FM  G 326.7       1.37                                                       
+256FM  G 333.2       0.36                                                       
+256FM  G 343.0       0.49                                                       
+256FM  G 410.0       0.38                                                       
+256FM  G 602.8       0.77                                                       
+256FM  G 768.1       2.25                                                       
+256FM  G 846.7       2.02                                                       
+256FM  L 0.0          0+                                                    A   
+256FM  L 48.3         2+                                                    A   
+256FM  G 48.3                  [E2]                    820                  S  S
+256FM  L 159.9        4+                                                    A   
+256FM  G 111.6       2.79      [E2]                    16.4                     
+256FMS G LC=11.7 $ MC=3.36 $ NC+=1.364                                          
+256FM  L 332.6        6+                                                    A   
+256FM  G 172.6       9.70      [E2]                    2.48                     
+256FMS G KC=0.144  $ LC=1.665 $ MC=0.476 $ NC+=0.191                            
+256FM  L 563.7         8+                                                   A   
+256FM  G 231.1       12.0      [E2]                    0.796                    
+256FMS G KC=0.121 $ LC=0.483 $ MC=0.137 $ NC+=0.0549                            
+256FM  L 682.3         (2+)                                                 B   
+256FM  G 634.0       1.73                                                       
+256FM  G 682.3       1.84                                                       
+256FM  L 725.8         (3+)                                                 B   
+256FM  G 566.0       0.50                                                       
+256FM  G 677.5       2.21                                                       
+256FM  L 783.4         (4+)                                                 B   
+256FM  G 450.8     150.15                                                   A   
+256FM cG $|g was seen in coincidence with 172.6|g (1989Ha10).                   
+256FM  G 623.5       1.12                                                       
+256FM  L 853.7         (5+)                                                 B   
+256FM  G 693.8     150.8                                                    A   
+256FM cG $|g was seen in coincidence with 111.6|g (1989Ha10).                   
+256FM  L 881.8         (2-)                                                 O   
+256FM  G 156         0.08      [E1]                    0.203                A   
+256FM cG $|g was seen in coincidence with 677.5|g (1989Ha10).                   
+256FMS G KC=0.151 $ LC=0.0387 $ MC=0.0096 $ NC+=0.00360                         
+256FM  G 199.3       1.40      [E1]                    0.117                    
+256FMS G KC=0.0888 $ LC=0.0213 $ MC=0.00528 $ NC+=0.00198                       
+256FM  G 833.5       5.45                                                       
+256FM  L 922.6         (3-)                                                 O   
+256FM  G 141         0.09      [E1]                    0.0067               A   
+256FMS G LC=0.0497 $ MC=0.0124 $ NC+=0.00463                                    
+256FM cG $|g was seen in coincidence with 623.5|g (1989Ha10).                   
+256FM  G 197.4       0.79      [E1]                    0.120                   ?
+256FMS G KC=0.0907 $ LC=0.0218 $ MC=0.00540 $ NC+=0.00202                       
+256FM  G 762.7       2.28                                                       
+256FM  L 939.2         (6+)                                                 B   
+256FM  G 606.6     150.4                                                    A   
+256FM cG $|g was seen in coincidence with 172.6|g (1989Ha10).                   
+256FM  L 978.5         (4-)                                                 O   
+256FM  G 252.7       0.25      [E1]                    0.0697                   
+256FMS G KC=0.0534 $ LC=0.0122 $ MC=0.00301 $ NC+=0.00113                       
+256FM  L 1039.4        (7+)                                                 B   
+256FM  G 185.7       0.25      [E2]                    1.843                    
+256FMS G KC=0.1435 $ LC=1.214  $ MC=0.347   $ NC+=0.139                         
+256FM  G 706.8       1.15                                                       
+256FM  L 1045.5        (5-)                                                 O   
+256FM  G 67.0                                                               S  S
+256FM  G 192         0.12      [E1]                    0.1275               A   
+256FMS G KC=0.0963 $ LC=0.0233 $ MC=0.00577 $ NC+=0.00216                       
+256FM cG $|g was seen in coincidence with 693.8|g (authors of 1989Ha10          
+256FM2cG listed it as being in coincidence with 696|g).                         
+256FM  L 1100.0        (3+)                                                 D   
+256FM  G 178.0       1.10      [E1]                    0.151                *   
+256FMS G KC=0.1133 $ LC=0.0280 $ MC=0.00694 $ NC+=0.00260                       
+256FM  G 218.1       5.69      (E1)                    0.0961                   
+256FMS G KC=0.0731 $ LC=0.0172 $ MC=0.00425 $ NC+=0.00159                       
+256FM cG $Intensity balance at the 881.8 level suggests E1                      
+256FM2cG multipolarity for the 218.1|g.                                         
+256FM  G 316.4       1.02      [M1+E2]                 1.1    8                 
+256FMS G KC=0.8 7 $ LC=0.23 9 $ MC=0.059 21$ NC+=0.023 8                        
+256FM  G 374.2       1.43      [M1+E2]                 0.7    5                 
+256FMS G KC=0.5 4 $ LC=0.14 6 $ MC=0.035 15$ NC+=0.014 5                        
+256FM  G 417.6       1.53      [M1+E2]                 0.5    4                 
+256FM  G 940.1     150.8                                                    A   
+256FM cG $|g was seen in coincidence with 96.8|g (1989Ha10).                    
+256FM  G 1051.5      2.56                                                       
+256FM  L 1123.5       (6-)                                                  O   
+256FM  G 78.0                                                               S  S
+256FM  G 269.5       0.75      [E1]                    0.0608                   
+256FMS G KC=0.0467 $ LC=0.0105 $ MC=0.00259 $ NC+=0.00097                       
+256FM  L 1150.3       (8+)                                                  B  ?
+256FM  G 211.2                                                              *  ?
+256FM  G 586.6     150.2                                                    A  ?
+256FM cG $|g was seen in coincidence with 231.1|g (1989Ha10).                   
+256FM  L 1150.8        (4+)                                                 D   
+256FM  G 50.8                                                               S  S
+256FM  L 1214.0        (7-)                                                 O  ?
+256FM  G 90.5                                                               S  S
+256FM  L 1251.9        (5+)                                                 E   
+256FM cL J         |g transitions to (3+), (4+) and probably to (5+) states;    
+256FM2cL 1989Ha10 suggested that the 1328.7- and 1251.9-keV levels are members  
+256FM3cL of a band, as indicated by their energy differences.                   
+256FM  G 397.2       0.74                              0.6    5                ?
+256FM cG CC        if M1+E2.                                                    
+256FM  G 468.4       0.90      [M1+E2]                 0.4    3                 
+256FM  G 526.1       0.82                                                       
+256FM  L 1328.7       (6+)                                                  E  ?
+256FM  G 76.8                                                               S  S
+256FM  G 178.0                                                              *   
+256FM  L 1425.5       (7-)             70 NS     5                          IM1 
+256FM cL T         determined by 1989Ha10 from (|b)(231|g)(t) measurements.     
+256FM cL $If |p(1560 level)=+ and 134.7|g is E1, then                           
+256FM2cL |p(1425.5 level)=-. The corresponding log| {Ift} of 5.2 (for I|b=86%)  
+256FM3cL is quite low for a first-forbidden |b decay from 8+ parent.            
+256FM dL $If 134.7|g is M1/E2, the log| {Ift} values would be consistent.       
+256FM  B                                                                        
+256FMS B EAV=75.1                                                               
+256FM cB $The intensity balance at the 1425.5 level gives I|b=86% if            
+256FM2cB the 134.7|g is E1, I|b=2.8% if it is E2. These I|b's yield             
+256FM3cB log| {Ift}=5.2 and log| {Ift}=6.7, respectively (if 134.7|g is M1,     
+256FM4cB I|b=23.6%, log| {Ift}=5.8)                                             
+256FM  G 96.8        2.55      (E1)                    0.173                    
+256FMS G LC=0.1287 $ MC=0.0322 $ NC+=0.0119                                     
+256FM cG $Intensity balance at the 1328.7 level implies E1 character            
+256FM2cG for 96.8|g.                                                            
+256FM  G 211.2       0.87      [M1+E2]                 3.5    25            *  ?
+256FMS G KC=2.4 23 $ LC=0.86 16$ MC=0.225 25 $ NC+=0.088 9                      
+256FM  G 275.3       1.15      [E1]                    0.0581                  ?
+256FMS G KC=0.0447 $ LC=0.0100 $ MC=0.00247$ NC+=0.00093                        
+256FM  G 302.0       0.82      [M1+E2]                 1.3    9                 
+256FMS G KC=0.9 8 $ LC=0.27 10 $ MC=0.069 23 $ NC+=0.027 9                      
+256FM  G 380.0       0.38      [E2]                    0.158                    
+256FMS G KC=0.0608 $ LC=0.0701 $ MC=0.00194 $ NC+=0.00778                       
+256FM  G 861.8       19.66                                                      
+256FM  G 1092.9      9.24                                                       
+256FM  L 1560.2                                                                 
+256FM  B                                                                        
+256FMS B EAV=36.7                                                               
+256FM cB $Lower and upper limits of 14%|<I|b<96% are deduced by                 
+256FM2cB considering E1 and E2 multipolarity possibilities for 134.7|g, and     
+256FM3cB assuming that the decay scheme is complete, these intensities yield    
+256FM4cB 4.2>log| {Ift}|<5.1, suggesting an allowed |b transition to 1560.2     
+256FM5cB level. If J|p(7.6-h {+256}Es parent)=8+, then |p(1560 level)=+.        
+256FM  G 134.7       5.12                                                       
+256FM cG $|a(134.7|g)=0.0747 for E1, |a=6.47 for E2 and |a=4.87 for M1.         
+256FM2cG From the probable allowed character of the |b transition to the        
+256FM3cG 1560.2-keV level, positive parity for that level is suggested, in      
+256FM4cG which case, 134.7|g should be E1. Since these arguments are based on   
+256FM5cG the assumption of the decay scheme being complete, no multipolarity    
+256FM6cG is adopted for this |g.                                                
+                                                                                
+256FM    256MD EC DECAY                                          99NDS    199908
+256FM  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256MD  P 0.0          (1-)             77 M      2              2130      53    
+256FM  N 0.133     AP           0.908  7                                        
+256FM PN                                                                     5  
+256FM c  The Fermium K x-rays were observed by 1970Fi12 and 1993Mo18. The       
+256FM2c  relative intensities given below (with the same units as those for     
+256FM3c  gammas) are measurements of 1993Mo18.                                  
+256FM t                                                                         
+256FM2t               E(x ray)    I(x ray)                                      
+256FM3t                          (relative)                                     
+256FM4t               ========    ========                                      
+256FM5t                115.3       { 213 {I43}}    K|a{-2}| x ray               
+256FM6t                121.1       { 238 {I56}}    K|a{-1}| x ray               
+256FM7t                136          { 81 {I30}}    K|b{-1} x ray+K|b{-2} x ray  
+256FM8t                                                                         
+256FM cE $The limits on I|g's suggest that most of |e+|b{++} decay proceeds     
+256FM2cE to the {+256}Fm ground state.                                          
+256FM cE $Q({+256}Md)={ 2130 {I53}} (1995Au04).                                 
+256FM cG E         Gammas were not observed. E|g's are from {+256}Es |b{+-}     
+256FMxcG decay                                                                  
+256FM cG RI        Limits on relative photon intensity were obtained by         
+256FM2cG 1993Mo18. By assuming that the observed K x-rays are all from K        
+256FM3cG captures, that is, by neglecting the x-rays from internal conversions, 
+256FM4cG the authors estimated the |e decay rate as 750 units. I|g=1.0 in       
+256FM5cG relative units, therefore, corresponds to |?0.133 per 100 |e decays,   
+256FM6cG or |?0.121 per 100 decays of {+256}Md (adopted |e decay branching for  
+256FMxcG {+256}Md is 90.8% {I7}).                                               
+256FM  L 0.0          0+                                                        
+256FM  E                                                                        
+256FMS E EAV=486 13 $ CK=0.7440 $ CL=0.1854 3 $ CM+=0.06781 14                  
+256FM  L 48.3         2+                                                        
+256FM  E                                                                       ?
+256FM  G 48.3                                                                  S
+256FM  L 159.9        4+                                                        
+256FM  G 111.6        30     LE                                                S
+256FM  L 332.6        6+                                                        
+256FM  G 172.6        30     LE                                                S
+256FM  L 682.3        (2+)                                                      
+256FM  E                                                                       ?
+256FM  G 634.0        160    LE                                                S
+256FM  G 682.3                                                                 S
+256FM cG $I|g(682.3|g)|<170 from I|g(634.0|g)/I|g(682.3|g)=94/100,              
+256FM2cG measured in {+256}Es |b{+-} decay. This |g was not listed by 1993Mo18. 
+256FM  L 725.8         (3+)                                                     
+256FM  G 566.0                                                                 S
+256FM  G 677.5                                                                 S
+256FM  L 881.8        (2-)                                                      
+256FM  E                                                                       ?
+256FM  G 156                                                                   S
+256FM cG $I|g(156|g)|<1.7 from I|g(156|g)/I|g(833.5|g)=0.015, measured          
+256FM2cG in {+256}Es |b{+-} decay. This |g is not listed in 1993Mo18.           
+256FM  G 199.3                                                                 S
+256FM cG $I|g(199.3|g)|<29 from I|g(199.3|g)/I|g(833.5|g)=0.26, measured        
+256FM2cG in {+256}Es |b{+-} decay. This |g is not listed in 1993Mo18.           
+256FM  G 833.5        110    LE                                                S
+                                                                                
+256MD    ADOPTED LEVELS                                          99NDS    199908
+256MD  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256MD  XA260LR A DECAY                                                          
+256MD  Q -3.7E2    SY5.46E3  SY3.63E3  SY7.74E3  SY    2012WA38                 
+256MD CQ Note: Current evaluation has used the following Q record               
+256MD  Q -208      54 5298   54 3472   53 7897   17    1995AU04                 
+256MD  L 0.0          (1-)             77 M      2                              
+256MD2 L %A=9.2 7 $ %EC=90.8 7 $ %SF LT 3                                       
+256MD cL $(|a)/(|a+|e)={ 9.2% {I7}} is adopted from { 8.5% {I8}}, determined by 
+256MD2cL 1970Fi12 from K| x ray/|a intensities, and 9.9% {I5}, determined by    
+256MD3cL 1971Ho16 from {+256}Fm growth (1971Ho16). The latest value of 11%      
+256MD4cL {I3}, obtained by 1993Mo18, is in agreement with the earlier values.   
+256MD5cL %|a=9.2 {I7} is an unweighted average of earlier measurements.         
+256MD cL $%SF<3 (1971Ho16).                                                     
+256MD cL T         adopted from the measured half-lives of 78.1 min {I18}       
+256MD2cL (1993Mo18), 77 min {I5} (1971Ho16) and 75 min {I4} (1970Fi12). Other   
+256MD3cL measurements: { 90 min} (1958Ph40), { 90 min {I12}} (1965Si14).        
+256MD cL J         the |e decay to the 0+ {+256}Fm g.s. suggests low-spin,      
+256MD2cL J=0,1 for the {+256}Md g.s. From the available states in the           
+256MD3cL region, analogy to {+255}Fm suggests |n 7/2[613] orbital for the       
+256MD4cL odd-neutron state, and analogy to {+255}Md suggests |p 7/2[514] orbital
+256MD5cL for the odd-proton state. From the Gallagher-Moszkowski rule, the      
+256MD6cL J|p=0-, { |p /2[514], |n 7/2[613]} state is expected to be lower than  
+256MD7cL the J|p=7-, { |p 7/2[514], |n 7/2[613]} state.                         
+256MD8cL The 7773-keV |a from {+256}Md g.s., on the other hand, is assumed to   
+256MD9cL decay to the {+252}Es g.s. which probably has the J|p of 5- with       
+256MD2cL { |p 3/2[521], |n 7/2[613]} configuration. Since an |a transition      
+256MD3cL from J|p=0- to J|p=5- is forbidden, J|p({+256}Md g.s.)=1- of K=0 has   
+256MD4cL been suggested. Inversion of 1- and 0- states has also been assigned   
+256MD5cL for other K=0 bands (for {+242}Am g.s., for example).                  
+256MD cL $J|p=1-, K=0 { |p 7/2[514], |n 7/2[613]} assignment for {+256}Md       
+256MD2cL g.s. is consistent with an |a transition (HF=5.0|*10{+4})              
+256MD3cL to the J|p=5-, { |p 3/2[521], |n 7/2[613]} state, and with its |e decay
+256MD4cL to {+256}Fm. See 1993Mo18 for discussions on other possible orbitals.  
+256MD  L 145       AP                                                           
+256MDX L XREF=A                                                                 
+256MD cL E         calculated from measured E|a in {+260}Lr |a decay and        
+256MD2cL Q(|a)({+260}Lr)={ 8306 {I102}}, obtained by 1995Au04 from systematics. 
+                                                                                
+256MD    260LR A DECAY                                           99NDS    199908
+256MD  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+260LR  P 0.0                           180 S     30             8306      SY    
+256MD c  T{-1/2}({+260}Lr)={ 180 s {I30}} was measured by 1971Es01.             
+256MD c  Q(|a)({+260}Lr)=8306 syst is recommended by 1995Au04. The excited level
+256MD2c  energy is calculated from this Q(|a) value and the measured E|a in     
+256MD3c  {+260}Lr |a decay. 1995Au04 estimated |DQ(|a)={ 102 keV}.              
+256MD  N                       0.80    20                                       
+256MD c  The |a branching of {+260}Lr is adopted as 80% {I20} from the |e       
+256MD2c  decay branching estimated by 1971Es01 as %|e<40.                       
+256MD  L 0.0         (1-)                                                       
+256MD  L 145       AP                                                           
+256MD  A 8035      20 100      1.8                                              
+256MD cA E         measured by 1971Es01. The original energy is increased by    
+256MD2cA 5 keV because of changes in calibration energies: {+213}Fr and         
+256MD3cA {+211}Po |a's, E|a({+213}Fr)=6773, E|a({+211}Po)=7443, were used as    
+256MD4cA internal calibration. E|a({+213}Fr)=6775.0 {I17}, E|a({+211}Po)=7450.3 
+256MD5cA {I5} are recommended by 1991Ry01.                                      
+256MD cA IA        only one |a group was identified by 1971Es01: I|a is per     
+256MD2cA 100 |a decays.                                                         
+256MD cA HF        r{-0}({+256}Md)=1.487 {I10}, extrapolated from the r{-0}     
+256MD2cA values given in 1998Ak04, is used in calculation.                      
+                                                                                
+256NO    ADOPTED LEVELS                                          99NDS    199908
+256NO  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256NO  Q -3.92E3   9 7055    174309    108581    6     2012WA38                 
+256NO CQ Note: Current evaluation has used the following Q record               
+256NO  Q -4180     SY 7099   14 4308   10 8581   5     1995AU04                 
+256NO  L 0.0          0+               2.91 S    5                              
+256NO2 L %A=99.47 6$ %SF=0.53 6                                                 
+256NO cL $%|a({+256}No)={ 99.50 {I6}} is obtained from SF/|a={ 0.0053 {I+6-3}}, 
+256NO2cL measured by 1990Ho03. Any possible |e decay branch is taken as         
+256NO3cL negligible: calculations of transition probability for an              
+256NO4cL electron-capture branch from {+256}Md g.s. to the {+256}Fm g.s. yield  
+256NO5cL I(|e)|<0.001% by requiring its log| {Ift} value to be |>5.8.           
+256NO cL $T{-1/2}(|b)>{ 100 s} was calculated by 1997Mo25.                      
+256NO cL $From calculation of r{-0} parameters as a function                    
+256NO2cL of |a branching, a probable |e branch can be estimated only with       
+256NO3cL large uncertainty: the expected r{-0} value of 1.477 {I10} corresponds 
+256NO5cL to %|a=100, with a lower limit of 75%.                                 
+256NO cL $Calculations by 1997Mo25 give T{-1/2}(|b{++})>100 s (with respect     
+256NO2cL to Gamow-Teller |b decay) and T{-1/2}(|a)={ 2.75 s}.                   
+256NO cL $%SF was deduced by 1968Fl05 as |<0.25; %SF=0.25 was also              
+256NO2cL obtained by 1967Gh01; however, isotopic assignment was uncertain.      
+256NO cL T         T{-1/2}({+256}No)=2.91 s {I5} was measured by 1990Ho03.      
+256NO2cL Earlier measurements: T{-1/2}=3.3 s {I2} (1967Gh01), 3.7 s {I5}        
+256NO3cL (1968Fl05), 6 s {I2} (1967Dr02), 8.2 s {I10} (1966Ku15), |?8 s         
+256NOxcL (1964Do10).                                                            
+256NO cL $Assignment: {+238}U({+22}Ne,4n), parent of {+252}Fm (1964Do10).       
+                                                                                
+256LR    ADOPTED LEVELS                                          99NDS    199908
+256LR  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256LR  Q -2.48E3   9 6.27E3  9 2.35E3  9 8.81E3  SY    2012WA38                 
+256LR CQ Note: Current evaluation has used the following Q record               
+256LR  Q -2251     SY 6214   SY 2137   SY 8877   SY    1995AU04                 
+256LR  XA260DB A DECAY                                                          
+256LR cL E         Calculated from measured |a energies in {+260}Db |a decay    
+256LR2cL and Q(|a)({+260}Db)=9371 {I72}, recommended by 1995Au04. See {+260}Db  
+256LRxcL |a decay.                                                              
+256LR  L 0.0                           27 S      3                              
+256LR cL $T{-1/2}({+256}Lr) was measured as { 25.9 s {I17}} (1976BeZY),         
+256LR2cL 31 s {I3} (1971Es01), 35 s {I10} (1970Dr08), 24 s (1968Fl08), 45 s     
+256LR3cL {I10} (1965Do10). Weighted average of the latest two measurements is   
+256LR4cL 27.1 s {I15}. Its uncertainty is increased for the adopted half-life,  
+256LR5cL because of the diversity of measured values.                           
+256LR2 L %A=85 10 $ %EC=15 10 $ %SF<0.03                                        
+256LR cL $The |a decay/|e decay ratio has been estimated approximately          
+256LR2cL only. The authors of 1968Fl08 deduced the |e branch as about 30%, if   
+256LR3cL the 8.42-MeV |a group in their spectrum is from the |e decay           
+256LR4cL daughter, {+256}No. Presumably, the 8.43-MeV |a of {+256}Lr was not    
+256LR5cL considered; therefore, this branching should be an upper limit.        
+256LR6cL In authors' other paper, 1968Fl01, the authors stated that it was      
+256LR7cL impossible to determine the branching from their data. The authors     
+256LR8cL of 1971Es01 set an upper limit of 20% for an |e branch. It was         
+256LR9cL established by 1976BeZY that {+256}Lr does decay by electron capture;  
+256LR2cL however, its branching was not determined. %|e=15 {I10}, %|a=85 {I10}  
+256LR3cL is recommended here.                                                   
+256LR  L 108       74                                                           
+256LRX L XREF=A                                                                 
+256LR  L 154       74                                                           
+256LRX L XREF=A                                                                 
+256LR  L 188       74                                                           
+256LRX L XREF=A                                                                 
+                                                                                
+256LR    260DB A DECAY                                           99NDS    199908
+256LR  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+260DB  P 0.0                           1.52 S    13              9371     71    
+256LR c  The adopted half-life, T{-1/2}({+260}Db)=1.52 s {I13}, is the          
+256LR2c  measurement of 1977Be36. Other measured half-lives are 1.6 s {I3}      
+256LR3c  (1970Gh02), { 1.4 s {I+6-3}} (1971Dr01).                               
+256LR c                                                                         
+256LR  N                        0.904   6                                       
+256LR c  %|a|>{ 90.4 {I6}} was deduced by 1977Be36.                             
+256LR c  All |a groups were observed to be in coincidence with                  
+256LR2c  L x-rays(Lr) (1977Be36). The energy of the lowest level fed by the     
+256LR3c  highest energy |a, therefore, should more than the L-shell binding     
+256LR4c  energy. The absence of K| x ray and |g's suggests that E(level)<154,   
+256LR5c  the K-binding energy. Q(|a)({+260}Db)=9371 {I71} is recommended by     
+256LR6c  1995Au04. Level energies are calculated from this Q(|a) and measured   
+256LRxc  E|a's.                                                                 
+256LR cG $I(L| x ray)=69% {I7}, I(K| x ray)<1.5%, I|g(50 keV<|g<450 keV)<1.5%   
+256LR2cG were measured by 1977Be36.                                             
+256LR cA E         Energies measured by 1977Be36. The original energies         
+256LR2cA given by 1977Be36 are increased by { 1 keV} because of changes in      
+256LR3cA calibration energies: E|a({+249}Cf) from 5813.5 to { 5812.8 {I16}},    
+256LR4cA E|a({+243}Am) from 5274.8 to 5275.3 {I10}, E|a({+244}Cm) from 5084.9   
+256LR5cA to 5804.77 {I5}. Other measurements: 1970Gh02, 1971Dr01. For           
+256LR6cA calibration, 1970Gh02 used E|a({+213}Fr)=6773 and E|a({+211}Po)=7443;  
+256LR7cA 6775.0 {I17} and 7450.3 {I5} are recommended by 1991Ry01 for them,     
+256LR8cA respectively. Other measurements: 1970Gh02, 1971Dr01.                  
+256LR cA IA        |a intensity per 100 |a decays, measured by 1977Be36.        
+256LR2cA The intensities measured by 1970Gh02 are also quoted for each |a       
+256LR3cA for comparison.                                                        
+256LR cA HF        r{-0}({+256}Lr)={ 1.457 {I10}} is used in calculations.      
+256LR  L 0.0                                                                    
+256LR  L 108       74                                                           
+256LR  A 9121      17 19     3 18      5                                        
+256LR cA $I|a=22 per 100 |a decays was measured by 1970Gh02.                    
+256LR  L 154       74                                                           
+256LR  A 9075      14 28     5 8.8     24                                       
+256LR cA $I|a=28 per 100 |a decays was measured by 1970Gh02.                    
+256LR  L 188       74                                                           
+256LR  A 9042      14 53     5 3.7     9                                        
+256LR cA $I|a=61 per 100 |a decays was measured by 1970Gh02.                    
+                                                                                
+256RF    COMMENTS                                                ENSDF    201404
+256RF  H TYP=FUL$AUT=BALRAJ SINGH$CUT=31-MAR-2014$CIT=ENSDF$                    
+256RF C  TITL$NUCLEAR DATA SHEETS FOR 256RF                                     
+256RF c  AUTH$BALRAJ SINGH                                                      
+256RF c  INST$Department of Physics and Astronomy                               
+256RF#c       McMaster University, Hamilton, ON L8S 4M1, Canada                 
+256RF c  ABST$Nuclear Structure data for {+256}Rf from in-beam |g-ray           
+256RF2c  measurements since the previous ENSDF update and NDS publication in    
+256RF3c  1999 have been incorporated with the addition of excited states and    
+256RF4c  gamma rays above the first 2+ in {+256}Rf, including three |ms isomers.
+256RF5c  In ENSDF/NDS evaluation of 1999, the data were available for only the  
+256RF6c  ground state and first excited 2+ state at 51 keV {I35} in {+256}Rf,   
+256RF7c  with no data for |g rays.                                              
+256RF c  CUT$All literature available up to March 31, 2014 has been considered. 
+256RF c  ACKN$                                                                  
+256RF c  FUND$ Work at McMaster supported by the Office of Science, U.S.        
+256RF2c  Department of Energy                                                   
+256RF C  CIT$ENSDF                                                              
+                                                                                
+256RF    ADOPTED LEVELS, GAMMAS                                  ENSDF    201404
+256RF  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2014$                    
+256RF  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256RF  Q -6280     SY 8180   SY 3014   25 8926   15    2012WA38                 
+256RF CQ $ Estimated DQ-=240, DSN=120 (2012Wa38)                                
+256RF CQ $ ^S(2n)=15120 280 (syst), ^S(2p)=5080 20, Q(ECP)=126 23 (2012Wa38)    
+256RF c  isotopic identification and assignment:                                
+256RF c  1975Og01: {+208}Pb({+50}Ti,2n) excitation function                     
+256RF c  1984Og02: {+208}Pb({+50}Ti,2n); {+208}Pb({+49}Ti,n) SF observed        
+256RF c  1984Og02, 1985Mu11: daughter of {+260}Sg                               
+256RF c  1985He06: {+208}Pb({+50}Ti,2n) E=4.75-5.15 MeV/nucleon;                
+256RF2c  {+207}Pb({+50}Ti,n) E=4.85 MeV/nucleon; parent of {+252}No (8410|a)    
+256RF c  1985So03: {+249}Cf({+12}C,5n)  E=85 MeV, SF observed                   
+256RF cG E(X)$ Calculated value from Harris fit in a rotational band            
+256RF cL E$ From E|g data in 2012Gr12, unless otherwise stated                  
+256RF cL E(B),T(B)$ From 2009Je01. Level energy deduced from (electron)(900|g)  
+256RF2cL coin. Half-life from recoil-electron-electron-electron-fission(t).     
+256RF3cL Isomers at |?1120 and |?1400 keV interpreted by 2009Je01 as possible   
+256RF4cL 2-qp states, while the one at >2000 keV is interpreted as possible     
+256RF5cL 4-qp state. See also 2011Ro20 where only one isomer of 17 |ms {I5} was 
+256RF6cL seen and interpreted as possible 4-qp state.                           
+256RF cL BAND(A)$K|p=0+ band.                                                   
+256RF2cL Band assignment from 2012Gr12                                          
+256RF  XA260SG A DECAY (4.95 MS)                                                
+256RF  XB208PB(50TI,2NG)                                                        
+256RF PN                                                                     6  
+256RF  L 0.0          0+               6.67 MS   10                             
+256RF2 L %A=0.32 17 (1997HE29) $ %SF=99.68 17                                   
+256RFX L XREF=AB                                                                
+256RF cL T$weighted average of 6.9 ms {I2} (2013Ri07, 2012Gr12 from time        
+256RF2cL difference between recoil and fission events), 6.9 |ms {I4} (2011Ro20, 
+256RF3cL from time distribution of fission events in SF decay of 783 events),   
+256RF4cL 6.70 ms {I9} (2008Dr05), 6.2 ms {I2} (1997He29), 6.7 ms {I2}           
+256RF5cL (1984Og02). Other measurements: 5 ms (from SF activity, 1975Og01);     
+256RF6cL 7.4 ms {I+9-7} (from SF activity, 1985He06);                           
+256RF7cL 10 ms {I+47-4} (from |a activity, 1985He06);                           
+256RF8cL 6.3 ms {I+27-14} (from SF activity following {+260}Sg |a decay,        
+256RF9cL 1985Mu11); 9 ms {I2} (from SF activity, 1985So03).                     
+256RF cL $The |a branching was determined by 1997He29 as (0.32|+0.17)%.         
+256RF2cL Authors' earlier measurement: (2.2 +7.3-1.8)% (1985He06).              
+256RF  L 44        1  (2+)                                                      
+256RFX L XREF=AB                                                                
+256RF cL E$ deduced from Harris fit of rotational band members (2012Gr12).      
+256RF2cL Others: |?46 (2009Je01), 51 {I35} from {+260}Sg |a decay               
+256RF cL J$ |a hindrance factor; systematics of first excited-state             
+256RF2cL energies of even-even nuclei.                                          
+256RF  G  44       1  100        [E2]                  1.83E3               X  S
+256RF  L 148       2  (4+)                                                  A   
+256RFX L XREF=B                                                                 
+256RF  G 104       1             [E2]                  31.5                 X  S
+256RF  L 309       2  (6+)                                                  A   
+256RFX L XREF=B                                                                 
+256RF  G 161       1  100        [E2]                  4.51                     
+256RF  L 527       2  (8+)                                                  A   
+256RFX L XREF=B                                                                 
+256RF  G 218       1  100        [E2]                  1.33                     
+256RF  L 799       2  (10+)                                                 A   
+256RFX L XREF=B                                                                 
+256RF  G 272       1  100        [E2]                  0.589                    
+256RF  L 946       AP (3-)                                                      
+256RFX L XREF=B                                                                 
+256RF cL E,J$ from (electron)(900|g) (2009Je01), possible member of K|p=2- band 
+256RF  G 900       1                                                            
+256RF cG E$ from 2009Je01                                                       
+256RF  L 1120      AP (5-)             25 US     2                          BM1 
+256RF2 L %IT=? $ %SF=?                                                          
+256RFX L XREF=B                                                                 
+256RF cL J$assigned by 2013Ri07 as K|p=(5-) with                                
+256RF2cL possible 2-qp configuration=(|p1/2[521]~#|p9/2[624]){-5-}              
+256RF cL T$2011Ro20 state that their observed isomer of 17 |ms {I5} (half-life  
+256RF2cL from time distribution of conversion electrons and maximum likelihood  
+256RF3cL method) may correspond to the 25-|ms {I2} isomer in 2009Je01, although,
+256RF4cL the isomer population ratio of |?5% {I2} (with respect to that of      
+256RF5cL {+256}Rf g.s.) is much smaller than |?27% deduced by 2011Ro20 from data
+256RF6cL in 2009Je01. Due to its low population and several other               
+256RF7cL arguments against its assignment as a 2-qp isomer, 2011Ro20 suggest    
+256RF8cL that their observed 17-|ms isomer is more likely a 4-qp state          
+256RF  L 1122      3  (12+)                                                 A   
+256RFX L XREF=B                                                                 
+256RF  G 323       1  100        [E2]                  0.333                    
+256RF  L 1400      AP  (8-)            17 US     2                          BM2 
+256RF2 L %IT=? $ %SF=?                                                          
+256RFX L XREF=B                                                                 
+256RF cL E$isomer not found in 2011Ro20, perhaps due to low statistics          
+256RF cL J$assigned by 2013Ri07 as K|p=(8-) with                                
+256RF2cL possible 2-qp configuration=(|p7/2[514]~#|p9/2[624]){-8-}              
+256RF cL T$ others: 13.2 |ms {I33} (2010Be16)                                   
+256RF  L 1493       3 (14+)                                                 A   
+256RFX L XREF=B                                                                 
+256RF  G 371       1  100        [E2]                  0.218                    
+256RFF G FL=1122                                                                
+256RF  L 1910       4 (16+)                                                 A   
+256RFX L XREF=B                                                                 
+256RF  G 417       2  100                                                       
+256RF  L 2200      GT                  27 US     5                          BM3 
+256RF2 L %IT=? $ %SF=?                                                          
+256RFX L XREF=B                                                                 
+256RF cL E$isomer not found in 2011Ro20, perhaps due to low statistics          
+256RF cL T$ other: 36.5 |ms {I86} (2010Be16)                                    
+256RF cL $Possible 4-qp state (2009Je01,2013Ri07)                               
+256RF  L 2369       4 (18+)                                                 A   
+256RFX L XREF=B                                                                 
+256RF  G 459       2  100                                                       
+256RF  L 2868       5 (20+)                                                 A   
+256RFX L XREF=B                                                                 
+256RF  G 499       2  100                                                       
+                                                                                
+256RF    260SG A DECAY (4.95 MS)       2009HE20,1985MU11         ENSDF    201404
+256RF  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2014$                    
+256RF  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256RF c  {+260}Sg assignment: {+207}Pb({+54}Cr,n), {+208}Pb({+54}Cr,2n); parent 
+256RF2c  of {+256}Rf (1984De07,1984Og03,1985Mu11)                               
+256RF c  1985Mu11: measured E|a, I|a, half-life                                 
+256RF c  2009He20: {+260}Sg produced in the {+208}Pb({+54}Cr,2n) and            
+256RF2c  {+207}Pb({+54}Cr,n) reactions with the {+54}Cr beam delivered by the   
+256RF3c  charge state injector of the UNILAC accelerator at GSI Darmstadt.      
+256RF4c  Evaporation residues were separated by the velocity filter SHIP and    
+256RF5c  implanted into a 16-strip Si PIPS detector. A box of six Si-wafers was 
+256RF6c  used to measure escaping |a-particles. A Ge clover detector consisting 
+256RF7c  of four crystals was used to measure |g rays in coincidence with       
+256RF8c  particles. Measured E|a, E|g, half-lives, |s.                          
+256RF c  Q(|a)({+260}Sg)=9923 {I30} is recommended by 1995Au04 which is         
+256RF2c  calculated from E|a(to {+256}Rf g.s.)=9770 {I30}.                      
+256RF c  %|a=50 {I+20-30} was obtained by 1985Mu11.                             
+256RF c  When |a branching of 50% is used, r{-0}({+256}Rf)=1.486 is calculated  
+256RF2c  from HF(9770|a)=1.0. This r{-0} parameter is larger than the           
+256RF3c  expected r{-0} of 1.465 {I20}, obtained from the trend of r{-0} values 
+256RF4c  given in 1998Ak04.                                                     
+256RF c  Calculations by using r{-0}=1.465 {I20} yield 12 ms {I+6-5} for        
+256RF2c  partial |a of half-life of {+260}Sg, corresponding to %|a=30           
+256RF3c  {I+20-10} [T{-1/2}({+260}Sg)=3.6 {I9} ms is used]. See '{+260}Sg       
+256RF4c  adopted levels' for partial |a half-lives calculated theoretically.    
+256RF cA E$Measured by 1985Mu11.                                                
+256RF cA IA$|a intensity per 100 |a decays, measured by 1985Mu11.               
+256RF cA HF$r{-0}({+256}Rf)=1.465 fm {I20}, obtained from the trend of          
+256RF2cA r{-0} values, is recommended                                           
+256RF cL J,T$From Adopted Levels                                                
+260SG  P 0.0          0+               4.95 MS   33              9901     10    
+260SG cP T$Measured by 2009He20. Others: 3.6 ms {I+9-6} (1985Mu11,from          
+260SG2cP |a decay curves); 2.5 ms {I15} was deduced by 1984De07                 
+260SG3cP from fission counts (T{-1/2}(SF)=6 ms {I+2-1} was measured from SF     
+260SG4cP activities, and the time distribution of fission fragments were        
+260SG5cP utilized in calculation of the half-life by subtracting the SF         
+260SG6cP activities of {+256}Rf, the |a daughter; %|a>80 was assumed).          
+260SG cP QP$From 2012Wa38                                                       
+256RF  N                       0.29    3                                        
+256RF cN BR$%|a=29 {I3}, %SF=71 {I3} (2009He20). Other: %|a=50 {I+20-30}        
+256RF2cN (1985Mu11)                                                             
+256RF  L 0.0          0+                6.67 MS  10                             
+256RF  A 9770      30 83     10 1.0                                             
+256RF cA E$ 9748 {I10} (2009He20)                                               
+256RF  L 51        35 (2+)                                                      
+256RF  A 9720      30 17     10 3.6    23                                       
+                                                                                
+256RF    208PB(50TI,2NG)               2012GR12,2009JE01,2011RO20ENSDF    201404
+256RF  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2014$                    
+256RF c  2012Gr12: E=242 MeV {+50}Ti beam produced in an ECR ion source using   
+256RF2c  the MIVOC (metallic Ions from volatile compounds) method. Target=446   
+256RF3c  |mg/cm{+2} {+208}Pb. |g rays were detected using the JUROGAM-II array  
+256RF4c  consisting of 24 clover and 15 tapered Ge detectors with               
+256RF5c  Compton suppression shields. Fission tagging technique. Measured E|g,  
+256RF6c  I|g, |g|g, energy loss, time-of-flight, recoils, fission products,     
+256RF7c  (fission fragments)|g coin, Deduced g.s. rotational band, kinematic    
+256RF8c  and dynamic moments of inertia. No significant deformed shell gap      
+256RF9c  at Z=104                                                               
+256RF c  2011Ro20: {+50}Ti beam, E=242.5 MeV produced at the Argonne ATLAS      
+256RF2c  facility. Target={+208}Pb about 0.5 mg/cm{+2} thick on a rotating      
+256RF3c  target wheel. Recoiling nuclei identified in the Argonne Fragment Mass 
+256RF4c  Analyzer (FMA) using a position-sensitive parallel grid avalanche      
+256RF5c  counter (PGAC) located in the focal plane based on A/Q, time of arrival
+256RF5c  and energy-loss signals. Isomeric electron and fission events where    
+256RF6c  detected in the same pixel of a 140 |mm thick double-sided Si strip    
+256RF7c  detector that the recoiling nucleus was implanted. |g-rays were        
+256RF8c  detected in using four large clover Ge detectors, each consisting of   
+256RF9c  four crystals. Measured electron energies and in coincidence with      
+256RFAc  fission and gamma events, deduced isomer half-life.                    
+256RFBc  A total of 783 {+256}Rf nuclei were identified from SF decay           
+256RFCc  No candidates for isomeric transitions were detected within the        
+256RFDc  gamma spectrum in coincidence with the electrons. No evidence was      
+256RFEc  found for a 2-qp isomer in {+256}Rf. A predicted 2-qp isomer may decay 
+256RFFc  by SF mode with a half-life close to that of the ground state, thus    
+256RFGc  making its identification difficult.                                   
+256RFHc  2011Ro20 discuss in detail many discrepancies with the work of         
+256RFIc  2009Je01 on the observation of isomers in {+256}Rf                     
+256RF c  2013Ri07: E({+50}Ti)=238, 243 and 258 MeV. Measured recoil implants and
+256RF2c  fission correlations at LBNL cyclotron facility using                  
+256RF3c  the Berkeley Gas-filled Separator. 2013Ri07 assigned (5-) to a 25-|ms  
+256RF4c  isomer at 1120 keV, and (8-) to a 17-|ms isomer at 1400 keV, both first
+256RF5c  reported in their earlier paper 2009Je01 and described as 2-qp states. 
+256RF4c  Note that in 2011Ro20, only one weakly populated isomer of             
+256RF5c  17 |ms was found and described as possible 4-qp state.                 
+256RF c  2010Be16: E({+50}Ti)=238 MeV. Measured E|g, ce, E|a, (recoils)(ce)(|a),
+256RF2c  using a DSSD for particles and electrons, and an HPGe clover detector  
+256RF3c  for |g rays at the 88-Inch Cyclotron of the Lawrence Berkeley National 
+256RF4c  Laboratory using the Berkeley Gas-filled Separator. Half-lives of two  
+256RF5c  isomers measured as 13.2 |ms {I33} and 36.5 |ms {I86} from recoil-     
+256RF6c  electron-electron-fission(from {+256}Rf) correlated events.            
+256RF c  2009Je01: E=243 MeV {+50}Ti beam provided by 88-Inch Cyclotron at      
+256RF2c  Lawrence Berkeley National Laboratory. Evaporation residues were       
+256RF3c  separated in the Berkeley Gas Separator and identified by coincident   
+256RF4c  signals in the Multi-Wire Proportional Counter and the double-sided Si 
+256RF5c  strip detector. |g rays were detected with a Clover germanium detector.
+256RF6c  Measured delayed |g rays and conversion electrons, ce-|g coincidence,  
+256RF7c  half-lives of isomeric states. Deduced configurations. See also        
+256RF8c  2013Ri07 where configurations are reassigned based on data for {+257}Rf
+256RF c  2008Dr05: E=4.6-4.8 MeV/nucleon beam provided by 88-Inch cyclotron at  
+256RF2c  LBNL. Detected charged particles using a focal plane                   
+256RF3c  detector and a double-sided silicon strip detector. Half-life          
+256RF4c  measured based on the subsequent |a-decay of {+256}Rf.                 
+256RF cG E(X)$ Calculated value from Harris fit in a rotational band            
+256RF cG E,RI$ From 2012Gr12, unless otherwise stated                           
+256RF cL E$From E|g data in 2012Gr12, unless otherwise stated                   
+256RF cL E(B),T(B)$ From 2009Je01. Level energy deduced from (electron)(900|g)  
+256RF2cL coin. Half-life from recoil-electron-electron-electron-fission(t).     
+256RF3cL Isomers at |?1120 and |?1400 keV interpreted by 2009Je01 as possible   
+256RF4cL 2-qp states, while the one at >2000 keV is interpreted as possible     
+256RF5cL 4-qp state. See also 2011Ro20 where only one isomer of 17 |ms {I5} was 
+256RF6cL seen and interpreted as possible 4-qp state.                           
+256RF CL BAND(A)$GS band.                                                       
+256RF2cL Band assignment from 2012Gr12                                          
+256RF PN                                                                     5  
+256RF  L 0            0+                6.67 MS  10                         A   
+256RF cL T$from Adopted Levels                                                  
+256RF cL $ Production |s=17 nb {I3} (2012Gr12), 15.8 nb {I2} (2008Dr05)         
+256RF  L 44        1  (2+)                                                  A   
+256RF cL E$ |?46 (2009Je01)                                                     
+256RF  G 44        1            [E2]                   1.83E3               X  S
+256RF  L 148       2  (4+)                                                  A   
+256RF  G 104       1            [E2]                   31.5                 X  S
+256RF  L 309       2  (6+)                                                  A   
+256RF  G 161       1  100    30 [E2]                   4.51                     
+256RF  L 527       2  (8+)                                                  A   
+256RF  G 218       1  80     20 [E2]                   1.33                     
+256RF  L 799       2  (10+)                                                 A   
+256RF  G 272       1  53     12 [E2]                   0.589                    
+256RF  L 946       AP (3-)                                                      
+256RF cL E,J$ from (electron)(900|g) (2009Je01), member of K|p=2- band          
+256RF  G 900       1                                                            
+256RF cG E$ from 2009Je01                                                       
+256RF  L 1120      AP (5-)             25 US     2                          BM1 
+256RF2 L %IT=? $ %SF=?                                                          
+256RF cL J$assigned by 2013Ri07 as K|p=(5-) with                                
+256RF2cL possible 2-qp configuration=(|p1/2[521]~#|p9/2[624]){-5-}              
+256RF cL T$2011Ro20 state that their observed isomer of 17 |ms {I5} (half-life  
+256RF2cL from time distribution of conversion electrons and maximum likelihood  
+256RF3cL method) may correspond to the 25-|ms {I2} isomer in 2009Je01, although,
+256RF4cL the isomer population ratio of |?5% {I2} (with respect to that of      
+256RF5cL {+256}Rf g.s.) is much smaller than |?27% deduced by 2011Ro20 from data
+256RF6cL in 2009Je01. Due to its low population and several other               
+256RF7cL arguments against its assignment as a 2-qp isomer, 2011Ro20 suggest    
+256RF8cL that their observed 17-|ms isomer is more likely a 4-qp state          
+256RF  L 1122      3  (12+)                                                 A   
+256RF  G 323       1  49     11 [E2]                   0.333                    
+256RF  L 1400      AP (8-)             17 US     2                          BM2 
+256RF2 L %IT=? $ %SF=?                                                          
+256RF cL E$isomer not found in 2011Ro20, perhaps due to low statistics          
+256RF cL T$ others: 13.2 |ms {I33} (2010Be16)                                   
+256RF cL J$assigned by 2013Ri07 as K|p=(8-) with                                
+256RF2cL possible 2-qp configuration=(|p7/2[514]~#|p9/2[624]){-8-}              
+256RF  L 1493       3 (14+)                                                 A   
+256RF  G 371       1  22     8  [E2]                   0.218                    
+256RFF G FL=1122                                                                
+256RF  L 1910       4 (16+)                                                 A   
+256RF  G 417       2  20     7                                                  
+256RF  L 2200      GT                  27 US     5                          BM3 
+256RF2 L %IT=? $ %SF=?                                                          
+256RF cL E$isomer not found in 2011Ro20, perhaps due to low statistics          
+256RF cL T$ other: 36.5 |ms {I86} (2010Be16)                                    
+256RF cL $Possible 4-qp state (2009Je01,2013Ri07)                               
+256RF  L 2369       4 (18+)                                                 A   
+256RF  G 459       2  18     7                                                  
+256RF  L 2868       5 (20+)                                                 A   
+256RF  G 499       2  16     7                                                  
+                                                                                
+256DB    COMMENTS                                                ENSDF    201603
+256DB  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=15-MAR-2016$                    
+256DB C  TITL$NUCLEAR DATA SHEETS FOR 256DB                                     
+256DB c  AUTH$BALRAJ SINGH                                                      
+256DB c  INST$Department of Physics and Astronomy, McMaster University,         
+256DB#c       Hamilton, Ontario L8S 4M1, Canada                                 
+256DB c  ABST$Confirmed identification, decay mode and half-life of {+256}Db    
+256DB2c  from experimental studies by 2001He35 and 2008Ne01 are included in     
+256DB3c  this update. The previous evaluation of A=256 nuclides published in    
+256DB4c  NDS by 1998Ak02 contained only a tentative identification of {+256}Db  
+256DB5c  from a preprint 1983OgZX. The fine structure of |a spectrum observed   
+256DB6c  by 2008Ne01 in the decay of {+260}Bh is suggestive of several excited  
+256DB7c  states in {+256}Db, but no discrete levels have been proposed for the  
+256DB8c  time being.                                                            
+256DB c  CUT$Literature available up to March 15, 2016 has been consulted.      
+256DB C  CIT$ENSDF                                                              
+256DB c  FUND$                                                                  
+                                                                                
+256DB    ADOPTED LEVELS                                          ENSDF    201603
+256DB  H TYP=FUL$AUT=B. SINGH$CIT=ENSDF$CUT=15-MAR-2016$                        
+256DB  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 87, 287 (1999)$CUT=1-Oct-1998$       
+256DB  Q             7310    SY 1120   SY 9340   30    2012WA38                 
+256DB cQ $Estimated uncertainties (2012Wa38): 490 for S(n), 270 for S(p)        
+256DB cQ $S(2n)=16140 (theory,1997M025). S(2p)=3950 {I390}, Q(|ep)=3260 {I240}  
+256DB2cQ (syst,2012Wa38)                                                        
+256DB c  1983OgZX: {+256}Db claimed to have been observed as an SF              
+256DB2c  activity in {+209}Bi({+49}Ti,2n); measured half-life from SF           
+256DB3c  and |a-decay curves. According to results of experiments in 2001He35,  
+256DB4c  the SF activity reported by 1983OgZX was most likely from {+256}Rf     
+256DB5c  produced in |e decay of {+256}Db.                                      
+256DB c  2001He35 (also 1999He11,1999He07): {+256}Db produced in                
+256DB2c  {+209}Bi({+50}Ti,3n),E=4.59-5.08 MeV/nucleon, evaporation residues from
+256DB3c  filtering by SHIP separator at GSI. Measured E|a, T{-1/2}(|a), |a|a and
+256DB4c  |a(SF) parent-daughter correlations. A total of 16 |a-decay chains were
+256DB5c  assigned involving the production of {+256}Db. The authors also found  
+256DB6c  evidence for |e decay mode of {+256}Db resulting in {+256}Rf which     
+256DB7c  decays primarily by SF decay mode, and that is the SF activity which   
+256DB8c  was most likely observed by 1983OgZX.                                  
+256DB c  2008Ne01: {+256}Db from |a decay of {+260}Bh produced in               
+256DB2c  {+209}Bi({+52}Cr,n),E=257.0 MeV beam provided by 88-Inch Cyclotron at  
+256DB3c  LBNL. The nuclei were analyzed using Berkeley Gas-Filled Separator.    
+256DB4c  {+256}Db, {+252}Lr and {+248}Md formed through successive              
+256DB5c  |a-decay chain.                                                        
+256DB c  There are several |a groups reported by 2008Ne01 in {+260}Bh |a        
+256DB2c  which suggests population of excited states in {+256}Db, but           
+256DB3c  no levels have been explicitly defined at the moment.                  
+256DB  XA260BH A DECAY (35 MS)                                                  
+256DB  L 0.0                           1.6 S     +5-3                           
+256DB2 L %A=70 11$ %EC=30 11$ %SF=?                                             
+256DBX L XREF=A                                                                 
+256DB cL %A$from 2008Ne01, based on %|e=36 {I12} (2001He35), thus %|a=64 {I12}, 
+256DB2cL and %|a obtained by 2008Ne01, which is not stated but probably is      
+256DB3cL 76% {I11}                                                              
+256DB cL $2001He35 did not find any evidence for SF decay mode of {+256}Db,     
+256DB2cL however, did observe SF events while studying the decay of {+256}Db.   
+256DB3cL These SF events were ascribed to the decay of {+256}Rf, |e daughter    
+256DB4cL of {+256}Db. The SF decay events observed by 1983OgZX in the decay     
+256DB5cL study of {+256}Db were most likely due to the same decay process       
+256DB cL E$the 1.6-s activity is assumed to belong to g.s. of {+256}Db          
+256DB cL J$in theoretical calculations by 1997Mo25, 1/2- proton and 9/2+        
+256DB2cL neutron orbitals were specified, which would suggest J|p=4-,5-         
+256DB cL T$from (implants)|a-correlations (2001He35). Other values from         
+256DB2cL 2001He35 from SF events are: 2.3 s {I+11-6} and 1.7 s {I+9-4}, in      
+256DB3cL agreement with their adopted value but much less precise. 1983OgZX     
+256DB4cL obtained T{-1/2}=2.6 s {I+14-8} from SF observed in                    
+256DB5cL {+209}Bi({+49}Ti,2n) reaction and in {+260}Bh |a decay. Weighted       
+256DB6cL average of all the four values is 1.8 s {I+4-2}, but the evaluator     
+256DB7cL prefers the value recommended by 2001He35                              
+256DB cL $Theoretical half-lives (1997Mo25) of 15.1 s for |a and 22.9 s for |b  
+256DB2cL decays, for example predict %|a=17.2 and %|b{++}=11.4 which suggest    
+256DB3cL %SF=71.4. Theoretical calculations by 1985Lo17 predict                 
+256DB4cL T{-1/2}(SF)|?0.01 s, suggesting %SF|?100, which is in disagreement     
+256DB5cL with experimental results from 2008Ne01 and 2001He35, who              
+256DB6cL determined large |a and |b branches, and no evidence of SF decay       
+                                                                                
+256DB    260BH A DECAY (35 MS)         2008NE01                  ENSDF    201603
+256DB  H TYP=FUL$AUT=B. SINGH$CIT=ENSDF$CUT=15-MAR-2016$                        
+256DB c  2008Ne01: production of {+260}Bh in {+209}Bi({+52}Cr,n) reaction;      
+256DB2c  {+256}Db, {+252}Lr and {+248}Md through successive |a-decay chain, and 
+256DB3c  {+256}Rf and {+248}Fm through |e decays.                               
+256DB4c  E({+52}Cr{+12+})=257.0 MeV beam provided by 88-Inch Cyclotron at       
+256DB5c  LBNL. The nuclei were analyzed using Berkeley Gas-Filled Separator.    
+256DB6c  Detectors: A focal plan Si strip detector and a Si-strip detector      
+256DB7c  array, with a resolution of FWHM=55 keV.                               
+256DB8c  Eight correlated decay chains were detected, which are listed          
+256DB9c  in {+260}Bh Adopted Levels in the ENSDF database                       
+260BH  P 0                             35 MS     +19-9          10400     50    
+260BH cP E$The 35-ms activity is assumed to belong to g.s. of {+260}Bh          
+260BH cP T$From (implants)|a-correlated events (2008Ne01)                       
+260BH cP QP$From 2012Wa38. Other: 10320 {I30}, from average E|a=10.16 MeV {I3}  
+260BH2cP (2008Ne01) for four |a decay events with E|a=10.17, 10.17, 10.19 and   
+260BH3cP 10.13 MeV                                                              
+256DB  N                        1      AP                                       
+256DB cN BR$%|a|?100 for |a decay of {+260}Bh                                   
+256DB  A 10.03E3                                                                
+256DB  A 10.08E3                                                                
+256DB  A 10.24E3                                                                
+256DB  L 0                              1.6 S    +5-3                           
+256DB2 L %A=70 11$ %EC=30 11$ %SF=?                                             
+256DB cL E$the 1.6-s activity is assumed to belong to g.s. of {+256}Db          
+256DB cL T$from Adopted Levels                                                  
+256DB cL %A$from 2008Ne01, based on %|e=36 {I12} (2001He35), thus %|a=64 {I12}, 
+256DB2cL and %|a obtained by 2008Ne01, which is not stated but probably is      
+256DB3cL 76% {I11}                                                              
+256DB  A 10.16E3   3   100      53                                              
+256DB cA E$from average of four |a decay events with E|a=10.17, 10.17, 10.19    
+256DB2cA and 10.13 MeV (2008Ne01). This |a group is assumed to feed the g.s.    
+256DB3cA of {+256}Db                                                            
+256DB cA HF$from 2008Ne01                                                       
+                                                                                

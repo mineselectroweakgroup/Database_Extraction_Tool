@@ -1,0 +1,754 @@
+268      COMMENTS                                                05NDS    200512
+268    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+268  2 H CUT=12-Aug-2005$                                                       
+268   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+268   C  AUTH$M. GUPTA(a)                                                       
+268   C  INST$National Nuclear Data Center                                      
+268  #C       Brookhaven National Laboratory                                    
+268  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+268  #C                                                                         
+268   c  INST$Manipal Academy of Higher Education,                              
+268  #c  Manipal, KA 576 104, INDIA                                             
+268  #c  e-mail: mohini.gupta@manipal.edu                                       
+268   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+268  #c  Manipal, KA 576 104, INDIA                                             
+268   C  AUTH$THOMAS W. BURROWS                                                 
+268   C  INST$National Nuclear Data Center                                      
+268  #C       Brookhaven National Laboratory                                    
+268  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+268  #C       e-mail: burrows@bnl.gov                                           
+268   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+268  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+268  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+268  4C  RECEIVED BY August 12, 2005.                                           
+268   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+268  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+268  3C  DATE WERE CONSIDERED.                                                  
+268   C  CIT$NDS 106, 251 (2005)                                                
+268   c  COMM$                                                                  
+268  @c  {UAcronyms and notations used in this evaluation:}                     
+268  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+268  #c  BGS Berkeley Gas Filled Separator                                      
+268  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+268  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+268  #c  EVR Evaporation Residue                                                
+268  #c  GARIS Gas-filled Recoil Ion Separator                                  
+268  #c  RILAC RIKEN Linear Accelerator facility                                
+268  #c  SHIP Separator for Heavy Ion reaction Products                         
+268  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+268  2c  and detection of previous EVR or |a                                    
+268  #c  TKE Total Kinetic Energy                                               
+268  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+268  2c  Reactions, JINR, Dubna, Russia                                         
+268  #c                                                                         
+268  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+268  2c  (Z=110-112,114,116,118):}                                              
+268  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+268  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+268  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+268  5c  the evaluators have relied on the judgement of the JWP in              
+268  6c  determining the strength of the arguments made in the various papers.  
+268  7c  In the cases where there are new data or where the JWP has not yet     
+268  8c  assigned a priority of discovery for an element, the evaluators have   
+268  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+268  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+268  Bc  the data.                                                              
+268  #c                                                                         
+268  #c  In the above context, with respect to Z=112 and the collective works of
+268  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+268  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+268  4c  references therein.                                                    
+268  #c                                                                         
+268  @c                                                                         
+268  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+268  2c  discovery of an element and not a specific nuclide. The purpose of     
+268  3c  this evaluation is to present the "best" set of nuclear properties     
+268  4c  for those nuclides reported between A=266 and A=294 based on data      
+268  5c  currently available and {Bnot} to establish a priority of discovery for
+268  6c  any element.                                                           
+268  !c                                                                         
+268  #c  It is well known that alpha decay chains seen                          
+268  ac  in cold fusion reactions tend to terminate in known mass regions.      
+268  2c  The method of |a-|a or |a-SF correlations for identifying the          
+268  3c  parent has therefore been used with confidence.                        
+268  3c  Experiments carried out with hot fusion reactions,                     
+268  4c  result in alpha decay chains beginning and ending with hitherto unknown
+268  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+268  6c  in an attempt to identify the parent and daughters. The latter method  
+268  7c  is not as accurate as the first since a greater probability of         
+268  8c  randomness is inherant to the technique. As such, independent          
+268  9c  verification and confirmation of the data gains added importance.      
+268  ac  These facts should be taken into account when considering the suggested
+268  ac  properties of nuclei created following a hot fusion reaction as for    
+268  ac  the synthesis of Z=114 and above.                                      
+268  #c                                                                         
+268  #c  Finally, with regard to the some of the                                
+268  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+268  ac  2004Mo15 have pointed out that mass assignments which are based        
+268  ac  on the excitation energy of the compound nucleus may be off by a       
+268  ac  single unit. This may also be due in part to uncertainties in the beam 
+268  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+268  ac  Once again, collateral information is required to establish the charge 
+268  ac  and approximate A of the nucleus.                                      
+268  #c                                                                         
+268  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+268  2c  have not been adopted, the evaluators have used the approximations in  
+268  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+268  4c  exponential distribution to estimate the standard uncertainty (68%     
+268  5c  confidence level) in T{-1/2}:                                          
+268  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+268  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+268  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+268  9c  of events. For one and two events, the exact values given in Table 1   
+268  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+268  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+268  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+268  #c                                                                         
+268  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+268  ac  Calculations of T{-1/2}                                                
+268  2c  performed in the present evaluation used the relationship:             
+268  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+268  #c  where Z refers to the atomic                                           
+268  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+268  6c  and:                                                                   
+268  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+268  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+268  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+268  3c  parameter set used in these evaluations. We note that these systematics
+268  6c  are only an indication of |a-decay half-lives from the ground state    
+268  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+268  8c  the element under consideration. The use of this formalism in the      
+268  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+268  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+268  ac  estimate a Hindrance Factor (HF) for a given transition,               
+268  ac  attributable to the odd neutron or proton. This quantity is            
+268  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+268  ac  The HF so computed is an approximate indication.                       
+268  #c                                                                         
+268  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+268  2c  References.                                                            
+268  #c                                                                         
+268  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+268  2c  trans-fermium elements is the manifestation of shell effects in the    
+268  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+268  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+268  5c  important as QF is expected to play a greater role on the hindrance of 
+268  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+268  7c  the "island" of stability. An understanding of this mechanism is       
+268  8c  necessary to establishing the most favorable reactions for producing   
+268  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+268  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+268  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+268  Cc  to both the mass asymmetry in the entrance channel as well as the      
+268  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+268  Ec  deformations of target/projectile nuclei and their relative orientation
+268  Fc  to each other in the process of CN formation, may also play an         
+268  Gc  important role in reducing the probability of forming a compound       
+268  Hc  system. In the face of extremely low yields and a steep decrease of    
+268  Ic  production cross-sections already in evidence with available stable    
+268  Jc  beam-target combinations, the influence of all possible mitigating     
+268  Kc  factors must be accurately determined in order to                      
+268  Lc  optimize the probability of successful fusion. The formation of a      
+268  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+268  Nc  survives QF going on to form a compact compound system which must then 
+268  Oc  face competition from fission.                                         
+268  #c                                                                         
+268  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+268  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+268  3c  in collaboration with investigators from Belgium, France, and Italy.   
+268  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+268  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+268  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+268  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+268  8c  spectrometer "Corset". These experiments were inspired by              
+268  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+268  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+268  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+268  Cc  such experiments are planned or underway to investigate the various    
+268  Dc  effects.                                                               
+268  #c                                                                         
+268  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+268  2c  and references cited in these papers.                                  
+268  #c                                                                         
+268  !c  {UExperimental Estimates of Fission Barriers:}                         
+268  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+268  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+268  4c  the experimentally derived barrier heights are respectively:           
+268  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+268  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+268  #c                                                                         
+268  #c  2002It04, in an analysis of available experimental data, derive the    
+268  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+268  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+268  #c                                                                         
+268  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+268  2c  Two possibilities have been proposed in an attempt to understand the   
+268  ac  the {+289}114, {+287}114 observations:                                 
+268  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+268  ac  belongs to a rare decay mode originating from                          
+268  4c  an isomeric state, or that                                             
+268  #c  (ii) the sequence may actually originate from                          
+268  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+268  7c  Levels).                                                               
+268  #c  The evaluators believe that further investigations                     
+268  ac  are required to support either hypothesis.                             
+268  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+268  9c  unobserved. Also, T{-1/2}                                              
+268  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+268  ac  is much larger than that observed by 2004Og12 and                      
+268  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+268  ac  agreement. Such inconsistencies need to be better understood.          
+268  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+268  2c  respects. 2004OgZZ report more statistics in some cases.               
+268  #c                                                                         
+268  @c  {UOther comments on {+289}114 and {+283}112}                           
+268  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+268  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+268  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+268  4c  classified the evidence as being "very weak",                          
+268  5c  with no convincing supporting arguments for the possible production of 
+268  6c  SHE. We make the following general observations:                       
+268  #c                                                                         
+268  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+268  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+268  ac  by the Dubna-JINR collaborations for all isotopes of                   
+268  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+268  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+268  ac  {+287}114 (15 events) and {+286}114                                    
+268  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+268  ac  the |?34 min decay sequence postulated as originating from             
+268  5c  a rare decay mode of {+289}114, does not seem very likely.             
+268  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+268  7c  {+289}114 decays observed are genetically linked                       
+268  8c  and not the result of a background decay sequence. These               
+268  BC  discrepancies have to be resolved, along with some others.             
+268  #c                                                                         
+268  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+268  ac  (see also 2004Og02) with VASSILISSA, have not                          
+268  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+268  3c  lack of internal consistency through the collective measurements       
+268  ac  and the data are inconclusive as pointed                               
+268  4c  out by experimenters (reasons given in each paper). Decay properties of
+268  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+268  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+268  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+268  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+268  8c  by them. See {+283}112 Adopted Levels for details.                     
+268  #c                                                                         
+268  #c  These observations by the experimenters are consistent with the        
+268  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+268  3c  of the various arguments put                                           
+268  3c  forward therein, the following comments may be made here:              
+268  #c                                                                         
+268  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+268  #c  190 MeV and 212 MeV (1999Og05)                                         
+268  #c  65 MeV and 170 MeV  (2004Og02)                                         
+268  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+268  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+268  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+268  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+268  4c  plane and side detectors). With one exception, all the energies        
+268  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+268  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+268  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+268  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+268  9c  the second experiment) after EVR implantation resulted in              
+268  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+268  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+268  #c                                                                         
+268  #c  2. 2000Ar03 statement that correlations  between the fission events    
+268  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+268  3c  'backward' analysis of the data was reported in                        
+268  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+268  5c  evidently in contradiction with those made by the                      
+268  6c  experimenters. A more complete analysis would be beneficial.           
+268  #c                                                                         
+268  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+268  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+268  ac  quoted from an earlier                                                 
+268  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+268  4c  assignments. The proposed assignment of Z=114 to both parents may      
+268  5c  be incorrect taking into account new data which do not support         
+268  6c  these observations and for reasons already mentioned.                  
+268  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+268  !c                                                                         
+268  #c  CONCLUSIONS:                                                           
+268  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+268  ac  are not conclusive. Overall, the                                       
+268  2c  results from the VASSILISSA experiments are at variance with data from 
+268  3c  experiments using DGFRS. The latter investigations are done using      
+268  4c  more stringent methods, and have greater statistics, offering better   
+268  5c  internal consistency. Some obvious discrepancies and other             
+268  ac  inconsistencies between the two sets of                                
+268  6c  data remain and need to be resolved or adequately explained as does the
+268  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+268  8c  by 2005Gr19 and 2002Lo11.                                              
+268  #c                                                                         
+268  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+268  2c  from earlier work are not reproduced to date.                          
+268  #c                                                                         
+268  @c  {UTheoretical Calculations:}                                           
+268  @c  1995Mo29: |b2 based on the finite-range droplet                        
+268  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+268  3c  with "global" parameters.                                              
+268  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+268  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+268  3c  J|p simultaneously obtained with the calculated masses and             
+268  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+268  5c  A=239.                                                                 
+268  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+268  2c  model for the macroscopic part and the Strutinski shell correction,    
+268  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+268  4c  part.                                                                  
+268  @c  2005GaZX: |b2 based on self consistent calculations                    
+268  2c  within the framework of the Relativistic Mean Field (RMF)              
+268  3c  theory with very few "globally" fit parameters and employing the       
+268  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+268  5c  sets in use exhibit similar systematics, these results are expected to 
+268  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+268  #c                                                                         
+268  @c  {UOther Measurements:}                                                 
+268  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+268  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+268  3c  (Blocking technique in single crystals).                               
+268  #c                                                                         
+268   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+268  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+268  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+268  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+268  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+268  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+268  7c  additional information that they readily provided during this          
+268  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+268  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+268  Ac  Singh for helpful discussions. We thank A. Marinov                     
+268  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+268  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+268  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+268  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+268  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+268  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+268  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+268  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+268  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+268  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+268  Lc  insights, and suggestions until her untimely demise are hereby         
+268  Mc  acknowledged.                                                          
+268   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+268  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+268  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+268      REFERENCES                                                       200512
+268    R 1966VI04 JOUR JINCA 28 741                                             
+268    R 1984SC13 JOUR ZPAAD 316 19                                             
+268    R 1987MU15 JOUR ZPAAD 328 49                                             
+268    R 1992BA77 JOUR PPNPD 29 453                                             
+268    R 1995HO04 JOUR ZPAAD 350 281                                            
+268    R 1995MO29 JOUR ADNDA 59 185                                             
+268    R 1997MO25 JOUR ADNDA 66 131                                             
+268    R 1998DA24 JOUR ARNUA 48 401                                             
+268    R 1999OG05 JOUR ZAANE 5 63                                               
+268    R 1999OG07 JOUR NATUA 400 242                                            
+268    R 1999OG10 JOUR PRLTA 83 3154                                            
+268    R 2000AR03 JOUR ZAANE 7 23                                               
+268    R 2000FI12 JOUR NDSBA 90 391                                             
+268    R 2000ZL02 JOUR ZAANE 8 81                                               
+268    R 2001AK11 JOUR NDSBA 94 131                                             
+268    R 2001KA70 JOUR PACHA 73 959                                             
+268    R 2002HI20 JOUR PRLTA 89 282701                                          
+268    R 2002HO11 JOUR ZAANE 14 147                                             
+268    R 2002IT04 JOUR PRVCA 65 044602                                          
+268    R 2002LO11 JOUR PPNPD 48 123                                             
+268    R 2002LO15 JOUR PRVCA 66 044617                                          
+268    R 2003AU02 JOUR NUPAB 729 3                                              
+268    R 2003AU03 JOUR NUPAB 729 337                                            
+268    R 2003GE09 JOUR PRVCA 68 061303                                          
+268    R 2003KA71 JOUR PACHA 75 1601                                            
+268    R 2003MU15 JOUR YAFIA 66 1051                                            
+268    R 2003MU26 JOUR APOBB 34 2073                                            
+268    R 2003OGZY REPT JINR-E7-2003-178,Oganessian                              
+268    R 2004BA86 JOUR JPGPE 30 B35                                             
+268    R 2004DA11 JOUR NUPAB 734 148                                            
+268    R 2004DMZZ REPT JINR-E12-2004-157,Dmitriev                               
+268    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+268    R 2004FO08 JOUR PRLTA 93 212702                                          
+268    R 2004GUZW PREPRINT Gupta                                                
+268    R 2004IT05 JOUR NUPAB 734 136                                            
+268    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+268    R 2004MO15 JOUR NUPAB 734 188                                            
+268    R 2004MO26 JOUR JUPSA 73 1738                                            
+268    R 2004OG02 JOUR ZAANE 19 3                                               
+268    R 2004OG03 JOUR PRVCA 69 021601                                          
+268    R 2004OG12 JOUR PRVCA 70 064609                                          
+268    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+268    R 2004PRZW PREPRINT Prokhorova                                           
+268    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+268    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+268    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+268DB    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+268DB  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+268DB2 H CUT=12-Aug-2005$                                                       
+268DB  Q 3.E2      SY5.1E3   SY3.7E3   SY8.3E3   SY    2012WA38                 
+268DB CQ Note: Current evaluation has used the following Q record               
+268DB  Q -150      SY 5210   SY 3640   SY 8200      SY 2003AU03                 
+268DB CQ Q-$ESTIMATED UNCERTAINTY=760 KEV                                       
+268DB CQ SN$ESTIMATED UNCERTAINTY=710 KEV                                       
+268DB CQ SP$ESTIMATED UNCERTAINTY=780 KEV                                       
+268DB CQ QA$ESTIMATED UNCERTAINTY=300 KEV                                       
+268DB C  2003OGZY AND 2004OG03: IDENTIFICATION OF NEW NUCLIDES: 28815, 28413,   
+268DB2C  280RG, 276MT, 272BH, AND 268DB.  268DB OBSERVED AS ALPHA-DECAY         
+268DB3C  DAUGHTER OF PARENT 272BH AND ALPHA-DECAY                               
+268DB4C  GRAND-DAUGHTER OF 276MT. REACTION: 243AM(48CA,3N) E=248 MEV            
+268DB5C  CORRESPONDING TO AN EXCITATION ENERGY OF 38.0 TO 42.5 MEV AT THE TARGET
+268DB6C  CENTER. EXPERIMENTS PERFORMED BY THE DUBNA-^LLNL COLLABORATION.        
+268DB7C  28815 WAS FORMED AT A CROSS-SECTION OF 2.7 pb {I+48-16}.               
+268DB C  EXPERIMENTS WERE DONE AT THE ^U400 CYCLOTRON WITH THE DUBNA            
+268DB2C  GAS-FILLED RECOIL SEPERATOR (^DGFRS) AT ^FLNR-^JINR.                   
+268DB3C  THE EVR'S RECOILING FROM THE TARGET WERE SEPARATED                     
+268DB4C  BY ^DGFRS IN FLIGHT FROM THE 48CA BEAM IONS, SCATTERED PARTICLES AND   
+268DB5C  TRANSFER-REACTION PRODUCTS WITH A TRANSMISSION EFFICIENCY OF           
+268DB6C  35% FOR 115 NUCLEI.                                                    
+268DB C  DETECTION SYSTEM: MULTIWIRE PROPORTIONAL COUNTER FOR TOF MEASUREMENT;  
+268DB2C  SEMI-CONDUCTOR FOCAL-PLANE DETECTOR ARRAY WITH 12 VERTICAL POSITION-   
+268DB3C  SENSITIVE STRIPS, WHICH MEASURED THE DECAY OF THE IMPLANTED RECOILS.   
+268DB4C  THIS DETECTION SYSTEM SURROUNDED BY EIGHT SIDE DETECTORS WITH NO       
+268DB5C  POSITION SENSITIVITY. THE ALPHA SPECTRUM WAS MEASURED IN THE RANGE     
+268DB6C  9.6 TO 11.0 MEV.  THE RESOLUTION OF THE DETECTOR SYSTEM WAS            
+268DB7C  FWHM=60-100 KEV FOR ALPHA PARTICLES ABSORBED IN THE FOCAL-PLANE        
+268DB8C  DETECTOR; 140-200 KEV FOR ALPHA'S ESCAPING THE FOCAL-PLANE DETECTOR AND
+268DB9C  REGISTERED BY THE SIDE DETECTORS.                                      
+268DB C  THREE SIMILAR DECAY CHAINS WITH FIVE CONSECUTIVE ALPHA DECAYS WERE     
+268DB2C  DETECTED IN A TIME INTERVAL OF 20 S (IN THE BEAM-OFF MODE FOLLOWING THE
+268DB3C  FIRST RECOIL EXPECTED TO BELONG TO Z=115) TERMINATED BY AN SF EVENT    
+268DB4C  WITH A RELEASE OF TOTAL KINETIC ENERGY OF AP 220 MEV. THESE EVENTS WERE
+268DB5C  ASSIGNED TO THE (48CA,3N) CHANNEL WITH THE PRODUCTION OF THE PARENT    
+268DB6C  NUCLIDE 28815; THE SIXTH AND FINAL EVENT IN THE CHAIN WAS ASSIGNED TO  
+268DB7C  268DB WHICH DECAYS BY SF/ELECTRON CAPTURE (EC). PROPERTIES OF 268DB    
+268DB8C  FROM THE THREE CHAINS ARE LISTED BELOW BY EVENT. THE IDENTIFICATION OF 
+268DB9C  Z=115 AND 113 AND ALL ASSOCIATED NUCLIDES IN THE CHAIN SHOULD BE       
+268DBAC  TREATED AS TENTATIVE UNTIL CONFIRMED BY INDEPENDENT EXPERIMENTS.       
+268DB t    {TV}Event #1: Energy of the evaporation residue=10.4 MeV             
+268DB2t       E{-SF}=150+55 MeV=205 MeV    t=28.69 h  - assigned to {+268}Db    
+268DB3t  {TV}Event #2: Energy of the evaporation residue=11.0 MeV               
+268DB4t       E{-SF}=148+52 MEV=200 MeV    t=23.54 h  - assigned to {+268}Db    
+268DB5t  {TV}Event #3: Energy of the evaporation residue=9.1 MeV                
+268DB6t       E{-SF}=140 MEV               t=16.8 h   - assigned to {+268}Db    
+268DB7t  {TV}Total TKE for fission fragments |?220 MeV.                         
+268DB C  2004DMZZ: CHEMICAL IDENTIFICATION OF DB AS A DECAY PRODUCT OF Z=115    
+268DB2C  CARRIED OUT IN DUBNA IN COLLABORATION WITH SCIENTISTS FROM             
+268DB3C  Switzerland AND USA.                                                   
+268DB4C  RADIOCHEMICAL SEPARATION BY ISOLATION OF Group ^V ELEMENTS FOR Z=105   
+268DB5C  AT ^FLNR/^JINR USING THE ^U400 CYCLOTRON IN JUNE 2004. A 32 CM**2      
+268DB6C  ROTATING TARGET WAS MADE FROM 99.9% ENRICHED 243AM IN OXIDE FORM       
+268DB7C  DEPOSITED ON A 1.5 |mm Ti FOIL TO A THICKNESS OF 1.2 mg/cm{+2} OF      
+268DB8C  243AM. THE 48CA BEAM IMPINGED ON THE TARGET CENTER AT AN ENERGY OF     
+268DB9C  247 MEV WITH AN AVERAGE INTENSITY OF 5E+12 IONS/SEC. RECOILS FROM THE  
+268DBAC  REACTION PRODUCTS WERE PASSED THROUGH A COLLIMATOR AND STOPPED IN A    
+268DBBC  COPPER CATCHER 50 MM IN DIAMETER WITH AN ESTIMATED COLLECTION          
+268DBCC  EFFICIENCY OF CLOSE TO 100%. A TOTAL OF 8 IDENTICAL RUNS WERE MADE     
+268DBDC  OVER 20 TO 45 HOURS. FOLLOWING EACH IRRADIATION AND AFTER CLEANING,    
+268DBEC  MICRO-CUTS OF THE UPPER LAYER WERE RADIOCHEMICALLY ANALYZED FOR Group  
+268DBFC  ^V ELEMENTS AFTER DISSOLVING THESE MICRO-LAYERS IN A SOLUTION OF       
+268DBGC  ^HNO{-3}. ALPHA-PARTICLES AND SF FRAGMENTS WERE DETECTED (EFFICIENCY   
+268DBHC  FOR FISSION FRAGMENTS AP 90%) BY PLACING THE SAMPLE IN A DETECTOR      
+268DBIC  ARRANGEMENT CONSISTING OF FOUR IDENTICAL CHAMBERS EACH WITH TWO SEMI-  
+268DBJC  CONDUCTOR DETECTORS, ALL PLACED WITHIN A NEUTRON DETECTOR (EFFICIENCY  
+268DBKC   AP 40%). IN EIGHT RUNS WITH A TOTAL BEAM DOSE OF 3.4E+18 48CA IONS,   
+268DBLC  15 SF EVENTS WERE DETECTED OVER 910 HOURS. THE TOTAL ^TKE FOR FISSION  
+268DBMC  AND T(SF) ARE:                                                         
+268DB t       TKE=235 MeV    T{-1/2}(SF)=32 h {I+11-7}                          
+268DB C  THE AVERAGE NEUTRON MULTIPLICITY (|n) PER FISSION WAS AP 4.2.          
+268DB2C  THE NINTH EXPERIMENT WAS CARRIED OUT UNDER SIMILAR CONDITIONS BUT WITH 
+268DB3C  NO CHEMICAL SEPARATION OF PRODUCTS, TO DETERMINE SF BACKGROUND.        
+268DB4C  AN ANALYSIS OF ALL DATA LEAD TO THE UNAMBIGUOUS CONCLUSION THAT ALL    
+268DB5C  15 EVENTS WERE DUE TO 268DB. DEDUCED CROSS-SECTION: AP 4 pb IN         
+268DB6C  REASONABLE AGREEMENT WITH ^DGFRS VALUE FOR 3{IN} CHANNEL AP 3 pb.      
+268DB7C  SEPARATION EFFICIENCY FOR CHEMICAL STUDY WAS AP 80% AS COMPARED        
+268DB8C  TO AP 35% USING KINEMATIC TECHNIQUES (^DGFRS, 2004OG03).               
+268DB C  THE EVALUATORS SUGGEST THAT THIS EXPERIMENT OFFERS INDEPENDENT         
+268DB2C  SUPPORT FOR THE SYNTHESIS OF Z=115 AND ITS DECAY PRODUCTS AS           
+268DB3C  SUGGESTED BY THIS COLLABORATION IN 2004OG03.                           
+268DB4C  THE EXPERIMENTERS NOTE THAT YIELD OF SUPER-HEAVY ISOTOPES PROVIDED BY  
+268DB5C  THIS METHOD IS A FACTOR OF 5 HIGHER THAN THAT REALIZED BY KINEMATIC    
+268DB6C  TECHNIQUES.                                                            
+268DB C  OTHER DATA: 248CM AVERAGE ^TKE=181 MEV, |n=3.14;                       
+268DB2C  252CF AVERAGE ^TKE=185 MEV, |n=3.75 (2004DMZZ).                        
+268DB C  THEORY: 1997MO25, 2003MU15, 2003GE09, 2004BA86, 2004GUZW AND Nuclear   
+268DB2C  Science References                                                     
+268DB C  ASSIGNMENT: FINAL DESCENDENT OF 28815 PRODUCED BY 243AM(48CA,3N) E=248 
+268DB2C  MEV (2003OGZY,2004OG03) AND E=243 MEV, CHEM (2004DMZZ). THE EVALUATORS 
+268DB3C  SUGGEST THAT 2004DMZZ OFFERS INDEPENDENT SUPPORT TO THE SYNTHESIS OF   
+268DB4C  28815 (2004OG03) HAVING PRECISELY DETERMINED THE ATOMIC NUMBER FOR     
+268DB5C  Z=105 BY ISOLATION OF Group ^V ELEMENTS. THE PROPERTIES ARE IN         
+268DB6C  AGREEMENT WITH 268DB MEASURED IN THE THREE CHAINS SEEN EARLIER BY      
+268DB7C  2004OG03, THEREBY PROVIDING EVIDENCE IN FAVOR OF THE SYNTHESIS OF      
+268DB8C  28815 AND DAUGHTERS. HOWEVER, SINCE THE IDENTIFICATION RELIES          
+268DB9C  ON THE MEASUREMENT OF SF FRAGMENTS, THE POSSIBILITY THAT THE OBSERVED  
+268DBaC  NUCLEUS IS ACTUALLY 268RF FOLLOWING (UNDETECTED) EC FROM THE PARENT    
+268DBaC  268DB, CANNOT BE EXCLUDED.                                             
+268DB  XA272BH A DECAY: TENTATIVE                                               
+268DB  L X                               32 H    +11-7                         ?
+268DB CL J$ |W(p)=1/2-; |W(n)=13/2+ FROM 1997MO25 (THEORY)                      
+268DB CL T$VALUE ADOPTED FROM 2004DMZZ BASED ON 15/15 SF EVENTS OBSERVED. OTHER:
+268DB2CL 16 H 19-6 FROM 2004OG03 BASED ON 3/3 EVENTS OBSERVED; 29 H +9-6 BASED  
+268DB3CL ON 18/18 EVENTS (EVALUATORS). T(CALC)=12.5 H FROM Viola-Seaborg        
+268DB4CL SYSTEMATIC FOR QA=8.2 MEV                                              
+268DB2 L %SF AP 100                                                             
+268DB CL %SF$ASSUMED ALTHOUGH ALPHA-DECAY NOT EXCLUDED (2004OG03).              
+268DB CL $B2(THEORY): 0.221 FROM 1995MO29; 0.226 FROM 2003MU26; 0.249 FROM      
+268DB2CL 2005GAZX                                                               
+268DBX L XREF=A                                                                 
+                                                                                
+268DB    272BH A DECAY: TENTATIVE      2004OG03,2003OGZY         05NDS    200512
+268DB  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+268DB2 H CUT=12-Aug-2005$                                                       
+268DB C  SEE 272BH Adopted Levels FOR DETAILS.                                  
+272BH  P X                             10 S      +12-4          9150      60    
+268DB  N                       1.0     AP                                       
+268DB  L X                               32 H    +11-7                         ?
+268DB  A 9.02E+3   6                                                            
+                                                                                
+268MT    ADOPTED LEVELS                                          05NDS    200512
+268MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+268MT2 H CUT=12-Aug-2005$                                                       
+268MT  Q -4.5E3    SY6.7E3   SY8.E2    SY1.067E4 SY    2012WA38                 
+268MT CQ Note: Current evaluation has used the following Q record               
+268MT  Q -4720     SY 6750   SY 830    SY 10486  35    2003AU03,2004MO26        
+268MT CQ Q-$ESTIMATED UNCERTAINTY=590 KEV                                       
+268MT CQ SN$ESTIMATED UNCERTAINTY=630 KEV                                       
+268MT CQ SP$ESTIMATED UNCERTAINTY=330 KEV                                       
+268MT CQ QA$FROM EA=10329 KEV 35 (2004MO26. ARITHMETIC MEAN OF 12 EVENTS).      
+268MT2CQ OTHER: 11.44 MEV 10 (2003AU03. SYST.)                                  
+268MT DQ SOME OF THE ENERGIES QUOTED ARE THE SUMMED VALUES OF ^PSD AND ^SSD     
+268MTaDQ DETECTORS WHEREAS OTHERS ARE NOT. THE EVALUATORS HAVE ADOPTED THE      
+268MTaDQ VALUE OF 35 KEV  (ENERGY RESOLUTION OF THE ^PSD ALONE) SINCE A         
+268MTaDQ 'TYPICAL' DECAY SIGNAL IS STATED AS BEING THE OBSERVED DECAY           
+268MTaDQ ENERGY |+35 KEV. ONLY 4 OF THE OBSERVED 14 EVENTS ARE SUMMED ENERGIES. 
+268MT C  AS ALPHA DECAY DAUGHTER OF 272RG. SEE 272RG Adopted Levels FOR         
+268MT2C  EXPERIMENTAL DETAILS.                                                  
+268MT C  1995HO04: ^GSI/^SHIP COLD FUSION EXPERIMENT. SEE 272RG Adopted Levels  
+268MT2C  FOR DETAILS. THREE POSITION AND TIME CORRELATED CHAINS OF ALPHA        
+268MT3C  PARTICLE EVENTS. DETERMINED ALPHA ENERGIES AND TIME INTERVALS BETWEEN  
+268MT4C  SUCCESSIVE PARTICLES. ASSIGNED TO DECAY OF 27211 BY CONSISTENCY OF     
+268MT5C  LOWER CHAIN MEMBER ENERGIES AND LIFETIMES WITH KNOWN DB AND LR DATA.   
+268MT6C  SECOND MEMBER OF EACH CHAIN CORRESPONDS TO ALPHA DECAY OF 268MT. THE   
+268MT7C  MEASURED ALPHA ENERGIES AND EMISSION TIMES FOR THE THREE EVENTS WERE:  
+268MT t    {TV}Event #1: 8-Dec-1994                                             
+268MT2t       E{-|a1}=  533 keV (esc+155-keV X-ray) t{-1}=3.600 ms  - assigned  
+268MT+t   to {+272}Rg                                                           
+268MT3t       E{-|a2}=10259 keV                     t{-2}=71 ms     - assigned  
+268MT+t   to {+268}Mt                                                           
+268MT4t       E{-|a3}= 9475 keV                     t{-3}=98 ms     - assigned  
+268MT+t   to {+264}Bh                                                           
+268MT5t       E{-|a4}= 1969 keV (esc)               t{-4}=1.969 s   - assigned  
+268MT+t   to {+260}Db                                                           
+268MT6t  {TV}Event #2: 13-Dec-1994                                              
+268MT7t       E{-|a1}= 4612 keV (esc)               t{-1}=0.696 ms  - assigned  
+268MT+t   to {+272}Rg                                                           
+268MT8t       E{-|a2}=10097 keV                     t{-2}=171 ms    - assigned  
+268MT+t   to {+268}Mt                                                           
+268MT9t       E{-|a3}= 9618 keV                     t{-3}=334 ms    - assigned  
+268MT+t   to {+264}Bh                                                           
+268MTAt       E{-|a4}= 9146 keV                     t{-4}=953 ms    - assigned  
+268MT+t   to {+260}Db                                                           
+268MTBt   {TV}Event #3: 17-Dec-1994                                             
+268MTCt       E{-|a1}=10820 keV                     t{-1}=2.042 ms  - assigned  
+268MT+t   to {+272}Rg                                                           
+268MTDt       E{-|a2}=10221 keV                     t{-2}=72 ms     - assigned  
+268MT+t   to {+268}Mt                                                           
+268MTEt       E{-|a3}= 9621 keV                     t{-3}=1.452 s   - assigned  
+268MT+t   to {+264}Bh                                                           
+268MTFt       E{-|a4}= 9200 keV                     t{-4}=573 ms    - assigned  
+268MT+t   to {+260}Db                                                           
+268MTGt       E{-|a5}= 8463 keV                     t{-5}=66.3 s    - assigned  
+268MT+t   to {+256}Lr                                                           
+268MT C  THESE ARE CONSISTENT WITH ONE PARENT STATE AND TWO                     
+268MTBC  DAUGHTER STATES. THE SECOND EVENT HAS BEEN SUGGESTED AS A CANDIDATE FOR
+268MT9C  AN ISOMERIC STATE OF 268MT (2002HO11).                                 
+268MT C  ^IUPAC/^IUPAP ^JWP ASSESSMENT (2001KA70): INSUFFICIENT INTERNAL        
+268MT2C  REDUNDANCY TO WARRANT CONCLUSIVE OBSERVATIONS.                         
+268MT C  2002HO11: EXPERIMENTS REPEATED AT ^GSI/^SHIP, USING THE ^UNILAC WITH   
+268MT2C  THE SAME REACTION 209BI(64NI,N) AT A BEAM ENERGY OF 320 MEV. SEE 272RG 
+268MT3C  Adopted Levels FOR DETAILS. THREE EVENTS WERE OBSERVED:                
+268MT t    {TV}Event #1: Energy of the evaporation residue=41.76 MeV            
+268MT2t       E{-|a1}= 3503 keV (esc)  t{-1}=3.36 ms  - assigned to {+272}Rg    
+268MT3t       E{-|a2}=10294 keV        t{-2}=4.23 ms  - assigned to {+268}Mt    
+268MT4t       E{-|a3}= 9385 keV        t{-3}=944 ms   - assigned to {+264}Bh    
+268MT5t       E{-|a4}= 9156 keV        t{-4}=364 ms   - assigned to {+260}Db    
+268MT6t       E{-|a5}= 8465 keV        t{-5}=55.8 s   - assigned to {+256}Lr    
+268MT7t  {TV}Event #2: Energy of the evaporation residue=36.55 MeV              
+268MT8t       E{-|a1}=11008 keV        t{-1}=1.38 ms  - assigned to {+272}Rg    
+268MT9t       E{-|a2}= 6953 keV        t{-2}=7.32 ms  - assigned to {+268}Mt    
+268MTAt       E{-|a3}= 9514 keV        t{-3}=2.99 s   - assigned to {+264}Bh    
+268MTBt       E{-|a4}= 1706 keV (esc)  t{-4}=14.98 s  - assigned to {+260}Db    
+268MTCt       E{-|a5}=  877 keV (esc)  t{-5}=47.0 s   - assigned to {+256}Lr    
+268MTDt  {TV}Event #3: Energy of the evaporation residue=39.19 MeV              
+268MTEt       E{-|a1}=11046 keV        t{-1}=2.70 ms  - assigned to {+272}Rg    
+268MTFt       E{-|a2}=  765 keV (esc)  t{-2}=37.14 ms - assigned to {+268}Mt    
+268MTGt       E{-|a3}= 9113 keV        t{-3}=3.01 s   - assigned to {+264}Bh    
+268MTHt       E{-|a4}= 9129 keV        t{-4}=4.06 s   - assigned to {+260}Db    
+268MTIt       E{-|a5}= 8423 keV        t{-5}=20.6 s   - assigned to {+256}Lr    
+268MT C  FOUR EVENT AVERAGE (INCLUDING DATA POINTS FROM FIRST EXPERIMENT) FOR   
+268MTaC  t{-2}=60 MS.                                                           
+268MT C  ^IUPAC/^IUPAP ^JWP ASSESSMENT (2003KA71): PRIORITY OF DISCOVERY OF     
+268MT2C  Z=111 BY 1995HO04 IS NOW CONFIRMED OWING TO ADDITIONAL CONVINCING      
+268MT3C  OBSERVATIONS REPORTED IN 2002HO11.                                     
+268MT C  2004FO08: COLD FUSION EXPERIMENT DONE AT ^LBNL USING THE               
+268MT2C  208PB(65CU,N) REACTION. SEE 272RG Adopted Levels FOR DETAILS. ONE      
+268MT3C  ^EVR-|a1-|a2-|a3-|a4-|a5... EVENT WAS OBSERVED:                        
+268MT t    {TV}Energy of evaporation residue=28.58 MeV                          
+268MT2t       E{-|a1}=11042 keV {I20}     t{-1}=0.263 ms - assigned to {+272}Rg 
+268MT3t       E{-|a2}=10114 keV {I20}     t{-2}=12.6 ms  - assigned to {+268}Mt 
+268MT4t       E{-|a3}=  993 keV (esc)  t{-3}=1.16 s   - assigned to {+264}Bh    
+268MT5t       E{-|a4}= 9416 keV {I20}     t{-4}=1.45 s   - assigned to {+260}Db 
+268MT6t       E{-|a5}= 8613 keV {I20}     t{-5}=3.16 s   - assigned to {+256}Lr 
+268MT7t  {TV}|DE assumed by the evaluators.                                     
+268MT C  2004MO26 (IN A COLLABORATION WITH French AND Chinese SCIENTISTS):      
+268MT2C  SEE 272RG Adopted Levels FOR EXPERIMENTAL DETAILS. USING THE REACTION  
+268MT3C  209BI(64NI,N), AS IN 2002HO11, THREE BEAM ENERGIES WERE                
+268MT4C  EMPLOYED: 323 MEV (9 EVENTS), 326 MEV (NO EVENT AT A BEAM DOSE OF      
+268MT5C  2.5E+18 IONS), 320 MEV (3 EVENTS) AND REPEAT RUNS AT 323 MEV (2 MORE   
+268MT6C  EVENTS). A TOTAL OF 14 CORRELATED DECAY SEQUENCES WERE OBSERVED WITH   
+268MTaC  TWO 'ESCAPED' ALPHA'S (EVENTS 3 AND 8).                                
+268MT7C  THE CROSS-SECTION AT EACH OF THESE ENERGIES WAS:                       
+268MT8C  2.6 pb {I+23-15} (320 MEV);                                            
+268MT9C  2.5 pb {I+12-9} (323 MEV); AND                                         
+268MTAC  0.0 pb {I+11-0} (326 MEV) WITH VARYING TARGET THICKNESSES.             
+268MT t    {TV}Event 1: Feb. 17, 2003; E=(323 MeV); tof=48.3 ns; E(EVR)=33.1 MeV
+268MT2t       E{-|a1}=11.08 MeV       t{-1}=11.0 ms   - assigned to {+272}Rg    
+268MT3t       E{-|a2}=10.36 MeV       t{-2}=9.20 ms   - assigned to {+268}Mt    
+268MT4t       E{-|a3}= 9.81 MeV       t{-3}=1.38 s    - assigned to {+264}Bh    
+268MT5t       E{-|a4}= 9.17 MeV       t{-4}=1.93 s    - assigned to {+260}Db    
+268MT6t       E{-|a5}= 8.39 MeV       t{-5}=11.9 s    - assigned to {+256}Lr    
+268MT t    {TV}Event 2: Feb. 17, 2003; E=(323 MeV); tof=45.8 ns; E(EVR)=33.0 MeV
+268MT8t       E{-|a1}=11.04 MeV       t{-1}=4.42 ms   - assigned to {+272}Rg    
+268MT9t       E{-|a2}=10.68 MeV       t{-2}=13.0 ms   - assigned to {+268}Mt    
+268MTAt       E{-|a3}= 9.60 MeV       t{-3}=1.45 s    - assigned to {+264}Bh    
+268MTBt       E{-|a4}= 9.05 MeV       t{-4}=10.9 s    - assigned to {+260}Db    
+268MTCt       E{-|a5}= 8.37 MeV       t{-5}=21.9 s    - assigned to {+256}Lr    
+268MT t    {TV}Event 3: Feb. 20, 2003; E=(323 MeV); tof=46.5 ns; E(EVR)=33.2 MeV
+268MTEt       E{-|a1}=11.56 MeV       t{-1}=14.9 ms   - assigned to {+272}Rg    
+268MTFt       E{-|a2}= 1.12 MeV (esc) t{-2}=122 ms    - assigned to {+268}Mt    
+268MTGt       E{-|a3}= 9.85 MeV       t{-3}=21.8 ms   - assigned to {+264}Bh    
+268MTHt       E{-|a4}= 9.34 MeV       t{-4}=0.505 s   - assigned to {+260}Db    
+268MTIt       E{-|a5}= 8.65 MeV       t{-5}=33.5 s    - assigned to {+256}Lr    
+268MT t    {TV}Event 4: Feb. 26, 2003; E=323 MeV; tof=47.3 ns; E(EVR)=30.5 MeV  
+268MTKt       E{-|a1}=11.25 MeV       t{-1}=1.42 ms   - assigned to {+272}Rg    
+268MTLt       E{-|a2}=10.43 MeV       t{-2}=36.6 ms   - assigned to {+268}Mt    
+268MTMt       E{-|a3}= 9.66 MeV       t{-3}=1.87 s    - assigned to {+264}Bh    
+268MTNt       E{-|a4}= 9.40 MeV       t{-4}=1.52 s    - assigned to {+260}Db    
+268MTOt       E{-|a5}= 3.12 MeV (esc) t{-5}=46.8 s    - assigned to {+256}Lr    
+268MT t    {TV}Event 5: Feb. 26, 2003; E=323 MeV; tof=46.3 ns; E(EVR)=31.6 MeV  
+268MTQt       E{-|a1}=10.82 MeV       t{-1}=7.11 ms   - assigned to {+272}Rg    
+268MTRt       E{-|a2}=10.29 MeV       t{-2}=0.715 ms  - assigned to {+268}Mt    
+268MTSt       E{-|a3}= 9.57 MeV       t{-3}=0.543 s   - assigned to {+264}Bh    
+268MTTt       E{-SF}=231 MeV         t{-4}=1.71 s    - assigned to {+260}Db     
+268MT t    {TV}Event 6: Apr. 8, 2003; E=323 MeV; tof=47.5 ns; E(EVR)=32.7 MeV   
+268MTVt       E{-|a1}=11.31 MeV       t{-1}=2.82 ms   - assigned to {+272}Rg    
+268MTWt       E{-|a2}=10.78 MeV       t{-2}=44.0 ms   - assigned to {+268}Mt    
+268MTXt       E{-|a3}= 9.58 MeV       t{-3}=0.442 s   - assigned to {+264}Bh    
+268MTYt       E{-|a4}= 8.81 MeV       t{-4}=48.5 s    - assigned to {+260}Db    
+268MT t    {TV}Event 7: Apr. 15, 2003; E=323 MeV; tof=47.5 ns; E(EVR)=32.7 MeV  
+268MTat       E{-|a1}=10.58 MeV       t{-1}=1.17 ms   - assigned to {+272}Rg    
+268MTbt       E{-|a2}=10.35 MeV       t{-2}=38.3 ms   - assigned to {+268}Mt    
+268MTct       E{-|a3}= 9.31 MeV       t{-3}=3.6 ms    - assigned to {+264}Bh    
+268MTdt       E{-|a4}= 9.01 MeV       t{-4}=4.87 s    - assigned to {+260}Db    
+268MTet       E{-|a5}= 8.50 MeV       t{-5}=45.8 s    - assigned to {+256}Lr    
+268MT t    {TV}Event 8: Apr. 15, 2003; E=323 MeV; tof=46.0 ns; E(EVR)=31.1 MeV  
+268MTgt       E{-|a1}=10.96 MeV       t{-1}=8.89 ms   - assigned to {+272}Rg    
+268MTht       E{-|a2}= 2.76 MeV (esc) t{-2}=26.2 ms   - assigned to {+268}Mt    
+268MTit       E{-SF}=208 MeV         t{-3}=0.967 s   - assigned to {+264}Bh     
+268MT t    {TV}Event 9: Apr. 16, 2003; E=323 MeV; tof=47.0 ns; E(EVR)=31.1 MeV  
+268MTkt       E{-|a1}=11.06 MeV       t{-1}=5.11 ms   - assigned to {+272}Rg    
+268MTlt       E{-|a2}=10.43 MeV       t{-2}=19.1 ms   - assigned to {+268}Mt    
+268MTmt       E{-|a3}= 9.50 MeV       t{-3}=1.34 s    - assigned to {+264}Bh    
+268MTnt       E{-|a4}= 9.10 MeV       t{-4}=3.69 s    - assigned to {+260}Db    
+268MTot       E{-|a5}= 8.41 MeV       t{-5}=48.5 s    - assigned to {+256}Lr    
+268MT t    {TV}Event 10: Apr. 30, 2003; E=320 MeV; tof=47.5 ns; E(EVR)=31.0 MeV 
+268MTqt       E{-|a1}=10.21 MeV       t{-1}=1.00 ms   - assigned to {+272}Rg    
+268MTrt       E{-|a2}=10.03 MeV       t{-2}=8.81 ms   - assigned to {+268}Mt    
+268MTst       E{-SF}=206 MeV         t{-3}=4.93 s    - assigned to {+264}Bh     
+268MT t    {TV}Event 11: May 6, 2003; E=320 MeV; tof=47.8 ns; E(EVR)=32.2 MeV   
+268MTut       E{-|a1}=10.85 MeV       t{-1}=0.773 ms  - assigned to {+272}Rg    
+268MTvt       E{-|a2}=10.34 MeV       t{-2}=32.4 ms   - assigned to {+268}Mt    
+268MTwt       E{-|a3}= 8.87 MeV       t{-3}=1.91 s    - assigned to {+264}Bh    
+268MTxt       E{-|a4}= 8.50 MeV       t{-4}=21.0 s    - assigned to {+260}Db    
+268MT t    {TV}Event 12: May 8, 2003; E=320 MeV; tof=47.0 ns; E(EVR)=32.4 MeV   
+268MTzt       E{-|a1}=11.00 MeV       t{-1}=6.92 ms   - assigned to {+272}Rg    
+268MT2t       E{-|a2}=10.58 MeV       t{-2}=35.5 ms   - assigned to {+268}Mt    
+268MT3t       E{-|a3}= 9.34 MeV       t{-3}=1.00 s    - assigned to {+264}Bh    
+268MT4t       E{-|a4}= 9.14 MeV       t{-4}=1.14 s    - assigned to {+260}Db    
+268MT5t       E{-|a5}= 8.47 MeV       t{-5}=38.6 s    - assigned to {+256}Lr    
+268MT t    {TV}Event 13: May 8, 2003; E=323 MeV; tof=44.8 ns; E(EVR)=28.9 MeV   
+268MT7t       E{-|a1}=11.01 MeV       t{-1}=6.84 ms   - assigned to {+272}Rg    
+268MT8t       E{-|a2}= 9.40 MeV       t{-2}=37.2 ms   - assigned to {+268}Mt    
+268MT9t       E{-|a3}= 9.56 MeV       t{-3}=1.23 s    - assigned to {+264}Bh    
+268MTAt       E{-|a4}= 8.29 MeV       t{-4}=0.334 s   - assigned to {+260}Db    
+268MT t    {TV}Event 14: May 12, 2003; E=323 MeV; tof=47.8 ns; E(EVR)=33.0 MeV  
+268MTCt       E{-|a1}=11.08 MeV       t{-1}=4.46 ms   - assigned to {+272}Rg    
+268MTDt       E{-|a2}=10.28 MeV       t{-2}=3.35 ms   - assigned to {+268}Mt    
+268MTEt       E{-|a3}= 9.63 MeV       t{-3}=0.81 s    - assigned to {+264}Bh    
+268MTFt       E{-|a4}= 9.13 MeV       t{-4}=2.42 s    - assigned to {+260}Db    
+268MTGt       E{-|a5}= 8.63 MeV       t{-5}=6.85 s    - assigned to {+256}Lr    
+268MTHt  {TV}Projectile energies in parentheses are uncertain due to target     
+268MT+t   deterioration.                                                        
+268MT C  THEORY: SEE Nuclear Science References                                 
+268MT C  ASSIGNMENT: DAUGHTER OF 272RG PRODUCED BY 209BI(64NI,N) E=318 AND 230  
+268MT2C  MEV (1995HO04), 320 MEV (2002HO11), AND 320, 323, AND 326 MEV          
+268MT3C  (2004MO26). 208PB(65CU,N) E=321 MEV (2004FO08). ^IUPAC/^IUPAP ^JWP     
+268MT4C  ASSESSMENT (2003KA71): PRIORITY OF DISCOVERY OF Z=111 BY 1995HO04 IS   
+268MT5C  NOW CONFIRMED OWING TO ADDITIONAL CONVINCING OBSERVATIONS REPORTED IN  
+268MT6C  2002HO11. THE WORK OF 2004FO08 AND 2004MO26 PROVIDE FURTHER            
+268MT7C  SUPPORT TO 272RG THROUGH ITS DECAY TO THE PREVIOUSLY UNKNOWN           
+268MT8C  DAUGHTERS 268MT (THIS NUCLEUS) AND 264BH TO THE KNOWN NUCLIDES 260DB   
+268MT9C  AND 268LR (EVALUATORS).                                                
+268MT  XA272RG A DECAY                                                          
+268MT  L X                                21 MS  +8-5                           
+268MT CL J$2003AU02 SUGGEST 5+,6+ BASED ON SYSTEMATICS.                         
+268MT2CL |W(p)=11/2-; |W(n)=1/2+  FROM 1997MO25 (THEORY).                       
+268MT CL T$FROM 2004MO26 (ARITHMETIC MEAN OF ALL 14 EVENTS; t{-2}=30 MS).       
+268MT2CL OTHERS: 42 MS +29-12 (2002HO11); 27 MS +8-5 FROM AVERAGE t{-2}=38.2 MS 
+268MT3CL (21 EVENTS. EVALUATORS). 2002HO11 DO NOT EXCLUDE THE PRESENCE OF       
+268MT4CL ISOMERIC STATES ({IE.G.}, 171 MS). 2004MO26 TENTATIVELY ASSIGNED ALL OF
+268MT5CL THE DECAYS TO ONE STATE SINCE THE DECAY TIME DISTRIBUTION EXHIBITED    
+268MT6CL NO CLEAR PECULIARITIES. 2004MO26 NOTE THAT 1995HO04 OBSERVED ONE FAIRLY
+268MT7CL LONG-LIVED ALPHA-DECAY (171 MS) WITH AN ENERGY 0.16 MEV LOWER THAN THE 
+268MT8CL OTHER TWO EVENTS. 2004MO26 ALSO OBSERVED A 122-MS EVENT BUT THE ALPHA  
+268MT9CL ESCAPED. THESE TWO DECAYS MAY INDICATE AN ISOMERIC STATE IN 268MT AND, 
+268MTACL IF EXCLUDED, THE RESULTS OF 2002HO11 AND 2004MO26 ARE CONSISTENT       
+268MTBCL WITHIN UNCERTAINTIES. T(CALC)=2.2 MS FROM Viola-Seaborg SYSTEMATICS FOR
+268MTCCL QA=10486 KEV.                                                          
+268MT DL T$THE VALUE ADOPTED HERE FROM 2004MO26 IS DUE TO THE GREATER           
+268MTaDL STATISTICS BEING AVAILABLE. AMBIGUITIES REGARDING THE INCLUSION OF     
+268MTaDL POSSIBLE ISOMERIC STATES IN BOTH 2002HO11 AND 2004MO26 AVERAGES CANNOT 
+268MTbDL BE RULED OUT. A BETTER UNDERSTANDING MAY BE ACHEIVED IN THE FUTURE,    
+268MTaDL OF CLOSE LYING                                                         
+268MTaDL STATES IN THIS REGION (N AP 162) WHERE DEFORMED PARTIAL (N) SHELL      
+268MTaDL CLOSURE IS EXPECTED TO EXIST. A TRANSITIONAL REGION MAY OCCUR          
+268MTaDL WHEN GOING FROM 272RG (N=161) TO 268MT (N=159) WHERE ANOMALIES MAY     
+268MTaDL BE DUE TO THE EXTREME CLOSENESS OF STATES. CURRENT EXPERIMENTAL        
+268MTaDL TECHNIQUES LACK THE SENSITIVITY TO DISTINGUISH BETWEEN THESE           
+268MTaDL LEVELS SINCE THE FOCUS IS ON SYNTHESIS RATHER THAN STRUCTURE, FOR WHICH
+268MTaDL AT THE VERY LEAST, A MUCH LARGER COUNT RATE WILL BE NECESSARY.         
+268MT2 L %A AP 100                                                              
+268MT CL %A$21 ALPHA-DECAY EVENTS OBSERVED IN FOUR EXPERIMENTS; NO SF DECAY     
+268MT2CL REPORTED                                                               
+268MTX L XREF=A                                                                 
+268MT CL $B2(THEORY): 0.221 FROM 1995MO29; 0.236 FROM 2003MU26; 0.253 FROM      
+268MT2CL 2005GAZX                                                               
+                                                                                
+268MT    272RG A DECAY                 2004MO26,2002HO11,1995HO0405NDS    200512
+268MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+268MT2 H CUT=12-Aug-2005$                                                       
+268MT C  SEE 272RG Adopted Levels FOR DETAILS.                                  
+272RG  P X                               3.8 MS  +14-8           11150    35    
+272RG CP T$FROM 2004MO26.                                                       
+272RG CP QP$FROM EA=10986 KEV 35 (2004MO26. UNWEIGHTED AVERAGE OF 14 EVENTS).   
+272RG2CP OTHER: 11.44 MEV 10 (2003AU03. SYST.)                                  
+268MT  N                          1.0  AP                                       
+268MT  L X                               21 MS   +8-5                           
+268MT CL E,T$FROM THE Adopted Levels                                            
+268MT  A 10986     35                                                           
+268MT CA E$UNWEIGHTED AVERAGE OF 14 EVENTS (2004MO26)                           
+                                                                                

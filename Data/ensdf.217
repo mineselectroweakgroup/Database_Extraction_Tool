@@ -1,0 +1,2166 @@
+217      COMMENTS                                                03NDS    200309
+217    H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217   C  TITL$NDS FOR A=217*                                                    
+217   c  AUTH$Y. A. AKOVALI                                                     
+217   c  INST$Oak Ridge National Laboratory and University of Tennessee         
+217  #c       Oak Ridge, Tennessee 37831-6371, USA                              
+217   c  ABST$The available nuclear structure information for all nuclei with   
+217  2c  mass number A=217 is presented. Various decay and reaction data are    
+217  3c  evaluated and compared. Adopted data, levels, and spin and parity      
+217  4c  assignments are given.                                                 
+217   c  CUT$All data received prior to June 26, 2003, have been considered.    
+217   C  CIT$NDS 100, 141 (2003)                                                
+217   c  FUND$Research sponsored by the Oak Ridge National Laboratory, managed  
+217  xc  by UT-Battelle, LLC and by the University of Tennessee for the U.S.    
+217  xc  Department of Energy under contract number DE-AC05-00OR22725.          
+                                                                                
+217      REFERENCES                                              03NDS    200309
+217    R 1947EN03 JOUR PHRVA 72 253                                             
+217    R 1947HA02 JOUR PHRVA 72 252                                             
+217    R 1950HA52 JOUR PHRVA 79 435                                             
+217    R 1951KE53 THESIS J D Keys,McGill Univ                                   
+217    R 1951ME10 JOUR PHRVA 81 782                                             
+217    R 1955ST04 THESIS F S Stephen, Jr.,Univ California,UCRL-2970             
+217    R 1956MO15 JOUR PHRVA 101 136                                            
+217    R 1956ST79 JOUR PHRVA 103 748                                            
+217    R 1958TO25 JOUR AFYSA 13 549                                             
+217    R 1960VO05 JOUR ZETFA 39 70                                              
+217    R 1961GR43 REPT UCRL-10023,P50,Griffioen                                 
+217    R 1961RU06 THESIS C P Ruiz,Univ California; UCRL-9511                    
+217    R 1962WA28 JOUR COREA 255 1604                                           
+217    R 1963DI05 JOUR JINCA 25 143                                             
+217    R 1964VA20 JOUR AAFPA VI 165                                             
+217    R 1967DZ02 JOUR IANFA 31 568                                             
+217    R 1967LOZZ THESIS W Lourens, Tech Hogeschool Delft                       
+217    R 1968HA14 JOUR NUPAB A113 206                                           
+217    R 1968LE07 JOUR CHDBA 266 629                                            
+217    R 1968VA18 JOUR PHRVA 176 1377                                           
+217    R 1969DZ06 JOUR IANFA 33 1607                                            
+217    R 1969LEZW THESIS C F Leang, Univ Paris                                  
+217    R 1970AL17 JOUR PZETA 12 4                                               
+217    R 1970BO13 JOUR PRVCA C2 1841                                            
+217    R 1970NIZU CONF Leningard,P169,Nielsen                                   
+217    R 1970TO07 JOUR NUPAB A149 641                                           
+217    R 1970VA13 JOUR PRVCA C1 2115                                            
+217    R 1971KA09 JOUR YAFIA 13 300                                             
+217    R 1972DZ14 JOUR IANFA 36 2080                                            
+217    R 1973HA32 JOUR PRLTA 31 323                                             
+217    R 1973MA52 JOUR YAFIA 17 75                                              
+217    R 1973NO02 JOUR NUIMA 108 61                                             
+217    R 1973NO09 JOUR NUPAB A217 253                                           
+217    R 1973TA30 JOUR ADNDA 12 101                                             
+217    R 1976NO09 JOUR NCLTA 15 383                                             
+217    R 1977VY02 JOUR IANFA 41 1635                                            
+217    R 1979HI02 JOUR PRVCA C20 576                                            
+217    R 1979SC09 JOUR NUPAB A318 253                                           
+217    R 1981DI14 JOUR RRALA 47 331                                             
+217    R 1982GO14 JOUR PRVCA 26 1237                                            
+217    R 1982GOZU CONF Yamanishi(Dynamics Nucl Collective Motion) Proc,P283,Gono
+217    R 1982SAZO CONF Yamanashi(Dynamics Nucl Collective Motion) Contrib,P52,Sa
+217    R 1983HI12 JOUR ZPAAD 313 141                                            
+217    R 1983LO16 JOUR PHSTB 28 459                                             
+217    R 1984PO11 JOUR JOPQA 45 1099                                            
+217    R 1984RO20 JOUR NUPAB 426 379                                            
+217    R 1984SU10 JOUR JUPSA 53 2956                                            
+217    R 1985DE14 JOUR NUPAB 436 311                                            
+217    R 1986DE32 JOUR PRVCA 34 2261                                            
+217    R 1986HE06 JOUR IJARA 37 139                                             
+217    R 1986IR01 JOUR NUPAB 454 252                                            
+217    R 1986PI11 JOUR YAFIA 44 1421                                            
+217    R 1987AK04 JOUR ZPAAD 326 517                                            
+217    R 1987SA19 JOUR JPHGB 13 761                                             
+217    R 1987SH24 JOUR PYLBB 197 500                                            
+217    R 1987SUZY REPT RIKEN-86,P12,Sugawara                                    
+217    R 1988AI02 JOUR JPHGB 14 1191                                            
+217    R 1988HU08 JOUR NIMBE 31 483                                             
+217    R 1989AC01 JOUR ZPAAD 332 375                                            
+217    R 1989DE11 JOUR YAFIA 49 644                                             
+217    R 1989DR02 JOUR NUPAB 493 145                                            
+217    R 1989MI17 JOUR NUPAB 501 557                                            
+217    R 1990AK05 JOUR NDSBA 61 623                                             
+217    R 1990AN19 JOUR ZPAAD 337 229                                            
+217    R 1990ANZU REPT JINR-P7-90-232,Andreev                                   
+217    R 1991DR08 JOUR JPGPE 17 1795                                            
+217    R 1991RY01 JOUR ADNDA 47 205                                             
+217    R 1992LI26 JOUR HYIND 75 323                                             
+217    R 1993ANZS CONF Bernkastel-Kues(Nuclei Far from Stability) Proc,P759,Andr
+217    R 1993DE18 JOUR YAFIA 56,No 4,96                                         
+217    R 1994AR23 JOUR NIMAE 339 168                                            
+217    R 1994NIZZ CONF Kharkov,P88,Niyazov                                      
+217    R 1995ANZY CONF St Petersburg,P109,Andreev                               
+217    R 1995AU04 JOUR NUPAB 595 409                                            
+217    R 1995BU17 JOUR BRSPE 59 5                                               
+217    R 1995CH74 JOUR BRSPE 59 1854                                            
+217    R 1995DE13 JOUR NUPAB 589 17                                             
+217    R 1995MO25 JOUR ZPAAD 352 265                                            
+217    R 1995NIZS CONF St Petersburg,P108,Ninov                                 
+217    R 1995SH01 JOUR PRVCA 51 1192                                            
+217    R 1996AN21 JOUR BRSPE 60 119                                             
+217    R 1996BU45 JOUR RMPHA 68 349                                             
+217    R 1997AN02 JOUR YAFIA 60,No 1,5                                          
+217    R 1997AU04 JOUR NUPAB 624 1                                              
+217    R 1997CH53 JOUR BRSPE 61 1606                                            
+217    R 1997GI11 JOUR JPGPE 23 1285                                            
+217    R 1997LI02 JOUR ZPAAD 357 27                                             
+217    R 1997LI12 JOUR PRVCA 55 2768                                            
+217    R 1997LI17 JOUR PRVCA 56 908                                             
+217    R 1997LI23 JOUR PRVCA 56 2324                                            
+217    R 1997MO25 JOUR ADNDA 66 131                                             
+217    R 1997MO27 JOUR PRLTA 79 3837                                            
+217    R 1997PAZZ CONF Budapest(Capture Gamma-Ray Spectroscopy) Proc,Vol1,P451,P
+217    R 1998AI02 JOUR PYLBB 442 484                                            
+217    R 1998AK04 JOUR NDSBA 84 1                                               
+217    R 1998IK01 JOUR PRVCA 57 R2804                                           
+217    R 1998RYZY CONF Bellaire(Exotic Nuclei and Atomic Masses) Proc,P581,Rykac
+217    R 1999BO52 JOUR YAFIA 62,No 11,1931                                      
+217    R 1999GR33 JOUR BRSPE 63 685                                             
+217    R 1999SC17 JOUR PRLTA 82 4787                                            
+217    R 2000HE17 JOUR ZAANE 8 521                                              
+217    R 2000MA65 JOUR ZAANE 8 295                                              
+217    R 2000NI02 JOUR PRVCA 61 034309                                          
+217    R 2001KO07 JOUR NIMAE 458 656                                            
+217    R 2001KU07 JOUR APOBB 32 1009                                            
+217    R 2001MO07 JOUR NUPAB 683 266                                            
+217    R 2002DE24 JOUR YAFIA 65 685                                             
+217    R 2002GRZY REPT JINR-P6-2002-17,Gromov                                   
+217    R 2002HE29 JOUR ZAANE 15 335                                             
+217    R 2002HEZV REPT GSI 2002-1,P12,Hessberger                                
+217    R 2002SA22 JOUR PRVCA 65 054602                                          
+217    R 2002SH19 JOUR CZYPA 52 695                                             
+217    R 2003BO06 JOUR PRVCA 67 025802                                          
+217    R 2003CA21 JOUR PRVCA 67 054310                                          
+                                                                                
+217TL    COMMENTS                                                         201105
+217TL  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=15-MAY-2011$  
+217TL C  TITL$NUCLEAR DATA SHEETS FOR 217TL                                     
+217TL c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
+217TL c  INST$Department of Physics and Astronomy,                              
+217TL#c       McMaster University, Hamilton, Ontario,                           
+217TL#c       Canada, L8S 4M1                                                   
+217TL c  ABST$ Information about the identification and production of the       
+217TL2c  {+217}Tl nuclide is presented.                                         
+217TL c  CUT$Literature available up to May 15, 2011 has been consulted.        
+217TL C  CIT$ENSDF                                                              
+217TL c  FUND$                                                                  
+                                                                                
+217TL    ADOPTED LEVELS                                                   201105
+217TL  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=15-MAY-2011$  
+217TL  Q 6.1E3     SY4.5E3   SY8.8E3   SY              2012WA38                 
+217TL CQ Note: Current evaluation has used the following Q record               
+217TL  Q  6010     SY 4390   SY  8750  SY  1380  CA    2011AUZZ,1997MO25        
+217TL CQ $ Estimated uncertainties in 2011AuZZ: 500 for Q- and SN, 570 for SP   
+217TL CQ $ Q-, SN and SP from 2011AuZZ, QA from 1997Mo25                        
+217TL CQ $ Q(B-N)=2660 450, ^S(2n)=7810 500 (syst,2011AuZZ),                    
+217TL2CQ ^S(2p)=20210 (1997Mo25,calculated)                                     
+217TL c  2010Al24: {+217}Tl nuclide identified in {+9}Be({+238}U,X) reaction    
+217TL2c  with a beam energy of 1 GeV/nucleon produced by the SIS synchrotron    
+217TL3c  at GSI facility. Target=2500 mg/cm{+2}. The fragment residues were     
+217TL4c  analyzed with the high resolving power magnetic spectrometer Fragment  
+217TL5c  separator (FRS). The identification of nuclei was made on the basis of 
+217TL6c  magnetic rigidity, velocity, time-of-flight, energy loss and atomic    
+217TL7c  number of the fragments using two plastic scintillators and two        
+217TL8c  multisampling ionization chambers. The FRS magnet was tuned to         
+217TL9c  center on {+210}Au, {+216}Pb, {+219}Pb, {+227}At and {+229}At          
+217TLAc  nuclei along the central trajectory of FRS.                            
+217TL c  Unambiguous identification of nuclides required the separation of      
+217TL2c  different charge states of the nuclei passing through the FRS. At      
+217TL3c  1 GeV/nucleon incident energy of {+238}U, fraction of fully stripped   
+217TL4c  {+226}Po nuclei was about 89%. Through the measurement of difference in
+217TL5c  magnetic rigidity in the two sections of the FRS and the difference    
+217TL6c  in energy loss in the two ionization chambers, the charge state of     
+217TL7c  the transmitted nuclei was determined, especially, that of the singly  
+217TL8c  charged (hydrogen-like) nuclei which preserved their charge in the     
+217TL9c  current experimental setup. Measured production cross sections with    
+217TLAc  10% statistical and 20% systematic uncertainties                       
+217TL c  Criterion established in 2010Al24 for acceptance of identification of  
+217TL2c  a new nuclide: 1. number of events should be compatible with the       
+217TL3c  corresponding mass and atomic number located in the expected range     
+217TL4c  of positions at both image planes of the FRS spectrometer; 2. number   
+217TL5c  of events should be compatible with >95% probability that at least     
+217TL6c  one of the counts does not correspond to a charge-state contaminant.   
+217TL7c  Comparisons of measured |s with model predictions using the            
+217TL8c  computer codes COFRA and EPAX.                                         
+217TL  L 0                               300 NS  GT                             
+217TL2 L %B-=? $ %B-N=?                                                         
+217TL cL $ Production |s=61.6 pb (from e-mail reply of Oct 29, 2010 from        
+217TL2cL H. Alvarez-Pol, which also stated that further analysis was in         
+217TL3cL progress)                                                              
+217TL cL $ From A/Z plot (figure 1 in 2010Al24), 4 or 5 events are assigned to  
+217TL2cL  {+217}Tl                                                              
+217TL cL E$ the observed fragments are assumed to be in the ground state of     
+217TL2cL {+217}Tl nuclei                                                        
+217TL cL $The |b{+-} and delayed neutron decay are the only decay modes expected
+217TL CL $ Calculated %B-N=99.8 (1997Mo25)                                      
+217TL cL T$ lower limit from time-of-flight as given in 2006Ca30 for a similar  
+217TL2cL setup. Actual half-life is expected to be much larger as suggested by  
+217TL3cL the calculated value of 1.8 s for |b decay and >10{+20} s for |a decay 
+217TL4cL (1997Mo25), and systematic value of 1 s for |b decay (2011AuZY)        
+217TL cL J$ 1/2+ predicted in 1997Mo25 calculations, and from                   
+217TL2cL systematics (2011AuZY)                                                 
+217TL cL $ Production cross section measured in 2010Al24, values are given      
+217TL2cL in figure 2, plot of |s versus mass number for Tl isotopes.            
+217TL3cL Statistical uncertainty=10%, systematic uncertainty=20%                
+                                                                                
+217PB    COMMENTS                                                         201105
+217PB  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=15-MAY-2011$  
+217PB C  TITL$NUCLEAR DATA SHEETS FOR 217PB                                     
+217PB c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
+217PB c  INST$Department of Physics and Astronomy,                              
+217PB#c       McMaster University, Hamilton, Ontario,                           
+217PB#c       Canada, L8S 4M1                                                   
+217PB c  ABST$ Information about the identification and production of the       
+217PB2c  {+217}Pb nuclide is presented.                                         
+217PB c  CUT$Literature available up to May 15, 2011 has been consulted.        
+217PB C  CIT$ENSDF                                                              
+217PB c  FUND$                                                                  
+                                                                                
+217PB    ADOPTED LEVELS                                                   201105
+217PB  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=15-MAY-2011$  
+217PB  Q 3.5E3     SY3.3E3   SY9.8E3   SY2.1E3   SY    2012WA38                 
+217PB CQ Note: Current evaluation has used the following Q record               
+217PB  Q  3500     SY 3350   SY  9620  SY  2170  SY    2011AUZZ                 
+217PB CQ $ Estimated uncertainties in 2011AuZZ: 360 for Q- and SN               
+217PB2CQ 420 for SP and QA                                                      
+217PB CQ $ ^S(2n)=8290 410, ^S(2p)=18500 500 (syst,2011AuZZ)                    
+217PB c  2010Al24: {+217}Pb nuclide identified in {+9}Be({+238}U,X) reaction    
+217PB2c  with a beam energy of 1 GeV/nucleon produced by the SIS synchrotron    
+217PB3c  at GSI facility. Target=2500 mg/cm{+2}. The fragment residues were     
+217PB4c  analyzed with the high resolving power magnetic spectrometer Fragment  
+217PB5c  separator (FRS). The identification of nuclei was made on the basis of 
+217PB6c  magnetic rigidity, velocity, time-of-flight, energy loss and atomic    
+217PB7c  number of the fragments using two plastic scintillators and two        
+217PB8c  multisampling ionization chambers. The FRS magnet was tuned to         
+217PB9c  center on {+210}Au, {+216}Pb, {+219}Pb, {+227}At and {+229}At          
+217PBAc  nuclei along the central trajectory of FRS.                            
+217PB c  Unambiguous identification of nuclides required the separation of      
+217PB2c  different charge states of the nuclei passing through the FRS. At      
+217PB3c  1 GeV/nucleon incident energy of {+238}U, fraction of fully stripped   
+217PB4c  {+226}Po nuclei was about 89%. Through the measurement of difference in
+217PB5c  magnetic rigidity in the two sections of the FRS and the difference    
+217PB6c  in energy loss in the two ionization chambers, the charge state of     
+217PB7c  the transmitted nuclei was determined, especially, that of the singly  
+217PB8c  charged (hydrogen-like) nuclei which preserved their charge in the     
+217PB9c  current experimental setup. Measured production cross sections with    
+217PBAc  10% statistical and 20% systematic uncertainties                       
+217PB c  Criterion established in 2010Al24 for acceptance of identification of  
+217PB2c  a new nuclide: 1. number of events should be compatible with the       
+217PB3c  corresponding mass and atomic number located in the expected range     
+217PB4c  of positions at both image planes of the FRS spectrometer; 2. number   
+217PB5c  of events should be compatible with >95% probability that at least     
+217PB6c  one of the counts does not correspond to a charge-state contaminant.   
+217PB7c  Comparisons of measured |s with model predictions using the            
+217PB8c  computer codes COFRA and EPAX. See also previous report 2009Al32       
+217PB9c  by the same group as 2010Al24                                          
+217PB c  2008Ma17: HFB calculations of binding energy, two-neutron separation   
+217PB2c  energy, odd-even mass staggering and pairing gaps.                     
+217PB c  2003Bo06: calculated T{-1/2} using Shell model and quasiparticle RPA   
+217PB  L 0                               300 NS  GT                             
+217PB2 L %B-=?                                                                  
+217PB cL $ Production |s=4.80 nb (from e-mail reply of Oct 29, 2010 from        
+217PB2cL H. Alvarez-Pol, which also stated that further analysis was in         
+217PB3cL progress)                                                              
+217PB cL $ From A/Z plot (figure 1 in 2010Al24), a large number (certainly      
+217PB2cL more than few hundreds) of events are assigned to                      
+217PB2cL  {+217}Pb                                                              
+217PB cL E$ the observed fragments are assumed to be in the ground state of     
+217PB2cL {+217}Pb nuclei                                                        
+217PB cL $The |b{+-} decay is the only decay mode expected                      
+217PB cL T$ lower limit from time-of-flight as given in 2006Ca30 for a similar  
+217PB2cL setup. Actual half-life is expected to be much larger as suggested by  
+217PB3cL the calculated value of >100 s for |b decay and >10{+20} s for |a decay
+217PB4cL (1997Mo25), and systematic value of 30 s for |b decay (2011AuZY)       
+217PB cL J$ 9/2 predicted in 1997Mo25 calculations;                             
+217PB2cL 9/2+ from systematics (2011AuZY)                                       
+217PB cL $ Production cross section measured in 2010Al24, values are given      
+217PB2cL in figure 2, plot of |s versus mass number for Pb isotopes.            
+217PB3cL Statistical uncertainty=10%, systematic uncertainty=20%                
+                                                                                
+217BI    COMMENTS                                                ENSDF    201410
+217BI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=30-SEP-2014$                    
+217BI C  TITL$NUCLEAR DATA SHEETS FOR 217BI                                     
+217BI c  AUTH$BALRAJ SINGH                                                      
+217BI c  INST$Department of Physics and Astronomy,                              
+217BI#c       McMaster University, Hamilton, Ontario,                           
+217BI#c       Canada, L8S 4M1                                                   
+217BI c  ABST$Data for levels and gamma rays in the {+217}Bi nuclide from       
+217BI2c  2014Si18 are included in this update. In earlier A=217 NDS evaluation  
+217BI3c  published by 2003Ak06, information was available for only the ground   
+217BI4c  state of {+217}Bi                                                      
+217BI c  CUT$Literature available up to Sept 30, 2014 has been consulted.       
+217BI C  CIT$ENSDF                                                              
+217BI c  FUND$                                                                  
+                                                                                
+217BI    ADOPTED LEVELS, GAMMAS                                  ENSDF    201410
+217BI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=30-SEP-2014$                    
+217BI  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217BI  Q 2845      19 5215   21 6040   SY 4520   30    2012WA38                 
+217BI CQ $Estimated uncertainty=200 for SP (2012Wa38)                           
+217BI cQ $S(2n)=9061 {I23}, S(2p)=15760 {I300} (syst) (2012Wa38)                
+217BI c  Assignment: {+232}Th(pulsed 1 GeV p); 254- and 264-keV gammas          
+217BI2c  in {+217}Po and K-x rays of Polonium (1998RyZY), followed by           
+217BI3c  formal paper 2003Ku25                                                  
+217BI c  Later studies of decay of {+217}Bi: 2014Mo02, 2014Mo15                 
+217BI c  Mass measurement: 2012Ch19                                             
+217BI cL E$From E|g data, assuming 1 keV energy uncertainty for each |g ray     
+217BI cL E(A)$Member of multiplet with configuration=|ph{-9/2}~#({+216}Pb core) 
+217BI cL J$From 2014Go20 for excited states based on systematics of neighboring 
+217BI2cL nuclides                                                               
+217BI  XA9BE(238U,X)                                                            
+217BI PN                                                                     6  
+217BI  L 0.0          (9/2-)           98.5 S    13                             
+217BI2 L %B-=100                                                                
+217BIX L XREF=A                                                                 
+217BI cL T$from measurement by 2003Ku25 based on |g decay curves and through    
+217BI2cL |a decay of {+217}Po; weighted average of 93 s {I3} for 254.1|g,       
+217BI3cL 100.5 s {I13} for 264.4|g and 98 s {I1} through |a decay of {+217}Po). 
+217BI4cL 2003Ku25 quote an uncertainty of 0.8 s, but the evaluator obtains      
+217BI5cL 1.3 s, which is adopted here. Others: 93 s {I11} (2014Mo15, from       
+217BI6cL |b(ion) correlations), 93 s {I3} (1998RyZY, previous value from the    
+217BI7cL same group as 2003Ku25)                                                
+217BI cL $Only beta decay has been observed. The alpha-decay branch             
+217BI2cL is expected to be negligible, if any. Calculations by 1997Mo25 give    
+217BI3cL { 1|*10{+9} s} for its partial half-life for alpha decay, and >{ 100 s}
+217BI4cL for beta decay. 2003Bo06 calculated T{-1/2}(total |b) by               
+217BI5cL using different models.                                                
+217BI  L  744      1  (13/2-)                                               A   
+217BIX L XREF=A                                                                 
+217BI  G  744          100      [E2]                    0.0127                  
+217BI  L  1236     1  (17/2-)                                               A   
+217BIX L XREF=A                                                                 
+217BI  G  492          100      [E2]                    0.0319                  
+217BI  L  1429     2  (15/2-,17/2-)                                             
+217BIX L XREF=A                                                                 
+217BI  G  685          100      [M1,E2]                 0.033 18                
+217BI cG CC$value overlaps M1 and E2                                            
+217BI  L  1436     2  (21/2-)                                               A   
+217BIX L XREF=A                                                                 
+217BI  G  200          100      [E2]                    0.449                   
+217BI  L  1436+X      (25/2-)           3.0 US   2                          AM  
+217BI2 L %IT=100                                                                
+217BIX L XREF=A                                                                 
+217BI cL $Configuration=|ph{-9/2}~#|n2g{-9/2}{-8+}                              
+217BI cL E$x=20-90 keV (2014Go20) based on no K-x rays which can be assigned to 
+217BI2cL a transition from this level, and systematics of neighboring nuclides  
+217BI cL T$average of time distributions and exponential fits for 200-, 492-,   
+217BI2cL 685- and 744-keV |g rays (2014Go20)                                    
+217BI  G  X                                                                     
+217BI cG E$x=20-90 keV (2014Go20) based on no K-x rays which can be assigned to 
+217BI2cG a transition from this level, and systematics of neighboring nuclides  
+217BI cG $B(E2) ranges from 0.00062 {I3} for 20 keV to 0.00044 {I2} for 90 keV  
+                                                                                
+217BI    9BE(238U,X)                   2014GO20                  ENSDF    201410
+217BI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=30-SEP-2014$                    
+217BI c  2014Go20: E({+238}U)=1 GeV/nucleon from UNILAC-SIS-18 accelerator      
+217BI2c  facility at GSI. Reaction products separated in mass and atomic number 
+217BI3c  by FRS magnetic spectrometer. Fragment identification achieved by      
+217BI4c  measurement of magnetic rigidity and time-of-flight employing plastic  
+217BI5c  scintillators and ionization chambers. Isotopes are separated by Z and 
+217BI6c  A/q ratio with only the fully ionized (bare) ions selected. Separated  
+217BI7c  fragments of interest are implanted in double-sided silicon strip      
+217BI8c  (DSSSD) detectors. The gamma rays are detected by RISING array of 15 Ge
+217BI9c  Clusters, each cluster with seven elements. Measured E|g, I|g,         
+217BIAc  |g|g-coin, half-life of an isomer. Deduced levels, J, |p, isomer,      
+217BIBc  configuration. Comparison with large-scale shell model calculations.   
+217BICc  Discussed B(E2) values.                                                
+217BI cG TI$From 2014Go20                                                       
+217BI cG RI$Deduced by compiler from transition intensities and conversion      
+217BI2cG coefficients                                                           
+217BI cL E$From E|g data, assuming 1 keV energy uncertainty for each |g ray     
+217BI cL E(A)$Member of multiplet with configuration=|ph{-9/2}~#({+216}Pb core) 
+217BI cL J$From 2014Go20 for excited states based on systematics of neighboring 
+217BI2cL nuclides                                                               
+217BI PN                                                                     5  
+217BI  L  0           (9/2-)                                                A   
+217BI  L  744      1  (13/2-)                                               A   
+217BI  G  744          99    11 [E2]                    0.0127   100      11 C  
+217BI  L  1236     1  (17/2-)                                               A   
+217BI  G  492          84    8  [E2]                    0.0319    87      8  C  
+217BI  L  1429     2  (15/2-,17/2-)                                             
+217BI  G  685          14    4  [M1,E2]                 0.033 18  14      4  C  
+217BI cG CC$value overlaps M1 and E2                                            
+217BI  L  1436     2  (21/2-)                                               A   
+217BI  G  200          63    6  [E2]                    0.449     92      9  C  
+217BI  L  1436+X      (25/2-)           3.0 US   2                          AM  
+217BI2 L %IT=100                                                                
+217BI cL $Configuration=|ph{-9/2}~#|n2g{-9/2}{-8+}                              
+217BI cL E$x=20-90 keV (2014Go20) based on no K-x rays which can be assigned to 
+217BI2cL a transition from this level, and systematics of neighboring nuclides  
+217BI cL T$average of time distributions and exponential fits for 200-, 492-,   
+217BI2cL 685- and 744-keV |g rays (2014Go20)                                    
+217BI  G  X                                                                     
+217BI cG E$x=20-90 keV (2014Go20) based on no K-x rays which can be assigned to 
+217BI2cG a transition from this level, and systematics of neighboring nuclides  
+217BI cG $B(E2) ranges from 0.00062 {I3} for 20 keV to 0.00044 {I2} for 90 keV  
+                                                                                
+217PO    ADOPTED LEVELS, GAMMAS                                  03NDS    200309
+217PO  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217PO  Q 1489      8 3970    7 7278    136662.1  24    2012WA38                 
+217PO CQ Note: Current evaluation has used the following Q record               
+217PO  Q 1440      SY   4020 SY   7240 SY   6660 4     1995AU04                 
+217PO CQ QA        the observed 6537-KEV |a is assumed to feed the g.s. of      
+217PO2CQ {+213}Pb.                                                              
+217PO C                                                                         
+217PO C  Theoretical studies:                                                   
+217PO C  Alpha decay probabilities were calculated by 1971Ka09, 1973Ma52.       
+217PO C  For calculations of Q{-|a} and T(|a), see 2001Mo07.                    
+217PO C                                                                         
+217PO C  Assignment: daughter of {+221}Rn (1956Mo15)                            
+217PO C                                                                         
+217PO CG E,M       From 221RN A DECAY.                                          
+217PO CL E         From 221RN A DECAY.                                          
+217PO  XA221RN A DECAY                                                          
+217PO  XB217BI B- DECAY                                                         
+217PO CL J         From analogy to 219RN. See comments for each level.          
+217PO  L 0.0         (11/2+)           1.46 S    5                              
+217POX L XREF=AB                                                                
+217PO2 L %A GT 95$ %B- LT 5 (1977VY02)                                          
+217PO CL           Limit on B- decay was obtained by comparing the intensities  
+217PO2CL of the ALPHA groups from 221RN, 221FR, 217PO, and 217AT decays.        
+217PO3CL Other measurement: %A GT 80, %B- LT 20 (1956Mo15). Gross B-decay       
+217PO4CL calculation of 1973Ta30 gives %B-<1.                                   
+217PO CL           217PO B- decay scheme to 217AT has not been studied.         
+217PO CL T         measured by 1998RyZY from |a decay as a function of time.    
+217PO2CL Earlier measurement: <10 s (1956Mo15).                                 
+217PO CL           In analogy to the isotone {+219}Rn, 1997Li23 suggested that  
+217PO2CL {+217}Po g.s. has JPI=11/2+, and interpreted as arising from a mixed   
+217PO3CL 1/2+ and 3/2+ reflection asymmetric orbital which is closely related   
+217PO4CL to the i{-11/2} shell state. The nucleus has two protons and seven     
+217PO5CL neutrons above the Z=82 and N=126 closed shells, respectively, and     
+217PO6CL small quadrupole deformation for 217PO is expected. See 1997Li23 for   
+217PO7CL discussions.                                                           
+217PO  L 254.2     3 (7/2+)                                                     
+217POX L XREF=AB                                                                
+217PO CL           1997Li23 suggested JPI=7/2+ for this level in analogy to     
+217PO2CL {+219}Rn. The 254.2-keV (E2) transition from this level is consistent  
+217PO3CL with the proposed JPI, if the ground state is 11/2+.                   
+217PO  G 254.2     3            (E2)                   0.214                    
+217PO  L 264.7     1 (9/2+)                                                     
+217POX L XREF=AB                                                                
+217PO CL           1997Li23 proposed JPI=9/2+ for this level. It is consistent  
+217PO2CL with the (M1) transition to the ground state, if the g.s. is 11/2+,    
+217PO3CL also with HF=8 for the |a decay from 7/2{+(+)} parent {+221}Rn.        
+217PO  G 264.68    4            (M1)                   0.746                    
+                                                                                
+217PO    217BI B- DECAY                                          03NDS    200309
+217PO  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217PO CG E         Measured by 1998RyZY                                         
+217PO CG           Gamma intensities are not available at this time; therefore, 
+217PO2CG |b feedings could not be deduced. The decay scheme should be           
+217PO3CG considered preliminary.                                                
+217BI  P 0.0                           93 S      3              3000      SY    
+217PO  N                       1.0                                              
+217PO  L 0.0                                                                    
+217PO  L 254                                                                    
+217PO  G 254                                                                    
+217PO  L 264                                                                    
+217PO  G 264                                                                    
+                                                                                
+217PO    221RN A DECAY                                           03NDS    200309
+217PO  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217PO C  T({+221}Rn)=25.7 M {I5} is from 1997Li23. QA=6148 {I2} is calculated   
+217PO2C  from EA=6037 {I2}; QA=6146 {I3}, recommended by 1995Au04, was obtained 
+217PO3C  from EA=6035 {I3}, measured by 1977Vy02.                               
+217PO CA E         Energies measured by 1977Vy02 agree well with                
+217PO2CA those measured by 1997LI23. Recent measurements of 1997Li23 are        
+217PO3CA given here.                                                            
+217PO CA IA        Intensities per 100 |a decays. The intensities given here    
+217PO2CA are average of those measured by 1977Vy02 and by 1997LI02.             
+217PO3CA Uncertainties were not listed by the authors.                          
+217PO CA HF        r{-0}(217PO)=1.5521 3, average of r{-0}(216PO)=1.5555 2      
+217PO2CA and r{-0}(218PO)=1.5487 2 (1998AK04), is used in calculations.         
+217PO CG E         Measurements of 1977Vy02                                     
+217PO CG RI        Relative photon intensities measured by 1977Vy02. The        
+217PO2CG authors normalized to IG's to IG(218G of 221FR decay)=10.7% 6. The     
+217PO3CG relative ICE's, measured also by 1977Vy02, were normalized to          
+217PO4CG ICE(K 218G)=1.5% 2.                                                    
+221RN  P 0.0         7/2(+)            25.7 M    5              6148      2     
+217PO  N 4.4       6            0.20   2                                        
+217PO PN 0.88      15                                                        2  
+217PO CN BR        unweighted average of |a branchings determined by 1977VY02   
+217PO2CN and by 1997LI23: |a/|b-=22 1/78 1 was obtained by 1977VY02 by          
+217PO3CN comparing intensities of 221RN, 221FR,217PO and 217AT |a groups        
+217PO4CN present in the mass-separated source in equilibrium with its           
+217PO5CN daughters; |a/|b-=18 1/82 1 was deduced by 1997LI23.                   
+217PO CN NR        absolute intensities were obtained by 1977Vy02 by            
+217PO2CN normalizing relative IG's to IG(218.19G of 221FR B- decay)=10.7% 6;    
+217PO3CN IG=11.57% 15 has been adopted by the evaluator in 221FR A DECAY        
+217PO3CN scheme. Since this corresponds to per 100 B- decays of 221RN           
+217PO4CN normalization factor for converting IG's per 100 ALPHA's is:           
+217PO5CN [(80 2)/(20 2)][(11.57 15)/(10.7 6)]=4.4 6.                            
+217PO  L 0.0                           1.46 S    5                              
+217PO  A 6037      2  81         13                                             
+217PO CA E         6035 {I3} was measured by 1977Vy02.                          
+217PO CA IA        measured intensities are IA=82 (1977Vy02), 80 (1997Li23).    
+217PO  L 254.2     3                                                            
+217PO  A 5788      2  11         7                                              
+217PO CA E         5786 {I3} was measured by 1977Vy02.                          
+217PO CA IA        measured intensities are IA=10 (1977Vy02), 12 (1997Li23).    
+217PO  G 254.2     3  2.1    AP (E2)                   0.214                    
+217POS G KC=0.0984 $ LC=0.0854 $ MC=0.0223 $ NC+=0.00750                        
+217PO CG M         the measured ICE(K) LT 0.2 (1977Vy02) (EKC LT 0.1) suggests  
+217PO2CG E1 or E2 multipolarity: KC(E1)=0.0377, KC(E2)=0.0984. The E2           
+217PO3CG multipolarity yields a better intensity balance at the 254.2-KEV       
+217PO4CG level.                                                                 
+217PO  L 264.7     1                                                            
+217PO  A 5778      2  8          8                                              
+217PO CA E         5776 {I3} was measured by 1977Vy02.                          
+217PO CA IA        measured intensities are IA=8 (1977Vy02), 7 (1997Li23).      
+217PO  G 264.68    4  1.13   8  (M1)                    0.746                   
+217POS G KC=0.607  $ LC=0.106   $ MC=0.0250 $ NC+=0.00841                       
+217PO CG M         0.46 23 LE ICE(K) LE 0.76 23 was measured by 1977Vy02        
+                                                                                
+217AT    ADOPTED LEVELS, GAMMAS                                  03NDS    200309
+217AT  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217AT  Q 737       7 5933    6 4677    6 7201.3  13    2012WA38                 
+217AT CQ Note: Current evaluation has used the following Q record               
+217AT  Q 741       8    5928 8    4677 8  7201.9 15    1995AU04                 
+217AT C  Assignment: daughter of 225AC, 221FR (1947En03,1947Ha02)               
+217AT CG           All GAMMA properties are from 221FR A DECAY.                 
+217AT CG RI        Relative photon intensity deexciting each level.             
+217AT CL E         All level energies are from 221FR A DECAY.                   
+217AT CL J         Configuration assignments were proposed by 1995Sh01 from     
+217AT2CL shell model and from analogy to levels in {+215}At. See also           
+217AT3CL 2002Sh19 and 1987Sh24.                                                 
+217AT CL J(A)      CONF=((P,H9/2,+2)(P,F7/2)(N,G9/2,-4))                        
+217AT CL J(B)      CONF=((P,H9/2,+3)(N,G9/2,-4))                                
+217AT  L 0.0          9/2-             32.3 MS   4                          A   
+217AT2 L %A=99.993 3 $ %B-=0.007 3                                              
+217AT CL           %B- is from 1997Ch53 (%B-=0.0067 24 is listed)               
+217AT CL           In their earlier work, 1995Ch74 measured                     
+217AT2CL I(7741|a of {+217}Rn)/I(7067|a of {+217}At)=0.000083 {I14} from which  
+217AT3CL the |b branch was deduced to be AP 0.005%. Same method is assumed to   
+217AT4CL be utilized in 1997Ch53 (detail was not given)                         
+217AT CL           Other work: BETA branching to {+217}Rn was obtained by       
+217AT2CL 1969LeZW as 0.012% {I4} from intensity of the 7730|a                   
+217AT3CL (assigned to {+217}Rn |a decay) in the {+225}Ac |a decay series.       
+217AT CL           The |b- decay scheme of {+217}At has not yet been studied.   
+217AT CL           For theoretical calculations of partial half-lives for       
+217AT2CL {+5}He and {+8}Be emissions, see 1984Po11 and 1986Pi11, respectively.  
+217AT3CL For calculation of |a-decay probability, see 1973Ma52, 1995Mo25.       
+217AT CL J         218.19|g from 5/2- state is E2;                              
+217AT2CL (A)(G)(THETA) data in 221FR A DECAY.                                   
+217AT CL T         measurement of 1963Di05. Other measurements:                 
+217AT2CL 21 MS (1947En03), 18 MS 2 (1950Ha52).                                  
+217AT  L 100.25    2   7/2-            0.5 NS    LT                         A   
+217AT CL J         100.25|g to 9/2- g.s. and 117.82|g from 5/2- are M1.         
+217AT CL T         by (|a)(100.25|g)(t) in {+221}Fr |a decay (1970Al17).        
+217AT  G 100.25    2            M1                     12.67                    
+217AT  L 218.12    2  5/2-             0.27 NS   2                          B   
+217AT CL J         favored |a decay from {+221}Fr.                              
+217AT CL T         by (|a)(218.12|g)(t) in {+221}Fr |a decay (1970Al17).        
+217AT  G 117.82    3  0.20   12  M1                    7.96                     
+217AT  G 218.12    2  100    2   E2                    0.373                    
+217AT  L 272.07    4 3/2-                                                   A   
+217AT CL J         53.81|g to 5/2- is M1 and 171.82|g to 7/2- is E2.            
+217AT  G 53.81     3 16      4  M1                     14.92                    
+217AT  G 171.82    3 100     40 E2                     0.878                    
+217AT  L 310.3     20                                                           
+217AT CL           1995Sh01 interpreted the state to be (13/2+) of              
+217AT2CL CONF=((P,H9/2,+2)(P,I13/2)(N,G9/2,-4)).                                
+217AT  L 368.23    4 (3/2)-                                                 B   
+217AT CL J         150.21|g to 5/2- is M1, 96.3|g to 3/2- is M1+E2.             
+217AT  G 96.3      3 15      7  M1+E2    0.7      7    4.8    21                
+217AT  G 150.21    3 100     5   M1                    3.98                     
+217AT  L 382.34    4 (7/2)-                                                 A   
+217AT CL J         382.34|g to 9/2- g.s. is M1; 282.12|g to 7/2-.               
+217AT  G 282.12    9  21     3                                                  
+217AT  G 382.34    4  100    6 M1                      2.99                     
+217AT  L 410.64    5 (13/2)-                                                B   
+217AT CL J         410.64|g to 9/2- g.s. is E2; no gamma transitions to         
+217AT2CL lower-spin levels.                                                     
+217AT  G 410.64    5             E2                    0.0556                   
+217AT  L 424.35    7 (5/2,7/2,9/2)-                                             
+217AT CL J         324.10|g to 7/2- is M1.                                      
+217AT  G 324.10    6             M1                    0.467                    
+217AT  L 537.5     5 (9/2+)                                                     
+217AT CL J         |g transitions to 7/2- and 9/2- states; 1995Sh01 interpreted 
+217AT2CL the state as JPI=(9/2+) of CONF=((P,H9/2,+2)(P,I13/2)(N,G9/2,-4)).     
+217AT  G 437.00    5 19      3                                                  
+217AT  G 537.8     8 100     10                                                 
+217AT  L 568.5     3 (7/2,9/2)                                                  
+217AT CL J         Intensities of |g transitions to 7/2- and 9/2- states.       
+217AT  G 468.3     7 100     22                                                 
+217AT  G 568.5     3 86      29                                                 
+217AT  L 577.0     5 (7/2)-                                                 B   
+217AT CL J         359.86|g to 5/2- is M1; |g's to 9/2- and 3/2- levels.        
+217AT  G 208.3     6 12.5    25                                                 
+217AT  G 359.86    4 100     5   M1                    0.352                    
+217AT2 G FL=218.12                                                              
+217AT  G 576.9     4 7.3     10                                                 
+217AT  L 652       2                                                           ?
+217AT  G 652       2                                                            
+217AT  L 664.4     2                                                            
+217AT CL           |g transitions to 9/2-, 7/2- and 5/2- states suggest         
+217AT2CL 5/2-, 7/2+-, 9/2-. 1995Sh01 assigned 5/2(-) of                         
+217AT3CL CONF=((P,H9/2,+2)(P,F7/2)(N,G9/2,-4)).                                 
+217AT  G 282.12                                                             *  ?
+217AT  G 446.30    8 100     9                                                  
+217AT  G 562.3     12290     AP                                                 
+217AT  G 665       2 53      AP                                                 
+217AT  L 809.3     2                                                           ?
+217AT  G 809.3     2                                                           ?
+217AT  L 891.9     3                                                           ?
+217AT  G 891.9     3                                                           ?
+                                                                                
+217AT    221FR A DECAY                                           03NDS    200309
+217AT  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217AT C                                                                         
+217AT CA           (6341|a)(THETA) from oriented {+221}Fr: A2=-0.389 10,        
+217AT2CA A4=-0.06 6 (1999Sc17). Influence of nuclear deformation on the         
+217AT3CA angular distribution was studied, A{-2} coefficient was calculated     
+217AT4CA for various |b{-2}, |b{-3} deformation parameters, and compared with   
+217AT5CA their experiment by 1999Sc17.                                          
+217AT CA           Alpha-decay anisotropy and deformation effects were          
+217AT2CA calculated by 2002De24.                                                
+217AT CA           Alpha and gamma anisotropyies were measured by 1992Li26.     
+217AT CA                                                                        
+217AT CA E         From 1968Le07 (s),1967Dz02 (s), except where noted. Energies 
+217AT2CA have been readjusted according to calibration recommendation of        
+217AT3CA 1991Ry01. Other measurements: 1964Va20, 1962Wa28, 1960Vo05, 1955St04.  
+217AT CA IA        From 1968Le07; see also 1967Dz02.                            
+217AT CA HF        r{-0}({+217}AT)=1.5501 20, average of                        
+217AT2CA r{-0}({+216}Po)=1.5555 {I2} and r{-0}({+217}Rn)=1.5446 {I19} (1998Ak04)
+217AT3CA is used in calculations.                                               
+217AT CA E(G)      Measured by 2002GrZY in their (|a)(|g) coincidence spectrum. 
+217AT2CA The assignment to {+221}Fr decay was based on the better fit of the    
+217AT3CA deduced Q{-|a} to the Q{-|a}({+221}Fr) than the Q{-|a}'s of other      
+217AT4CA nuclei in the source. However, probability of the coincident |g's      
+217AT5CA feeding excited levels, rather than the g.s., is not ruled out. These  
+217AT5CA measurements and interpretations are taken as preliminary.             
+217AT CA IA(G)     Deduced from observed |g intensity deexciting the level.     
+217AT2CA the intensity could be larger or smaller if there are other |g's       
+217AT3CA deexciting or feeding the level.                                       
+217AT TG           (|a)(|g):    1964Va20,1968Le07,1969LeZW,1995Bu17,1995Sh01,   
+217AT2TG                        1999Gr33.                                       
+217AT TG           (|a)(|g)(THETA): 1968Le07,1967LoZZ,1970NiZU.                 
+217AT TG           (|a)(|g(t)), (|a)(ce)(t):                                    
+217AT2TG          (|a)(218|g)(t)  T(218 level)=0.27 ns {I2}     (1970Al17)      
+217AT3TG          (|a)(100|g)(t)  T(100 level)<0.5 ns        (1970Al17)         
+217AT4TG                                   other measurements: 1956St79.        
+217AT TG                                                                        
+217AT CG           (|a)(|g)(|g): 1964Va20.                                      
+217AT CG           (|g)(|g):     1994NiZZ.                                      
+217AT CG           I(XKA1)/I(XKA2)=0.61 6 (1972Dz14).                           
+217AT CG                                                                        
+217AT CG E         From 1999Gr33, unless otherwise indicated. See also          
+217AT2CG 1995Sh01, 1995Bu17, 1994Ar23, 1969Dz06, 1968Le07. A number of |g's     
+217AT3CG reported by 1995Bu17 and 1994Ar23 were identified by 1999Gr33 as       
+217AT4CG being sum peaks. Earlier measurements: 1964Va20, 1981Di14.             
+217AT CG RI        Relative photon intensities, measured by 1999Gr33, are       
+217AT2CG normalized to 11.18 at 218|g. See also 1995Sh01. Other measurements:   
+217AT3CG 1968Le07, 1969Dz06.                                                    
+217AT CG M,MR      From ce measurements of 1969Dz06 and 1995Sh01, and from EKC  
+217AT2CG deduced by (|a)(XK)/|a|g measurements of 1968Le07. ICE's of 1969Dz06   
+217AT3CG have been re-normalized by the evaluator to ICE(K 218.19G)=1.75 so     
+217AT4CG that KC=0.139 (E2 theory). ICE's of 1995Sh01 were normalized at        
+217AT5CG ce(K;218|g) so that KC(218|g)=0.14. Multipolarities in square          
+217AT6CG brackets are from level scheme.                                        
+217AT CG E(G)      Measured by 2002GrZY in (|a)(|g) coincidence spectrum.       
+217AT CG RI(G)     Measured by 2002GrZY relative to 218.19|g.                   
+217AT CL T(T)      From(|a)(|g(t)), (|a)(ce)(t) (1970Al17). See |g(217AT) from  
+217AT2CL 221FR A DECAY section.                                                 
+221FR  P 0.0         5/2-              4.9 M     2              6457.6    17    
+217AT  N 1.018     20 1.018  200.99995 3                                        
+217AT CN           {+221}Fr |b- branching=0.0048% {I15} is listed in 1997Ch53;  
+217AT2CN %|b-=0.011 {I5} was given in their earlier work (1995Ch74). The        
+217AT3CN uncertainty deduced in 1997Ch53 is conservatively increased here.      
+217AT CN NR        I{-|g}(218|g)=11.38% {I15} is adopted from measurements      
+217AT2CN given in 1986He06, 1995Sh01 and 1999Gr33:                              
+217AT3CN I{-|g}(218|g)=11.57% {I15}, 11.3 {I10} and 11.18 {I15}, respectively,  
+217AT4CN Normalization factor of 1.018 {I20} per 100 |a decays is obtained      
+217AT5CN from (11.38 {I15}/11.18 {I15})/(0.99995 {I3}).                         
+217AT CN           The absolute intensity of 218.19|g was measured by 1986He06  
+217AT2CN as 11.57 {I15} per 100 {+229}Th decays. A {+229}Th source was used,    
+217AT3CN and its cascade decays to {+225}Ra (100% by |a), to {+225}Ac           
+217AT4CN and to {+221}Fr (100% |a) were followed.                               
+217AT CN           1999Gr33 deduced I{-|g}(218|g)=11.18% of {+221}Fr decays     
+217AT2CN from TI(218|g)=I(6126|a decaying to the 218-keV level)=15.1% {I2} and  
+217AT3CN CC(218|g;E2)=0.368. In their work, therefore, |g feedings to           
+217AT4CN the 218-keV level from higher levels and TI(117.8|g) de-exciting       
+217AT5CN the 218-keV level were neglected.                                      
+217AT CN           Method used to obtain absolute normalization was not         
+217AT2CN discussed in 1995Sh01.                                                 
+217AT CN           Other absolute intensity determinations: 1968Le07,           
+217AT2CN 1969Dz06, 1981Di14:                                                    
+217AT CN           I{-|g}(218|g)/I{-|g}(440|g  of {+213}Bi B- decay)=0.134 {I6} 
+217AT2CN was measured by 1981Di14.                                              
+217AT CN           I{-|g}'s were normalized by 1968Le07 to intensities of       
+217AT2CN 240|g of {+224}Ra 187|g of {+226}Ra, and 236|g of {+227}Th;            
+217AT3CN the intensities used were not given.                                   
+217AT CN           I{-|g}'s of 1969Dz06 were normalized by the authors such     
+217AT2CN that TI(218.19|g)=15.0% 2.                                             
+217AT CN           I{-|g}(218|g)=11.6 {I4} and 11.1 {I3} were listed by         
+217AT2CN 1994Ar23 and 1995Bu17; as pointed out by 1999Gr33, many sum peaks with 
+217AT3CN the 218|g were misidentified as |g transitions. Therefore, their       
+217AT3CN measured intensities are taken here as not accurate.                   
+217AT  G 201.4     6 0.0011  1                                                  
+217AT  G 658       2 0.0007  AP                                                 
+217AT  L 0.0         9/2-                32.3 MS 4                              
+217AT  A 6341.0    13 83.4   8   3.5   2                                        
+217AT  L 100.25    2   7/2-            0.5 NS    LT                         T   
+217AT  A 6243.0    20 1.34   10 83     7                                        
+217AT  G 100.25    2  0.10   3  M1                     12.67                    
+217ATS G KC=10.2$ LC=1.84$ MC=0.436$ NC+=0.151                                  
+217AT  L 218.12    2  5/2-             0.27 NS   2                          T   
+217AT  A 6126.3    15 15.1   2  2.3    1                                        
+217AT  G 117.82    3  0.022  13 M1                     7.96                     
+217ATS G KC=6.44$ LC=1.158$ MC=0.274$ NC+=0.0947                                
+217AT CG RI        obtained by 1999Gr33 from their |a|g-coincidence data.       
+217AT  G 218.12    2  11.18  15  E2                    0.373                *   
+217ATS G KC=0.139 $ LC=0.173 $ MC=0.0456 $ NC+=0.0156                           
+217AT  L 272.07    4   3/2-                                                     
+217AT  A 6075.9    20 0.15   3   130   30                                       
+217AT  G 53.81     3 0.013   3 M1                      14.92                    
+217ATS G LC=11.32$ MC=2.68$ NC+=0.923                                           
+217AT CG RI        obtained by 1999Gr33 from their |a|g coincidence data.       
+217AT  G 171.83    3  0.076  2 E2                      0.878                    
+217ATS G KC=0.229$LC=0.478$ MC=0.127$ NC+=0.0436                                
+217AT  L 310.3     20                                                           
+217AT  A 6037      3  0.003  2  4.5E+3 30                                       
+217AT  L 368.23    4 (3/2)-                                                     
+217AT  A 5979.9    20 0.49   3  15     2                                        
+217AT  G 96.3      3  0.007  3 M1+E2     0.7     7      4.8   21                
+217AT CG RI        obtained by 1999Gr33 from their |a|g coincidence data.       
+217AT DG MR        1995Sh01 lists RI<0.01, ELC>2.5. The adopted RI=0.007 gives  
+217AT2DG ELC=3.6 16 (not including the uncertainty on Ice). MR=0.7 7 is         
+217AT3DG calculated from ELC=3.6 16.                                            
+217AT  G 150.21    3  0.047  2  M1                      3.98                    
+217ATS G KC=3.22  $ LC=0.577  $ MC=0.137 $ NC+=0.0470                           
+217AT  L 382.34    4  (7/2)-                                                    
+217AT  A 5965.9    25 0.08   1  79     11                                       
+217AT  G 282.12    9  0.007  1 [M1,E2]                  0.42  26                
+217AT  G 382.34    4  0.033  2 M1                       0.299                   
+217ATS G KC=0.242$ LC=0.0427$ MC=0.0101$NC+=0.00344                             
+217AT  L 410.64    5   13/2-                                                    
+217AT  A 5938.9    20 0.17   3  28     5                                        
+217AT  G 410.64    5  0.118  2  E2                      0.0556                  
+217ATS G KC=0.0347$LC=0.0155$ MC=0.00397$NC+=0.00136                            
+217AT  L 424.35    7 (5/2,7/2,9/2)-                                             
+217AT  A 5925      3  0.03   1  140    50                                       
+217AT  G 324.10    6  0.019  1   M1                     0.467                   
+217ATS G KC=0.379$ LC=0.0671$ MC=0.0158$NC+=0.00541                             
+217AT  L 537.5     5 (9/2+)                                                     
+217AT  A 5813      3  0.004  2  3.0E+2 16                                       
+217AT  G 437.00    5 0.00093 11                                                 
+217AT  G 537.8     8  0.0050 5                                                  
+217AT  L 568.5     3 (7/2,9/2)                                                  
+217AT  A 5783      4  0.005  2  170    70                                       
+217AT  G 468.3     7 0.0014  3                                                  
+217AT  G 568.5     3 0.0012  4                                                  
+217AT  L 577.5     5 (7/2)-                                                     
+217AT  A 5776      3  0.06   1  13     3                                        
+217AT  G 208.3     6  0.005  1 [E2]                    0.437                   ?
+217ATS G KC=0.154$LC=0.209$ MC=0.0554$NC+=0.0189                                
+217AT  G 359.86    4  0.040  2 M1                      0.352                    
+217AT2 G FL=218.12                                                              
+217ATS G KC=0.285$LC=0.0504$ MC=0.0119$NC+=0.00406                              
+217AT  G 576.9     4  0.0029 4 [M1]                    0.0999                   
+217ATS G KC=0.0811$LC=0.01141$                                                  
+217AT  L 652       2                                                            
+217AT  A 5697      4  0.001  AP 340    AP                                       
+217AT  G 652       2  0.0004 AP                                                 
+217AT CG           Observed only by 1999Gr33 in |a|g coincidence spectrum.      
+217AT  L 664.4     2                                                            
+217AT  A 5689      3  0.002  1  150    80                                       
+217AT  G 282.12                                                             *  ?
+217AT  G 446.30    8 0.0017  4                                                  
+217AT  G 562.3     12 0.005  AP                                                ?
+217AT CG E         from 1995Sh01, observed in coincidences with all |a's.       
+217AT  G 665       2 0.0009  AP                                                 
+217AT CG           Observed only by 1999Gr33 in |a|g coincidence spectrum.      
+217AT  L 809.3     2                                                           ?
+217AT  A 5530      25 9.0E-4 20                                             G  ?
+217AT  G 809.3     2 9.0E-4  20                                             G  ?
+217AT  L 891.9     3                                                           ?
+217AT  A 5500      40 9.0E-4 20                                             G  ?
+217AT  G 891.9     3 3.3E-4  9                                              G  ?
+                                                                                
+217RN    ADOPTED LEVELS, GAMMAS                                  03NDS    200309
+217RN  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217RN  Q -656      8 4666    8 5888    6 7887    3     2012WA38                 
+217RN CQ Note: Current evaluation has used the following Q record               
+217RN  Q -653      8    4665 9    5886 6 7888.6  29    1995AU04                 
+217RN C  Assignment: daughter of {+221}Ra, parent of {+213}Po (1951Me10).       
+217RN C                                                                         
+217RN CG E         Measured in {+221}Ra |a decay.                               
+217RN CG RI        Relative photon intensity deexciting the level.              
+217RN CG M         Deduced in {+221}Ra |a decay.                                
+217RN CL           For theoretical calculations of partial half-lives for       
+217RN2CL {+14}C and {+8}Be emissions, see 1986De32 and 1986Pi11,  respectively. 
+217RN CL                                                                        
+217RN CL E         From {+221}Ra |a decay.                                      
+217RN CL T(P)      From prompt (|a)(ce)(t) data of 1989Ac01 in                  
+217RN2CL 221RA A decay.                                                         
+217RN  XA221RA A DECAY                                                          
+217RN  L 0.0          9/2+             0.54 MS   5                              
+217RN2 L %A=100                                                                 
+217RNX L XREF=A                                                                 
+217RN CL J         favored A DECAY to 9/2+ 213PO g.s.                           
+217RN CL T         from 1961Ru06. Other measurement: 1.0 MS 1 (1951Me10)        
+217RN  L 88.90     5                   1.5 NS    LE                         P   
+217RNX L XREF=A                                                                 
+217RN CL J         (M1) transition to 9/2+ gs; probable gamma from 7/2+ state   
+217RN2CL at 93.0 KEV; i{-11/2} shell state was proposed by 1997Li17.            
+217RN  G 88.90     5            (M1)                                            
+217RN  L 93.02     5 7/2+               4.0 NS   4                              
+217RNX L XREF=A                                                                 
+217RN CL J         93.02|g to 9/2+ g.s. is E2(+M1); 56.16|g transition          
+217RN2CL from 5/2+ state IS (M1)                                                
+217RN CL T         measured by 1989Ac01 by (|a)(ce)(t) in {+221}Ra |a decay.    
+217RN  G 4.12      8                                                           S
+217RN CG           Transition was not observed. Its existence was deduced by    
+217RN2CG 1997Li12 from observation of the 88.9|g in coincidence with the        
+217RN3CG 6662|a feeding the 93.02 level.                                        
+217RN  G 93.02     5           E2(+M1)                 11.5                     
+217RN  L 149.18    8  5/2+             1.5 NS    LE                         P   
+217RNX L XREF=A                                                                 
+217RN CL J         favored ALPHA decay from 5/2+ 221RA g.s.                     
+217RN  G 56.16     5  2.5    5 (M1)                                             
+217RN2 G FL=93.02                                                               
+217RN  G 149.0     1 100     10 E2                     1.614                    
+217RN  L 174.3     1 (7/2,9/2,11/2)+   1.5 NS    LE                         P   
+217RNX L XREF=A                                                                 
+217RN CL           174.3-KEV M1 transition to 9/2+ g.s. suggests JPI=7/2+,      
+217RN2CL 9/2+, or 11/2+. 1997Li12 tentatively proposed that this level and      
+217RN3CL the levels at 88.90 and 235.2 KEV are 7/2+, 11/2+ and 3/2+ members of  
+217RN4CL a disturbed i{-11/2} band.                                             
+217RN  G 85.4      3 0.88    30                                                 
+217RN2 G FL=88.90                                                               
+217RN  G 174.3     1 100     12 M1                     2.85                     
+217RN  L 235.2     6 (3/2+)                                                     
+217RNX L XREF=A                                                                 
+217RN CL J         86.0G to 5/2+ state; no gammas to 7/2+ , 9/2+ states.        
+217RN  G 86.0      5                                                            
+217RN  L 295                                                                   ?
+217RNX L XREF=A                                                                 
+217RN  L 375.0     3 (3/2+)                                                     
+217RNX L XREF=A                                                                 
+217RN CL J         225.7G to 5/2+, (3/2+) states; no gammas to 7/2+ , 9/2+      
+217RN2CL levels.                                                                
+217RN  G 140.3     3 20      10                                                 
+217RN  G 225.7     2 100     50                                                 
+217RN  L 382.2     3 (7/2)                                                      
+217RNX L XREF=A                                                                 
+217RN CL J         Gammas to 5/2+, 7/2+, 9/2+ states.                           
+217RN  G 207.9     2 86      30                                                 
+217RN  G 232.9     3 29      15                                                 
+217RN  G 289.1     3 100     30                                                 
+217RN  G 382.2     3 43      15                                                 
+217RN  L 474.5     4 (7/2,9/2,11/2)                                             
+217RNX L XREF=A                                                                 
+217RN CL J         474.5G to 9/2+ gs; no gammas to lower-spin states.           
+217RN  G 474.5     4                                                            
+217RN  L 569.6     3 (5/2,7/2)                                                  
+217RNX L XREF=A                                                                 
+217RN CL J         gamma transitions to 5/2+ and 7/2+.                          
+217RN  G 395.2     3 43      15                                                 
+217RN  G 420.6     2 100     30                                                 
+217RN  G 476.5     4 57      22                                                 
+217RN  L 618.9     5 (5/2,7/2)                                                  
+217RNX L XREF=A                                                                 
+217RN CL J         gamma transitions to 5/2+ and 7/2+.                          
+217RN  G 444.3     5 100     50                                                 
+217RN  G 469.7     5 75      30                                                 
+217RN  G 525.8     4 75      30                                                 
+                                                                                
+217RN    221RA A DECAY                                           03NDS    200309
+217RN  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217RN C                                                                         
+217RN C  T({+221}Ra)=28 s {I2} was measured by 1958To25, and adopted in         
+217RN2C  1990Ak05.                                                              
+217RN C                                                                         
+217RN C  Q{-|a}=6884 {I5} was recommended by 1995Au04. The latest measurement,  
+217RN2C  E{-|a}(to g.s.)=6754, yields Q{-|a}=6878.                              
+217RN C                                                                         
+217RN C  (|a)(|g) coincidences were taken by 1961Ru06, 1989Ac01, 1995Ch74 and   
+217RN2C  1997Li12, and (|a)(ce) coincidences by 1989Ac01.                       
+217RN C                                                                         
+217RN C  The main decay scheme was first constructed by 1961Ru06, and           
+217RN2C  confirmed by 1989Ac01 and 1997Li12. Additional transitions were        
+217RN3C  observed and placed by 1997Li12 in the decay scheme with additional    
+217RN4C  levels. The decay scheme is presented here as built by 1997Li12.       
+217RN C                                                                         
+217RN TG           (|a)(ce)(t):                                                 
+217RN2TG  (|a)(L 93|g)(t): T(93-KEV level)=4.0 ns {I4}           (1989Ac01)     
+217RN3TG  (|a)(ce lines of other |g's) were prompt; therefore,                  
+217RN4TG                   T(all other levels) LE 1.5 ns     (1989Ac01)         
+217RN5TG                                                                        
+217RN CG           I(XKA+XKB)(Rn)/I(149.2G)=62 8/100  (1997Li17)                
+217RN CG                                                                        
+217RN CA E         Except where noted, measurements of 1997Li12 are given.      
+217RN2CA Calibration energies were not given; therefore, no adjustment for      
+217RN3CA E{-|a}'s has been made. If the energies were calibrated at             
+217RN4CA E{-|a}(g.s.)=6754, as measured by 1961Ru06, then they should be        
+217RN5CA increased by 7 KEV due to increase in calibration energies used by     
+217RN6CA 1961Ru06. No uncertainties were given by 1997Li12. Resolution          
+217RN7CA was 21 KEV. Other measurements: 1951Me10, 1961Ru06. The energies of    
+217RN8CA 1961Ru06 are quoted with an increased value by 7 KEV from their        
+217RN9CA original energies, as recommended by 1991Ry01.                         
+217RN CA IA        Alpha intensity per 100 alpha decays, measured by 1997Li02,  
+217RN2CA See also a comment for 6573|a. Uncertainties are assigned by the       
+217RN3CA evaluator (no uncertainties were given in 1997Li02). Other             
+217RN4CA measurement: 1961Ru06.                                                 
+217RN CA HF        r{-0}({+217}Rn)=1.550 9, average of                          
+217RN2CA r{-0}({+216}Rn)=1.556 6 and r{-0}({+218}Rn)=1.5446 19 (1998Ak04),      
+217RN3CA is used in calculations.                                               
+217RN CG E         From 1997Li12. Other measurements: 1961Ru06, 1989Ac01. Of    
+217RN2CG additional four questionable |g's reported by 1961Ru06, the gammas     
+217RN3CG seen by 1961Ru06 at 219 KEV {I10} with I=0.1%, at 293 KEV with I=0.6%, 
+217RN4CG and at 415 {I10} KEV with I=0.5%, may possible be the 207.9|g,         
+217RN5CG 289.1|g, and 420.6|g, respectively. The 320-KEV gamma, however, was    
+217RN6CG not confirmed by 1989Ac01 and by 1997Li12, therefore, is not given     
+217RN7CG here.                                                                  
+217RN CG RI        Relative photon intensities normalized at 149.2|g to 100.    
+217RN2CG Measurements of 1997Li12 are adopted. The intensities measured by      
+217RN3CG 1989Ac01 and by 1961Ru06, re-normalized by the evaluator to            
+217RN4CG I(149.2|g)=100, are quoted with each transition for comparison.        
+217RN CG M(A)      From ce data of 1989Ac01.                                    
+217RN CG M(L)      Deduced by 1997Li12 from intensity balances.                 
+217RN CL T         Excited levels' half-lives were determined by 1989Ac01       
+217RN2CL from (|a)(ce)(t) data.                                                 
+221RA  P 0.0         5/2+                28 S    2               6884     5     
+217RN  N 0.125     20          1.0                                              
+217RN PN 0.125     20                                                       C2  
+217RN2PN Transition intensity per 100 |a decays.                                
+217RN CN NR        relative photon intensities, normalized at 149.2|g to 100,   
+217RN2CN and intensities per 100 |a decays were listed by 1997Li12.             
+217RN3CN I(149.2|g)=12.5% was given. The method of obtaining absolute           
+217RN4CN intensities was not discussed by the authors. Earlier measurement:     
+217RN5CN I(149|g)=13% 2, obtained by 1961Ru06 by (|a)(|g) coincidences.         
+217RN  G 142.1     3 0.05    2                                                  
+217RN  L 0.0         9/2+                0.54 MS 5                              
+217RN  A 6754         32     2  15.4   16                                       
+217RN CA E         6761 {I5}, I{-|a}=30% {I2} were measured by 1961Ru06.        
+217RN  L 88.90     5 (11/2+)             1.5 NS  LE                             
+217RN  A 6667        1.5     LT 150    GT                                      ?
+217RN  G 88.90     5 7.5     10 (M1)                                        L   
+217RN  L 93.02     5 7/2+               4.0 NS   4                              
+217RN  A 6662         23     3  9.4    15                                       
+217RN CA           6668, I{-|a}=20% {I2} were listed by 1961Ru06.               
+217RN  G 4.12      8                                                           S
+217RN CG           Transition was not observed. Its existence was deduced by    
+217RN2CG 1997Li12 from observation of the 88.9|g in coincidence with the        
+217RN3CG 6662|a to the 93.02 level.                                             
+217RN  G 93.02     5 33      3 E2(+M1)                 11.5                 A   
+217RNS G LC=8.44 $ MC=2.27 $ NC+=0.795                                          
+217RN CG           1989Ac01 measured E=93.1 {2}, I{-|g}=24 {I3}; 1961Ru06       
+217RN2CG measured E=89 {I2}, I{-|g}=115 {I16} (presumably includes the          
+217RN3CG Rn K-X rays and the 88.9|g)                                            
+217RN CG M         (L1+L2)/L3= 2.2 {I2} (1989Ac01; not corrected for possible   
+217RN2CG ceK(174|g)contribution on L1 line).                                    
+217RN  L 149.18    8  5/2+             1.5 NS    LE                             
+217RN  A 6607         38     4  3.4    5                                        
+217RN CA           E{-|a}=6613, I{-|a}=34% {I2} were measured by 1961Ru06.      
+217RN  G 56.16     5  2.5    5 (M1)                                         L   
+217RN2 G FL=93.02                                                               
+217RN CG           E=56.2 {I2}, I{-|g}=3.1 {I4} measured by 1989Ac01.           
+217RN CG CC        total intensity of 56.2-KEV transition should be             
+217RN2CG 11 3 LE TI LE 17 4 from intensity balance at the 149-KEV level by      
+217RN3CG considering the possibility of some population from higher levels.     
+217RN4CG The total conversion coefficient is, then, 22 LE CC(56.2G) LE 80.      
+217RN CG           The deduced conversion coefficient implies either M1+E2      
+217RN2CG multipolarity with 0.26<MR<1.2,or E1+M2 with 0.20<MR<0.42.             
+217RN  G 149.2     1 100       E2                      1.614                A   
+217RNS G KC=0.289 $ LC=0.973 $ MC=0.261 $ NC+=0.0913                            
+217RN CG           1989Ac01 measured E=149.0 {1}, 1961Ru06 measured E=152 {I2}. 
+217RN CG M         (L1+L2)/L3=1.79 {I9} (1989Ac01).                             
+217RN  L 174.3     1 (7/2,9/2,11/2)+   1.5 NS    LE                             
+217RN  A 6579        5.6     24 19     10                                       
+217RN CA           E{-|a}=6591, I{-|a}=8% {I1} were listed by 1961Ru06.         
+217RN2CA The level energy of 174.3 and E{-|a} to g.s. of 6754 give E{-|a}=6583. 
+217RN  G 81.3                                                                  S
+217RN2 G FL=93.02                                                               
+217RN CG           This transition was not observed. It would be obscured by    
+217RN2CG the K-X rays. It is tentatively proposed by 1997Li12.                  
+217RN  G 85.4      3 0.15    5                                                  
+217RN2 G FL=88.90                                                               
+217RN  G 174.3     1 17      2  M1                     2.85                 L   
+217RN CG           E=174.1 {2}, I{-|g}=18 {I2} measured by 1989Ac01;            
+217RN2CG E=176 {I2}, I{-|g}=15 {I4} by 1961Ru06.                                
+217RN CG           CC(M1)=2.85, CC(E1)=0.1217, CC(E2)=0.886. If there is no     
+217RN2CG other low-energy transition deexciting the 174.1-KEV level, the        
+217RN3CG intensity balance at that level suggests CC GT 2.6, implying M1        
+217RN4CG multipolarity for the 174.1-KEV transition.                            
+217RN  L 184       3                                                           ?
+217RN  A 6581         3      1 32      11                                      ?
+217RN CA E         from 1961Ru06. The author listed the level energy as 184 KEV.
+217RN2CA This level energy and author's E{-|a}(to g.s.) of 6761 give            
+217RN3CA E{-|a}=6573. This alpha was not observed by others. For this reason,   
+217RN4CA its existence is questioned here, and it is not shown in the "Adopted  
+217RN5CA Levels" section.                                                       
+217RN CA IA        intensity was measured by 1961Ru06. If this alpha indeed     
+217RN2CA belongs to {+221}Ra decay, the intensities of other alpha transitions  
+217RN3CA will have to be decreased by a factor of 0.97, so that the sum of all  
+217RN4CA I{-|a}'s will be 100%.                                                 
+217RN  L 235.2     6 (3/2+)                                                     
+217RN  A 6526         0.3       200                                             
+217RN  G 86.0      5 0.04    2                                                  
+217RN  L 295                                                                   ?
+217RN  A 6463      12 0.05   AP 700    AP                                      ?
+217RN CA           E{-|a}=6470, I{-|a}=0.4% {I3} were measured by 1961Ru06.     
+217RN2CA This alpha was tentatively assigned by 1961Ru06 and by 1997Li12.       
+217RN  L 375.0     3 (3/2+)                                                     
+217RN  A 6390        0.1     AP 160    AP                                       
+217RN CA           E{-|a}=6410, I{-|a}=0.3% {I2}, measured by 1961Ru06, is      
+217RN2CA assumed to be the 6390|a observed by 1997Li12. The level energy was    
+217RN3CA listed by 1961Ru06 to be 0.36 MeV; this level energy and the author's  
+217RN4CA E{-|a} (to g.s.)=6761 give E{-|a}=6400. This alpha was tentatively     
+217RN5CA assigned by 1961Ru06 to this decay.                                    
+217RN CA IA        0.3% {I2} was measured by 1961Ru06.                          
+217RN  G 140.3     3 0.04    2                                                  
+217RN  G 225.7     2 0.2     1                                                  
+217RN  L 382.2     3 (7/2)                                                      
+217RN  A 6382        0.4       40                                               
+217RN  G 207.9     2 0.6     2                                                  
+217RN  G 232.9     3 0.2     1                                                  
+217RN  G 289.1     3 0.7     2                                                  
+217RN  G 382.2     3 0.3     1                                                  
+217RN  L 474.5     4 (7/2,11/2)                                                 
+217RN  A 6287        0.05    AP 120    AP                                       
+217RN  G 474.5     4 0.35    12                                                 
+217RN  L 500       10                                                          ?
+217RN  A 6260                                                                  ?
+217RN CA E         from 1961Ru06. From the level energy of 500 KEV, listed by   
+217RN2CA 1961Ru06, and the author's E{-|a} (to g.s.)=6761, E=6270 is calculated.
+217RN3CA This tentatively assigned alpha was not confirmed by others;           
+217RN4CA therefore, it is considered questionable.                              
+217RN CA           IA=0.7% {I3} was measured by 1961Ru06.                       
+217RN  L 569.6     3 (5/2,7/2)                                                  
+217RN  A 6195        0.2        12                                              
+217RN  G 395.2     3 0.3     1                                                  
+217RN  G 420.6     2 0.7     2                                                  
+217RN  G 476.5     4 0.40    15                                                 
+217RN  L 600       10                                                          ?
+217RN  A 6170                                                                  ?
+217RN CA E         from 1961Ru06. The level energy of 600 KEV, listed by        
+217RN2CA 1961Ru06, and the author's E{-|a} (to g.s.)=6761 yield E{-|a}=6172.    
+217RN3CA This alpha was not confirmed by others; therefore, it is considered    
+217RN4CA questionable.                                                          
+217RN CA           IA=0.3% {I2} was measured by 1961Ru06.                       
+217RN  L 618.9     5 (5/2,7/2)                                                  
+217RN  A 6147        0.05    AP 30     AP                                       
+217RN  G 444.3     5 0.2     1                                                  
+217RN  G 469.7     5 0.15    6                                                  
+217RN  G 525.8     4 0.15    5                                                  
+                                                                                
+217FR    ADOPTED LEVELS, GAMMAS                                  03NDS    200309
+217FR  H TYP=FMT$AUT=J. Tuli$DAT=22-APR-2005$COM=Fixed Fmt/Typo$                
+217FR  H TYP=ERR$AUT=F. Chukreev$DAT=25-Oct-2004$COM=Corrected typo in key no.$ 
+217FR  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217FR  Q -1573     116728    8 3227    9 8469    5     2012WA38                 
+217FR CQ Note: Current evaluation has used the following Q record               
+217FR  Q -1574     12   6741 14   3229 10   8469 5     1995AU04                 
+217FR C  Assignment: daughter of {+221}Ac (1951Ke53,1968Ha14,1970Bo13).         
+217FR C                                                                         
+217FR C  Theoretical studies:                                                   
+217FR C  Level energies of vibrational-rotational bands with positive and       
+217FR2C  negative parities were calculated by 1995De13 for a soft potential     
+217FR3C  with quadrupole and octupole equilibrium deformations; results were    
+217FR4C  compared with experiments.                                             
+217FR C  The experimental and theoretical evidence for intrinsic                
+217FR2C  reflection-asymmetric shapes were reviewed; the theoretical methods    
+217FR3C  were discussed by 1996Bu45. See 1987Sh24 for a study of static         
+217FR4C  quadrupole-octupole deformation in the region.                         
+217FR C  Level densities were calculated by 1997PaZZ.                           
+217FR C                                                                         
+217FR CG E,M       From {+210}Pb(11B,4n) reaction |g's.                         
+217FR CL J         JPI's for excited states are adopted from 210PB(11B,4NG)     
+217FR2CL data in 1988Ai02; they are based on GAMMA-angular distributions and    
+217FR3CL directional correlations. See (11B,4NG) data set.                      
+217FR CL BAND(A)   GS BAND.                                                     
+217FR CL BAND(B)   PI=+ BAND, POSSIBLY PARITY DOUBLET OF THE GS BAND.           
+217FR CL BAND(C)   PI=(+) BAND?                                                 
+217FR  XA221AC A DECAY                                                          
+217FR  XI210PB(11B,4NG)                                                         
+217FR  L 0.0          9/2-             19 US     3                          A   
+217FR2 L XREF=AI                                                                
+217FR3 L %A=100                                                                 
+217FR CL           Only A DECAY observed.                                       
+217FR CL           Possible EC decay branching to 217RN g.s. is expected to be  
+217FR2CL <2.8E-7%, calculated from LOGFT>5.1 for a first-forbidden              
+217FR3CL transition.                                                            
+217FR CL           For theoretical calculations of partial half-life for 8BE    
+217FR2CL emission, see 1986Ir01 and 1986Pi11.                                   
+217FR CL J         favored A DECAY to 9/2- 213AT g.s.                           
+217FR CL T         the measured half-lives are 22 US {I5} (1970Bo13),           
+217FR2CL 16 US {I2} (1990An19,1993AnZS), 15 US {I3} (1990AnZU). The unweighted  
+217FR3CL average of T's given in the published papers, 1970Bo13 and 1990An19,   
+217FR4CL is adopted.                                                            
+217FR DL           No spectrum was shown in 1990An19 and 1993AnZS. Therefore,   
+217FR2DL one can not judge the how clean their spectrum was and how much        
+217FR3DL statistics they had, although the authors give rather small            
+217FR4DL uncertainty. The weighted average is 17 US {I}2.                       
+217FR  L 209       20                                                           
+217FR2 L XREF=A                                                                 
+217FR  L 275       15                                                           
+217FR2 L XREF=A                                                                 
+217FR  L 363.6     3  13/2-                                                 A   
+217FR CL           Level energy could be 340.6, if the ordering of the 340.6    
+217FR2CL and 363.6 G's should be reversed.                                      
+217FR2 L XREF=I                                                                 
+217FR  G 363.6     3           E2                                               
+217FR  L 484       15                                                           
+217FR2 L XREF=A                                                                 
+217FR  L 704.2     5  17/2-                                                 A   
+217FR2 L XREF=I                                                                 
+217FR  G 340.6     3           E2                                               
+217FR  L 1077.0    6  21/2-                                                 A   
+217FR2 L XREF=I                                                                 
+217FR  G 372.8     3                                                            
+217FR  L 1256.1    6                                                        C   
+217FR2 L XREF=I                                                                 
+217FR  G 179.1     3                                                            
+217FR  L 1355.0    6 23/2+                                                  B   
+217FR2 L XREF=I                                                                 
+217FR  G 278.0     3           E1                                               
+217FR  L 1509.7    6 25/2-                                                  A   
+217FR2 L XREF=I                                                                 
+217FR  G 154.4     3           E1                                               
+217FR  G 432.8     3           E2                                               
+217FR  L 1688.9    7 (+)                                                    C   
+217FR2 L XREF=I                                                                 
+217FR  G 334.0     3                                                            
+217FR  G 432.6     3           (E2)                                             
+217FR  L 1713.8    7 27/2+                                                  B   
+217FR2 L XREF=I                                                                 
+217FR  G 204.0     3                                                            
+217FR  G 358.8     4           E2                                               
+217FR  L 1988.5    7 29/2-                                                  A   
+217FR2 L XREF=I                                                                 
+217FR  G 274.7     3                                                            
+217FR  G 478.8                 E2                                               
+217FR  L 2111.1    8 31/2+                                                  B   
+217FR2 L XREF=I                                                                 
+217FR  G 122.5     3                                                            
+217FR  G 397.4     3           E2                                               
+217FR  L 2154.5    8                                                        C   
+217FR2 L XREF=I                                                                 
+217FR  G 465.6     3                                                            
+217FR  L 2516.5    9 (35/2+)                                                B   
+217FR2 L XREF=I                                                                 
+217FR  G 405.4     3                                                            
+217FR  L 2582.0    9                                                        C   
+217FR2 L XREF=I                                                                 
+217FR  G 427.5     3           E2                                               
+217FR  L 2618      9                                                           ?
+217FR2 L XREF=I                                                                 
+217FR  G 507.0     3                                                            
+217FR  L 3002.3    9 (39/2+)                                                B   
+217FR2 L XREF=I                                                                 
+217FR  G 485.8     3           E2                                               
+                                                                                
+217FR    221AC A DECAY                                           03NDS    200309
+217FR  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217FR CA E         From energies listed by 1968Ha14, 1970Bo13, 1988Hu08         
+217FR2CA and 1993AnZS. Other measurement: 1951Ke53.                             
+217FR CA IA        Alpha intensity per 100 {+221}Ac |a decays, adopted from     
+217FR2CA intensities measured by 1970Bo13, 1988Hu08 and 1993AnZS. The           
+217FR3CA intensities of 1970Bo13 and 1988Hu08 are re-normalized by the          
+217FR4CA evaluator so that the sum of their listed I{-|a}'s plus                
+217FR5CA I{-|a}(7170|a)=2.4 {I1} is 100%. Other measurements: 1968Ha14.         
+217FR CA HF        r{-0}({+217}Fr)=1.547 12, average of                         
+217FR2CA r{-0}({+220}Ra)=1.556 8 and r{-0}({+222}Th)=1.539 8 (1987Ak04),        
+217FR3CA is used in calculations.                                               
+217FR CL E         Excited-state energies are calculated from E(|a)'s.          
+221AC  P  0.0                            52 MS   2               7783     50    
+217FR  N                       1.0                                              
+217FR  L  0.0        9/2-              22 US     5                              
+217FR  A  7645     10 68     5 6.3     11                                       
+217FR CA E         the measured energies are 7630 {I20} (1968Ha14),             
+217FR2CA 7641 {I5} (1988Hu08), 7645 {I10} (1970Bo13),                           
+217FR3CA 7650 15 {I15} (1990AnZU,1993AnZS).                                     
+217FR CA IA        the measured intensities are 69 {I10} (1970Bo13),            
+217FR2CA 72 {I4} (1988Hu08), 63 {I7} (1990AnZU,1993AnZS).                       
+217FR  L 209       20                                                           
+217FR  A 7440      15 21     5  4.3    13                                       
+217FR CA E         measured energies: 7420 20 (1968Ha14), 7440 {I15} (1970Bo13),
+217FR2CA 7437 {I5} (1988Hu08), 7440 {I15} (1990AnZU,1993AnZS).                  
+217FR CA IA        the measured intensities are 20 {I5} (1970Bo13),             
+217FR2CA 20 {I2} (1988Hu08), 23 {I4} (1990AnZU,1993AnZS).                       
+217FR  L 273       15                                                           
+217FR  A 7377      10 9      2 6.2     17                                       
+217FR CA E         measured energies are 7375 {I10} (1970Bo13),                 
+217FR2CA 7373 {I5} (1988Hu08), 7380 {I15} (1990AnZU,1993AnZS).                  
+217FR CA IA        the measured intensities are 10 {I5} (1970Bo13),             
+217FR2CA 6 {I1} (1988Hu08), 11 {I2} (1990AnZU,1993AnZS).                        
+217FR  L 484       15                                                           
+217FR  A 7170      10  2.4   10 4.4    20                                       
+217FR CA E         measured energies are 7170 {I10} (1970Bo13),                 
+217FR2CA 7170 {I15} (1990AnZU,1993AnZS).                                        
+217FR CA IA        the measured intensities are AP 2 (1970Bo13), 2.4 {I10}      
+217FR2CA (1990AnZU,1993AnZS).                                                   
+                                                                                
+217FR    210PB(11B,4NG)                1988AI02                  03NDS    200309
+217FR  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217FR C  E(11B)=52-68 MEV                                                       
+217FR C  Gamma excitation function, angular distribution and |g|g               
+217FR2C  coincidences were measured. Assignments of gammas to {+217}Fr were     
+217FR3C  based on coincidences with the francium X-RAYS and on the excitation   
+217FR4C  functions, as well as on comparison of the spectra taken with          
+217FR5C  different folds, that is with fold GE 1 and with fold GE 2 (1988Ai02). 
+217FR C  From the similarity of alternating parity bands in {+217}Fr and        
+217FR2C  {+218}Fr and from deduced large B(E1)/B(E2) ratios for transitions     
+217FR3C  deexciting several states in {+217}Fr, 1988Ai02 proposed that {+217}Fr 
+217FR4C  has octupole deformation. From a comparison of these two opposite      
+217FR5C  parity bands with those in {+218}Ra, 1988Ai02 suggests that {+217}Fr   
+217FR6C  is a "borderline" nucleus where the onset of static intrinsic          
+217FR7C  reflection asymmetric shape takes place.                               
+217FR CG E         Measurements of 1988Ai02.                                    
+217FR CG M         Multipolarities were deduced by 1988Ai02 from gamma-ray      
+217FR2CG angular distributions and angular correlations.                        
+217FR3CG Since no delay component was observed in |g|g(t), M2 multipolarities   
+217FR4CG were ruled out for quadrupole transitions; intensity balances          
+217FR5CG were utilized to differentiate the E1 transitions from possible M1     
+217FR6CG multipolarities.                                                       
+217FR CL J         Assignments made by 1988Ai02. They are based on the          
+217FR2CL angular-distribution measurements by assuming that the transitions are 
+217FR3CL stretched, and on the gamma-directional correlation ratios.            
+217FR4CL Relative photon intensities as a function of 11B beam energy           
+217FR5CL also yield additional information on the spins. See "Adopted Levels"   
+217FR6CL data set for the adopted JPI's.                                        
+217FR CL BAND(A)   GS BAND.                                                     
+217FR CL BAND(B)   POSITIVE PARITY BAND.                                        
+217FR CL BAND(C)   PROBABLE POSITIVE BAND.                                      
+217FR  L 0.0         9/2-                                                   A   
+217FR  L 363.6     3 13/2-                                                  A   
+217FR CL E         the ordering of the 363.6|g and 340.6|g transitions is       
+217FR2CL uncertain (1988Ai02). The 13/2- level energy, therefore, could be      
+217FR3CL 340.6 KEV.                                                             
+217FR  G 363.6     3           E2                                               
+217FR CG           Although analysis of the relative excitation functions       
+217FR2CG suggests that the 363.6|g goes to the g.s., the 364-KEV peak included  
+217FR3CG a |g belonging to {+218}Fr, and therefore, the excitation function     
+217FR4CG analysis was unreliable for the relative placements of the             
+217FR5CG 340.6- and 363.6-KEV gamma transitions (1988Ai02).                     
+217FR  L 704.2     5 17/2-                                                  A   
+217FR  G 340.6     3           E2                                               
+217FR  L 1077.0    6 21/2-                                                  A   
+217FR  G 372.8     3           E2                                               
+217FR  L 1256.1    6                                                        C   
+217FR CL J         21/2+, 23/2+ was suggested by 1988Ai02 from 179.1G to 21/2-  
+217FR2CL  and nonobservation of any transition to the 17/2- state of the g.s.   
+217FR3CL band.                                                                  
+217FR  G 179.1     3                                                            
+217FR  L 1355.0    6 23/2+                                                  B   
+217FR  G 278.0     3           E1                                               
+217FR  L 1509.7    6 25/2-                                                  A   
+217FR  G 154.4     3           E1                                               
+217FR  G 432.8     3           E2                                               
+217FR  L 1688.9    7 (+)                                                    C   
+217FR  G 334.0     3                                                            
+217FR CG           Directional correlation ratio for the 334.0|g is consistent  
+217FR2CG with a stretched E2 transition; however, M1+E2 multipolarity could not 
+217FR3CG be ruled out (1988Ai02).                                               
+217FR  G 432.6     3           E2                                               
+217FR  L 1713.8    7 27/2+                                                  B   
+217FR  G 204.0     3                                                            
+217FR  G 358.8     4           E2                                               
+217FR  L 1988.5    7 29/2-                                                  A   
+217FR  G 274.7     3                                                            
+217FR  G 478.8                 E2                                               
+217FR  L 2111.1    8 31/2+                                                  B   
+217FR  G 122.5     3                                                            
+217FR  G 397.4     3           E2                                               
+217FR  L 2154.5    8                                                        C   
+217FR  G 465.6     3                                                            
+217FR  L 2516.5    9 (35/2+)                                                B   
+217FR  G 405.4     3                                                            
+217FR  L 2582.0    9                                                        C   
+217FR  G 427.5     3           E2                                               
+217FR  L 2618      9                                                           ?
+217FR  G 507.0     3                                                            
+217FR  L 3002.3    9 (39/2+)                                                B   
+217FR  G 485.8     3           E2                                               
+                                                                                
+217RA    ADOPTED LEVELS, GAMMAS                                  03NDS    200309
+217RA  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217RA  Q -2816     155475    124373    109161    7     2012WA38                 
+217RA CQ Note: Current evaluation has used the following Q record               
+217RA  Q -2819     16   5475 13   4384 16   9161 7     1995AU04                 
+217RA C  Assignment: {+208}Pb({+12}C,xn) excit (1961Gr43);                      
+217RA2C  daughter of 221TH (1970To07,1970Va13).                                 
+217RA C                                                                         
+217RA C  Theoretical studies:                                                   
+217RA C  Level energies of even- and odd-parity vibrational bands, and          
+217RA2C  the B(E1)/B(E2) ratios of dipole and quadrupole transitions were       
+217RA3C  calculated by 1993De18 by taking into account octupole, as well as     
+217RA4C  quadrupole deformation of the nuclear potential, and compared with     
+217RA5C  experimental values. See also 1989De11 for calculations of E1          
+217RA6C  transition rates.                                                      
+217RA C  The experimental and theoretical evidences for intrinsic               
+217RA2C  reflection-asymmetric shapes were reviewed; the theoretical methods    
+217RA3C  were discussed by 1996Bu45. See 1987Sh24 for a study of static         
+217RA4C  quadrupole-octupole deformation in the region.                         
+217RA C  Alpha-decay probabilities were calculated by 1973Ma52.                 
+217RA C                                                                         
+217RA CG           See 1989De11 for theoretical calculations of B(E1)/B(E2)     
+217RA2CG transition-rate ratio and comparison with experimental value.          
+217RA CG E,M       All |g properties are from {+208}Pb(HI,xn) reaction gammas.  
+217RA CG RI        Relative photon intensity deexciting a level, normalized to  
+217RA2CG 100 for the strongest one.                                             
+217RA CL J         From G(THETA) measurements and |g multipolarities            
+217RA2CL deduced in (HI,xn|g), except where noted.                              
+217RA CL T         Half-lives for all excited states are from (HI,xn|g)         
+217RA2CL reaction data.                                                         
+217RA CL BAND(A)   CONF=(N,G9/2,+3)                                             
+217RA CL BAND(B)   CONF=((N,G9/2,+2)(N,I11/2))                                  
+217RA CL           The configuration was assigned by 1984Ro20 and 1984Su10 as   
+217RA2CL being the main component of the state.                                 
+217RA CL BAND(D)   CONF=((N,G9/2,+2)(N,J15/2))                                  
+217RA CL           Admixture of collective octupole excitation,                 
+217RA2CL CONF=(N,G9/2,3,3-), to states with JPI LE 27/2- was deduced by         
+217RA3CL 1984Ro20 and 1984Su10 from enhanced E1 transitions.                    
+217RA CL BAND(E)   CONF=((N,I11/2,+2)(N,G9/2))                                  
+217RA CL           The configuration was proposed by 1984Ro20.                  
+217RA CL J(G)      1984Ro20 SUGGEST THAT THESE STATES MAY HAVE TWO NU J15/2     
+217RA2CL and/or some proton excitations. The isomeric state is suggested to     
+217RA3CL include large amount of "((NU i{-11/2}{++2})10+(NU g{-9/2}))29/2+      
+217RA4CL coupled to 2+ state of {+214}Ra" configuration. No definite            
+217RA5CL assignment could be made.                                              
+217RA  XA221TH A DECAY                                                          
+217RA  XH(HI,XNG)                                                               
+217RA  L 0.0          (9/2+)           1.6 US    2                          A   
+217RAX L XREF=AH                                                                
+217RA2 L %A AP 100                                                              
+217RA CL           Only |a decay observed. Other decay modes are expected to    
+217RA2CL be small.                                                              
+217RA CL           Assumption of LOGFT>5.1 for possible EC decays to known      
+217RA2CL levels in {+217}Fr yields %EC<1E-6.                                    
+217RA CL           Theoretical calculations by 1997Mo25 give T(|b)/T(|a)=       
+217RA2CL >100 s/2.3 s.                                                          
+217RA CL           See 1984Po11 for theoretical calculation of {+5}He emission  
+217RA2CL rate.                                                                  
+217RA CL J         favored |a decay to (9/2+) {+213}Rn g.s.                     
+217RA CL T         from 1970Va13. Other measured values: 4 US {I2} (1970To07),  
+217RA2CL 1.7 US {I3} (1990An19), 1.7 us {I1} (1990ANZU).                        
+217RA  L 330.8     2 (11/2+)                                                B   
+217RAX L XREF=AH                                                                
+217RA  G 330.8     2           M1+E2                   0.34   23                
+217RA  L 539.6     2 (13/2+)                                                A   
+217RAX L XREF=H                                                                 
+217RA  G 539.6     2           E2                      0.027                    
+217RA  L 666.2     3 (15/2-)                                                D   
+217RAX L XREF=H                                                                 
+217RA  G 126.6     2           E1                      0.275                    
+217RA  L 754       12(7/2+)                                                     
+217RAX L XREF=A                                                                 
+217RA CL J         favored |a decay from (7/2+) {+221}Th g.s.                   
+217RA  L 931.1     3 (15/2+)                                                B   
+217RAX L XREF=H                                                                 
+217RA  G 391.2       WEAK                                                       
+217RA  G 600.3     2 100       E2                      0.0257                   
+217RA  L 1001.9    3 (17/2+)                                                A   
+217RAX L XREF=H                                                                 
+217RA  G 335.7     2 100                                                        
+217RA  G 462.3     2 74        E2                      0.074                    
+217RA  L 1050.2    6                                                            
+217RAX L XREF=H                                                                 
+217RA  G 119.1     5                                                            
+217RA  L 1173.0    4 (19/2-)                                                D   
+217RAX L XREF=H                                                                 
+217RA  G 171.1     5 39        E1                      0.1327                   
+217RA  G 506.8     2 100       E2                      0.0378                   
+217RA  L 1337.5    4 (19/2+)                                                B   
+217RAX L XREF=H                                                                 
+217RA  G 287.3     5 8                                                          
+217RA  G 335.6     5 19                                                         
+217RA  G 406.4     2 100       E2                      0.0658                   
+217RA  L 1415.7    8                                                           ?
+217RAX L XREF=H                                                                 
+217RA  G 365.5     5                                                            
+217RA  L 1454.4    4 (21/2+)                                                A   
+217RAX L XREF=H                                                                 
+217RA  G 281.4     2 100       E1                      0.0409                   
+217RA  G 452.5     2 97        E2                      0.0500               *   
+217RA  L 1611.2    7 (23/2-)                                                D   
+217RAX L XREF=H                                                                 
+217RA  G 156.8     5 35        E1                      0.1639                   
+217RA  G 438.2     5 100       E2                      0.0542               *   
+217RA  L 1667.5    4 (23/2+)                                                B   
+217RAX L XREF=H                                                                 
+217RA  G 213.0     5 37        M1                      1.932                    
+217RA  G 330.0     2 100       (E2)                    0.1167                   
+217RA  L 1896.4    5 (27/2+)           0.29 NS   14                         B   
+217RAX L XREF=H                                                                 
+217RA  G 228.9     2           E2                      0.371                    
+217RA  L 1971                                                                  ?
+217RAX L XREF=H                                                                 
+217RA  G 360.1                                                              *  ?
+217RA  L 2029.7    8 (27/2-)                                                D   
+217RAX L XREF=H                                                                 
+217RA  G 418.5     5           E2                      0.0609                   
+217RA  L 2301.1    5 (29/2+)            0.30 NS  14                         E   
+217RAX L XREF=H                                                                 
+217RA  G 404.7     2           M1+E2                   0.20   13                
+217RA  L 2305                                                                  ?
+217RAX L XREF=H                                                                 
+217RA  G 275                                                                    
+217RA  L 2393.6    7 (33/2+)            4.62 NS  6                          E   
+217RAX L XREF=H                                                                 
+217RA  G 92.5      5           E2                      14.02                    
+217RAB G BE2W=14.4 11                                                           
+217RA  L 2521.3    10 (31/2-)                                               D   
+217RAX L XREF=H                                                                 
+217RA  G 491.6     5                                                            
+217RA  L 2740      2                                                           ?
+217RAX L XREF=H                                                                 
+217RA  G 438.2                                                              *  ?
+217RA  L 2802.4    8 (33/2+)                                                    
+217RAX L XREF=H                                                                 
+217RA  G 501.3     5           E2                      0.0388                   
+217RA  L 2830      2 (33/2+)                                                    
+217RAX L XREF=H                                                                 
+217RA  G 437                                                                    
+217RA  G 528.6                                                                  
+217RA  L 3132.4    9 (35/2-)                                                    
+217RAX L XREF=H                                                                 
+217RA  G 738.8     5                                                            
+217RA  L 3256      2                                                           ?
+217RAX L XREF=H                                                                 
+217RA  G 425.8     5                                                            
+217RA  G 452.5                                                              *  ?
+217RA  L 3257.6    8  (37/2+)                                               G   
+217RAX L XREF=H                                                                 
+217RA  G 125.4     5                                                            
+217RA  G 516.9                                                                  
+217RA  G 864.0     2           E2                      0.0121                   
+217RA  L 3506.4    9 (39/2-)                                                    
+217RAX L XREF=H                                                                 
+217RA  G 248.6     5 100                                                        
+217RAF G FL=3257.6                                                              
+217RA  G 374.0     5 25        E2                      0.0821                   
+217RA  L 3600                                                                  ?
+217RAX L XREF=H                                                                 
+217RA  G 344                                                                   ?
+217RAF G FL=3256                                                                
+217RA  L 3605                                                                  ?
+217RAX L XREF=H                                                                 
+217RA  G 349                                                                   ?
+217RAF G FL=3256                                                                
+217RA  L 3628.9    8 (41/2+)                                                G   
+217RAX L XREF=H                                                                 
+217RA  G 122.7     5 28                                                         
+217RA  G 371.3     2 100       E2                      0.0838                   
+217RAF G FL=3257.6                                                              
+217RA  L 3825.5    10 (45/2+)           1.49 NS  7                          G   
+217RAX L XREF=H                                                                 
+217RA  G 196.6     5           E2                      0.635                    
+217RA  L 4185.6    10 (47/2-)                                                   
+217RAX L XREF=H                                                                 
+217RA  G 360.1     2                                                            
+217RA  L 4327                                                                  ?
+217RAX L XREF=H                                                                 
+217RA  G 141.7                                                                  
+217RA  L 4823                                                                  ?
+217RAX L XREF=H                                                                 
+217RA  G 495.4     5                                                            
+217RA  L 5000                                                                  ?
+217RAX L XREF=H                                                                 
+217RA  G 176.7     5                                                            
+                                                                                
+217RA    221TH A DECAY                                           03NDS    200309
+217RA  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217RA C  The adopted half-life of the parent {+221}Th is the weighted           
+217RA2C  average of 1.68 ms {I6}, 1.8 ms {I3}, 1.9 ms {I1},                     
+217RA3C  2.0 ms +3-2 and 1.73 ms {I3}, measured by 1970TO07, 1970VA13,          
+217RA4C  1993ANZS, 2000HE17 and 2001KO07, respectively.                         
+217RA C  Q{-|a}({+221}Th)=8628 {I5} is from the mass adjustments of 1995Au04;   
+217RA2C  E{-|a}=8470 {I5} gives QA=8626 {I5}.                                   
+217RA DA           From the masses listed at http://csnwww.in2p3.fr/amdc/,      
+217RA2DA QA=8627 14.                                                            
+217RA CA E         From measured energies, as listed for each alpha. Two        
+217RA2CA additional alpha groups, 8265 {I10} and 8375 {I10} |a's, were listed   
+217RA3CA by 1990An19, and one additional 8375 {I15} |a was listed by 1993AnZS.  
+217RA4CA These |a's are not given here because their assignments have not been  
+217RA5CA confirmed in later works.                                              
+217RA CA IA        Unweighted average of intensities measured by 1970Va13,      
+217RA2CA 1970To07 and 2000He17. Relative intensities quoted here are            
+217RA3CA normalized such that the sum of alpha intensities is 100%. The         
+217RA4CA intensities given by 1990An19 and additional 1993AnZS are              
+217RA5CA re-normalized by the evaluator by excluding the |a's seen only by      
+217RA6CA them. Note that I{-|a}'s of 1970Va13 quoted here are those given in    
+217RA7CA their paper as their best values, and they are slightly different      
+217RA8CA than those listed in their Table IV.                                   
+217RA CA HF        r{-0}({+217}Ra)=1.553 12, average of                         
+217RA2CA r{-0}({+216}Ra)=1.1.566 9 and r{-0}({+218}Ra)=1.539 8 (1998Ak04),      
+217RA3CA is used in calculations.                                               
+217RA CL E         From |a energies.                                            
+217RA CL J         Adopted values                                               
+221TH  P  0.0        (7/2+)              1.73 MS 3               8628     5     
+217RA  N                       1.0                                              
+217RA  L  0.0        (9/2+)            1.6 US    2                              
+217RA  A  8470     5  39     5  51     7                                        
+217RA CA E         measured energies are 8470 {I8} (1970Va13), 8472 {I5}        
+217RA2CA (1970To07), 8470 {I10} (1990An19,1993AnZS), 8469 {I10} (2000He17;      
+217RA3CA the listed energy of 8649 is assumed to be a typing error),            
+217RA4CA 8469 {I4} (2001Ku07).                                                  
+217RA CA IA        measured relative intensities are: 31.6 (1970To07),          
+217RA2CA 39 {I2} (1970Va13), 31 (1990An19), 37 {I5} (1993AnZS),                 
+217RA3CA 48 {I9} (2000He17), 21 (2001Ku07).                                     
+217RA DA IA        1970Va13                                                     
+217RA  L 332       5 (11/2+)                                                    
+217RA CL E         330.8 {I2} from (HI,xn|g) data.                              
+217RA  A 8145      5  56     5  4.2    5                                        
+217RA CA E         measured energies: 8145 10 (1970Va13), 8146 {I5} (1970To07), 
+217RA2CA 8150 {I10} (1990An19,1993AnZS), 8135 {I10} (2000He17),                 
+217RA3CA 8142 {I3} (2001Ku07).                                                  
+217RA CA IA        measured intensities: 62.4 (1970To07), 56 {I3} (1970Va13),   
+217RA2CA 62 (1990An19), 57 {I6} (1993AnZS),                                     
+217RA3CA 48 {I9} (2000He17), 72 (2001Ku07).                                     
+217RA  L 754       12 (7/2+)                                                    
+217RA  A 7730      10 5      2 2.6     11                                       
+217RA CA E         measured energies: 7725 10 (1970Va13), 7733 {I8} (1970To07), 
+217RA2CA 7730 {I10} (1990An19,1993AnZS), 7732 {I15} (2000He17),                 
+217RA3CA 7732 {I4} (2001Ku07).                                                  
+217RA CA IA        measured intensities: 6.0 (1970To07), 6 {I1} (1970Va13),     
+217RA2CA 7 (1990An19), 6 {I2} (1993AnZS),                                       
+217RA3CA 4 {I3} (2000He17), 7 (2001Ku07).                                       
+                                                                                
+217RA    (HI,XNG)                                                03NDS    200309
+217RA  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217RA C  208PB(13C,4NG) E(13C)=75-95 MEV (1983Lo16)                             
+217RA C  208PB(12C,3NG),208PB(13C,4NG) E(12C)=70 MEV,E(13C)=80 MEV (1984Su10)   
+217RA C  208PB(12C,3NG),208PB(13C,4NG) E(12C,13C)=65-84 MEV (1984Ro20)          
+217RA C  208PB(12C,3NG),208PB(13C,4NG) E(12C,13C)=78,80 MEV (1991DR08)          
+217RA C  (G)(G): 1983Lo16, 1984Ro20, 1984Su10.                                  
+217RA C  (RA X-RAYS)(G): 1983Lo16, 1984Su10.                                    
+217RA C  (CE)(CE): 1984Ro20                                                     
+217RA C  G(THETA): 1983Lo16, 1984Ro20, 1984Su10.                                
+217RA C  G(E): 1983Lo16, 1984Ro20, 1984Su10.                                    
+217RA C  (8.99-MEV ALPHA from 1.6 US 217RA)(G): (1984Su10). Coincidence data    
+217RA2C  were used to identify the GAMMA transitions in 217RA.                  
+217RA3C                                                                         
+217RA T  (pulsed {+12}C)(|g)(t),(pulsed {+13}C)(|g)(t): 1983Lo16, 1984Ro20,     
+217RA+T   1984Su10, 1991Dr08.                                                   
+217RA2T                T(27/2+,1896.4 level)=0.29{I14} ns      (1991Dr08).      
+217RA3T                T(29/2+,2301.1 level)=0.30 {I14} ns     (1991Dr08).      
+217RA4T                T(33/2+,2393.6 level)=5.0 {I3} ns       (1984Ro20);      
+217RA5T                                       =4.1 {I3} ns       (1984Su10);    
+217RA6T                                       =4.62 {I6} ns      (1991Dr08).    
+217RA7T                T(45/2+,3825.5 level)=1.49 {I7} ns      (1991Dr08)       
+217RA8T                No other level with T>2 NS           (1984Ro20).         
+217RA9T                                                                         
+217RA T  (|g)(|g)(t):         no isomeric level                   (1983Lo16).   
+217RA2T                                                                         
+217RA C  The level scheme is presented as constructed by 1984Ro20,              
+217RA2C  1984Su10, and 1987SuZY. Some differences between the schemes shown by  
+217RA3C  1984Su10 and 1984Ro20 have been corrected in 1987SuZY, a later report  
+217RA4C  by the authors of 1984Su10. The levels above the 4187-KEV level and    
+217RA5C  levels at 1971, 2305, 2740, 2802, 2830, 3256, 3600, and 3605 KEV were  
+217RA6C  proposed in 1987SuZY.                                                  
+217RA C  The level scheme given by 1983Lo16 disagrees with those of 1984Ro20    
+217RA2C  1984Su10, and 1987SuZY.                                                
+217RA CG E         Measurements of 1984Ro20 are given here. See also 1983Lo16   
+217RA2CG and 1984Su10 for listed gammas.                                        
+217RA CG RI        Relative photon intensities measured by 1984Ro20 in the      
+217RA2CG ({+13}C,4n) reaction at 75 MeV beam energy. DRI's are <10% for         
+217RA3CG  strong lines (1984Ro20). See 1984Ro20 for RI's measured in the        
+217RA4CG ({+12}C,3n) reaction at 67 MEV; for RI's measured in the ({+13}C,4n)   
+217RA5CG reaction at 80 MEV, see 1984Su10, and at 75 MEV, see 1983Lo16.         
+217RA CG M         From GAMMA angular-distribution measurements of 1983Lo16,    
+217RA2CG 1984Ro20, and 1984Su10, and CE data of 1984Ro20. The quadrupole        
+217RA3CG transitions are E2, not M2, because of the short level half-lives.     
+217RA4CG Multipolarities in brackets are inferred from JPI's of levels.         
+217RA CG E(N)      Transition was observed neither by 1983Lo16 nor by 1984Su10. 
+217RA CG E(J)      Transition was observed by 1987SuZY only.                    
+217RA CG E(U)      Transition was not listed by 1983Lo16 and 1984Su10. Its      
+217RA2CG placement on the level scheme was proposed by 1987SuZY.                
+217RA CG RI(C)     From coincidence data (1984Ro20).                            
+217RA CL J         From 1984Ro20, 1984Su10, and 1987SuZY, based on GAMMA-angular
+217RA2CL distributions and GAMMA multipolarities deduced from conversion        
+217RA3CL electron data.                                                         
+217RA CL BAND(A)   CONF=(N,G9/2,+3)                                             
+217RA CL BAND(B)   CONF=((N,G9/2,+2)(N,I11/2))                                  
+217RA CL           The configuration was assigned by 1984Ro20 and 1984Su10 as   
+217RA2CL being the main component of the state.                                 
+217RA CL BAND(D)   CONF=((N,G9/2,+2)(N,J15/2))                                  
+217RA CL           Admixture of collective octupole excitation,                 
+217RA2CL CONF=(N,G9/2,3,3-), to states with JPI LE 27/2- was deduced by         
+217RA3CL 1984Ro20 and 1984Su10 from enhanced E1 transitions.                    
+217RA CL BAND(E)   CONF=((N,I11/2,+2)(N,G9/2))                                  
+217RA CL           The configuration was proposed by 1984Ro20.                  
+217RA CL J(G)      1984Ro20 SUGGEST THAT THESE STATES MAY HAVE TWO J15/2 NEUTRON
+217RA2CL and/or some proton excitations. The isomeric state is suggested to     
+217RA3CL include large amount of ((NU i{-11/2}{++2})10+(NU g{-9/2}))29/2+       
+217RA4CL coupled to 2+ state of 214RA configuration.                            
+217RA5CL No definite assignment could be made.                                  
+217RA CL J(F)      NO CONFIGURATION ASSIGNMENT WAS PROPOSED.                    
+217RA  G 197                                                                   ?
+217RA CG           1984Su10 observed a 197-KEV |g in coincidence with the       
+217RA2CG 197|g, indicating that the 197-KEV peak is a doublet. This component   
+217RA3CG was placed to feed the 13/2+ at 540 KEV from the 15/2+ state which was 
+217RA4CG proposed to be at 737 KEV deexcited by the 600.3|g. These placements   
+217RA5CG would require the 539.6|g to be in coincidence with the 600.3|g. This  
+217RA6CG transition, however, is absent in the authors' spectrum shown as       
+217RA7CG taken in coincidence with the 540|g. In their later work where the     
+217RA8CG placements of 600.3 and 406.4 gammas were corrected,no second 197|g    
+217RA9CG was shown.                                                             
+217RA  L 0.0         9/2+                                                   A   
+217RA  L 330.8     2 11/2+                                                  B   
+217RA  G 330.8     2  26       M1+E2                   0.34   23            C   
+217RA CG M         K/L>2.17 (1984Ro20).                                         
+217RA  L 539.6     2 13/2+                                                  A   
+217RA  G 539.6     2  100      E2                      0.027                    
+217RA  L 666.2     3 15/2-                                                  D   
+217RA  G 126.6     2  57       E1                      0.275                    
+217RA CG M         from intensity balance.                                      
+217RA  L 931.1     3 15/2+                                                  B   
+217RA  G 391.2                                                              J   
+217RA  G 600.3     2  40       E2                      0.0257                   
+217RA  L 1001.9    3 17/2+                                                  A   
+217RA  G 335.7     2 38        [E1]                    0.0275               C   
+217RA  G 462.3     2 28        E2                      0.074                    
+217RA  L 1050.2    6                                                            
+217RA  G 119.1     5 2                                                      N   
+217RA  L 1173.0    4 19/2-                                                  D   
+217RA  G 171.1     5 14        E1                      0.1327                   
+217RA CG M         ELC<0.05 (1984Ro20).                                         
+217RA  G 506.8     2 36        E2                      0.0378                   
+217RA  L 1337.5    4 19/2+                                                  B   
+217RA  G 287.3     5 3                                                          
+217RA CG           No 287-KEV |g was listed by 1983Lo16 and 1984Su10;           
+217RA2CG however, a 297.3-KEV GAMMA was given by 1983Lo16 with I(297G)/I(407G)  
+217RA3CG AP 0.1; it is assumed here, therefore, to be the same transition       
+217RA4CG observed by 1984Ro20 at 287.3 KEV.                                     
+217RA  G 335.6     5 7         [M1+E2]                 0.33   22            C   
+217RA  G 406.4     2 36        E2                      0.0658                   
+217RA  L 1415.7    8                                                            
+217RA  G 365.5     5  2        D                                            N   
+217RA  L 1454.4    4 21/2+                                                  A   
+217RA  G 281.4     2 39        E1                      0.0409                   
+217RA CG M         EKC=0.04 (1984Ro20).                                         
+217RA  G 452.5     2 38        E2                      0.0500               *   
+217RA  L 1611.2    7 23/2-                                                  D   
+217RA  G 156.8     5 6         D                       0.1639                   
+217RA CG M         E1 from level scheme.                                        
+217RA  G 438.2     5 17        E2                      0.0542               *   
+217RA CG           Doublet (1984Su10,1984Ro20). The other component is          
+217RA2CG weak (1984Ro20).                                                       
+217RA  L 1667.5    4 23/2+                                                  B   
+217RA  G 213.0     5 17        M1                      1.932                    
+217RA CG M         K/L=5.5 10,EKC>1.2 (1984Ro20).                               
+217RA  G 330.0     2 46        (E2)                    0.1167               C   
+217RA CG M         EKC>0.13 (1984Ro20).                                         
+217RA  L 1896.4    5 27/2+              0.29 NS  14                         B   
+217RAB L BE2=2257 1075 (1991Dr08)                                               
+217RA  G 228.9     2 77        E2                      0.371                    
+217RA CG M         K/L=0.66 30 (1984Ro20).                                      
+217RA  L 1971                                                                  ?
+217RA  G 360.1                                                              *  ?
+217RA  L 2029.7    8 27/2-                                                  D   
+217RA  G 418.5     5 14        E2                      0.0609                   
+217RA  L 2301.1    5 29/2+              0.30 NS  14                         E   
+217RA  G 404.7     2 99        M1+E2                   0.20   13                
+217RA CG M         EKC=0.07 3 (1984Ro20) suggests E2 multipolarity with         
+217RA2CG M1 admixture. However, the angular distribution implies a dipole       
+217RA3CG nature. The intensity balance at the 1896.4-KEV level is:              
+217RA4CG TI(404.7|g)-TI(228.9|g)=0 16,if 404.7|g is E2; -26 18, if it is M1.    
+217RA5CG 1984Su10's suggested placement of the 228.9 and 404.7 |g's in          
+217RA6CG reversed order, on the other hand, would make the balance at the       
+217RA7CG 1667.5-KEV level worse than it is with the level scheme presented here.
+217RA  L 2305                                                                  ?
+217RA  G 275                                                                J   
+217RA  L 2393.6    7 33/2+              4.62 NS  6                          E   
+217RAB L BE2=1212 15 (1991Dr08)                                                 
+217RA  G 92.5      5 6         E2                      14.02                N   
+217RA CG M         ICE(L3)/ICE(L12)=0.65 10; ECC>8 (1984Ro20).                  
+217RA  L 2521.3    10 (31/2-)                                               D   
+217RA  G 491.6     5  3        [E2]                    0.0408                   
+217RA  L 2740                                                                  ?
+217RA  G 438.2                                                              *  ?
+217RA  L 2802.4    8 (33/2)                                                     
+217RA  G 501.3     5 15        E2                      0.0388                   
+217RA  L 2830      2 (33/2)                                                     
+217RA  G 437         WEAK                                                       
+217RA CG           1984Su10 proposed that this component of the doublet lies    
+217RA2CG above the isomeric level because of an enhancement of the 438-KEV peak 
+217RA3CG in the |g spectrum which was gated on the |g|g-timing spectrum before  
+217RA4CG the prompt peak, that is, the 438-KEV pulses arrived before the other  
+217RA5CG gated |g's.                                                            
+217RA  G 528.6                                                              J   
+217RA  L 3132.4    9 (35/2-)                                                F   
+217RA  G 738.8     5 2                                                          
+217RA  L 3256      2 (37/2)                                                     
+217RA  G 425.8     5                                                        U   
+217RA  G 452.5                                                              *   
+217RA  L 3257.6    8  (37/2+)                                               G   
+217RA  G 125.4     5           [E1]                    0.2818               N   
+217RA  G 516.9                                                              J   
+217RA  G 864.0     2 40        E2                      0.0121                   
+217RA  L 3506.4    9 (39/2-)                                                F   
+217RA  G 248.6     5 8         D                       0.0545                   
+217RAF G FL=3257.6                                                              
+217RA CG CC        if E1.                                                       
+217RA  G 374.0     5 2         E2                      0.0821               N   
+217RA  L 3600                                                                  ?
+217RA  G 344                                                                J  ?
+217RAF G FL=3256                                                                
+217RA  L 3605                                                                  ?
+217RA  G 349                                                                J  ?
+217RAF G FL=3256                                                                
+217RA  L 3628.9    8 (41/2+)                                                G   
+217RA  G 122.7     5 8         [E1]                    0.297                N   
+217RA CG M         E1 from intensity balance.                                   
+217RA  G 371.3     2 29        E2                      0.0838                   
+217RAF G FL=3257.6                                                              
+217RA  L 3825.5    10 (45/2+)           1.49 NS  7                          G   
+217RAB L BE2=791 37 (1991Dr08)                                                  
+217RA  G 196.6     5 18        E2                      0.635                    
+217RA  L 4185.6    10 (47/2)                                                    
+217RA  G 360.1     2 26        D                       0.0236                   
+217RA CG CC        if E1. CC(M1)=0.454 gives TI=38 4 which is larger than       
+217RA2CG TI(196.6)=29 3, deexciting the 3825.5-KEV level. However, this |g      
+217RA3CG was placed by 1987SuZY also to deexcite a level at 1972 KEV to the     
+217RA4CG 23/2- state at 1611.2 KEV.                                             
+217RA  L 4327        (51/2)                                                    ?
+217RA  G 141.7                                                              J   
+217RA  L 4823        (55/2)                                                    ?
+217RA  G 495.4     5  8                                                     U   
+217RA  L 5000                                                                  ?
+217RA  G 176.7     5  3                                                     U   
+                                                                                
+217AC    ADOPTED LEVELS, GAMMAS                                  03NDS    200309
+217AC  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217AC  Q -3514     247512    161877    159832    11    2012WA38                 
+217AC CQ Note: Current evaluation has used the following Q record               
+217AC  Q -3478     32   7502 30   1873 16   9832 10    1995AU04                 
+217AC C  Assignment: {+208}Pb(14N,5n) excit, parent of {+213}Fr (1973No09).     
+217AC CG E,M       From gammas observed in (HI,xn|g) reaction.                  
+217AC CG RI        Relative photon intensity deexciting a level, if more than   
+217AC2CG one GAMMA was observed from it. RI's are from (HI,xn|g) reaction |g's. 
+217AC CL           Levels at 2010 and above the 2013-KEV level proposed by      
+217AC2CL 1982GoZU (unpublished work) in {+209}Bi({+12}C,4n|g) reaction are      
+217AC3CL not included here. See (HI,xn|g) data for these levels.                
+217AC CL T(P)      Deduced by 1985De14 from |g|g-prompt coincidences.           
+217AC  XA221PA A DECAY                                                          
+217AC  XB(HI,XNG)                                                               
+217AC  L 0.0          9/2-             69 NS     4                              
+217AC2 L %A AP 100$ %EC+%B+ LE 2                                                
+217ACX L XREF=AB                                                                
+217AC3 L MOMM1=3.82 5                                                           
+217AC CL           g=0.85 1, deduced by 1985De14 from perturbed ALPHA-angular   
+217AC2CL distribution measurements. See 1985De14 for discussions on probable    
+217AC3CL admixtures to the main (PI h9/2) g.s. configuration, and on the        
+217AC4CL core-polarization effect.                                              
+217AC CL           No |a's from {+217}RA or its descendants were observed       
+217AC2CL by 1976No09; upper limit for EC+B+ decay was set as 2%.                
+217AC3CL T(EC+B+) AP 1000 sec from gross B decay theory calculations            
+217AC4CL of 1973Ta30. Therefore, prediction for EC+B+ decay branch is           
+217AC5CL AP 6.9E-9%. See 1984Po11 for theoretical calculations of 5HE emission  
+217AC6CL probability.                                                           
+217AC CL J         favored A DECAY to 9/2- 213FR g.s. CONF=(P,H9/2).            
+217AC CL T         measurement of 1985De14. Other measurement: 111 NS 7         
+217AC2CL (1973No09), 75 NS 3 (1982GoZU).                                        
+217AC  L 660.3     5 13/2-                                                      
+217ACX L XREF=B                                                                 
+217AC CL J         660.3G to 9/2- is E2; GAMMA angular distribution in (HI,XNG);
+217AC2CL systematics of 13/2- states and shell model suggest                    
+217AC3CL CONF=((216RA 2+)(P,H9/2)).                                             
+217AC  G 660.3                  E2                     0.02207                  
+217AC  L 670.1     5 11/2-                                                      
+217ACX L XREF=B                                                                 
+217AC CL J         670.1G to 9/2- is M1+E2; GAMMA(THETA) in (HI,XNG);           
+217AC2CL systematics of 11/2- states and shell model suggest                    
+217AC3CL CONF=((216RA 2+)(P,H9/2)).                                             
+217AC  G 670.1                 M1+E2                   0.058  37                
+217AC  L 1146.7    8 17/2-                                                      
+217ACX L XREF=B                                                                 
+217AC2 L %IT GE 99.7 $ %A LE 0.34 7                                             
+217AC CL           An observed 10.78-MEV ALPHA was interpreted by 1985De14 as   
+217AC2CL decaying to the 213FR g.s. from doublet levels at 1.15 MEV, based on   
+217AC3CL the ALPHA energy only. Because of large uncertainties, intensity       
+217AC4CL imbalances at the 1146.7- and 1149.2-KEV levels do not                 
+217AC5CL determine the ALPHA decaying level. If the 10.78A is from              
+217AC6CL the 1146.7 level, then the ALPHA branch is 0.34% 7.                    
+217AC CL J         486.4G to 13/2- state is E2; GAMMA(THETA) in (HI,XNG). From  
+217AC2CL shell model and analogy to 215FR, CONF=((216RA 4+)(P,H9/2)).           
+217AC  G 486.4                 E2                      0.0440                   
+217AC  L 1149.2    1015/2-                                                      
+217ACX L XREF=B                                                                 
+217AC2 L %IT GE 98.3 5 $ %A LE 1.7 5                                            
+217AC CL           If the 10.78-MEV ALPHA deexcites the 1149.2-KEV level, rather
+217AC2CL the 1146.7 level, then %IT=98.3, %A=1.7 5.                             
+217AC CL J         478.9G to 11/2- is E2, 489G to 13/2- M1; GAMMA(THETA) in     
+217AC2CL (HI,XNG). CONF=((216RA 4+)(P,H9/2)).                                   
+217AC  G 478.9       100     25 E2                     0.0457                   
+217AC  G 489         75      25 M1(+E2)  2       LT    0.21   15                
+217AC  L 1498.2    9 19/2-                                                      
+217ACX L XREF=B                                                                 
+217AC2 L %IT GE 99.0 $ %A LE 0.98 20                                            
+217AC CL           If the 11.137-MEV ALPHA decays from the 1498.2 level, then   
+217AC2CL the ALPHA branching, calculated from the measured relative ALPHA and   
+217AC3CL GAMMA transition intensities deexciting the level, is 0.98% 20.        
+217AC4CL Energy difference between 11.137- and 9.65-MEV ALPHAS yields (including
+217AC5CL recoil energies) 1515 KEV for the energy of the ALPHA-decaying level.  
+217AC CL           T=8 NS 2 was measured by 1973No02 for the ALPHA decaying     
+217AC2CL level. No level with 8 NS half-life was found, but could not be        
+217AC3CL definitely ruled out by 1985De14.                                      
+217AC CL J         349.0G to 15/2- is E2, 351.5G to 17/2- is M1+E2; GAMMA(THETA)
+217AC2CL in (HI,XNG). CONF=((216RA 6+)(P,H9/2)).                                
+217AC  G 349.0        76     10 E2                     0.1046                   
+217AC  G 351.5       100     10M1+E2     0.65    +20-10 0.40  6                 
+217AC  L 1528.5    9 21/2-             10 NS     LT                         P   
+217ACX L XREF=B                                                                 
+217AC2 L %IT GE 99.6 $ %A LE 0.48 14                                            
+217AC CL           If the 11.37-MEV ALPHA decays from the 1528.5-KEV level, then
+217AC2CL the ALPHA branching, calculated from the measured relative ALPHA and   
+217AC3CL GAMMA transition intensities deexciting the level, is 0.48% 14.        
+217AC CL J         381.8G to 17/2- is E2; GAMMA(THETA) in (HI,XNG). Probable    
+217AC2CL CONF=((216RA 6+)(P,H9/2)) with some ((216RA 8+)(PI f{-7/2})) admixture 
+217AC3CL was suggested for the 21/2- and 23/2- states by 1985De14 from fast M1  
+217AC4CL transition between them.                                               
+217AC  G 30.3                                                                  S
+217AC CG           Transition was not observed. EG is from the level scheme.    
+217AC  G 381.8                 E2                      0.0816                   
+217AC  L 1682.3      (23/2)-           10 NS     LT                         P   
+217ACX L XREF=B                                                                 
+217AC CL J         153.8G to 21/2- is M1+E2; 154G(THETA) does not rule out      
+217AC2CL J=21/2; however, nonobservation of any GAMMA to the 19/2- suggests     
+217AC3CL 23/2- (1985De14). Probable CONF=((216RA 8+)(P,H9/2)). Fast M1          
+217AC4CL transition to the 21/2- and absence of an E2 transition to the 19/2-   
+217AC5CL state was interpreted by 1985De14 as being due to a ((216RA 8+)(PI     
+217AC6CL f{-7/2})) component admixture.                                         
+217AC  G 153.8                 M1+E2     0.39    8     4.83   18                
+217AC  L 1792        (25/2)-                                                    
+217ACX L XREF=B                                                                 
+217AC CL J         110G to (23/2)- state is M1.                                 
+217AC  G 110                   M1                      13.79                    
+217AC  L 1916        (27/2)-                                                    
+217ACX L XREF=B                                                                 
+217AC CL J         234G to (23/2)- is E2.                                       
+217AC  G 234                    E2                     0.363                    
+217AC  L 2013        (29/2)+           740 NS    40                          M1 
+217ACX L XREF=B                                                                 
+217AC2 L %IT=95.7 10 $ %A=4.3 10                                                
+217AC3 L MOMM1=5.00 15                                                          
+217AC CL           G=0.345 10, deduced by 1985De14 from perturbed ALPHA-angular 
+217AC2CL distribution measurements.                                             
+217AC CL           %IT and %A branchings are deduced by the evaluator from      
+217AC2CL the observed relative intensities of ALPHA and gammas deexciting the   
+217AC3CL level.                                                                 
+217AC CL J         96G to (27/2)- is E1+M2, 220G to (25/2)- is M2.              
+217AC CL           CONF=((N,G9/2,+2)(P,I13/2)) was proposed by 1985De14. The    
+217AC2CL authors of 1985De14 calculated G=0.36 1 by using the G FACTORS of -0.31
+217AC3CL and 1.18 for (n g9/2) and (p i13/2) orbitals, respectively, measured   
+217AC3CL for 215AC.                                                             
+217AC CL T         measurement of 1985De14. Other measurement:                  
+217AC2CL 400 NS 100 (1973No02).                                                 
+217AC  G 96          50      10E1+M2     0.15    5     1.6    12                
+217ACS G BE1W=1.3E-8 10  $ BM2W=0.15 14                                         
+217AC  G 220         100     20 M2                     7.97                     
+217ACS G BM2W=0.21 6                                                            
+                                                                                
+217AC    221PA A DECAY                                           03NDS    200309
+217AC  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217AC C  Q{-|a}({+221}Pa)=9242 {I30}+E(level in {+217}Ac fed by 9075|a).        
+217AC2C  Q{-|a}=9248 {I50} was recommended by 1995Au04; Q{-|a}=9252 {I52} from  
+217AC3C  mass excesses recommended by 1997AU04, and QA=9248 54 from the         
+217AC4c  updated recommendations by G. Audi, et al., posted at                  
+217AC5c  http://csnwww.in2p3.fr/AMDC/masstables/Ame1995/mass_rmd.mas95.         
+217AC CA HF        r{-0}({+217}Ac)=1.560 22 is used in calculations.            
+217AC DA           From 224U and 222Th alpha decays,                            
+217AC2DA r0(220Th)=1.527 30 and r0(218Ra)=1.539 8, with an average of           
+217AC3DA r0(219Ac)=1.533 32 from 223Pa decay. From 220Th and 222Th a decays,    
+217AC4DA (216Ra)=1.566 9, and r0(218Ra)=1.539 8 (Dr0=0.027 12).                 
+217AC5DA I expect that r0 parameter for Ac will decrease going from             
+217AC6DA N=128 to N=130 about the same amount as that for r0 of Ra.             
+217AC7DA r0(219Ac)+ 0.027 12=1.533 32 + 0.027 12= 1.560 34.                     
+217AC8DA The uncertainty can actually be reduced by arguing that r0(219Ac)      
+217AC8DA should be less that r0(216Ra)=1.566 9 and probably not less that       
+217AC9DA r0(210Pb)=1.5394 from 214Po alpha decay: r0(217AC)=1.560 +15-22        
+221PA  P 0.0         9/2-              5.9 US    17             9248      54    
+217AC  N                       1.0                                              
+217AC  L 0.0         9/2-              69 NS                                    
+217AC CL E         QA({+221}Pa) suggests that the level energy that 9075|a      
+217AC2CL decays to is <100 KEV. Although this level is shown here as the g.s.,  
+217AC3CL its being an excited state with E<100KEV is not excluded.              
+217AC  A 9075      30 100    LE1.4     GE                                       
+217AC CA E         from 1995ANZY. Earlier measurements: 1989MI17 and 1983HI12   
+217AC2CA who measured the sum peak of 221PA and 217AC ALPHA's at 18.73 MEV and  
+217AC3CA 18.78 MEV, respectively (|a from 221PA was obscured by |a from 218AC). 
+                                                                                
+217AC    (HI,XNG)                      1985DE14,1982GOZU,1982SAZO03NDS    200309
+217AC  H TYP=FMT$AUT=J. Tuli$DAT=22-APR-2005$COM=Fixed Fmt/Typo$                
+217AC  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217AC T  205TL(pulsed 16O,4n) E(16O)=96 MEV; measured EG,IG,GG     (1985De14).  
+217AC T  209BI(pulsed 12C,4n) E(12C)=75 MEV; measured EA,IA,AG,GG,ACE           
+217AC2T                                   CE-CE coincidences    (1985De14).     
+217AC T  206PB(pulsed 15N,4n) E(15N)=80 MEV; measured ALPHA(THETA,H,T)          
+217AC2T                                        G(THETA,H,T)         (1985De14). 
+217AC3T                                                                         
+217AC T  209BI(pulsed 12C,4n) E(12C)=80 MEV; measured EG,EA,AG,GG  (1982GoZU,   
+217AC2T                                                             1982SaZO).  
+217AC T  (9650A)(THETA,H,T):  g(g.s.)=0.85 1,T(g.s.)=69 NS 4        (1985De14). 
+217AC T  (9650A)(G)(T):                     T(g.s.)=75 NS 3     (1982GoZU).     
+217AC T  (10.54A)(THETA,H,T),(G)(THETA,H,T): g(2013 level)=0.345 10             
+217AC2T                              T(2013 level)=740 NS 40  (1985De14).       
+217AC3T                                                                         
+217AC T  Observed ALPHA's and their assignments by 1985De14:                    
+217AC2T                                                                         
+217AC3T        EA          IA      decaying parent level    level in {+213}FR   
+217AC4T   ------------   --------  ---------------------    -----------------   
+217AC5T    9650 10 (a)   94.8 20              0                     0           
+217AC6T   10541 1  (b)    4.07 16          2013                  1105           
+217AC7T   10780 15 (c)    0.27 4           1147/1150                0           
+217AC8T   11137 15 (c)    0.46 13          1498/1529                0           
+217AC9T                   0.32             2013                   498           
+217AC2T   77625 17 (c)    0.12 2           2013                     0           
+217AC3T                                                                         
+217AC3T   (a) EA from 1973No09.                                                 
+217AC4T   (b) from EA(g.s. to g.s.)=9650, E(parent level) and E(daughter level).
+217AC5T   (c) 9650 and 10541 ALPHA energies were used as calibration points.    
+217AC6T                                                                         
+217AC T  (10590|a)(236.8,327.8,351.8,381.8 |g's)             1982GoZU           
+217AC T  (10540|a)(1105|g in {+213}Fr)                           1985De14       
+217AC T  (9650|a)(220.7,236.8,327.6,351.5,381.8,670.1 |g's)  1982GoZU           
+217AC T  (1113|a)(498|g in {+213}Fr,154,220 |g's in {+217}Ac)        1985De14   
+217AC T                                                                         
+217AC C  Decay scheme is presented basically as constructed by 1985De14 from    
+217AC2C  their |g-|g and |g-ce coincidences. In the level scheme shown by       
+217AC3C  1982Go14 orders of the 478.9 and 349.0 gammas were reversed, and       
+217AC4C  a level at 1019 KEV was introduced between these cascading gammas.     
+217AC5C  Their (486.4|g)(|g) coincidence spectrum shown, however, indicates     
+217AC6C  the presence of the 349.0|g and absence of the 478.9|g. Gamma's        
+217AC7C  observed at 501.6, 371.7, 380, and 327.6 KEV were placed by 1982GoZU   
+217AC8C  in cascade to deexcite proposed levels at 3263, 2762, 2390 and 2010,   
+217AC9C  respectively. These levels and GAMMA placements are assumed            
+217AC2C  here as preliminary results.                                           
+217AC CG E         Measured energies of 1985De14 were listed without their      
+217AC2CG uncertainties and, presumably, in rounded-off values. Since E|g's of   
+217AC3CG 1982GoZU agree with those of 1985De14, measurements of 1982GoZU are    
+217AC4CG given here, unless otherwise noted. Uncertainties on E|g's are         
+217AC5CG estimated by the evaluator to be less than 0.5 KEV for the strong |g   
+217AC6CG transitions.                                                           
+217AC CG RI        Relative photon intensities measured by 1985De14. If photon  
+217AC2CG intensities are renormalized to per 100 |a decays of the {+217}Ac      
+217AC3CG g.s., TI(660G)+TI(670G)=I(9650A), a factor of NR=0.98 9 is obtained.   
+217AC CG M         From CE measurements and angular distribution data of        
+217AC2CG 1985De14. The CE intensities given were normalized by using the        
+217AC3CG theoretical conversion coefficients for the 220-KEV GAMMA.             
+217AC CG E(D)      From 1985De14. This transition was not seen by 1982GoZU.     
+217AC CG E(G)      Not seen by 1985De14.                                        
+217AC CL J         From 1985De14. They were deduced from GAMMA multipolarities  
+217AC2CL and GAMMA angular distributions.                                       
+217AC  L 0.0         9/2-                                                       
+217AC  L 660.3     5 13/2-                                                      
+217AC  G 660.3       83      7  E2                     0.02207                  
+217ACS G KC=0.01565 $ LC=0.00483                                                
+217AC CG           ICE(K)=0.92 25, ICE(L)=0.32 11, ICE(M)=0.07 7.               
+217AC  L 670.1     5 11/2-                                                      
+217AC  G 670.1        11     3 M1+E2                   0.058  37                
+217ACS G KC=0.045 30 $ LC=0.0093 46                                             
+217AC CG           ICE(K)=0.31 31, ICE(L)=0.08 4, ICE(M)=0.04 4.                
+217AC  L 1146.7    8 17/2-                                                      
+217AC  G 486.4        77     8 E2                      0.0440                   
+217ACS G KC=0.0277 $ LC=0.01202 $ MC=0.00310 $NC+=0.00112                       
+217AC CG           ICE(K)=1.6 7, ICE(L)=0.92 47.                                
+217AC  L 1149.2    1015/2-                                                      
+217AC  G 478.9        8      2  E2                     0.0457                   
+217ACS G KC=0.0286 $ LC=0.01263 $ MC=0.00326 $ NC+=0.00118                      
+217AC CG           ICE(K)=0.33 24, ICE(L)=0.23 16.                              
+217AC  G 489          6      2 M1(+E2)   2       LT    0.21   15            D   
+217ACS G KC=0.18 12 $ LC=0.032 17 $ MC=0.0077 38 $ NC+=0.0027 14                
+217AC CG           ICE(K)=1.1 4, ICE(L)=0.18 9.                                 
+217AC  L 1498.2    9 19/2-                                                      
+217AC  G 349.0        16     2 E2                      0.1046                   
+217ACS G KC=0.0536 $ LC=0.0375 $ MC=0.00991 $ NC+=0.00359                       
+217AC CG           ICE(K)=0.58 55, ICE(L)=0.46 24.                              
+217AC  G 351.5        21     2 M1+E2     0.65    +20-10 0.40  6                 
+217ACS G KC=0.31 5 $ LC=0.066 6 $ MC=0.0161 12 $ NC+=0.0058 4                   
+217AC CG           ICE(K)=7.4 12, ICE(L)=2.3 8, ICE(M)=0.53 18.                 
+217AC CG MR        determined by 1985De14 from angular distribution.            
+217AC  L 1528.5    9 21/2-                                                      
+217AC  G 30.3                                                                  S
+217AC CG           Transition was not observed. EG is from the level scheme.    
+217AC2CG Its existence was deduced by 1985De14 from the observed (154G)(351G)   
+217AC3CG coincidence. Because of the prompt coincidences, T(1528.5 level)<10 NS;
+217AC3CG this implies an M1 multipolarity for the 30.3G (1985De14).             
+217AC CG           TI(30.3G) AP 47 4 from intensity balance at the 1498.2 level;
+217AC2CG AP 43 14 from intensity balance at the 1528.5 level.                   
+217AC  G 381.8       46      5 E2                      0.0816                   
+217ACS G KC=0.0448 $ LC=0.0271 $ MC=0.00713 $ NC+=0.00258                       
+217AC CG           ICE(K)=1.7 6, ICE(L)=1.1 5, ICE(M)=0.31 10.                  
+217AC  L 1682.3      23/2-                                                      
+217AC  G 153.8       16      2 M1+E2     0.39    8     4.83   18                
+217ACS G KC=3.71 20 $ LC=0.835 14 $ MC=0.205 5 $ NC+=0.0742 19                  
+217AC CG MR        determined by 1985De14 from angular distribution.            
+217AC CG           ICE(K)=53 13, ICE(L)=12 3, ICE(M)=3 1.                       
+217AC  L 1792        25/2-                                                      
+217AC  G 110         7       1 M1                      13.79                D   
+217ACS G KC=11.02 $ LC=2.085 $ MC=0.501 $ NC+=0.1816                            
+217AC CG           ICE(L)=12 7, ICE(M)=3 1.                                     
+217AC  L 1916        27/2-                                                      
+217AC  G 234         5       1  E2                     0.363                D   
+217ACS G KC=0.1199 $ LC=0.1777 $ MC=0.0479 $ NC+=0.01735                        
+217AC CG           ICE(L)=2.7 22, ICE(M)=1.3 12.                                
+217AC  L 2010                                                                  ?
+217AC  G 327.6                                                              G   
+217AC  L 2013        29/2+             740 NS    40                          M1 
+217AC  G 96          5       1 E1+M2     0.15    5     1.6    12                
+217ACS G LC=1.2 9 $ MC=0.32 23 $ NC+=0.12 9                                     
+217AC CG           ICE(L)=6 4, ICE(M)=4 3.                                      
+217AC  G 220         10      2  M2                     7.97                     
+217ACS G KC=5.53 $ LC=1.800 $ MC=0.464 $ NC+=0.1710                             
+217AC CG           ICE(K)=55 8,ICE(L)=19 3,ICE(M)=5 3.                          
+217AC CG M         K/L=2.9 7 (exp); K/L=0.83 for E2, K/L=3.1 for M1.            
+217AC  L 2390                                                                  ?
+217AC  G 380.0                                                              G   
+217AC  L 2762                                                                  ?
+217AC  G 371.7                                                              G   
+217AC  L 3263                                                                  ?
+217AC  G 501.6                                                                  
+                                                                                
+217TH    ADOPTED LEVELS, GAMMAS                                  03NDS    200309
+217TH  H TYP=FMT$AUT=J. Tuli$DAT=22-APR-2005$COM=Fixed Fmt/Typo$                
+217TH  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217TH  Q -4.85E3   6 6152    253215    249435    4     2012WA38                 
+217TH CQ Note: Current evaluation has used the following Q record               
+217TH  Q -4865     64   6194 35   3242 4194.35E+210    1995AU04                 
+217TH CQ QA        the observed EA=9261 5 (measurement of 2002He29) gives       
+217TH2CQ QA=9435 {I5} + E(level in {+213}Ra fed by the 9261|a).                 
+217TH3CQ Non-observation of any gamma transition in coincidence with the        
+217TH4CQ 9261-KEV |a transition suggests that this alpha populates either       
+217TH4CQ the g.s. or a low-energy level in {+213}Ra. QA=9424 {I10} was          
+217TH5CQ recommended by 1995AU04.                                               
+217TH T  Assignment:                                                            
+217TH2T             206PB(16O,5n)   excit              (1968Va18)               
+217TH3T             204PB(16O,3n)   excit              (1973Ha32)               
+217TH4T             198PT(28SI,|a5n) excit, d 213RA      (2000Ni02)             
+217TH5T             170ER(51V,p3n),                                             
+217TH6T             170ER(50Ti,3n) excit, d 213RA      (2000He17)               
+217TH T                                                                         
+217TH C  Miscellaneous reactions and calculations:                              
+217TH C  {+138}Ba({+82}Se,3n): cross-sections were measured and fusion          
+217TH2C  probability was deduced by 2002SA22.                                   
+217TH C  {+197}Au({+24}Mn,X): production cross sections were measured by        
+217TH2C  1999BO52 and by 1997An02. See 1999BO52 for calculations of production  
+217TH3C  cross sections.                                                        
+217TH C  {+208}Pb({+16}O,7n) cross-sections for fusion and fission were         
+217TH2C  calculated by 1997GI11.                                                
+217TH  L 0.0         (9/2+)            0.241 MS  5                              
+217TH2 L %A=100                                                                 
+217TH CL           Only |a decay was observed. From the gross beta decay        
+217TH2CL theory calculations of 1973Ta30, T(EC+B+) AP 1000 sec which yields     
+217TH3CL  AP 0.000025% for the EC+B+ decay branching. Theoretical calculations  
+217TH4CL of 1997Mo25 give T(B+)/T(A)= >100 s/0.019 ms.                          
+217TH CL           An assumption of LOGFT>5.1 for a possible EC transition      
+217TH2CL to 217AC g.s yields %EC<0.00015.                                       
+217TH TL T         from the following measured half-lives:                      
+217TH2TL 0.237 ms {I2} (2002He29: mean value of                                 
+217TH2TL           0.237 ms {I1} from decay of 9261|a,                          
+217TH3TL           0.229 ms {I6} from 8725|a,                                   
+217TH4TL           0.245 ms {I8} from   8455|a);                                
+217TH5TL 0.247 ms {I3} (2000He17:                                               
+217TH6TL           0.247 ms {I3} from decay of 9268|a,                          
+217TH7TL           0.293 ms {I28} from 8731|a,                                  
+217TH8TL           0.250 ms {I8} from  8459|a);                                 
+217TH9TL 0.261 MS +22-18 (2000Ni02:                                             
+217TH2TL           0.261 MS +22-18 from decay of 9247|a,                        
+217TH3TL           0.29 MS +24-9 from 8713|a,                                   
+217TH4TL           0.21 MS +10-5  from 8429|a);                                 
+217TH5TL 0.252 ms {I7} (1973Ha32, from 9250-KEV alpha decay).                   
+217TH6TL             Other measurement: <0.3 ms (1968Va18).                     
+217TH CL             Weighted and unweighted averages of the results given      
+217TH2CL above half-lives are 0.241 ms {I2} and 0.249 ms {I5}. The              
+217TH3CL weighted average with increased uncertainty is adopted.                
+217TH CL J         analogy to {+215}Ra and {+213}Rn isotones.                   
+217TH  L 673.8       (15/2-)           141 NS    50                          M1 
+217TH2 L %IT=100                                                                
+217TH CL           Observed in {+204}Pb(pulsed 84-MEV {+16}O,3n|g) reaction by  
+217TH2CL 1989Dr02. One weak |g transition only was observed, and in analogy     
+217TH3CL to {+213}Rn and {+215}Ra, this transition was assumed to decay from    
+217TH4CL the isomeric state to the ground state. The energy of the isomeric     
+217TH5CL state is, therefore, not firmly established.                           
+217TH CL J         673.8|g to probable (9/2+) state is (E3); analogy to         
+217TH2CL isomeric states in {+213}Rn and {+215}Ra.                              
+217TH  G 673.8                 (E3)                    0.0660                   
+217TH CG E         measurement of 1989Dr02.                                     
+217TH CG M         from CE measurements of 1989Dr02: EKC=0.051 14               
+217TH2CG ELC LE 0.030 11, and T1/2(G).                                          
+217TH3 G BE3W=46 17                                                             
+217THS G KC=0.0373 $ LC=0.0216                                                  
+                                                                                
+217PA    ADOPTED LEVELS                                          03NDS    200309
+217PA  H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217PA  Q -5.90E3   SY8.80E3  8 5.2E2   6 8489    5     2012WA38                 
+217PA CQ Note: Current evaluation has used the following Q record               
+217PA  Q -4830     608.84E+2 13 547    7984.95E+210    1995AU04,1997AU04        
+217PA CQ QA        the observed EA=8337 5 (measurement of 2002HEZV) gives       
+217PA2CQ QA=8494 5 + E(level in {+213}Ac fed by the 8337|a). Non-observation of 
+217PA3CQ any gamma transition in coincidence with 8337-KEV |a transition        
+217PA4CQ suggests that the 8337|a populates either the gs or a low-energy level 
+217PA5CQ in {+213}Ac. QA=8487 {I50} was recommended by 1995AU04. From           
+217PA6CQ E{-|a}=8330 {I10}, measured by 1996AN21, 1997AU04 recommended mass     
+217PA7CQ excess of {+217}Pa=17040 {I80}, mass excess of {+213}Ac=6120 {I60}     
+217PA8CQ which yield QA=8495 {I100}.                                            
+217PA cQ Q-        estimated by Georges Audi and Aaldert H. Wapstra             
+217PA2cQ (private communication from Georges Audi; May 2003).                   
+217PA CQ           For theoretical calculations of isotope's binding energy,    
+217PA2CQ see 1987SA19.                                                          
+217PA T                                                                         
+217PA T  Assignment:                                                            
+217PA2T          203TL(20NE,6n),206PB(20NE,p8n)            (1968VA18)           
+217PA3T          181TA(40AR,4n) excit, p 213AC            (1979SC09)            
+217PA4T          170ER(51V,4n), 197AU(24MG,4n) excit       (1997AN02)           
+217PA5T          194PT(28SI,p4n) Recoil Mass Separator    (1998IK01)            
+217PA6T          181TA(40AR,4n) p 213AC; delayed |a|a coin  (2002He29)          
+217PA7T                                                                         
+217PA C  Miscellaneous reactions and calculations:                              
+217PA C  {+197}Au({+24}Mn,X): production cross sections were measured by        
+217PA2C  1999BO52 and by 1997An02. See 1999BO52 for calculations of production  
+217PA3C  cross-sections.                                                        
+217PA C  {+165}Ho({+56}Fe,|a): cross sections were measured by 1979HI02 as a    
+217PA2C  function energy and angle; nuclear temperature and reaction mechanism  
+217PA3C  were deduced.                                                          
+217PA C  For calculated binding energies, Q values, neutron and proton          
+217PA2C  separation energies and partial half-lives, see, for example,          
+217PA3C  1997MO25. Binding energies of various nuclei, including {+217}Pa,      
+217PA4C  were also calculated by 1987SA19 and 1997MO25.                         
+217PA C                                                                         
+217PA C  For calculated level energies, see 2003Ca21.                           
+217PA C                                                                         
+217PA  L 0.0                           3.6 MS    8                              
+217PA2 L %A=100                                                                 
+217PA CL           Only |a decay was observed.                                  
+217PA2CL Gross |b decay theory calculations of 1973TA30 and theoretical         
+217PA3CL calculations of 1997MO27 give T(EC) AP 300 sec and  97 sec,            
+217PA4CL respectively which correspond to EC decay branch of                    
+217PA5CL AP 0.0012% and 0.0036%, respectively.                                  
+217PA CL T         unweighted average of measurements by 2002He29, 2000He17,    
+217PA2CL 1998IK01, 1996AN21 and 1979SC09. Measured half-lives are:              
+217PA3CL 4.9 ms 6 (1979SC09), 3.4 ms 2 (1996AN21), 2.3 MS +5-3 (1998IK01),      
+217PA4CL 3.4 ms 1 (2000HE17), 3.8 ms 2 (2002He29).                              
+217PA5CL Other measurements: 1995ANZY, 1995NIZS.                                
+217PA  L 1850      AP                  1.2 MS    2                           M1 
+217PA2 L %A=73 4 $ %IT=27 4$                                                    
+217PA CL           Branchings were obtained by 2002He29.                        
+217PA CL T         Unweighted average of half-lives reported from various       
+217PA2CL measurements with an increased uncertainty so that it overlaps with    
+217PA3CL measurements from strongest |a peak (10155|a). The measured half-lives 
+217PA4CL are 1.6 ms 10 (1979SC09), 0.9 ms 6 (1995ANZY), 1.5 ms 2 (1995NIZS),    
+217PA5CL 1.5 MS +9-4 (1998IK01; the authors assigned this half-life to a        
+217PA6CL second isomeric state), 1.5 ms 1 (from 10155|a; 2000HE17),             
+217PA7CL 1.3 MS +4-2 (from 9912|a; 2000HE17), 1.4 ms 2 (from 9763|a; 2000HE17), 
+217PA8CL 1.08 ms 3 (2002He29; mean value of the following measurements:         
+217PA9CL 1.08 ms 2 from 10157|a; 0.95 ms 5 from 9697|a; 0.94 ms 9 from 9552|a;  
+217PA2CL 1.11 ms 20 from 9533|a; 1.03 ms 13 from 8306|a)                        
+217PA CL E         calculated by the evaluator from energy difference           
+217PA2CL of the 10157- and 8337-KEV ALPHAS which were emitted from              
+217PA3CL the 1.2-ms and 3.6-ms states, respectively, by assuming these ALPHA's  
+217PA4CL decay to the g.s. or to levels close in energies.                      
+                                                                                
+217U     ADOPTED LEVELS                                          03NDS    200309
+217U   H TYP=FUL$AUT=Y. A. AKOVALI$CIT=NDS 100, 141 (2003)$CUT=26-Jun-2003$     
+217U   Q                       2.12E3  SY8.43E3  SY    2012WA38                 
+217U  CQ Note: Current evaluation has used the following Q record               
+217U   Q                                 8155    GE                             
+217U  CQ           QA=8155 {I20}+ E(level fed by the observed 8005|a). Only     
+217U 2CQ one |a group at 8005 KEV was observed.                                 
+217U   L 0.0                           16 MS     +21-6                          
+217U 2 L %A LE 100                                                              
+217U  CL           only alpha decay has been observed.                          
+217U  CL           Calculations of 1997Mo25 give T(A)=0.407 s, T(B)=6.62 s.     
+217U  CL T         measured by 2000MA65 from the decay time of 7996-KEV alpha.  
+217U  CL           Assignment: 182W(193-MeV 40AR,5n); recoil separator; parent  
+217U 2CL of 215-ms 213TH(7701-KEV |a) (2000MA65).                               
+                                                                                

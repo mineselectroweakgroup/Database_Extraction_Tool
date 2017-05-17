@@ -1,0 +1,586 @@
+294      COMMENTS                                                05NDS    200512
+294    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+294  2 H CUT=12-Aug-2005$                                                       
+294   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+294   C  AUTH$M. GUPTA(a)                                                       
+294   C  INST$National Nuclear Data Center                                      
+294  #C       Brookhaven National Laboratory                                    
+294  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+294  #C                                                                         
+294   c  INST$Manipal Academy of Higher Education,                              
+294  #c  Manipal, KA 576 104, INDIA                                             
+294  #c  e-mail: mohini.gupta@manipal.edu                                       
+294   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+294  #c  Manipal, KA 576 104, INDIA                                             
+294   C  AUTH$THOMAS W. BURROWS                                                 
+294   C  INST$National Nuclear Data Center                                      
+294  #C       Brookhaven National Laboratory                                    
+294  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+294  #C       e-mail: burrows@bnl.gov                                           
+294   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+294  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+294  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+294  4C  RECEIVED BY August 12, 2005.                                           
+294   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+294  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+294  3C  DATE WERE CONSIDERED.                                                  
+294   C  CIT$NDS 106, 251 (2005)                                                
+294   c  COMM$                                                                  
+294  @c  {UAcronyms and notations used in this evaluation:}                     
+294  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+294  #c  BGS Berkeley Gas Filled Separator                                      
+294  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+294  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+294  #c  EVR Evaporation Residue                                                
+294  #c  GARIS Gas-filled Recoil Ion Separator                                  
+294  #c  RILAC RIKEN Linear Accelerator facility                                
+294  #c  SHIP Separator for Heavy Ion reaction Products                         
+294  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+294  2c  and detection of previous EVR or |a                                    
+294  #c  TKE Total Kinetic Energy                                               
+294  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+294  2c  Reactions, JINR, Dubna, Russia                                         
+294  #c                                                                         
+294  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+294  2c  (Z=110-112,114,116,118):}                                              
+294  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+294  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+294  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+294  5c  the evaluators have relied on the judgement of the JWP in              
+294  6c  determining the strength of the arguments made in the various papers.  
+294  7c  In the cases where there are new data or where the JWP has not yet     
+294  8c  assigned a priority of discovery for an element, the evaluators have   
+294  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+294  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+294  Bc  the data.                                                              
+294  #c                                                                         
+294  #c  In the above context, with respect to Z=112 and the collective works of
+294  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+294  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+294  4c  references therein.                                                    
+294  #c                                                                         
+294  @c                                                                         
+294  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+294  2c  discovery of an element and not a specific nuclide. The purpose of     
+294  3c  this evaluation is to present the "best" set of nuclear properties     
+294  4c  for those nuclides reported between A=266 and A=294 based on data      
+294  5c  currently available and {Bnot} to establish a priority of discovery for
+294  6c  any element.                                                           
+294  !c                                                                         
+294  #c  It is well known that alpha decay chains seen                          
+294  ac  in cold fusion reactions tend to terminate in known mass regions.      
+294  2c  The method of |a-|a or |a-SF correlations for identifying the          
+294  3c  parent has therefore been used with confidence.                        
+294  3c  Experiments carried out with hot fusion reactions,                     
+294  4c  result in alpha decay chains beginning and ending with hitherto unknown
+294  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+294  6c  in an attempt to identify the parent and daughters. The latter method  
+294  7c  is not as accurate as the first since a greater probability of         
+294  8c  randomness is inherant to the technique. As such, independent          
+294  9c  verification and confirmation of the data gains added importance.      
+294  ac  These facts should be taken into account when considering the suggested
+294  ac  properties of nuclei created following a hot fusion reaction as for    
+294  ac  the synthesis of Z=114 and above.                                      
+294  #c                                                                         
+294  #c  Finally, with regard to the some of the                                
+294  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+294  ac  2004Mo15 have pointed out that mass assignments which are based        
+294  ac  on the excitation energy of the compound nucleus may be off by a       
+294  ac  single unit. This may also be due in part to uncertainties in the beam 
+294  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+294  ac  Once again, collateral information is required to establish the charge 
+294  ac  and approximate A of the nucleus.                                      
+294  #c                                                                         
+294  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+294  2c  have not been adopted, the evaluators have used the approximations in  
+294  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+294  4c  exponential distribution to estimate the standard uncertainty (68%     
+294  5c  confidence level) in T{-1/2}:                                          
+294  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+294  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+294  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+294  9c  of events. For one and two events, the exact values given in Table 1   
+294  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+294  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+294  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+294  #c                                                                         
+294  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+294  ac  Calculations of T{-1/2}                                                
+294  2c  performed in the present evaluation used the relationship:             
+294  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+294  #c  where Z refers to the atomic                                           
+294  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+294  6c  and:                                                                   
+294  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+294  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+294  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+294  3c  parameter set used in these evaluations. We note that these systematics
+294  6c  are only an indication of |a-decay half-lives from the ground state    
+294  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+294  8c  the element under consideration. The use of this formalism in the      
+294  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+294  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+294  ac  estimate a Hindrance Factor (HF) for a given transition,               
+294  ac  attributable to the odd neutron or proton. This quantity is            
+294  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+294  ac  The HF so computed is an approximate indication.                       
+294  #c                                                                         
+294  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+294  2c  References.                                                            
+294  #c                                                                         
+294  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+294  2c  trans-fermium elements is the manifestation of shell effects in the    
+294  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+294  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+294  5c  important as QF is expected to play a greater role on the hindrance of 
+294  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+294  7c  the "island" of stability. An understanding of this mechanism is       
+294  8c  necessary to establishing the most favorable reactions for producing   
+294  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+294  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+294  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+294  Cc  to both the mass asymmetry in the entrance channel as well as the      
+294  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+294  Ec  deformations of target/projectile nuclei and their relative orientation
+294  Fc  to each other in the process of CN formation, may also play an         
+294  Gc  important role in reducing the probability of forming a compound       
+294  Hc  system. In the face of extremely low yields and a steep decrease of    
+294  Ic  production cross-sections already in evidence with available stable    
+294  Jc  beam-target combinations, the influence of all possible mitigating     
+294  Kc  factors must be accurately determined in order to                      
+294  Lc  optimize the probability of successful fusion. The formation of a      
+294  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+294  Nc  survives QF going on to form a compact compound system which must then 
+294  Oc  face competition from fission.                                         
+294  #c                                                                         
+294  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+294  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+294  3c  in collaboration with investigators from Belgium, France, and Italy.   
+294  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+294  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+294  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+294  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+294  8c  spectrometer "Corset". These experiments were inspired by              
+294  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+294  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+294  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+294  Cc  such experiments are planned or underway to investigate the various    
+294  Dc  effects.                                                               
+294  #c                                                                         
+294  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+294  2c  and references cited in these papers.                                  
+294  #c                                                                         
+294  !c  {UExperimental Estimates of Fission Barriers:}                         
+294  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+294  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+294  4c  the experimentally derived barrier heights are respectively:           
+294  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+294  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+294  #c                                                                         
+294  #c  2002It04, in an analysis of available experimental data, derive the    
+294  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+294  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+294  #c                                                                         
+294  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+294  2c  Two possibilities have been proposed in an attempt to understand the   
+294  ac  the {+289}114, {+287}114 observations:                                 
+294  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+294  ac  belongs to a rare decay mode originating from                          
+294  4c  an isomeric state, or that                                             
+294  #c  (ii) the sequence may actually originate from                          
+294  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+294  7c  Levels).                                                               
+294  #c  The evaluators believe that further investigations                     
+294  ac  are required to support either hypothesis.                             
+294  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+294  9c  unobserved. Also, T{-1/2}                                              
+294  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+294  ac  is much larger than that observed by 2004Og12 and                      
+294  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+294  ac  agreement. Such inconsistencies need to be better understood.          
+294  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+294  2c  respects. 2004OgZZ report more statistics in some cases.               
+294  #c                                                                         
+294  @c  {UOther comments on {+289}114 and {+283}112}                           
+294  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+294  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+294  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+294  4c  classified the evidence as being "very weak",                          
+294  5c  with no convincing supporting arguments for the possible production of 
+294  6c  SHE. We make the following general observations:                       
+294  #c                                                                         
+294  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+294  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+294  ac  by the Dubna-JINR collaborations for all isotopes of                   
+294  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+294  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+294  ac  {+287}114 (15 events) and {+286}114                                    
+294  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+294  ac  the |?34 min decay sequence postulated as originating from             
+294  5c  a rare decay mode of {+289}114, does not seem very likely.             
+294  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+294  7c  {+289}114 decays observed are genetically linked                       
+294  8c  and not the result of a background decay sequence. These               
+294  BC  discrepancies have to be resolved, along with some others.             
+294  #c                                                                         
+294  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+294  ac  (see also 2004Og02) with VASSILISSA, have not                          
+294  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+294  3c  lack of internal consistency through the collective measurements       
+294  ac  and the data are inconclusive as pointed                               
+294  4c  out by experimenters (reasons given in each paper). Decay properties of
+294  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+294  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+294  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+294  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+294  8c  by them. See {+283}112 Adopted Levels for details.                     
+294  #c                                                                         
+294  #c  These observations by the experimenters are consistent with the        
+294  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+294  3c  of the various arguments put                                           
+294  3c  forward therein, the following comments may be made here:              
+294  #c                                                                         
+294  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+294  #c  190 MeV and 212 MeV (1999Og05)                                         
+294  #c  65 MeV and 170 MeV  (2004Og02)                                         
+294  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+294  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+294  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+294  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+294  4c  plane and side detectors). With one exception, all the energies        
+294  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+294  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+294  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+294  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+294  9c  the second experiment) after EVR implantation resulted in              
+294  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+294  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+294  #c                                                                         
+294  #c  2. 2000Ar03 statement that correlations  between the fission events    
+294  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+294  3c  'backward' analysis of the data was reported in                        
+294  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+294  5c  evidently in contradiction with those made by the                      
+294  6c  experimenters. A more complete analysis would be beneficial.           
+294  #c                                                                         
+294  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+294  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+294  ac  quoted from an earlier                                                 
+294  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+294  4c  assignments. The proposed assignment of Z=114 to both parents may      
+294  5c  be incorrect taking into account new data which do not support         
+294  6c  these observations and for reasons already mentioned.                  
+294  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+294  !c                                                                         
+294  #c  CONCLUSIONS:                                                           
+294  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+294  ac  are not conclusive. Overall, the                                       
+294  2c  results from the VASSILISSA experiments are at variance with data from 
+294  3c  experiments using DGFRS. The latter investigations are done using      
+294  4c  more stringent methods, and have greater statistics, offering better   
+294  5c  internal consistency. Some obvious discrepancies and other             
+294  ac  inconsistencies between the two sets of                                
+294  6c  data remain and need to be resolved or adequately explained as does the
+294  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+294  8c  by 2005Gr19 and 2002Lo11.                                              
+294  #c                                                                         
+294  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+294  2c  from earlier work are not reproduced to date.                          
+294  #c                                                                         
+294  @c  {UTheoretical Calculations:}                                           
+294  @c  1995Mo29: |b2 based on the finite-range droplet                        
+294  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+294  3c  with "global" parameters.                                              
+294  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+294  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+294  3c  J|p simultaneously obtained with the calculated masses and             
+294  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+294  5c  A=239.                                                                 
+294  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+294  2c  model for the macroscopic part and the Strutinski shell correction,    
+294  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+294  4c  part.                                                                  
+294  @c  2005GaZX: |b2 based on self consistent calculations                    
+294  2c  within the framework of the Relativistic Mean Field (RMF)              
+294  3c  theory with very few "globally" fit parameters and employing the       
+294  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+294  5c  sets in use exhibit similar systematics, these results are expected to 
+294  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+294  #c                                                                         
+294  @c  {UOther Measurements:}                                                 
+294  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+294  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+294  3c  (Blocking technique in single crystals).                               
+294  #c                                                                         
+294   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+294  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+294  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+294  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+294  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+294  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+294  7c  additional information that they readily provided during this          
+294  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+294  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+294  Ac  Singh for helpful discussions. We thank A. Marinov                     
+294  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+294  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+294  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+294  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+294  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+294  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+294  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+294  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+294  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+294  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+294  Lc  insights, and suggestions until her untimely demise are hereby         
+294  Mc  acknowledged.                                                          
+294   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+294  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+294  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+294      REFERENCES                                                       200512
+294    R 1966VI04 JOUR JINCA 28 741                                             
+294    R 1969WE13 JOUR PYLBB 28 544                                             
+294    R 1971SC39 JOUR NATUA 231 103                                            
+294    R 1973GE15 JOUR NATUA 244 428                                            
+294    R 1974BE02 JOUR PRVCA C9 48                                              
+294    R 1980ST05 JOUR PRVCA C21 1664                                           
+294    R 1984SC13 JOUR ZPAAD 316 19                                             
+294    R 1987MU15 JOUR ZPAAD 328 49                                             
+294    R 1992BA77 JOUR PPNPD 29 453                                             
+294    R 1995MO29 JOUR ADNDA 59 185                                             
+294    R 1997MO25 JOUR ADNDA 66 131                                             
+294    R 1998DA24 JOUR ARNUA 48 401                                             
+294    R 1999OG05 JOUR ZAANE 5 63                                               
+294    R 1999OG07 JOUR NATUA 400 242                                            
+294    R 1999OG10 JOUR PRLTA 83 3154                                            
+294    R 2000AR03 JOUR ZAANE 7 23                                               
+294    R 2000FI12 JOUR NDSBA 90 391                                             
+294    R 2000ZL02 JOUR ZAANE 8 81                                               
+294    R 2001AK11 JOUR NDSBA 94 131                                             
+294    R 2001KA70 JOUR PACHA 73 959                                             
+294    R 2001OG09 JOUR PRVCA 64 064309                                          
+294    R 2002HI20 JOUR PRLTA 89 282701                                          
+294    R 2002IT04 JOUR PRVCA 65 044602                                          
+294    R 2002LO11 JOUR PPNPD 48 123                                             
+294    R 2002LO15 JOUR PRVCA 66 044617                                          
+294    R 2002OGZX REPT JINR-D7-2002-287,Oganessian                              
+294    R 2002ZA01 JOUR PRVCA 65 014607                                          
+294    R 2002ZA16 JOUR PTPSA 146 642                                            
+294    R 2002ZA19 JOUR JNRSA 3,No 1,13                                          
+294    R 2003KA71 JOUR PACHA 75 1601                                            
+294    R 2003MU15 JOUR YAFIA 66 1051                                            
+294    R 2003MU26 JOUR APOBB 34 2073                                            
+294    R 2003OGZZ REPT UCRL-ID-151619,Oganessian                                
+294    R 2004DA11 JOUR NUPAB 734 148                                            
+294    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+294    R 2004IT05 JOUR NUPAB 734 136                                            
+294    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+294    R 2004MO15 JOUR NUPAB 734 188                                            
+294    R 2004OG02 JOUR ZAANE 19 3                                               
+294    R 2004OG03 JOUR PRVCA 69 021601                                          
+294    R 2004OG10 JOUR PTPSA 154 406                                            
+294    R 2004OG12 JOUR PRVCA 70 064609                                          
+294    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+294    R 2004PRZW PREPRINT Prokhorova                                           
+294    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+294    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+294    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+294DS    ADOPTED LEVELS: NOT OBSERVED                            05NDS    200512
+294DS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+294DS2 H CUT=12-Aug-2005$                                                       
+294DS  Q                       13.11E+3CA 6.95E+3CA    1997MO25                 
+294DS C  1980ST05 SEARCHED FOR NATURALLY OCCURRING 294DS USING AN ^FN Tandem    
+294DS2C  ACCELERATOR AS A SENSITIVE MASS SPECTROMETER (PLACER PLATINUM FROM     
+294DS3C  Goodnews Bay, Alaska; TOF). THE OBSERVED BACKGROUND LEADS TO AN        
+294DS4C  UPPER LIMIT ON 294DS IN THE PLATINUM SAMPLE OF LESS THAN ONE PART IN   
+294DS5C  10{+11}. THIS IMPLIES THAT 294DS HAS T1/2 LESS THAN ABOUT 2E+8 Y,      
+294DS6C  WAS NOT PRODUCED IN THE AMOUNTS PREDICTED BY 1971SC39, OR DID NOT      
+294DS7C  FOLLOW ITS HOMOLOG PLATINUM IN THE GEOPHYSICAL OR CHEMICAL PROCESSING  
+294DS8C  OF THE MATERIAL.                                                       
+294DS C  OTHERS: 1969WE13, 1973GE15, AND 1974BE02                               
+294DS C  1997MO25 CALCULATE T(ALPHA)=296 Y.                                     
+294DS C  THEORY: SEE Nuclear Science References.                                
+                                                                                
+29417    COMMENTS                                                ENSDF    201008
+29417  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+29417 C  TITL$NUCLEAR DATA SHEETS FOR 29417                                     
+29417 c  AUTH$M. GUPTA                                                          
+29417 c  INST$Manipal University,                                               
+29417#c       Manipal, KA 576 104, INDIA                                        
+29417 c  ABST$The ENSDF file corresponding to Nuclear Data Sheets for A=266-294 
+294172c  (2005Gu33) has been updated to include the recently reported           
+294173c  production of {+294}117 and its daughters by 2010Og01.                 
+29417#c                                                                         
+29417#c  See 2005Gu33 for acronyms and notations and evaluation methodology     
+29417xc  used                                                                   
+29417xc  in this evaluation. The purpose of this evaluation is to present the   
+294173c  "best" set of nuclear properties for those nuclides reported between   
+294174c  A=266 and A=294 based on data currently available and {Bnot} to        
+294175c  establish a priority of discovery for any element.                     
+29417 c  CUT$August 1, 2010. All references relevant to the production of       
+294172c  {+294}117 or its daughters entered into the Nuclear Science References 
+294173c  File and papers and private communications received by this date were  
+29417xc  considered.                                                            
+29417 c  ACKN$The evaluator is very grateful to J. Choquette and B. Singh,      
+294172c  McMaster University for compiling these data into XUNDL.               
+29417 C  CIT$ENSDF                                                              
+                                                                                
+29417    ADOPTED LEVELS: Tentative                               ENSDF    201008
+29417  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+29417  Q -3.2E3    SY6.0E3   SY1.7E3   SY1.107E4 SY    2012WA38                 
+29417 CQ Note: Current evaluation has used the following Q record               
+29417  Q -5144     SY 6943   SY 512    SY 11000     SY 2009AuZZ                 
+29417 CQ Q-$ESTIMATED UNCERTAINTY=1404 KEV                                      
+29417 CQ SN$ESTIMATED UNCERTAINTY=1448 KEV                                      
+29417 CQ SP$ESTIMATED UNCERTAINTY=1243 KEV                                      
+29417 CQ QA$ESTIMATED UNCERTAINTY=200 KEV.                                      
+29417aCQ OTHERS: 10960 keV {I100} from E|a=10.81 MeV {I10} (2010Og01).          
+29417 DQ                                 10959   100   2010OG01                 
+29417 DQ QA        From E|a=10.81 MeV {I10}.                                    
+29417 c  2010Og01: {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center. This  
+29417ac  corresponded to an excitation energy of 35 MeV                         
+29417ac  for the 3n evaporation channel.                                        
+294172c  All experiments were carried out at Dubna, Russia, in collaboration    
+294173c  with RIAR (Russia) and LLNL; ORNL; University of Nevada and Vanderbilt 
+29417ac  University in USA, for a period of 70 days from July 27 - October 23,  
+29417ac  2009.                                                                  
+294174c  The U400 accelerator                                                   
+294175c  provided a total beam dose of 2|*10{+19} ions. Preliminary results     
+294176c  are reported in 2010Og01. EVR's were                                   
+294177c  spatially separated by DGFRS (2000OgZR) with a transmission efficiency 
+294178c  of about 35% before passing through a tof system (with a detection     
+29417ac  efficiency of 99.9%) and                                               
+294179c  being implanted in position sensitive semiconductor detectors. The     
+29417Ac  detection system consisted of a semiconductor detector array of 12     
+29417Bc  position-sensitive strips surrounded by eight side detectors. Detector 
+29417Cc  resolution was FWHM=60-140 keV for particles observed by focal plane   
+29417Dc  detector and 160-230 keV for particles escaping the focal plane and    
+29417Ec  hitting a side detector. Position averaged detection efficiency for    
+29417ac  |a particles was                                                       
+29417ac  87% of 4|p. The systematic uncertainty in the total                    
+29417ac  kinetic energy (TKE) released through SF was determined to be          
+29417ac  5 MeV when both fragments were detected.                               
+29417Gc  Sequential                                                             
+29417Hc  decays were measured under beam-off conditions with the beam being     
+29417ac  switched off for at least 3 mins after a recoil signal was detected    
+29417ac  with implantation parameters expected for Z=117 EVR's followed by an   
+29417ac  alpha-like signal with energies between 10.7 and 11.4 MeV in the same  
+29417ac  strip. A single |a decay chain was detected and attributed to this     
+29417ac  nucleus.                                                               
+29417 t  {TV}Details of the decay chain are provided with six successive        
+29417+t   {TV}|a decays followed by SF decay:                                   
+294173t  E{-|a1}=10.81 MeV {I10}, t{-1}=112 ms                                  
+29417+t       - {TV}assigned to {+294}117 decay                                 
+294174t  E{-|a2}= 9.95 MeV {I40}, t{-2}=0.023 s                                 
+29417+t      - {TV}assigned to {+290}115 decay                                  
+294175t  E{-|a3}= 9.63 MeV {I10}, t{-3}=28.3 s                                  
+29417+t       - {TV}assigned to {+286}113 decay                                 
+294176t  E{-|a4}= 9.00 MeV {I10}, t{-4}=0.74 s                                  
+29417+t       - {TV}assigned to {+282}Rg decay                                  
+294175t  E{-|a5}= 9.55 MeV {I19}, t{-5}=11.0 s                                  
+29417+t       - {TV}assigned to {+278}Mt decay                                  
+294176t  E{-|a6}= 8.80 MeV {I10}, t{-6}=1.3 m                                   
+29417+t        - {TV}assigned to {+274}Bh decay                                 
+294177t  E(SF)=219 MeV {I5}, t(SF)=33.4 h   - {TV}assigned to {+270}Db decay.   
+29417 c  The estimate of randomness (1984Sc13) was 6|*10{+-11}.                 
+29417Ac  The production cross-section in the 3n channel at E*=35 MeV was        
+29417Bc  calculated to be 0.5 pb +11-4.                                         
+29417 c  Theory: see Nuclear Science References.                                
+29417 c  Assignment: {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center      
+294172c  (2010Og01). The evaluator suggests that the                            
+294175c  properties attributed to {+294}117 and its daughters should be         
+294176c  considered as tentative until confirmed independently.                 
+29417  L X                                                                      
+29417 CL T$78 MS +372-36 from the observed lifetime of 112 ms using             
+294172cL the methods of 1984Sc13.                                               
+29417 CL $T(CALC): 29 ms from                                                   
+294172cL Viola-Seaborg systematics assuming Q(|a)=10.959 MeV                    
+29417 CL $T(theory): 31 ms from 2010So12.                                       
+294172 L %A AP 100$ %SF=?                                                       
+29417 cL %A$no SF decay events observed.                                        
+29417 CL $Q(|a):10960 keV {I100} from E|a=10.81 keV {I10}.                      
+29417 CL $Q(|a) (theory): 11150 keV from 2010So12.                              
+29417 cL J$|W(p)=3/2-; |W(n)=1/2+ from 1997Mo25 (theory)                        
+29417 cL $|b{-2}: -0.087 from 1995Mo29; 0.052 from 2003Mu15 (theory)            
+                                                                                
+29418    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+29418  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+294182 H CUT=12-Aug-2005$                                                       
+29418  Q             7.7E3   SY2.0E3   SY1.181E4 6     2012WA38                 
+29418 CQ Note: Current evaluation has used the following Q record               
+29418  Q                                 11.81E+3 6    2004OG10,2004OG12        
+29418 CQ QA$FROM EA=11.65 MEV 6 (2004OG10,2004OG12).                            
+29418 C  2003OGZZ, 2004OG10, 2004OG12:  THE DUBNA GROUP                         
+29418aC  IN A COLLABORATIVE EFFORT WITH ^LLNL, SYNTHESIZED Z=118 BY THE COMPLETE
+294182C  FUSION REACTION 249CF(48CA,3N) AT AN ENERGY OF 265 MEV. THE ^CN FORMED 
+294183C  WAS 29718. EXPERIMENTS WERE PERFORMED FROM FEBRUARY THROUGH JUNE 2002  
+294184C  TOTALING 2300 IRRADIATION HOURS AND AN ACCUMULATED BEAM DOSE OF        
+294185C  2.5E+19 48CA IONS. THE OPTIMAL CROSS-SECTION AND THE HIGHEST YIELD OF  
+294186C  ^EVR's IS EXPECTED FOR THE ABOVE CHANNEL BY THEORY                     
+294187C  (2002ZA19,2002ZA16,2002ZA01) AND COMPLEMENTED BY SYSTEMATIC REALISTIC  
+294188C  EXTRAPOLATIONS FROM THE RADIOACTIVE PROPERTIES OF NEIGHBORING EVEN-EVEN
+294189C  NUCLEI SUCH AS 29216, 28814, 28412 AND 280DS CREATED WITH 244PU AND    
+29418AC  248CM TARGETS. NOTE: 2002OGZX AND 2003OGZZ APPEAR TO BE THE SAME       
+29418BC  REPORT.                                                                
+29418 C  THE BEAM OF 48CA IONS WAS PROVIDED BY THE ^JINR ^U400 CYCLOTRON AND    
+294182C  ^EVR's WERE SEPARATED BY ^DGFRS WITH MAGNETIC RIGIDITY SET TO DETECT   
+294183C  Z=118 ^EVR's EXTRAPOLATED FROM EXPERIMENTAL DATA FOR THE REGION        
+294184C  Z=89-116 (2001OG09).                                                   
+29418aC  A ROTATING TARGET (97.3% 249CF) WITH SIX SEPARATE TARGET SECTORS, EACH 
+294182C  WITH AN AREA OF 5.3 CM2, WAS USED. IT WAS DETERMINED THAT THE          
+294183C  EXCITATION ENERGY OF THE 29718 ^CN COULD VARY FROM 26.6-31.7 MEV AND   
+294184C  SUBSEQUENT ANALYSIS LED TO AN ACCURACY OF |DE* AP 4.3 MEV. A TOF       
+294185C  DETECTOR WITH A 65 MM FLIGHT BASE WAS MOUNTED AHEAD OF THE FOCAL       
+294186C  PLANE DETECTOR. X-Y POSITION CORRESPONDENCE PROVIDED GENETIC           
+294187C  CORRELATIONS BETWEEN IMPLANTED RECOILS (|a's OR SF) AND THEIR          
+294188C  SUBSEQUENT DECAYS.                                                     
+29418aC  A FISSION FRAGMENT CALIBRATION WAS PERFORMED USING SF FRAGMENTS FROM   
+294182C  252NO WITH A KNOWN AVERAGE ENERGY RELEASE OF ABOUT 176 MEV.            
+29418 C  18 SF EVENTS OBSERVED WERE SEPARABLE INTO TWO GROUPS BY ENERGY:        
+294182C  16 EVENTS WITH AN AVERAGE TOTAL E=158 MEV (125 LE E(TOT) LE 175 MEV),  
+294183C  1 EVENT WITH E(TOT)=207 MEV, AND 1 EVENT WITH E(TOT)=223 MEV.          
+294184C  THE CORRESPONDING LOWER LIMIT OF HALF-LIFE FOR THE GROUP OF 16 EVENTS  
+294185C  WAS ESTIMATED TO BE T(SF)>0.5 H ASCRIBED TO LONG LIVED NUCLIDES IN THE 
+294186C  CF-Fm REGION VIA INCOMPLETE FUSION REACTIONS SUPPRESSED BY >5 ORDERS   
+294187C  OF MAGNITUDE IN ^DGFRS. THE OTHER TWO FISSION EVENTS WERE PRECEDED BY  
+294188C  RECOIL SIGNALS ASCRIBED TO ALPHA DECAY FROM A HIGHER ^A PARENT.        
+29418 C  EVENT 1 (19 MARCH 2002): IN PARTICULAR, THE EVENT WITH E(TOT)=207 MEV  
+29418aC  (^TKE AP 230 MEV) POINTS                                               
+294182C  TO A STRONG CORRELATION OF ALPHA DECAYS IN A ^EVR-|a1-|a2-SF SEQUENCE. 
+294183C  THE PROBABILITY OF RANDOMNESS FOR ALL 4 EVENTS IN THE SEQUENCE         
+294184C  WAS CALCULATED AS BEING LESS THAN 1.5E-06. THE INSTANTANEOUS BEAM      
+294185C  ENERGY WAS 245.6 MEV CORRESPONDING TO AN EXCITATION                    
+294186C  ENERGY OF 29.8 MEV 20 IN THE COMPOUND SYSTEM 29718. THE EVENTS WERE:   
+29418 t    E{-1}=11650 keV 60, t{-1}=2.55 ms                                    
+294182t  E{-2}=10710 keV 170, t{-2}=42.1 ms                                     
+294183t  E{-3}(SF)=188+19 MeV, t{-SF}=0.52 s.                                   
+29418 C  E{-1} AND E{-2} WERE ASSIGNED TO THE ALPHA                             
+294183C  DECAY OF Z=118 (29418) AND Z=116 (29016), RESPECTIVELY, AND E3 TO THE  
+294184C  TWO SF FRAGMENTS OF Z=114 (28614).                                     
+29418 C  EVENT 2 (16 APRIL 2002): FOR THIS ^EVR-SF SEQUENCE WITH                
+294185C  E(TOT)=223 MEV NO |a-LIKE SIGNALS WERE DETECTED.                       
+294186C  TWO COINCIDENT SF FRAGMENTS WERE SEEN WITH ENERGIES OF 137 MEV         
+294187C  (FOCAL PLANE DETECTOR) AND 86 MEV (SIDE DETECTOR). THE INSTANTANEOUS   
+294188C  BEAM ENERGY WAS 246.1 MEV CORRESPONDING TO A COMPOUND NUCLEUS          
+294189C  EXCITATION ENERGY OF 30.2 MEV 23. THE FISSIONING EVENT WAS SUGGESTED   
+294189C  TO BELONG TO THE ^EVR 29418 (t{-1}=3.16 MS) BY 2004OG10. THIS EVENT WAS
+29418AC  NOT INCLUDED IN TABLE ^IV OF 2004OG12.                                 
+29418 C  OTHER: SEE 2004OGZZ FOR FURTHER DISCUSSIONS.                           
+29418 C  THEORY: SEE Nuclear Science References.                                
+29418 C  ASSIGNMENT: 249CF(48CA,3N), E=265 MEV                                  
+294182C  (2002OGZX,2003OGZZ,2004OG10,2004OG12). ADDITIONAL EXPERIMENTS          
+294183C  ARE UNDERWAY AND MORE DETAILED STUDIES ARE REQUIRED. THE EVALUATORS    
+294184C  CONSIDER ALL ASSIGNMENTS FOR THIS DECAY CHAIN AS TENTATIVE. ALSO,      
+294185C  2004MO15 NOTE THAT THEIR ASSIGNMENT OF MASS BASED ON THE ^CN           
+294186C  EXCITATION ENERGY MAY BE OFF BY SINGLE UNIT.                           
+29418  L 0.0          0+               1.8 MS    +84-8                         ?
+29418 CL T$FROM ONE EVENT (2002OGZX,2003OGZZ. DT AT 68% CONFIDENCE LEVEL).      
+294182CL 1.8 MS +750-13 (2004OG12) IF 95% CONFIDENCE LEVEL USED. T(CALC)=0.44 MS
+294183CL FROM Viola-Seaborg SYSTEMATICS FOR Q=11.81 MEV.                        
+294182 L %A AP 100                                                              
+29418 CL %A$ESTIMATED FROM ONE EVENT                                            
+29418 CL $B2(THEORY): -0.087 FROM 1995MO29; 0.077 FROM 2003MU15; 0.008 FROM     
+294182CL 2005GAZX                                                               
+                                                                                

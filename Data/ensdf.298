@@ -1,0 +1,54 @@
+29820    COMMENTS                                                ENSDF    200904
+29820 C  TITL$ENSDF UPDATE FOR 29820                                            
+29820 c  AUTH$M. GUPTA                                                          
+29820 c  INST$Manipal University,                                               
+29820#c       Manipal, KA 576 104, INDIA                                        
+29820 c  ABST$The ENSDF file corresponding to Nuclear Data Sheets for A=266-294 
+29820ac  (2005Gu33) has been extended to include the recently                   
+29820ac  reported attempt at the production of {+298}120 and its daughters by   
+29820ac  2009Og02.                                                              
+29820#c                                                                         
+29820#c  See 2005Gu33 for acronyms and notations and evaluation methodology     
+29820ac  used                                                                   
+29820ac  in this evaluation. The purpose of this evaluation is to present the   
+298203c  "best" set of nuclear properties for those nuclides reported between   
+298204c  A=266 and A=294 based on data currently available and {bnot} to        
+298205c  establish a priority of discovery for any element.                     
+29820 c  CUT$April 14, 2009. All references relevant to the production of       
+298202c  {+298}120 or its daughters entered into the Nuclear Science References 
+298203c  File, papers and private communications received by this date were     
+29820ac  considered.                                                            
+29820 C  CIT$ENSDF                                                              
+                                                                                
+29820    ADOPTED LEVELS: NOT OBSERVED                            ENSDF    200904
+29820  H TYP=FUL$AUT=M. GUPTA$CUT=14-Apr-2009$CIT=ENSDF$                        
+29820  Q                                                                        
+29820 cQ QA$from theory. See Nuclear Science References.                        
+29820 c  2009Og02: Attempt at direct synthesis using the reaction               
+29820ac  {+244}Pu({+58}Fe,4n) at E{-Lab}=330.4 MeV corresponding to an          
+29820ac  excitation energy of E{+*}=45.5 MeV in the compound system. An         
+29820ac  E{-ex}=40 to 45 MeV was expected to provide the optimum yield for both 
+29820ac  the 3n ({+299}120) and 4n channels. The                                
+29820ac  experiment was performed at Dubna from January to March 2007 using     
+29820ac  the U400 cyclotron and the DGFRS apparatus. The detection efficiency   
+29820ac  for full energy |a particles was 87%. A total beam dose of             
+29820ac  7.1x10{+18} {+58}Fe ions was accumulated. The sensitivity of the       
+29820ac  experiment corresponded to 0.4 pb for the one-event cross-section. The 
+29820ac  range for the 84% upper limit cross-section was 0.7 pb                 
+29820ac  (only statistical                                                      
+29820ac  uncertainties) to 1.1 pb (including other experimental uncertainties). 
+29820ac  The tof of the recoils to the focal plane of the separator was about   
+29820ac  1 |msec. The experimenters state that this is shorter than the         
+29820ac  half-lives predicted for the |a-decay of                               
+29820ac  {+299}120 and {+298}120 as listed in Table 1,                          
+29820ac  assuming that |a emission is the preferred decay mode.                 
+29820ac  It would be therefore be reasonable to assume that the entire decay    
+29820ac  chain would be registered in the focal plane detectors. Daughter decays
+29820ac  were expected to be detected during a 30 sec beam off interval         
+29820ac  triggered by a recoil signal within the energy range of 6.5 to 18.5    
+29820ac  MeV.                                                                   
+29820 c  No correlated EVR-|a or EVR-SF events were detected in either the      
+29820ac  beam off or beam on condition, which could be attributed to this       
+29820ac  nucleus within the stated experimental sensitivity of 0.4 pb           
+29820ac  corresponding to the one-event cross-section.                          
+                                                                                
