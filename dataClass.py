@@ -1,6 +1,7 @@
 ##DATA Class
 ##By: Markus Garbiso
 ##Date Updated: May 6, 2017 by Peter Consalvi
+##Date Updated: May 17, 2017 by Matthew Martin
 
 ##This function is used in the main __init__ function to parse through strings in each line of the file inorder to find the value of the spin that corresponds to energy of that line of that file.
 def numberSlashBool(lineString,posTracker,trackChar):
@@ -27,11 +28,13 @@ class data:##This is the main data class
         self.f = open("Data/"+str(ENSDF),'rU')
         ##Each line of the file is split into list so the code can parse through each line easier
 
-        counter = 0
+        #Initializes a to be a string that I know is not in the code for the break function
         a = 'apple'
         for line in self.f:
             line = line.split()
 
+            ##The aforementioned break function that stops the code after the first set of data
+            ##Allows only the evaluated gammas to be plotted rather than all data in the file
             if len(line) == 0 and \
                a.lower() == b.lower():
                 break
@@ -41,6 +44,8 @@ class data:##This is the main data class
                 a = line[0] ##The first entry of each line, usually the filename. a will be used to double check to see if that line is valid.
                 c = line[1] ##This second entry contains what type of data and information is in the list line. The ENSDF website has a complete list of
                             ##each line type. I used L since L lines have experimental data.
+
+            ##Resets a to be apple so the break function works properly and does not stop after the first block, but rather stops after the first block of the correct isotope
             if(len(line) == 0):
                 a = 'apple'
 
@@ -59,6 +64,12 @@ class data:##This is the main data class
                     ##extra characters due to the incosistent file structure of ENSDF.
                     spinStr=''
                     unfilSpinStr=str(line[i])
+                    
+                    ##This if statement stops the code if the first character in the spin state is a J, which do not correspond to actual spin states
+                    ##This corrects the 65Zn plotting 2+ states issue
+                    if str(line[i][0]) == "J":
+                        break
+                    
                     oddANumberSingleDigitCheck=True
                     if(len(unfilSpinStr)>1 and not('X' in unfilSpinStr)and not('x' in unfilSpinStr) and not('Y' in unfilSpinStr)and not('y' in unfilSpinStr)):##Rarely, an entry will have pesky x and y characters which will break the program, so this if statment will not allow those statements. Also strings with lenths of 1 will break the program's algorithm.
                         for z in range(unfilSpinStr.count('+')+unfilSpinStr.count('-')):
