@@ -5,6 +5,8 @@
 import dataClass as dc
 from GUI import guioutputs
 
+import os
+
 
 
 #This function is used to bulk export a range of isotopes in a given A range.
@@ -68,61 +70,92 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
     else:
         fileParsingFactor=1
 
-    #plt file Naming
-    if(Filter):
-        fileName= str(lowerBound)+str(elementName)+"_"+str(higherBound)+str(elementName)+wantedSpins+fileParsingFactorStr+"_Fil.plt"        
-        fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
-        pltFile = open(fileName,'wb')
+    removecount = 0
+    for i in range(lowerBound,higherBound+1,fileParsingFactor):
+        filenameopen = str(i)+str(elementName)+wantedSpins+"_Fil.dat"
+        with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
+            first_line = datafile.readline().rstrip()
+        nodatatest = str(first_line[-7:])
+        if nodatatest == "NO_DATA":
+            os.remove("Output/"+"gnuPlot/"+filenameopen)
+            removecount = removecount + 1
+        else:
+            break
+    removehighcount = 0
+    for i in range(higherBound,lowerBound-1,-fileParsingFactor):
+        filenameopen = str(i)+str(elementName)+wantedSpins+"_Fil.dat"
+        if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+            with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
+                first_line = datafile.readline().rstrip()
+            nodatatest = str(first_line[-7:])
+            if nodatatest == "NO_DATA":
+                os.remove("Output/"+"gnuPlot/"+filenameopen)
+                removehighcount = removehighcount + 1
+            else:
+                break
+
+    filenameopen = str(lowerBound+removecount)+str(elementName)+wantedSpins+"_Fil.dat"
+    if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+        #plt file Naming
+        if(Filter):
+            fileName= str(lowerBound)+str(elementName)+"_"+str(higherBound)+str(elementName)+wantedSpins+fileParsingFactorStr+"_Fil.plt"        
+            fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
+            pltFile = open(fileName,'wb')
+        else:
+            fileName= str(lowerBound)+str(elementName)+"_"+str(higherBound)+str(elementName)+".plt"
+            fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
+            pltFile = open(fileName,'wb')
+
+
+        # These following lines add the completely nessecary lines in the plt files
+
+        #Reset gnuplot.
+        pltFile.write("reset\n")
+
+
+        #This removes the default legend in the final plot, because the legend is ugly and not useful in our case.
+        pltFile.write("unset key\n")
+
+        #This labels the y axis and the Title
+        pltFile.write("set ylabel \"Energy(keV)\"\n")
+        pltFile.write("set title \"Energy Levels\"\n")
+
+        #This line Currently DOES NOT work but should make the graph greyscale.
+        pltFile.write("set palette gray\n")
+
+        #This tells gnuplot that the delimiter of each column as ,
+        pltFile.write("set datafile sep ','\n")
+
+
+        #This sets the x axis with the names of the isotpes wanted.
+        setLine="set xtics ("
+        for i in range(lowerBound+removecount,higherBound-removehighcount+1,fileParsingFactor):
+            if(i+fileParsingFactor>higherBound):
+                setLine=setLine+"\""+str(i)+str(elementName)+"\" "+str(i+1-lowerBound-removecount)+")"
+            else:
+                setLine=setLine+"\""+str(i)+str(elementName)+"\" "+str(i+1-lowerBound-removecount)+","
+        pltFile.write(setLine[:-1]+")"+"\n")
+        pltFile.write("set xrange [0:"+str(higherBound-removehighcount-lowerBound-removecount+2)+"]\n")
+    
+        #This will write the plot coding for the labeling of each energy leven and a line that corrosponds to each one.
+        for i in range(lowerBound + removecount,higherBound-removehighcount+1,fileParsingFactor):
+            if(i==lowerBound+removecount):
+                if(Filter):
+                    pltFile.write(("plot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
+                else:
+                    pltFile.write("plot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n")
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
+            else:
+                if(Filter):
+                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
+                else:
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n")
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
+        if UI:
+            print ("Program is finished plotting")
+            exit
     else:
-        fileName= str(lowerBound)+str(elementName)+"_"+str(higherBound)+str(elementName)+".plt"
-        fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
-        pltFile = open(fileName,'wb')
-
-
-    # These following lines add the completely nessecary lines in the plt files
-
-    #Reset gnuplot.
-    pltFile.write("reset\n")
-
-    #This sets the x axis with the names of the isotpes wanted.
-    setLine="set xtics ("
-    for i in range(lowerBound,higherBound+1,fileParsingFactor):
-        if(i+fileParsingFactor>higherBound):
-            setLine=setLine+"\""+str(i)+str(elementName)+"\" "+str(i+1-lowerBound)+")"
-        else:
-            setLine=setLine+"\""+str(i)+str(elementName)+"\" "+str(i+1-lowerBound)+","
-    pltFile.write(setLine+"\n")
-    pltFile.write("set xrange [0:"+str(higherBound-lowerBound+2)+"]\n")
-
-    #This removes the default legend in the final plot, because the legend is ugly and not useful in our case.
-    pltFile.write("unset key\n")
-
-    #This labels the y axis and the Title
-    pltFile.write("set ylabel \"Energy(keV)\"\n")
-    pltFile.write("set title \"Energy Levels\"\n")
-
-    #This line Currently DOES NOT work but should make the graph greyscale.
-    pltFile.write("set palette gray\n")
-
-    #This tells gnuplot that the delimiter of each column as ,
-    pltFile.write("set datafile sep ','\n")
-
-    #This will write the plot coding for the labeling of each energy leven and a line that corrosponds to each one.
-    for i in range(lowerBound,higherBound+1,fileParsingFactor):
-        if(i==lowerBound):
-            if(Filter):
-                pltFile.write(("plot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
-                pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
-            else:
-                pltFile.write("plot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n")
-                pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
-        else:
-            if(Filter):
-                pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
-                pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
-            else:
-                pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n")
-                pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
-    if UI:
-        print ("Program is finished plotting")
+        print "Nothing to plot"
         exit

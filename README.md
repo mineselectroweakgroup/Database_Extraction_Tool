@@ -44,7 +44,14 @@ The GUI should  not close when the submits button are clicked. The user should b
 
 ## Version Tracking:
 
-Version Upload 05.17.2017 @ 2000MT -W. McDonald: Combined `README.md` and Peter's `READ_ME.txt.txt` into `README.md`. Reformatted the README into Markdown and edited contents for clarity.
+Version Upload 05.18.2017 @ 0900MT -M.S. Martin:
+    Removed exterior zero data files so plot will only display useful
+    information and interior NO_DATA sets
+    Automatically delete all zero data files include plots
+
+Version Upload 05.17.2017 @ 2000MT -W. McDonald:
+    Combined `README.md` and Peter's `READ_ME.txt.txt` into `README.md`.
+    Reformatted the README into Markdown and edited contents for clarity.
 
 Version Upload 05.17.2017 @ 1430MT -M.S. Martin:
     Updated README.md file to include project description.
