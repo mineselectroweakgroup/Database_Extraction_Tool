@@ -73,7 +73,7 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
 ##This loop removes all datafiles below the first non-empty one
     removecount = 0
     for i in range(lowerBound,higherBound+1,fileParsingFactor):
-        filenameopen = str(i)+str(elementName)+wantedSpins+"_Fil.dat"
+        filenameopen = (str(i)+str(elementName)+wantedSpins+"_Fil.dat").replace('/','_')
         with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
             first_line = datafile.readline().rstrip()
         nodatatest = str(first_line[-7:])
@@ -85,7 +85,7 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
 #This loop removes all datafiles above the last non-empty one
     removehighcount = 0
     for i in range(higherBound,lowerBound-1,-fileParsingFactor):
-        filenameopen = str(i)+str(elementName)+wantedSpins+"_Fil.dat"
+        filenameopen = (str(i)+str(elementName)+wantedSpins+"_Fil.dat").replace('/','_')
         if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
             with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
@@ -99,7 +99,7 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
 #This if statement checks to see if there are any datafiles left to plot. If there are then it runs through the
 #plotting process. If there are none then it displays a statement telling the user that there is nothing to
 #plot and exits the program.
-    filenameopen = str(lowerBound+removecount)+str(elementName)+wantedSpins+"_Fil.dat"
+    filenameopen = (str(lowerBound+removecount)+str(elementName)+wantedSpins+"_Fil.dat").replace('/','_')
     if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
         #plt file Naming
         if(Filter):
