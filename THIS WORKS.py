@@ -18,8 +18,7 @@ while userInput[4] == 0:
 
     #Makes plot
     ided.pltFileExp(userInput[0],userInput[1],userInput[2],True,userInput[3],True)
-
-
+    userInput = ided.datExp(True,True)
 
 #Problems:
 #1. Click the submit button on the left and the GUI closes

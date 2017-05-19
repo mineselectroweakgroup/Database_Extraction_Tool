@@ -12,6 +12,7 @@ class Application(Frame):
         self.create_widgets()
         self.grid()
 
+
         #Here are the variable declarations for the Nuclear Structure section
         #Rows are seperated by newlines
         self.chemSymVar = StringVar()
@@ -169,6 +170,7 @@ class Application(Frame):
 
 global app
 app= Application(root)
+root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()
 
 
