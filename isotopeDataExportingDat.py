@@ -18,6 +18,7 @@ def datExp(UI=False,Filter=False,elementName="H",lowerBound=0,higherBound=1,want
     lowerBound = int(guioutputs.isoLow)
     higherBound = int(guioutputs.isoUp)
     energyLim = int(guioutputs.E)
+    exitcount = int(guioutputs.exitcount)
     if(Filter):
         wantedSpins=str(guioutputs.J)
         energyLim=int(guioutputs.E)
@@ -46,7 +47,7 @@ def datExp(UI=False,Filter=False,elementName="H",lowerBound=0,higherBound=1,want
         exit
     
     #If wanted this will return the user inputs for further use
-    return [elementName,lowerBound,higherBound,wantedSpins]
+    return [elementName,lowerBound,higherBound,wantedSpins,exitcount]
 
 
 

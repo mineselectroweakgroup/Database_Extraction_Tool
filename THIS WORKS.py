@@ -3,19 +3,21 @@ import dataClass as dc
 import isotopeDataExportingDat as ided
 from data_array import final
 from searching_function import acquire
+userInput = ['',0,0,'',0]
+
+while userInput[4] == 0:
+
+    #Exports data requested by the user into text files (necessary to generate plots)
+    userInput = ided.datExp(True,True)
 
 
-#Exports data requested by the user into text files (necessary to generate plots)
-userInput = ided.datExp(True,True)
+    #Prints the user input allowing user to make sure they inputted allowing user
+    #to check what they input against the plot they are viewing
+    print userInput
 
 
-#Prints the user input allowing user to make sure they inputted allowing user
-#to check what they input against the plot they are viewing
-print userInput
-
-
-#Makes plot
-ided.pltFileExp(userInput[0],userInput[1],userInput[2],True,userInput[3],True)
+    #Makes plot
+    ided.pltFileExp(userInput[0],userInput[1],userInput[2],True,userInput[3],True)
 
 
 

@@ -28,6 +28,9 @@ class Application(Frame):
 
         self.aLowVar = StringVar()
         self.aHighVar = StringVar()
+
+
+        self.exitcount = 0
         
 
     def create_widgets(self):
@@ -118,6 +121,9 @@ class Application(Frame):
         decaySubmit = Button(decay, text = "Submit", command = self.sendDecayData)
         decaySubmit.grid(row = 5, column = 0, sticky = W)
 
+        exitSubmit = Button(out, text = "Exit", command = self.exitButton)
+        exitSubmit.grid(row = 0, column = 2, sticky = W)
+
 
 
         #Setting up the output box with scrolling feature
@@ -155,8 +161,13 @@ class Application(Frame):
 
         self.outText.insert(0.0, sf.acquire(self.qLowVar,self.qHighVar,self.aLowVar,self.aHighVar,Theory = False,Sym = False))
 
+    def exitButton(self):
+        self.exitcount = 1
+        print "Thanks!"
+        root.destroy()
 
 
+global app
 app= Application(root)
 root.mainloop()
 
@@ -170,6 +181,7 @@ class guioutputs:
     J=app.spinVar
     isoUp=app.upBoundIsoVar
     E=app.upBoundEnergyVar
+    exitcount=app.exitcount
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.
