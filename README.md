@@ -44,10 +44,11 @@ The GUI should  not close when the submits button are clicked. The user should b
 
 ## Version Tracking:
 
-Version Upload 05.19.2017 @ TIME -M.S. Martin:
+Version Upload 05.19.2017 @ 0850MT -M.S. Martin:
     Attempting to fix GUI closing issue
     This code loops but does not allow for multiple user inputs
     Plots do not appear in GUI yet
+    Exit button completely functional
 
 Version Upload 05.18.2017 @ 0900MT -M.S. Martin:
     Removed exterior zero data files so plot will only display useful

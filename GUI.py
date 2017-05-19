@@ -185,6 +185,8 @@ class guioutputs:
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.
+    if exitcount == 1:
+        sys.exit()
     if Z == '' or J == '':
         print "YOU SUCK, FIGURE IT OUT"
         sys.exit()
