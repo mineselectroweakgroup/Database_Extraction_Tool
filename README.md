@@ -1,4 +1,4 @@
-gedit # Database_Extraction_Tool
+# Database_Extraction_Tool
 
 
 ### Outline of Program
