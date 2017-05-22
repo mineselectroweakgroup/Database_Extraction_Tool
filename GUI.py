@@ -4,6 +4,7 @@ import isotopeDataExportingDat as ided
 root = Tk()
 root.title("Data Extraction")
 import sys
+import os
 
 
 
