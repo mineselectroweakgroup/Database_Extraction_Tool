@@ -5,12 +5,15 @@ root = Tk()
 root.title("Data Extraction")
 import sys
 
+
+
 class Application(Frame):
     def __init__(self,master):
         Frame.__init__(self,master)
 
         self.create_widgets()
         self.grid()
+
 
 
         #Here are the variable declarations for the Nuclear Structure section
@@ -29,7 +32,6 @@ class Application(Frame):
 
         self.aLowVar = StringVar()
         self.aHighVar = StringVar()
-
 
         self.exitcount = 0
         
@@ -100,7 +102,6 @@ class Application(Frame):
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
 
 
-
         #Here I will set up all of the entry boxes for decay
         #Same format
 
@@ -137,9 +138,6 @@ class Application(Frame):
         
 
 
-        
-
-
     #Defining the functions that make the submit buttons do things. 
     def sendNucData(self):
         """Send user input to nuclear structure sorting function"""
@@ -149,7 +147,7 @@ class Application(Frame):
         self.upBoundIsoVar = self.upBoundIsoEntry.get()
         self.spinVar = self.spinEntry.get()
         self.upBoundEnergyVar = self.upBoundEnergyEntry.get()
-        root.destroy()#closes the GUI window
+        root.destroy()#closes window
 
 
     def sendDecayData(self):
@@ -167,12 +165,10 @@ class Application(Frame):
         print "Thanks!"
         root.destroy()
 
-
 global app
-app= Application(root)
+app = Application(root)
 root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()
-
 
 #Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts
 
@@ -205,5 +201,4 @@ class guioutputs:
     Qhigh= app.qHighVar
     Alow= app.aLowVar 
     Ahigh= app.aHighVar
-    
-        
+

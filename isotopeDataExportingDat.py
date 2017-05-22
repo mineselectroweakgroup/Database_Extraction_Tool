@@ -1,6 +1,7 @@
 ##ENSDF File: Multiple Data PLT (for gnuplot) File Extractor
 ##By: Markus Garbiso
 ##Date Updated: April 26, 2017 by Peter Consalvi
+##Date Updated: May 19, 2017 by Matthew Martin
 
 import dataClass as dc
 from GUI import guioutputs
@@ -11,6 +12,7 @@ import os
 
 #This function is used to bulk export a range of isotopes in a given A range.
 def datExp(UI=False,Filter=False,elementName="H",lowerBound=0,higherBound=1,wantedSpins='',energyLim=100000000):
+
 
     #User input and checks for valid inputs.
     tryAgainCounter=1
@@ -45,6 +47,7 @@ def datExp(UI=False,Filter=False,elementName="H",lowerBound=0,higherBound=1,want
     if UI:
         #readinput.message= "Data export complete"
         exit
+
     
     #If wanted this will return the user inputs for further use
     return [elementName,lowerBound,higherBound,wantedSpins,exitcount]
