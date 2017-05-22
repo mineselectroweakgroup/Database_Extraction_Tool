@@ -1,0 +1,29 @@
+VERSION HISTORY AS OF INITIAL UPLOAD TO GITHUB ON 5/17/2017:
+
+Version 0.1.0 Upload 05.17.2017 @ 1050MT -M.S. Martin:
+    This code plots properly with no duplicates with the following exceptions.
+    Plots 2+ state for 65Zn - problem not found yet.
+    GUI still has to close for plot to appear.
+
+Version 0.1.1 Upload 05.17.2017 @ 1150MT -M.S. Martin:
+    This code fixes the 2+ states for 65Zn issue.
+    GUI still has to close for plot to appear.
+
+Version 0.1.2 Upload 05.17.2017 @ 1430MT -M.S. Martin:
+    Updated README.md file to include project description.
+    Created a way for the program to interpret blank entries into the left side
+    of the GUI. Now some blank entries will kill the program while some will
+    set to default values
+
+Version 0.1.3 Upload 05.17.2017 @ 2000MT -W. McDonald:
+    Combined `README.md` and Peter's `READ_ME.txt.txt` into `README.md`.
+    Reformatted the README into Markdown and edited contents for clarity.
+
+Version 0.2.0 Upload 05.18.2017 @ 0900MT -M.S. Martin:
+    Removed exterior zero data files so plot will only display useful
+    information and interior NO_DATA sets
+    Automatically delete all zero data files include plots
+
+Version 0.2.1 Upload 05.22.2017 1030MT -W. McDonald:
+    Moved Version History from README.md to Changelog.txt
+
