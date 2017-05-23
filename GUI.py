@@ -5,6 +5,7 @@ root = Tk()
 root.title("Data Extraction")
 import sys
 import os
+import glob
 
 
 
@@ -42,7 +43,7 @@ class Application(Frame):
         #my own, and the output text box by using 3 different frames
         nucStruc = Frame(self, padx = 10)
         decay = Frame(self, padx = 10)
-        out = Frame(self, pady = 10)
+        out = Frame(self, pady = 20)
         out.pack(side = BOTTOM)
         nucStruc.pack(side = LEFT)
         decay.pack(side = RIGHT)
@@ -131,13 +132,27 @@ class Application(Frame):
 
         #Setting up the output box with scrolling feature
         self.outText = Text(out)
-        self.outText.grid(sticky = W+E+N+S)
+        self.outText.grid(row = 0, column = 1, sticky = W+E+N+S)
         outScroll = Scrollbar(out)
         outScroll.grid(row = 0, column = 1, sticky = E+S+N)
         outScroll.config(command=self.outText.yview)
         self.outText.config(yscrollcommand=outScroll.set)
-        
 
+        self.outGraph = Canvas(out,width = 700, height = 500)
+        self.outGraph.grid(row = 0, column = 0, sticky = W+E+N+S)
+
+        os.chdir("Output/gnuPlot")
+        work_path = os.getcwd()
+        if os.listdir(work_path) == []:
+            print("Directory Empty")
+        else:
+            self.directory=os.getcwd()
+            self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
+            self.newest = self.newest[55:]
+            self.photo = PhotoImage(file=self.newest)
+            self.outGraph.create_image(10,10,image=self.photo, anchor = "nw")
+        os.chdir("/home/matmarti/Database_Extraction_Tool")
+            
 
     #Defining the functions that make the submit buttons do things. 
     def sendNucData(self):

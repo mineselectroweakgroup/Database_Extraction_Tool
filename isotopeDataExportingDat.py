@@ -150,21 +150,34 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
         for i in range(lowerBound + removecount,higherBound-removehighcount+1,fileParsingFactor):
             if(i==lowerBound+removecount):
                 if(Filter):
-                    pltFile.write(("plot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
+                    pltFile.write(("plot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Helvetica,5\" offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
                     pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
                 else:
-                    pltFile.write("plot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n")
+                    pltFile.write("plot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Helvetica,5\" offset character " + str(fileParsingFactor) + ",character 0\n")
                     pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
             else:
                 if(Filter):
-                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Helvetica,5\" offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
                     pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
                 else:
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Verdana,5\" offset character " + str(fileParsingFactor) + ",character 0\n")
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point font \"Helvetica,5\" offset character " + str(fileParsingFactor) + ",character 0\n")
                     pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
+
+            
+                      
         if UI:
             print ("Program is finished plotting")
+            os.chdir("Output/gnuPlot")
+            fileName = fileName.replace('.plt','.gif')
+            fileName = fileName[15:]
+            pltFile.write("set term gif font '"'Helvetica,5'"'\n")
+            pltFile.write("set output "+"'"+fileName+"'"+"\n")
+            pltFile.write("replot\n")
+            pltFile.write("set term x11")
+            os.chdir("/home/matmarti/Database_Extraction_Tool")
             exit
+
+    
     else:
         print "Nothing to plot"
         exit
