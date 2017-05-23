@@ -127,6 +127,8 @@ class Application(Frame):
 
         exitSubmit = Button(out, text = "Exit", command = self.exitButton)
         exitSubmit.grid(row = 0, column = 2, sticky = W)
+        fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton)
+        fullScreenSubmit.grid(row = 1, column = 0)
 
 
 
@@ -181,6 +183,15 @@ class Application(Frame):
         self.exitcount = 1
         print "Thanks!"
         root.destroy()
+
+    def fullScreenButton(self):
+        os.chdir("Output/gnuPlot")
+        directory = os.getcwd()
+        newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
+        newest = newest[55:]
+        os.system("okular --presentation "+newest)
+        os.chdir("..")
+        os.chdir("..")
 
 global app
 app = Application(root)

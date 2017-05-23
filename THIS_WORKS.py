@@ -27,9 +27,15 @@ newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
 newest = newest[55:]
 os.system("gnuplot "+newest)
 fileList = glob.glob("*.dat")
+time.sleep(.01)
+
+fileList = glob.glob("*.dat")
 for f in fileList:
     os.remove(f)
-time.sleep(.01)
+fileList = glob.glob("*.plt")
+for f in fileList:
+    os.remove(f)
+    
 os.chdir("..")
 os.chdir("..")
 os.system("python THIS_WORKS.py")
