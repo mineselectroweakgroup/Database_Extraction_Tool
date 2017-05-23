@@ -171,7 +171,7 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
             fileName = fileName[15:]
             if os.path.isfile(fileName):
                 os.remove(fileName)
-            pltFile.write("set term gif font '"'Helvetica.ttf'"' 9\n")
+            pltFile.write("set term gif font '"'Helvetica.ttf'"' 6\n")
             pltFile.write("set output "+"'"+fileName+"'"+"\n")
             pltFile.write("replot\n")
             pltFile.write("set term x11")

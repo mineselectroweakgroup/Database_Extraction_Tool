@@ -29,12 +29,12 @@ os.system("gnuplot "+newest)
 fileList = glob.glob("*.dat")
 time.sleep(.01)
 
-fileList = glob.glob("*.dat")
-for f in fileList:
-    os.remove(f)
-fileList = glob.glob("*.plt")
-for f in fileList:
-    os.remove(f)
+#fileList = glob.glob("*.dat")
+#for f in fileList:
+    #os.remove(f)
+#fileList = glob.glob("*.plt")
+#for f in fileList:
+    #os.remove(f)
     
 os.chdir("..")
 os.chdir("..")

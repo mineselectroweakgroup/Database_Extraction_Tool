@@ -189,7 +189,7 @@ class Application(Frame):
         directory = os.getcwd()
         newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
         newest = newest[55:]
-        os.system("okular --presentation "+newest)
+        os.system("okular --presentation "+newest+" &")
         os.chdir("..")
         os.chdir("..")
 
