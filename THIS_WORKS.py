@@ -8,34 +8,35 @@ import os
 import glob
 import time
 
-    #Exports data requested by the user into text files (necessary to generate plots)
+#Exports data requested by the user into text files (necessary to generate plots)
 userInput = ided.datExp(True,True)
 
 
-    #Prints the user input allowing user to make sure they inputted allowing user
-    #to check what they input against the plot they are viewing
+#Prints the user input allowing user to make sure they inputted allowing user
+#to check what they input against the plot they are viewing
+#The sleep is a pause so the timestamps used work correctly
 print userInput
-time.sleep(0.1)
+time.sleep(0.01)
     
-    #Makes plot
+#Makes plot
 ided.pltFileExp(userInput[0],userInput[1],userInput[2],True,userInput[3],True)
 
-#This code pulls up the plot in gnuplot and restarts the program
+#This code creates the .git file which is the actual plot
 os.chdir("Output/gnuPlot")
 directory = os.getcwd()
 newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
 newest = newest[55:]
 os.system("gnuplot "+newest)
-fileList = glob.glob("*.dat")
-time.sleep(.01)
 
+#Optional code used to delete everything but the .git files.
 #fileList = glob.glob("*.dat")
 #for f in fileList:
     #os.remove(f)
 #fileList = glob.glob("*.plt")
 #for f in fileList:
     #os.remove(f)
-    
+
+#This code puts restarts the program so it can be used again    
 os.chdir("..")
 os.chdir("..")
 os.system("python THIS_WORKS.py")

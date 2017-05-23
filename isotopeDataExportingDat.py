@@ -1,7 +1,7 @@
 ##ENSDF File: Multiple Data PLT (for gnuplot) File Extractor
 ##By: Markus Garbiso
 ##Date Updated: April 26, 2017 by Peter Consalvi
-##Date Updated: May 19, 2017 by Matthew Martin
+##Date Updated: May 23, 2017 by Matthew Martin
 
 import dataClass as dc
 from GUI import guioutputs
@@ -127,7 +127,7 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
 
         #This labels the y axis and the Title
         pltFile.write("set ylabel \"Energy(keV)\"\n")
-        pltFile.write("set title \"Energy Levels\"\n")
+        pltFile.write("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementName+" through "+str(higherBound)+elementName+"\"\n")
 
         #This line Currently DOES NOT work but should make the graph greyscale.
         pltFile.write("set palette gray\n")
@@ -138,7 +138,9 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
 
         #This sets the x axis with the names of the isotpes wanted.
         setLine="set xtics ("
+        rangecount = 0
         for i in range(lowerBound+removecount,higherBound-removehighcount+1,fileParsingFactor):
+            rangecount = rangecount + 1
             if(i+fileParsingFactor>higherBound):
                 setLine=setLine+"\""+str(i)+str(elementName)+"\" "+str(i+1-lowerBound-removecount)+")"
             else:
@@ -153,25 +155,37 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
                     pltFile.write(("plot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point offset character " + str(fileParsingFactor) + ",character 0.3\n").replace('/', '_'))
                     pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
                 else:
-                    pltFile.write("plot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point offset character " + str(fileParsingFactor) + ",character 0.3\n")
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
+                    pltFile.write("plot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0\n")
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.15)+") with xerrorbars\n")
             else:
                 if(Filter):
-                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point offset character " + str(fileParsingFactor) + ",character 0.3\n").replace('/', '_'))
-                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.15)+") with xerrorbars\n").replace('/', '_'))
                 else:
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point offset character " + str(fileParsingFactor) + ",character 0.3\n")
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0\n")
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.15)+") with xerrorbars\n")
 
             
                       
         if UI:
             print ("Program is finished plotting")
+            #This defines the code required for the program to plot the information
+            #as a .gif file.
+            #Also in here is the font and font size for the .git file
             fileName = fileName.replace('.plt','.gif')
             fileName = fileName[15:]
             if os.path.isfile(fileName):
                 os.remove(fileName)
-            pltFile.write("set term gif font '"'Helvetica.ttf'"' 6\n")
+            if rangecount >= 20:
+                pltFile.write("set term gif font '"'Helvetica.tff'"' 5\n")
+            elif rangecount >= 15:
+                pltFile.write("set term gif font '"'Helvetica.ttf'"' 6\n")
+            elif rangecount >= 10:
+                pltFile.write("set term gif font '"'Helvetica.tff'"' 8\n")
+            elif rangecount >= 5:
+                pltFile.write("set term gif font '"'Helvetica.tff'"' 10\n")
+            else:
+                pltFile.write("set term gif font '"'Helvetica.tff'"' 12\n")
             pltFile.write("set output "+"'"+fileName+"'"+"\n")
             pltFile.write("replot\n")
             pltFile.write("set term x11")

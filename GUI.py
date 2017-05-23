@@ -140,6 +140,8 @@ class Application(Frame):
         outScroll.config(command=self.outText.yview)
         self.outText.config(yscrollcommand=outScroll.set)
 
+        #Setting up the graph output box including the calling of the most
+        #recent graph to the GUI
         self.outGraph = Canvas(out,width = 700, height = 500)
         self.outGraph.grid(row = 0, column = 0, sticky = W+E+N+S)
 
@@ -167,7 +169,6 @@ class Application(Frame):
         self.spinVar = self.spinEntry.get()
         self.upBoundEnergyVar = self.upBoundEnergyEntry.get()
         root.destroy()#closes window
-
 
     def sendDecayData(self):
         """Send user input to decay data sorting function"""
