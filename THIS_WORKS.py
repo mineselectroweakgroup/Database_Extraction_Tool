@@ -6,6 +6,7 @@ from searching_function import acquire
 userInput = ['',0,0,'',0]
 import os
 import glob
+import time
 
     #Exports data requested by the user into text files (necessary to generate plots)
 userInput = ided.datExp(True,True)
@@ -14,6 +15,7 @@ userInput = ided.datExp(True,True)
     #Prints the user input allowing user to make sure they inputted allowing user
     #to check what they input against the plot they are viewing
 print userInput
+time.sleep(0.1)
     
     #Makes plot
 ided.pltFileExp(userInput[0],userInput[1],userInput[2],True,userInput[3],True)
@@ -23,8 +25,13 @@ os.chdir("Output/gnuPlot")
 directory = os.getcwd()
 newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
 newest = newest[55:]
-os.system("gnuplot --persist "+newest)
-os.chdir("/home/matmarti/Database_Extraction_Tool")
+os.system("gnuplot "+newest)
+fileList = glob.glob("*.dat")
+for f in fileList:
+    os.remove(f)
+time.sleep(.01)
+os.chdir("..")
+os.chdir("..")
 os.system("python THIS_WORKS.py")
 
 #Problems:

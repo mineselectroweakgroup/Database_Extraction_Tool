@@ -170,6 +170,8 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
             os.chdir("Output/gnuPlot")
             fileName = fileName.replace('.plt','.gif')
             fileName = fileName[15:]
+            if os.path.isfile(fileName):
+                os.remove(fileName)
             pltFile.write("set term gif font '"'Helvetica,5'"'\n")
             pltFile.write("set output "+"'"+fileName+"'"+"\n")
             pltFile.write("replot\n")

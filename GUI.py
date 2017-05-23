@@ -151,7 +151,8 @@ class Application(Frame):
             self.newest = self.newest[55:]
             self.photo = PhotoImage(file=self.newest)
             self.outGraph.create_image(10,10,image=self.photo, anchor = "nw")
-        os.chdir("/home/matmarti/Database_Extraction_Tool")
+        os.chdir("..")
+        os.chdir("..")
             
 
     #Defining the functions that make the submit buttons do things. 
