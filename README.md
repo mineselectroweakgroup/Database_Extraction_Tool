@@ -43,37 +43,6 @@ The GUI should  not close when the submits button are clicked. The user should b
 
 
 ## Version Tracking:
-<<<<<<< HEAD
 
-Version Upload 05.19.2017 @ 0850MT -M.S. Martin:
-    Attempting to fix GUI closing issue
-    This code loops but does not allow for multiple user inputs
-    Plots do not appear in GUI yet
-    Exit button completely functional
-
-Version Upload 05.18.2017 @ 0900MT -M.S. Martin:
-    Removed exterior zero data files so plot will only display useful
-    information and interior NO_DATA sets
-    Automatically delete all zero data files include plots
-
-Version Upload 05.17.2017 @ 2000MT -W. McDonald:
-    Combined `README.md` and Peter's `READ_ME.txt.txt` into `README.md`.
-    Reformatted the README into Markdown and edited contents for clarity.
-
-Version Upload 05.17.2017 @ 1430MT -M.S. Martin:
-    Updated README.md file to include project description.
-    Created a way for the program to interpret blank entries into the left side
-    of the GUI. Now some blank entries will kill the program while some will
-    set to default values
-
-Version Upload 05.17.2017 @ 1150MT -M.S. Martin:
-    This code fixes the 2+ states for 65Zn issue.
-    GUI still has to close for plot to appear.
-
-Version Upload 05.17.2017 @ 1050MT -M.S. Martin:
-    This code plots properly with no duplicates with the following exceptions.
-    Plots 2+ state for 65Zn - problem not found yet.
-    GUI still has to close for plot to appear.
-=======
 Version history can be found in the Change Log, [here.](http://github.com/ElectroweakGroup/Database_Extraction_Tool/blob/master/Changelog.txt)
 >>>>>>> aa85c5c9e79df70089bfc4c3f4991c3f13123973
