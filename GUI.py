@@ -152,7 +152,7 @@ class Application(Frame):
         else:
             self.directory=os.getcwd()
             self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
-            self.newest = self.newest[55:]
+            self.newest = self.newest.replace(os.getcwd()+"/","")
             self.photo = PhotoImage(file=self.newest)
             self.outGraph.create_image(10,10,image=self.photo, anchor = "nw")
         os.chdir("..")
@@ -189,7 +189,7 @@ class Application(Frame):
         os.chdir("Output/gnuPlot")
         directory = os.getcwd()
         newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
-        newest = newest[55:]
+        newest = newest.replace(os.getcwd()+"/","")
         os.system("okular --presentation "+newest+" &")
         os.chdir("..")
         os.chdir("..")
