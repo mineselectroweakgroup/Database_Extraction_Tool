@@ -149,6 +149,8 @@ class Application(Frame):
         work_path = os.getcwd()
         if os.listdir(work_path) == []:
             print("Directory Empty")
+        elif os.listdir(work_path) == [Ignore.txt]:
+            print("Directory Empty")
         else:
             self.directory=os.getcwd()
             self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
