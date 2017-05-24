@@ -43,6 +43,7 @@ The GUI should  not close when the submits button are clicked. The user should b
 
 
 ## Version Tracking:
+<<<<<<< HEAD
 
 Version Upload 05.19.2017 @ 0850MT -M.S. Martin:
     Attempting to fix GUI closing issue
@@ -73,3 +74,6 @@ Version Upload 05.17.2017 @ 1050MT -M.S. Martin:
     This code plots properly with no duplicates with the following exceptions.
     Plots 2+ state for 65Zn - problem not found yet.
     GUI still has to close for plot to appear.
+=======
+Version history can be found in the Change Log, [here.](http://github.com/ElectroweakGroup/Database_Extraction_Tool/blob/master/Changelog.txt)
+>>>>>>> aa85c5c9e79df70089bfc4c3f4991c3f13123973
