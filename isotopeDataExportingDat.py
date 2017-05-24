@@ -13,7 +13,6 @@ import os
 #This function is used to bulk export a range of isotopes in a given A range.
 def datExp(UI=False,Filter=False,elementName="H",lowerBound=0,higherBound=1,wantedSpins='',energyLim=100000000):
 
-
     #User input and checks for valid inputs.
     tryAgainCounter=1
     elementName= str(guioutputs.Z)
@@ -24,24 +23,26 @@ def datExp(UI=False,Filter=False,elementName="H",lowerBound=0,higherBound=1,want
     if(Filter):
         wantedSpins=str(guioutputs.J)
         energyLim=int(guioutputs.E)
+    elementName = elementName.split(",")
         
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
             tryAgainCounter=0
     
     #This loop goes through each wanted nuclei in the range of A values and makes the variable to be used (and iterated through) to from b in the a=b expression in data class.
-    for i in range(lowerBound,higherBound+1):
-        itervar= str(i)+elementName
-        try:
-            indata=dc.data('ensdf.'+str(i).zfill(3),itervar,'EoL',energyLim)
-            if(Filter):
-                indata.filterData(wantedSpins,UI) 
-                indata.export("_Fil.dat",wantedSpins)
-            else:
-                indata.export(".dat")
-        except:
-            if(UI):
-                ERROR="No file found for or error with " +'ensdf.'+str(i).zfill(3)##Allows the user to see if a specific ENSDF file is giving them trouble.
-                print ERROR
+    for element in elementName:
+        for i in range(lowerBound,higherBound+1):
+            itervar= str(i)+element
+            try:
+                indata=dc.data('ensdf.'+str(i).zfill(3),itervar,'EoL',energyLim)
+                if(Filter):
+                    indata.filterData(wantedSpins,UI) 
+                    indata.export("_Fil.dat",wantedSpins)
+                else:
+                    indata.export(".dat")
+            except:
+                if(UI):
+                    ERROR="No file found for or error with " +'ensdf.'+str(i).zfill(3)##Allows the user to see if a specific ENSDF file is giving them trouble.
+                    print ERROR
                 
             
     if UI:
@@ -74,124 +75,138 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
     else:
         fileParsingFactor=1
 
-##This loop removes all datafiles below the first non-empty one
-    removecount = 0
-    for i in range(lowerBound,higherBound+1,fileParsingFactor):
-        filenameopen = (str(i)+str(elementName)+wantedSpins+"_Fil.dat").replace('/','_')
-        with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
-            first_line = datafile.readline().rstrip()
-        nodatatest = str(first_line[-2:])
-        if nodatatest == "--":
-            os.remove("Output/"+"gnuPlot/"+filenameopen)
-            removecount = removecount + 1
-        else:
-            break
-#This loop removes all datafiles above the last non-empty one
-    removehighcount = 0
-    for i in range(higherBound,lowerBound-1,-fileParsingFactor):
-        filenameopen = (str(i)+str(elementName)+wantedSpins+"_Fil.dat").replace('/','_')
-        if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+    elementnamestring = "".join(elementName)
+
+    removecount = {}
+    removehighcount = {}
+    for element in elementName:
+        ##This loop removes all datafiles below the first non-empty one
+        removecount[element] = 0
+        for i in range(lowerBound,higherBound+1,fileParsingFactor):
+            filenameopen = (str(i)+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
             with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
             nodatatest = str(first_line[-2:])
             if nodatatest == "--":
                 os.remove("Output/"+"gnuPlot/"+filenameopen)
-                removehighcount = removehighcount + 1
+                removecount[element] = removecount[element] + 1
             else:
                 break
+        #This loop removes all datafiles above the last non-empty one
+        removehighcount[element] = 0
+        for i in range(higherBound,lowerBound-1,-fileParsingFactor):
+            filenameopen = (str(i)+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
+            if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+                with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
+                    first_line = datafile.readline().rstrip()
+                nodatatest = str(first_line[-2:])
+                if nodatatest == "--":
+                    os.remove("Output/"+"gnuPlot/"+filenameopen)
+                    removehighcount[element] = removehighcount[element] + 1
+                else:
+                    break
 
-#This if statement checks to see if there are any datafiles left to plot. If there are then it runs through the
-#plotting process. If there are none then it displays a statement telling the user that there is nothing to
-#plot and exits the program.
-    filenameopen = (str(lowerBound+removecount)+str(elementName)+wantedSpins+"_Fil.dat").replace('/','_')
-    if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
-        #plt file Naming
-        if(Filter):
-            fileName= str(lowerBound)+str(elementName)+"_"+str(higherBound)+str(elementName)+wantedSpins+fileParsingFactorStr+"_Fil.plt"        
-            fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
-            pltFile = open(fileName,'wb')
-        else:
-            fileName= str(lowerBound)+str(elementName)+"_"+str(higherBound)+str(elementName)+".plt"
-            fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
-            pltFile = open(fileName,'wb')
+        #This if statement checks to see if there are any datafiles left to plot. If there are then it runs through the
+        #plotting process. If there are none then it displays a statement telling the user that there is nothing to
+        #plot and exits the program.
+        filenameopen = (str(lowerBound+removecount[element])+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
+        if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+            #plt file Naming
+            if(Filter):
+                fileName= str(lowerBound)+str(elementnamestring)+"_"+str(higherBound)+str(elementnamestring)+wantedSpins+fileParsingFactorStr+"_Fil.plt"        
+                fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
+                pltFile = open(fileName,'wb')
+            else:
+                fileName= str(lowerBound)+str(elementnamestring)+"_"+str(higherBound)+str(element)+".plt"
+                fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
+                pltFile = open(fileName,'wb')
 
-
+        infile = open(fileName,'r')
+        print infile.readline()
+        if infile.readline() != "reset\n":
         # These following lines add the completely nessecary lines in the plt files
-
         #Reset gnuplot.
-        pltFile.write("reset\n")
+            pltFile.write("reset\n")
 
 
         #This removes the default legend in the final plot, because the legend is ugly and not useful in our case.
-        pltFile.write("unset key\n")
+            pltFile.write("unset key\n")
 
         #This labels the y axis and the Title
-        pltFile.write("set ylabel \"Energy(keV)\"\n")
-        pltFile.write("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementName+" through "+str(higherBound)+elementName+"\"\n")
+            pltFile.write("set ylabel \"Energy(keV)\"\n")
+            pltFile.write("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n")
 
         #This line Currently DOES NOT work but should make the graph greyscale.
-        pltFile.write("set palette gray\n")
+            pltFile.write("set palette gray\n")
 
         #This tells gnuplot that the delimiter of each column as ,
-        pltFile.write("set datafile sep ','\n")
+            pltFile.write("set datafile sep ','\n")
 
-        pltFile.write("unset bars \n")
+            pltFile.write("unset bars \n")
+
+            setLine="set xtics rotate by 45 offset -2.0,-1.4 ("
 
 
         #This sets the x axis with the names of the isotpes wanted.
-        setLine="set xtics rotate by 45 offset -2.0,-1.4 ("
-        rangecount = 0
-        for i in range(lowerBound+removecount,higherBound-removehighcount+1,fileParsingFactor):
+    rangecount = 0
+    elementsused1 = {}
+    for element in elementName:
+        for i in range(lowerBound+removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
             rangecount = rangecount + 1
-            if(i+fileParsingFactor>higherBound):
-                setLine=setLine+"\""+str(i)+str(elementName)+"\" "+str(i+1-lowerBound-removecount)+")"
+            if(i+fileParsingFactor>higherBound+rangecount):
+                setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+sum(elementsused1.values()))+")"
             else:
-                setLine=setLine+"\""+str(i)+str(elementName)+"\" "+str(i+1-lowerBound-removecount)+","
-        pltFile.write(setLine[:-1]+")"+"\n")
-        pltFile.write("set xrange [0:"+str(higherBound-removehighcount-lowerBound-removecount+2)+"]\n")
+                setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+sum(elementsused1.values()))+","
+        elementsused1[element] = rangecount
+    pltFile.write(setLine[:-1]+")"+"\n")
+    pltFile.write("set xrange [0:"+str(rangecount+1)+"]\n")
     
+    itercount = 0
+    elementsused = {}
+    for element in elementName:
         #This will write the plot coding for the labeling of each energy leven and a line that corrosponds to each one.
-        for i in range(lowerBound + removecount,higherBound-removehighcount+1,fileParsingFactor):
-            if(i==lowerBound+removecount):
+        for i in range(lowerBound + removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
+            if(itercount == 0):
                 if(Filter):
-                    pltFile.write(("plot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n").replace('/', '_'))
-                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
+                    pltFile.write(("plot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+sum(elementsused.values()))+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+sum(elementsused.values()))+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
                 else:
-                    pltFile.write("plot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n")
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
+                    pltFile.write("plot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element+sum(elementsused.values())])+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n")
+                    pltFile.write("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+sum(elementsused.values()))+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
             else:
                 if(Filter):
-                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n").replace('/', '_'))
-                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+sum(elementsused.values()))+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+sum(elementsused.values()))+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
                 else:
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n")
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
-
+                    pltFile.write("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+sum(elementsused.values()))+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n")
+                    pltFile.write("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+sum(elementsused.values()))+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
+            itercount = itercount + 1
+        elementsused[element] = itercount
             
                       
-        if UI:
-            print ("Program is finished plotting")
-            #This defines the code required for the program to plot the information
-            #as a .gif file.
-            #Also in here is the font and font size for the .git file
-            fileName = fileName.replace('.plt','.gif')
-            fileName = fileName[15:]
-            if os.path.isfile(fileName):
-                os.remove(fileName)
-            if rangecount >= 20:
-                pltFile.write("set term gif font '"'Helvetica.tff'"' 6\n")
-            elif rangecount >= 15:
-                pltFile.write("set term gif font '"'Helvetica.ttf'"' 7\n")
-            elif rangecount >= 10:
-                pltFile.write("set term gif font '"'Helvetica.tff'"' 9\n")
-            elif rangecount >= 5:
-                pltFile.write("set term gif font '"'Helvetica.tff'"' 12\n")
-            else:
-                pltFile.write("set term gif font '"'Helvetica.tff'"' 14\n")
-            pltFile.write("set output "+"'"+fileName+"'"+"\n")
-            pltFile.write("replot\n")
-            pltFile.write("set term x11")
-            exit
+    if UI:
+        print ("Program is finished plotting")
+        #This defines the code required for the program to plot the information
+        #as a .gif file.
+        #Also in here is the font and font size for the .git file
+        fileName = fileName.replace('.plt','.gif')
+        fileName = fileName[15:]
+        if os.path.isfile(fileName):
+            os.remove(fileName)
+        if rangecount >= 20:
+            pltFile.write("set term gif font '"'Helvetica.tff'"' 6\n")
+        elif rangecount >= 15:
+            pltFile.write("set term gif font '"'Helvetica.ttf'"' 7\n")
+        elif rangecount >= 10:
+            pltFile.write("set term gif font '"'Helvetica.tff'"' 9\n")
+        elif rangecount >= 5:
+            pltFile.write("set term gif font '"'Helvetica.tff'"' 12\n")
+        else:
+            pltFile.write("set term gif font '"'Helvetica.tff'"' 14\n")
+        pltFile.write("set output "+"'"+fileName+"'"+"\n")
+        pltFile.write("replot\n")
+        pltFile.write("set term x11")
+        exit
 
     
     else:
