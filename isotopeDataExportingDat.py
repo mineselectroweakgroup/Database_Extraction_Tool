@@ -1,7 +1,7 @@
 ##ENSDF File: Multiple Data PLT (for gnuplot) File Extractor
 ##By: Markus Garbiso
 ##Date Updated: April 26, 2017 by Peter Consalvi
-##Date Updated: May 23, 2017 by Matthew Martin
+##Date Updated: May 24, 2017 by Matthew Martin
 
 import dataClass as dc
 from GUI import guioutputs
@@ -80,8 +80,8 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
         filenameopen = (str(i)+str(elementName)+wantedSpins+"_Fil.dat").replace('/','_')
         with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
             first_line = datafile.readline().rstrip()
-        nodatatest = str(first_line[-7:])
-        if nodatatest == "NO_DATA":
+        nodatatest = str(first_line[-2:])
+        if nodatatest == "--":
             os.remove("Output/"+"gnuPlot/"+filenameopen)
             removecount = removecount + 1
         else:
@@ -93,8 +93,8 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
         if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
             with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
-            nodatatest = str(first_line[-7:])
-            if nodatatest == "NO_DATA":
+            nodatatest = str(first_line[-2:])
+            if nodatatest == "--":
                 os.remove("Output/"+"gnuPlot/"+filenameopen)
                 removehighcount = removehighcount + 1
             else:
@@ -135,9 +135,11 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
         #This tells gnuplot that the delimiter of each column as ,
         pltFile.write("set datafile sep ','\n")
 
+        pltFile.write("unset bars \n")
+
 
         #This sets the x axis with the names of the isotpes wanted.
-        setLine="set xtics ("
+        setLine="set xtics rotate by 45 offset -2.0,-1.4 ("
         rangecount = 0
         for i in range(lowerBound+removecount,higherBound-removehighcount+1,fileParsingFactor):
             rangecount = rangecount + 1
@@ -152,18 +154,18 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
         for i in range(lowerBound + removecount,higherBound-removehighcount+1,fileParsingFactor):
             if(i==lowerBound+removecount):
                 if(Filter):
-                    pltFile.write(("plot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels point offset character " + str(fileParsingFactor) + ",character 0.3\n").replace('/', '_'))
+                    pltFile.write(("plot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n").replace('/', '_'))
                     pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
                 else:
-                    pltFile.write("plot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0\n")
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.15)+") with xerrorbars\n")
+                    pltFile.write("plot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n")
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
             else:
                 if(Filter):
-                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0\n").replace('/', '_'))
-                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.15)+") with xerrorbars\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n").replace('/', '_'))
+                    pltFile.write(("replot \""+str(i)+str(elementName)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_'))
                 else:
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0\n")
-                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.15)+") with xerrorbars\n")
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n")
+                    pltFile.write("replot \""+str(i)+str(elementName)+".dat\" using ("+str(i+1-lowerBound-removecount)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n")
 
             
                       
@@ -177,15 +179,15 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
             if os.path.isfile(fileName):
                 os.remove(fileName)
             if rangecount >= 20:
-                pltFile.write("set term gif font '"'Helvetica.tff'"' 5\n")
+                pltFile.write("set term gif font '"'Helvetica.tff'"' 6\n")
             elif rangecount >= 15:
-                pltFile.write("set term gif font '"'Helvetica.ttf'"' 6\n")
+                pltFile.write("set term gif font '"'Helvetica.ttf'"' 7\n")
             elif rangecount >= 10:
-                pltFile.write("set term gif font '"'Helvetica.tff'"' 8\n")
+                pltFile.write("set term gif font '"'Helvetica.tff'"' 9\n")
             elif rangecount >= 5:
-                pltFile.write("set term gif font '"'Helvetica.tff'"' 10\n")
-            else:
                 pltFile.write("set term gif font '"'Helvetica.tff'"' 12\n")
+            else:
+                pltFile.write("set term gif font '"'Helvetica.tff'"' 14\n")
             pltFile.write("set output "+"'"+fileName+"'"+"\n")
             pltFile.write("replot\n")
             pltFile.write("set term x11")

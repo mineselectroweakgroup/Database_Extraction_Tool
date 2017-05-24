@@ -37,3 +37,7 @@ Version 0.2.2 Upload 05.22.2017 1145MT -M.S. Martin:
     Code updated to allow for multiple user inputs until Exit button is pressed
     Fixed bugs having to do with file paths
     Nuclear structure data fully operational but no error bars
+
+Version 0.2.3 Upload 05.24.2017 1400MT -M.S. Martin:
+    Altered appearance of graph, specifically x axis labels and bars for states
+    Changed NO_DATA to -- to make it easier to read when there is a lot of data

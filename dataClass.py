@@ -288,4 +288,4 @@ class data:##This is the main data class
             else:
                 if(UI):
                     print "Warning:No data filtered/selected for "+ self.name +"."#Prints a statement telling user than no file was found
-                self.data=[[0.0,"NO_DATA"]]##Enters a dummy entry to file with something.
+                self.data=[[0.0,"--"]]##Enters a dummy entry to file with something.
