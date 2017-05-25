@@ -41,3 +41,7 @@ Version 0.2.2 Upload 05.22.2017 1145MT -M.S. Martin:
 Version 0.2.3 Upload 05.24.2017 1400MT -M.S. Martin:
     Altered appearance of graph, specifically x axis labels and bars for states
     Changed NO_DATA to -- to make it easier to read when there is a lot of data
+
+Version 0.2.4 Upload 05.25.2017 1015MT -M.S. Martin:
+    Allow for multiple elements to be input
+    Updated file system to ensure it works on all computers

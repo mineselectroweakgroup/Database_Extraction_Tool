@@ -77,6 +77,8 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
 
     elementnamestring = "".join(elementName)
 
+#These loops of (for element in elementName) go through the entire process for each element input. Multiple loops are used
+#to ensure data is recorded properly for all elements
     removecount = {}
     removehighcount = {}
     for element in elementName:
