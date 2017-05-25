@@ -25,7 +25,9 @@ ided.pltFileExp(userInput[0],userInput[1],userInput[2],True,userInput[3],True)
 os.chdir("Output/gnuPlot")
 directory = os.getcwd()
 newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
-newest = newest[55:]
+newest = newest.replace(os.getcwd()+"/","")
+print(os.getcwd())
+print(newest)
 os.system("gnuplot "+newest)
 
 #Optional code used to delete everything but the .git files.

@@ -121,30 +121,30 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
                 fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
                 pltFile = open(fileName,'wb')
 
-        infile = open(fileName,'r')
-        print infile.readline()
-        if infile.readline() != "reset\n":
+            infile = open(fileName,'r')
+            print infile.readline()
+            if infile.readline() != "reset\n":
         # These following lines add the completely nessecary lines in the plt files
         #Reset gnuplot.
-            pltFile.write("reset\n")
+                pltFile.write("reset\n")
 
 
         #This removes the default legend in the final plot, because the legend is ugly and not useful in our case.
-            pltFile.write("unset key\n")
+                pltFile.write("unset key\n")
 
         #This labels the y axis and the Title
-            pltFile.write("set ylabel \"Energy(keV)\"\n")
-            pltFile.write("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n")
+                pltFile.write("set ylabel \"Energy(keV)\"\n")
+                pltFile.write("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n")
 
         #This line Currently DOES NOT work but should make the graph greyscale.
-            pltFile.write("set palette gray\n")
+                pltFile.write("set palette gray\n")
 
         #This tells gnuplot that the delimiter of each column as ,
-            pltFile.write("set datafile sep ','\n")
+                pltFile.write("set datafile sep ','\n")
 
-            pltFile.write("unset bars \n")
+                pltFile.write("unset bars \n")
 
-            setLine="set xtics rotate by 45 offset -2.0,-1.4 ("
+                setLine="set xtics rotate by 45 offset -2.0,-1.4 ("
 
 
         #This sets the x axis with the names of the isotpes wanted.
