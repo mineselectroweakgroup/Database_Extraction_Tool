@@ -30,12 +30,8 @@ When the user clicks the submit button on the left in the GUI this does two thin
 
 
 ### Improvements/Problems:
-- Click the submit button on the left and the GUI closes
-The GUI should  not close when the submits button are clicked. The user should be able to click 'Submit' multiple times with different inputs and the program should produce multiple plots.
 
 - Any errors or messages that appear in the shell should appear in textbox. The user should never have to interact with the shell (i.e. 'Press Enter to Continue' is not good.), everything should be self contained within the GUI frame.
-
-- Plots do NOT appear inside GUI. In addition (or if the user requests) to being stored in the Outputs/gnuPlot directory the plots should also appear in the GUI frame.
 
 - How to handle Theory and Sym inputs
 

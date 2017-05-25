@@ -45,3 +45,7 @@ Version 0.2.3 Upload 05.24.2017 1400MT -M.S. Martin:
 Version 0.2.4 Upload 05.25.2017 1015MT -M.S. Martin:
     Allow for multiple elements to be input
     Updated file system to ensure it works on all computers
+
+Version UPDATE 0.3.0 05.25.2017 1130MT -M.S. Martin:
+    Updated code to run using python3
+    Fixed bugs with plotting many elements
