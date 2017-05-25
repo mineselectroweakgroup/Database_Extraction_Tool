@@ -1,4 +1,4 @@
-from Tkinter import *
+from tkinter import *
 import searching_function as sf
 import isotopeDataExportingDat as ided
 root = Tk()
@@ -184,7 +184,7 @@ class Application(Frame):
 
     def exitButton(self):
         self.exitcount = 1
-        print "Thanks!"
+        print("Thanks!")
         root.destroy()
 
     def fullScreenButton(self):
@@ -217,7 +217,7 @@ class guioutputs:
     if exitcount == 1:
         sys.exit()
     if Z == '' or J == '':
-        print "YOU SUCK, FIGURE IT OUT"
+        print("YOU SUCK, FIGURE IT OUT")
         sys.exit()
     if isoLow == '':
         isoLow = 1

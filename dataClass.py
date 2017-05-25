@@ -258,7 +258,7 @@ class data:##This is the main data class
                     fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
                     datFile = open(fileName,'wb')##Creates a file with a valid file name.
                     for i in range(len(self.data)):##Write the line fro each entry and each entry is delimited by a ,
-                        datFile.write(str(self.name)+','+str(self.data[i][0])+','+str(self.data[i][1])+'\n')
+                        datFile.write(str.encode(str(self.name)+','+str(self.data[i][0])+','+str(self.data[i][1])+'\n'))
                         ###.dat is used for preparing data for gnuplot
                 else:##This case is like the code above but for every other file type and is delimited by tabs.
                     fileName=str(self.name)+extraTitleText+fExtOption
@@ -266,12 +266,12 @@ class data:##This is the main data class
                     datFile = open(fileName,'wb')##Creates a file with a valid file name.
                     exportFile = open("Output/"+str(self.name)+extraTitleText+fExtOption,'wb')
                     for i in range(len(self.data)):
-                        exportFile.write(str(self.name)+'\t'+str(self.data[i][0])+'\t'+str(self.data[i][1])+'\n')
+                        exportFile.write(str.encode(str(self.name)+'\t'+str(self.data[i][0])+'\t'+str(self.data[i][1])+'\n'))
                         ##.txt or any other file extension is used for preparing data for generic text file.    
             else:##Writes the each entry of our datalist with one entry per line.
                 exportFile = open("Output/"+str(self.name)+".txt",'wb')
                 for i in range(len(self.data)):
-                    exportFile.write(str(self.name)+'\t'+str(self.data[i])+'\n')
+                    exportFile.write(str.encode(str(self.name)+'\t'+str(self.data[i])+'\n'))
                     ##Writes Energy Only
                     
     ##This functino allows the user to choose only wanted spins of a given data set. Note: This is only valid for the EoL option. The userinput must follow this
@@ -287,5 +287,5 @@ class data:##This is the main data class
                 self.data=newData##changes data to the new data.
             else:
                 if(UI):
-                    print "Warning:No data filtered/selected for "+ self.name +"."#Prints a statement telling user than no file was found
+                    print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
                 self.data=[[0.0,"--"]]##Enters a dummy entry to file with something.

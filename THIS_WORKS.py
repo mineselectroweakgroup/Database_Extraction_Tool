@@ -15,7 +15,7 @@ userInput = ided.datExp(True,True)
 #Prints the user input allowing user to make sure they inputted allowing user
 #to check what they input against the plot they are viewing
 #The sleep is a pause so the timestamps used work correctly
-print userInput
+print(userInput)
 time.sleep(0.01)
     
 #Makes plot
@@ -26,8 +26,6 @@ os.chdir("Output/gnuPlot")
 directory = os.getcwd()
 newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
 newest = newest.replace(os.getcwd()+"/","")
-print(os.getcwd())
-print(newest)
 os.system("gnuplot "+newest)
 
 #Optional code used to delete everything but the .git files.
@@ -41,7 +39,7 @@ os.system("gnuplot "+newest)
 #This code puts restarts the program so it can be used again    
 os.chdir("..")
 os.chdir("..")
-os.system("python THIS_WORKS.py")
+os.system("python3 THIS_WORKS.py")
 
 #Problems:
 #1. Click the submit button on the left and the GUI closes
