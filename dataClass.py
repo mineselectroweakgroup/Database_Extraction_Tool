@@ -3,6 +3,23 @@
 ##Date Updated: May 6, 2017 by Peter Consalvi
 ##Date Updated: May 17, 2017 by Matthew Martin
 
+def addUncert(datalist, currentLine):
+#    print(datalist[-1])
+#    print(currentLine)
+#    print('\n')
+    if (currentLine[2]=='0.0'):
+        uncert = 0
+    elif (('+' in currentLine[3]) or ('-' in currentLine[3])):
+        #uncert = currentLine[3][:currentLine[3].index(datalist[-1][1])]
+        uncert = currentLine[3][:currentLine[3].find(datalist[-1][1])]
+    else:
+        uncert = currentLine[3]
+
+    if (len(datalist[-1])<3):
+        datalist[-1].append(uncert)
+       
+        
+
 ##This function is used in the main __init__ function to parse through strings in each line of the file inorder to find the value of the spin that corresponds to energy of that line of that file.
 def numberSlashBool(lineString,posTracker,trackChar):
     if(lineString.index(trackChar)-posTracker>-1):##This condition pertains to all characters that are allowed in a
@@ -27,11 +44,13 @@ class data:##This is the main data class
         ##If there is a data file that matches the user's input then this program will try to extract the data.
         self.f = open("Data/"+str(ENSDF),'rU')
         ##Each line of the file is split into list so the code can parse through each line easier
-
+ 
         #Initializes a to be apple, a string that should not appear in the data file
         #This is used to stop the code after it goes through the first block
         a = 'apple'
+        linecount=0     #SXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
         for line in self.f:
+            linecount=linecount+1
             line = line.split()
 
             ##Break function used to stop code after the evaluated nuclear data
@@ -49,8 +68,7 @@ class data:##This is the main data class
             ##This ensures that the first block wanted will be read rather than the first block in the file
             if(len(line) == 0):
                 a = 'apple'
-
-                
+  
             b = str(ISOvar)
             ##This part of the code contains parsing algorithims to find wanted values,depending on what option is used.
             ##Marcus found that experimental data are one lines when c equal "L"
@@ -60,11 +78,17 @@ class data:##This is the main data class
             if(option == 'EoL' and a.lower() == b.lower() and c == "L"): 
                 a = ''
                 b = ''
+                #print (linecount)   #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                #print("[2]: ",line[2])
+                #print("[3]: ",line[3])
+                #print('\n')
+
                 for i in range(3,len(line)): ##This loop will parse through each entry of line to find the spin corrospondin to the energy of that spin.
                     ##Intitialize the string used for the spin value and a temp string varible to take a string that has a spin, but may have
                     ##extra characters due to the incosistent file structure of ENSDF.
                     spinStr=''
                     unfilSpinStr=str(line[i])
+
                     
                     ##This if statement stops the code if the first character in the spin state is a J, which do not correspond to actual spin states
                     ##This corrects the 65Zn plotting 2+ states issue
@@ -102,6 +126,7 @@ class data:##This is the main data class
                                             for i in range(lower,upper+1):
                                                 ##print [float(line[2]),str(i)+'+']
                                                 filtDataSet.append([float(line[2]),"("+str(i)+'+'+")"])
+                                    
                                 except:
                                     print("Error with " + str(line[2])+ " " +unfilSpinStr + " at loop 0a")                                   
                             elif('+' in unfilSpinStr): ##For strings will + only but like the first case above for + and -.
@@ -173,6 +198,7 @@ class data:##This is the main data class
                                             print("Error with " + str(line[2])+ " " +str(spinStr) + " at loop 2b")
 
                                 spinStr = ''
+                                addUncert(filtDataSet,line)
                             elif('-' in unfilSpinStr):##For strings will - only but like the first case above for + and -.
                                 posTracker=0
                                 while(numberSlashBool(unfilSpinStr,posTracker,'-')):
@@ -240,15 +266,20 @@ class data:##This is the main data class
                                         except:
                                             print("Error with " + str(line[2])+ " " +str(spinStr) + " at loop 3b")
                                 spinStr = ''
-                                
+                                addUncert(filtDataSet,line)
                 
         ##This if loop rids the data list of redundant entries and saves data into
         ##the self.data list
+        
+        
         for i in filtDataSet:
               if i not in self.data:
                 self.data.append(i)##Saves data into the self.data list
         self.f.close()##Closes the ENSDF file
         
+        for i in self.data: #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            print (i)
+
     ##This function exports the data in the class into a data file. The output file is
     ##is sent to the Output file
     def export(self,fExtOption = ".txt",extraTitleText=""):
