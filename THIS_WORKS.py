@@ -3,6 +3,7 @@ import dataClass as dc
 import isotopeDataExportingDat as ided
 from data_array import final
 from searching_function import acquire
+import mass_data as md
 userInput = ['',0,0,'',0]
 import os
 import glob
@@ -17,7 +18,9 @@ userInput = ided.datExp(True,True)
 #The sleep is a pause so the timestamps used work correctly
 print(userInput)
 time.sleep(0.01)
-    
+
+md.addMass(userInput[0],userInput[1],userInput[2],userInput[3])
+
 #Makes plot
 ided.pltFileExp(userInput[0],userInput[1],userInput[2],True,userInput[3],True)
 
