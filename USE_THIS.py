@@ -17,7 +17,7 @@ class Application(Frame):
         title.pack(side = TOP)
         buttons.pack(side = BOTTOM)
 
-        buttonsLabel = Label(buttons, text = "Please make a fucking selection")
+        buttonsLabel = Label(buttons, text = "Select which program you would like to use")
         buttonsLabel.grid(row = 0)
 
 
