@@ -93,6 +93,7 @@ class Application(Frame):
         self.exitcount = 1
         print("Thanks!")
         root.destroy()
+        sys.exit()
 
 app = Application(root)
 root.protocol("WM_DELETE_WINDOW",app.exitButton)
