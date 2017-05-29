@@ -41,7 +41,7 @@ def datExp(option,UI=False,Filter=False):
         for item in periodicTable:
             if item == elementName:
                 index = periodicTable.index(item)
-                elementName = elementName + "," + periodicTable[index+1]
+                elementName = periodicTable[index-1] + "," + elementName
 
         elementName = elementName.split(",")
         exitcount = 0
