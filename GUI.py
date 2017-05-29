@@ -196,7 +196,6 @@ class Application(Frame):
         os.chdir("..")
         os.chdir("..")
 
-global app
 app = Application(root)
 root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()

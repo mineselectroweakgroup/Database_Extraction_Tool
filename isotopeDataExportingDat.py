@@ -4,27 +4,38 @@
 ##Date Updated: May 24, 2017 by Matthew Martin
 
 import dataClass as dc
-from GUI import guioutputs
-
 import os
 
 
 
 #This function is used to bulk export a range of isotopes in a given A range.
-def datExp(UI=False,Filter=False,elementName="H",lowerBound=0,higherBound=1,wantedSpins='',energyLim=100000000):
+def datExp(option,UI=False,Filter=False):
 
     #User input and checks for valid inputs.
     tryAgainCounter=1
-    elementName= str(guioutputs.Z)
-    lowerBound = int(guioutputs.isoLow)
-    higherBound = int(guioutputs.isoUp)
-    energyLim = int(guioutputs.E)
-    exitcount = int(guioutputs.exitcount)
-    if(Filter):
-        wantedSpins=str(guioutputs.J)
-        energyLim=int(guioutputs.E)
-    elementName = elementName.split(",")
-        
+    if option == "one":
+        from GUI import guioutputs
+        elementName= str(guioutputs.Z)
+        lowerBound = int(guioutputs.isoLow)
+        higherBound = int(guioutputs.isoUp)
+        energyLim = int(guioutputs.E)
+        exitcount = int(guioutputs.exitcount)
+        if(Filter):
+            wantedSpins=str(guioutputs.J)
+            energyLim=int(guioutputs.E)
+        elementName = elementName.split(",")
+
+    if option == "two":
+        from Beta_GUI import betaoutputs
+        elementName = str(betaoutputs.Z)
+        lowerBound = int(betaoutputs.A)
+        higherBound = int(betaoutputs.A)
+        energyLim = 9999999
+        if(Filter):
+            wantedSpins=str(betaoutputs.J)
+        elementName = elementName.split(",")
+        exitcount = 0
+
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
             tryAgainCounter=0
     
