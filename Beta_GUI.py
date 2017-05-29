@@ -89,7 +89,13 @@ class Application(Frame):
         self.spinVar = self.spinEntry.get()
         root.destroy()#closes window
 
+    def exitButton(self):
+        self.exitcount = 1
+        print("Thanks!")
+        root.destroy()
+
 app = Application(root)
+root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()
 
 #Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts

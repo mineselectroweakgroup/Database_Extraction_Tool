@@ -24,10 +24,11 @@ def function(option):
     print(userInput)
     time.sleep(0.01)
 
-    md.addMass(userInput[0],userInput[1],userInput[2],userInput[3])
+    if userInput[5] == "YES":
+        md.addMass(userInput[0],userInput[1],userInput[2],userInput[3])
 
 #Makes plot
-    ided.pltFileExp(userInput[0],userInput[1],userInput[2],True,userInput[3],True)
+    ided.pltFileExp(userInput[5],userInput[0],userInput[1],userInput[2],True,userInput[3],True)
 
 #This code creates the .git file which is the actual plot
     os.chdir("Output/gnuPlot")

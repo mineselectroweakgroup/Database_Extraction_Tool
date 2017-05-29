@@ -20,6 +20,7 @@ def datExp(option,UI=False,Filter=False):
         higherBound = int(guioutputs.isoUp)
         energyLim = int(guioutputs.E)
         exitcount = int(guioutputs.exitcount)
+        massData = str(guioutputs.mass)
         if(Filter):
             wantedSpins=str(guioutputs.J)
             energyLim=int(guioutputs.E)
@@ -31,8 +32,17 @@ def datExp(option,UI=False,Filter=False):
         lowerBound = int(betaoutputs.A)
         higherBound = int(betaoutputs.A)
         energyLim = 9999999
+        massData = "YES"
         if(Filter):
             wantedSpins=str(betaoutputs.J)
+        perTable = open("ElementList.txt","r")
+        periodicTable = perTable.readline()
+        periodicTable = periodicTable.split(',')
+        for item in periodicTable:
+            if item == elementName:
+                index = periodicTable.index(item)
+                elementName = elementName + "," + periodicTable[index+1]
+
         elementName = elementName.split(",")
         exitcount = 0
 
@@ -62,13 +72,13 @@ def datExp(option,UI=False,Filter=False):
 
     
     #If wanted this will return the user inputs for further use
-    return [elementName,lowerBound,higherBound,wantedSpins,exitcount]
+    return [elementName,lowerBound,higherBound,wantedSpins,exitcount,massData]
 
 
 
        
 #This function will create a plt file for use in gnuplot to plot data from a eiter filtered data files or the whoel data file. This function is best used if used with datExp.
-def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI=False,fileParsingFactor=0):
+def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI=False,fileParsingFactor=0):
 
     fileParsingFactorStr="_every_"+str(fileParsingFactor)
 
@@ -146,7 +156,10 @@ def pltFileExp(elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI
                 pltFile.write(str.encode("unset key\n"))
 
         #This labels the y axis and the Title
-                pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
+                if massInclude == "YES":
+                    pltFile.write(str.encode("set ylabel \"Energy(MeV)\"\n"))
+                else:
+                    pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
                 pltFile.write(str.encode("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n"))
 
         #This line Currently DOES NOT work but should make the graph greyscale.

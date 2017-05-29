@@ -78,7 +78,13 @@ class Application(Frame):
 
         self.outText.insert(0.0, sf.acquire(self.qLowVar,self.qHighVar,self.aLowVar,self.aHighVar,Theory = False,Sym = False))
 
+    def exitButton(self):
+        self.exitcount = 1
+        print("Thanks!")
+        root.destroy()
+
 
 
 app = Application(root)
+root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()

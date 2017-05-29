@@ -26,6 +26,7 @@ class Application(Frame):
 
         self.spinVar = StringVar()
         self.upBoundEnergyVar = StringVar()
+        self.massDataVar = StringVar()
 
         #Here are the variable declarations for the Decay section
         #Same formatting
@@ -67,6 +68,9 @@ class Application(Frame):
         upBoundEnergyLabel = Label(nucStruc, text = "Upper Energy Bound (keV)")
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
 
+        massDataLabel = Label(nucStruc, text = "Include Mass Data (YES or NO)")
+        massDataLabel.grid(row = 3, column = 2, sticky = W)
+
 
         #Here I will set up and place all the labels for the decay frame
         #Same format as the previous section
@@ -102,6 +106,8 @@ class Application(Frame):
         self.spinEntry.grid(row = 4, column = 0, sticky = W)
         self.upBoundEnergyEntry = Entry(nucStruc)
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
+        self.massDataEntry = Entry(nucStruc)
+        self.massDataEntry.grid(row = 4, column = 2, sticky = W)
 
 
         #Here I will set up all of the entry boxes for decay
@@ -170,6 +176,7 @@ class Application(Frame):
         self.upBoundIsoVar = self.upBoundIsoEntry.get()
         self.spinVar = self.spinEntry.get()
         self.upBoundEnergyVar = self.upBoundEnergyEntry.get()
+        self.massDataVar = self.massDataEntry.get()
         root.destroy()#closes window
 
     def sendDecayData(self):
@@ -210,6 +217,7 @@ class guioutputs:
     isoUp=app.upBoundIsoVar
     E=app.upBoundEnergyVar
     exitcount=app.exitcount
+    mass=app.massDataVar
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.
@@ -224,6 +232,8 @@ class guioutputs:
         isoUp = 299
     if E == '':
         E = 9999999
+    if mass.upper() == "YES":
+        mass = "YES"
     
     
 #These are the Q and A variables for the mass extraction part the program
