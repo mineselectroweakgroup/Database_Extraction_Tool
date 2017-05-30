@@ -145,7 +145,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile = open(fileName,'wb')
 
             infile = open(fileName,'r')
-            print(infile.readline())
+            uselessvariable = infile.readline()
             if infile.readline() != "reset\n":
         # These following lines add the completely nessecary lines in the plt files
         #Reset gnuplot.
@@ -185,7 +185,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
         mostrecentrangecount = rangecount
 
-    if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+    if os.path.isfile(fileName):
         pltFile.write(str.encode(setLine[:-1]+")"+"\n"))
         pltFile.write(str.encode("set xrange [0:"+str(rangecount+1)+"]\n"))
     
@@ -217,7 +217,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         #This defines the code required for the program to plot the information
         #as a .gif file.
         #Also in here is the font and font size for the .gif file
-        if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+        if os.path.isfile(fileName):
             fileName = fileName.replace('.plt','.gif')
             fileName = fileName[15:]
             if os.path.isfile(fileName):

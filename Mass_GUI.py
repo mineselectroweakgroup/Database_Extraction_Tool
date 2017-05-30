@@ -52,6 +52,9 @@ class Application(Frame):
         decaySubmit = Button(decay, text = "Submit", command = self.sendDecayData)
         decaySubmit.grid(row = 5, column = 0, sticky = W)
 
+        newChoiceSubmit = Button(decay, text = "Program Selection", command = self.newChoiceButton)
+        newChoiceSubmit.grid(row = 5, column = 1)
+
         self.outText = Text(out)
         self.outText.grid(row = 0, column = 1, sticky = W+E+N+S)
         outScroll = Scrollbar(out)
@@ -82,6 +85,15 @@ class Application(Frame):
         self.exitcount = 1
         print("Thanks!")
         root.destroy()
+
+    def newChoiceButton(self):
+        self.chemSymVar = "Zn"
+        self.A = 10
+        self.spinVar = "0+"
+        self.exitcount = 1
+        root.destroy()
+        os.system("python3 USE_THIS.py")
+        sys.exit()
 
 
 

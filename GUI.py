@@ -140,6 +140,9 @@ class Application(Frame):
         fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton)
         fullScreenSubmit.grid(row = 1, column = 0)
 
+        newChoiceSubmit = Button(out, text = "Program Selection", command = self.newChoiceButton)
+        newChoiceSubmit.grid(row = 1, column = 1)
+
 
 
         #Setting up the output box with scrolling feature
@@ -214,6 +217,15 @@ class Application(Frame):
         os.system("okular --presentation "+newest+" &")
         os.chdir("..")
         os.chdir("..")
+
+    def newChoiceButton(self):
+        self.chemSymVar = "Zn"
+        self.A = 10
+        self.spinVar = "0+"
+        self.exitcount = 1
+        root.destroy()
+        os.system("python3 USE_THIS.py")
+        sys.exit()
 
 app = Application(root)
 root.protocol("WM_DELETE_WINDOW",app.exitButton)

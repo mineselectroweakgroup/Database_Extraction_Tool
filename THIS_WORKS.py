@@ -19,7 +19,6 @@ def function(option):
 #Prints the user input allowing user to make sure they inputted allowing user
 #to check what they input against the plot they are viewing
 #The sleep is a pause so the timestamps used work correctly
-    print(userInput)
     time.sleep(0.01)
 
     if userInput[5] == "YES":

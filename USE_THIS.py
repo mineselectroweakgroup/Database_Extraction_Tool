@@ -30,7 +30,7 @@ class Application(Frame):
         betaDataButton = Button(buttons, text = "Evaluated Beta Decay Data", command = self.betaFunc)
         betaDataButton.grid(row = 3, column = 0)
 
-        self.pictureSpot = Canvas(title,width = 590, height = 180)
+        self.pictureSpot = Canvas(title,width = 640, height = 180)
         self.pictureSpot.grid(row = 0, column = 0) 
         self.photo = PhotoImage(file = "eilogo.gif")
         self.pictureSpot.create_image(0,0,image = self.photo, anchor = "nw")
