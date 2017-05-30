@@ -145,7 +145,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile = open(fileName,'wb')
 
             infile = open(fileName,'r')
-            uselessvariable = infile.readline()
+            print(infile.readline())
             if infile.readline() != "reset\n":
         # These following lines add the completely nessecary lines in the plt files
         #Reset gnuplot.
@@ -171,7 +171,8 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile.write(str.encode("unset bars \n"))
 
                 setLine="set xtics rotate by 45 offset -2.0,-1.4 ("
-
+        else:
+            fileName = "THIS FILE DOES NOT EXIST, MUAHAHAHAHAHAHAAHA"
 
         #This sets the x axis with the names of the isotpes wanted.
     rangecount = 0
