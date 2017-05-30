@@ -60,7 +60,7 @@ class Application(Frame):
         nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Extraction")
         nucStrucLable.grid(columnspan = 2,row = 0,sticky=W)
 
-        chemSymLabel = Label(nucStruc, text = "Chemical Symbol (ex. Zn)")
+        chemSymLabel = Label(nucStruc, text = "Element (ex. Zn,Cu,...)")
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
         lowBoundIsoLabel = Label(nucStruc, text = "Lower Bound Isotope")
         lowBoundIsoLabel.grid(row = 1, column = 1, sticky = W)
@@ -69,11 +69,13 @@ class Application(Frame):
 
         spinLabel = Label(nucStruc, text = "Spin (ex. 0+,3/2-...")
         spinLabel.grid(row = 3, column = 0, sticky = W)
-        upBoundEnergyLabel = Label(nucStruc, text = "Upper Energy Bound (keV)")
+        upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)")
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
 
-        massDataLabel = Label(nucStruc, text = "Include Mass Data (YES or NO)")
-        massDataLabel.grid(row = 3, column = 2, sticky = W)
+        self.checkVar = IntVar()
+        self.checkVar = 0
+        c = Checkbutton(nucStruc, text="Include Binding",variable=self.checkVar,command=self.checkfunction)
+        c.grid(row=4,column=2)
 
 
         #Here I will set up and place all the labels for the decay frame
@@ -110,8 +112,6 @@ class Application(Frame):
         self.spinEntry.grid(row = 4, column = 0, sticky = W)
         self.upBoundEnergyEntry = Entry(nucStruc)
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
-        self.massDataEntry = Entry(nucStruc)
-        self.massDataEntry.grid(row = 4, column = 2, sticky = W)
 
 
         #Here I will set up all of the entry boxes for decay
@@ -180,6 +180,8 @@ class Application(Frame):
         self.pictureSpot.grid(row = 0) 
         self.photo2 = PhotoImage(file = "eilonglogo.gif")
         self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
+
+
             
 
     #Defining the functions that make the submit buttons do things. 
@@ -191,7 +193,6 @@ class Application(Frame):
         self.upBoundIsoVar = self.upBoundIsoEntry.get()
         self.spinVar = self.spinEntry.get()
         self.upBoundEnergyVar = self.upBoundEnergyEntry.get()
-        self.massDataVar = self.massDataEntry.get()
         root.destroy()#closes window
 
     def sendDecayData(self):
@@ -227,6 +228,12 @@ class Application(Frame):
         os.system("python3 USE_THIS.py")
         sys.exit()
 
+    def checkfunction(self):
+        if self.checkVar == 0:
+            self.checkVar = 1
+        else:
+            self.checkVar = 0
+
 app = Application(root)
 root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()
@@ -241,7 +248,10 @@ class guioutputs:
     isoUp=app.upBoundIsoVar
     E=app.upBoundEnergyVar
     exitcount=app.exitcount
-    mass=app.massDataVar
+    if app.checkVar == 1:
+        mass = "YES"
+    else:
+        mass = "NO"
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.
