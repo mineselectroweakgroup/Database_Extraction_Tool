@@ -9,6 +9,8 @@ def addUncert(datalist, currentLine):
 #    print('\n')
     if (currentLine[2]=='0.0'):
         uncert = 0
+    elif ('(' in currentLine[3]):
+        uncert = currentLine[3][:currentLine[3].find('(')]
     elif (('+' in currentLine[3]) or ('-' in currentLine[3])):
         #uncert = currentLine[3][:currentLine[3].index(datalist[-1][1])]
         uncert = currentLine[3][:currentLine[3].find(datalist[-1][1])]
@@ -16,7 +18,8 @@ def addUncert(datalist, currentLine):
         uncert = currentLine[3]
 
     if (len(datalist[-1])<3):
-        datalist[-1].append(uncert)
+        diddly='squat'
+        #datalist[-1].append(uncert)
        
         
 
