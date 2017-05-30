@@ -5,6 +5,7 @@
 
 import dataClass as dc
 import os
+import re
 
 
 
@@ -25,7 +26,8 @@ def datExp(option,UI=False,Filter=False):
         if(Filter):
             wantedSpins=str(guioutputs.J)
             energyLim=int(guioutputs.E)
-        elementName = elementName.split(",")
+        elementName = elementName.replace(" ","")
+        elementName = elementName.split(',')
 
     if option == "two":
         from Beta_GUI import betaoutputs
@@ -43,8 +45,8 @@ def datExp(option,UI=False,Filter=False):
             if item == elementName:
                 index = periodicTable.index(item)
                 elementName = periodicTable[index-1] + "," + elementName
-
-        elementName = elementName.split(",")
+        elementName = elementName.replace(" ","")
+        elementName = elementName.split(',')
         exitcount = 0
 
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
