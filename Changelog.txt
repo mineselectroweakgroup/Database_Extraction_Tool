@@ -53,3 +53,9 @@ Version UPDATE 0.3.0 05.25.2017 1130MT -M.S. Martin:
 Version 0.3.1 05.26.2017 1330MT -M.S. Martin:
     Included atomic binding energy scaling factors
     Fixed bugs
+
+Version UPDATE 0.4.0 05.30.2017 1330MT -M.S. Martin:
+    Added new front GUI
+    Fixed bugs with file names and error statements
+    Updated plotting features and aesthetics
+    Separated sections of code into new programs

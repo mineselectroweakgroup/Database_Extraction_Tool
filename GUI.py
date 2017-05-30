@@ -8,7 +8,7 @@ import os
 import glob
 
 
-
+#Class used for the first function.
 class Application(Frame):
     def __init__(self,master):
         Frame.__init__(self,master)
@@ -26,6 +26,7 @@ class Application(Frame):
 
         self.spinVar = StringVar()
         self.upBoundEnergyVar = StringVar()
+        self.massDataVar = StringVar()
 
         #Here are the variable declarations for the Decay section
         #Same formatting
@@ -39,6 +40,10 @@ class Application(Frame):
         
 
     def create_widgets(self):
+        title = Frame(self)
+        title.pack(side = TOP)
+
+
         #Here I am going to seperate the implementation of Peter's code,
         #my own, and the output text box by using 3 different frames
         nucStruc = Frame(self, padx = 10)
@@ -53,7 +58,7 @@ class Application(Frame):
         #They will be seperated with newlines in this code to represent
         #different rows in the GUI
         nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Extraction")
-        nucStrucLable.grid(row = 0)
+        nucStrucLable.grid(columnspan = 2,row = 0,sticky=W)
 
         chemSymLabel = Label(nucStruc, text = "Chemical Symbol (ex. Zn)")
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
@@ -66,6 +71,9 @@ class Application(Frame):
         spinLabel.grid(row = 3, column = 0, sticky = W)
         upBoundEnergyLabel = Label(nucStruc, text = "Upper Energy Bound (keV)")
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
+
+        massDataLabel = Label(nucStruc, text = "Include Mass Data (YES or NO)")
+        massDataLabel.grid(row = 3, column = 2, sticky = W)
 
 
         #Here I will set up and place all the labels for the decay frame
@@ -102,6 +110,8 @@ class Application(Frame):
         self.spinEntry.grid(row = 4, column = 0, sticky = W)
         self.upBoundEnergyEntry = Entry(nucStruc)
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
+        self.massDataEntry = Entry(nucStruc)
+        self.massDataEntry.grid(row = 4, column = 2, sticky = W)
 
 
         #Here I will set up all of the entry boxes for decay
@@ -130,6 +140,9 @@ class Application(Frame):
         fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton)
         fullScreenSubmit.grid(row = 1, column = 0)
 
+        newChoiceSubmit = Button(out, text = "Program Selection", command = self.newChoiceButton)
+        newChoiceSubmit.grid(row = 1, column = 1)
+
 
 
         #Setting up the output box with scrolling feature
@@ -152,13 +165,21 @@ class Application(Frame):
         elif os.listdir(work_path) == ["Ignore.txt"]:
             print("Directory Empty")
         else:
-            self.directory=os.getcwd()
-            self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
-            self.newest = self.newest.replace(os.getcwd()+"/","")
-            self.photo = PhotoImage(file=self.newest)
-            self.outGraph.create_image(10,10,image=self.photo, anchor = "nw")
+            try:
+                self.directory=os.getcwd()
+                self.newest = max(glob.iglob(self.directory+"/*.gif"),key=os.path.getctime)
+                self.newest = self.newest.replace(os.getcwd()+"/","")
+                self.photo = PhotoImage(file=self.newest)
+                self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+            except:
+                print("No Image to Display")
         os.chdir("..")
         os.chdir("..")
+
+        self.pictureSpot = Canvas(title,width = 620, height = 100)
+        self.pictureSpot.grid(row = 0) 
+        self.photo2 = PhotoImage(file = "eilonglogo.gif")
+        self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
             
 
     #Defining the functions that make the submit buttons do things. 
@@ -170,6 +191,7 @@ class Application(Frame):
         self.upBoundIsoVar = self.upBoundIsoEntry.get()
         self.spinVar = self.spinEntry.get()
         self.upBoundEnergyVar = self.upBoundEnergyEntry.get()
+        self.massDataVar = self.massDataEntry.get()
         root.destroy()#closes window
 
     def sendDecayData(self):
@@ -196,7 +218,15 @@ class Application(Frame):
         os.chdir("..")
         os.chdir("..")
 
-global app
+    def newChoiceButton(self):
+        self.chemSymVar = "Zn"
+        self.A = 10
+        self.spinVar = "0+"
+        self.exitcount = 1
+        root.destroy()
+        os.system("python3 USE_THIS.py")
+        sys.exit()
+
 app = Application(root)
 root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()
@@ -211,6 +241,7 @@ class guioutputs:
     isoUp=app.upBoundIsoVar
     E=app.upBoundEnergyVar
     exitcount=app.exitcount
+    mass=app.massDataVar
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.
@@ -225,6 +256,8 @@ class guioutputs:
         isoUp = 299
     if E == '':
         E = 9999999
+    if mass.upper().replace(" ","") == "YES":
+        mass = "YES"
     
     
 #These are the Q and A variables for the mass extraction part the program

@@ -7,19 +7,25 @@ def addUncert(datalist, currentLine):
 #    print(datalist[-1])
 #    print(currentLine)
 #    print('\n')
+    #Ground state has 0 uncertainty
     if (currentLine[2]=='0.0'):
         uncert = 0
+    #if line[3] contains '('
     elif ('(' in currentLine[3]):
         uncert = currentLine[3][:currentLine[3].find('(')]
+    #if line[3] contains no parentheses but does have a '+' or '-'
     elif (('+' in currentLine[3]) or ('-' in currentLine[3])):
-        #uncert = currentLine[3][:currentLine[3].index(datalist[-1][1])]
         uncert = currentLine[3][:currentLine[3].find(datalist[-1][1])]
+    #if there are no spin values in line[3]
     else:
         uncert = currentLine[3]
 
-    if (len(datalist[-1])<3):
-        diddly='squat'
-        #datalist[-1].append(uncert)
+    #Will only append an uncertainty if there isn't already an uncertainty for a given line
+    if (len(datalist[-1])<3): 
+        if (uncert==''):
+            datalist[-1].append(0) 
+        else:
+            datalist[-1].append(int(uncert))
        
         
 
@@ -292,7 +298,7 @@ class data:##This is the main data class
                     fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
                     datFile = open(fileName,'wb')##Creates a file with a valid file name.
                     for i in range(len(self.data)):##Write the line fro each entry and each entry is delimited by a ,
-                        datFile.write(str.encode(str(self.name)+','+str(self.data[i][0])+','+str(self.data[i][1])+'\n'))
+                        datFile.write(str.encode(str(self.name)+','+str(self.data[i][0])+','+str(self.data[i][1])+','+str(self.data[i][2])+'\n'))
                         ###.dat is used for preparing data for gnuplot
                 else:##This case is like the code above but for every other file type and is delimited by tabs.
                     fileName=str(self.name)+extraTitleText+fExtOption
