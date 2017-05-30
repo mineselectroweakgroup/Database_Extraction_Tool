@@ -44,8 +44,6 @@ class Application(Frame):
         title.pack(side = TOP)
 
 
-        
-        
         #Here I am going to seperate the implementation of Peter's code,
         #my own, and the output text box by using 3 different frames
         nucStruc = Frame(self, padx = 10)
@@ -174,8 +172,8 @@ class Application(Frame):
 
         self.pictureSpot = Canvas(title,width = 385, height = 50)
         self.pictureSpot.grid(row = 0, column = 0) 
-        self.photo = PhotoImage(file = "logo.gif")
-        self.pictureSpot.create_image(0,0,image = self.photo, anchor = "nw")
+        self.photo2 = PhotoImage(file = "logo.gif")
+        self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
             
 
     #Defining the functions that make the submit buttons do things. 

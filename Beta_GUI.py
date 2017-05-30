@@ -79,6 +79,11 @@ class Application(Frame):
             self.outGraph.create_image(10,10,image=self.photo, anchor = "nw")
         os.chdir("..")
         os.chdir("..")
+
+        self.pictureSpot = Canvas(title,width = 385, height = 50)
+        self.pictureSpot.grid(row = 0, column = 0) 
+        self.photo2 = PhotoImage(file = "logo.gif")
+        self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
             
 
     #Defining the functions that make the submit buttons do things. 
