@@ -11,7 +11,8 @@ import os
 #This function is used to bulk export a range of isotopes in a given A range.
 def datExp(option,UI=False,Filter=False):
 
-    #User input and checks for valid inputs.
+#This uses the option from the first GUI to get inputs from the correct GUI. Some of the definitions here are
+#used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
     tryAgainCounter=1
     if option == "one":
         from GUI import guioutputs

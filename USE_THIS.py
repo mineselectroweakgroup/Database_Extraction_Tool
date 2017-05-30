@@ -3,7 +3,7 @@ root = Tk()
 root.title("Electroweak Interactions Group -- Systematic Study Program")
 import os
 
-
+#Initial class with the original framework. Is called upon starting the program and is used to call other functions.
 class Application(Frame):
     def __init__(self,master):
         Frame.__init__(self,master)

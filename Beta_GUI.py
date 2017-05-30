@@ -6,7 +6,7 @@ import os
 import glob
 
 
-
+#Class used for the beta decay code
 class Application(Frame):
     def __init__(self,master):
         Frame.__init__(self,master)

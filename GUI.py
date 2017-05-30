@@ -8,7 +8,7 @@ import os
 import glob
 
 
-
+#Class used for the first function.
 class Application(Frame):
     def __init__(self,master):
         Frame.__init__(self,master)

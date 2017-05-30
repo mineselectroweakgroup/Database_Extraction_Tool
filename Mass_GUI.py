@@ -4,7 +4,7 @@ root.title("Electroweak Interactions Group -- Systematic Study Program")
 import os
 import searching_function as sf
 
-
+#GUI used for Hayden's code.
 class Application(Frame):
     def __init__(self,master):
         Frame.__init__(self,master)
