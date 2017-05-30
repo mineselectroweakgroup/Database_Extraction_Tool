@@ -227,15 +227,15 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             if os.path.isfile(fileName):
                 os.remove(fileName)
             if rangecount >= 20:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 6\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 6\n"))
             elif rangecount >= 15:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.ttf'"' 7\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 7\n"))
             elif rangecount >= 10:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 9\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 9\n"))
             elif rangecount >= 5:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 12\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 12\n"))
             else:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 14\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 14\n"))
             pltFile.write(str.encode("set term gif size 700,500\n"))
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
             pltFile.write(str.encode("replot\n"))
