@@ -110,7 +110,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
             nodatatest = str(first_line[-2:])
-            if nodatatest == "--":
+            if (nodatatest == "--" or nodatatest == "-*"):
                 os.remove("Output/"+"gnuPlot/"+filenameopen)
                 removecount[element] = removecount[element] + 1
             else:
@@ -123,7 +123,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                     first_line = datafile.readline().rstrip()
                 nodatatest = str(first_line[-2:])
-                if nodatatest == "--":
+                if (nodatatest == "--" or nodatatest == "-*"):
                     os.remove("Output/"+"gnuPlot/"+filenameopen)
                     removehighcount[element] = removehighcount[element] + 1
                 else:
@@ -184,8 +184,10 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             else:
                 setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
         mostrecentrangecount = rangecount
-    pltFile.write(str.encode(setLine[:-1]+")"+"\n"))
-    pltFile.write(str.encode("set xrange [0:"+str(rangecount+1)+"]\n"))
+
+    if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+        pltFile.write(str.encode(setLine[:-1]+")"+"\n"))
+        pltFile.write(str.encode("set xrange [0:"+str(rangecount+1)+"]\n"))
     
     itercount = 0
     mostrecentiter = 0
@@ -214,24 +216,25 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         print("Program is finished plotting")
         #This defines the code required for the program to plot the information
         #as a .gif file.
-        #Also in here is the font and font size for the .git file
-        fileName = fileName.replace('.plt','.gif')
-        fileName = fileName[15:]
-        if os.path.isfile(fileName):
-            os.remove(fileName)
-        if rangecount >= 20:
-            pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 6\n"))
-        elif rangecount >= 15:
-            pltFile.write(str.encode("set term gif font '"'Helvetica.ttf'"' 7\n"))
-        elif rangecount >= 10:
-            pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 9\n"))
-        elif rangecount >= 5:
-            pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 12\n"))
-        else:
-            pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 14\n"))
-        pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
-        pltFile.write(str.encode("replot\n"))
-        pltFile.write(str.encode("set term x11"))
+        #Also in here is the font and font size for the .gif file
+        if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+            fileName = fileName.replace('.plt','.gif')
+            fileName = fileName[15:]
+            if os.path.isfile(fileName):
+                os.remove(fileName)
+            if rangecount >= 20:
+                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 6\n"))
+            elif rangecount >= 15:
+                pltFile.write(str.encode("set term gif font '"'Helvetica.ttf'"' 7\n"))
+            elif rangecount >= 10:
+                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 9\n"))
+            elif rangecount >= 5:
+                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 12\n"))
+            else:
+                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 14\n"))
+            pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
+            pltFile.write(str.encode("replot\n"))
+            pltFile.write(str.encode("set term x11"))
         exit
 
     

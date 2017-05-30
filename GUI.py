@@ -162,11 +162,14 @@ class Application(Frame):
         elif os.listdir(work_path) == ["Ignore.txt"]:
             print("Directory Empty")
         else:
-            self.directory=os.getcwd()
-            self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
-            self.newest = self.newest.replace(os.getcwd()+"/","")
-            self.photo = PhotoImage(file=self.newest)
-            self.outGraph.create_image(10,10,image=self.photo, anchor = "nw")
+            try:
+                self.directory=os.getcwd()
+                self.newest = max(glob.iglob(self.directory+"/*.gif"),key=os.path.getctime)
+                self.newest = self.newest.replace(os.getcwd()+"/","")
+                self.photo = PhotoImage(file=self.newest)
+                self.outGraph.create_image(10,10,image=self.photo, anchor = "nw")
+            except:
+                print("No Image to Display")
         os.chdir("..")
         os.chdir("..")
 

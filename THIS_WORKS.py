@@ -10,8 +10,6 @@ import time
 import sys
 
 
-
-
 def function(option):
 
 #Exports data requested by the user into text files (necessary to generate plots)
@@ -37,7 +35,7 @@ def function(option):
     newest = newest.replace(os.getcwd()+"/","")
     os.system("gnuplot "+newest)
 
-#Optional code used to delete everything but the .git files.
+#Optional code used to delete everything but the .gif files.
 #fileList = glob.glob("*.dat")
 #for f in fileList:
     #os.remove(f)

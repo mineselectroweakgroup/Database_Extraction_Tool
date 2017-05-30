@@ -47,6 +47,12 @@ class Application(Frame):
         root.destroy()
         os.system('python3 THIS_WORKS.py "two"')
 
+    def exitButton(self):
+        self.exitcount = 1
+        print("Thanks!")
+        root.destroy()
+
 
 app = Application(root)
+root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()

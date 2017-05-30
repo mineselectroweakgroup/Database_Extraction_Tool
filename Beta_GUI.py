@@ -33,9 +33,9 @@ class Application(Frame):
         decayLabel = Label(decay, text = "Evaluated Beta Decay Information")
         decayLabel.grid(row = 0, column = 0, sticky = W)
 
-        chemSymLabel = Label(decay, text = "Chemical Symbol (ex. Zn)")
+        chemSymLabel = Label(decay, text = "Parent Nucleus (ex. Zn)")
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
-        ALabel = Label(decay, text = "Isotope A")
+        ALabel = Label(decay, text = "Isotope (ex. 60)")
         ALabel.grid(row = 1, column = 1, sticky = W)
 
         spinLabel = Label(decay, text = "Spin (ex. 0+,3/2-...")
