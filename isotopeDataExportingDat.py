@@ -232,6 +232,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 12\n"))
             else:
                 pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 14\n"))
+            pltFile.write(str.encode("set term gif size 700,500\n"))
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
             pltFile.write(str.encode("replot\n"))
             pltFile.write(str.encode("set term x11"))

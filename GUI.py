@@ -58,7 +58,7 @@ class Application(Frame):
         #They will be seperated with newlines in this code to represent
         #different rows in the GUI
         nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Extraction")
-        nucStrucLable.grid(row = 0)
+        nucStrucLable.grid(columnspan = 2,row = 0,sticky=W)
 
         chemSymLabel = Label(nucStruc, text = "Chemical Symbol (ex. Zn)")
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
@@ -167,15 +167,15 @@ class Application(Frame):
                 self.newest = max(glob.iglob(self.directory+"/*.gif"),key=os.path.getctime)
                 self.newest = self.newest.replace(os.getcwd()+"/","")
                 self.photo = PhotoImage(file=self.newest)
-                self.outGraph.create_image(10,10,image=self.photo, anchor = "nw")
+                self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
             except:
                 print("No Image to Display")
         os.chdir("..")
         os.chdir("..")
 
-        self.pictureSpot = Canvas(title,width = 385, height = 50)
-        self.pictureSpot.grid(row = 0, column = 0) 
-        self.photo2 = PhotoImage(file = "logo.gif")
+        self.pictureSpot = Canvas(title,width = 620, height = 100)
+        self.pictureSpot.grid(row = 0) 
+        self.photo2 = PhotoImage(file = "eilonglogo.gif")
         self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
             
 
@@ -244,7 +244,7 @@ class guioutputs:
         isoUp = 299
     if E == '':
         E = 9999999
-    if mass.upper() == "YES":
+    if mass.upper().replace(" ","") == "YES":
         mass = "YES"
     
     

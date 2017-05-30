@@ -63,9 +63,9 @@ class Application(Frame):
 
 
 
-        self.pictureSpot = Canvas(title,width = 385, height = 50)
+        self.pictureSpot = Canvas(title,width = 620, height = 100)
         self.pictureSpot.grid(row = 0, column = 0) 
-        self.photo2 = PhotoImage(file = "logo.gif")
+        self.photo2 = PhotoImage(file = "eilonglogo.gif")
         self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
 
     def sendDecayData(self):

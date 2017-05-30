@@ -31,7 +31,7 @@ class Application(Frame):
 
 
         decayLabel = Label(decay, text = "Evaluated Beta Decay Information")
-        decayLabel.grid(row = 0, column = 0, sticky = W)
+        decayLabel.grid(columnspan = 3,row = 0)
 
         chemSymLabel = Label(decay, text = "Parent Nucleus (ex. Zn)")
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
@@ -39,7 +39,7 @@ class Application(Frame):
         ALabel.grid(row = 1, column = 1, sticky = W)
 
         spinLabel = Label(decay, text = "Spin (ex. 0+,3/2-...")
-        spinLabel.grid(row = 3, column = 0, sticky = W)
+        spinLabel.grid(row = 1, column = 2, sticky = W)
 
 
         #Here I will set up all of the entry boxes for nucStruc
@@ -51,13 +51,19 @@ class Application(Frame):
         self.AEntry.grid(row = 2, column = 1, sticky = W)
 
         self.spinEntry = Entry(decay)
-        self.spinEntry.grid(row = 4, column = 0, sticky = W)
+        self.spinEntry.grid(row = 2, column = 2, sticky = W)
 
 
 
         #Setting up the submit buttons
         decaySubmit = Button(decay, text = "Submit", command = self.sendNucData)
-        decaySubmit.grid(row = 5, column = 0, sticky = W)
+        decaySubmit.grid(row = 5, column = 0)
+
+        fullScreenSubmit = Button(decay, text = "Full Screen", command = self.fullScreenButton)
+        fullScreenSubmit.grid(row = 5, column = 1)
+
+        newChoiceSubmit = Button(decay, text = "Program Selection", command = self.newChoiceButton)
+        newChoiceSubmit.grid(row = 5, column = 2)
 
 
         #Setting up the graph output box including the calling of the most
@@ -76,13 +82,13 @@ class Application(Frame):
             self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
             self.newest = self.newest.replace(os.getcwd()+"/","")
             self.photo = PhotoImage(file=self.newest)
-            self.outGraph.create_image(10,10,image=self.photo, anchor = "nw")
+            self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
         os.chdir("..")
         os.chdir("..")
 
-        self.pictureSpot = Canvas(title,width = 385, height = 50)
+        self.pictureSpot = Canvas(title,width = 620, height = 100)
         self.pictureSpot.grid(row = 0, column = 0) 
-        self.photo2 = PhotoImage(file = "logo.gif")
+        self.photo2 = PhotoImage(file = "eilonglogo.gif")
         self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
             
 
@@ -98,6 +104,24 @@ class Application(Frame):
         self.exitcount = 1
         print("Thanks!")
         root.destroy()
+        sys.exit()
+
+    def fullScreenButton(self):
+        os.chdir("Output/gnuPlot")
+        directory = os.getcwd()
+        newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
+        newest = newest.replace(os.getcwd()+"/","")
+        os.system("okular --presentation "+newest+" &")
+        os.chdir("..")
+        os.chdir("..")
+
+    def newChoiceButton(self):
+        self.chemSymVar = "Zn"
+        self.A = 10
+        self.spinVar = "0+"
+        self.exitcount = 1
+        root.destroy()
+        os.system("python3 USE_THIS.py")
         sys.exit()
 
 app = Application(root)
