@@ -54,17 +54,17 @@ def datExp(option,UI=False,Filter=False):
     for element in elementName:
         for i in range(lowerBound,higherBound+1):
             itervar= str(i)+element
-            try:
-                indata=dc.data('ensdf.'+str(i).zfill(3),itervar,'EoL',energyLim)
-                if(Filter):
-                    indata.filterData(wantedSpins,UI) 
-                    indata.export("_Fil.dat",wantedSpins)
-                else:
-                    indata.export(".dat")
-            except:
-                if(UI):
-                    ERROR="No file found for or error with " +'ensdf.'+str(i).zfill(3)##Allows the user to see if a specific ENSDF file is giving them trouble.
-                    print(ERROR)
+            #try:
+            indata=dc.data('ensdf.'+str(i).zfill(3),itervar,'EoL',energyLim)
+            if(Filter):
+                indata.filterData(wantedSpins,UI) 
+                indata.export("_Fil.dat",wantedSpins)
+            else:
+                indata.export(".dat")
+            #except:
+                #if(UI):
+                    #ERROR="No file found for or error with " +'ensdf.'+str(i).zfill(3)##Allows the user to see if a specific ENSDF file is giving them trouble.
+                    #print(ERROR)
                 
             
     if UI:

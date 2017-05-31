@@ -5,11 +5,11 @@
 
 def addUncert(datalist, currentLine):
 #    print(datalist[-1])
-#    print(currentLine)
+    print(currentLine)
 #    print('\n')
     #Ground state has 0 uncertainty
     if (currentLine[2]=='0.0'):
-        uncert = 0
+        uncert = '0'
     #if line[3] contains '('
     elif ('(' in currentLine[3]):
         uncert = currentLine[3][:currentLine[3].find('(')]
@@ -20,11 +20,15 @@ def addUncert(datalist, currentLine):
     else:
         uncert = currentLine[3]
 
+    print(uncert)
+
     #Will only append an uncertainty if there isn't already an uncertainty for a given line
     if (len(datalist[-1])<3): 
         if (uncert==''):
             datalist[-1].append(0) 
         else:
+            if(not uncert.isnumeric()):
+                uncert = "0"
             datalist[-1].append(int(uncert))
        
         
@@ -131,11 +135,12 @@ class data:##This is the main data class
                                             for i in range(lower,upper+1):
                                                 ##print [float(line[2]),str(i)+'-']
                                                 filtDataSet.append([float(line[2]),"("+str(i)+'-'+")"])
+                                                addUncert(filtDataSet,line)
                                         elif('+' in unfilSpinStr):
                                             for i in range(lower,upper+1):
                                                 ##print [float(line[2]),str(i)+'+']
                                                 filtDataSet.append([float(line[2]),"("+str(i)+'+'+")"])
-                                    
+                                                addUncert(filtDataSet,line)
                                 except:
                                     print("Error with " + str(line[2])+ " " +unfilSpinStr + " at loop 0a")                                   
                             elif('+' in unfilSpinStr): ##For strings will + only but like the first case above for + and -.
@@ -328,4 +333,4 @@ class data:##This is the main data class
             else:
                 if(UI):
                     print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
-                self.data=[[0.0,"--"]]##Enters a dummy entry to file with something.
+                self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
