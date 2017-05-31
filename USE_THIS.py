@@ -16,10 +16,10 @@ class Application(Frame):
 
     def create_widgets(self):
         title = Frame(self)
-        #message = Frame(self)
+        message = Frame(self)
         buttons = Frame(self)
         extraSpace = Frame(self)
-        #message.pack(side=TOP)
+        message.pack(side=TOP)
         title.pack(side = TOP)
         extraSpace.pack(side = BOTTOM)
         buttons.pack(side = BOTTOM)
@@ -47,8 +47,8 @@ class Application(Frame):
         space = Label(extraSpace, text = " ", fg = '#21314D', bg = '#21314D')
         space.grid(row=0)
 
-        #welcome = Label(message, text = "Hello, my name is Matthew \n Martin and my goal is to haunt \n your life and eat your brains!", font = ("Helvetica", 40, "bold"), fg="Orange Red")
-        #welcome.grid(row = 0)
+        welcome = Label(message, text = "Hello, my name is Matthew \n Martin and my goal is to haunt \n your life and eat your brains!", font = ("Helvetica", 40, "bold"), fg="Orange Red")
+        welcome.grid(row = 0)
 
     def evalFunc(self):
         root.destroy()
