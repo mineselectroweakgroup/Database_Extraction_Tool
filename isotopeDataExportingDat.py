@@ -34,6 +34,7 @@ def datExp(option,UI=False,Filter=False):
         elementName = str(betaoutputs.Z)
         lowerBound = int(betaoutputs.A)
         higherBound = int(betaoutputs.A)
+        betaVariable = str(betaoutputs.B)
         energyLim = 9999999
         massData = "YES"
         if(Filter):
@@ -44,7 +45,10 @@ def datExp(option,UI=False,Filter=False):
         for item in periodicTable:
             if item == elementName:
                 index = periodicTable.index(item)
-                elementName = periodicTable[index-1] + "," + elementName
+                if betaVariable == "Beta +":
+                    elementName = periodicTable[index-1] + "," + elementName
+                if betaVariable == "Beta -":
+                    elementName = elementName + "," + periodicTable[index+1]
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
         exitcount = 0
@@ -148,8 +152,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile = open(fileName,'wb')
 
             infile = open(fileName,'r')
-            print(infile.readline())
-            if infile.readline() != "reset\n":
+            if infile.readline() != "reset":
         # These following lines add the completely nessecary lines in the plt files
         #Reset gnuplot.
                 pltFile.write(str.encode("reset\n"))
@@ -227,15 +230,15 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             if os.path.isfile(fileName):
                 os.remove(fileName)
             if rangecount >= 20:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 6\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 6\n"))
             elif rangecount >= 15:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 7\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 7\n"))
             elif rangecount >= 10:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 9\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 9\n"))
             elif rangecount >= 5:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 12\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
             else:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.tff\" 14\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 14\n"))
             pltFile.write(str.encode("set term gif size 700,500\n"))
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
             pltFile.write(str.encode("replot\n"))

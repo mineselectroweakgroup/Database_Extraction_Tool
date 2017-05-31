@@ -34,7 +34,7 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
                                 splitline = line.split(',')
                                 if data[k][59]=='#':
                                     splitline[2] = splitline[2][:-1]+'*'+splitline[2][-1:]
-                                splitline[1] = str((float(splitline[1])-float(data[k][52:62].replace('#','.'))*int(massA))/1000)
+                                splitline[1] = str((float(splitline[1])-float(data[k][55:63].replace('#','.'))*i)/1000)
                                 unsplitline = splitline[0] + ',' + splitline[1] + ',' + splitline[2]
                                 datafile.write(unsplitline)
                 k=k+1

@@ -12,6 +12,7 @@ import glob
 class Application(Frame):
     def __init__(self,master):
         Frame.__init__(self,master)
+        self.configure(bg='#21314D')
 
         self.create_widgets()
         self.grid()
@@ -42,6 +43,7 @@ class Application(Frame):
     def create_widgets(self):
         title = Frame(self)
         title.pack(side = TOP)
+        title.configure(bg='#21314D')
 
 
         #Here I am going to seperate the implementation of Peter's code,
@@ -53,28 +55,32 @@ class Application(Frame):
         nucStruc.pack(side = LEFT)
         decay.pack(side = RIGHT)
 
+        nucStruc.configure(bg='#21314D')
+        decay.configure(bg='#21314D')
+        out.configure(bg='#21314D')
+
 
         #Here I will set up and place all lables for the nucStruc frame
         #They will be seperated with newlines in this code to represent
         #different rows in the GUI
-        nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Extraction")
+        nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Extraction",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
         nucStrucLable.grid(columnspan = 2,row = 0,sticky=W)
 
-        chemSymLabel = Label(nucStruc, text = "Element (ex. Zn,Cu,...)")
+        chemSymLabel = Label(nucStruc, text = "Element (Zn,Cu,...",bg='#21314D',fg='#92A2BD',font=11)
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
-        lowBoundIsoLabel = Label(nucStruc, text = "Lower Bound Isotope")
+        lowBoundIsoLabel = Label(nucStruc, text = "Low Isotope Bound",bg='#21314D',fg='#92A2BD',font=11)
         lowBoundIsoLabel.grid(row = 1, column = 1, sticky = W)
-        upBoundIsoLabel = Label(nucStruc, text = "Upper Bound Isotope")
+        upBoundIsoLabel = Label(nucStruc, text = "High Isotope Bound",bg='#21314D',fg='#92A2BD',font=11)
         upBoundIsoLabel.grid(row = 1, column = 2, sticky = W)
 
-        spinLabel = Label(nucStruc, text = "Spin (ex. 0+,3/2-...")
+        spinLabel = Label(nucStruc, text = "Spin (0+,3/2-...",bg='#21314D',fg='#92A2BD',font=11)
         spinLabel.grid(row = 3, column = 0, sticky = W)
-        upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)")
+        upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=11)
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
 
         self.checkVar = IntVar()
         self.checkVar = 0
-        c = Checkbutton(nucStruc, text="Include Binding",variable=self.checkVar,command=self.checkfunction)
+        c = Checkbutton(nucStruc, text="Include Binding",variable=self.checkVar,command=self.checkfunction,bg='#21314D',fg='#92A2BD',highlightbackground="#21314D",font=11)
         c.grid(row=4,column=2)
 
 
@@ -84,17 +90,17 @@ class Application(Frame):
 
         decay.columnconfigure(0, pad = 10)
 
-        decayLabel = Label(decay, text = "Decay Information")
+        decayLabel = Label(decay, text = "Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
         decayLabel.grid(row = 0, column = 0, sticky = W)
 
-        qLowLabel = Label(decay, text = "Q Low")
+        qLowLabel = Label(decay, text = "Q Low",bg='#21314D',fg='#92A2BD',font=11)
         qLowLabel.grid(row = 1, column = 0, sticky = W)
-        qHighLabel = Label(decay, text = "Q High")
+        qHighLabel = Label(decay, text = "Q High",bg='#21314D',fg='#92A2BD',font=11)
         qHighLabel.grid(row = 1, column = 1, sticky = W)
 
-        aLowLabel = Label(decay, text = "A Low")
+        aLowLabel = Label(decay, text = "A Low",bg='#21314D',fg='#92A2BD',font=11)
         aLowLabel.grid(row = 3, column = 0, sticky = W)
-        aHighLabel = Label(decay, text = "A High")
+        aHighLabel = Label(decay, text = "A High",bg='#21314D',fg='#92A2BD',font=11)
         aHighLabel.grid(row = 3, column = 1, sticky = W)
 
 
@@ -130,19 +136,18 @@ class Application(Frame):
 
 
         #Setting up the submit buttons
-        nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData)
+        nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
         nucStrucSubmit.grid(row = 5, column = 0, sticky = W)
-        decaySubmit = Button(decay, text = "Submit", command = self.sendDecayData)
+        decaySubmit = Button(decay, text = "Submit", command = self.sendDecayData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
         decaySubmit.grid(row = 5, column = 0, sticky = W)
 
-        exitSubmit = Button(out, text = "Exit", command = self.exitButton)
-        exitSubmit.grid(row = 0, column = 2, sticky = W)
-        fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton)
+        exitSubmit = Button(out, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        exitSubmit.grid(columnspan=2,row = 2, column = 0)
+        fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
         fullScreenSubmit.grid(row = 1, column = 0)
 
-        newChoiceSubmit = Button(out, text = "Program Selection", command = self.newChoiceButton)
+        newChoiceSubmit = Button(out, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
         newChoiceSubmit.grid(row = 1, column = 1)
-
 
 
         #Setting up the output box with scrolling feature
@@ -176,7 +181,7 @@ class Application(Frame):
         os.chdir("..")
         os.chdir("..")
 
-        self.pictureSpot = Canvas(title,width = 620, height = 100)
+        self.pictureSpot = Canvas(title,width = 620, height = 90)
         self.pictureSpot.grid(row = 0) 
         self.photo2 = PhotoImage(file = "eilonglogo.gif")
         self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
