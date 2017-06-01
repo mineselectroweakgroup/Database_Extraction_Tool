@@ -66,21 +66,21 @@ class Application(Frame):
         nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Extraction",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
         nucStrucLable.grid(columnspan = 2,row = 0,sticky=W)
 
-        chemSymLabel = Label(nucStruc, text = "Element (Zn,Cu,...",bg='#21314D',fg='#92A2BD',font=11)
+        chemSymLabel = Label(nucStruc, text = "Element (Zn,Cu,...",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
-        lowBoundIsoLabel = Label(nucStruc, text = "Low Isotope Bound",bg='#21314D',fg='#92A2BD',font=11)
+        lowBoundIsoLabel = Label(nucStruc, text = "Low Isotope Bound",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         lowBoundIsoLabel.grid(row = 1, column = 1, sticky = W)
-        upBoundIsoLabel = Label(nucStruc, text = "High Isotope Bound",bg='#21314D',fg='#92A2BD',font=11)
+        upBoundIsoLabel = Label(nucStruc, text = "High Isotope Bound",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         upBoundIsoLabel.grid(row = 1, column = 2, sticky = W)
 
-        spinLabel = Label(nucStruc, text = "Spin (0+,3/2-...",bg='#21314D',fg='#92A2BD',font=11)
+        spinLabel = Label(nucStruc, text = "Spin (0+,3/2-...",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         spinLabel.grid(row = 3, column = 0, sticky = W)
-        upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=11)
+        upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
 
         self.checkVar = IntVar()
         self.checkVar = 0
-        c = Checkbutton(nucStruc, text="Include Binding",variable=self.checkVar,command=self.checkfunction,bg='#21314D',fg='#92A2BD',highlightbackground="#21314D",font=11)
+        c = Checkbutton(nucStruc, text="Include Binding",variable=self.checkVar,command=self.checkfunction,bg='#21314D',fg='#92A2BD',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         c.grid(row=4,column=2)
 
 
@@ -93,14 +93,14 @@ class Application(Frame):
         decayLabel = Label(decay, text = "Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
         decayLabel.grid(row = 0, column = 0, sticky = W)
 
-        qLowLabel = Label(decay, text = "Q Low",bg='#21314D',fg='#92A2BD',font=11)
+        qLowLabel = Label(decay, text = "Q Low",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         qLowLabel.grid(row = 1, column = 0, sticky = W)
-        qHighLabel = Label(decay, text = "Q High",bg='#21314D',fg='#92A2BD',font=11)
+        qHighLabel = Label(decay, text = "Q High",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         qHighLabel.grid(row = 1, column = 1, sticky = W)
 
-        aLowLabel = Label(decay, text = "A Low",bg='#21314D',fg='#92A2BD',font=11)
+        aLowLabel = Label(decay, text = "A Low",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         aLowLabel.grid(row = 3, column = 0, sticky = W)
-        aHighLabel = Label(decay, text = "A High",bg='#21314D',fg='#92A2BD',font=11)
+        aHighLabel = Label(decay, text = "A High",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         aHighLabel.grid(row = 3, column = 1, sticky = W)
 
 
@@ -136,17 +136,17 @@ class Application(Frame):
 
 
         #Setting up the submit buttons
-        nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         nucStrucSubmit.grid(row = 5, column = 0, sticky = W)
-        decaySubmit = Button(decay, text = "Submit", command = self.sendDecayData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        decaySubmit = Button(decay, text = "Submit", command = self.sendDecayData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         decaySubmit.grid(row = 5, column = 0, sticky = W)
 
-        exitSubmit = Button(out, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        exitSubmit = Button(out, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         exitSubmit.grid(columnspan=2,row = 2, column = 0)
-        fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         fullScreenSubmit.grid(row = 1, column = 0)
 
-        newChoiceSubmit = Button(out, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        newChoiceSubmit = Button(out, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         newChoiceSubmit.grid(row = 1, column = 1)
 
 
