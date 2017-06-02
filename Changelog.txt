@@ -59,3 +59,7 @@ Version UPDATE 0.4.0 05.30.2017 1330MT -M.S. Martin:
     Fixed bugs with file names and error statements
     Updated plotting features and aesthetics
     Separated sections of code into new programs
+
+Version 0.4.1 XXXXXXXXXX XXXXMT -M.S. Martin:
+    Updated mass formula
+    Fixed bugs with rounding errors
