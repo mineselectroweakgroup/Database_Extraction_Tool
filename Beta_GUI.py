@@ -88,14 +88,25 @@ class Application(Frame):
         work_path = os.getcwd()
         if os.listdir(work_path) == []:
             print("Directory Empty")
-        elif os.listdir(work_path) == ["Ignore.txt"]:
-            print("Directory Empty")
         else:
             self.directory=os.getcwd()
             self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
             self.newest = self.newest.replace(os.getcwd()+"/","")
-            self.photo = PhotoImage(file=self.newest)
-            self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+            if self.newest[-4:] != ".gif":
+                try:
+                    self.newest = "Matt_Martin.gif"
+                    self.photo = PhotoImage(file=self.newest)
+                    self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+                except:
+                    print("No Image to Display")
+            elif os.listdir(work_path) == ["Ignore.txt"]:
+                print("Directory Empty")
+            else:
+                try:
+                    self.photo = PhotoImage(file=self.newest)
+                    self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+                except:
+                    print("No Image to Display")
         os.chdir("..")
         os.chdir("..")
 

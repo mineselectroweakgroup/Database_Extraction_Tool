@@ -47,6 +47,11 @@ def function(option):
     os.chdir("..")
     os.chdir("..")
     os.system("python3 THIS_WORKS.py "+option)
+    newest = "Output/gnuPlot/"+newest.replace(".plt",".gif")
+    if os.path.isfile(newest):
+        newestpng = newest.replace(".gif",".png")
+        os.system("convert "+newest+ " "+ newestpng)
+        os.system("rm "+newest)
 
 
 option = sys.argv[-1]

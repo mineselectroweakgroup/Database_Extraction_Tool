@@ -163,7 +163,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
 
         #This labels the y axis and the Title
                 if massInclude == "YES":
-                    pltFile.write(str.encode("set ylabel \"Energy(MeV)\"\n"))
+                    pltFile.write(str.encode("set ylabel \"Energy(GeV)\"\n"))
                 else:
                     pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
                 pltFile.write(str.encode("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n"))
@@ -175,6 +175,8 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile.write(str.encode("set datafile sep ','\n"))
 
                 pltFile.write(str.encode("unset bars \n"))
+
+                pltFile.write(str.encode("set pointsize 0.0001\n"))
 
                 setLine="set xtics rotate by 45 offset -2.0,-1.4 ("
         else:
@@ -205,17 +207,18 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 if(Filter):
                     #pltFile.write(str.encode(("plot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n").replace('/', '_')))
                     pltFile.write(str.encode(("plot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_')))
-                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left\n").replace('/', '_')))
+                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character 1.2, character 0.2\n").replace('/', '_')))
                 else:
                     #pltFile.write(str.encode("plot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n"))
                     pltFile.write(str.encode("plot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n"))
+                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character 1.2, character 0.2\n").replace('/', '_')))
             else:
                 if(Filter):
-                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n").replace('/', '_')))
                     pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_')))
+                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character 1.2, character 0.2\n").replace('/', '_')))
                 else:
-                    pltFile.write(str.encode("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n"))
                     pltFile.write(str.encode("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n"))
+                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character 1.2, character 0.2\n").replace('/', '_')))
             itercount = itercount + 1
         mostrecentiter = itercount
             

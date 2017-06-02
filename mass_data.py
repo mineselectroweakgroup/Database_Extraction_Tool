@@ -4,6 +4,11 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
     massfile = open("mass16.txt","r+")
     data = massfile.readlines()
     splitdatafilelines = []
+    BEC12 = 92161.753
+    #conversion = BEC12/(6*float(data[39][96:112].replace(" ",""))+6*float(data[40][96:112].replace(" ",""))-12000000)
+    conversion = 0.931494
+    #c=3.0*10**8
+
 
     for element in elementName:
 
@@ -21,6 +26,7 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
                         massA = massA.lstrip()
 
                         if str(i) == massA:
+                            A = int(massA)
 
                             filenameopen = (str(i)+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
 
@@ -32,10 +38,23 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
 
                             for line in datafilelines:
                                 splitline = line.split(',')
-                                if data[k][59]=='#':
+                                N = int(data[k][6:9].replace(" ",""))
+                                Z = int(data[k][11:14].replace(" ",""))
+                                if data[k][106]=='#':
                                     splitline[2] = splitline[2][:-1]+'*'+splitline[2][-1:]
-                                splitline[1] = str((float(splitline[1])-float(data[k][55:63].replace('#','.')))/1000)
+                                #nuclearBindingEnergy = ((float(data[k][11:14].replace(" ","").replace("#","."))*float(data[40][96:112].replace(" ","").replace("#",".")))+(float(data[k][6:9].replace(" ","").replace("#","."))*float(data[39][96:112].replace(" ","").replace("#",".")))-(float(data[k][96:112].replace(" ","").replace("#","."))))/(10**6)
+                                #additionalEnergy = nuclearBindingEnergy * conversion
+                                #massExcessEnergy = float(data[k][30:41].replace("#","."))
+                                atomicMass = float(data[k][96:112].replace(" ",""))*conversion/10**6
+                                splitline[1] = str(float(splitline[1])/10**6 + atomicMass)
                                 unsplitline = splitline[0] + ',' + splitline[1] + ',' + splitline[2]
                                 datafile.write(unsplitline)
                 k=k+1
+
+
+
+
+
+
+
 

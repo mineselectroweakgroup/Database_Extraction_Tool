@@ -107,30 +107,30 @@ class Application(Frame):
         #Here I will set up all of the entry boxes for nucStruc
         #Same format
 
-        self.chemSymEntry = Entry(nucStruc)
+        self.chemSymEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.chemSymEntry.grid(row = 2, column = 0, sticky = W)
-        self.lowBoundIsoEntry = Entry(nucStruc)
+        self.lowBoundIsoEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.lowBoundIsoEntry.grid(row = 2, column = 1, sticky = W)
-        self.upBoundIsoEntry = Entry(nucStruc)
+        self.upBoundIsoEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.upBoundIsoEntry.grid(row = 2, column = 2, sticky = W)
 
-        self.spinEntry = Entry(nucStruc)
+        self.spinEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.spinEntry.grid(row = 4, column = 0, sticky = W)
-        self.upBoundEnergyEntry = Entry(nucStruc)
+        self.upBoundEnergyEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
 
 
         #Here I will set up all of the entry boxes for decay
         #Same format
 
-        self.qLowEntry = Entry(decay)
+        self.qLowEntry = Entry(decay,highlightbackground="#21314D")
         self.qLowEntry.grid(row = 2, column = 0, sticky = W)
-        self.qHighEntry = Entry(decay)
+        self.qHighEntry = Entry(decay,highlightbackground="#21314D")
         self.qHighEntry.grid(row = 2, column = 1, sticky = W)
         
-        self.aLowEntry = Entry(decay)
+        self.aLowEntry = Entry(decay,highlightbackground="#21314D")
         self.aLowEntry.grid(row = 4, column = 0, sticky = W)
-        self.aHighEntry = Entry(decay)
+        self.aHighEntry = Entry(decay,highlightbackground="#21314D")
         self.aHighEntry.grid(row = 4, column = 1, sticky = W)
 
 
@@ -167,17 +167,25 @@ class Application(Frame):
         work_path = os.getcwd()
         if os.listdir(work_path) == []:
             print("Directory Empty")
-        elif os.listdir(work_path) == ["Ignore.txt"]:
-            print("Directory Empty")
         else:
-            try:
-                self.directory=os.getcwd()
-                self.newest = max(glob.iglob(self.directory+"/*.gif"),key=os.path.getctime)
-                self.newest = self.newest.replace(os.getcwd()+"/","")
-                self.photo = PhotoImage(file=self.newest)
-                self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
-            except:
-                print("No Image to Display")
+            self.directory=os.getcwd()
+            self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
+            self.newest = self.newest.replace(os.getcwd()+"/","")
+            if self.newest[-4:] != ".gif":
+                try:
+                    self.newest = "Matt_Martin.gif"
+                    self.photo = PhotoImage(file=self.newest)
+                    self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+                except:
+                    print("No Image to Display")
+            elif os.listdir(work_path) == ["Ignore.txt"]:
+                print("Directory Empty")
+            else:
+                try:
+                    self.photo = PhotoImage(file=self.newest)
+                    self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+                except:
+                    print("No Image to Display")
         os.chdir("..")
         os.chdir("..")
 
