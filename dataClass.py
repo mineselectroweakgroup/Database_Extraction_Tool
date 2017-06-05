@@ -3,33 +3,9 @@
 ##Date Updated: May 6, 2017 by Peter Consalvi
 ##Date Updated: May 17, 2017 by Matthew Martin
 
-def addUncert(datalist, currentLine):
-#    print(datalist[-1])
-    print(currentLine)
-#    print('\n')
-    #Ground state has 0 uncertainty
-    if (currentLine[2]=='0.0'):
-        uncert = '0'
-    #if line[3] contains '('
-    elif ('(' in currentLine[3]):
-        uncert = currentLine[3][:currentLine[3].find('(')]
-    #if line[3] contains no parentheses but does have a '+' or '-'
-    elif (('+' in currentLine[3]) or ('-' in currentLine[3])):
-        uncert = currentLine[3][:currentLine[3].find(datalist[-1][1])]
-    #if there are no spin values in line[3]
-    else:
-        uncert = currentLine[3]
+from functions import addUncert
 
-    print(uncert)
 
-    #Will only append an uncertainty if there isn't already an uncertainty for a given line
-    if (len(datalist[-1])<3): 
-        if (uncert==''):
-            datalist[-1].append(0) 
-        else:
-            if(not uncert.isnumeric()):
-                uncert = "0"
-            datalist[-1].append(int(uncert))
        
         
 
