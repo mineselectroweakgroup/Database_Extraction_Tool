@@ -43,9 +43,10 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
                                 #nuclearBindingEnergy = ((float(data[k][11:14].replace(" ","").replace("#","."))*float(data[40][96:112].replace(" ","").replace("#",".")))+(float(data[k][6:9].replace(" ","").replace("#","."))*float(data[39][96:112].replace(" ","").replace("#",".")))-(float(data[k][96:112].replace(" ","").replace("#","."))))/(10**6)
                                 #additionalEnergy = nuclearBindingEnergy * conversion
                                 #massExcessEnergy = float(data[k][30:41].replace("#","."))
-                                atomicMass = float(data[k][96:112].replace(" ",""))*(conversion/10**6)
+                                atomicMass = float(data[k][96:112].replace(" ","").replace("#","."))*(conversion/10**6)
+                                aMassError = float(data[k][113:123].replace(" ","").replace("#","."))*(conversion/10**6)
                                 splitline[1] = str(float(splitline[1])/10**6 + atomicMass)
-                                splitline[3] = str(float(splitline[3])/10**6)
+                                splitline[3] = str(float(splitline[3])/10**6 + aMassError)
                                 unsplitline = splitline[0] + ',' + splitline[1] + ',' + splitline[2]+','+splitline[3]+'\n'
                                 datafile.write(unsplitline)
                 k=k+1
