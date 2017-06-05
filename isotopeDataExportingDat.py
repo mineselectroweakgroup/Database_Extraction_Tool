@@ -116,7 +116,8 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             filenameopen = (str(i)+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
             with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
-            nodatatest = str(first_line[-2:])
+                first_line = first_line.split(',')
+                nodatatest = str(first_line[2][-2:])
             if (nodatatest == "--" or nodatatest == "-*"):
                 os.remove("Output/"+"gnuPlot/"+filenameopen)
                 removecount[element] = removecount[element] + 1
@@ -129,7 +130,8 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
                 with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                     first_line = datafile.readline().rstrip()
-                nodatatest = str(first_line[-2:])
+                    first_line = first_line.split(',')
+                    nodatatest = str(first_line[2][-2:])
                 if (nodatatest == "--" or nodatatest == "-*"):
                     os.remove("Output/"+"gnuPlot/"+filenameopen)
                     removehighcount[element] = removehighcount[element] + 1
@@ -163,7 +165,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
 
         #This labels the y axis and the Title
                 if massInclude == "YES":
-                    pltFile.write(str.encode("set ylabel \"Energy(GeV)\"\n"))
+                    pltFile.write(str.encode("set ylabel \"Energy(MeV)\"\n"))
                 else:
                     pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
                 pltFile.write(str.encode("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n"))
