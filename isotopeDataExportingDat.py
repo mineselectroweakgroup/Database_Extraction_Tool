@@ -5,6 +5,7 @@
 
 import dataClass as dc
 import os
+import re
 
 
 
@@ -25,13 +26,15 @@ def datExp(option,UI=False,Filter=False):
         if(Filter):
             wantedSpins=str(guioutputs.J)
             energyLim=int(guioutputs.E)
-        elementName = elementName.split(",")
+        elementName = elementName.replace(" ","")
+        elementName = elementName.split(',')
 
     if option == "two":
         from Beta_GUI import betaoutputs
         elementName = str(betaoutputs.Z)
         lowerBound = int(betaoutputs.A)
         higherBound = int(betaoutputs.A)
+        betaVariable = str(betaoutputs.B)
         energyLim = 9999999
         massData = "YES"
         if(Filter):
@@ -42,9 +45,12 @@ def datExp(option,UI=False,Filter=False):
         for item in periodicTable:
             if item == elementName:
                 index = periodicTable.index(item)
-                elementName = periodicTable[index-1] + "," + elementName
-
-        elementName = elementName.split(",")
+                if betaVariable == "Beta +":
+                    elementName = periodicTable[index-1] + "," + elementName
+                if betaVariable == "Beta -":
+                    elementName = elementName + "," + periodicTable[index+1]
+        elementName = elementName.replace(" ","")
+        elementName = elementName.split(',')
         exitcount = 0
 
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
@@ -146,8 +152,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile = open(fileName,'wb')
 
             infile = open(fileName,'r')
-            print(infile.readline())
-            if infile.readline() != "reset\n":
+            if infile.readline() != "reset":
         # These following lines add the completely nessecary lines in the plt files
         #Reset gnuplot.
                 pltFile.write(str.encode("reset\n"))
@@ -158,7 +163,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
 
         #This labels the y axis and the Title
                 if massInclude == "YES":
-                    pltFile.write(str.encode("set ylabel \"Energy(MeV)\"\n"))
+                    pltFile.write(str.encode("set ylabel \"Energy(GeV)\"\n"))
                 else:
                     pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
                 pltFile.write(str.encode("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n"))
@@ -170,6 +175,8 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile.write(str.encode("set datafile sep ','\n"))
 
                 pltFile.write(str.encode("unset bars \n"))
+
+                pltFile.write(str.encode("set pointsize 0.0001\n"))
 
                 setLine="set xtics rotate by 45 offset -2.0,-1.4 ("
         else:
@@ -198,6 +205,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         for i in range(lowerBound + removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
             if(itercount == 0):
                 if(Filter):
+
                     pltFile.write(str.encode(("plot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n").replace('/', '_')))
                     pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_')))
                     pltFile.write(str.encode("set bars\n"))
@@ -221,6 +229,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                     pltFile.write(str.encode("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n"))
                     pltFile.write(str.encode("set bars\n"))
                     pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:4 with yerrorbars\n").replace('/', '_')))
+
             itercount = itercount + 1
         mostrecentiter = itercount
             
@@ -236,15 +245,15 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             if os.path.isfile(fileName):
                 os.remove(fileName)
             if rangecount >= 20:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 6\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 6\n"))
             elif rangecount >= 15:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.ttf'"' 7\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 7\n"))
             elif rangecount >= 10:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 9\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 9\n"))
             elif rangecount >= 5:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 12\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
             else:
-                pltFile.write(str.encode("set term gif font '"'Helvetica.tff'"' 14\n"))
+                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 14\n"))
             pltFile.write(str.encode("set term gif size 700,500\n"))
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
             pltFile.write(str.encode("replot\n"))

@@ -10,6 +10,7 @@ import glob
 class Application(Frame):
     def __init__(self,master):
         Frame.__init__(self,master)
+        self.configure(bg='#21314D')
 
         self.create_widgets()
         self.grid()
@@ -29,18 +30,27 @@ class Application(Frame):
         decay.pack(side = BOTTOM)
         out.pack(side = BOTTOM)
 
+        title.configure(bg='#21314D')
+        decay.configure(bg='#21314D')
+        out.configure(bg='#21314D')
 
-        decayLabel = Label(decay, text = "Evaluated Beta Decay Information")
-        decayLabel.grid(columnspan = 3,row = 0)
 
-        chemSymLabel = Label(decay, text = "Parent Nucleus (ex. Zn)")
+        decayLabel = Label(decay, text = "Evaluated Beta Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
+        decayLabel.grid(columnspan = 4,row = 0)
+
+        chemSymLabel = Label(decay, text = "Parent (ex. Zn)",bg='#21314D',fg='#92A2BD',font=11)
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
-        ALabel = Label(decay, text = "Isotope (ex. 60)")
+        ALabel = Label(decay, text = "Isotope (ex. 60)",bg='#21314D',fg='#92A2BD',font=11)
         ALabel.grid(row = 1, column = 1, sticky = W)
 
-        spinLabel = Label(decay, text = "Spin (ex. 0+,3/2-...")
+        spinLabel = Label(decay, text = "Spin (ex. 0+,3/2-...",bg='#21314D',fg='#92A2BD',font=11)
         spinLabel.grid(row = 1, column = 2, sticky = W)
 
+        self.betaVar = StringVar()
+        self.betaVar.set("Beta +")
+        option = OptionMenu(decay,self.betaVar,"Beta +","Beta -")
+        option.grid(row = 2, column = 3)
+        option.configure(fg='#21314D',bg='#92A2BD',font=11,highlightbackground="#21314D")
 
         #Here I will set up all of the entry boxes for nucStruc
         #Same format
@@ -56,14 +66,17 @@ class Application(Frame):
 
 
         #Setting up the submit buttons
-        decaySubmit = Button(decay, text = "Submit", command = self.sendNucData)
+        decaySubmit = Button(decay, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
         decaySubmit.grid(row = 5, column = 0)
 
-        fullScreenSubmit = Button(decay, text = "Full Screen", command = self.fullScreenButton)
+        fullScreenSubmit = Button(decay, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
         fullScreenSubmit.grid(row = 5, column = 1)
 
-        newChoiceSubmit = Button(decay, text = "Program Selection", command = self.newChoiceButton)
+        newChoiceSubmit = Button(decay, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
         newChoiceSubmit.grid(row = 5, column = 2)
+
+        exitButtonSubmit = Button(decay, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        exitButtonSubmit.grid(row=5,column=3)
 
 
         #Setting up the graph output box including the calling of the most
@@ -75,18 +88,29 @@ class Application(Frame):
         work_path = os.getcwd()
         if os.listdir(work_path) == []:
             print("Directory Empty")
-        elif os.listdir(work_path) == ["Ignore.txt"]:
-            print("Directory Empty")
         else:
             self.directory=os.getcwd()
             self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
             self.newest = self.newest.replace(os.getcwd()+"/","")
-            self.photo = PhotoImage(file=self.newest)
-            self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+            if self.newest[-4:] != ".gif":
+                try:
+                    self.newest = "Matt_Martin.gif"
+                    self.photo = PhotoImage(file=self.newest)
+                    self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+                except:
+                    print("No Image to Display")
+            elif os.listdir(work_path) == ["Ignore.txt"]:
+                print("Directory Empty")
+            else:
+                try:
+                    self.photo = PhotoImage(file=self.newest)
+                    self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+                except:
+                    print("No Image to Display")
         os.chdir("..")
         os.chdir("..")
 
-        self.pictureSpot = Canvas(title,width = 620, height = 100)
+        self.pictureSpot = Canvas(title,width = 620, height = 90)
         self.pictureSpot.grid(row = 0, column = 0) 
         self.photo2 = PhotoImage(file = "eilonglogo.gif")
         self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
@@ -98,6 +122,7 @@ class Application(Frame):
         self.chemSymVar = self.chemSymEntry.get()
         self.A = self.AEntry.get()
         self.spinVar = self.spinEntry.get()
+        self.betaVar = self.betaVar.get()
         root.destroy()#closes window
 
     def exitButton(self):
@@ -135,6 +160,7 @@ class betaoutputs:
     Z=app.chemSymVar
     A=app.A
     J=app.spinVar
+    B=app.betaVar
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.

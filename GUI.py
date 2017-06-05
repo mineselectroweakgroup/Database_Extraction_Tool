@@ -12,6 +12,7 @@ import glob
 class Application(Frame):
     def __init__(self,master):
         Frame.__init__(self,master)
+        self.configure(bg='#21314D')
 
         self.create_widgets()
         self.grid()
@@ -42,6 +43,7 @@ class Application(Frame):
     def create_widgets(self):
         title = Frame(self)
         title.pack(side = TOP)
+        title.configure(bg='#21314D')
 
 
         #Here I am going to seperate the implementation of Peter's code,
@@ -53,27 +55,33 @@ class Application(Frame):
         nucStruc.pack(side = LEFT)
         decay.pack(side = RIGHT)
 
+        nucStruc.configure(bg='#21314D')
+        decay.configure(bg='#21314D')
+        out.configure(bg='#21314D')
+
 
         #Here I will set up and place all lables for the nucStruc frame
         #They will be seperated with newlines in this code to represent
         #different rows in the GUI
-        nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Extraction")
+        nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Extraction",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
         nucStrucLable.grid(columnspan = 2,row = 0,sticky=W)
 
-        chemSymLabel = Label(nucStruc, text = "Chemical Symbol (ex. Zn)")
+        chemSymLabel = Label(nucStruc, text = "Element (Zn,Cu,...",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
-        lowBoundIsoLabel = Label(nucStruc, text = "Lower Bound Isotope")
+        lowBoundIsoLabel = Label(nucStruc, text = "Low Isotope Bound",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         lowBoundIsoLabel.grid(row = 1, column = 1, sticky = W)
-        upBoundIsoLabel = Label(nucStruc, text = "Upper Bound Isotope")
+        upBoundIsoLabel = Label(nucStruc, text = "High Isotope Bound",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         upBoundIsoLabel.grid(row = 1, column = 2, sticky = W)
 
-        spinLabel = Label(nucStruc, text = "Spin (ex. 0+,3/2-...")
+        spinLabel = Label(nucStruc, text = "Spin (0+,3/2-...",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         spinLabel.grid(row = 3, column = 0, sticky = W)
-        upBoundEnergyLabel = Label(nucStruc, text = "Upper Energy Bound (keV)")
+        upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
 
-        massDataLabel = Label(nucStruc, text = "Include Mass Data (YES or NO)")
-        massDataLabel.grid(row = 3, column = 2, sticky = W)
+        self.checkVar = IntVar()
+        self.checkVar = 0
+        c = Checkbutton(nucStruc, text="Include Binding",variable=self.checkVar,command=self.checkfunction,bg='#21314D',fg='#92A2BD',highlightbackground="#21314D",font=("Ariel",11,"bold"))
+        c.grid(row=4,column=2)
 
 
         #Here I will set up and place all the labels for the decay frame
@@ -82,67 +90,64 @@ class Application(Frame):
 
         decay.columnconfigure(0, pad = 10)
 
-        decayLabel = Label(decay, text = "Decay Information")
+        decayLabel = Label(decay, text = "Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
         decayLabel.grid(row = 0, column = 0, sticky = W)
 
-        qLowLabel = Label(decay, text = "Q Low")
+        qLowLabel = Label(decay, text = "Q Low",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         qLowLabel.grid(row = 1, column = 0, sticky = W)
-        qHighLabel = Label(decay, text = "Q High")
+        qHighLabel = Label(decay, text = "Q High",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         qHighLabel.grid(row = 1, column = 1, sticky = W)
 
-        aLowLabel = Label(decay, text = "A Low")
+        aLowLabel = Label(decay, text = "A Low",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         aLowLabel.grid(row = 3, column = 0, sticky = W)
-        aHighLabel = Label(decay, text = "A High")
+        aHighLabel = Label(decay, text = "A High",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         aHighLabel.grid(row = 3, column = 1, sticky = W)
 
 
         #Here I will set up all of the entry boxes for nucStruc
         #Same format
 
-        self.chemSymEntry = Entry(nucStruc)
+        self.chemSymEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.chemSymEntry.grid(row = 2, column = 0, sticky = W)
-        self.lowBoundIsoEntry = Entry(nucStruc)
+        self.lowBoundIsoEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.lowBoundIsoEntry.grid(row = 2, column = 1, sticky = W)
-        self.upBoundIsoEntry = Entry(nucStruc)
+        self.upBoundIsoEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.upBoundIsoEntry.grid(row = 2, column = 2, sticky = W)
 
-        self.spinEntry = Entry(nucStruc)
+        self.spinEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.spinEntry.grid(row = 4, column = 0, sticky = W)
-        self.upBoundEnergyEntry = Entry(nucStruc)
+        self.upBoundEnergyEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
-        self.massDataEntry = Entry(nucStruc)
-        self.massDataEntry.grid(row = 4, column = 2, sticky = W)
 
 
         #Here I will set up all of the entry boxes for decay
         #Same format
 
-        self.qLowEntry = Entry(decay)
+        self.qLowEntry = Entry(decay,highlightbackground="#21314D")
         self.qLowEntry.grid(row = 2, column = 0, sticky = W)
-        self.qHighEntry = Entry(decay)
+        self.qHighEntry = Entry(decay,highlightbackground="#21314D")
         self.qHighEntry.grid(row = 2, column = 1, sticky = W)
         
-        self.aLowEntry = Entry(decay)
+        self.aLowEntry = Entry(decay,highlightbackground="#21314D")
         self.aLowEntry.grid(row = 4, column = 0, sticky = W)
-        self.aHighEntry = Entry(decay)
+        self.aHighEntry = Entry(decay,highlightbackground="#21314D")
         self.aHighEntry.grid(row = 4, column = 1, sticky = W)
 
 
 
         #Setting up the submit buttons
-        nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData)
+        nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         nucStrucSubmit.grid(row = 5, column = 0, sticky = W)
-        decaySubmit = Button(decay, text = "Submit", command = self.sendDecayData)
+        decaySubmit = Button(decay, text = "Submit", command = self.sendDecayData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         decaySubmit.grid(row = 5, column = 0, sticky = W)
 
-        exitSubmit = Button(out, text = "Exit", command = self.exitButton)
-        exitSubmit.grid(row = 0, column = 2, sticky = W)
-        fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton)
+        exitSubmit = Button(out, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
+        exitSubmit.grid(columnspan=2,row = 2, column = 0)
+        fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         fullScreenSubmit.grid(row = 1, column = 0)
 
-        newChoiceSubmit = Button(out, text = "Program Selection", command = self.newChoiceButton)
+        newChoiceSubmit = Button(out, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         newChoiceSubmit.grid(row = 1, column = 1)
-
 
 
         #Setting up the output box with scrolling feature
@@ -162,24 +167,34 @@ class Application(Frame):
         work_path = os.getcwd()
         if os.listdir(work_path) == []:
             print("Directory Empty")
-        elif os.listdir(work_path) == ["Ignore.txt"]:
-            print("Directory Empty")
         else:
-            try:
-                self.directory=os.getcwd()
-                self.newest = max(glob.iglob(self.directory+"/*.gif"),key=os.path.getctime)
-                self.newest = self.newest.replace(os.getcwd()+"/","")
-                self.photo = PhotoImage(file=self.newest)
-                self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
-            except:
-                print("No Image to Display")
+            self.directory=os.getcwd()
+            self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
+            self.newest = self.newest.replace(os.getcwd()+"/","")
+            if self.newest[-4:] != ".gif":
+                try:
+                    self.newest = "Matt_Martin.gif"
+                    self.photo = PhotoImage(file=self.newest)
+                    self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+                except:
+                    print("No Image to Display")
+            elif os.listdir(work_path) == ["Ignore.txt"]:
+                print("Directory Empty")
+            else:
+                try:
+                    self.photo = PhotoImage(file=self.newest)
+                    self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
+                except:
+                    print("No Image to Display")
         os.chdir("..")
         os.chdir("..")
 
-        self.pictureSpot = Canvas(title,width = 620, height = 100)
+        self.pictureSpot = Canvas(title,width = 620, height = 90)
         self.pictureSpot.grid(row = 0) 
         self.photo2 = PhotoImage(file = "eilonglogo.gif")
         self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
+
+
             
 
     #Defining the functions that make the submit buttons do things. 
@@ -191,7 +206,6 @@ class Application(Frame):
         self.upBoundIsoVar = self.upBoundIsoEntry.get()
         self.spinVar = self.spinEntry.get()
         self.upBoundEnergyVar = self.upBoundEnergyEntry.get()
-        self.massDataVar = self.massDataEntry.get()
         root.destroy()#closes window
 
     def sendDecayData(self):
@@ -227,6 +241,12 @@ class Application(Frame):
         os.system("python3 USE_THIS.py")
         sys.exit()
 
+    def checkfunction(self):
+        if self.checkVar == 0:
+            self.checkVar = 1
+        else:
+            self.checkVar = 0
+
 app = Application(root)
 root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()
@@ -241,7 +261,10 @@ class guioutputs:
     isoUp=app.upBoundIsoVar
     E=app.upBoundEnergyVar
     exitcount=app.exitcount
-    mass=app.massDataVar
+    if app.checkVar == 1:
+        mass = "YES"
+    else:
+        mass = "NO"
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.
