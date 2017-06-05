@@ -63,3 +63,7 @@ Version UPDATE 0.4.0 05.30.2017 1330MT -M.S. Martin:
 Version 0.4.1 XXXXXXXXXX XXXXMT -M.S. Martin:
     Updated mass formula
     Fixed bugs with rounding errors
+
+Version 0.4.2 06.05.2017 1000MT -W. McDonald:
+    Updated to extract uncertainty in energy from ensdf files
+    Plots energy uncertainty as vertical error bars

@@ -3,7 +3,7 @@
 ##Date Updated: May 6, 2017 by Peter Consalvi
 ##Date Updated: May 17, 2017 by Matthew Martin
 
-from functions import addUncert
+from functions import addUncert #Used to include uncertainty values
 
 
        
@@ -37,7 +37,7 @@ class data:##This is the main data class
         #Initializes a to be apple, a string that should not appear in the data file
         #This is used to stop the code after it goes through the first block
         a = 'apple'
-        linecount=0     #SXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        linecount=0     #linecount can be used to locate problem-causing lines in the ensdf files
         for line in self.f:
             linecount=linecount+1
             line = line.split()
@@ -111,11 +111,13 @@ class data:##This is the main data class
                                             for i in range(lower,upper+1):
                                                 ##print [float(line[2]),str(i)+'-']
                                                 filtDataSet.append([float(line[2]),"("+str(i)+'-'+")"])
+                                                #include uncertainty value
                                                 addUncert(filtDataSet,line)
                                         elif('+' in unfilSpinStr):
                                             for i in range(lower,upper+1):
                                                 ##print [float(line[2]),str(i)+'+']
                                                 filtDataSet.append([float(line[2]),"("+str(i)+'+'+")"])
+                                                #Include uncertainty value
                                                 addUncert(filtDataSet,line)
                                 except:
                                     print("Error with " + str(line[2])+ " " +unfilSpinStr + " at loop 0a")                                   
@@ -188,6 +190,7 @@ class data:##This is the main data class
                                             print("Error with " + str(line[2])+ " " +str(spinStr) + " at loop 2b")
 
                                 spinStr = ''
+                                #include uncertainty value
                                 addUncert(filtDataSet,line)
                             elif('-' in unfilSpinStr):##For strings will - only but like the first case above for + and -.
                                 posTracker=0
@@ -256,6 +259,7 @@ class data:##This is the main data class
                                         except:
                                             print("Error with " + str(line[2])+ " " +str(spinStr) + " at loop 3b")
                                 spinStr = ''
+                                #include uncertaity value
                                 addUncert(filtDataSet,line)
                 
         ##This if loop rids the data list of redundant entries and saves data into
@@ -267,8 +271,7 @@ class data:##This is the main data class
                 self.data.append(i)##Saves data into the self.data list
         self.f.close()##Closes the ENSDF file
         
-        for i in self.data: #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            print (i)
+
 
     ##This function exports the data in the class into a data file. The output file is
     ##is sent to the Output file
