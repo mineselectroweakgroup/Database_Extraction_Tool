@@ -53,6 +53,20 @@ def datExp(option,UI=False,Filter=False):
         elementName = elementName.split(',')
         exitcount = 0
 
+    if option == "three":
+        from Parabola_GUI import parabolaoutputs
+        elementName = str(parabolaoutputs.Z)
+        lowerBound = int(parabolaoutputs.A)
+        higherBound = int(parabolaoutputs.A)
+        energyLim = 10
+        massData = "YES"
+        if(Filter):
+            wantedSpins=str(parabolaoutputs.J)
+        elementName = elementName.replace(" ","")
+        elementName = elementName.split(',')
+        exitcount = 0
+
+
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
             tryAgainCounter=0
     
@@ -104,6 +118,8 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         fileParsingFactor=1
 
     elementnamestring = "".join(elementName)
+    if len(elementnamestring) > 50:
+        elementnamestring = "ALL"
 
 #These loops of (for element in elementName) go through the entire process for each element input. Multiple loops are used
 #to ensure data is recorded properly for all elements
@@ -181,8 +197,6 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile.write(str.encode("set pointsize 0.0001\n"))
 
                 setLine="set xtics rotate by 45 offset -2.0,-1.4 ("
-        else:
-            fileName = "THIS FILE DOES NOT EXIST, MUAHAHAHAHAHAHAAHA"
 
         #This sets the x axis with the names of the isotpes wanted.
     rangecount = 0

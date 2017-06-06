@@ -39,6 +39,9 @@ class Application(Frame):
         betaDataButton = Button(buttons, text = "EVALUATED BETA DECAY DATA", command = self.betaFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
         betaDataButton.grid(row = 3, column = 0)
 
+        massParabolaButton = Button(buttons, text = "MASS PARABOLA", command = self.parabolaFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
+        massParabolaButton.grid(row = 4, column = 0)
+
         self.pictureSpot = Canvas(title,width = 640, height = 180)
         self.pictureSpot.grid(row = 0, column = 0) 
         self.photo = PhotoImage(file = "eilogo.gif")
@@ -61,6 +64,10 @@ class Application(Frame):
     def betaFunc(self):
         root.destroy()
         os.system('python3 THIS_WORKS.py "two"')
+
+    def parabolaFunc(self):
+        root.destroy()
+        os.system('python3 THIS_WORKS.py "three"')
 
     def exitButton(self):
         self.exitcount = 1
