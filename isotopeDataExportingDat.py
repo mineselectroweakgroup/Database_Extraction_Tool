@@ -24,7 +24,7 @@ def datExp(option,UI=False,Filter=False):
         exitcount = int(guioutputs.exitcount)
         massData = str(guioutputs.mass)
         if(Filter):
-            wantedSpins=str(guioutputs.J)
+            wantedSpins=str(guioutputs.J).replace(" ","")
             energyLim=int(guioutputs.E)
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
@@ -38,7 +38,7 @@ def datExp(option,UI=False,Filter=False):
         energyLim = 9999999
         massData = "YES"
         if(Filter):
-            wantedSpins=str(betaoutputs.J)
+            wantedSpins=str(betaoutputs.J).replace(" ","")
         perTable = open("ElementList.txt","r")
         periodicTable = perTable.readline()
         periodicTable = periodicTable.split(',')
@@ -61,7 +61,7 @@ def datExp(option,UI=False,Filter=False):
         energyLim = 1
         massData = "YES"
         if(Filter):
-            wantedSpins=str(parabolaoutputs.J)
+            wantedSpins=str(parabolaoutputs.J).replace(" ","")
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
         exitcount = 0
