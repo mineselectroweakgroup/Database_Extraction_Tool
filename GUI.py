@@ -29,14 +29,6 @@ class Application(Frame):
         self.upBoundEnergyVar = StringVar()
         self.massDataVar = StringVar()
 
-        #Here are the variable declarations for the Decay section
-        #Same formatting
-        self.qLowVar = StringVar()
-        self.qHighVar = StringVar()
-
-        self.aLowVar = StringVar()
-        self.aHighVar = StringVar()
-
         self.exitcount = 0
         
 
@@ -51,9 +43,9 @@ class Application(Frame):
         nucStruc = Frame(self, padx = 10)
         decay = Frame(self, padx = 10)
         out = Frame(self, pady = 20)
+        nucStruc.pack(side = BOTTOM)
         out.pack(side = BOTTOM)
-        nucStruc.pack(side = LEFT)
-        decay.pack(side = RIGHT)
+
 
         nucStruc.configure(bg='#21314D')
         decay.configure(bg='#21314D')
@@ -84,26 +76,6 @@ class Application(Frame):
         c.grid(row=4,column=2)
 
 
-        #Here I will set up and place all the labels for the decay frame
-        #Same format as the previous section
-        #I'm also going to configure the first column for asthetic purposes
-
-        decay.columnconfigure(0, pad = 10)
-
-        decayLabel = Label(decay, text = "Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
-        decayLabel.grid(row = 0, column = 0, sticky = W)
-
-        qLowLabel = Label(decay, text = "Q Low",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
-        qLowLabel.grid(row = 1, column = 0, sticky = W)
-        qHighLabel = Label(decay, text = "Q High",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
-        qHighLabel.grid(row = 1, column = 1, sticky = W)
-
-        aLowLabel = Label(decay, text = "A Low",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
-        aLowLabel.grid(row = 3, column = 0, sticky = W)
-        aHighLabel = Label(decay, text = "A High",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
-        aHighLabel.grid(row = 3, column = 1, sticky = W)
-
-
         #Here I will set up all of the entry boxes for nucStruc
         #Same format
 
@@ -120,48 +92,23 @@ class Application(Frame):
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
 
 
-        #Here I will set up all of the entry boxes for decay
-        #Same format
-
-        self.qLowEntry = Entry(decay,highlightbackground="#21314D")
-        self.qLowEntry.grid(row = 2, column = 0, sticky = W)
-        self.qHighEntry = Entry(decay,highlightbackground="#21314D")
-        self.qHighEntry.grid(row = 2, column = 1, sticky = W)
-        
-        self.aLowEntry = Entry(decay,highlightbackground="#21314D")
-        self.aLowEntry.grid(row = 4, column = 0, sticky = W)
-        self.aHighEntry = Entry(decay,highlightbackground="#21314D")
-        self.aHighEntry.grid(row = 4, column = 1, sticky = W)
-
-
 
         #Setting up the submit buttons
         nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        nucStrucSubmit.grid(row = 5, column = 0, sticky = W)
-        decaySubmit = Button(decay, text = "Submit", command = self.sendDecayData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        decaySubmit.grid(row = 5, column = 0, sticky = W)
+        nucStrucSubmit.grid(row = 5, column = 0)
 
-        exitSubmit = Button(out, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        exitSubmit.grid(columnspan=2,row = 2, column = 0)
-        fullScreenSubmit = Button(out, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        fullScreenSubmit.grid(row = 1, column = 0)
+        exitSubmit = Button(nucStruc, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
+        exitSubmit.grid(row = 6, column = 2)
+        fullScreenSubmit = Button(nucStruc, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
+        fullScreenSubmit.grid(row = 6, column = 0)
 
-        newChoiceSubmit = Button(out, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        newChoiceSubmit.grid(row = 1, column = 1)
-
-
-        #Setting up the output box with scrolling feature
-        self.outText = Text(out)
-        self.outText.grid(row = 0, column = 1, sticky = W+E+N+S)
-        outScroll = Scrollbar(out)
-        outScroll.grid(row = 0, column = 1, sticky = E+S+N)
-        outScroll.config(command=self.outText.yview)
-        self.outText.config(yscrollcommand=outScroll.set)
+        newChoiceSubmit = Button(nucStruc, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
+        newChoiceSubmit.grid(row = 6, column = 1)
 
         #Setting up the graph output box including the calling of the most
         #recent graph to the GUI
         self.outGraph = Canvas(out,width = 700, height = 500)
-        self.outGraph.grid(row = 0, column = 0, sticky = W+E+N+S)
+        self.outGraph.grid(columnspan=3,row = 0, column = 0, sticky = W+E+N+S)
 
         os.chdir("Output/gnuPlot")
         work_path = os.getcwd()
@@ -200,23 +147,12 @@ class Application(Frame):
     #Defining the functions that make the submit buttons do things. 
     def sendNucData(self):
         """Send user input to nuclear structure sorting function"""
-        self.outText.delete(0.0,END)
         self.chemSymVar = self.chemSymEntry.get()
         self.lowBoundIsoVar = self.lowBoundIsoEntry.get()
         self.upBoundIsoVar = self.upBoundIsoEntry.get()
         self.spinVar = self.spinEntry.get()
         self.upBoundEnergyVar = self.upBoundEnergyEntry.get()
         root.destroy()#closes window
-
-    def sendDecayData(self):
-        """Send user input to decay data sorting function"""
-        self.outText.delete(0.0,END)
-        self.qLowVar = self.qLowEntry.get()
-        self.qHighVar = self.qHighEntry.get()
-        self.aLowVar = self.aLowEntry.get()
-        self.aHighVar = self.aHighEntry.get()
-
-        self.outText.insert(0.0, sf.acquire(self.qLowVar,self.qHighVar,self.aLowVar,self.aHighVar,Theory = False,Sym = False))
 
     def exitButton(self):
         self.exitcount = 1
@@ -281,11 +217,4 @@ class guioutputs:
         E = 9999999
     if mass.upper().replace(" ","") == "YES":
         mass = "YES"
-    
-    
-#These are the Q and A variables for the mass extraction part the program
-    Qlow= app.qLowVar
-    Qhigh= app.qHighVar
-    Alow= app.aLowVar 
-    Ahigh= app.aHighVar
 
