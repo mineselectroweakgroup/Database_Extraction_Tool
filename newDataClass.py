@@ -62,7 +62,7 @@ class data:##This is the main data class.
 
                 ## Finding the uncertainty
                 uncert = line[19:21].strip()
-                print(uncert)
+                #print(uncert)
                 ## Set unsert to 0 if no uncertainty is given.
                 if (uncert == ''):
                     uncert = '0'
@@ -89,12 +89,12 @@ class data:##This is the main data class.
 
 
                 jpi = line[21:39].strip() ## ALL spin and pairity states
-                jpi = '0+' #sets all spins to be 0+ for plot testing
+                #jpi = '0+' #sets all spins to be 0+ for plot testing
 
                 if(float(energy)<=energyLimit):
                     #include the data
                     self.data.append([energy,jpi,uncert])
-                    print(str(linecount)+' :'+str(self.data[-1]))
+                    #print(str(linecount)+' :'+str(self.data[-1]))
                 else:
                     break
 
@@ -105,5 +105,5 @@ class data:##This is the main data class.
             fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
             datFile = open(fileName,'wb')##Creates a file with a valid file name.
             for i in range(len(self.data)):
-                datFile.write(str.encode(str(self.name)+','+str(self.data[i][0])+','+str(self.data[i][1])+','+str(self.data[i][2]+'\n')))
+                datFile.write(str.encode(str(self.name)+';'+str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2]+'\n')))
 

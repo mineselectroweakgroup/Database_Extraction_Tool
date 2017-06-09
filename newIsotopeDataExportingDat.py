@@ -23,9 +23,8 @@ def datExp(option,UI=False,Filter=False):
         energyLim = int(guioutputs.E)
         exitcount = int(guioutputs.exitcount)
         massData = str(guioutputs.mass)
-        if(Filter):
-            wantedSpins=str(guioutputs.J).replace(" ","")
-            energyLim=int(guioutputs.E)
+        wantedSpins=str(guioutputs.J).replace(" ","")
+        energyLim=int(guioutputs.E)
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
 
@@ -37,8 +36,7 @@ def datExp(option,UI=False,Filter=False):
         betaVariable = str(betaoutputs.B)
         energyLim = 9999999
         massData = "YES"
-        if(Filter):
-            wantedSpins=str(betaoutputs.J).replace(" ","")
+        wantedSpins=str(betaoutputs.J).replace(" ","")
         perTable = open("ElementList.txt","r")
         periodicTable = perTable.readline()
         periodicTable = periodicTable.split(',')
@@ -60,8 +58,7 @@ def datExp(option,UI=False,Filter=False):
         higherBound = int(parabolaoutputs.A)
         energyLim = 1
         massData = "YES"
-        if(Filter):
-            wantedSpins=str(parabolaoutputs.J).replace(" ","")
+        wantedSpins=str(parabolaoutputs.J).replace(" ","")
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
         exitcount = 0
@@ -101,19 +98,16 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
 
     fileParsingFactorStr="_every_"+str(fileParsingFactor)
 
-    if(Filter):#Program will ask the user if they only want to include only every other every single file or on and on.
-               #Currently this parameter is fixed so the user does not have an option, its set to include every file.
-        tryAgainCounter=1
-        while(tryAgainCounter and UI):
-            try:
-                fileParsingFactor=int(1)
-                fileParsingFactorStr="_every_"+str(fileParsingFactor)
-                if(type(fileParsingFactor) is int):
-                    tryAgainCounter=0
-            except:
-                print("Invalid Input")
-    else:
-        fileParsingFactor=1
+    tryAgainCounter=1
+    while(tryAgainCounter and UI):
+        try:
+            fileParsingFactor=int(1)
+            fileParsingFactorStr="_every_"+str(fileParsingFactor)
+            if(type(fileParsingFactor) is int):
+                tryAgainCounter=0
+        except:
+            print("Invalid Input")
+
 
     elementnamestring = "".join(elementName)
     if len(elementnamestring) > 50:
@@ -130,7 +124,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             filenameopen = (str(i)+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
             with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
-                first_line = first_line.split(',')
+                first_line = first_line.split(';')
                 nodatatest = str(first_line[2][-2:])
             if (nodatatest == "--" or nodatatest == "-*"):
                 os.remove("Output/"+"gnuPlot/"+filenameopen)
@@ -144,7 +138,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
                 with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                     first_line = datafile.readline().rstrip()
-                    first_line = first_line.split(',')
+                    first_line = first_line.split(';')
                     nodatatest = str(first_line[2][-2:])
                 if (nodatatest == "--" or nodatatest == "-*"):
                     os.remove("Output/"+"gnuPlot/"+filenameopen)
@@ -188,7 +182,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile.write(str.encode("set palette gray\n"))
 
         #This tells gnuplot that the delimiter of each column as ,
-                pltFile.write(str.encode("set datafile sep ','\n"))
+                pltFile.write(str.encode("set datafile sep ';'\n"))
 
                 pltFile.write(str.encode("set pointsize 0.0001\n"))
 
@@ -230,10 +224,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                     #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_')))
                     pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n")))
 
-                else:
-                    pltFile.write(str.encode("plot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n"))
-                    pltFile.write(str.encode("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n"))
-                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:4 with yerrorbars\n").replace('/', '_')))
+               
             else:
                 if(Filter):
                     pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
@@ -244,10 +235,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                     #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$4)\n")))
                     #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with linewidth var xerrorbars\n").replace('/', '_')))
                     pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n")))
-                else:
-                    pltFile.write(str.encode("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n"))
-                    pltFile.write(str.encode("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n"))
-                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:4 with yerrorbars\n").replace('/', '_')))
+                
 
             itercount = itercount + 1
         mostrecentiter = itercount

@@ -3,7 +3,7 @@
 
 from tkinter import *
 import searching_function as sf
-import isotopeDataExportingDat as ided
+import newIsotopeDataExportingDat as ided
 root = Tk()
 root.title("Data Extraction")
 import sys
@@ -54,6 +54,11 @@ class Application(Frame):
         decay.configure(bg='#21314D')
         out.configure(bg='#21314D')
 
+        self.checkVar = IntVar()
+        self.checkVar = 0
+        c = Checkbutton(nucStruc, text="Include Binding",variable=self.checkVar,command=self.checkfunction,bg='#21314D',fg='#92A2BD',highlightbackground="#21314D",font=("Ariel",11,"bold"))
+        c.grid(row=4,column=2)
+
 
         #Here I will set up and place all lables for the nucStruc frame
         #They will be seperated with newlines in this code to represent
@@ -73,10 +78,7 @@ class Application(Frame):
         upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
 
-        self.checkVar = IntVar()
-        self.checkVar = 0
-        c = Checkbutton(nucStruc, text="Include Binding",variable=self.checkVar,command=self.checkfunction,bg='#21314D',fg='#92A2BD',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        c.grid(row=4,column=2)
+
 
 
         #Here I will set up all of the entry boxes for nucStruc

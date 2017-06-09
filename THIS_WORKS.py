@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import dataClass as dc
-import isotopeDataExportingDat as ided
+import newDataClass as dc ### Can I remove this import? FIXME
+import newIsotopeDataExportingDat as ided
 from data_array import final
 from searching_function import acquire
 import mass_data as md
