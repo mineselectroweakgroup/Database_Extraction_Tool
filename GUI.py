@@ -1,3 +1,6 @@
+#This is the GUI that calls the evaluated nuclear structure input. The class at the bottom is for the output
+#calues and is used to communicate with other scripts in the program
+
 from tkinter import *
 import searching_function as sf
 import isotopeDataExportingDat as ided
