@@ -222,15 +222,15 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             if(itercount == 0):
                 if(Filter):
                     pltFile.write(str.encode(("plot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
-                    pltFile.write(str.encode("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n"))
-                    pltFile.write(str.encode("set object 1 rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) linewidth 1 fillcolor rgb 'black' front\n"))
+                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
+                    pltFile.write(str.encode(("set object 1 rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) linewidth 1 fillcolor rgb 'black' front\n").replace('/', '_')))
 
 
                     
                     #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n")))
                     #pltFile.write(str.encode("set object rectangle from "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75,var-errvar to "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+",var+errvar\n"))
                     #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_')))
-                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n")))
+                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
 
                 else:
                     pltFile.write(str.encode("plot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n"))
@@ -239,13 +239,13 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             else:
                 if(Filter):
                     pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
-                    pltFile.write(str.encode("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n"))
-                    pltFile.write(str.encode("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n"))
+                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
+                    pltFile.write(str.encode(("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n").replace('/', '_')))
 
 
                     #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$4)\n")))
                     #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with linewidth var xerrorbars\n").replace('/', '_')))
-                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n")))
+                    pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
                 else:
                     pltFile.write(str.encode("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset character " + str(fileParsingFactor) + ",character 0.2\n"))
                     pltFile.write(str.encode("replot \""+str(i)+str(element)+".dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n"))
