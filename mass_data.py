@@ -1,13 +1,16 @@
+#This is a single function which sorts through the mass data file and includes the atomic mass and uncertainty
+#with a unit conversion factor into the data set.
+
 def addMass(elementName,lowerBound,higherBound,wantedSpins):
     massfile = open("mass16.txt","r+")
     data = massfile.readlines()
     splitdatafilelines = []
+    #Thesse next two lines take C12 as absolute and use that to calculate the conversion factor between amu and keV
     BEC12 = 92161.753
     conversion = BEC12/(6*float(data[39][96:112].replace(" ",""))+6*float(data[40][96:112].replace(" ",""))-12000000)
 
 
     for element in elementName:
-
         for i in range(lowerBound,higherBound+1):
             k=0
             while k <= len(data)-1:
