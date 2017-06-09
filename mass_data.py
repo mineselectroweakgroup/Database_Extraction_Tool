@@ -33,7 +33,7 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
                             datafile.truncate()
 
                             for line in datafilelines:
-                                splitline = line.split(',')
+                                splitline = line.split(';')
                                 N = int(data[k][6:9].replace(" ",""))
                                 Z = int(data[k][11:14].replace(" ",""))
                                 if data[k][106]=='#':
@@ -42,7 +42,7 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
                                 aMassError = float(data[k][113:123].replace(" ","").replace("#","."))*(conversion/10**6)
                                 splitline[1] = str(float(splitline[1])/10**6 + atomicMass)
                                 splitline[3] = str(float(splitline[3])/10**6 + aMassError)
-                                unsplitline = splitline[0] + ',' + splitline[1] + ',' + splitline[2]+','+splitline[3]+'\n'
+                                unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2]+';'+splitline[3]+'\n'
                                 datafile.write(unsplitline)
                 k=k+1
 
