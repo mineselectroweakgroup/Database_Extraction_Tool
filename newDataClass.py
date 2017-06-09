@@ -98,12 +98,12 @@ class data:##This is the main data class.
                 else:
                     break
 
-
-    def export(self,fExtOption = '.txt',extraTitleText = ''):
-            if(fExtOption==".dat"or fExtOption=="_Fil.dat"):##To make data files for use in gnuplot and plt file.
-                fileName=str(self.name)+extraTitleText+fExtOption##creates filename
-                fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
-                datFile = open(fileName,'wb')##Creates a file with a valid file name.
-                for i in range(len(self.data)):
-                    datFile.write(str.encode(str(self.name)+','+str(self.data[i][0])+','+str(self.data[i][1])+','+str(self.data[i][2]+'\n')))
+    ## extraTitleText would be desired spin states, for example
+    def export(self,fExtOption = '.dat',extraTitleText = ''): 
+#            if(fExtOption==".dat"or fExtOption=="_Fil.dat"):##To make data files for use in gnuplot and plt file.
+            fileName=str(self.name)+extraTitleText+fExtOption##creates filename
+            fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
+            datFile = open(fileName,'wb')##Creates a file with a valid file name.
+            for i in range(len(self.data)):
+                datFile.write(str.encode(str(self.name)+','+str(self.data[i][0])+','+str(self.data[i][1])+','+str(self.data[i][2]+'\n')))
 

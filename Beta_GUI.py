@@ -165,7 +165,7 @@ class betaoutputs:
     B=app.betaVar
 
     ##These if statements kill the program if the user leaves a section blank
-    if Z == '' or J == '' or A == '':
+    if Z == '' or A == '':
         print("YOU SUCK, FIGURE IT OUT")
         sys.exit()
 

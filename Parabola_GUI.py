@@ -153,7 +153,7 @@ class parabolaoutputs:
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.
-    if Z == '' or J == '' or A == '':
+    if Z == '' or A == '':
         print("YOU SUCK, FIGURE IT OUT")
         sys.exit()
 

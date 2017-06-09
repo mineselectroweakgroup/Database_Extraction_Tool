@@ -209,7 +209,7 @@ class guioutputs:
     ##user leaves a section blank.
     if exitcount == 1:
         sys.exit()
-    if Z == '' or J == '':
+    if Z == '':
         print("YOU SUCK, FIGURE IT OUT")
         sys.exit()
     if isoLow == '':
