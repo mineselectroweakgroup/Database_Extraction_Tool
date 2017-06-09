@@ -41,6 +41,7 @@ class data:##This is the main data class
         for line in self.f:
             linecount=linecount+1
             line = line.split()
+            #print('|',line,'|')
 
             ##Break function used to stop code after the evaluated nuclear data
             if len(line) == 0 and \
