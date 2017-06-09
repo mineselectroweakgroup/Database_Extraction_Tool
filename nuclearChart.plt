@@ -6,8 +6,8 @@ set palette rgb -21,-22,-23
 set datafile sep ','
 set size 1,1
 set pointsize 3
-set xtics 5
-set ytics 5
+set xtics 10
+set ytics 10
 set grid
 set xrange [-1:180]
 set term png size 5000,4500 font "/home/matmarti/Database_Extraction_Tool/Helvetica.ttf" 50
