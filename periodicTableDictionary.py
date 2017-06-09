@@ -28,13 +28,13 @@ for element in elementName:
                  if mass == i:
                      eName = str(data[k][20:22].replace(" ",""))
                      if eName==element:
-                         stabilityvalue = 1
+                         stabilityvalue = mass
                          break
                  if mass > i:
                      break
              k=k+1
          thing[count,i] = periodicTable(element,count,i,stabilityvalue)
-         if thing[count,i].stability == 1:
+         if thing[count,i].stability != 0:
              writetofile = writetofile+str(thing[count,i].name)+','+str(thing[count,i].N)+','+str(thing[count,i].A)+','+str(thing[count,i].stability)+'\n'
          
     count = count + 1
