@@ -67,3 +67,8 @@ Version 0.4.1 XXXXXXXXXX XXXXMT -M.S. Martin:
 Version 0.4.2 06.05.2017 1000MT -W. McDonald:
     Updated to extract uncertainty in energy from ensdf files
     Plots energy uncertainty as vertical error bars
+
+Version 0.4.3 06.09.2017 1020MT -M.S. Martin
+    Updated README.md with how the program now works
+    Added a mass parabola function
+    Updated plotting so uncertainty is shown in bar width

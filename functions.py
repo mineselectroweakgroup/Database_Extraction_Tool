@@ -26,7 +26,9 @@ def addUncert(datalist, currentLine):
         uncert = currentLine[3]
     
     #Will only append an uncertainty if there isn't already an uncertainty for a given line
-    if (len(datalist[-1])<3): 
+    if len(datalist) == 0:
+        pass
+    elif (len(datalist[-1])<3): 
         #empty uncert value
         if (uncert==''):
             datalist[-1].append(0) 

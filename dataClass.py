@@ -33,17 +33,19 @@ class data:##This is the main data class
         ##If there is a data file that matches the user's input then this program will try to extract the data.
         self.f = open("Data/"+str(ENSDF),'rU')
         ##Each line of the file is split into list so the code can parse through each line easier
+
  
         #Initializes a to be apple, a string that should not appear in the data file
         #This is used to stop the code after it goes through the first block
         a = 'apple'
         linecount=0     #linecount can be used to locate problem-causing lines in the ensdf files
+        firstline = "NOTHING"
         for line in self.f:
             linecount=linecount+1
             line = line.split()
             #print('|',line,'|')
 
-            ##Break function used to stop code after the evaluated nuclear data
+            ##Break function used to stop code after the evaluated nuclear data\
             if len(line) == 0 and \
                a.lower() == b.lower():
                 break
