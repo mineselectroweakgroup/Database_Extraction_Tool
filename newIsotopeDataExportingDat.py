@@ -73,7 +73,8 @@ def datExp(option,UI=False,Filter=False):
             itervar= str(i)+element
             #try:
             indata=dc.data('ensdf.'+str(i).zfill(3),itervar,'EoL',energyLim)
-            #indata.filterData(wantedSpins,UI) FIXME bring back functionality
+            #print('|'+wantedSpins+'|')
+            indata.filterData(wantedSpins,UI) #FIXME bring back functionality
             indata.export("_Fil.dat",wantedSpins)
             
             #except:
@@ -125,7 +126,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
                 first_line = first_line.split(';')
-                print(first_line)
+                #print(first_line)
                 nodatatest = str(first_line[2][-2:])
             if (nodatatest == "--" or nodatatest == "-*"):
                 os.remove("Output/"+"gnuPlot/"+filenameopen)
@@ -153,14 +154,10 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         filenameopen = (str(lowerBound+removecount[element])+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
         if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
             #plt file Naming
-            if(Filter):
-                fileName= str(lowerBound)+str(elementnamestring)+"_"+str(higherBound)+str(elementnamestring)+wantedSpins+fileParsingFactorStr+"_Fil.plt"        
-                fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
-                pltFile = open(fileName,'wb')
-            else:
-                fileName= str(lowerBound)+str(elementnamestring)+"_"+str(higherBound)+str(element)+".plt"
-                fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
-                pltFile = open(fileName,'wb')
+            fileName= str(lowerBound)+str(elementnamestring)+"_"+str(higherBound)+str(elementnamestring)+wantedSpins+fileParsingFactorStr+"_Fil.plt"        
+            fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
+            pltFile = open(fileName,'wb')
+            
 
             infile = open(fileName,'r')
             if infile.readline() != "reset":
@@ -203,7 +200,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
         mostrecentrangecount = rangecount
 
-    if os.path.isfile(fileName):
+    if os.path.isfile(fileName): #FIXME what is this supposed to do outside of the 'if' scope in which fileName is initialized? This causes the program to crash if no data is found :(
         pltFile.write(str.encode(setLine[:-1]+")"+"\n"))
         pltFile.write(str.encode("set xrange [0:"+str(rangecount+1)+"]\n"))
     

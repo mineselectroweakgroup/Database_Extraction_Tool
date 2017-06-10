@@ -20,12 +20,16 @@ class data:##This is the main data class.
 
         ## nucID is what is compared to the first 6 characters of the line to find the correct data
         nucID=self.name.upper()+" "
-        ## This while loop makes sure that nucID has the correct whitespace to match the data file
+        ## This while loop makes sure that nucID has the correct leading whitespace to match the data file
         charIndex=0
         while(charIndex<3):
-            if self.name[charIndex].isalpha():
+            if nucID[charIndex].isalpha():
                 nucID=' '+nucID
             charIndex+=1
+        ## if the element symbol is one letter, an additional space must be appended so len(nucID)==6
+        if(len(nucID)<6):
+            nucID=nucID+' '
+            
 
         ##open the appropriate ensdf file
         self.f = open("Data/"+str(ENSDF),'rU')
@@ -69,15 +73,24 @@ class data:##This is the main data class.
                 ## Set uncert to 0 if not numeric 
                 elif (not uncert.isnumeric()):
                     uncert = '0'
+
                 elif ('.' in energy): ## Convert uncertainty to proper magnitude
                     numberino = energy
                     topLimit = 0
-
+                    
                     for i in range(len(numberino)-1):
+                        
                         if (numberino[-1-i] == '.'):
                             decIndex = i
-                            numberino = numberino[:-1-i] + numberino[-i:]
+                            if (decIndex == 0):
+                                ## If the '.' is the last digit in the energy, numberino[-i:] will 
+                                ## return the entire string, which is no bueno 
+                                numberino = numberino[:-1-i]
+                            else:
+                                numberino = numberino[:-1-i] + numberino[-i:]
+                            #print(linecount,line,numberino,numberino[-i:])
                         if (i < len(uncert)):
+                            #print(linecount,energy,numberino)
                             digit = int(numberino[-1-i])+int(uncert[-1-i])
                         else:
                             digit = int(numberino[-1-i])
@@ -105,5 +118,29 @@ class data:##This is the main data class.
             fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
             datFile = open(fileName,'wb')##Creates a file with a valid file name.
             for i in range(len(self.data)):
-                datFile.write(str.encode(str(self.name)+';'+str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2]+'\n')))
+                datFile.write(str.encode(str(self.name)+';'+str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+'\n'))
+
+
+    def filterData(self,userInput,UI=False):
+        if (userInput == ''):
+            print(self.data)
+            if (not self.data):
+                if(UI):
+                    ## Prints a statement telling user than no file was found
+                    print("Warning:No data filtered/selected for "+ self.name +".")
+                self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
+                
+        #if(self.op == 'EoL'):
+        else:
+            newData=[] ## storage for new data
+            for wantedString in userInput.split(","):##adds all the strings that are included in the userInput.
+                for i in range(0,len(self.data)): 
+                    if(self.data[i][1]==wantedString or self.data[i][1]==("("+wantedString+")")):
+                        newData.append(self.data[i])
+            if(newData):
+                self.data=newData##changes data to the new data.
+            else:
+                if(UI):
+                    print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
+                self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
 
