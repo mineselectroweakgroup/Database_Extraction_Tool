@@ -27,6 +27,7 @@ def datExp(option,UI=False,Filter=False):
         energyLim=int(guioutputs.E)
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
+        temperature = float(guioutputs.temp)
 
     if option == "two":
         from Beta_GUI import betaoutputs
@@ -49,6 +50,7 @@ def datExp(option,UI=False,Filter=False):
                     elementName = elementName + "," + periodicTable[index+1]
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
+        temperature = float(betaoutputs.temp)
         exitcount = 0
 
     if option == "three":
@@ -61,6 +63,7 @@ def datExp(option,UI=False,Filter=False):
         wantedSpins=str(parabolaoutputs.J).replace(" ","")
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
+        temperature = 0
         exitcount = 0
 
 
@@ -89,7 +92,7 @@ def datExp(option,UI=False,Filter=False):
 
     
     #If wanted this will return the user inputs for further use
-    return [elementName,lowerBound,higherBound,wantedSpins,exitcount,massData]
+    return [elementName,lowerBound,higherBound,wantedSpins,temperature,massData]
 
 
 
@@ -170,10 +173,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile.write(str.encode("unset key\n"))
 
         #This labels the y axis and the Title
-                if massInclude == "YES":
-                    pltFile.write(str.encode("set ylabel \"Energy(GeV)\"\n"))
-                else:
-                    pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
+                pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
                 pltFile.write(str.encode("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n"))
 
         #This line Currently DOES NOT work but should make the graph greyscale.

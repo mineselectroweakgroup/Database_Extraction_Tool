@@ -32,6 +32,8 @@ class Application(Frame):
         self.upBoundEnergyVar = StringVar()
         self.massDataVar = StringVar()
 
+        self.tempVar = StringVar()
+
         self.exitcount = 0
         
 
@@ -78,6 +80,9 @@ class Application(Frame):
         upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
 
+        tempLabel = Label(nucStruc, text = "Temperature (K)",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
+        tempLabel.grid(row = 1, column = 4, sticky = W)
+
 
 
 
@@ -95,6 +100,9 @@ class Application(Frame):
         self.spinEntry.grid(row = 4, column = 0, sticky = W)
         self.upBoundEnergyEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
+
+        self.tempEntry = Entry(nucStruc,highlightbackground="#21314D")
+        self.tempEntry.grid(row = 2, column = 4, sticky = W)
 
 
 
@@ -157,6 +165,7 @@ class Application(Frame):
         self.upBoundIsoVar = self.upBoundIsoEntry.get()
         self.spinVar = self.spinEntry.get()
         self.upBoundEnergyVar = self.upBoundEnergyEntry.get()
+        self.tempVar = self.tempEntry.get()
         root.destroy()#closes window
 
     def exitButton(self):
@@ -202,6 +211,7 @@ class guioutputs:
     isoUp=app.upBoundIsoVar
     E=app.upBoundEnergyVar
     exitcount=app.exitcount
+    temp=app.tempVar
     if app.checkVar == 1:
         mass = "YES"
     else:

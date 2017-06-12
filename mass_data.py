@@ -31,6 +31,7 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
 
                             datafile = open("Output/gnuPlot/"+filenameopen,'r+')
 
+
                             datafilelines = datafile.readlines()
                             datafile.seek(0)
                             datafile.truncate()
@@ -41,9 +42,9 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
                                 Z = int(data[k][11:14].replace(" ",""))
                                 if data[k][106]=='#':
                                     splitline[2] = splitline[2] + '*'
-                                atomicMass = float(data[k][96:112].replace(" ","").replace("#","."))*conversion/10**6
+                                atomicMass = float(data[k][96:112].replace(" ","").replace("#","."))*conversion
                                 aMassError = float(data[k][113:123].replace(" ","").replace("#","."))*(conversion/10**6)
-                                splitline[1] = str(float(splitline[1])/10**6 + atomicMass)
+                                splitline[1] = str(float(splitline[1]) + atomicMass)
                                 splitline[3] = str(float(splitline[3])/10**6 + aMassError)
                                 unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2]+';'+splitline[3]+'\n'
                                 datafile.write(unsplitline)

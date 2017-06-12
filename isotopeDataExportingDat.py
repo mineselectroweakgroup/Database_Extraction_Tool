@@ -11,6 +11,7 @@ import re
 
 #This function is used to bulk export a range of isotopes in a given A range.
 def datExp(option,UI=False,Filter=False):
+    print('test')
 
 #This uses the option from the first GUI to get inputs from the correct GUI. Some of the definitions here are
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
@@ -23,12 +24,12 @@ def datExp(option,UI=False,Filter=False):
         energyLim = int(guioutputs.E)
         exitcount = int(guioutputs.exitcount)
         massData = str(guioutputs.mass)
+        temperature = float(guioutputs.temp)
         if(Filter):
             wantedSpins=str(guioutputs.J).replace(" ","")
             energyLim=int(guioutputs.E)
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
-        temperature = 10000
 
     if option == "two":
         from Beta_GUI import betaoutputs
@@ -53,6 +54,7 @@ def datExp(option,UI=False,Filter=False):
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
         exitcount = 0
+        temperature = 522203.6
 
     if option == "three":
         from Parabola_GUI import parabolaoutputs
@@ -66,6 +68,7 @@ def datExp(option,UI=False,Filter=False):
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
         exitcount = 0
+        temperature = 522203.6
 
 
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
@@ -85,16 +88,13 @@ def datExp(option,UI=False,Filter=False):
             #except:
                 #if(UI):
                     #ERROR="No file found for or error with " +'ensdf.'+str(i).zfill(3)##Allows the user to see if a specific ENSDF file is giving them trouble.
-                    #print(ERROR)
-                
-            
+                    #print(ERROR)           
     if UI:
         #readinput.message= "Data export complete"
         exit
 
-    
     #If wanted this will return the user inputs for further use
-    return [elementName,lowerBound,higherBound,wantedSpins,exitcount,massData]
+    return [elementName,lowerBound,higherBound,wantedSpins,temperature,massData]
 
 
 
