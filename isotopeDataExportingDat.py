@@ -28,6 +28,7 @@ def datExp(option,UI=False,Filter=False):
             energyLim=int(guioutputs.E)
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
+        temperature = 10000
 
     if option == "two":
         from Beta_GUI import betaoutputs
