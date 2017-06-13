@@ -16,7 +16,6 @@ def function(option):
 #Exports data requested by the user into text files (necessary to generate plots)
     userInput = ided.datExp(option,True,True)
 
-
 #Prints the user input allowing user to make sure they inputted allowing user
 #to check what they input against the plot they are viewing
 #The sleep is a pause so the timestamps used work correctly

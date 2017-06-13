@@ -27,7 +27,10 @@ def datExp(option,UI=False,Filter=False):
         energyLim=int(guioutputs.E)
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
-        temperature = float(guioutputs.temp)
+        temperature = str(guioutputs.temp)
+        if temperature == "":
+            temperature = 0
+        temperature = float(temperature)
 
     if option == "two":
         from Beta_GUI import betaoutputs
@@ -211,26 +214,27 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         for i in range(lowerBound + removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
             if(itercount == 0):
                 pltFile.write(str.encode(("plot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
-                pltFile.write(str.encode("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n"))
-                pltFile.write(str.encode("set object 1 rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) linewidth 1 fillcolor rgb 'black' front\n"))
-
+                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
+                #pltFile.write(str.encode(("set object 1 rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) linewidth 1 fillcolor rgb 'black' front\n").replace('/', '_')))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.375):2:(0.375):4 with boxxyerrorbars linecolor rgb 'black' fillstyle solid\n").replace('/', '_')))
 
                     
                 #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n")))
                 #pltFile.write(str.encode("set object rectangle from "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75,var-errvar to "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+",var+errvar\n"))
-                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_')))
-                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n")))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
 
                
             else:
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
-                pltFile.write(str.encode("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n"))
-                pltFile.write(str.encode("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n"))
+                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
+                #pltFile.write(str.encode(("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n").replace('/', '_')))
+                #pltFile.write(str.encode(("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n").replace('/', '_')))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.375):2:(0.375):4 with boxxyerrorbars linecolor rgb 'black' fillstyle solid\n").replace('/', '_')))
 
 
                 #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$4)\n")))
                 #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with linewidth var xerrorbars\n").replace('/', '_')))
-                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n")))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
                 
 
             itercount = itercount + 1

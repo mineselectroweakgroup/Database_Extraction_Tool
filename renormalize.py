@@ -10,6 +10,8 @@ def renormalize(elementName,lowerBound,higherBound,wantedSpins):
 
             for line in datafilelines:
                 splitline = line.split(';')
+                if str(splitline[2]) == "--" or str(splitline[2]) == "--*":
+                    break
                 if float(splitline[1]) < float(minimum):
                     minimum = splitline[1]
 
