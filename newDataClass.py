@@ -50,18 +50,24 @@ class data:##This is the main data class.
              ## Identifies which lines in the data file have relevant data
             if (line[6:8]==' L' and line[0:6]==nucID):
 
-                ## set desiredData bool so the program wil exit after reading evaluated data
+                ## set desiredData bool so the program wil exit after reading adopted data
                 desiredData = True
+                print(ENSDF,':',linecount)
 
                 ## finding the energy
                 energy = line[9:19].strip()
+
+                ## check if valid energy data (i.e. no letter at beginning or end)
+                if (energy[0].isalpha() or energy[-1].isalpha()):
+                    continue
+                    
                 if 'E' in energy: ## This will convert scientific to decimal notation if needed
                     significand = float(energy[:energy.find('E')])
                     power = 10** float(energy[energy.find('E')+1:])
                     energy = str(significand * power)
-                ## discard points where energy contains letters
-                if not isNumber(energy):                    
-                    continue
+                ## discard points where energy contains letters FIXME: this should not be necessary
+                #if not isNumber(energy):                    
+                    #continue
 
 
                 ## Finding the uncertainty
@@ -121,9 +127,51 @@ class data:##This is the main data class.
                 datFile.write(str.encode(str(self.name)+';'+str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+'\n'))
 
 
+
+    def spinMatchFinder(self,matchVal,checkVal):
+        ## matchVal is the desired spin, checkVal is the spin to be checked for matchVal
+        tempList = checkVal.split(',')
+        ## Look for parities that need to be distributed.
+        if any((')+' in value or ')-' in value) for value in tempList):
+            addPlus = False
+            addMinus = False
+            for j in range(len(tempList)): 
+                if ')+' in tempList[j]:
+                    addPlus = True
+                    print('addPlus is True')
+                    tempList[j] = tempList[j].replace('+','') 
+                if ')-' in tempList[j]:  
+                    addMinus = True
+                    tempList[j] = tempList[j].replace('-','')
+
+            if addMinus and addPlus: #FIXME check ALL isotopes in ALL datafiles
+                print(self.data[i])
+            ## Distribute the parities to each term
+            for j in range(len(tempList)):
+                if addPlus:
+                    tempList[j] = tempList[j] + '+'
+                if addMinus:
+                    tempList[j] = tempList[j] + '-'
+
+        ## Remove () so that spins can be identified with ==
+        for j in range(len(tempList)):
+            tempList[j] = tempList[j].replace('(','')
+            tempList[j] = tempList[j].replace(')','')
+        print(tempList)
+
+
+        if (matchVal in checkVal.split(',')): #FIXME this will identify say 1/2- in 21/2-, probably
+            return True
+        else:
+            ## Spin not found
+            return False
+
+
+
     def filterData(self,userInput,UI=False):
+        ## no spin input
         if (userInput == ''):
-            print(self.data)
+            #print(self.data)
             if (not self.data):
                 if(UI):
                     ## Prints a statement telling user than no file was found
@@ -131,11 +179,13 @@ class data:##This is the main data class.
                 self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
                 
         #if(self.op == 'EoL'):
+        ## Filter by spin states
         else:
             newData=[] ## storage for new data
             for wantedString in userInput.split(","):##adds all the strings that are included in the userInput.
                 for i in range(0,len(self.data)): 
-                    if(self.data[i][1]==wantedString or self.data[i][1]==("("+wantedString+")")):
+                    #print(self.data[i][1])
+                    if(self.spinMatchFinder(wantedString, self.data[i][1])):
                         newData.append(self.data[i])
             if(newData):
                 self.data=newData##changes data to the new data.

@@ -152,10 +152,12 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         #plotting process. If there are none then it displays a statement telling the user that there is nothing to
         #plot and exits the program.
         filenameopen = (str(lowerBound+removecount[element])+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
+        fileNameBool = False
         if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
             #plt file Naming
             fileName= str(lowerBound)+str(elementnamestring)+"_"+str(higherBound)+str(elementnamestring)+wantedSpins+fileParsingFactorStr+"_Fil.plt"        
             fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
+            fileNameBool = True
             pltFile = open(fileName,'wb')
             
 
@@ -200,7 +202,8 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
         mostrecentrangecount = rangecount
 
-    if os.path.isfile(fileName): #FIXME what is this supposed to do outside of the 'if' scope in which fileName is initialized? This causes the program to crash if no data is found :(
+    #if os.path.isfile(fileName): #FIXME what is this supposed to do outside of the 'if' scope in which fileName is initialized? This causes the program to crash if no data is found :(
+    if (fileNameBool):
         pltFile.write(str.encode(setLine[:-1]+")"+"\n"))
         pltFile.write(str.encode("set xrange [0:"+str(rangecount+1)+"]\n"))
     
@@ -208,31 +211,31 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
     mostrecentiter = 0
     for element in elementName:
         #This will write the plot coding for the labeling of each energy leven and a line that corrosponds to each one.
+
         for i in range(lowerBound + removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
             if(itercount == 0):
                 pltFile.write(str.encode(("plot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
-                pltFile.write(str.encode("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n"))
-                pltFile.write(str.encode("set object 1 rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) linewidth 1 fillcolor rgb 'black' front\n"))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
+                pltFile.write(str.encode(("set object 1 rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) linewidth 1 fillcolor rgb 'black' front\n").replace('/', '_')))
 
 
                     
-                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n")))
-                #pltFile.write(str.encode("set object rectangle from "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75,var-errvar to "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+",var+errvar\n"))
-                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_')))
-                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n")))
+                    #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n")))
+                    #pltFile.write(str.encode("set object rectangle from "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75,var-errvar to "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+",var+errvar\n"))
+                    #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_')))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
 
                
             else:
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
-                pltFile.write(str.encode("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n"))
-                pltFile.write(str.encode("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n"))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
+                pltFile.write(str.encode(("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n").replace('/', '_')))
 
 
-                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$4)\n")))
-                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with linewidth var xerrorbars\n").replace('/', '_')))
-                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n")))
+                    #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$4)\n")))
+                    #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with linewidth var xerrorbars\n").replace('/', '_')))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
                 
-
             itercount = itercount + 1
         mostrecentiter = itercount
             
@@ -242,7 +245,8 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         #This defines the code required for the program to plot the information
         #as a .gif file.
         #Also in here is the font and font size for the .gif file
-        if os.path.isfile(fileName):
+        #if os.path.isfile(fileName):
+        if fileNameBool:
             fileName = fileName.replace('.plt','.gif')
             fileName = fileName[15:]
             if os.path.isfile(fileName):
