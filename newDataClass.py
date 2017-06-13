@@ -106,9 +106,12 @@ class data:##This is the main data class.
 
 
 
+                ## Finding ALL spin and pairity states (to be filtered later)
+                jpi = line[21:39].strip() 
 
-                jpi = line[21:39].strip() ## ALL spin and pairity states
-                #jpi = '0+' #sets all spins to be 0+ for plot testing
+
+                ## Finding stability info FIXME: this data is currently not used
+                hlife = line[39:49].strip()
 
                 if(float(energy)<=energyLimit):
                     #include the data
@@ -159,8 +162,7 @@ class data:##This is the main data class.
             tempList[j] = tempList[j].replace(')','')
         print(tempList)
 
-
-        if (matchVal in checkVal.split(',')): #FIXME this will identify say 1/2- in 21/2-, probably
+        if (matchVal in tempList):
             return True
         else:
             ## Spin not found
@@ -185,6 +187,7 @@ class data:##This is the main data class.
             for wantedString in userInput.split(","):##adds all the strings that are included in the userInput.
                 for i in range(0,len(self.data)): 
                     #print(self.data[i][1])
+                    ## The spinMatchFinder will identify if the state is the desired spin
                     if(self.spinMatchFinder(wantedString, self.data[i][1])):
                         newData.append(self.data[i])
             if(newData):
