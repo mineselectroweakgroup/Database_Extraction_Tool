@@ -1,5 +1,5 @@
 def renormalize(elementName,lowerBound,higherBound,wantedSpins):
-    minimum = 9999999999999999
+    minimum = 9999999999999999999
     for element in elementName:
         for i in range(lowerBound,higherBound+1):
             filenameopen = (str(i)+str(element)+wantedSpins+"_Fil.dat").replace("/","_")

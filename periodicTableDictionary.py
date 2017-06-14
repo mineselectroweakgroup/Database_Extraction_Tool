@@ -1,3 +1,5 @@
+import os
+
 massfile = open("mass16.txt","r+")
 data=massfile.readlines()
 
@@ -20,7 +22,7 @@ writetofile = ""
 for element in elementName:
     for i in range(1,300):
          k=39
-         stabilityvalue = 0
+         stabilityvalue = 3*10**4
          while k <= len(data)-1:
              if len(data[k]) >= 80:
                  mass = data[k][16:19].replace(" ","")
@@ -28,14 +30,18 @@ for element in elementName:
                  if mass == i:
                      eName = str(data[k][20:22].replace(" ",""))
                      if eName==element:
-                         stabilityvalue = mass
-                         break
+                         filenameopen = "Output/gnuPlot/"+ str(i) + str(element) + "_Fil.dat"
+                         if os.path.isfile(filenameopen):
+                             with open(filenameopen) as datafile:
+                                 first_line = datafile.readline()
+                                 first_line = first_line.split(';')
+                                 stabilityvalue = float(first_line[1])
+                                 break
                  if mass > i:
                      break
              k=k+1
          thing[count,i] = periodicTable(element,count,i,stabilityvalue)
-         if thing[count,i].stability != 0:
-             writetofile = writetofile+str(thing[count,i].name)+','+str(thing[count,i].N)+','+str(thing[count,i].A)+','+str(thing[count,i].stability)+'\n'
+         writetofile = writetofile+str(thing[count,i].name)+','+str(thing[count,i].N)+','+str(thing[count,i].A)+','+str(thing[count,i].stability)+'\n'
          
     count = count + 1
 

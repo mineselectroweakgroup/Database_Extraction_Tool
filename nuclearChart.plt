@@ -2,7 +2,8 @@ reset
 unset key
 set xlabel "Number of Neutrons (N)"
 set ylabel "Number of Protons (Z)"
-set palette rgb -21,-22,-23
+set palette rgb 21,22,23
+set cbrange [0:30000]
 set datafile sep ','
 set size 1,1
 set pointsize 3

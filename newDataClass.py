@@ -123,11 +123,12 @@ class data:##This is the main data class.
 
     def filterData(self,userInput,UI=False):
         if (userInput == ''):
-            print(self.data)
+            #print(self.data)
             if (not self.data):
                 if(UI):
+                    pass
                     ## Prints a statement telling user than no file was found
-                    print("Warning:No data filtered/selected for "+ self.name +".")
+                    #print("Warning:No data filtered/selected for "+ self.name +".")
                 self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
                 
         #if(self.op == 'EoL'):
@@ -141,6 +142,7 @@ class data:##This is the main data class.
                 self.data=newData##changes data to the new data.
             else:
                 if(UI):
-                    print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
+                    pass
+                    #print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
                 self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
 
