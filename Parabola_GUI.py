@@ -38,20 +38,14 @@ class Application(Frame):
         decayLabel = Label(decay, text = "Evaluated Beta Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
         decayLabel.grid(columnspan = 4,row = 0)
 
-        ALabel = Label(decay, text = "Isotope (ex. 60)",bg='#21314D',fg='#92A2BD',font=11)
+        ALabel = Label(decay, text = "Mass (ex. 60)",bg='#21314D',fg='#92A2BD',font=11)
         ALabel.grid(row = 1, column = 1, sticky = W)
-
-        spinLabel = Label(decay, text = "Spin (ex. 0+,3/2-...",bg='#21314D',fg='#92A2BD',font=11)
-        spinLabel.grid(row = 1, column = 2, sticky = W)
 
         #Here I will set up all of the entry boxes for nucStruc
         #Same format
 
         self.AEntry = Entry(decay)
         self.AEntry.grid(row = 2, column = 1, sticky = W)
-
-        self.spinEntry = Entry(decay)
-        self.spinEntry.grid(row = 2, column = 2, sticky = W)
 
 
 
@@ -110,7 +104,6 @@ class Application(Frame):
     def sendNucData(self):
         """Send user input to nuclear structure sorting function"""
         self.A = self.AEntry.get()
-        self.spinVar = self.spinEntry.get()
         root.destroy()#closes window
 
     def exitButton(self):
@@ -149,7 +142,7 @@ class parabolaoutputs:
     Z = periodicTable.readline()
     Z = Z.strip()
     A=app.A
-    J=app.spinVar
+    J=""
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.

@@ -61,7 +61,7 @@ def datExp(option,UI=False,Filter=False):
         elementName = str(parabolaoutputs.Z)
         lowerBound = int(parabolaoutputs.A)
         higherBound = int(parabolaoutputs.A)
-        energyLim = 1
+        energyLim = 0.000000001
         massData = "YES"
         wantedSpins=str(parabolaoutputs.J).replace(" ","")
         elementName = elementName.replace(" ","")
@@ -187,7 +187,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
 
                 pltFile.write(str.encode("set pointsize 0.0001\n"))
 
-                pltFile.write(str.encode('set label "* Theoretical Mass" at graph 0.01, graph 0.97 left\n'))
+                pltFile.write(str.encode('set label "* Extrapolated Mass" at graph 0.01, graph 0.97 left\n'))
 
                 setLine="set xtics rotate by 45 offset -2.5,-1.4 ("
 
