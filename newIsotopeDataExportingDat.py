@@ -189,7 +189,9 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
 
                 pltFile.write(str.encode('set label "* Extrapolated Mass" at graph 0.01, graph 0.97 left\n'))
 
-                setLine="set xtics rotate by 45 offset -2.5,-1.4 ("
+                setLine="set xtics right rotate by 45 ("
+
+
 
         #This sets the x axis with the names of the isotpes wanted.
     rangecount = 0
@@ -197,10 +199,13 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
     for element in elementName:
         for i in range(lowerBound+removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
             rangecount = rangecount + 1
+            datafile = open("Output/gnuPlot/"+str(i)+str(element)+wantedSpins+"_Fil.dat",'r')
+            datafileline = datafile.readline().split(';')
+            ionization = datafileline[4][:-1]
             if(i+fileParsingFactor>higherBound+rangecount):
-                setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+")"
+                setLine=setLine+"\""+str(i)+str(element)+" "+ionization+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+")"
             else:
-                setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
+                setLine=setLine+"\""+str(i)+str(element)+" "+ionization+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
         mostrecentrangecount = rangecount
 
     if os.path.isfile(fileName): #FIXME what is this supposed to do outside of the 'if' scope in which fileName is initialized? This causes the program to crash if no data is found :(

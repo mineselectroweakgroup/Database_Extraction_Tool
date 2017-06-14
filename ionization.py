@@ -12,6 +12,7 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
     energy ={}
     masschange = {}
     uncertainty = {}
+    count = {}
 
     energyList = energyList[2:]
     energyList = energyList[:-1]
@@ -22,6 +23,7 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
         elementTitle = line[10:12].replace(" ","")
         masschange[elementTitle] = 0
         uncertainty[elementTitle]= 0
+        count[elementTitle] = 0
 
     for line in energyList:
         element = line[10:12].replace(" ","")
@@ -66,6 +68,7 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
             if E >= energy[element][0]:
                 masschange[element] = masschange[element] + energy[element][0]
                 uncertainty[element] = unc.adduncert(uncertainty[element],energy[element][1])
+                count[element] = count[element] + 1
         uncertainty[element] = uncertainty[element]/1000
 
 
@@ -84,7 +87,8 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
                 splitline = line.split(';')
                 splitline[1] = str(float(splitline[1]) + masschange[title]/10**3)
                 splitline[3] = str(unc.adduncert(float(splitline[3]),uncertainty[title]))
-                unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2] + ';' + splitline[3] + '\n'
+                splitline.append(str(count[title])+'+')
+                unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2] + ';' + splitline[3] + ';' + splitline[4] + '\n'
                 datafile.write(unsplitline)
 
 def removeElements(elementName):
