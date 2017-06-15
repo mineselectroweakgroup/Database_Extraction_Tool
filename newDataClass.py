@@ -1,18 +1,31 @@
-## Right now, this is imported by test.py look for all spin states of 65Zn up to 5000keV
-
 from decimal import *
+from fractions import Fraction
 
-def isNumber(inputString):
-    return not any(not (char.isdigit() or char == '.') for char in inputString)
+def getPI(JPI): ## Extract parity
+        if '+' in JPI:
+            return '+'
+        elif '-' in JPI:
+            return '-'
+        else:
+            return ''
+def getJ(JPI): ## Extract spin w/o parity
 
+    return Fraction(JPI.replace('+','').replace('-',''))
+
+def getJrange(lowval,highval): ## Creates range of spins
+    jRange = [lowval]
+    while (jRange[-1] < highval):
+        jRange.append(jRange[-1]+1)
+    for jIndex in range(len(jRange)):
+        jRange[jIndex] = str(jRange[jIndex])
+    return jRange
+        
 
 class data:##This is the main data class.
     def __init__(self,ENSDF,ISOvar,option = 'EoL',energyLimit = 999999999, maxSpin = 9):
         ###maybe get rid of option, find out how energy limit and max spin are used
 
         ##Initialize Parameters
-        #filtDataSet=[]
-            ###may not need filt data set
         self.data = []
         self.name = ISOvar
         self.op = option
@@ -52,7 +65,6 @@ class data:##This is the main data class.
 
                 ## set desiredData bool so the program wil exit after reading adopted data
                 desiredData = True
-                print(ENSDF,':',linecount)
 
                 ## finding the energy
                 energy = line[9:19].strip()
@@ -60,19 +72,22 @@ class data:##This is the main data class.
                 ## check if valid energy data (i.e. no letter at beginning or end)
                 if (energy[0].isalpha() or energy[-1].isalpha()):
                     continue
-                    
+
+                ## This will handle states with deduced energies enclosed in () 
+                deducedEnergy = False
+                if '(' in energy:
+                    deducedEnergy = True
+                    energy = energy.replace('(','')
+                    energy = energy.replace(')','')
+    
                 if 'E' in energy: ## This will convert scientific to decimal notation if needed
                     significand = float(energy[:energy.find('E')])
                     power = 10** float(energy[energy.find('E')+1:])
                     energy = str(significand * power)
-                ## discard points where energy contains letters FIXME: this should not be necessary
-                #if not isNumber(energy):                    
-                    #continue
 
-
+                
                 ## Finding the uncertainty
                 uncert = line[19:21].strip()
-                #print(uncert)
                 ## Set unsert to 0 if no uncertainty is given.
                 if (uncert == ''):
                     uncert = '0'
@@ -94,9 +109,7 @@ class data:##This is the main data class.
                                 numberino = numberino[:-1-i]
                             else:
                                 numberino = numberino[:-1-i] + numberino[-i:]
-                            #print(linecount,line,numberino,numberino[-i:])
                         if (i < len(uncert)):
-                            #print(linecount,energy,numberino)
                             digit = int(numberino[-1-i])+int(uncert[-1-i])
                         else:
                             digit = int(numberino[-1-i])
@@ -108,10 +121,13 @@ class data:##This is the main data class.
 
                 ## Finding ALL spin and pairity states (to be filtered later)
                 jpi = line[21:39].strip() 
-
+                ## indicating deduced energy
+                if deducedEnergy:
+                    jpi = jpi + '**'
 
                 ## Finding stability info FIXME: this data is currently not used
                 hlife = line[39:49].strip()
+                # if stable, set to 10**9 year
 
                 if(float(energy)<=energyLimit):
                     #include the data
@@ -130,10 +146,11 @@ class data:##This is the main data class.
                 datFile.write(str.encode(str(self.name)+';'+str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+'\n'))
 
 
-
     def spinMatchFinder(self,matchVal,checkVal):
-        ## matchVal is the desired spin, checkVal is the spin to be checked for matchVal
-        tempList = checkVal.split(',')
+        ## matchVal is the desired spin, checkVal is the spin to be checked for matchVal      
+        tempList = checkVal.replace('**','').replace('&',',') 
+        tempList = tempList.split(',')
+              
         ## Look for parities that need to be distributed.
         if any((')+' in value or ')-' in value) for value in tempList):
             addPlus = False
@@ -141,14 +158,11 @@ class data:##This is the main data class.
             for j in range(len(tempList)): 
                 if ')+' in tempList[j]:
                     addPlus = True
-                    print('addPlus is True')
                     tempList[j] = tempList[j].replace('+','') 
                 if ')-' in tempList[j]:  
                     addMinus = True
                     tempList[j] = tempList[j].replace('-','')
 
-            if addMinus and addPlus: #FIXME check ALL isotopes in ALL datafiles
-                print(self.data[i])
             ## Distribute the parities to each term
             for j in range(len(tempList)):
                 if addPlus:
@@ -156,18 +170,73 @@ class data:##This is the main data class.
                 if addMinus:
                     tempList[j] = tempList[j] + '-'
 
-        ## Remove () so that spins can be identified with ==
+        ## Remove () and whitespace so that spins can be identified with ==
         for j in range(len(tempList)):
             tempList[j] = tempList[j].replace('(','')
             tempList[j] = tempList[j].replace(')','')
-        print(tempList)
+            tempList[j] = tempList[j].strip()
+    
+        ## Handing of ranges of spins (eg. JPI to J'PI', see ensdf manual pg. 46 for more info)
+        if any(('TO' in value or ':' in value) for value in tempList):
+            ## if a range is given, len(tempList) = 1 ALWAYS
+            tempList[0] = tempList[0].replace('TO',':')
+            [lhs,rhs] = tempList[0].split(':')
+            
+            ## JPI TO J'PI'
+            if (('+' in lhs) or ('-' in lhs)) and (('+' in rhs) or ('-' in rhs)): 
+                ## Note that lowJ and highJ are Fraction objects
+                lowJ = getJ(lhs)
+                lowPI = getPI(lhs)
+                highJ = getJ(rhs)
+                highPI = getPI(rhs) 
+                ## jRange is a list of strings
+                jRange = getJrange(lowJ,highJ)
+                
+                jRange[0] = jRange[0]+lowPI
+                jRange[-1] = jRange[-1]+highPI
+                tempList = jRange
+
+            ## J TO J'PI
+            elif ('+' in rhs) or ('-' in rhs):
+                lowJ = getJ(lhs)
+                highJ = getJ(rhs)
+                highPI = getPI(rhs) 
+                jRange = getJrange(lowJ,highJ)
+                
+                for jIndex in range(len(jRange)):
+                    jRange[jIndex] = jRange[jIndex]+highPI
+                tempList = jRange
+
+            ## JPI TO J'
+            elif ('+' in lhs) or ('-' in lhs):
+                lowJ = getJ(lhs)
+                lowPI = getPI(lhs)
+                highJ = getJ(rhs) 
+                jRange = getJrange(lowJ,highJ)
+                
+                jRange[0] = jRange[0]+lowPI
+                tempList = jRange
+
+            else: ## J TO J'
+                lowJ = getJ(lhs)
+                highJ = getJ(rhs) 
+                jRange = getJrange(lowJ,highJ)
+                tempList = jRange   
+
+        ## assign + and - to states with no indicated pairity
+        if (not tempList == ['']) and any(('+' not in value and '-' not in value) for value in tempList):
+            j=0
+            while (j < len(tempList)):
+                if ('+' not in tempList[j] and '-' not in tempList[j]):
+                    tempList.insert(j,tempList[j]+'-')
+                    tempList[j+1] = tempList[j+1]+'+'
+                j+=1
 
         if (matchVal in tempList):
-            return True
+            return True       
         else:
             ## Spin not found
             return False
-
 
 
     def filterData(self,userInput,UI=False):
@@ -186,7 +255,7 @@ class data:##This is the main data class.
             newData=[] ## storage for new data
             for wantedString in userInput.split(","):##adds all the strings that are included in the userInput.
                 for i in range(0,len(self.data)): 
-                    #print(self.data[i][1])
+                    #print(self.name,self.data[i])
                     ## The spinMatchFinder will identify if the state is the desired spin
                     if(self.spinMatchFinder(wantedString, self.data[i][1])):
                         newData.append(self.data[i])
@@ -194,6 +263,7 @@ class data:##This is the main data class.
                 self.data=newData##changes data to the new data.
             else:
                 if(UI):
-                    print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
+                    ## Prints a statement telling user than no file was found
+                    print("Warning:No data filtered/selected for "+ self.name +".")
                 self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
 
