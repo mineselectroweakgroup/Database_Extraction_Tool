@@ -22,6 +22,7 @@ class Application(Frame):
         self.chemSymVar = StringVar()
         self.A = StringVar()
         self.spinVar = StringVar()
+        self.tempVar = StringVar()
         
     #This function creates the actual frame for the GUI including the buttons and input boxes
     def create_widgets(self):
@@ -48,6 +49,9 @@ class Application(Frame):
         spinLabel = Label(decay, text = "Spin (ex. 0+,3/2-...",bg='#21314D',fg='#92A2BD',font=11)
         spinLabel.grid(row = 1, column = 2, sticky = W)
 
+        tempLabel = Label(decay, text = "Temperature(K)",bg='#21314D',fg='#92A2BD',font=11)
+        tempLabel.grid(row = 6, column = 0, sticky = W)
+
         #Set up the drop down menu for +/- decay
         self.betaVar = StringVar()
         self.betaVar.set("Beta +")
@@ -62,6 +66,9 @@ class Application(Frame):
         self.AEntry.grid(row = 2, column = 1, sticky = W)
         self.spinEntry = Entry(decay)
         self.spinEntry.grid(row = 2, column = 2, sticky = W)
+
+        self.tempEntry = Entry(decay)
+        self.tempEntry.grid(row=7,column=0,sticky = W)
 
 
 
@@ -94,7 +101,7 @@ class Application(Frame):
             self.newest = self.newest.replace(os.getcwd()+"/","")
             if self.newest[-4:] != ".gif":
                 try:
-                    self.newest = "Matt_Martin.gif"
+                    self.newest = "nuclearChartQValues.gif"
                     self.photo = PhotoImage(file=self.newest)
                     self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
                 except:
@@ -124,6 +131,7 @@ class Application(Frame):
         self.A = self.AEntry.get()
         self.spinVar = self.spinEntry.get()
         self.betaVar = self.betaVar.get()
+        self.tempVar = self.tempEntry.get()
         root.destroy()#closes window
 
     def exitButton(self):
@@ -163,6 +171,8 @@ class betaoutputs:
     A=app.A
     J=app.spinVar
     B=app.betaVar
+    temp=app.tempVar
+    temp=float(temp)
 
     ##These if statements kill the program if the user leaves a section blank
     if Z == '' or A == '':

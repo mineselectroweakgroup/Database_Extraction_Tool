@@ -27,6 +27,10 @@ def datExp(option,UI=False,Filter=False):
         energyLim=int(guioutputs.E)
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
+        temperature = str(guioutputs.temp)
+        if temperature == "":
+            temperature = 0
+        temperature = float(temperature)
 
     if option == "two":
         from Beta_GUI import betaoutputs
@@ -49,6 +53,7 @@ def datExp(option,UI=False,Filter=False):
                     elementName = elementName + "," + periodicTable[index+1]
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
+        temperature = float(betaoutputs.temp)
         exitcount = 0
 
     if option == "three":
@@ -56,11 +61,12 @@ def datExp(option,UI=False,Filter=False):
         elementName = str(parabolaoutputs.Z)
         lowerBound = int(parabolaoutputs.A)
         higherBound = int(parabolaoutputs.A)
-        energyLim = 1
+        energyLim = 0.000000001
         massData = "YES"
         wantedSpins=str(parabolaoutputs.J).replace(" ","")
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
+        temperature = float(parabolaoutputs.T)
         exitcount = 0
 
 
@@ -89,7 +95,7 @@ def datExp(option,UI=False,Filter=False):
 
     
     #If wanted this will return the user inputs for further use
-    return [elementName,lowerBound,higherBound,wantedSpins,exitcount,massData]
+    return [elementName,lowerBound,higherBound,wantedSpins,temperature,massData]
 
 
 
@@ -167,15 +173,11 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         #Reset gnuplot.
                 pltFile.write(str.encode("reset\n"))
 
-
         #This removes the default legend in the final plot, because the legend is ugly and not useful in our case.
                 pltFile.write(str.encode("unset key\n"))
 
         #This labels the y axis and the Title
-                if massInclude == "YES":
-                    pltFile.write(str.encode("set ylabel \"Energy(GeV)\"\n"))
-                else:
-                    pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
+                pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
                 pltFile.write(str.encode("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n"))
 
         #This line Currently DOES NOT work but should make the graph greyscale.
@@ -186,9 +188,11 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
 
                 pltFile.write(str.encode("set pointsize 0.0001\n"))
 
-                pltFile.write(str.encode('set label "* Theoretical Mass" at graph 0.01, graph 0.97 left\n'))
+                pltFile.write(str.encode('set label "* Extrapolated Mass" at graph 0.01, graph 0.97 left\n'))
 
-                setLine="set xtics rotate by 45 offset -2.5,-1.4 ("
+                setLine="set xtics right rotate by 45 ("
+
+
 
         #This sets the x axis with the names of the isotpes wanted.
     rangecount = 0
@@ -196,10 +200,13 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
     for element in elementName:
         for i in range(lowerBound+removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
             rangecount = rangecount + 1
+            datafile = open("Output/gnuPlot/"+str(i)+str(element)+wantedSpins.replace('/','_')+"_Fil.dat",'r')
+            datafileline = datafile.readline().split(';')
+            ionization = datafileline[4][:-1]
             if(i+fileParsingFactor>higherBound+rangecount):
-                setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+")"
+                setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+ionization+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+")"
             else:
-                setLine=setLine+"\""+str(i)+str(element)+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
+                setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+ionization+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
         mostrecentrangecount = rangecount
 
     #if os.path.isfile(fileName): #FIXME what is this supposed to do outside of the 'if' scope in which fileName is initialized? This causes the program to crash if no data is found :(
@@ -215,25 +222,30 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         for i in range(lowerBound + removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
             if(itercount == 0):
                 pltFile.write(str.encode(("plot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
-                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
-                pltFile.write(str.encode(("set object 1 rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) linewidth 1 fillcolor rgb 'black' front\n").replace('/', '_')))
 
+                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
+                #pltFile.write(str.encode(("set object 1 rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) linewidth 1 fillcolor rgb 'black' front\n").replace('/', '_')))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.375):2:(0.375):4 with boxxyerrorbars linecolor rgb 'black' fillstyle solid\n").replace('/', '_')))
 
                     
-                    #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n")))
-                    #pltFile.write(str.encode("set object rectangle from "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75,var-errvar to "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+",var+errvar\n"))
-                    #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with xerrorbars\n").replace('/', '_')))
+                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n")))
+                #pltFile.write(str.encode("set object rectangle from "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75,var-errvar to "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+",var+errvar\n"))
+
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
 
                
             else:
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
-                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
-                pltFile.write(str.encode(("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n").replace('/', '_')))
+
+                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$2):(errvar=$4)\n").replace('/', '_')))
+                #pltFile.write(str.encode(("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n").replace('/', '_')))
+                #pltFile.write(str.encode(("set object "+str(i+1-lowerBound-removecount[element]+mostrecentiter)+" rect from ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75),(var-errvar) to ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"),(var+errvar) fillstyle solid 1.0 linewidth 1 fillcolor rgb 'black'\n").replace('/', '_')))
+                pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.375):2:(0.375):4 with boxxyerrorbars linecolor rgb 'black' fillstyle solid\n").replace('/', '_')))
 
 
-                    #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$4)\n")))
-                    #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with linewidth var xerrorbars\n").replace('/', '_')))
+                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:(var=$4)\n")))
+                #pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:("+str(fileParsingFactor*0.5)+") with linewidth var xerrorbars\n").replace('/', '_')))
+
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
                 
             itercount = itercount + 1
@@ -252,15 +264,15 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             if os.path.isfile(fileName):
                 os.remove(fileName)
             if rangecount >= 20:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 6\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 6\n"))
             elif rangecount >= 15:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 7\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 7\n"))
             elif rangecount >= 10:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 9\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 9\n"))
             elif rangecount >= 5:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
             else:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 14\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 14\n"))
             pltFile.write(str.encode("set term gif size 700,500\n"))
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
             pltFile.write(str.encode("refresh\n"))

@@ -1,3 +1,6 @@
+#This script is a class which opens the GUI for the beta decay subscript of the program. A second class at the bottom contains
+#the outputs of the GUI, and is used for passing information to other aspects of the program.
+
 from tkinter import *
 root = Tk()
 root.title("Data Extraction")
@@ -15,12 +18,9 @@ class Application(Frame):
         self.create_widgets()
         self.grid()
 
-
-        self.chemSymVar = StringVar()
-        self.A = StringVar()
-        self.T = StringVar()
+        self.temp = StringVar()
         
-
+    #This function creates the actual frame for the GUI including the buttons and input boxes
     def create_widgets(self):
         title = Frame(self)
         decay = Frame(self)
@@ -34,37 +34,34 @@ class Application(Frame):
         out.configure(bg='#21314D')
 
 
+        #Set up labels for each section
         decayLabel = Label(decay, text = "Evaluated Beta Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
-        decayLabel.grid(columnspan = 4,row = 0)
-
-        ALabel = Label(decay, text = "Mass (ex. 60)",bg='#21314D',fg='#92A2BD',font=11)
-        ALabel.grid(row = 1, column = 1, sticky = W)
-
-        TLabel = Label(decay, text = "Temperature (K)", bg = '#21314D', fg = '#92A2BD', font = 11)
-        TLabel.grid(row = 1, column = 2 , sticky = W)
-
-        #Here I will set up all of the entry boxes for nucStruc
-        #Same format
-
-        self.AEntry = Entry(decay)
-        self.AEntry.grid(row = 2, column = 1, sticky = W)
-        self.TEntry = Entry(decay)
-        self.TEntry.grid(row = 2, column = 2, sticky = W)
-
-
+        decayLabel.grid(columnspan = 3,row = 0)
 
         #Setting up the submit buttons
-        decaySubmit = Button(decay, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        decaySubmit.grid(row = 5, column = 0)
+        minusButton = Button(decay, text = "Beta -", command = self.minusFunc,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        minusButton.grid(row = 1, column = 0)
+
+        plusButton = Button(decay, text = "Beta +", command = self.plusFunc,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        plusButton.grid(row = 1, column = 1)
+
+        ECButton = Button(decay, text = "EC Decay", command = self.ECFunc,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        ECButton.grid(row = 1, column = 2)
+
+        tempButton = Button(decay, text = "Temperature", command = self.tempFunc,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        tempButton.grid(columnspan = 2, row = 2, column = 0)
+
+        self.tempEntry = Entry(decay,highlightbackground="#21314D")
+        self.tempEntry.grid(columnspan = 2, row = 2, column = 1)
 
         fullScreenSubmit = Button(decay, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        fullScreenSubmit.grid(row = 5, column = 1)
+        fullScreenSubmit.grid(row = 3, column = 0)
 
         newChoiceSubmit = Button(decay, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        newChoiceSubmit.grid(row = 5, column = 2)
+        newChoiceSubmit.grid(row = 3, column = 1)
 
         exitButtonSubmit = Button(decay, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        exitButtonSubmit.grid(row=5,column=3)
+        exitButtonSubmit.grid(row=3,column=2)
 
 
         #Setting up the graph output box including the calling of the most
@@ -98,6 +95,7 @@ class Application(Frame):
         os.chdir("..")
         os.chdir("..")
 
+        #Sets up the group logo at the top of the GUI
         self.pictureSpot = Canvas(title,width = 620, height = 90)
         self.pictureSpot.grid(row = 0, column = 0) 
         self.photo2 = PhotoImage(file = "eilonglogo.gif")
@@ -105,11 +103,28 @@ class Application(Frame):
             
 
     #Defining the functions that make the submit buttons do things. 
-    def sendNucData(self):
-        """Send user input to nuclear structure sorting function"""
-        self.A = self.AEntry.get()
-        self.T = self.TEntry.get()
-        root.destroy()#closes window
+    def minusFunc(self):
+        os.system('python3 betaMinusperiodicTableDictionary.py')
+        os.system('gnuplot nuclearChart.plt')
+        os.system('okular nuclearChart.png')
+
+    def plusFunc(self):
+        os.system('python3 betaPlusperiodicTableDictionary.py')
+        os.system('gnuplot nuclearChart.plt')
+        os.system('okular nuclearChart.png')
+
+    def ECFunc(self):
+        os.system('python3 ECperiodicTableDictionary.py')
+        os.system('gnuplot nuclearChart.plt')
+        os.system('okular nuclearChart.png')
+
+    def tempFunc(self):
+        self.temp = self.tempEntry.get()
+        os.system('python3 periodicTableDictionary.py')
+        os.system('gnuplot nuclearChart.plt')
+        os.system('okular nuclearChart.png')
+        root.destroy()
+        os.system('python3 Decay_Chart_GUI.py')
 
     def exitButton(self):
         self.exitcount = 1
@@ -135,26 +150,13 @@ class Application(Frame):
         os.system("python3 USE_THIS.py")
         sys.exit()
 
+#This is the part of the script that actually runs the GUI
 app = Application(root)
 root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()
 
-#Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts
-
-class parabolaoutputs:
-#These are the Nuclear Structure (ENSDF inputs) variables
-    periodicTable=open("ElementList.txt",'r')
-    Z = periodicTable.readline()
-    Z = Z.strip()
-    A=app.A
-    J=""
-    T=app.T
-
-    ##These if statements either kill the program or input preset values if the
-    ##user leaves a section blank.
-    if A == '':
-        print("YOU SUCK, FIGURE IT OUT")
-        sys.exit()
-    if T == '':
+class outputs:
+    T = app.temp
+    if T == "":
         T = 0
 

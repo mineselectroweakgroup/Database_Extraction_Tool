@@ -72,3 +72,13 @@ Version 0.4.3 06.09.2017 1020MT -M.S. Martin
     Updated README.md with how the program now works
     Added a mass parabola function
     Updated plotting so uncertainty is shown in bar width
+
+
+Version UPDATE 0.5.0 06-16-2017 1400MT -W. McDonald and M.S. Martin:
+    dataClass.py rewritten to find ALL spin states.
+    Ensdf reading algorithm redone to match how the data files are organized.
+    Removed any manual error/exception handling - reading data will no longer generate errors.
+    Added functions to retrieve beta decay Q values from nuclear chart.
+    Cleaned up plotting for error bars.
+    Fixed error propagation.
+    Added renormalization and ionization functions.

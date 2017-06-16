@@ -1,13 +1,15 @@
 #This is a single function which sorts through the mass data file and includes the atomic mass and uncertainty
 #with a unit conversion factor into the data set.
 
+import uncertainty as unc
+
 def addMass(elementName,lowerBound,higherBound,wantedSpins):
     massfile = open("mass16.txt","r+")
     data = massfile.readlines()
     splitdatafilelines = []
-    #Thesse next two lines take C12 as absolute and use that to calculate the conversion factor between amu and keV
-    BEC12 = 92161.753
-    conversion = BEC12/(6*float(data[39][96:112].replace(" ",""))+6*float(data[40][96:112].replace(" ",""))-12000000)
+    #These next two values take the conversion factor from micro amu to keV, along with its uncertainty
+    conversion = 0.93149409541
+    dconversion = 0.00000000057
 
 
     for element in elementName:
@@ -31,6 +33,7 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
 
                             datafile = open("Output/gnuPlot/"+filenameopen,'r+')
 
+
                             datafilelines = datafile.readlines()
                             datafile.seek(0)
                             datafile.truncate()
@@ -41,10 +44,10 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
                                 Z = int(data[k][11:14].replace(" ",""))
                                 if data[k][106]=='#':
                                     splitline[2] = splitline[2] + '*'
-                                atomicMass = float(data[k][96:112].replace(" ","").replace("#","."))*conversion/10**6
-                                aMassError = float(data[k][113:123].replace(" ","").replace("#","."))*(conversion/10**6)
-                                splitline[1] = str(float(splitline[1])/10**6 + atomicMass)
-                                splitline[3] = str(float(splitline[3])/10**6 + aMassError)
+                                atomicMass = float(data[k][96:112].replace(" ","").replace("#","."))*conversion
+                                aMassError = unc.multuncert(float(data[k][96:112].replace(" ","").replace("#",".")),conversion,float(data[k][113:123].replace(" ","").replace("#",".")),dconversion)
+                                splitline[1] = str(float(splitline[1]) + atomicMass)
+                                splitline[3] = str(unc.adduncert(float(splitline[3]),aMassError))
                                 unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2]+';'+splitline[3]+'\n'
                                 datafile.write(unsplitline)
                 k=k+1

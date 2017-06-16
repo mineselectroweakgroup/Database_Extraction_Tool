@@ -42,6 +42,9 @@ class Application(Frame):
         massParabolaButton = Button(buttons, text = "MASS PARABOLA", command = self.parabolaFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
         massParabolaButton.grid(row = 4, column = 0)
 
+        nucChartButton = Button(buttons, text = "ENVIRONMENTAL DECAY RATE SENSITIVITIES", command = self.nucChartFunc, font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
+        nucChartButton.grid(row=5,column=0)
+
         self.pictureSpot = Canvas(title,width = 640, height = 180)
         self.pictureSpot.grid(row = 0, column = 0) 
         self.photo = PhotoImage(file = "eilogo.gif")
@@ -68,6 +71,10 @@ class Application(Frame):
     def parabolaFunc(self):
         root.destroy()
         os.system('python3 THIS_WORKS.py "three"')
+
+    def nucChartFunc(self):
+        root.destroy()
+        os.system('python3 Decay_Chart_GUI.py')
 
     def exitButton(self):
         self.exitcount = 1

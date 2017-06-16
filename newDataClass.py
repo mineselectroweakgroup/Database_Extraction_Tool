@@ -225,8 +225,9 @@ class data:##This is the main data class.
             #print(self.data)
             if (not self.data):
                 if(UI):
+                    pass
                     ## Prints a statement telling user than no file was found
-                    print("Warning:No data filtered/selected for "+ self.name +".")
+                    #print("Warning:No data filtered/selected for "+ self.name +".")
                 self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
                 
         #if(self.op == 'EoL'):
@@ -244,6 +245,7 @@ class data:##This is the main data class.
             else:
                 if(UI):
                     ## Prints a statement telling user than no file was found
-                    print("Warning:No data filtered/selected for "+ self.name +".")
+                    pass
+                    #print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
                 self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
 
