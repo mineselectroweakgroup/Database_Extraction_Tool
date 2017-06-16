@@ -1,25 +1,5 @@
 from decimal import *
-from fractions import Fraction
-
-def getPI(JPI): ## Extract parity
-        if '+' in JPI:
-            return '+'
-        elif '-' in JPI:
-            return '-'
-        else:
-            return ''
-def getJ(JPI): ## Extract spin w/o parity
-
-    return Fraction(JPI.replace('+','').replace('-',''))
-
-def getJrange(lowval,highval): ## Creates range of spins
-    jRange = [lowval]
-    while (jRange[-1] < highval):
-        jRange.append(jRange[-1]+1)
-    for jIndex in range(len(jRange)):
-        jRange[jIndex] = str(jRange[jIndex])
-    return jRange
-        
+from spinSearch import spinMatchFinder
 
 class data:##This is the main data class.
     def __init__(self,ENSDF,ISOvar,option = 'EoL',energyLimit = 999999999, maxSpin = 9):
@@ -145,7 +125,7 @@ class data:##This is the main data class.
             for i in range(len(self.data)):
                 datFile.write(str.encode(str(self.name)+';'+str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+'\n'))
 
-
+    '''
     def spinMatchFinder(self,matchVal,checkVal):
         ## matchVal is the desired spin, checkVal is the spin to be checked for matchVal      
         tempList = checkVal.replace('**','').replace('&',',') 
@@ -237,7 +217,7 @@ class data:##This is the main data class.
         else:
             ## Spin not found
             return False
-
+    '''
 
     def filterData(self,userInput,UI=False):
         ## no spin input
@@ -257,7 +237,7 @@ class data:##This is the main data class.
                 for i in range(0,len(self.data)): 
                     #print(self.name,self.data[i])
                     ## The spinMatchFinder will identify if the state is the desired spin
-                    if(self.spinMatchFinder(wantedString, self.data[i][1])):
+                    if(spinMatchFinder(wantedString, self.data[i][1])):
                         newData.append(self.data[i])
             if(newData):
                 self.data=newData##changes data to the new data.
