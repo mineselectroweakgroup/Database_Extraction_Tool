@@ -133,7 +133,7 @@ class Application(Frame):
             self.newest = self.newest.replace(os.getcwd()+"/","")
             if self.newest[-4:] != ".gif":
                 try:
-                    self.newest = "Matt_Martin.gif"
+                    self.newest = "nuclearChartQValues.gif"
                     self.photo = PhotoImage(file=self.newest)
                     self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
                 except:

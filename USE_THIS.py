@@ -73,8 +73,8 @@ class Application(Frame):
         os.system('python3 THIS_WORKS.py "three"')
 
     def nucChartFunc(self):
-        os.system('gnuplot nuclearChart.plt')
-        os.system('okular nuclearChart.png')
+        root.destroy()
+        os.system('python3 Decay_Chart_GUI.py')
 
     def exitButton(self):
         self.exitcount = 1

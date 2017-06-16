@@ -1,9 +1,10 @@
 reset
 unset key
+set title `head -1 "IsotopeList.txt"`
 set xlabel "Number of Neutrons (N)"
 set ylabel "Number of Protons (Z)"
-set palette rgb 21,22,23
-set cbrange [0:30000]
+set palette defined (0 'black', 1 'red', 2 'orange', 3 'yellow', 4 'green', 5 'blue')
+set nocolorbox
 set datafile sep ','
 set size 1,1
 set pointsize 3
@@ -11,7 +12,7 @@ set xtics 10
 set ytics 10
 set grid
 set xrange [-1:180]
-set term png size 5000,4500 font "/home/matmarti/Database_Extraction_Tool/Helvetica.ttf" 50
+set term png size 5000,3000 font "/home/matmarti/Database_Extraction_Tool/Helvetica.ttf" 50
 set output "nuclearChart.png"
 
 set arrow 1 from 1.5, graph 0 to 1.5, graph 1 nohead linewidth 2
@@ -41,7 +42,5 @@ set arrow 23 from graph 0, first 49.5 to graph 1, first 49.5 nohead linewidth 2
 set arrow 24 from graph 0, first 50.5 to graph 1, first 50.5 nohead linewidth 2
 set arrow 25 from graph 0, first 81.5 to graph 1, first 81.5 nohead linewidth 2
 set arrow 26 from graph 0, first 82.5 to graph 1, first 82.5 nohead linewidth 2
-set arrow 27 from graph 0, first 125.5 to graph 1, first 125.5 nohead linewidth 2
-set arrow 28 from graph 0, first 126.5 to graph 1, first 126.5 nohead linewidth 2
 
-plot "IsotopeList.txt" using ($3-$2):2:4 with points palette pointtype 5
+plot "IsotopeList.txt" using 1:2:3 with points palette pointtype 5

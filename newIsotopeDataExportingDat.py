@@ -66,7 +66,7 @@ def datExp(option,UI=False,Filter=False):
         wantedSpins=str(parabolaoutputs.J).replace(" ","")
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
-        temperature = 0
+        temperature = float(parabolaoutputs.T)
         exitcount = 0
 
 
@@ -171,7 +171,6 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         #Reset gnuplot.
                 pltFile.write(str.encode("reset\n"))
 
-
         #This removes the default legend in the final plot, because the legend is ugly and not useful in our case.
                 pltFile.write(str.encode("unset key\n"))
 
@@ -203,9 +202,9 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             datafileline = datafile.readline().split(';')
             ionization = datafileline[4][:-1]
             if(i+fileParsingFactor>higherBound+rangecount):
-                setLine=setLine+"\""+str(i)+str(element)+" "+ionization+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+")"
+                setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+ionization+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+")"
             else:
-                setLine=setLine+"\""+str(i)+str(element)+" "+ionization+"\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
+                setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+ionization+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
         mostrecentrangecount = rangecount
 
     if os.path.isfile(fileName): #FIXME what is this supposed to do outside of the 'if' scope in which fileName is initialized? This causes the program to crash if no data is found :(
@@ -257,15 +256,15 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             if os.path.isfile(fileName):
                 os.remove(fileName)
             if rangecount >= 20:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 6\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 6\n"))
             elif rangecount >= 15:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 7\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 7\n"))
             elif rangecount >= 10:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 9\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 9\n"))
             elif rangecount >= 5:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
             else:
-                pltFile.write(str.encode("set term gif font \""+os.getcwd()+"/Helvetica.ttf\" 14\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 14\n"))
             pltFile.write(str.encode("set term gif size 700,500\n"))
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
             pltFile.write(str.encode("refresh\n"))
