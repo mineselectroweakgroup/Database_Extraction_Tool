@@ -210,9 +210,11 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         mostrecentrangecount = rangecount
 
     #if os.path.isfile(fileName): #FIXME what is this supposed to do outside of the 'if' scope in which fileName is initialized? This causes the program to crash if no data is found :(
-    if (fileNameBool):
+    try:
         pltFile.write(str.encode(setLine[:-1]+")"+"\n"))
         pltFile.write(str.encode("set xrange [0:"+str(rangecount+1)+"]\n"))
+    except:
+        pass
     
     itercount = 0
     mostrecentiter = 0
@@ -258,7 +260,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         #as a .gif file.
         #Also in here is the font and font size for the .gif file
         #if os.path.isfile(fileName):
-        if fileNameBool:
+        try:
             fileName = fileName.replace('.plt','.gif')
             fileName = fileName[15:]
             if os.path.isfile(fileName):
@@ -277,6 +279,8 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
             pltFile.write(str.encode("refresh\n"))
             pltFile.write(str.encode("set term x11"))
+        except:
+            pass
         exit
 
     
