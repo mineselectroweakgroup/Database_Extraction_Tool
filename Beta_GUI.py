@@ -173,6 +173,8 @@ class betaoutputs:
     E=app.energyVar
     B=app.betaVar
     temp=app.tempVar
+    if temp == "":
+        temp = 0
     temp=float(temp)
 
     ##These if statements kill the program if the user leaves a section blank
