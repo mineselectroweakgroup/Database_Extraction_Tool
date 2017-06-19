@@ -33,8 +33,8 @@ class Application(Frame):
         evalDataButton = Button(buttons,text = "EVALUATED NUCLEAR STRUCTURE DATA", command = self.evalFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
         evalDataButton.grid(row = 1, column = 0)
 
-        massDataButton = Button(buttons, text = "FUCK YOU HAYDEN, I DISABLED YOUR BUTTON", command = self.massFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",state=DISABLED)
-        massDataButton.grid(row = 2, column = 0)
+        #massDataButton = Button(buttons, text = "FUCK YOU HAYDEN, I DISABLED YOUR BUTTON", command = self.massFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",state=DISABLED)
+        #massDataButton.grid(row = 2, column = 0)
 
         betaDataButton = Button(buttons, text = "EVALUATED BETA DECAY DATA", command = self.betaFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
         betaDataButton.grid(row = 3, column = 0)

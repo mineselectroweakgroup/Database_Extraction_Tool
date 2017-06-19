@@ -74,29 +74,13 @@ class data:##This is the main data class.
                 ## Set uncert to 0 if not numeric 
                 elif (not uncert.isnumeric()):
                     uncert = '0'
-
-                elif ('.' in energy): ## Convert uncertainty to proper magnitude
-                    numberino = energy
-                    topLimit = 0
-                    
-                    for i in range(len(numberino)-1):
-                        
-                        if (numberino[-1-i] == '.'):
-                            decIndex = i
-                            if (decIndex == 0):
-                                ## If the '.' is the last digit in the energy, numberino[-i:] will 
-                                ## return the entire string, which is no bueno 
-                                numberino = numberino[:-1-i]
-                            else:
-                                numberino = numberino[:-1-i] + numberino[-i:]
-                        if (i < len(uncert)):
-                            digit = int(numberino[-1-i])+int(uncert[-1-i])
-                        else:
-                            digit = int(numberino[-1-i])
-                        topLimit = digit * (10**i) + topLimit
-                    topLimit = str(topLimit)[:-decIndex]+'.'+str(topLimit)[-decIndex:]
-                    uncert = str(Decimal(topLimit)-Decimal(energy))
-
+                
+                ## gives uncertainty correct magnitude
+                elif ('.' in energy):
+                    s = energy.find('.')
+                    decimals = energy[s+1:]
+                    decimals = Decimal(-len(decimals))
+                    uncert = str(Decimal(uncert)*10**decimals)
 
 
                 ## Finding ALL spin and pairity states (to be filtered later)

@@ -21,7 +21,7 @@ class Application(Frame):
         #This defines variables to be used
         self.chemSymVar = StringVar()
         self.A = StringVar()
-        self.spinVar = StringVar()
+        self.energyVar = StringVar()
         self.tempVar = StringVar()
         
     #This function creates the actual frame for the GUI including the buttons and input boxes
@@ -41,13 +41,13 @@ class Application(Frame):
         decayLabel = Label(decay, text = "Evaluated Beta Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
         decayLabel.grid(columnspan = 4,row = 0)
 
-        chemSymLabel = Label(decay, text = "Parent (ex. Zn)",bg='#21314D',fg='#92A2BD',font=11)
-        chemSymLabel.grid(row = 1, column = 0, sticky = W)
-        ALabel = Label(decay, text = "Isotope (ex. 60)",bg='#21314D',fg='#92A2BD',font=11)
-        ALabel.grid(row = 1, column = 1, sticky = W)
+        chemSymLabel = Label(decay, text = "Element (ex. Zn)",bg='#21314D',fg='#92A2BD',font=11)
+        chemSymLabel.grid(row = 1, column = 1, sticky = W)
+        ALabel = Label(decay, text = "A (ex. 64)",bg='#21314D',fg='#92A2BD',font=11)
+        ALabel.grid(row = 1, column = 0, sticky = W)
 
-        spinLabel = Label(decay, text = "Spin (ex. 0+,3/2-...",bg='#21314D',fg='#92A2BD',font=11)
-        spinLabel.grid(row = 1, column = 2, sticky = W)
+        energyLabel = Label(decay, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=11)
+        energyLabel.grid(row = 1, column = 2, sticky = W)
 
         tempLabel = Label(decay, text = "Temperature(K)",bg='#21314D',fg='#92A2BD',font=11)
         tempLabel.grid(row = 6, column = 0, sticky = W)
@@ -60,12 +60,12 @@ class Application(Frame):
         option.configure(fg='#21314D',bg='#92A2BD',font=11,highlightbackground="#21314D")
 
         #Set up input boxes for each of the entries
-        self.chemSymEntry = Entry(decay)
-        self.chemSymEntry.grid(row = 2, column = 0, sticky = W)
         self.AEntry = Entry(decay)
-        self.AEntry.grid(row = 2, column = 1, sticky = W)
-        self.spinEntry = Entry(decay)
-        self.spinEntry.grid(row = 2, column = 2, sticky = W)
+        self.AEntry.grid(row = 2, column = 0, sticky = W)
+        self.chemSymEntry = Entry(decay)
+        self.chemSymEntry.grid(row = 2, column = 1, sticky = W)
+        self.energyEntry = Entry(decay)
+        self.energyEntry.grid(row = 2, column = 2, sticky = W)
 
         self.tempEntry = Entry(decay)
         self.tempEntry.grid(row=7,column=0,sticky = W)
@@ -101,7 +101,7 @@ class Application(Frame):
             self.newest = self.newest.replace(os.getcwd()+"/","")
             if self.newest[-4:] != ".gif":
                 try:
-                    self.newest = "nuclearChartQValues.gif"
+                    self.newest = "nuclearChart.gif"
                     self.photo = PhotoImage(file=self.newest)
                     self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
                 except:
@@ -129,7 +129,7 @@ class Application(Frame):
         """Send user input to nuclear structure sorting function"""
         self.chemSymVar = self.chemSymEntry.get()
         self.A = self.AEntry.get()
-        self.spinVar = self.spinEntry.get()
+        self.energyVar = self.energyEntry.get()
         self.betaVar = self.betaVar.get()
         self.tempVar = self.tempEntry.get()
         root.destroy()#closes window
@@ -169,7 +169,8 @@ class betaoutputs:
 #These are the Nuclear Structure (ENSDF inputs) variables
     Z=app.chemSymVar
     A=app.A
-    J=app.spinVar
+    J=""
+    E=app.energyVar
     B=app.betaVar
     temp=app.tempVar
     temp=float(temp)

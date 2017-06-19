@@ -24,7 +24,6 @@ def function(option):
         md.addMass(userInput[0],userInput[1],userInput[2],userInput[3])
 
     addion.addIonization(userInput[0],userInput[1],userInput[2],userInput[3],userInput[4],userInput[5])
-
     renorm.renormalize(userInput[0],userInput[1],userInput[2],userInput[3])
 
     time.sleep(0.01)
