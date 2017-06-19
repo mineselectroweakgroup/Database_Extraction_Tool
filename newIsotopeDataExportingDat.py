@@ -38,7 +38,7 @@ def datExp(option,UI=False,Filter=False):
         lowerBound = int(betaoutputs.A)
         higherBound = int(betaoutputs.A)
         betaVariable = str(betaoutputs.B)
-        energyLim = 9999999
+        energyLim = int(betaoutputs.E)
         massData = "YES"
         wantedSpins=str(betaoutputs.J).replace(" ","")
         perTable = open("ElementList.txt","r")
