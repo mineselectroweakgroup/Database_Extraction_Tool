@@ -119,13 +119,13 @@ def spinMatchFinder(matchVal,checkVal):
                 tempList.insert(j,tempList[j]+'-')
                 tempList[j+1] = tempList[j+1]+'+'
             j+=1
-    print(tempList)
+    
     if (matchVal in tempList):
         return True
 
     ## AP LE GE handling.
     elif any('GE' in value or 'LE' in value or 'AP' in value for value in tempList):
-        print(tempList)
+        
         for value in tempList:
             ## Greater than or equal
             if 'GE' in value:
