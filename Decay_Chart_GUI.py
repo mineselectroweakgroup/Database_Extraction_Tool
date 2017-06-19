@@ -48,11 +48,11 @@ class Application(Frame):
         ECButton = Button(decay, text = "EC Decay", command = self.ECFunc,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
         ECButton.grid(row = 1, column = 2)
 
-        tempButton = Button(decay, text = "Temperature", command = self.tempFunc,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        tempButton.grid(columnspan = 2, row = 2, column = 0)
+        #tempButton = Button(decay, text = "Temperature", command = self.tempFunc,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
+        #tempButton.grid(columnspan = 2, row = 2, column = 0)
 
-        self.tempEntry = Entry(decay,highlightbackground="#21314D")
-        self.tempEntry.grid(columnspan = 2, row = 2, column = 1)
+        #self.tempEntry = Entry(decay,highlightbackground="#21314D")
+        #self.tempEntry.grid(columnspan = 2, row = 2, column = 1)
 
         fullScreenSubmit = Button(decay, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
         fullScreenSubmit.grid(row = 3, column = 0)
