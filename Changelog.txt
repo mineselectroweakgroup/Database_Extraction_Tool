@@ -82,3 +82,7 @@ Version UPDATE 0.5.0 06-16-2017 1400MT -W. McDonald and M.S. Martin:
     Cleaned up plotting for error bars.
     Fixed error propagation.
     Added renormalization and ionization functions.
+
+Verstion 0.5.1 06-19-2017 1400MT -W. McDonald and M.S. Martin:
+    Fixed spin and uncertainty issues described in Issue #5 on GitHUb.
+    Various GUI changes.
