@@ -75,6 +75,7 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
 
 
     for title in elementName:
+        title = title.upper()
         for i in range(lowerBound,higherBound+1):
             filenameopen = (str(i)+str(title)+wantedSpins+"_Fil.dat").replace("/","_")
 
