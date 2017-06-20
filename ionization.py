@@ -20,13 +20,14 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
     elementName = removeElements(elementName)
 
     for line in energyList:
-        elementTitle = line[10:12].replace(" ","")
+        elementTitle = line[10:12].replace(" ","").upper()
         masschange[elementTitle] = 0
         uncertainty[elementTitle]= 0
         count[elementTitle] = 0
 
     for line in energyList:
         element = line[10:12].replace(" ","")
+        element = element.upper()
         energy[element] = line[148:186].replace(" ","")
         if len(energy[element]) >= 2:
             if energy[element][-2] == ')':

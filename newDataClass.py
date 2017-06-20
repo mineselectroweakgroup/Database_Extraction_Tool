@@ -103,7 +103,7 @@ class data:##This is the main data class.
     ## extraTitleText would be desired spin states, for example
     def export(self,fExtOption = '.dat',extraTitleText = ''): 
 #            if(fExtOption==".dat"or fExtOption=="_Fil.dat"):##To make data files for use in gnuplot and plt file.
-            fileName=str(self.name)+extraTitleText+fExtOption##creates filename
+            fileName=str(self.name.upper())+extraTitleText+fExtOption##creates filename
             fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
             datFile = open(fileName,'wb')##Creates a file with a valid file name.
             for i in range(len(self.data)):

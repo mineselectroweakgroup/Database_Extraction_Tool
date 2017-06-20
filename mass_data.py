@@ -13,6 +13,7 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
 
 
     for element in elementName:
+        element = element.upper()
         for i in range(lowerBound,higherBound+1):
             k=0
             while k <= len(data)-1:
@@ -20,6 +21,7 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
 
                     masselement = str(data[k][20])+str(data[k][21])
                     masselement = masselement.replace(" ","")
+                    masselement = masselement.upper()
 
                     if element == masselement:
 

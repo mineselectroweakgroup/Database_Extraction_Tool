@@ -167,7 +167,7 @@ root.mainloop()
 
 class betaoutputs:
 #These are the Nuclear Structure (ENSDF inputs) variables
-    a=app.chemSymVar
+    a=app.chemSymVar.upper()
     b=app.A
     J=""
     E=app.energyVar
