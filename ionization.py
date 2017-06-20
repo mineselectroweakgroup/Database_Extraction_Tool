@@ -98,63 +98,63 @@ def removeElements(elementName):
     except:
         pass
     try:
-        elementName.remove("Rf")
+        elementName.remove("RF")
     except:
         pass
     try:
-        elementName.remove("Db")
+        elementName.remove("DB")
     except:
         pass
     try:
-        elementName.remove("Sg")
+        elementName.remove("SG")
     except:
         pass
     try:
-        elementName.remove("Bh")
+        elementName.remove("BH")
     except:
         pass
     try:
-        elementName.remove("Hs")
+        elementName.remove("HS")
     except:
         pass
     try:
-        elementName.remove("Mt")
+        elementName.remove("MT")
     except:
         pass
     try:
-        elementName.remove("Ds")
+        elementName.remove("DS")
     except:
         pass
     try:
-        elementName.remove("Rg")
+        elementName.remove("RG")
     except:
         pass
     try:
-        elementName.remove("Cn")
+        elementName.remove("CN")
     except:
         pass
     try:
-        elementName.remove("Ed")
+        elementName.remove("ED")
     except:
         pass
     try:
-        elementName.remove("Fl")
+        elementName.remove("FL")
     except:
         pass
     try:
-        elementName.remove("Ef")
+        elementName.remove("EF")
     except:
         pass
     try:
-        elementName.remove("Lv")
+        elementName.remove("LV")
     except:
         pass
     try:
-        elementName.remove("Eh")
+        elementName.remove("EH")
     except:
         pass
     try:
-        elementName.remove("Ei")
+        elementName.remove("EI")
     except:
         pass
     return(elementName)
