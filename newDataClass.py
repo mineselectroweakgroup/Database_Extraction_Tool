@@ -1,6 +1,50 @@
 from decimal import *
 from spinSearch import spinMatchFinder
 
+HBAR = 6.582119514e-16 ## [eV sec] from NIST
+LN2 = 6.931471806e-1
+
+def convertToSec(hl,dhl):
+    [val,units]=hl.split(' ')
+    if 'EV' in units:
+        if units = 'EV':
+            conversion = 1
+        elif units = 'KEV':
+            conversion = 10**3
+        elif units = 'MEV':
+            conversion = 10**6
+        val = float(val) * conversion
+        dwidth = [float(it) * conversion for it in dhl]
+        hl = HBAR * LN2 / val
+        #FIXME uncertainty prop. needed
+    else:
+        if units = 'Y':
+            conversion = 3.1536e7
+        elif units = 'D':
+            conversion = 8.64e4
+        elif units = 'H':
+            conversion = 3.6e3
+        elif units = 'M':
+            conversion = 60 
+        elif units = 'S':
+            conversion = 1
+        elif units = 'MS':
+            conversion = 10**-3
+        elif units = 'US':
+            conversion = 10**-6
+        elif units = 'NS':
+            conversion = 10**-9
+        elif units = 'PS':
+            conversion = 10**-12
+        elif units = 'FS':
+            conversion = 10**-15
+        elif units = 'AS':
+            conversion = 10**-18
+        hl = float(val) * conversion
+        dhl = [float(it) * conversion for it in dhl]
+    
+    
+    
 class data:##This is the main data class.
     def __init__(self,ENSDF,ISOvar,option = 'EoL',energyLimit = 999999999, maxSpin = 9):
         ###maybe get rid of option, find out how energy limit and max spin are used
@@ -42,6 +86,7 @@ class data:##This is the main data class.
 
              ## Identifies which lines in the data file have relevant data
             if (line[6:8]==' L' and line[0:6]==nucID):
+                print(linecount,line)
 
                 ## set desiredData bool so the program wil exit after reading adopted data
                 desiredData = True
@@ -91,7 +136,18 @@ class data:##This is the main data class.
 
                 ## Finding stability info FIXME: this data is currently not used
                 hlife = line[39:49].strip()
-                # if stable, set to 10**9 year
+                dhlife = line[49:55].strip()
+                if dhlife[0] == '+':
+                    dhlife = dhlife.split('-')
+                    dhlife[0] = dhlife[0].replace('+','')
+                elif dhlife[0] == '-':
+                    float('Crash dat shit, brah')
+
+                if hlife == 'STABLE':
+                    hlife == 3.1536e16 ## 10**9 years in seconds
+                else:
+                    pass #FIXME unit conversion done on uncertainty too
+                
 
                 if(float(energy)<=energyLimit):
                     #include the data
