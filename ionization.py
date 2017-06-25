@@ -20,13 +20,14 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
     elementName = removeElements(elementName)
 
     for line in energyList:
-        elementTitle = line[10:12].replace(" ","")
+        elementTitle = line[10:12].replace(" ","").upper()
         masschange[elementTitle] = 0
         uncertainty[elementTitle]= 0
         count[elementTitle] = 0
 
     for line in energyList:
         element = line[10:12].replace(" ","")
+        element = element.upper()
         energy[element] = line[148:186].replace(" ","")
         if len(energy[element]) >= 2:
             if energy[element][-2] == ')':
@@ -74,6 +75,7 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
 
 
     for title in elementName:
+        title = title.upper()
         for i in range(lowerBound,higherBound+1):
             filenameopen = (str(i)+str(title)+wantedSpins+"_Fil.dat").replace("/","_")
 
@@ -97,63 +99,63 @@ def removeElements(elementName):
     except:
         pass
     try:
-        elementName.remove("Rf")
+        elementName.remove("RF")
     except:
         pass
     try:
-        elementName.remove("Db")
+        elementName.remove("DB")
     except:
         pass
     try:
-        elementName.remove("Sg")
+        elementName.remove("SG")
     except:
         pass
     try:
-        elementName.remove("Bh")
+        elementName.remove("BH")
     except:
         pass
     try:
-        elementName.remove("Hs")
+        elementName.remove("HS")
     except:
         pass
     try:
-        elementName.remove("Mt")
+        elementName.remove("MT")
     except:
         pass
     try:
-        elementName.remove("Ds")
+        elementName.remove("DS")
     except:
         pass
     try:
-        elementName.remove("Rg")
+        elementName.remove("RG")
     except:
         pass
     try:
-        elementName.remove("Cn")
+        elementName.remove("CN")
     except:
         pass
     try:
-        elementName.remove("Ed")
+        elementName.remove("ED")
     except:
         pass
     try:
-        elementName.remove("Fl")
+        elementName.remove("FL")
     except:
         pass
     try:
-        elementName.remove("Ef")
+        elementName.remove("EF")
     except:
         pass
     try:
-        elementName.remove("Lv")
+        elementName.remove("LV")
     except:
         pass
     try:
-        elementName.remove("Eh")
+        elementName.remove("EH")
     except:
         pass
     try:
-        elementName.remove("Ei")
+        elementName.remove("EI")
     except:
         pass
     return(elementName)

@@ -167,8 +167,8 @@ root.mainloop()
 
 class betaoutputs:
 #These are the Nuclear Structure (ENSDF inputs) variables
-    Z=app.chemSymVar
-    A=app.A
+    a=app.chemSymVar.upper()
+    b=app.A
     J=""
     E=app.energyVar
     B=app.betaVar
@@ -176,6 +176,13 @@ class betaoutputs:
     if temp == "":
         temp = 0
     temp=float(temp)
+
+    if a.isdigit() and b.isalpha():
+        Z = b
+        A = a
+    else:
+        Z = a
+        A = b
 
     ##These if statements kill the program if the user leaves a section blank
     if Z == '' or A == '':

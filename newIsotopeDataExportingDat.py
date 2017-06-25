@@ -26,6 +26,7 @@ def datExp(option,UI=False,Filter=False):
         wantedSpins=str(guioutputs.J).replace(" ","")
         energyLim=int(guioutputs.E)
         elementName = elementName.replace(" ","")
+        elementName = elementName.upper()
         elementName = elementName.split(',')
         temperature = str(guioutputs.temp)
         if temperature == "":

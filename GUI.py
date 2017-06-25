@@ -206,6 +206,10 @@ root.mainloop()
 class guioutputs:
 #These are the Nuclear Structure (ENSDF inputs) variables
     Z=app.chemSymVar
+    try:
+        Z=Z.upper()
+    except:
+        pass
     isoLow=app.lowBoundIsoVar
     J=app.spinVar
     isoUp=app.upBoundIsoVar
