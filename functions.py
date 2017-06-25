@@ -1,4 +1,53 @@
+## This file contains functions that are used by newDataClass.py to read and filter data from the ensdf files
+
 from fractions import Fraction
+from decimal import Decimal
+from uncertainty import halfLifeErrorProp
+
+HBAR = Decimal('6.582119514e-16') ## [eV sec] from NIST
+LN2 = Decimal('6.931471806e-1')
+
+def convertToSec(hl,dhl):
+    [val,units]=hl.split(' ')
+    if 'EV' in units:
+        if units == 'EV':
+            conversion = '1'
+        elif units == 'KEV':
+            conversion = '1e3'
+        elif units == 'MEV':
+            conversion = '1e6'
+        width = Decimal(val) * Decimal(conversion)
+        dwidth = [Decimal(num) * Decimal(conversion) for num in dhl]
+        hl = HBAR * LN2 / width
+        dhl = [halfLifeErrorProp(width,num) for num in dwidth]
+        
+    else:
+        if units == 'Y':
+            conversion = '3.1536e7'
+        elif units == 'D':
+            conversion = '8.64e4'
+        elif units == 'H':
+            conversion = '3.6e3'
+        elif units == 'M':
+            conversion = '60' 
+        elif units == 'S':
+            conversion = '1'
+        elif units == 'MS':
+            conversion = '1e-3'
+        elif units == 'US':
+            conversion = '1e-6'
+        elif units == 'NS':
+            conversion = '1e-9'
+        elif units == 'PS':
+            conversion = '1e-12'
+        elif units == 'FS':
+            conversion = '1e-15'
+        elif units == 'AS':
+            conversion = '1e-18'
+        hl = Decimal(val) * Decimal(conversion)
+        dhl = [Decimal(it) * Decimal(conversion) for it in dhl]
+    
+    return [hl, dhl]
 
 def getPI(JPI): ## Extract parity
         if '+' in JPI:

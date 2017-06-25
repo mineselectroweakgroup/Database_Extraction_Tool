@@ -1,49 +1,7 @@
 from decimal import *
-from spinSearch import spinMatchFinder
-
-HBAR = 6.582119514e-16 ## [eV sec] from NIST
-LN2 = 6.931471806e-1
-
-def convertToSec(hl,dhl):
-    [val,units]=hl.split(' ')
-    if 'EV' in units:
-        if units = 'EV':
-            conversion = 1
-        elif units = 'KEV':
-            conversion = 10**3
-        elif units = 'MEV':
-            conversion = 10**6
-        val = float(val) * conversion
-        dwidth = [float(it) * conversion for it in dhl]
-        hl = HBAR * LN2 / val
-        #FIXME uncertainty prop. needed
-    else:
-        if units = 'Y':
-            conversion = 3.1536e7
-        elif units = 'D':
-            conversion = 8.64e4
-        elif units = 'H':
-            conversion = 3.6e3
-        elif units = 'M':
-            conversion = 60 
-        elif units = 'S':
-            conversion = 1
-        elif units = 'MS':
-            conversion = 10**-3
-        elif units = 'US':
-            conversion = 10**-6
-        elif units = 'NS':
-            conversion = 10**-9
-        elif units = 'PS':
-            conversion = 10**-12
-        elif units = 'FS':
-            conversion = 10**-15
-        elif units = 'AS':
-            conversion = 10**-18
-        hl = float(val) * conversion
-        dhl = [float(it) * conversion for it in dhl]
-    
-    
+from functions import spinMatchFinder
+from functions import convertToSec
+ 
     
 class data:##This is the main data class.
     def __init__(self,ENSDF,ISOvar,option = 'EoL',energyLimit = 999999999, maxSpin = 9):
@@ -86,17 +44,17 @@ class data:##This is the main data class.
 
              ## Identifies which lines in the data file have relevant data
             if (line[6:8]==' L' and line[0:6]==nucID):
-                print(linecount,line)
+                #print(linecount,line[:-1])
 
                 ## set desiredData bool so the program wil exit after reading adopted data
                 desiredData = True
 
-                ## finding the energy
+                ## FINDING THE ENERGY
                 energy = line[9:19].strip()
 
                 ## check if valid energy data (i.e. no letter at beginning or end)
                 if (energy[0].isalpha() or energy[-1].isalpha()):
-                    continue
+                    energy = '-1'
 
                 ## This will handle states with deduced energies enclosed in () 
                 deducedEnergy = False
@@ -111,7 +69,7 @@ class data:##This is the main data class.
                     energy = str(significand * power)
 
                 
-                ## Finding the uncertainty
+                ## FINDING THE ENERGY UNCERTAINTY
                 uncert = line[19:21].strip()
                 ## Set unsert to 0 if no uncertainty is given.
                 if (uncert == ''):
@@ -128,29 +86,60 @@ class data:##This is the main data class.
                     uncert = str(Decimal(uncert)*10**decimals)
 
 
-                ## Finding ALL spin and pairity states (to be filtered later)
+                ## FINDING ALL SPIN AND PARITY STATES (TO BE FILTERED LATER)
                 jpi = line[21:39].strip() 
                 ## indicating deduced energy
                 if deducedEnergy:
                     jpi = jpi + '**'
 
-                ## Finding stability info FIXME: this data is currently not used
+
+                ## FINDING HALF LIFE AND HALF LIFE UNCERTAINTY 
                 hlife = line[39:49].strip()
                 dhlife = line[49:55].strip()
-                if dhlife[0] == '+':
+                
+                #FIXME if t1/2 is > 10^9 years, set hlife to 'STABLE'. currently the code is backwards
+                if hlife == 'STABLE':
+                    #hlife = 3.1536e16 ## 10**9 years in seconds
+                    dhlife = [0]
+
+                ## If no half life info is given, hlife is set to -1
+                elif hlife == '':
+                    hlife = -1
+                    dhlife = [0]
+                ## CHeck for missing uncertainty
+                elif dhlife == '':
+                    #FIXME do something here, probbbly crash test this case
+                ## Check for non numerical uncertainty
+                elif any(char.isalpha() for char in dhlife):
+                    print('bogus')
+                    #pass
+                ## Standard uncertainty
+                elif dhlife.isnumeric():                 
+                    dhlife = [dhlife,dhlife]
+                    if '.' in hlife:
+                        s = hlife.split(' ')[0].find('.')
+                        decimals = hlife.split(' ')[0][s+1:]
+                        decimals = Decimal(-len(decimals))
+                        dhlife = [str(Decimal(val)*10**decimals) for val in dhlife]
+                    
+                    [hlife,dhlife] = convertToSec(hlife,dhlife)
+                ## If uncertainty is given as +x-y
+                elif dhlife[0] == '+':
                     dhlife = dhlife.split('-')
                     dhlife[0] = dhlife[0].replace('+','')
+                    if '.' in hlife:
+                        s = hlife.split(' ')[0].find('.')
+                        decimals = hlife.split(' ')[0][s+1:]
+                        decimals = Decimal(-len(decimals))
+                        dhlife = [str(Decimal(val)*10**decimals) for val in dhlife]
+                    [hlife,dhlife] = convertToSec(hlife,dhlife)
+                ## Not sure if the following case ever appears in the data
                 elif dhlife[0] == '-':
                     float('Crash dat shit, brah')
-
-                if hlife == 'STABLE':
-                    hlife == 3.1536e16 ## 10**9 years in seconds
-                else:
-                    pass #FIXME unit conversion done on uncertainty too
-                
+                                
 
                 if(float(energy)<=energyLimit):
-                    #include the data
+                    #include the data #FIXME half lives
                     self.data.append([energy,jpi,uncert])
                     #print(str(linecount)+' :'+str(self.data[-1]))
                 else:
@@ -183,7 +172,6 @@ class data:##This is the main data class.
             if (self.data): ## If self.data has data in it
                 newData = []
                 groundSt = self.data[0]
-                #FIXME newData.append(self.data[0]) ## storage for new data
                 for wantedString in userInput.split(","):##adds all the strings that are included in the userInput.
                     for i in range(1,len(self.data)): 
                         #print(self.name,self.data[i])
