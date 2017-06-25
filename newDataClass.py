@@ -108,11 +108,10 @@ class data:##This is the main data class.
                     dhlife = [0]
                 ## CHeck for missing uncertainty
                 elif dhlife == '':
-                    #FIXME do something here, probbbly crash test this case
+                    dhlife = [0]
                 ## Check for non numerical uncertainty
                 elif any(char.isalpha() for char in dhlife):
-                    print('bogus')
-                    #pass
+                    pass
                 ## Standard uncertainty
                 elif dhlife.isnumeric():                 
                     dhlife = [dhlife,dhlife]
@@ -140,7 +139,7 @@ class data:##This is the main data class.
 
                 if(float(energy)<=energyLimit):
                     #include the data #FIXME half lives
-                    self.data.append([energy,jpi,uncert])
+                    self.data.append([energy,jpi,uncert,hlife,dhlife])
                     #print(str(linecount)+' :'+str(self.data[-1]))
                 else:
                     break
