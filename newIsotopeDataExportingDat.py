@@ -153,10 +153,13 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
         filenameopen = (str(lowerBound+removecount[element])+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
         fileNameBool = False
         if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
-            #plt file Naming
-            fileName= str(lowerBound)+str(elementnamestring)+"_"+str(higherBound)+str(elementnamestring)+wantedSpins+fileParsingFactorStr+"_Fil.plt"        
+            if option == "one":
+                fileName = str(elementnamestring)+"_"+str(lowerBound)+"to"+str(higherBound)+"_"+wantedSpins+"_"+str(energyLim)+".plt"
+            elif option == "two":
+                fileName = "Beta_"+str(lowerBound)+str(elementName[0])+str(elementName[1])+"_"+str(temperature)[:-2]+"K.plt"
+            elif option == "three":
+                fileName = "Pabarbola_"+str(lowerBound)+"_"+str(temperature)[:-2]+"K.plt"
             fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
-            fileNameBool = True
             pltFile = open(fileName,'wb')
             
 
@@ -171,8 +174,6 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
 
         #This labels the y axis and the Title
                 pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
-                pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 15\"\n"))
-                #pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 90\"\n"))
                 if option == "one":
                     pltFile.write(str.encode("set title \"Excited States of ^{"+str(lowerBound)+"}"+elementnamestring+" to ^{"+str(higherBound)+"}"+elementnamestring+" with "+wantedSpins+" Spins up to "+str(energyLim)+" keV\"\n"))
                 elif option == "two":
@@ -238,8 +239,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
                 
             itercount = itercount + 1
-        mostrecentiter = itercount
-            
+        mostrecentiter = itercount   
                 
     if UI:
         print("Program is finished plotting")
@@ -248,9 +248,29 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
         #Also in here is the font and font size for the .gif file
         #if os.path.isfile(fileName):
         try:
+            pltFile.write(str.encode("set term png size 5600,4000\n"))
+            fileName = fileName[15:].replace('.plt','.png')
+            bigfileName = "Large_"+fileName.replace(".gif",".png")
+            pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 95\"\n"))
+            if os.path.isfile(bigfileName):
+                os.remove(bigfileName)
+            if rangecount >= 20:
+                pltFile.write(str.encode("set term png enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 56\n"))
+            elif rangecount >= 15:
+                pltFile.write(str.encode("set term png enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 64\n"))
+            elif rangecount >= 10:
+                pltFile.write(str.encode("set term png enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 70\n"))
+            elif rangecount >= 5:
+                pltFile.write(str.encode("set term png enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 80\n"))
+            else:
+                pltFile.write(str.encode("set term png enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 90\n"))
+            
+            pltFile.write(str.encode("set output "+"'"+bigfileName+"'"+"\n"))
+            pltFile.write(str.encode("replot\n"))
+
             pltFile.write(str.encode("set term gif size 840,600\n"))
-            fileName = fileName.replace('.plt','.gif')
-            fileName = fileName[15:]
+            fileName = fileName.replace('.png','.gif')
+            pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 15\"\n"))
             if os.path.isfile(fileName):
                 os.remove(fileName)
             if rangecount >= 20:
@@ -264,7 +284,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
             else:
                 pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 15\n"))
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
-            pltFile.write(str.encode("refresh\n"))
+            pltFile.write(str.encode("replot\n"))
             pltFile.write(str.encode("set term x11"))
         except:
             pass

@@ -164,7 +164,8 @@ class Application(Frame):
         os.chdir("Output/gnuPlot")
         directory = os.getcwd()
         newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
-        newest = newest.replace(os.getcwd()+"/","")
+        newest = newest.replace(os.getcwd()+"/","").replace(".gif",".png")
+        newest = "Large_"+newest
         os.system("okular --presentation "+newest+" &")
         os.chdir("..")
         os.chdir("..")
