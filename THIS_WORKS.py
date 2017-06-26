@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 import newDataClass as dc ### Can I remove this import? FIXME
+			### I think so -Matt
 import newIsotopeDataExportingDat as ided
 from data_array import final
-from searching_function import acquire
+			### This one too -Matt
+#from searching_function import acquire
 import mass_data as md
+			### Also this one -Matt
 import os
 import glob
 import time
