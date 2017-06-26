@@ -89,7 +89,7 @@ Version 0.5.1 06-19-2017 1400MT -W. McDonald and M.S. Martin:
 
 Version 0.5.2 06-25-2017 1545MT -W. McDonald:
     Added code to extract half life from ensdf file
-    WILL ADD COMMENT HERE
+    Half life and uncertainty in half life are evaluated in seconds
 
 Version 0.5.3 06-26-2017 0900MT -M.S. Martin:
     Changed GUIs and updated plotting

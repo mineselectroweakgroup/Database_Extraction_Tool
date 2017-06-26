@@ -92,8 +92,8 @@ class Application(Frame):
             else:
                 try:
                     self.photo = PhotoImage(file=self.newest)
-                    self.photo = self.photo.zoom(3)
-                    self.photo = self.photo.subsample(10)
+                    self.photo = self.photo.zoom(1)
+                    self.photo = self.photo.subsample(1)
                     self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
                 except:
                     print("No Image to Display")
