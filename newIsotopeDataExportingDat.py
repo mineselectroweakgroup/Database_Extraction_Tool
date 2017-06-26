@@ -88,13 +88,13 @@ def datExp(option,UI=False,Filter=False):
 
     
     #If wanted this will return the user inputs for further use
-    return [elementName,lowerBound,higherBound,wantedSpins,temperature,massData]
+    return [elementName,lowerBound,higherBound,wantedSpins,temperature,massData,energyLim]
 
 
 
        
 #This function will create a plt file for use in gnuplot to plot data from a eiter filtered data files or the whoel data file. This function is best used if used with datExp.
-def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI=False,fileParsingFactor=0):
+def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,Filter=False,wantedSpins='',UI=False,fileParsingFactor=0):
 
     fileParsingFactorStr="_every_"+str(fileParsingFactor)
 
@@ -171,10 +171,15 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
 
         #This labels the y axis and the Title
                 pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
-                pltFile.write(str.encode("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n"))
-
-        #This line Currently DOES NOT work but should make the graph greyscale.
-                pltFile.write(str.encode("set palette gray\n"))
+                pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 45\"\n"))
+                if option == "one":
+                    pltFile.write(str.encode("set title \"Excited States of ^{"+str(lowerBound)+"}"+elementnamestring+" to ^{"+str(higherBound)+"}"+elementnamestring+" with "+wantedSpins+" Spins up to "+str(energyLim)+" keV\"\n"))
+                elif option == "two":
+                    pltFile.write(str.encode("set title \"Beta Decay Scheme for ^{"+str(lowerBound)+"}"+str(elementName[0])+" and ^{"+str(higherBound)+"}"+str(elementName[1])+" at "+str(temperature)+" K\\nup to "+str(energyLim)+" keV Excitation Energy\"\n"))
+                elif option == "three":
+                    pltFile.write(str.encode("set title \"Mass Parabola for A = "+str(lowerBound)+" at "+str(temperature)+" K\"\n"))
+                else:
+                    pltFile.write(str.encode("set title \"Energy levels of "+wantedSpins+" states for "+str(lowerBound)+elementnamestring+" through "+str(higherBound)+elementnamestring+"\"\n"))
 
         #This tells gnuplot that the delimiter of each column as ,
                 pltFile.write(str.encode("set datafile sep ';'\n"))
@@ -195,7 +200,9 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
             rangecount = rangecount + 1
             datafile = open("Output/gnuPlot/"+str(i)+str(element)+wantedSpins.replace('/','_')+"_Fil.dat",'r')
             datafileline = datafile.readline().split(';')
-            ionization = datafileline[4][:-1]
+            ionization = ""
+            if option != "one":
+                ionization = datafileline[4][:-1]
             if(i+fileParsingFactor>higherBound+rangecount):
                 setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+ionization+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+")"
             else:
@@ -240,21 +247,21 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
         #Also in here is the font and font size for the .gif file
         #if os.path.isfile(fileName):
         try:
+            pltFile.write(str.encode("set term gif size 2800,2000\n"))
             fileName = fileName.replace('.plt','.gif')
             fileName = fileName[15:]
             if os.path.isfile(fileName):
                 os.remove(fileName)
             if rangecount >= 20:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 6\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 28\n"))
             elif rangecount >= 15:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 7\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 32\n"))
             elif rangecount >= 10:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 9\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 35\n"))
             elif rangecount >= 5:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 40\n"))
             else:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 14\n"))
-            pltFile.write(str.encode("set term gif size 1800,650\n"))
+                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 45\n"))
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
             pltFile.write(str.encode("refresh\n"))
             pltFile.write(str.encode("set term x11"))

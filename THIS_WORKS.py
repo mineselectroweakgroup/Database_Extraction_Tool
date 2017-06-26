@@ -29,7 +29,7 @@ def function(option):
     time.sleep(0.01)
 
 #Makes plot
-    ided.pltFileExp(userInput[5],userInput[0],userInput[1],userInput[2],True,userInput[3],True)
+    ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],True,userInput[3],True)
 
 
 

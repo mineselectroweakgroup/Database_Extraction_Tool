@@ -88,7 +88,7 @@ class Application(Frame):
 
         #Setting up the graph output box including the calling of the most
         #recent graph to the GUI
-        self.outGraph = Canvas(out,width = 1800, height = 650)
+        self.outGraph = Canvas(out,width = 840, height = 600)
         self.outGraph.grid(row = 0, column = 0, sticky = W+E+N+S)
 
         os.chdir("Output/gnuPlot")
@@ -99,7 +99,7 @@ class Application(Frame):
             self.directory=os.getcwd()
             self.newest = max(glob.iglob(self.directory+"/*"),key=os.path.getctime)
             self.newest = self.newest.replace(os.getcwd()+"/","")
-            if self.newest[-4:] != ".gif":
+            if self.newest[-4:] != ".gif" or self.newest == "nuclearChart.gif":
                 try:
                     self.newest = "nuclearChart.gif"
                     self.photo = PhotoImage(file=self.newest)
@@ -111,6 +111,8 @@ class Application(Frame):
             else:
                 try:
                     self.photo = PhotoImage(file=self.newest)
+                    self.photo = self.photo.zoom(3)
+                    self.photo = self.photo.subsample(10)
                     self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
                 except:
                     print("No Image to Display")
@@ -183,6 +185,9 @@ class betaoutputs:
     else:
         Z = a
         A = b
+
+    if E == "":
+        E = 50000
 
     ##These if statements kill the program if the user leaves a section blank
     if Z == '' or A == '':
