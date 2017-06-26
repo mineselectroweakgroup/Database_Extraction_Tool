@@ -40,4 +40,3 @@ Finally, the `THIS_WORKS.py` kills the program before calling it again fresh wit
 ## Version Tracking:
 
 Version history can be found in the Change Log, [here.](http://github.com/ElectroweakGroup/Database_Extraction_Tool/blob/master/Changelog.txt)
->>>>>>> aa85c5c9e79df70089bfc4c3f4991c3f13123973

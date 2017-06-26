@@ -88,7 +88,7 @@ class Application(Frame):
 
         #Setting up the graph output box including the calling of the most
         #recent graph to the GUI
-        self.outGraph = Canvas(out,width = 700, height = 500)
+        self.outGraph = Canvas(out,width = 1800, height = 650)
         self.outGraph.grid(row = 0, column = 0, sticky = W+E+N+S)
 
         os.chdir("Output/gnuPlot")

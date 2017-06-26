@@ -30,9 +30,6 @@ class Application(Frame):
 
         self.spinVar = StringVar()
         self.upBoundEnergyVar = StringVar()
-        self.massDataVar = StringVar()
-
-        self.tempVar = StringVar()
 
         self.exitcount = 0
         
@@ -56,11 +53,6 @@ class Application(Frame):
         decay.configure(bg='#21314D')
         out.configure(bg='#21314D')
 
-        self.checkVar = IntVar()
-        self.checkVar = 0
-        c = Checkbutton(nucStruc, text="Include Binding",variable=self.checkVar,command=self.checkfunction,bg='#21314D',fg='#92A2BD',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        c.grid(row=4,column=2)
-
 
         #Here I will set up and place all lables for the nucStruc frame
         #They will be seperated with newlines in this code to represent
@@ -80,9 +72,6 @@ class Application(Frame):
         upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
 
-        tempLabel = Label(nucStruc, text = "Temperature (K)",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
-        tempLabel.grid(row = 1, column = 4, sticky = W)
-
 
 
 
@@ -101,14 +90,11 @@ class Application(Frame):
         self.upBoundEnergyEntry = Entry(nucStruc,highlightbackground="#21314D")
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
 
-        self.tempEntry = Entry(nucStruc,highlightbackground="#21314D")
-        self.tempEntry.grid(row = 2, column = 4, sticky = W)
-
 
 
         #Setting up the submit buttons
         nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        nucStrucSubmit.grid(row = 5, column = 0)
+        nucStrucSubmit.grid(rowspan = 2,row = 3, column = 2)
 
         exitSubmit = Button(nucStruc, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
         exitSubmit.grid(row = 6, column = 2)
@@ -120,7 +106,7 @@ class Application(Frame):
 
         #Setting up the graph output box including the calling of the most
         #recent graph to the GUI
-        self.outGraph = Canvas(out,width = 700, height = 500)
+        self.outGraph = Canvas(out,width = 1800, height = 650)
         self.outGraph.grid(columnspan=3,row = 0, column = 0, sticky = W+E+N+S)
 
         os.chdir("Output/gnuPlot")
@@ -165,7 +151,6 @@ class Application(Frame):
         self.upBoundIsoVar = self.upBoundIsoEntry.get()
         self.spinVar = self.spinEntry.get()
         self.upBoundEnergyVar = self.upBoundEnergyEntry.get()
-        self.tempVar = self.tempEntry.get()
         root.destroy()#closes window
 
     def exitButton(self):
@@ -191,12 +176,6 @@ class Application(Frame):
         os.system("python3 USE_THIS.py")
         sys.exit()
 
-    def checkfunction(self):
-        if self.checkVar == 0:
-            self.checkVar = 1
-        else:
-            self.checkVar = 0
-
 app = Application(root)
 root.protocol("WM_DELETE_WINDOW",app.exitButton)
 root.mainloop()
@@ -215,11 +194,6 @@ class guioutputs:
     isoUp=app.upBoundIsoVar
     E=app.upBoundEnergyVar
     exitcount=app.exitcount
-    temp=app.tempVar
-    if app.checkVar == 1:
-        mass = "YES"
-    else:
-        mass = "NO"
 
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.
@@ -234,6 +208,5 @@ class guioutputs:
         isoUp = 299
     if E == '':
         E = 9999999
-    if mass.upper().replace(" ","") == "YES":
-        mass = "YES"
+    mass = "NO"
 

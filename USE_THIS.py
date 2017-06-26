@@ -36,14 +36,14 @@ class Application(Frame):
         #massDataButton = Button(buttons, text = "FUCK YOU HAYDEN, I DISABLED YOUR BUTTON", command = self.massFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",state=DISABLED)
         #massDataButton.grid(row = 2, column = 0)
 
-        betaDataButton = Button(buttons, text = "EVALUATED BETA DECAY DATA", command = self.betaFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
+        betaDataButton = Button(buttons, text = "ENVIRONMENTAL DECAY RATE CHANGES", command = self.betaFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
         betaDataButton.grid(row = 3, column = 0)
 
         massParabolaButton = Button(buttons, text = "MASS PARABOLA", command = self.parabolaFunc,font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
         massParabolaButton.grid(row = 4, column = 0)
 
-        nucChartButton = Button(buttons, text = "ENVIRONMENTAL DECAY RATE SENSITIVITIES", command = self.nucChartFunc, font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
-        nucChartButton.grid(row=5,column=0)
+        #nucChartButton = Button(buttons, text = "ENVIRONMENTAL DECAY RATE SENSITIVITIES", command = self.nucChartFunc, font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
+        #nucChartButton.grid(row=5,column=0)
 
         self.pictureSpot = Canvas(title,width = 640, height = 180)
         self.pictureSpot.grid(row = 0, column = 0) 

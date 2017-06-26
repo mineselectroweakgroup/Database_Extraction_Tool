@@ -26,12 +26,9 @@ def datExp(option,UI=False,Filter=False):
         wantedSpins=str(guioutputs.J).replace(" ","")
         energyLim=int(guioutputs.E)
         elementName = elementName.replace(" ","")
-        elementName = elementName.upper()
+        elementName = elementName.title()
         elementName = elementName.split(',')
-        temperature = str(guioutputs.temp)
-        if temperature == "":
-            temperature = 0
-        temperature = float(temperature)
+        temperature = 0
 
     if option == "two":
         from Beta_GUI import betaoutputs
@@ -41,6 +38,7 @@ def datExp(option,UI=False,Filter=False):
         betaVariable = str(betaoutputs.B)
         energyLim = int(betaoutputs.E)
         massData = "YES"
+        elementName = elementName.title()
         wantedSpins=str(betaoutputs.J).replace(" ","")
         perTable = open("ElementList.txt","r")
         periodicTable = perTable.readline()
@@ -62,7 +60,7 @@ def datExp(option,UI=False,Filter=False):
         elementName = str(parabolaoutputs.Z)
         lowerBound = int(parabolaoutputs.A)
         higherBound = int(parabolaoutputs.A)
-        energyLim = 0.000000001
+        energyLim = 0.0
         massData = "YES"
         wantedSpins=str(parabolaoutputs.J).replace(" ","")
         elementName = elementName.replace(" ","")
@@ -256,7 +254,7 @@ def pltFileExp(massInclude,elementName,lowerBound,higherBound,Filter=False,wante
                 pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
             else:
                 pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 14\n"))
-            pltFile.write(str.encode("set term gif size 700,500\n"))
+            pltFile.write(str.encode("set term gif size 1800,650\n"))
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
             pltFile.write(str.encode("refresh\n"))
             pltFile.write(str.encode("set term x11"))
