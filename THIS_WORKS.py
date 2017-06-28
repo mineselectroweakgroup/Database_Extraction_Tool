@@ -37,33 +37,18 @@ def function(option):
     newest = newest.replace(os.getcwd()+"/","")
     os.system("gnuplot "+newest)
 
-#Optional code used to delete everything but the .gif files.
-#fileList = glob.glob("*.dat")
-#for f in fileList:
-    #os.remove(f)
-#fileList = glob.glob("*.plt")
-#for f in fileList:
-    #os.remove(f)
-
-#This code puts restarts the program so it can be used again    
-    try:
-        os.system("mv *.dat OutputData")
-        os.system("mv *.plt OutputData")
-    except:
-        pass
+#This code puts restarts the program so it can be used again
     os.chdir("..")
     os.chdir("..")
     os.system("python3 THIS_WORKS.py "+option)
     newest = "Output/gnuPlot/"+newest.replace(".plt",".gif")
     if os.path.isfile(newest):
         os.system("rm "+newest)
-
-
-        '''
-        newestpng = newest.replace(".gif",".png")
-        os.system("convert "+newest+ " "+ newestpng)
-        os.system("rm "+newest)
-        '''
+    try:
+        os.system("mv Output/gnuPlot/*.dat Output/gnuPlot/OutputData")
+        os.system("mv Output/gnuPlot/*.plt Output/gnuPlot/OutputData")
+    except:
+        pass
 
 
 option = sys.argv[-1]

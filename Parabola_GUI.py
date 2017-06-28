@@ -31,37 +31,37 @@ class Application(Frame):
         out.configure(bg='#21314D')
 
 
-        decayLabel = Label(decay, text = "Evaluated Beta Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
-        decayLabel.grid(columnspan = 4,row = 0)
+        decayLabel = Label(decay, text = "Extracted Mass Parabola Data",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
+        decayLabel.grid(columnspan = 3,row = 0)
 
-        ALabel = Label(decay, text = "Mass (ex. 60)",bg='#21314D',fg='#92A2BD',font=11)
-        ALabel.grid(row = 1, column = 1, sticky = W)
+        ALabel = Label(decay, text = "Mass",bg='#21314D',fg='#92A2BD',font=11)
+        ALabel.grid(row = 1, column = 0, sticky = W)
 
-        TLabel = Label(decay, text = "Temperature (K)", bg = '#21314D', fg = '#92A2BD', font = 11)
-        TLabel.grid(row = 1, column = 2 , sticky = W)
+        TLabel = Label(decay, text = "Temp (K)", bg = '#21314D', fg = '#92A2BD', font = 11)
+        TLabel.grid(row = 1, column = 1 , sticky = W,padx=5)
 
         #Here I will set up all of the entry boxes for nucStruc
         #Same format
 
-        self.AEntry = Entry(decay)
-        self.AEntry.grid(row = 2, column = 1, sticky = W)
-        self.TEntry = Entry(decay)
-        self.TEntry.grid(row = 2, column = 2, sticky = W)
+        self.AEntry = Entry(decay,highlightbackground="#21314D",width=10)
+        self.AEntry.grid(row = 2, column = 0, sticky = W)
+        self.TEntry = Entry(decay,highlightbackground="#21314D",width=10)
+        self.TEntry.grid(row = 2, column = 1, sticky = W,padx=5)
 
 
 
         #Setting up the submit buttons
-        decaySubmit = Button(decay, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        decaySubmit.grid(row = 5, column = 0)
+        decaySubmit = Button(decay, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11,width=6)
+        decaySubmit.grid(rowspan = 2, row = 1, column = 2,sticky = S,padx=5)
 
-        fullScreenSubmit = Button(decay, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        fullScreenSubmit.grid(row = 5, column = 1)
+        fullScreenSubmit = Button(decay, text = "Full", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11,width=6)
+        fullScreenSubmit.grid(row = 5, column = 0,pady = 5)
 
-        newChoiceSubmit = Button(decay, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        newChoiceSubmit.grid(row = 5, column = 2)
+        newChoiceSubmit = Button(decay, text = "Main", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11,width=6)
+        newChoiceSubmit.grid(row = 5, column = 1,padx=5)
 
-        exitButtonSubmit = Button(decay, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        exitButtonSubmit.grid(row=5,column=3)
+        exitButtonSubmit = Button(decay, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11,width=6)
+        exitButtonSubmit.grid(row=5,column=2,padx=5)
 
 
         #Setting up the graph output box including the calling of the most

@@ -50,19 +50,19 @@ class Application(Frame):
         #Here I will set up and place all lables for the nucStruc frame
         #They will be seperated with newlines in this code to represent
         #different rows in the GUI
-        nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Extraction",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
-        nucStrucLable.grid(columnspan = 2,row = 0,sticky=W)
+        nucStrucLable = Label(nucStruc, text = "Evaluated Nuclear Structure Data",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
+        nucStrucLable.grid(columnspan = 3, row = 0, column = 0,sticky = W+E)
 
-        chemSymLabel = Label(nucStruc, text = "Element (Zn,Cu,...",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
+        chemSymLabel = Label(nucStruc, text = "Element",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         chemSymLabel.grid(row = 1, column = 0, sticky = W)
-        lowBoundIsoLabel = Label(nucStruc, text = "Low Isotope Bound",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
+        lowBoundIsoLabel = Label(nucStruc, text = "Low A",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         lowBoundIsoLabel.grid(row = 1, column = 1, sticky = W)
-        upBoundIsoLabel = Label(nucStruc, text = "High Isotope Bound",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
+        upBoundIsoLabel = Label(nucStruc, text = "High A",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         upBoundIsoLabel.grid(row = 1, column = 2, sticky = W)
 
-        spinLabel = Label(nucStruc, text = "Spin (0+,3/2-...",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
+        spinLabel = Label(nucStruc, text = "Spin",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         spinLabel.grid(row = 3, column = 0, sticky = W)
-        upBoundEnergyLabel = Label(nucStruc, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
+        upBoundEnergyLabel = Label(nucStruc, text = "E (keV)",bg='#21314D',fg='#92A2BD',font=("Ariel",11,"bold"))
         upBoundEnergyLabel.grid(row = 3, column = 1, sticky = W)
 
 
@@ -71,31 +71,32 @@ class Application(Frame):
         #Here I will set up all of the entry boxes for nucStruc
         #Same format
 
-        self.chemSymEntry = Entry(nucStruc,highlightbackground="#21314D")
+        self.chemSymEntry = Entry(nucStruc,highlightbackground="#21314D",width=10)
         self.chemSymEntry.grid(row = 2, column = 0, sticky = W)
-        self.lowBoundIsoEntry = Entry(nucStruc,highlightbackground="#21314D")
+        self.lowBoundIsoEntry = Entry(nucStruc,highlightbackground="#21314D",width=10)
         self.lowBoundIsoEntry.grid(row = 2, column = 1, sticky = W)
-        self.upBoundIsoEntry = Entry(nucStruc,highlightbackground="#21314D")
+        self.upBoundIsoEntry = Entry(nucStruc,highlightbackground="#21314D",width=10)
         self.upBoundIsoEntry.grid(row = 2, column = 2, sticky = W)
 
-        self.spinEntry = Entry(nucStruc,highlightbackground="#21314D")
+        self.spinEntry = Entry(nucStruc,highlightbackground="#21314D",width=10)
         self.spinEntry.grid(row = 4, column = 0, sticky = W)
-        self.upBoundEnergyEntry = Entry(nucStruc,highlightbackground="#21314D")
+        self.upBoundEnergyEntry = Entry(nucStruc,highlightbackground="#21314D",width=10)
         self.upBoundEnergyEntry.grid(row = 4, column = 1, sticky = W)
 
 
 
         #Setting up the submit buttons
-        nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        nucStrucSubmit.grid(rowspan = 2,row = 3, column = 2)
+        nucStrucSubmit = Button(nucStruc, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"),width=6)
+        nucStrucSubmit.grid(rowspan = 2,row = 3, column = 2,sticky = W)
 
-        exitSubmit = Button(nucStruc, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        exitSubmit.grid(row = 6, column = 2)
-        fullScreenSubmit = Button(nucStruc, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        fullScreenSubmit.grid(row = 6, column = 0)
+        fullScreenSubmit = Button(nucStruc, text = "Full", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"),width=6)
+        fullScreenSubmit.grid(rowspan = 2, row = 6, column = 0, sticky = W)
 
-        newChoiceSubmit = Button(nucStruc, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"))
-        newChoiceSubmit.grid(row = 6, column = 1)
+        newChoiceSubmit = Button(nucStruc, text = "Main", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"),width=6)
+        newChoiceSubmit.grid(rowspan = 2, row = 6, column = 1, sticky = W)
+
+        exitSubmit = Button(nucStruc, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=("Ariel",11,"bold"),width=6)
+        exitSubmit.grid(rowspan = 2, row = 6, column = 2, sticky = W, pady = 5)
 
         #Setting up the graph output box including the calling of the most
         #recent graph to the GUI

@@ -38,49 +38,50 @@ class Application(Frame):
         decayLabel = Label(decay, text = "Evaluated Beta Decay Information",font=("Helvetica",13,"bold"),bg='#21314D',fg='#92A2BD')
         decayLabel.grid(columnspan = 3,row = 0)
 
-        chemSymLabel = Label(decay, text = "Element (ex. Zn)",bg='#21314D',fg='#92A2BD',font=11)
-        chemSymLabel.grid(row = 1, column = 1, sticky = W)
-        ALabel = Label(decay, text = "A (ex. 64)",bg='#21314D',fg='#92A2BD',font=11)
+        ALabel = Label(decay, text = "Mass #",bg='#21314D',fg='#92A2BD',font=11)
         ALabel.grid(row = 1, column = 0, sticky = W)
 
-        energyLabel = Label(decay, text = "Energy Bound (keV)",bg='#21314D',fg='#92A2BD',font=11)
-        energyLabel.grid(row = 1, column = 2, sticky = W)
+        chemSymLabel = Label(decay, text = "Element",bg='#21314D',fg='#92A2BD',font=11)
+        chemSymLabel.grid(row = 1, column = 1, sticky = W,padx=10)
 
-        tempLabel = Label(decay, text = "Temperature(K)",bg='#21314D',fg='#92A2BD',font=11)
+        energyLabel = Label(decay, text = "E (keV)",bg='#21314D',fg='#92A2BD',font=11)
+        energyLabel.grid(row = 1, column = 2, sticky = W,padx=5)
+
+        tempLabel = Label(decay, text = "Temp (K)",bg='#21314D',fg='#92A2BD',font=11)
         tempLabel.grid(row = 3, column = 0, sticky = W)
 
         #Set up the drop down menu for +/- decay
         self.betaVar = StringVar()
-        self.betaVar.set("Beta +")
-        option = OptionMenu(decay,self.betaVar,"Beta +","Beta -")
-        option.grid(rowspan = 2, row = 3, column = 1)
-        option.configure(fg='#21314D',bg='#92A2BD',font=11,highlightbackground="#21314D")
+        self.betaVar.set("B-")
+        option = OptionMenu(decay,self.betaVar,"B-","B+")
+        option.grid(rowspan = 2, row = 3, column = 1,padx=10,sticky=S)
+        option.configure(fg='#21314D',bg='#92A2BD',font=11,highlightbackground="#21314D",width=5)
 
         #Set up input boxes for each of the entries
-        self.AEntry = Entry(decay)
+        self.AEntry = Entry(decay,highlightbackground="#21314D",width=11)
         self.AEntry.grid(row = 2, column = 0, sticky = W)
-        self.chemSymEntry = Entry(decay)
-        self.chemSymEntry.grid(row = 2, column = 1, sticky = W)
-        self.energyEntry = Entry(decay)
-        self.energyEntry.grid(row = 2, column = 2, sticky = W)
+        self.chemSymEntry = Entry(decay,highlightbackground="#21314D",width=11)
+        self.chemSymEntry.grid(row = 2, column = 1, sticky = W,padx=10)
+        self.energyEntry = Entry(decay,highlightbackground="#21314D",width=11)
+        self.energyEntry.grid(row = 2, column = 2, sticky = W,padx=5)
 
-        self.tempEntry = Entry(decay)
+        self.tempEntry = Entry(decay,highlightbackground="#21314D",width=11)
         self.tempEntry.grid(row=4,column=0,sticky = W)
 
 
 
         #Setting up the submit buttons
-        decaySubmit = Button(decay, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        decaySubmit.grid(rowspan = 2, row = 3, column = 2)
+        decaySubmit = Button(decay, text = "Submit", command = self.sendNucData,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11,width=6)
+        decaySubmit.grid(rowspan = 2, row = 3, column = 2,sticky=S,padx=5)
 
-        fullScreenSubmit = Button(decay, text = "Full Screen", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        fullScreenSubmit.grid(row = 5, column = 0)
+        fullScreenSubmit = Button(decay, text = "Full", command = self.fullScreenButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11,width=6)
+        fullScreenSubmit.grid(row = 5, column = 0,pady=5)
 
-        newChoiceSubmit = Button(decay, text = "Program Selection", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        newChoiceSubmit.grid(row = 5, column = 1)
+        newChoiceSubmit = Button(decay, text = "Main", command = self.newChoiceButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11,width=6)
+        newChoiceSubmit.grid(row = 5, column = 1,padx=10)
 
-        exitButtonSubmit = Button(decay, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11)
-        exitButtonSubmit.grid(row=5,column=2)
+        exitButtonSubmit = Button(decay, text = "Exit", command = self.exitButton,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D",font=11,width=6)
+        exitButtonSubmit.grid(row=5,column=2,padx=5)
 
 
         #Setting up the graph output box including the calling of the most
@@ -103,8 +104,6 @@ class Application(Frame):
                     self.outGraph.create_image(0,0,image=self.photo, anchor = "nw")
                 except:
                     print("No Image to Display")
-            elif os.listdir(work_path) == ["Ignore.txt"]:
-                print("Directory Empty")
             else:
                 try:
                     self.photo = PhotoImage(file=self.newest)
