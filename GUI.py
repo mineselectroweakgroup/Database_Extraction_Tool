@@ -35,22 +35,15 @@ class Application(Frame):
         
 
     def create_widgets(self):
-        title = Frame(self)
-        title.pack(side = TOP)
-        title.configure(bg='#21314D')
-
-
         #Here I am going to seperate the implementation of Peter's code,
         #my own, and the output text box by using 3 different frames
-        nucStruc = Frame(self, padx = 10)
-        decay = Frame(self, padx = 10)
-        out = Frame(self, pady = 20)
+        nucStruc = Frame(self)
+        out = Frame(self)
         nucStruc.pack(side = BOTTOM)
-        out.pack(side = BOTTOM)
+        out.pack(side = TOP)
 
 
         nucStruc.configure(bg='#21314D')
-        decay.configure(bg='#21314D')
         out.configure(bg='#21314D')
 
 
@@ -107,7 +100,7 @@ class Application(Frame):
         #Setting up the graph output box including the calling of the most
         #recent graph to the GUI
         self.outGraph = Canvas(out,width = 840, height = 600)
-        self.outGraph.grid(columnspan=3,row = 0, column = 0, sticky = W+E+N+S)
+        self.outGraph.grid(row = 0, column = 0, sticky = W+E+N+S)
 
         os.chdir("Output/gnuPlot")
         work_path = os.getcwd()
@@ -136,11 +129,6 @@ class Application(Frame):
                     print("No Image to Display")
         os.chdir("..")
         os.chdir("..")
-
-        self.pictureSpot = Canvas(title,width = 620, height = 90)
-        self.pictureSpot.grid(row = 0) 
-        self.photo2 = PhotoImage(file = "eilonglogo.gif")
-        self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
 
 
             

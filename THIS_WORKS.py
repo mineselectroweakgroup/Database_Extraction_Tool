@@ -1,12 +1,6 @@
-# -*- coding: utf-8 -*-
-import newDataClass as dc ### Can I remove this import? FIXME
-			### I think so -Matt
+import newDataClass as dc
 import newIsotopeDataExportingDat as ided
-from data_array import final
-			### This one too -Matt
-#from searching_function import acquire
 import mass_data as md
-			### Also this one -Matt
 import os
 import glob
 import time
@@ -52,14 +46,24 @@ def function(option):
     #os.remove(f)
 
 #This code puts restarts the program so it can be used again    
+    try:
+        os.system("mv *.dat OutputData")
+        os.system("mv *.plt OutputData")
+    except:
+        pass
     os.chdir("..")
     os.chdir("..")
     os.system("python3 THIS_WORKS.py "+option)
     newest = "Output/gnuPlot/"+newest.replace(".plt",".gif")
     if os.path.isfile(newest):
+        os.system("rm "+newest)
+
+
+        '''
         newestpng = newest.replace(".gif",".png")
         os.system("convert "+newest+ " "+ newestpng)
         os.system("rm "+newest)
+        '''
 
 
 option = sys.argv[-1]

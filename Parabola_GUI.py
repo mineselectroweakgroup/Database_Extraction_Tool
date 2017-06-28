@@ -22,14 +22,11 @@ class Application(Frame):
         
 
     def create_widgets(self):
-        title = Frame(self)
         decay = Frame(self)
         out = Frame(self)
-        title.pack(side = TOP)
         decay.pack(side = BOTTOM)
-        out.pack(side = BOTTOM)
+        out.pack(side = TOP)
 
-        title.configure(bg='#21314D')
         decay.configure(bg='#21314D')
         out.configure(bg='#21314D')
 
@@ -99,11 +96,6 @@ class Application(Frame):
                     print("No Image to Display")
         os.chdir("..")
         os.chdir("..")
-
-        self.pictureSpot = Canvas(title,width = 620, height = 90)
-        self.pictureSpot.grid(row = 0, column = 0) 
-        self.photo2 = PhotoImage(file = "eilonglogo.gif")
-        self.pictureSpot.create_image(0,0,image = self.photo2, anchor = "nw")
             
 
     #Defining the functions that make the submit buttons do things. 
