@@ -197,3 +197,112 @@ def spinMatchFinder(matchVal,checkVal):
     else:
         ## Spin not found
         return False
+
+
+## This function extracts data from the Level record and returns it in a form that can be used by the rest of the program
+def levelExtract(line,dataLength):
+    ## FINDING THE ENERGY
+    energy = line[9:19].strip()
+
+    ## check if unknown ground state
+    noGSE = False
+    #if dataLength == 0 and energy == 'X':
+        #energy = '0'
+        #noGSE = True
+    ## check if usable energy data (i.e. no letter at beginning or end)
+    if (energy[0].isalpha() or energy[-1].isalpha()):
+        energy = '-1'
+
+    ## This will handle states with deduced energies enclosed in () 
+    deducedEnergy = False
+    if '(' in energy:
+        deducedEnergy = True
+        energy = energy.replace('(','')
+        energy = energy.replace(')','')
+
+    if 'E' in energy: ## This will convert scientific to decimal notation if needed
+        significand = float(energy[:energy.find('E')])
+        power = 10** float(energy[energy.find('E')+1:])
+        energy = str(significand * power)
+
+    
+    ## FINDING THE ENERGY UNCERTAINTY
+    uncert = line[19:21].strip()
+    nonNumUncert = False ##Boolean used to indicate non-numerical uncertainty
+
+    ## Set unsert to 0 if no uncertainty is given.
+    if (uncert == ''):
+        uncert = '0'
+    ## Set uncert to 0 if not numeric and flag
+    elif (not uncert.isnumeric()):
+        uncert = '0'
+        nonNumUncert = True
+    
+    ## gives uncertainty correct magnitude
+    elif ('.' in energy):
+        s = energy.find('.')
+        decimals = energy[s+1:]
+        decimals = Decimal(-len(decimals))
+        uncert = str(Decimal(uncert)*10**decimals)
+
+
+    ## FINDING ALL SPIN AND PARITY STATES (TO BE FILTERED LATER)
+    if noGSE:
+        jpi = 'X' ## flag states that lack energy data
+    else:
+        jpi = line[21:39].strip() 
+    ## indicating deduced energy
+    if deducedEnergy:
+        jpi = jpi + '**'
+    if nonNumUncert:
+        jpi = '['+jpi+']'
+
+
+    ## FINDING HALF LIFE AND HALF LIFE UNCERTAINTY 
+    hlife = line[39:49].strip()
+    dhlife = line[49:55].strip()
+    
+    #FIXME if t1/2 is > 10^9 years, set hlife to 'STABLE'. currently the code is backwards
+    if hlife == 'STABLE':
+        #hlife = 3.1536e16 ## 10**9 years in seconds
+        dhlife = [0]
+
+    ## If no half life info is given, hlife is set to -1
+    elif hlife == '':
+        hlife = -1
+        dhlife = [0]
+    ## CHeck for missing uncertainty
+    elif dhlife == '':
+        dhlife = [0]
+    ## Check for non numerical uncertainty
+    elif any(char.isalpha() for char in dhlife):
+        pass
+    ## Standard uncertainty
+    elif dhlife.isnumeric():                 
+        dhlife = [dhlife,dhlife]
+        if '.' in hlife:
+            s = hlife.split(' ')[0].find('.')
+            decimals = hlife.split(' ')[0][s+1:]
+            decimals = Decimal(-len(decimals))
+            dhlife = [str(Decimal(val)*10**decimals) for val in dhlife]
+        
+        [hlife,dhlife] = convertToSec(hlife,dhlife)
+    ## If uncertainty is given as +x-y
+    elif dhlife[0] == '+':
+        dhlife = dhlife.split('-')
+        dhlife[0] = dhlife[0].replace('+','')
+        if '.' in hlife:
+            s = hlife.split(' ')[0].find('.')
+            decimals = hlife.split(' ')[0][s+1:]
+            decimals = Decimal(-len(decimals))
+            dhlife = [str(Decimal(val)*10**decimals) for val in dhlife]
+        [hlife,dhlife] = convertToSec(hlife,dhlife)
+    ## Not sure if the following case ever appears in the data
+    elif dhlife[0] == '-':
+        float('Crash dat shit, brah')
+                    
+
+    return ([energy,jpi,uncert,hlife,dhlife])
+
+
+
