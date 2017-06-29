@@ -46,9 +46,9 @@ def datExp(option,UI=False,Filter=False):
         for item in periodicTable:
             if item == elementName:
                 index = periodicTable.index(item)
-                if betaVariable == "Beta +":
+                if betaVariable == "B+":
                     elementName = periodicTable[index-1] + "," + elementName
-                if betaVariable == "Beta -":
+                if betaVariable == "B-":
                     elementName = elementName + "," + periodicTable[index+1]
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
@@ -158,7 +158,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
             elif option == "two":
                 fileName = "Beta_"+str(lowerBound)+str(elementName[0])+str(elementName[1])+"_"+str(temperature)[:-2]+"K.plt"
             elif option == "three":
-                fileName = "Pabarbola_"+str(lowerBound)+"_"+str(temperature)[:-2]+"K.plt"
+                fileName = "Parabola_"+str(lowerBound)+"_"+str(temperature)[:-2]+"K.plt"
             fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
             pltFile = open(fileName,'wb')
             

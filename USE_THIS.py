@@ -45,9 +45,9 @@ class Application(Frame):
         #nucChartButton = Button(buttons, text = "ENVIRONMENTAL DECAY RATE SENSITIVITIES", command = self.nucChartFunc, font=("Ariel",11,"bold"),width=39,bg='#92A2BD',fg='#21314D',highlightbackground="#21314D")
         #nucChartButton.grid(row=5,column=0)
 
-        self.pictureSpot = Canvas(title,width = 640, height = 180)
+        self.pictureSpot = Canvas(title,width = 640, height = 275)
         self.pictureSpot.grid(row = 0, column = 0) 
-        self.photo = PhotoImage(file = "eilogo.gif")
+        self.photo = PhotoImage(file = "blueLogo.gif")
         self.pictureSpot.create_image(0,0,image = self.photo, anchor = "nw")
 
         space = Label(extraSpace, text = " ", fg = '#21314D', bg = '#21314D')
