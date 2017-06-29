@@ -71,7 +71,7 @@ def getJrange(lowval,highval): ## Creates range of spins
 
 def spinMatchFinder(matchVal,checkVal):
     ## matchVal is the desired spin, checkVal is the spin to be checked for matchVal      
-    tempList = checkVal.replace('**','').replace('&',',') 
+    tempList = checkVal.replace('**','').replace('&',',').replace('[','').replace(']','') 
     tempList = tempList.split(',')
           
     ## Look for parities that need to be distributed.
@@ -110,10 +110,9 @@ def spinMatchFinder(matchVal,checkVal):
         tempList[j] = tempList[j].strip()
     ## Handing of ranges of spins (eg. JPI to J'PI', see ensdf manual pg. 46 for more info)
     if any(('TO' in value or ':' in value) for value in tempList):
-        for value in tempList: ##FIXME
+        for value in tempList: 
             if ('TO' in value or ':' in value):
                 toIndex = tempList.index(value)
-        ## if a range is given, len(tempList) = 1 ALWAYS
         tempList[toIndex] = tempList[toIndex].replace('TO',':')
         [lhs,rhs] = tempList[toIndex].split(':')
         

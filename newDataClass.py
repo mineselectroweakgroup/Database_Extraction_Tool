@@ -38,7 +38,7 @@ class data:##This is the main data class.
             ## See the endsf manual, pg. 22, for more information about how the lines of data are organized
 
             ## the for loop must exit when the ensdf switches from evaluated data to experimental results
-            ## this is indicated by an empty line in the ensdf file, which is detected her
+            ## this is indicated by an empty line in the ensdf file, which is detected here
             if (desiredData and line[0:6].strip() == ''):
                 break     
 
@@ -52,8 +52,13 @@ class data:##This is the main data class.
                 ## FINDING THE ENERGY
                 energy = line[9:19].strip()
 
-                ## check if valid energy data (i.e. no letter at beginning or end)
-                if (energy[0].isalpha() or energy[-1].isalpha()):
+                ## check if unknown ground state
+                noGSE = False
+                if self.data == [] and energy == 'X':
+                    energy = '0'
+                    noGSE = True
+                ## check if usable energy data (i.e. no letter at beginning or end)
+                elif (energy[0].isalpha() or energy[-1].isalpha()):
                     energy = '-1'
 
                 ## This will handle states with deduced energies enclosed in () 
@@ -71,12 +76,15 @@ class data:##This is the main data class.
                 
                 ## FINDING THE ENERGY UNCERTAINTY
                 uncert = line[19:21].strip()
+                nonNumUncert = False ##Boolean used to indicate non-numerical uncertainty
+
                 ## Set unsert to 0 if no uncertainty is given.
                 if (uncert == ''):
                     uncert = '0'
-                ## Set uncert to 0 if not numeric 
+                ## Set uncert to 0 if not numeric and flag
                 elif (not uncert.isnumeric()):
                     uncert = '0'
+                    nonNumUncert = True
                 
                 ## gives uncertainty correct magnitude
                 elif ('.' in energy):
@@ -87,10 +95,15 @@ class data:##This is the main data class.
 
 
                 ## FINDING ALL SPIN AND PARITY STATES (TO BE FILTERED LATER)
-                jpi = line[21:39].strip() 
+                if noGSE:
+                    jpi = 'X' ## flag states that lack energy data
+                else:
+                    jpi = line[21:39].strip() 
                 ## indicating deduced energy
                 if deducedEnergy:
                     jpi = jpi + '**'
+                if nonNumUncert:
+                    jpi = '['+jpi+']'
 
 
                 ## FINDING HALF LIFE AND HALF LIFE UNCERTAINTY 
@@ -138,10 +151,14 @@ class data:##This is the main data class.
                                 
 
                 if(float(energy)<=energyLimit):
-                    #include the data #FIXME half lives
+                    #include the data #FIXME half lives not written to file
                     self.data.append([energy,jpi,uncert,hlife,dhlife])
                     #print(str(linecount)+' :'+str(self.data[-1]))
                 else:
+                    break
+
+                ## If no ground state energy is given, move on to the next isotope
+                if noGSE:
                     break
 
     ## extraTitleText would be desired spin states, for example

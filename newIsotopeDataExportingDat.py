@@ -77,7 +77,7 @@ def datExp(option,UI=False,Filter=False):
         for i in range(lowerBound,higherBound+1):
             itervar= str(i)+element
             indata=dc.data('ensdf.'+str(i).zfill(3),itervar,'EoL',energyLim)
-            indata.filterData(wantedSpins,UI) #FIXME bring back functionality
+            indata.filterData(wantedSpins,UI) 
             indata.export("_Fil.dat",wantedSpins)
             
                 
