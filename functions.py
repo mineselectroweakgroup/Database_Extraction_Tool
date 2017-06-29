@@ -189,8 +189,11 @@ def spinMatchFinder(matchVal,checkVal):
                 if (getPI(matchVal)==getPI(value)):
                     if (getJ(matchVal) <= getJ(value)) and (getJ(matchVal).denominator == getJ(value).denominator):
                         return True
-            ## FIXME add loop for whatever AP means
-                
+            ## Approximate
+            elif 'AP' in value:
+                value = value.replace('AP','').strip()
+                if (value == matchVal):
+                    return true
     else:
         ## Spin not found
         return False

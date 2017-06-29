@@ -99,3 +99,8 @@ Version 0.5.4 06-29-2017 1100MT -M.S. Martin:
 	Updated GUIs
 	Added new logo
 	Changed plot naming
+
+Version 0.5.5 06-29-2017 1600MT -W. McDonald:
+    States with non-numeric uncertainty in energy are now flagged with '[]'
+    States with unknown GS energy display a spin of 'X' and their excited states are suppressed
+    Fixed bug where a GS might not plot if it were the only state filtered for that isotope
