@@ -167,7 +167,7 @@ def spinMatchFinder(matchVal,checkVal):
                 tempList.insert(j,tempList[j]+'-')
                 tempList[j+1] = tempList[j+1]+'+'
             j+=1
-    
+
     if (matchVal in tempList):
         return True
 

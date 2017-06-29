@@ -188,17 +188,20 @@ class data:##This is the main data class.
             if (self.data): ## If self.data has data in it
                 newData = []
                 groundSt = self.data[0]
-                for wantedString in userInput.split(","):##adds all the strings that are included in the userInput.
-                    for i in range(1,len(self.data)): 
-                        #print(self.name,self.data[i])
-                        ## The spinMatchFinder will identify if the state is the desired spin
-                        if(spinMatchFinder(wantedString, self.data[i][1])):
-                            newData.append(self.data[i])
+                for i in range(1,len(self.data)): 
+                    #print(self.name,self.data[i])
+                    ## The spinMatchFinder will identify if the state is the desired spin
+                    if any(spinMatchFinder(wantedString, self.data[i][1]) for wantedString in userInput.split(',')):
+                        newData.append(self.data[i])
                 self.data=newData##changes data to the new data.
                 if (self.data):
                     self.data.insert(0,groundSt)
                 else:
-                    self.data = [[0.0,"--",0.0]]##Enters a dummy entry to file with something.
+                    
+                    if any(spinMatchFinder(wantedString,groundSt[1])for wantedString in userInput.split(',')):
+                        self.data.append(groundSt)
+                    else:
+                        self.data = [[0.0,"--",0.0]]##Enters a dummy entry to file with something.
 
             else: ## If self.data is empty
                 if(UI):
