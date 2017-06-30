@@ -113,7 +113,7 @@ class data:##This is the main data class.
 
 
                 ## FINDING HALF LIFE AND HALF LIFE UNCERTAINTY 
-                hlife = line[39:49].replace('?','')strip()
+                hlife = line[39:49].replace('?','').strip()
                 dhlife = line[49:55].strip()
                 
                 #FIXME if t1/2 is > 10^9 years, set hlife to 'STABLE'. currently the code is backwards
