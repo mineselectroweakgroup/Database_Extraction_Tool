@@ -55,9 +55,9 @@ class data:##This is the main data class.
                 ## check if unknown ground state
                 noGSE = False
                 if self.data == []:
-                        if any(char.isalpha() for char in energy):
-                            energy = '0'
-                            noGSE = True
+                    if any(char.isalpha() for char in energy):
+                        energy = '0'
+                        noGSE = True
                 ## check if usable energy data (i.e. no letter at beginning or end)
                 elif (energy[0].isalpha() or energy[-1].isalpha()):
                     if (not 'X' in self.data[0][1]):
