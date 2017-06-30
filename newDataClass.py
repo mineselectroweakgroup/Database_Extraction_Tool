@@ -59,7 +59,12 @@ class data:##This is the main data class.
                     noGSE = True
                 ## check if usable energy data (i.e. no letter at beginning or end)
                 elif (energy[0].isalpha() or energy[-1].isalpha()):
-                    continue
+                    if (not 'X' in self.data[0][1]):
+                        self.data[0][1] = self.data[0][1] + 'X'
+                        continue
+                    else:
+                        continue
+                    ## flag by adding an 'X' to the jpi string of the ground state
 
                 ## This will handle states with deduced energies enclosed in () 
                 deducedEnergy = False
