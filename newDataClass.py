@@ -173,7 +173,7 @@ class data:##This is the main data class.
             fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
             datFile = open(fileName,'wb')##Creates a file with a valid file name.
             for i in range(len(self.data)):
-                datFile.write(str.encode(str(self.name)+';'+str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+'\n'))
+                datFile.write(str.encode(str(self.name)+';'+str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+';'+str(self.data[i][3])+';'+str(self.data[i][4])+'\n'))
 
 
     def filterData(self,userInput,UI=False):
@@ -185,7 +185,7 @@ class data:##This is the main data class.
                     pass
                     ## Prints a statement telling user than no file was found
                     #print("Warning:No data filtered/selected for "+ self.name +".")
-                self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
+                self.data=[[0.0,"--",0.0,0.0,[0.0]]]##Enters a dummy entry to file with something.
                 
         #if(self.op == 'EoL'):
         ## Filter by spin states
@@ -206,12 +206,12 @@ class data:##This is the main data class.
                     if any(spinMatchFinder(wantedString,groundSt[1])for wantedString in userInput.split(',')):
                         self.data.append(groundSt)
                     else:
-                        self.data = [[0.0,"--",0.0]]##Enters a dummy entry to file with something.
+                        self.data = [[0.0,"--",0.0,0.0,0.0]]##Enters a dummy entry to file with something.
 
             else: ## If self.data is empty
                 if(UI):
                     ## Prints a statement telling user than no file was found
                     pass
                     #print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
-                self.data=[[0.0,"--",0.0]]##Enters a dummy entry to file with something.
+                self.data=[[0.0,"--",0.0,0.0,0.0]]##Enters a dummy entry to file with something.
 
