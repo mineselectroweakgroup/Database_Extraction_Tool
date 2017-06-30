@@ -88,7 +88,8 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
                 splitline[1] = str(float(splitline[1]) + masschange[title]/10**3)
                 splitline[3] = str(unc.adduncert(float(splitline[3]),uncertainty[title]))
                 splitline.append(str(count[title])+'+')
-                unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2] + ';' + splitline[3] + ';' + splitline[4] + '\n'
+                splitline[5] = splitline[5][:-1]
+                unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2] + ';' + splitline[3] + ';' + splitline[4] + ';' + splitline[5] + ';' + splitline[6] + '\n'
                 datafile.write(unsplitline)
 
 def removeElements(elementName):
