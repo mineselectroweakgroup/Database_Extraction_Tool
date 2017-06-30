@@ -132,7 +132,7 @@ class data:##This is the main data class.
                 ## Check for non numerical uncertainty
                 elif any(char.isalpha() for char in dhlife):
                     dhlife = [dhlife]
-                    hlife = convertToSec(hlife,[0])
+                    hlife = convertToSec(hlife,[0])[0]
                 ## Standard uncertainty
                 elif dhlife.isnumeric():                 
                     dhlife = [dhlife,dhlife]
