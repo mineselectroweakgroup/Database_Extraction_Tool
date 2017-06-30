@@ -200,18 +200,23 @@ def spinMatchFinder(matchVal,checkVal):
 
 
 ## This function extracts data from the Level record and returns it in a form that can be used by the rest of the program
-def levelExtract(line,dataLength):
+def levelExtract(line,dataset):
     ## FINDING THE ENERGY
     energy = line[9:19].strip()
 
     ## check if unknown ground state
     noGSE = False
-    #if dataLength == 0 and energy == 'X':
-        #energy = '0'
-        #noGSE = True
+    if self.data == [] and energy == 'X':
+        energy = '0'
+        noGSE = True
     ## check if usable energy data (i.e. no letter at beginning or end)
-    if (energy[0].isalpha() or energy[-1].isalpha()):
-        energy = '-1'
+    elif (energy[0].isalpha() or energy[-1].isalpha()):
+        if (not 'X' in self.data[0][1]):
+            self.data[0][1] = self.data[0][1] + 'X'
+            continue
+        else:
+            continue
+        ## flag by adding an 'X' to the jpi string of the ground state
 
     ## This will handle states with deduced energies enclosed in () 
     deducedEnergy = False
