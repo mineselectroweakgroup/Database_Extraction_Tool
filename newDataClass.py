@@ -127,10 +127,12 @@ class data:##This is the main data class.
                     dhlife = [0]
                 ## CHeck for missing uncertainty
                 elif dhlife == '':
-                    dhlife = [0]
+                    dhlife = ['0']
+                    hlife = convertToSec(hlife,dhlife)[0]
                 ## Check for non numerical uncertainty
                 elif any(char.isalpha() for char in dhlife):
-                    pass
+                    dhlife = [dhlife]
+                    hlife = convertToSec(hlife,[0])
                 ## Standard uncertainty
                 elif dhlife.isnumeric():                 
                     dhlife = [dhlife,dhlife]
