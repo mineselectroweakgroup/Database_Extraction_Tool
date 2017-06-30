@@ -54,9 +54,10 @@ class data:##This is the main data class.
 
                 ## check if unknown ground state
                 noGSE = False
-                if self.data == [] and energy == 'X':
-                    energy = '0'
-                    noGSE = True
+                if self.data == []:
+                        if any(char.isalpha() for char in energy):
+                            energy = '0'
+                            noGSE = True
                 ## check if usable energy data (i.e. no letter at beginning or end)
                 elif (energy[0].isalpha() or energy[-1].isalpha()):
                     if (not 'X' in self.data[0][1]):
@@ -112,7 +113,7 @@ class data:##This is the main data class.
 
 
                 ## FINDING HALF LIFE AND HALF LIFE UNCERTAINTY 
-                hlife = line[39:49].strip()
+                hlife = line[39:49].replace('?','')strip()
                 dhlife = line[49:55].strip()
                 
                 #FIXME if t1/2 is > 10^9 years, set hlife to 'STABLE'. currently the code is backwards
@@ -152,8 +153,15 @@ class data:##This is the main data class.
                     [hlife,dhlife] = convertToSec(hlife,dhlife)
                 ## Not sure if the following case ever appears in the data
                 elif dhlife[0] == '-':
-                    float('Crash dat shit, brah')
-                                
+                    [right,left]= dhlife.split('+')
+                    dhlife = [left,right]
+                    dhlife[1] = dhlife[1].replace('-','')
+                    if '.' in hlife:
+                        s = hlife.split(' ')[0].find('.')
+                        decimals = hlife.split(' ')[0][s+1:]
+                        decimals = Decimal(-len(decimals))
+                        dhlife = [str(Decimal(val)*10**decimals) for val in dhlife]
+                    [hlife,dhlife] = convertToSec(hlife,dhlife)                                
 
                 if(float(energy)<=energyLimit):
                     #include the data #FIXME half lives not written to file
