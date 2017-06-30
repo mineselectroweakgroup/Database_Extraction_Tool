@@ -59,7 +59,7 @@ class data:##This is the main data class.
                     noGSE = True
                 ## check if usable energy data (i.e. no letter at beginning or end)
                 elif (energy[0].isalpha() or energy[-1].isalpha()):
-                    energy = '-1'
+                    continue
 
                 ## This will handle states with deduced energies enclosed in () 
                 deducedEnergy = False
