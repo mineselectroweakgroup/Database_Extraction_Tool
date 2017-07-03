@@ -52,6 +52,9 @@ class data:##This is the main data class.
                 ##[energy,jpi,uncert,hlife,dhlife] <- output of levelExtract
                 recordData = levelExtract(line,self.data)                
 
+                ## levelExtract passes error codes for continue
+                if recordData == [-1]:
+                    continue
 
                 if(float(recordData[0])<=energyLimit):
                     ## include the data #FIXME half lives not written to file
