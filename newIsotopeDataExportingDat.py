@@ -204,7 +204,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
             datafileline = datafile.readline().split(';')
             ionization = ""
             if option != "one":
-                ionization = datafileline[4][:-1]
+                ionization = datafileline[6][:-1]
             if(i+fileParsingFactor>higherBound+rangecount):
                 setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+ionization+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+")"
             else:
