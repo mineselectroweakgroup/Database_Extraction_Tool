@@ -280,9 +280,11 @@ def levelExtract(line,dataset):
     ## CHeck for missing uncertainty
     elif dhlife == '':
         dhlife = [0]
+        hlife = convertToSec(hlife,[0])[0]
     ## Check for non numerical uncertainty
     elif any(char.isalpha() for char in dhlife):
-        pass
+        dhlife = [dhlife]
+        hlife = convertToSec(hlife,[0])[0]
     ## Standard uncertainty
     elif dhlife.isnumeric():                 
         dhlife = [dhlife,dhlife]
@@ -290,8 +292,7 @@ def levelExtract(line,dataset):
             s = hlife.split(' ')[0].find('.')
             decimals = hlife.split(' ')[0][s+1:]
             decimals = Decimal(-len(decimals))
-            dhlife = [str(Decimal(val)*10**decimals) for val in dhlife]
-        
+            dhlife = [str(Decimal(val)*10**decimals) for val in dhlife]        
         [hlife,dhlife] = convertToSec(hlife,dhlife)
     ## If uncertainty is given as +x-y
     elif dhlife[0] == '+':
