@@ -35,9 +35,13 @@ Finally, the `THIS_WORKS.py` kills the program before calling it again fresh wit
 ### Plotting Symbols Legend:
 
 \*		Extrapolated mass
+
 \*\*		Deduced nuclear state energy
-[]		Non-numerical uncertainty
+
+[ ]		Non-numerical uncertainty
+
 X		Ground state with missing energy
+
 (0+)X	Ground state of 0+, excited states with missing energy
 
 ## Version Tracking:
