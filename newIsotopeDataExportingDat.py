@@ -40,6 +40,7 @@ def datExp(option,UI=False,Filter=False):
         massData = "YES"
         elementName = elementName.title()
         wantedSpins=str(betaoutputs.J).replace(" ","")
+        ''''
         perTable = open("ElementList.txt","r")
         periodicTable = perTable.readline()
         periodicTable = periodicTable.split(',')
@@ -50,6 +51,7 @@ def datExp(option,UI=False,Filter=False):
                     elementName = periodicTable[index-1] + "," + elementName
                 if betaVariable == "B-":
                     elementName = elementName + "," + periodicTable[index+1]
+        '''
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
         temperature = float(betaoutputs.temp)
@@ -76,7 +78,7 @@ def datExp(option,UI=False,Filter=False):
     for element in elementName:
         for i in range(lowerBound,higherBound+1):
             itervar= str(i)+element
-            indata=dc.data('ensdf.'+str(i).zfill(3),itervar,'EoL',energyLim)
+            indata=dc.data('ensdf.'+str(i).zfill(3),itervar,option,energyLim)
             indata.filterData(wantedSpins,UI) 
             indata.export("_Fil.dat",wantedSpins)
             
@@ -156,7 +158,8 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
             if option == "one":
                 fileName = str(elementnamestring)+"_"+str(lowerBound)+"to"+str(higherBound)+"_"+wantedSpins+"_"+str(energyLim)+".plt"
             elif option == "two":
-                fileName = "Beta_"+str(lowerBound)+str(elementName[0])+str(elementName[1])+"_"+str(temperature)[:-2]+"K.plt"
+                fileName = "Beta_"+str(lowerBound)+str(elementName[0])+"_"+str(temperature)[:-2]+"K.plt"
+                #fileName = "Beta_"+str(lowerBound)+str(elementName[0])+str(elementName[1])+"_"+str(temperature)[:-2]+"K.plt"
             elif option == "three":
                 fileName = "Parabola_"+str(lowerBound)+"_"+str(temperature)[:-2]+"K.plt"
             fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
@@ -177,7 +180,8 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
                 if option == "one":
                     pltFile.write(str.encode("set title \"Excited States of ^{"+str(lowerBound)+"}"+elementnamestring+" to ^{"+str(higherBound)+"}"+elementnamestring+" with "+wantedSpins+" Spins up to "+str(energyLim)+" keV\"\n"))
                 elif option == "two":
-                    pltFile.write(str.encode("set title \"Beta Decay Scheme for ^{"+str(lowerBound)+"}"+str(elementName[0])+" and ^{"+str(higherBound)+"}"+str(elementName[1])+" at "+str(temperature)+" K\\nup to "+str(energyLim)+" keV Excitation Energy\"\n"))
+                    pltFile.write(str.encode("set title \"Beta Decay Scheme for ^{"+str(lowerBound)+"}"+str(elementName[0])+" and ^{"+str(higherBound)+"}"+" at "+str(temperature)+" K\\nup to "+str(energyLim)+" keV Excitation Energy\"\n"))
+                    #pltFile.write(str.encode("set title \"Beta Decay Scheme for ^{"+str(lowerBound)+"}"+str(elementName[0])+" and ^{"+str(higherBound)+"}"+str(elementName[1])+" at "+str(temperature)+" K\\nup to "+str(energyLim)+" keV Excitation Energy\"\n"))
                 elif option == "three":
                     pltFile.write(str.encode("set title \"Mass Parabola for A = "+str(lowerBound)+" at "+str(temperature)+" K\"\n"))
                 else:

@@ -1,10 +1,11 @@
 from decimal import *
 from functions import spinMatchFinder
 from functions import levelExtract
+from functions import NUCIDgen
  
     
 class data:##This is the main data class.
-    def __init__(self,ENSDF,ISOvar,option = 'EoL',energyLimit = 999999999, maxSpin = 9):
+    def __init__(self,ENSDF,ISOvar,option,energyLimit = 999999999, maxSpin = 9):
         ###maybe get rid of option, find out how energy limit and max spin are used
 
         ##Initialize Parameters
@@ -14,17 +15,37 @@ class data:##This is the main data class.
 
 
         ## nucID is what is compared to the first 6 characters of the line to find the correct data
-        nucID=self.name.upper()+" "
-        ## This while loop makes sure that nucID has the correct leading whitespace to match the data file
-        charIndex=0
-        while(charIndex<3):
-            if nucID[charIndex].isalpha():
-                nucID=' '+nucID
-            charIndex+=1
-        ## if the element symbol is one letter, an additional space must be appended so len(nucID)==6
-        if(len(nucID)<6):
-            nucID=nucID+' '
-            
+        nucID=self.name.upper()  
+        if self.op == 'two':#FIXME Decay Data setup
+            betaVariable = 'B-' #FIXME
+
+            parent = ''
+            daughter = ''
+            Avalue = ''
+            for char in nucID:
+                if char.isnumeric():
+                    Avalue = Avalue + char
+                elif char.isalpha():
+                    parent = parent + char
+                        
+            perTable = open("ElementList.txt","r")
+            periodicTable = perTable.readline()
+            periodicTable = periodicTable.split(',')
+            for item in periodicTable:
+                if item.upper() == parent:
+                    index = periodicTable.index(item)
+                    if betaVariable == "B+":
+                        daughter = periodicTable[index-1].upper()
+                    if betaVariable == "B-":
+                        daughter = periodicTable[index+1].upper()
+
+            parent = Avalue+parent
+            daughter = NUCIDgen(Avalue+daughter)
+            print(parent)
+            print('|'+daughter+'|')
+        else:
+            nucID = NUCIDgen(nucID)
+
 
         ##open the appropriate ensdf file
         self.f = open("Data/"+str(ENSDF),'rU')
@@ -32,38 +53,68 @@ class data:##This is the main data class.
 
         linecount = 0 ## printing linecount can help locate problem-causing lines in the ensdf file
         desiredData = False
+
         for line in self.f:
             linecount+=1
             ## The line parsing algorithm is derived from the labeling system of the ensdf files
             ## See the endsf manual, pg. 22, for more information about how the lines of data are organized
 
-            ## the for loop must exit when the ensdf switches from evaluated data to experimental results
-            ## this is indicated by an empty line in the ensdf file, which is detected here
             if (desiredData and line[0:6].strip() == ''):
+            ## the loop must exit when the ensdf switches from evaluated data to experimental results
+            ## this is indicated by an empty line in the ensdf file, which is detected here
                 break     
 
-             ## Identifies which lines in the data file have relevant data
-            if (line[6:8]==' L' and line[0:6]==nucID):
-                #print(linecount,line[:-1])
+            ## dsid is used in identifying decay data
+            dsid = line[9:39].split(' ')
 
+            if self.op == "two":#FIXME
+                
+                ## Locate identification record
+                if (line[0:6] == daughter and line[6:9] == '   ' and dsid[0] == parent):
+                    desiredData = True
+                if desiredData == True:
+                    if line[0:6] == '      ':
+                        desiredData = False
+                        continue
+                    else:
+                        if (line[0:6] == NUCIDgen(parent) and line[6:8]==' P'):
+                            recordData = levelExtract(line,self.data)
+                            if recordData == [-1]:
+                                continue
+                            if(float(recordData[0])<=energyLimit):
+                                self.data.append(recordData)
+                        elif (line[0:6] == daughter and line[6:8]==' L'):
+                            recordData = levelExtract(line,self.data)
+                            if recordData == [-1]:
+                                continue
+                            if(float(recordData[0])<=energyLimit):
+                                self.data.append(recordData)
+                            else:
+                                break
+                            # if empty line, desiredData = False, continue
+                            # else: FIXME GET ALL THAT PHAT DATA YOU WE GOTTA FISICKS THIS SHIT
+                   
+                  
+
+
+            ## Options 1 and 3
+            ## Identifies which lines in the data file have relevant data
+            elif (line[6:8]==' L' and line[0:6]==nucID):
+                #print(linecount,line[:-1])
                 ## set desiredData bool so the program wil exit after reading adopted data
                 desiredData = True
-
                 ##[energy,jpi,uncert,hlife,dhlife] <- output of levelExtract
                 recordData = levelExtract(line,self.data)                
-
                 ## levelExtract passes error codes for continue
                 if recordData == [-1]:
                     continue
-
                 if(float(recordData[0])<=energyLimit):
-                    ## include the data #FIXME half lives not written to file
+                    ## include the data 
                     self.data.append(recordData)
-                    #print(str(linecount)+' :'+str(self.data[-1]))
                 else:
                     break
 
-                ## If no ground state energy is given, move on to the next isotope #FIXME noGSE defined in levelextract
+                ## If no ground state energy is given, move on to the next isotope 
                 if recordData[1]=='X':
                     break
 
@@ -88,7 +139,6 @@ class data:##This is the main data class.
                     #print("Warning:No data filtered/selected for "+ self.name +".")
                 self.data=[[0.0,"--",0.0,0.0,[0.0]]]##Enters a dummy entry to file with something.
                 
-        #if(self.op == 'EoL'):
         ## Filter by spin states
         else:
             if (self.data): ## If self.data has data in it

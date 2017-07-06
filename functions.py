@@ -7,6 +7,16 @@ from uncertainty import halfLifeErrorProp
 HBAR = Decimal('6.582119514e-16') ## [eV sec] from NIST
 LN2 = Decimal('6.931471806e-1')
 
+def NUCIDgen(isotope):
+    charIndex = 0
+    while(charIndex < 3):
+        if isotope[charIndex].isalpha():
+            isotope = ' '+ isotope
+        charIndex += 1
+    while len(isotope) < 6:
+        isotope = isotope + ' '
+    return isotope 
+
 def convertToSec(hl,dhl):
     [val,units]=hl.split(' ')
     if 'EV' in units:
