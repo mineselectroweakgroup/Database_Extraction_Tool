@@ -211,6 +211,9 @@ def spinMatchFinder(matchVal,checkVal):
 ###############################################################################################
 ## This function extracts data from the Level record and returns it in a form that can be used by the rest of the program
 def levelExtract(line,dataset):
+    ## FINDING THE NAME
+    isoName = line[:5].strip()
+
     ## FINDING THE ENERGY
     energy = line[9:19].strip()
 
@@ -222,8 +225,8 @@ def levelExtract(line,dataset):
             noGSE = True
     ## check if usable energy data (i.e. no letter at beginning or end)
     elif (energy[0].isalpha() or energy[-1].isalpha()):
-        if (not 'X' in dataset[0][1]):
-            dataset[0][1] = dataset[0][1] + 'X'
+        if (not 'X' in dataset[0][2]):
+            dataset[0][2] = dataset[0][2] + 'X'
             return([-1]) ## RETURN [-1] INDICATES CONTINUE
         else:
             return([-1]) ## RETURN [-1] INDICATES CONTINUE
@@ -327,7 +330,7 @@ def levelExtract(line,dataset):
         [hlife,dhlife] = convertToSec(hlife,dhlife) 
                     
 
-    return ([energy,jpi,uncert,hlife,dhlife])
+    return ([isoName,energy,jpi,uncert,hlife,dhlife])
 
 
 

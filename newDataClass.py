@@ -81,20 +81,16 @@ class data:##This is the main data class.
                             recordData = levelExtract(line,self.data)
                             if recordData == [-1]:
                                 continue
-                            if(float(recordData[0])<=energyLimit):
+                            if(float(recordData[1])<=energyLimit):
                                 self.data.append(recordData)
                         elif (line[0:6] == daughter and line[6:8]==' L'):
                             recordData = levelExtract(line,self.data)
                             if recordData == [-1]:
                                 continue
-                            if(float(recordData[0])<=energyLimit):
+                            if(float(recordData[1])<=energyLimit):
                                 self.data.append(recordData)
                             else:
                                 break
-                            # if empty line, desiredData = False, continue
-                            # else: FIXME GET ALL THAT PHAT DATA YOU WE GOTTA FISICKS THIS SHIT
-                   
-                  
 
 
             ## Options 1 and 3
@@ -108,14 +104,14 @@ class data:##This is the main data class.
                 ## levelExtract passes error codes for continue
                 if recordData == [-1]:
                     continue
-                if(float(recordData[0])<=energyLimit):
+                if(float(recordData[1])<=energyLimit):
                     ## include the data 
                     self.data.append(recordData)
                 else:
                     break
 
                 ## If no ground state energy is given, move on to the next isotope 
-                if recordData[1]=='X':
+                if recordData[2]=='X':
                     break
 
     ## extraTitleText would be desired spin states, for example
@@ -125,7 +121,7 @@ class data:##This is the main data class.
             fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
             datFile = open(fileName,'wb')##Creates a file with a valid file name.
             for i in range(len(self.data)):
-                datFile.write(str.encode(str(self.name)+';'+str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+';'+str(self.data[i][3])+';'+str(self.data[i][4])+'\n'))
+                datFile.write(str.encode(str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+';'+str(self.data[i][3])+';'+str(self.data[i][4])+';'+str(self.data[i][5])+'\n'))
 
 
     def filterData(self,userInput,UI=False):
@@ -137,7 +133,7 @@ class data:##This is the main data class.
                     pass
                     ## Prints a statement telling user than no file was found
                     #print("Warning:No data filtered/selected for "+ self.name +".")
-                self.data=[[0.0,"--",0.0,0.0,[0.0]]]##Enters a dummy entry to file with something.
+                self.data=[['NULL',0.0,"--",0.0,0.0,[0.0]]]##Enters a dummy entry to file with something.
                 
         ## Filter by spin states
         else:
@@ -147,22 +143,22 @@ class data:##This is the main data class.
                 for i in range(1,len(self.data)): 
                     #print(self.name,self.data[i])
                     ## The spinMatchFinder will identify if the state is the desired spin
-                    if any(spinMatchFinder(wantedString, self.data[i][1]) for wantedString in userInput.split(',')):
+                    if any(spinMatchFinder(wantedString, self.data[i][2]) for wantedString in userInput.split(',')):
                         newData.append(self.data[i])
                 self.data=newData##changes data to the new data.
                 if (self.data):
                     self.data.insert(0,groundSt)
                 else:
                     
-                    if any(spinMatchFinder(wantedString,groundSt[1])for wantedString in userInput.split(',')):
+                    if any(spinMatchFinder(wantedString,groundSt[2])for wantedString in userInput.split(',')):
                         self.data.append(groundSt)
                     else:
-                        self.data = [[0.0,"--",0.0,0.0,0.0]]##Enters a dummy entry to file with something.
+                        self.data = [['NULL',0.0,"--",0.0,0.0,0.0]]##Enters a dummy entry to file with something.
 
             else: ## If self.data is empty
                 if(UI):
                     ## Prints a statement telling user than no file was found
                     pass
                     #print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
-                self.data=[[0.0,"--",0.0,0.0,0.0]]##Enters a dummy entry to file with something.
+                self.data=[['NULL',0.0,"--",0.0,0.0,0.0]]##Enters a dummy entry to file with something.
 
