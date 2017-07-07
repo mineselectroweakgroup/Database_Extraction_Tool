@@ -196,6 +196,17 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,F
 
                 setLine="set xtics right rotate by 45 ("
 
+    '''
+    ## Generate a list of Isotopes for the x axis
+    elementLabels=[]
+    for element in elementName:
+        for i in range(lowerBound+removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
+            datafile = open("Output/gnuPlot/"+str(i)+str(element)+wantedSpins.replace('/','_')+"_Fil.dat",'r')
+            for line in datafile:
+                line = line.split(';')
+                if line[0] not in elementLabels:
+    '''
+
 
 
         #This sets the x axis with the names of the isotpes wanted.
