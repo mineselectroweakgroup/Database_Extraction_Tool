@@ -3,7 +3,6 @@
 
 from tkinter import *
 import searching_function as sf
-import newIsotopeDataExportingDat as ided
 root = Tk()
 root.title("Data Extraction")
 import sys

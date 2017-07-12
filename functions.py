@@ -238,7 +238,7 @@ def levelExtract(line,dataset):
         deducedEnergy = True
         energy = energy.replace('(','')
         energy = energy.replace(')','')
-
+#FIXME use Decimal to avoid floating point error
     if 'E' in energy: ## This will convert scientific to decimal notation if needed
         significand = float(energy[:energy.find('E')])
         power = 10** float(energy[energy.find('E')+1:])

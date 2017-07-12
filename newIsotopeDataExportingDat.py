@@ -29,8 +29,9 @@ def datExp(option,UI=False,Filter=False):
         elementName = elementName.title()
         elementName = elementName.split(',')
         temperature = 0
+        betaVariable = 'NULL' ## Required parameter of newDataClass
 
-    if option == "two":
+    elif option == "two":
         from Beta_GUI import betaoutputs
         elementName = str(betaoutputs.Z)
         lowerBound = int(betaoutputs.A)
@@ -57,7 +58,7 @@ def datExp(option,UI=False,Filter=False):
         temperature = float(betaoutputs.temp)
         exitcount = 0
 
-    if option == "three":
+    elif option == "three":
         from Parabola_GUI import parabolaoutputs
         elementName = str(parabolaoutputs.Z)
         lowerBound = int(parabolaoutputs.A)
@@ -69,6 +70,7 @@ def datExp(option,UI=False,Filter=False):
         elementName = elementName.split(',')
         temperature = float(parabolaoutputs.T)
         exitcount = 0
+        betaVariable = 'NULL' ## Required parameter of newDataClass
 
 
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
@@ -78,7 +80,7 @@ def datExp(option,UI=False,Filter=False):
     for element in elementName:
         for i in range(lowerBound,higherBound+1):
             itervar= str(i)+element
-            indata=dc.data('ensdf.'+str(i).zfill(3),itervar,option,energyLim)
+            indata=dc.data('ensdf.'+str(i).zfill(3),itervar,option,betaVariable,energyLim)
             indata.filterData(wantedSpins,UI) 
             indata.export("_Fil.dat",wantedSpins)
             

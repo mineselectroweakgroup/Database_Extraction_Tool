@@ -1,4 +1,3 @@
-import newDataClass as dc
 import newIsotopeDataExportingDat as ided
 import mass_data as md
 import os
