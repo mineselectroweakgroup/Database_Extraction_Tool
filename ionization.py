@@ -2,12 +2,12 @@
 
 import uncertainty as unc
 
-def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature, addMass):
+def addIonization(dataObj, temperature):
     ionizationFile = open("ionizationEnergy.txt","r")
     energyList = ionizationFile.readlines()
     kelvinToElectronVolts = 8.651738*10**(-5)
     mElectron = 510998.9461
-    E=temperature*kelvinToElectronVolts
+    thermalE=temperature*kelvinToElectronVolts
 
     energy ={}
     masschange = {}
@@ -17,16 +17,18 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
     energyList = energyList[2:]
     energyList = energyList[:-1]
 
-    elementName = removeElements(elementName)
+    nonoElements =['Xx','Rf','Db','Sg','Bh','Hs','Mt','Ds','Rg','Cn','Ed','Fl','Ef','Lv','Eh','Ei']
+
+    #elementName = removeElements(elementName)
 
     for line in energyList:
-        elementTitle = line[10:12].replace(" ","")
+        elementTitle = line[10:12].replace(" ","").upper()
         masschange[elementTitle] = 0
         uncertainty[elementTitle]= 0
         count[elementTitle] = 0
 
     for line in energyList:
-        element = line[10:12].replace(" ","")
+        element = line[10:12].replace(" ","").upper()
         energy[element] = line[148:186].replace(" ","")
         if len(energy[element]) >= 2:
             if energy[element][-2] == ')':
@@ -65,96 +67,27 @@ def addIonization(elementName, lowerBound, higherBound, wantedSpins, temperature
             else:
                 decimals = len(decimals)
             energy[element][1] = energy[element][1] * 10**(-decimals)
-            if E >= energy[element][0]:
+            if thermalE >= energy[element][0]:
                 masschange[element] = masschange[element] + energy[element][0]
                 uncertainty[element] = unc.adduncert(uncertainty[element],energy[element][1])
                 count[element] = count[element] + 1
         uncertainty[element] = uncertainty[element]/1000
-
-
-
-    for title in elementName:
-        for i in range(lowerBound,higherBound+1):
-            filenameopen = (str(i)+str(title)+wantedSpins+"_Fil.dat").replace("/","_")
-
-            datafile = open("Output/gnuPlot/"+filenameopen,'r+')
-
-            datafilelines = datafile.readlines()
-            datafile.seek(0)
-            datafile.truncate()
-
-            for line in datafilelines:
-                splitline = line.split(';')
-                splitline[1] = str(float(splitline[1]) + masschange[title]/10**3)
-                splitline[3] = str(unc.adduncert(float(splitline[3]),uncertainty[title]))
-                splitline.append(str(count[title])+'+')
-                splitline[5] = splitline[5][:-1]
-                unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2] + ';' + splitline[3] + ';' + splitline[4] + ';' + splitline[5] + ';' + splitline[6] + '\n'
-                datafile.write(unsplitline)
-
-def removeElements(elementName):
-    try:
-        elementName.remove("Xx")
-    except:
-        pass
-    try:
-        elementName.remove("Rf")
-    except:
-        pass
-    try:
-        elementName.remove("Db")
-    except:
-        pass
-    try:
-        elementName.remove("Sg")
-    except:
-        pass
-    try:
-        elementName.remove("Bh")
-    except:
-        pass
-    try:
-        elementName.remove("Hs")
-    except:
-        pass
-    try:
-        elementName.remove("Mt")
-    except:
-        pass
-    try:
-        elementName.remove("Ds")
-    except:
-        pass
-    try:
-        elementName.remove("Rg")
-    except:
-        pass
-    try:
-        elementName.remove("Cn")
-    except:
-        pass
-    try:
-        elementName.remove("Ed")
-    except:
-        pass
-    try:
-        elementName.remove("Fl")
-    except:
-        pass
-    try:
-        elementName.remove("Ef")
-    except:
-        pass
-    try:
-        elementName.remove("Lv")
-    except:
-        pass
-    try:
-        elementName.remove("Eh")
-    except:
-        pass
-    try:
-        elementName.remove("Ei")
-    except:
-        pass
-    return(elementName)
+    
+    for i in range(len(dataObj.data)):
+        if any(elementName.upper() in dataObj.data[i][0] for elementName in nonoElements):
+            ## The new removeElements(elementName)
+            pass
+        elif dataObj.data[i][0] == 'NULL':
+            dataObj.data[i].insert(6,'0+')
+        else:
+            ## create elementLabel for the dictionaries to use
+            elementLabel = ''
+            for char in dataObj.data[i][0]:
+                if char.isalpha():
+                    elementLabel = elementLabel + char
+            ## Preform Physics
+            dataObj.data[i][1] = str(float(dataObj.data[i][1]) + masschange[elementLabel]/10**3)
+            dataObj.data[i][3] = str(unc.adduncert(float(dataObj.data[i][3]),uncertainty[elementLabel]))
+            ## Add ionization at index i = 6, even for decay data sets
+            dataObj.data[i].insert(6,str(count[elementLabel])+'+')
+            
