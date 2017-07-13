@@ -6,6 +6,8 @@
 import newDataClass as dc
 import os
 import re
+import nmass_data as md
+import nionization as addion
 
 
 
@@ -81,7 +83,16 @@ def datExp(option,UI=False,Filter=False):
         for i in range(lowerBound,higherBound+1):
             itervar= str(i)+element
             indata=dc.data('ensdf.'+str(i).zfill(3),itervar,option,betaVariable,energyLim)
-            indata.filterData(wantedSpins,UI) 
+            indata.filterData(wantedSpins,UI)
+            
+            ## Mass Data
+            if option == 'one':
+                pass
+            else:
+                md.addMass(indata)
+
+            ## Ionization
+            addion.addIonization(indata,temperature)
             indata.export("_Fil.dat",wantedSpins)
             
                 

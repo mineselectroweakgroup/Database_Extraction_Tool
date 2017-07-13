@@ -172,7 +172,13 @@ class data:##This is the main data class.
             fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
             datFile = open(fileName,'wb')##Creates a file with a valid file name.
             for i in range(len(self.data)):
-                datFile.write(str.encode(str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+';'+str(self.data[i][3])+';'+str(self.data[i][4])+';'+str(self.data[i][5])+'\n'))
+                lineToWrite = str(self.data[i][0])
+                for j in range(1,len(self.data[i])):
+                    lineToWrite = lineToWrite + ';' +str(self.data[i][j])
+                lineToWrite = lineToWrite + '\n'
+                datFile.write(str.encode(lineToWrite))
+
+                #datFile.write(str.encode(str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+';'+str(self.data[i][3])+';'+str(self.data[i][4])+';'+str(self.data[i][5])+';'+str(self.data[i][6])+'\n'))
 
 
     def filterData(self,userInput,UI=False):

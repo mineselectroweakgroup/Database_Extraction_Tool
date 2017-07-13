@@ -16,10 +16,13 @@ def function(option):
 #to check what they input against the plot they are viewing
 #The sleep is a pause so the timestamps used work correctly
 
-    if userInput[5] == "YES":
-        md.addMass(userInput[0],userInput[1],userInput[2],userInput[3])
+    ## mass data inclusion moved to newIsotopeDataExporting.py
+    #if userInput[5] == "YES":
+        #md.addMass(userInput[0],userInput[1],userInput[2],userInput[3])
 
-    addion.addIonization(userInput[0],userInput[1],userInput[2],userInput[3],userInput[4],userInput[5])
+    ## ionization is now done in newIsotopeDataExporting.py
+    #addion.addIonization(userInput[0],userInput[1],userInput[2],userInput[3],userInput[4],userInput[5])
+
     renorm.renormalize(userInput[0],userInput[1],userInput[2],userInput[3])
 
     time.sleep(0.01)

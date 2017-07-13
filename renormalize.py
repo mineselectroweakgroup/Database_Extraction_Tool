@@ -29,6 +29,8 @@ def renormalize(elementName,lowerBound,higherBound,wantedSpins):
             for line in datafilelines:
                 splitline = line.split(';')
                 splitline[1] = str(float(splitline[1])-float(minimum))
-                unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2] + ';' + splitline[3] + ';' + splitline[4]+';'+splitline[5]+';'+splitline[6]
+                unsplitline = splitline[0]
+                for value in splitline[1:]:
+                    unsplitline = unsplitline + ';' + value
                 datafile.write(unsplitline)
 

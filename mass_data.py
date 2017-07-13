@@ -48,7 +48,7 @@ def addMass(elementName,lowerBound,higherBound,wantedSpins):
                                 aMassError = unc.multuncert(float(data[k][96:112].replace(" ","").replace("#",".")),conversion,float(data[k][113:123].replace(" ","").replace("#",".")),dconversion)
                                 splitline[1] = str(float(splitline[1]) + atomicMass)
                                 splitline[3] = str(unc.adduncert(float(splitline[3]),aMassError))
-                                unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2]+';'+splitline[3]+';'+splitline[4]+';'+splitline[5]
+                                unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2]+';'+splitline[3]+';'+splitline[4]+';'+splitline[5]+';'+splitline[6]+';'+splitline[7]
                                 datafile.write(unsplitline)
                 k=k+1
 
