@@ -24,6 +24,7 @@ def addMass(dataObj):
                 isoName = massA+masselement
 
                 if dataObj.data[i][0] == isoName:
+                    #print('A',i,dataObj.data[1][:3],dataObj.data[10][:3])
                     A = int(massA)
                     ## splitline is dataObj.data[i]
                     #splitline = line.split(';')
@@ -32,9 +33,13 @@ def addMass(dataObj):
                     if massdata[k][106]=='#':
                         dataObj.data[i][2] = dataObj.data[i][2] + '*'
                     atomicMass = float(massdata[k][96:112].replace(" ","").replace("#","."))*conversion
+                    
                     aMassError = unc.multuncert(float(massdata[k][96:112].replace(" ","").replace("#",".")),conversion,float(massdata[k][113:123].replace(" ","").replace("#",".")),dconversion)
+                    #print('B',i,dataObj.data[1][:3],dataObj.data[10][:3])
                     dataObj.data[i][1] = str(float(dataObj.data[i][1]) + atomicMass)
                     dataObj.data[i][3] = str(unc.adduncert(float(dataObj.data[i][3]),aMassError))
+                    #print('C',i,dataObj.data[1][:4],dataObj.data[10][:3])
                     #unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2]+';'+splitline[3]+';'+splitline[4]+';'+splitline[5]+';'+splitline[6]+';'+splitline[7]
                     #datafile.write(unsplitline)
             k=k+1
+            

@@ -7,6 +7,7 @@ from uncertainty import halfLifeErrorProp
 HBAR = Decimal('6.582119514e-16') ## [eV sec] from NIST
 LN2 = Decimal('6.931471806e-1')
 
+## Generates a string that can be used to identify isotope records in ensdf files
 def NUCIDgen(isotope):
     charIndex = 0
     while(charIndex < 3):
@@ -17,6 +18,7 @@ def NUCIDgen(isotope):
         isotope = isotope + ' '
     return isotope 
 
+## Converts level width in eV to half life in sec
 def convertToSec(hl,dhl):
     [val,units]=hl.split(' ')
     if 'EV' in units:
@@ -78,7 +80,7 @@ def getJrange(lowval,highval): ## Creates range of spins
         jRange[jIndex] = str(jRange[jIndex])
     return jRange
         
-
+## Check if state has desired spin
 def spinMatchFinder(matchVal,checkVal):
     ## matchVal is the desired spin, checkVal is the spin to be checked for matchVal      
     tempList = checkVal.replace('**','').replace('&',',').replace('[','').replace(']','') 

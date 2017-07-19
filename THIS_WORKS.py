@@ -1,10 +1,8 @@
 import newIsotopeDataExportingDat as ided
-import mass_data as md
 import os
 import glob
 import time
 import sys
-import ionization as addion
 import renormalize as renorm
 
 def function(option):
@@ -16,29 +14,24 @@ def function(option):
 #to check what they input against the plot they are viewing
 #The sleep is a pause so the timestamps used work correctly
 
-    ## mass data inclusion moved to newIsotopeDataExporting.py
-    #if userInput[5] == "YES":
-        #md.addMass(userInput[0],userInput[1],userInput[2],userInput[3])
-
-    ## ionization is now done in newIsotopeDataExporting.py
-    #addion.addIonization(userInput[0],userInput[1],userInput[2],userInput[3],userInput[4],userInput[5])
 
     renorm.renormalize(userInput[0],userInput[1],userInput[2],userInput[3])
 
     time.sleep(0.01)
 
 #Makes plot
-    ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],True,userInput[3],True)
+    ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],True)
 
 
 
 #This code creates the .git file which is the actual plot
     os.chdir("Output/gnuPlot")
     directory = os.getcwd()
-    newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
+    newest = max(glob.iglob(directory+"/*.plt"),key=os.path.getctime)
     newest = newest.replace(os.getcwd()+"/","")
+    #print(newest)#FIXME 
     os.system("gnuplot "+newest)
-
+    
 #This code puts restarts the program so it can be used again
     os.chdir("..")
     os.chdir("..")

@@ -19,8 +19,6 @@ def addIonization(dataObj, temperature):
 
     nonoElements =['Xx','Rf','Db','Sg','Bh','Hs','Mt','Ds','Rg','Cn','Ed','Fl','Ef','Lv','Eh','Ei']
 
-    #elementName = removeElements(elementName)
-
     for line in energyList:
         elementTitle = line[10:12].replace(" ","").upper()
         masschange[elementTitle] = 0

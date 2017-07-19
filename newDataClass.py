@@ -14,11 +14,11 @@ class data:##This is the main data class.
         self.op = option
         self.decay = betaVar
 
+
         ## nucID is what is compared to the first 6 characters of the line to find the correct data
         nucID=self.name.upper()  
         if self.op == 'two':#FIXME Decay Data setup
             
-
             parent = ''
             daughter = ''
             Avalue = ''
@@ -73,7 +73,7 @@ class data:##This is the main data class.
                     if adoptedGammas: ## End of Adopted Gammas Dataset
                         adoptedGammas = False
                         ## adoptedLevelRec is used when reading the Decay Data Set
-                        adoptedLevelRec = self.data
+                        adoptedLevelRec = self.data[:]
                         self.data = []
                     continue
                 else: ## Option 1 & 3
@@ -130,10 +130,13 @@ class data:##This is the main data class.
                             dataMatch = False
                             needDecayRec = True
                             errorList = []
-                            ## Frequently in the Decay Data Sets, the level records for the daughter isomers lack half life data, so that state's level record from the Adopted Gammas Data Set is used instead (all of the Adopted Level records are constained in adoptedLevelRec).
+                            ## Frequently in the Decay Data Sets, the level records for the daughter isomers lack half life data, so that state's level record from the Adopted Gammas Data Set is used instead (all of the Gamma Level records are constained in adoptedLevelRec).
+
+                            ## Find matching Adopted Gamma record
                             for record in adoptedLevelRec:
                                 if Decimal(record[1]) == Decimal(recordData[1]):
-                                    self.data.append(record)
+                                    matchedRecord = record[:] ##Necessary string copy
+                                    self.data.append(matchedRecord)
                                     dataMatch = True
                                     break
                                 ## Sometimes the energy of a state differs between the Decay Data Set and the Adopted Data Set. A percent error (of energy) calculation is used to determine the closest Adopted Data Set level record for a given Decay Data Set level record.
@@ -145,7 +148,10 @@ class data:##This is the main data class.
                                 MAXERROR = 1
                                 minIndex = errorList.index(min(errorList))
                                 if errorList[minIndex] < MAXERROR:
-                                    self.data.append(adoptedLevelRec[minIndex])
+                                    #print(adoptedLevelRec[minIndex])
+                                    minRec = adoptedLevelRec[minIndex]
+                                    closestRec = minRec[:] ##Necessary string copy
+                                    self.data.append(closestRec)
                                     ## Inform the user that a state has been imperfectly matched
                                     print(recordData[0]+' state at '+recordData[1]+' keV matched to adopted level at '+adoptedLevelRec[minIndex][1]+' keV w/ error of '+str(round(errorList[minIndex],4))+'%.')
                                 ## Case where the nearest Adopted Data Set level record is not within MAXERROR percent of the Decay Data Set level record.
@@ -156,13 +162,16 @@ class data:##This is the main data class.
                             continue
                     ## Identify decay record
                     elif(needDecayRec and line[0:6] == daughter and line[6:8]==' '+decayLabel):
+                        
                         branchI = line[21:29].strip()
+                        ## FIXME uncertainty handling
                         dBI = line[29:31].strip()
                         logft = line[41:49].strip()
                         dft = line[49:55]
                         needDecayRec = False
                         self.data[-1].extend((branchI,logft))
-
+        
+        
 
 
     ## extraTitleText would be desired spin states, for example
@@ -178,9 +187,7 @@ class data:##This is the main data class.
                 lineToWrite = lineToWrite + '\n'
                 datFile.write(str.encode(lineToWrite))
 
-                #datFile.write(str.encode(str(self.data[i][0])+';'+str(self.data[i][1])+';'+str(self.data[i][2])+';'+str(self.data[i][3])+';'+str(self.data[i][4])+';'+str(self.data[i][5])+';'+str(self.data[i][6])+'\n'))
-
-
+    ## Filters by desired spin states, if given
     def filterData(self,userInput,UI=False):
         ## no spin input
         if (userInput == ''):
