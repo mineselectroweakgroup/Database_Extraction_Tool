@@ -6,7 +6,6 @@ import sys
 import renormalize as renorm
 
 def function(option):
-
 #Exports data requested by the user into text files (necessary to generate plots)
     userInput = ided.datExp(option,True,True)
 
@@ -19,18 +18,19 @@ def function(option):
 
     time.sleep(0.01)
 
-#Makes plot
+#Makes plot (.012 s)
     ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],True)
-
 
 
 #This code creates the .git file which is the actual plot
     os.chdir("Output/gnuPlot")
     directory = os.getcwd()
-    newest = max(glob.iglob(directory+"/*.plt"),key=os.path.getctime)
-    newest = newest.replace(os.getcwd()+"/","")
-    #print(newest)#FIXME 
-    os.system("gnuplot "+newest)
+    try:
+        newest = max(glob.iglob(directory+"/*.plt"),key=os.path.getctime)
+        newest = newest.replace(os.getcwd()+"/","")
+        os.system("gnuplot "+newest)
+    except:
+        print('No new plot')
     
 #This code puts restarts the program so it can be used again
     os.chdir("..")

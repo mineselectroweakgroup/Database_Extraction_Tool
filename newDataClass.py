@@ -3,6 +3,15 @@ from functions import spinMatchFinder
 from functions import levelExtract
 from functions import NUCIDgen
  
+
+def Correct_Uncertainty(value,uncert):
+    if not '.' in value:
+        return(uncert)
+    s = value.find('.')
+    decimals = value[s+1:]
+    decimals = Decimal(-len(decimals))
+    uncert = str(Decimal(uncert)*10**decimals)
+    return(uncert)
     
 class data:##This is the main data class.
     def __init__(self,ENSDF,ISOvar,option,betaVar,energyLimit = 999999999):
@@ -106,7 +115,7 @@ class data:##This is the main data class.
                     print ('Missing ground state energy data for '+nucID)
                     break
 
-
+            ## Get Decay Data ##
             if self.op == "two" and not adoptedGammas:#FIXME get level data from adoptedLevelRec, then get deacay info
                 
                 ## Locate identification record for the decay dataset
@@ -162,14 +171,39 @@ class data:##This is the main data class.
                             continue
                     ## Identify decay record
                     elif(needDecayRec and line[0:6] == daughter and line[6:8]==' '+decayLabel):
-                        
-                        branchI = line[21:29].strip()
-                        ## FIXME uncertainty handling
-                        dBI = line[29:31].strip()
-                        logft = line[41:49].strip()
-                        dft = line[49:55]
+                        ## Variables named *I are branching intensities
+                        betaI = line[21:29].strip() ##Beta decay branching intensity
+                        dbetaI = line[29:31].strip()
+                        ## give uncertainty correct magnitude 
+                        if any (char.isalpha() for char in dbetaI):
+                            pass   
+                        elif dbetaI == '':
+                            pass
+                        elif ('.' in betaI):
+                            dbetaI = Correct_Uncertainty(betaI,dbetaI)
+
+                        ecI = line[31:39].strip() ##Electron Capture branching intensity
+                        decI = line[39:41].strip()
+                       
+                        ## give uncertainty correct magnitude 
+                        if any (char.isalpha() for char in decI):
+                            pass   
+                        elif decI == '':
+                            pass
+                        elif ('.' in ecI):
+                            decI = Correct_Uncertainty(ecI,decI)
+
+                        ## get total intensity
+                        if ecI == '' and betaI == '':
+                            totBranchI = ''
+                        elif ecI == '':
+                            totBranchI = betaI
+                        elif betaI == '':
+                            totBranchI = ecI
+                        else:
+                            totBranchI = str(Decimal(betaI) + Decimal(ecI))
                         needDecayRec = False
-                        self.data[-1].extend((branchI,logft))
+                        self.data[-1].append(totBranchI)
         
         
 
@@ -209,7 +243,7 @@ class data:##This is the main data class.
                     ## The spinMatchFinder will identify if the state is the desired spin
                     if any(spinMatchFinder(wantedString, self.data[i][2]) for wantedString in userInput.split(',')):
                         newData.append(self.data[i])
-                self.data=newData##changes data to the new data.
+                self.data=newData[:]##changes data to the new data.
                 if (self.data):
                     self.data.insert(0,groundSt)
                 else:

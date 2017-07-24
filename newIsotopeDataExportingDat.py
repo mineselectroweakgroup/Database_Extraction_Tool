@@ -8,6 +8,7 @@ import os
 import re
 import mass_data as md
 import ionization as addion
+import time
 
 
 
@@ -61,7 +62,9 @@ def datExp(option,UI=False,Filter=False):
         exitcount = 0
 
     elif option == "three":
+        print('B')
         from Parabola_GUI import parabolaoutputs
+        print('C')
         elementName = str(parabolaoutputs.Z)
         lowerBound = int(parabolaoutputs.A)
         higherBound = int(parabolaoutputs.A)
@@ -77,10 +80,15 @@ def datExp(option,UI=False,Filter=False):
 
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
             tryAgainCounter=0
-    
+
+    ## Create dictionaries of ionization data
+    addion.make_ion_dict(temperature)
+
     #This loop goes through each wanted nuclei in the range of A values and makes the variable to be used (and iterated through) to from b in the a=b expression in data class.
+    data_start = time.time()
     for element in elementName:
         for i in range(lowerBound,higherBound+1):
+
             itervar= str(i)+element
             indata=dc.data('ensdf.'+str(i).zfill(3),itervar,option,betaVariable,energyLim)
             indata.filterData(wantedSpins,UI)
@@ -92,10 +100,14 @@ def datExp(option,UI=False,Filter=False):
                 md.addMass(indata)
 
             ## Include ionization effects
-            addion.addIonization(indata,temperature)
+            addion.addIonization(indata)
+
             ## export .dat file
             indata.export("_Fil.dat",wantedSpins)
             
+    data_stop = time.time()
+    data_time = data_stop-data_start
+    print('Data import/export: %f' % data_time)
                 
             
     if UI:
@@ -168,7 +180,9 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         #plot and exits the program.
         filenameopen = (str(lowerBound+removecount[element])+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
         fileNameBool = False
-        if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+        create_file =os.path.isfile("Output/"+"gnuPlot/"+filenameopen) 
+        if create_file :
+        #if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
             if option == "one":
                 fileName = str(elementnamestring)+"_"+str(lowerBound)+"to"+str(higherBound)+"_"+wantedSpins+"_"+str(energyLim)+".plt"
             elif option == "two":
@@ -263,20 +277,24 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                         arrowDataFile.write(arrowLine+'\n')
 
         arrowDataFile.close()
-        plotDataFile.close()        
-        try:
+        plotDataFile.close()       
+        if create_file:
             setLine = setLine[:-1]+')\n'
             pltFile.write(str.encode(setLine))
             pltFile.write(str.encode("set xrange [0:"+str(len(isotopeLabels)+1)+"]\n"))
+        #except:
+        #    pltFile = open(fileName,'wb')
+        #    pltFile.write(str.encode(setLine))
+        #    pltFile.write(str.encode("set xrange [0:"+str(len(isotopeLabels)+1)+"]\n"))
+
             rangecount = len(isotopeLabels)
-        except:
-            pass
-        ## Continue writing the .plt file
-        pltFile.write(str.encode('plot "DecayData_plot.dat" using 1:3:4 with labels left point offset 0.2,0\n'))
-        pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.375):3:(0.375):5 with boxxyerrorbars linecolor rgb \'black\' fillstyle solid\n'))
-        pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):3:(0.75):(0) with vectors nohead linecolor -1\n'))
-        pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):3:9 with labels left point offset 0,0.2\n'))
-        pltFile.write(str.encode('replot "ArrowData_plot.dat" using 1:2:($3-$1-0.75):($4-$2) with vectors linecolor 1\n'))
+
+            ## Continue writing the .plt file
+            pltFile.write(str.encode('plot "DecayData_plot.dat" using 1:3:4 with labels left point offset 0.2,0\n'))
+            pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.375):3:(0.375):5 with boxxyerrorbars linecolor rgb \'black\' fillstyle solid\n'))
+            pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):3:(0.75):(0) with vectors nohead linecolor -1\n'))
+            pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):3:9 with labels left point offset 0,0.2\n'))
+            pltFile.write(str.encode('replot "ArrowData_plot.dat" using 1:2:($3-$1-0.75):($4-$2) with vectors linecolor 1\n'))
 
 
             
@@ -297,17 +315,13 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 if(i+fileParsingFactor>higherBound+rangecount):
                     setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+ionization+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+")"
                 else:
-                    setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+ionization+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
+                    setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+str(ionization)+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
             mostrecentrangecount = rangecount
 
-        setLine = setLine[:-1]+')\n'
-
-
-        try:
+        if create_file:
+            setLine = setLine[:-1]+')\n'
             pltFile.write(str.encode(setLine))
             pltFile.write(str.encode("set xrange [0:"+str(rangecount+1)+"]\n"))
-        except:
-            pass
     
         itercount = 0
         mostrecentiter = 0
