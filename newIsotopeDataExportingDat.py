@@ -62,9 +62,7 @@ def datExp(option,UI=False,Filter=False):
         exitcount = 0
 
     elif option == "three":
-        print('B')
         from Parabola_GUI import parabolaoutputs
-        print('C')
         elementName = str(parabolaoutputs.Z)
         lowerBound = int(parabolaoutputs.A)
         higherBound = int(parabolaoutputs.A)
@@ -85,7 +83,6 @@ def datExp(option,UI=False,Filter=False):
     addion.make_ion_dict(temperature)
 
     #This loop goes through each wanted nuclei in the range of A values and makes the variable to be used (and iterated through) to from b in the a=b expression in data class.
-    data_start = time.time()
     for element in elementName:
         for i in range(lowerBound,higherBound+1):
 
@@ -105,10 +102,6 @@ def datExp(option,UI=False,Filter=False):
             ## export .dat file
             indata.export("_Fil.dat",wantedSpins)
             
-    data_stop = time.time()
-    data_time = data_stop-data_start
-    print('Data import/export: %f' % data_time)
-                
             
     if UI:
         #readinput.message= "Data export complete"

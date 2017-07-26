@@ -54,8 +54,8 @@ class data:##This is the main data class.
 
             parent = Avalue+parent
             daughter = NUCIDgen(Avalue+daughter)
-            print('Parent: '+ parent)
-            print('Daughter: '+daughter)
+            #print('Parent: '+ parent)
+            #print('Daughter: '+daughter)
             nucID = daughter
         else:
             nucID = NUCIDgen(nucID)
