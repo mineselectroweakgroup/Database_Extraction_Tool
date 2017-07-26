@@ -150,7 +150,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         removecount[element] = 0
         for i in range(lowerBound,higherBound+1,fileParsingFactor):
             filenameopen = (str(i)+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
-            with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
+            with open("Output/gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
                 first_line = first_line.split(';')
                 #print(first_line)
@@ -164,8 +164,8 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         removehighcount[element] = 0
         for i in range(higherBound,lowerBound-1,-fileParsingFactor):
             filenameopen = (str(i)+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
-            if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
-                with open("Output/"+"gnuPlot/"+filenameopen, 'r') as datafile:
+            if os.path.isfile("Output/gnuPlot/"+filenameopen):
+                with open("Output/gnuPlot/"+filenameopen, 'r') as datafile:
                     first_line = datafile.readline().rstrip()
                     first_line = first_line.split(';')
                     nodatatest = str(first_line[2][-2:])
@@ -190,7 +190,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 #fileName = "Beta_"+str(lowerBound)+str(elementName[0])+str(elementName[1])+"_"+str(temperature)[:-2]+"K.plt"
             elif option == "three":
                 fileName = "Parabola_"+str(lowerBound)+"_"+str(temperature)[:-2]+"K.plt"
-            fileName= "Output/" + "gnuPlot/" + fileName.replace('/','_')
+            fileName= "Output/gnuPlot/" + fileName.replace('/','_')
             pltFile = open(fileName,'wb')
             
 
@@ -260,7 +260,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                                 else:
                                     NameVal += char.lower()
                             
-                        setLine = setLine+'"^{'+Aval+'}'+NameVal+' ^{'+ionization+'}" '+str(isotopeLabels[line[0]])+','
+                        setLine = setLine + '"^{%s}%s ^{%s}" %s,' % (Aval, NameVal, ionization, str(isotopeLabels[line[0]]))
 
                     ## index each state by isotope for plotting by prepending the index
                     lineToWrite = str(isotopeLabels[line[0]])
@@ -273,7 +273,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                         arrowStart = [isotopeLabels[line[0]],line[1]] ## [x,y]
                     else: ## Daughter
                         arrowEnd = [isotopeLabels[line[0]],line[1]] ## [x,y]
-                        arrowLine = str(arrowStart[0])+';'+str(arrowStart[1])+';'+str(arrowEnd[0])+';'+str(arrowEnd[1])
+                        arrowLine = str(arrowStart[0])+';'+str(arrowStart[1])+';'+str(arrowEnd[0])+';'+str(arrowEnd[1]) + ';'+str(line[3])
                         arrowDataFile.write(arrowLine+'\n')
 
         arrowDataFile.close()
@@ -293,7 +293,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             pltFile.write(str.encode('plot "DecayData_plot.dat" using 1:3:4 with labels left point offset 0.2,0\n'))
             pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.375):3:(0.375):5 with boxxyerrorbars linecolor rgb \'black\' fillstyle solid\n'))
             pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):3:(0.75):(0) with vectors nohead linecolor -1\n'))
-            pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):3:9 with labels left point offset 0,0.2\n'))
+            pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):($3+$5):9 with labels left point offset 0,0.2\n'))
             pltFile.write(str.encode('replot "ArrowData_plot.dat" using 1:2:($3-$1-0.75):($4-$2) with vectors linecolor 1\n'))
 
 

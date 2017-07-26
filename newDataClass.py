@@ -193,7 +193,7 @@ class data:##This is the main data class.
                         elif ('.' in ecI):
                             decI = Correct_Uncertainty(ecI,decI)
 
-                        ## get total intensity
+                        ## get total branching intensity
                         if ecI == '' and betaI == '':
                             totBranchI = ''
                         elif ecI == '':
