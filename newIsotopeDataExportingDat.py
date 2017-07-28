@@ -138,6 +138,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
 #to ensure data is recorded properly for all elements
     removecount = {}
     removehighcount = {}
+    create_file = False
     for element in elementName:
         ##This loop removes all datafiles below the first non-empty one
         removecount[element] = 0
@@ -173,16 +174,18 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         #plot and exits the program.
         filenameopen = (str(lowerBound+removecount[element])+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
         fileNameBool = False
-        create_file =os.path.isfile("Output/"+"gnuPlot/"+filenameopen) 
-        if create_file :
-        #if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
+        #create_file =os.path.isfile("Output/"+"gnuPlot/"+filenameopen) 
+        #if create_file :
+        if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
             if option == "one":
                 fileName = str(elementnamestring)+"_"+str(lowerBound)+"to"+str(higherBound)+"_"+wantedSpins+"_"+str(energyLim)+".plt"
+                create_file = True
             elif option == "two":
                 fileName = "Beta_"+str(lowerBound)+str(elementName[0])+"_"+str(temperature)[:-2]+"K.plt"
-                #fileName = "Beta_"+str(lowerBound)+str(elementName[0])+str(elementName[1])+"_"+str(temperature)[:-2]+"K.plt"
+                create_file = True
             elif option == "three":
                 fileName = "Parabola_"+str(lowerBound)+"_"+str(temperature)[:-2]+"K.plt"
+                create_file = True
             fileName= "Output/gnuPlot/" + fileName.replace('/','_')
             pltFile = open(fileName,'wb')
             
@@ -216,6 +219,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 pltFile.write(str.encode('set label "* Extrapolated Mass" at graph 0.01, graph 0.97 left\n'))
 
                 setLine="set xtics right rotate by 45 ("
+
 
     ## Option 2 ##
     ## Generate a list of Isotopes for the x axis 
@@ -310,7 +314,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 else:
                     setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+str(ionization)+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
             mostrecentrangecount = rangecount
-
+        print(create_file)#false
         if create_file:
             setLine = setLine[:-1]+')\n'
             pltFile.write(str.encode(setLine))

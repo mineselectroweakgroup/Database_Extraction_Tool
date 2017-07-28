@@ -69,6 +69,7 @@ class data:##This is the main data class.
         desiredData = False
         adoptedGammas = True
         needDecayRec = False
+        need_ss_info = False
 
         for line in self.f:
             linecount+=1
@@ -137,8 +138,6 @@ class data:##This is the main data class.
                             continue
                         if(float(recordData[1])<=energyLimit):   
                             dataMatch = False
-                            needDecayRec = True
-                            errorList = []
                             ## Frequently in the Decay Data Sets, the level records for the daughter isomers lack half life data, so that state's level record from the Adopted Gammas Data Set is used instead (all of the Gamma Level records are constained in adoptedLevelRec).
 
                             ## Find matching Adopted Gamma record
@@ -162,11 +161,16 @@ class data:##This is the main data class.
                                     closestRec = minRec[:] ##Necessary string copy
                                     self.data.append(closestRec)
                                     ## Inform the user that a state has been imperfectly matched
-                                    print(recordData[0]+' state at '+recordData[1]+' keV matched to adopted level at '+adoptedLevelRec[minIndex][1]+' keV w/ error of '+str(round(errorList[minIndex],4))+'%.')
+                                    #print(recordData[0]+' state at '+recordData[1]+' keV matched to adopted level at '+adoptedLevelRec[minIndex][1]+' keV w/ error of '+str(round(errorList[minIndex],4))+'%.')
                                 ## Case where the nearest Adopted Data Set level record is not within MAXERROR percent of the Decay Data Set level record.
                                 else:
-                                    print('No adopted record found for '+recordData[0]+' at '+recordData[1]+' keV with under '+str(MAXERROR)+'% error.')
+                                    #print('No adopted record found for '+recordData[0]+' at '+recordData[1]+' keV with under '+str(MAXERROR)+'% error.')
                                     self.data.append(recordData)
+                            if needDecayRec == True:
+                                ##no Decay record for previous daughter Level rec
+                                self.data[-2].extend(('0','0'))
+                            needDecayRec = True
+                            errorList = []
                         else:
                             continue
                     ## Identify decay record
@@ -204,11 +208,28 @@ class data:##This is the main data class.
                             totBranchI = str(Decimal(betaI) + Decimal(ecI))
                         needDecayRec = False
                         self.data[-1].append(totBranchI)
-        
-        
+
+                        ## Append ecI/(ecI+B+)
+                        if ecI == '':
+                            ecI = 0
+                            self.data[-1].append('0')
+                        else:
+                            self.data[-1].append(ecI)
+
+                        ### Subshell Data ###
+                        if not ecI == '': #FIXME
+                            need_ss_info = True
+
+                    ## Subshell Data Acquisition
+                    elif(need_ss_info and line[0:5] == daughter[:-1] and line[5].isalnum() and line[6:8]==' '+decayLabel):
+                        ## (Isotope, energy, t1/2, dt1/2, CK%, CL%, CM%) #0145
+                        ss_data = [self.data[-1][i] for i in [0,1,4,5]]
+                        print('%s Energy: %s  t1/2: %s  dt1/2: %s  ' % tuple(ss_data))
+                        if any(cx in line for cx in ['CK','CL','CM']):
+                            print(line[9:])
+                            need_ss_info = False
 
 
-    ## extraTitleText would be desired spin states, for example
     def export(self,fExtOption = '.dat',extraTitleText = ''): 
 #            if(fExtOption==".dat"or fExtOption=="_Fil.dat"):##To make data files for use in gnuplot and plt file.
             fileName=str(self.name)+extraTitleText+fExtOption##creates filename
