@@ -219,7 +219,7 @@ class data:##This is the main data class.
                         ### Subshell Data ###
                         if not ecI == '': #FIXME
                             need_ss_info = True
-
+                    '''
                     ## Subshell Data Acquisition
                     elif(need_ss_info and line[0:5] == daughter[:-1] and line[5].isalnum() and line[6:8]==' '+decayLabel):
                         ## (Isotope, energy, t1/2, dt1/2, CK%, CL%, CM%) #0145
@@ -228,7 +228,7 @@ class data:##This is the main data class.
                         if any(cx in line for cx in ['CK','CL','CM']):
                             print(line[9:])
                             need_ss_info = False
-
+                    '''
 
     def export(self,fExtOption = '.dat',extraTitleText = ''): 
 #            if(fExtOption==".dat"or fExtOption=="_Fil.dat"):##To make data files for use in gnuplot and plt file.
