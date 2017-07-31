@@ -27,7 +27,6 @@ class data:##This is the main data class.
         ## nucID is what is compared to the first 6 characters of the line to find the correct data
         nucID=self.name.upper()  
         if self.op == 'two':#FIXME Decay Data setup
-            
             parent = ''
             daughter = ''
             Avalue = ''
@@ -41,6 +40,7 @@ class data:##This is the main data class.
             perTable = open("ElementList.txt","r")
             periodicTable = perTable.readline()
             periodicTable = periodicTable.split(',')
+            periodicTable[-1] = periodicTable[-1][:-1]
             ## Assign daughter nucleus
             for item in periodicTable:
                 if item.upper() == parent:
@@ -51,7 +51,6 @@ class data:##This is the main data class.
                     elif self.decay == "B-":
                         daughter = periodicTable[index+1].upper()
                         decayLabel = 'B'
-
             parent = Avalue+parent
             daughter = NUCIDgen(Avalue+daughter)
             #print('Parent: '+ parent)
@@ -138,6 +137,7 @@ class data:##This is the main data class.
                             continue
                         if(float(recordData[1])<=energyLimit):   
                             dataMatch = False
+                            errorList = []
                             ## Frequently in the Decay Data Sets, the level records for the daughter isomers lack half life data, so that state's level record from the Adopted Gammas Data Set is used instead (all of the Gamma Level records are constained in adoptedLevelRec).
 
                             ## Find matching Adopted Gamma record
