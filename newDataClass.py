@@ -191,7 +191,6 @@ class data:##This is the main data class.
                                 MAXERROR = 1
                                 minIndex = errorList.index(min(errorList))
                                 if errorList[minIndex] < MAXERROR:
-                                    #print(adoptedLevelRec[minIndex])
                                     minRec = adoptedLevelRec[minIndex]
                                     closestRec = minRec[:] ##Necessary string copy
                                     self.data.append(closestRec)
@@ -203,7 +202,7 @@ class data:##This is the main data class.
                                     self.data.append(recordData)
                             if needDecayRec == True:
                                 ##no Decay record for previous daughter Level rec
-                                self.data[-2].extend(('0','0'))
+                                self.data[-2].extend(('0','0','0'))
                             needDecayRec = True
                             errorList = []
                         else:
@@ -247,9 +246,14 @@ class data:##This is the main data class.
                         ## Append ecI/(ecI+B+)
                         if ecI == '':
                             ecI = 0
-                            self.data[-1].append('0')
+                            self.data[-1].extend(('0','0'))
                         else:
-                            self.data[-1].append(str(float(ecI)*scale_factor))
+                            if any(char.isalpha() for char in decI):
+                                ecI_error = decI 
+                            else:
+                                ecI_error = multuncert(float(ecI), scale_factor, float(decI),d_scale_factor)
+                            ## append net ecI ratio and uncertainty
+                            self.data[-1].extend((str(float(ecI)*scale_factor),str(ecI_error)))
 
                         ### Subshell Data ###
                         if not ecI == '': #FIXME
