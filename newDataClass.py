@@ -1,17 +1,7 @@
 from decimal import *
-from functions import spinMatchFinder
-from functions import levelExtract
-from functions import NUCIDgen
- 
+from functions import spinMatchFinder, levelExtract, NUCIDgen, Correct_Uncertainty
+from uncertainty import multuncert
 
-def Correct_Uncertainty(value,uncert):
-    if not '.' in value:
-        return(uncert)
-    s = value.find('.')
-    decimals = value[s+1:]
-    decimals = Decimal(-len(decimals))
-    uncert = str(Decimal(uncert)*10**decimals)
-    return(uncert)
     
 class data:##This is the main data class.
     def __init__(self,ENSDF,ISOvar,option,betaVar,energyLimit = 999999999):
@@ -116,12 +106,13 @@ class data:##This is the main data class.
                     break
 
             ## Get Decay Data ##
-            if self.op == "two" and not adoptedGammas:#FIXME get level data from adoptedLevelRec, then get deacay info
+            if self.op == "two" and not adoptedGammas:
                 
                 ## Locate identification record for the decay dataset
                 if (line[0:6] == daughter and line[6:9] == '   ' and dsid[0] == parent):
                     desiredData = True
                 if desiredData == True:
+
                     ## Locate Parent Record and retrieve data
                     if (line[0:6] == NUCIDgen(parent) and line[6:8]==' P'):
                         recordData = levelExtract(line,self.data)
@@ -129,6 +120,50 @@ class data:##This is the main data class.
                             continue
                         if(float(recordData[1])<=energyLimit):
                             self.data.append(recordData)
+
+                    ## Locate the Normalization record for scaling branching ratios
+                    #FIXME get error & propagate
+                    #FIXME make error magnitude assignment an importable function
+                    if (line[0:6] == daughter and line[6:8] == ' N'):
+                        ## See ensdf manual for more information on what these terms are (pg. 18)
+                        BR = line[31:39].strip()
+                        dBR = line[39:41].strip()
+                        NB = line[41:49].strip()
+                        dNB = line[49:55].strip()
+                
+                        if BR == '':
+                            BR = '1'
+                        if NB == '':
+                            NB = '1'
+                        if dBR == '':
+                            dBR = '0'
+                        else:
+                            dBR = Correct_Uncertainty(BR,dBR)
+                        if dNB == '':
+                            dNB = '0'
+                        else:
+                            dNB = Correct_Uncertainty(NB,dNB)
+
+                        scale_factor = float(NB)*float(BR)
+                        d_scale_factor = multuncert(float(NB),float(BR),float(dNB),float(dNB))
+
+                    ## Locate the PN record to use instead of N record scaling
+                    ## the N rec is only used if PN rec is empty
+                    #FIXME get error & propagate
+                    if (line[0:6] == daughter and line[6:8] == 'PN'):
+                        NBBR = line[41:49].strip()
+                        dNBBR = line[49:55].strip()
+                        if not NBBR == '':
+                            if dNBBR == '':
+                                ## Use d_scale_factor from N record
+                                pass
+                            else:
+                                d_scale_factor = ScaleUncert(NBBR,dNBBR)
+
+                            scale_factor = float(NBBR)
+                        ## Else: use scale_factor from N record 
+
+
                     ## Locate daughter Level Record
                     elif (line[0:6] == daughter and line[6:8]==' L'):
                         ## Get data from adoptedLevelRec     
@@ -184,7 +219,7 @@ class data:##This is the main data class.
                         elif dbetaI == '':
                             pass
                         elif ('.' in betaI):
-                            dbetaI = Correct_Uncertainty(betaI,dbetaI)
+                            dbetaI = str(float(Correct_Uncertainty(betaI,dbetaI))*scale_factor)
 
                         ecI = line[31:39].strip() ##Electron Capture branching intensity
                         decI = line[39:41].strip()
@@ -195,17 +230,17 @@ class data:##This is the main data class.
                         elif decI == '':
                             pass
                         elif ('.' in ecI):
-                            decI = Correct_Uncertainty(ecI,decI)
+                            decI = str(float(Correct_Uncertainty(ecI,decI))*scale_factor)
 
                         ## get total branching intensity
                         if ecI == '' and betaI == '':
                             totBranchI = ''
                         elif ecI == '':
-                            totBranchI = betaI
+                            totBranchI = str(float(betaI)*scale_factor)
                         elif betaI == '':
-                            totBranchI = ecI
+                            totBranchI = str(float(ecI)*scale_factor)
                         else:
-                            totBranchI = str(Decimal(betaI) + Decimal(ecI))
+                            totBranchI = str((float(betaI) + float(ecI))*scale_factor)
                         needDecayRec = False
                         self.data[-1].append(totBranchI)
 
@@ -214,7 +249,7 @@ class data:##This is the main data class.
                             ecI = 0
                             self.data[-1].append('0')
                         else:
-                            self.data[-1].append(ecI)
+                            self.data[-1].append(str(float(ecI)*scale_factor))
 
                         ### Subshell Data ###
                         if not ecI == '': #FIXME

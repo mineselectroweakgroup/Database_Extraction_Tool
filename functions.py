@@ -7,6 +7,17 @@ from uncertainty import halfLifeErrorProp
 HBAR = Decimal('6.582119514e-16') ## [eV sec] from NIST
 LN2 = Decimal('6.931471806e-1')
 
+## Converts standard uncertainty to correct magnitude
+def Correct_Uncertainty(value,uncert):
+    if not '.' in value:
+        return(uncert)
+    s = value.find('.')
+    decimals = value[s+1:]
+    decimals = Decimal(-len(decimals))
+    uncert = str(Decimal(uncert)*10**decimals)
+    return(uncert)
+
+
 ## Generates a string that can be used to identify isotope records in ensdf files
 def NUCIDgen(isotope):
     charIndex = 0
