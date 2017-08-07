@@ -202,7 +202,7 @@ class data:##This is the main data class.
                                     self.data.append(recordData)
                             if needDecayRec == True:
                                 ##no Decay record for previous daughter Level rec
-                                self.data[-2].extend(('0','0','0'))
+                                self.data[-2].append('0')
                             needDecayRec = True
                             errorList = []
                         else:
@@ -243,31 +243,6 @@ class data:##This is the main data class.
                         needDecayRec = False
                         self.data[-1].append(totBranchI)
 
-                        ## Append ecI/(ecI+B+)
-                        if ecI == '':
-                            ecI = 0
-                            self.data[-1].extend(('0','0'))
-                        else:
-                            if any(char.isalpha() for char in decI):
-                                ecI_error = decI 
-                            else:
-                                ecI_error = multuncert(float(ecI), scale_factor, float(decI),d_scale_factor)
-                            ## append net ecI ratio and uncertainty
-                            self.data[-1].extend((str(float(ecI)*scale_factor),str(ecI_error)))
-
-                        ### Subshell Data ###
-                        if not ecI == '': #FIXME
-                            need_ss_info = True
-                    '''
-                    ## Subshell Data Acquisition
-                    elif(need_ss_info and line[0:5] == daughter[:-1] and line[5].isalnum() and line[6:8]==' '+decayLabel):
-                        ## (Isotope, energy, t1/2, dt1/2, CK%, CL%, CM%) #0145
-                        ss_data = [self.data[-1][i] for i in [0,1,4,5]]
-                        print('%s Energy: %s  t1/2: %s  dt1/2: %s  ' % tuple(ss_data))
-                        if any(cx in line for cx in ['CK','CL','CM']):
-                            print(line[9:])
-                            need_ss_info = False
-                    '''
 
     def export(self,fExtOption = '.dat',extraTitleText = ''): 
 #            if(fExtOption==".dat"or fExtOption=="_Fil.dat"):##To make data files for use in gnuplot and plt file.

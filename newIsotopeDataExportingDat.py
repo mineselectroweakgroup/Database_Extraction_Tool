@@ -314,7 +314,6 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 else:
                     setLine=setLine+"\"^{"+str(i)+"}"+str(element)+" ^{"+str(ionization)+"}\" "+str(i+1-lowerBound-removecount[element]+mostrecentrangecount)+","
             mostrecentrangecount = rangecount
-        print(create_file)#false
         if create_file:
             setLine = setLine[:-1]+')\n'
             pltFile.write(str.encode(setLine))
