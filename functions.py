@@ -1,4 +1,4 @@
-## This file contains functions that are used by newDataClass.py to read and filter data from the ensdf files
+## This file contains functions that are used by DataClass.py to read and filter data from the ensdf files
 
 from fractions import Fraction
 from decimal import Decimal

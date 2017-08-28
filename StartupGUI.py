@@ -58,7 +58,7 @@ class Application(Frame):
 
     def evalFunc(self):
         root.destroy()
-        os.system('python3 THIS_WORKS.py "one"')
+        os.system('python3 Main.py "one"')
 
     def massFunc(self):
         root.destroy()
@@ -66,11 +66,11 @@ class Application(Frame):
 
     def betaFunc(self):
         root.destroy()
-        os.system('python3 THIS_WORKS.py "two"')
+        os.system('python3 Main.py "two"')
 
     def parabolaFunc(self):
         root.destroy()
-        os.system('python3 THIS_WORKS.py "three"')
+        os.system('python3 Main.py "three"')
 
     def nucChartFunc(self):
         root.destroy()

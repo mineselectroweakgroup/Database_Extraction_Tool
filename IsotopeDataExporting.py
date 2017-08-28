@@ -3,7 +3,7 @@
 ##Date Updated: April 26, 2017 by Peter Consalvi
 ##Date Updated: May 24, 2017 by Matthew Martin
 
-import newDataClass as dc
+import DataClass as dc
 import os
 import re
 import mass_data as md
@@ -32,7 +32,7 @@ def datExp(option,UI=False,Filter=False):
         elementName = elementName.title()
         elementName = elementName.split(',')
         temperature = 0
-        betaVariable = 'NULL' ## Required parameter of newDataClass
+        betaVariable = 'NULL' ## Required parameter of DataClass
 
     elif option == "two":
         from Beta_GUI import betaoutputs
@@ -73,7 +73,7 @@ def datExp(option,UI=False,Filter=False):
         elementName = elementName.split(',')
         temperature = float(parabolaoutputs.T)
         exitcount = 0
-        betaVariable = 'NULL' ## Required parameter of newDataClass
+        betaVariable = 'NULL' ## Required parameter of DataClass
 
 
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):

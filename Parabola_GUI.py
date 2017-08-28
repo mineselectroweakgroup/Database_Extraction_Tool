@@ -127,7 +127,7 @@ class Application(Frame):
         self.spinVar = "0+"
         self.exitcount = 1
         root.destroy()
-        os.system("python3 USE_THIS.py")
+        os.system("python3 StartupGUI.py")
         sys.exit()
 
 app = Application(root)

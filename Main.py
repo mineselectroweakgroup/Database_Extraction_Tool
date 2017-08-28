@@ -1,4 +1,4 @@
-import newIsotopeDataExportingDat as ided
+import IsotopeDataExporting as ided
 import os
 import glob
 import time
@@ -35,7 +35,7 @@ def function(option):
 #This code puts restarts the program so it can be used again
     os.chdir("..")
     os.chdir("..")
-    os.system("python3 THIS_WORKS.py "+option)
+    os.system("python3 Main.py "+option)
     newest = "Output/gnuPlot/"+newest.replace(".plt",".gif")
     if os.path.isfile(newest):
         os.system("rm "+newest)

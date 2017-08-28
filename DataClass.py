@@ -122,8 +122,6 @@ class data:##This is the main data class.
                             self.data.append(recordData)
 
                     ## Locate the Normalization record for scaling branching ratios
-                    #FIXME get error & propagate
-                    #FIXME make error magnitude assignment an importable function
                     if (line[0:6] == daughter and line[6:8] == ' N'):
                         ## See ensdf manual for more information on what these terms are (pg. 18)
                         BR = line[31:39].strip()
@@ -135,17 +133,20 @@ class data:##This is the main data class.
                             BR = '1'
                         if NB == '':
                             NB = '1'
-                        if dBR == '':
-                            dBR = '0'
-                        else:
-                            dBR = Correct_Uncertainty(BR,dBR)
-                        if dNB == '':
+                        #if dBR == '':
+                        #    dBR = '0'
+                        #else:
+                        #    dBR = Correct_Uncertainty(BR,dBR)
+                        if any(char.isalpha() for char in dNB):
+                            d_scale_factor = dNB
+                        elif dNB == '':
                             dNB = '0'
+                            d_scale_factor = multuncert(float(NB),float(BR),float(dNB),float(dNB))
                         else:
                             dNB = Correct_Uncertainty(NB,dNB)
+                            d_scale_factor = multuncert(float(NB),float(BR),float(dNB),float(dNB))
 
                         scale_factor = float(NB)*float(BR)
-                        d_scale_factor = multuncert(float(NB),float(BR),float(dNB),float(dNB))
 
                     ## Locate the PN record to use instead of N record scaling
                     ## the N rec is only used if PN rec is empty
