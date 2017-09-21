@@ -1,5 +1,5 @@
 # Database_Extraction_Tool
-
+the quick brown fox
 
 ### Outline of Program
 The end goal of the project is to create a cohesive and intuitive set of GUIs which can be used to effectively sort through large databases for nuclear structural data and atomic binding data. This will allow for an easy, systematic study of excited nuclear states, atomic mass data, and beta decay transitions.
@@ -9,7 +9,8 @@ This program has 3 functions:
 2. Produce plots of nuclear states with beta decay data.
 3. Produce a mass parabola for a given A value.
 
-
+### How to get this program:
+1. Download the program from the GitHub page or use 
 
 ### How to run this program:
 1. Run the `USE_THIS.py` script.
