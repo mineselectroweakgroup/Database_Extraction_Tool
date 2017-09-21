@@ -48,11 +48,3 @@ def function(option):
 
 option = sys.argv[-1]
 function(option)
-
-#Problems:
-#1. Click the submit button on the left and the GUI closes
-#2. Any messages that appear in the shell should appear in textbox
-#3. Plots do NOT appear inside GUI
-#4. How to handle Theory and Sym inputs
-#5. Formatting......
-
