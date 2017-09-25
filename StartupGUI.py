@@ -1,4 +1,4 @@
-from tkinter import *
+from Tkinter import *
 root = Tk()
 root.title("Electroweak Interactions Group -- Systematic Study Program")
 root.configure(background='#21314D')
@@ -58,23 +58,23 @@ class Application(Frame):
 
     def evalFunc(self):
         root.destroy()
-        os.system('python3 Main.py "one"')
+        os.system('python Main.py "one"')
 
     def massFunc(self):
         root.destroy()
-        os.system("python3 Mass_GUI.py")
+        os.system("python Mass_GUI.py")
 
     def betaFunc(self):
         root.destroy()
-        os.system('python3 Main.py "two"')
+        os.system('python Main.py "two"')
 
     def parabolaFunc(self):
         root.destroy()
-        os.system('python3 Main.py "three"')
+        os.system('python Main.py "three"')
 
     def nucChartFunc(self):
         root.destroy()
-        os.system('python3 Decay_Chart_GUI.py')
+        os.system('python Decay_Chart_GUI.py')
 
     def exitButton(self):
         self.exitcount = 1

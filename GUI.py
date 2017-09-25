@@ -1,7 +1,7 @@
 #This is the GUI that calls the evaluated nuclear structure input. The class at the bottom is for the output
 #calues and is used to communicate with other scripts in the program
 
-from tkinter import *
+from Tkinter import *
 import searching_function as sf
 root = Tk()
 root.title("Data Extraction")
@@ -164,7 +164,7 @@ class Application(Frame):
         self.spinVar = "0+"
         self.exitcount = 1
         root.destroy()
-        os.system("python3 StartupGUI.py")
+        os.system("python StartupGUI.py")
         sys.exit()
 
 app = Application(root)

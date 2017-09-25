@@ -1,4 +1,4 @@
-from tkinter import *
+fro Tkinter import *
 root = Tk()
 root.title("Electroweak Interactions Group -- Systematic Study Program")
 import os
@@ -92,7 +92,7 @@ class Application(Frame):
         self.spinVar = "0+"
         self.exitcount = 1
         root.destroy()
-        os.system("python3 StartupGUI.py")
+        os.system("python StartupGUI.py")
         sys.exit()
 
 

@@ -1,4 +1,4 @@
-from tkinter import *
+from Tkinter import *
 root = Tk()
 root.title("Data Extraction")
 import sys
@@ -127,7 +127,7 @@ class Application(Frame):
         self.spinVar = "0+"
         self.exitcount = 1
         root.destroy()
-        os.system("python3 StartupGUI.py")
+        os.system("python StartupGUI.py")
         sys.exit()
 
 app = Application(root)

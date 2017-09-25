@@ -1,7 +1,7 @@
 #This script is a class which opens the GUI for the beta decay subscript of the program. A second class at the bottom contains
 #the outputs of the GUI, and is used for passing information to other aspects of the program.
 
-from tkinter import *
+from Tkinter import *
 root = Tk()
 root.title("Data Extraction")
 import sys
@@ -148,7 +148,7 @@ class Application(Frame):
         self.spinVar = "0+"
         self.exitcount = 1
         root.destroy()
-        os.system("python3 StartupGUI.py")
+        os.system("python StartupGUI.py")
         sys.exit()
 
 #This is the part of the script that actually runs the GUI

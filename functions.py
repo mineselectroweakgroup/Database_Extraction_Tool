@@ -7,6 +7,16 @@ from uncertainty import halfLifeErrorProp
 HBAR = Decimal('6.582119514e-16') ## [eV sec] from NIST
 LN2 = Decimal('6.931471806e-1')
 
+## Check if a string is numeric (i.e., contains only a float)
+# In python 2.7, isnumeric only works on unicode strings. 
+def Check_Numeric(checkString):
+    try:
+        float(checkString)
+    except ValueError:
+        return False
+    else:
+        return True
+
 ## Converts standard uncertainty to correct magnitude
 def Correct_Uncertainty(value,uncert):
     if not '.' in value:
@@ -266,7 +276,7 @@ def levelExtract(line,dataset):
     if (uncert == ''):
         uncert = '0'
     ## Set uncert to 0 if not numeric and flag
-    elif (not uncert.isnumeric()):
+    elif (not Check_Numeric(uncert)):
         uncert = '0'
         nonNumUncert = True
     
@@ -312,7 +322,7 @@ def levelExtract(line,dataset):
         dhlife = [dhlife]
         hlife = convertToSec(hlife,[0])[0]
     ## Standard uncertainty
-    elif dhlife.isnumeric():                 
+    elif Check_Numeric(dhlife):                 
         dhlife = [dhlife,dhlife]
         if '.' in hlife:
             s = hlife.split(' ')[0].find('.')

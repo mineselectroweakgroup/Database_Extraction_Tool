@@ -35,7 +35,7 @@ def function(option):
 #This code puts restarts the program so it can be used again
     os.chdir("..")
     os.chdir("..")
-    os.system("python3 Main.py "+option)
+    os.system("python Main.py "+option)
     newest = "Output/gnuPlot/"+newest.replace(".plt",".gif")
     if os.path.isfile(newest):
         os.system("rm "+newest)

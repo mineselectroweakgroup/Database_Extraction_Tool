@@ -1,7 +1,7 @@
 #This script is a class which opens the GUI for the beta decay subscript of the program. A second class at the bottom contains
 #the outputs of the GUI, and is used for passing information to other aspects of the program.
 
-from tkinter import *
+from Tkinter import *
 root = Tk()
 root.title("Data Extraction")
 import sys
@@ -104,27 +104,27 @@ class Application(Frame):
 
     #Defining the functions that make the submit buttons do things. 
     def minusFunc(self):
-        os.system('python3 betaMinusperiodicTableDictionary.py')
+        os.system('python betaMinusperiodicTableDictionary.py')
         os.system('gnuplot nuclearChart.plt')
         os.system('okular nuclearChart.png')
 
     def plusFunc(self):
-        os.system('python3 betaPlusperiodicTableDictionary.py')
+        os.system('python betaPlusperiodicTableDictionary.py')
         os.system('gnuplot nuclearChart.plt')
         os.system('okular nuclearChart.png')
 
     def ECFunc(self):
-        os.system('python3 ECperiodicTableDictionary.py')
+        os.system('python ECperiodicTableDictionary.py')
         os.system('gnuplot nuclearChart.plt')
         os.system('okular nuclearChart.png')
 
     def tempFunc(self):
         self.temp = self.tempEntry.get()
-        os.system('python3 periodicTableDictionary.py')
+        os.system('python periodicTableDictionary.py')
         os.system('gnuplot nuclearChart.plt')
         os.system('okular nuclearChart.png')
         root.destroy()
-        os.system('python3 Decay_Chart_GUI.py')
+        os.system('python Decay_Chart_GUI.py')
 
     def exitButton(self):
         self.exitcount = 1
@@ -147,7 +147,7 @@ class Application(Frame):
         self.spinVar = "0+"
         self.exitcount = 1
         root.destroy()
-        os.system("python3 StartupGUI.py")
+        os.system("python StartupGUI.py")
         sys.exit()
 
 #This is the part of the script that actually runs the GUI

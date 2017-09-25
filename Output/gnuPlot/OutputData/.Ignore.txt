@@ -1,0 +1,1 @@
+This file allows Git to recognize the otherwise empty Output folders

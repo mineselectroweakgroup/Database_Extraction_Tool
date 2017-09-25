@@ -10,7 +10,7 @@ import mass_data as md
 import ionization as addion
 import time
 
-
+from functions import Check_Numeric
 
 #This function is used to bulk export a range of isotopes in a given A range.
 def datExp(option,UI=False,Filter=False):
@@ -249,7 +249,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                         Aval = ''
                         NameVal = ''
                         for char in line[0]:
-                            if char.isnumeric():
+                            if Check_Numeric(char):
                                 Aval = Aval + char
                             else:
                                 if len(NameVal) == 0:

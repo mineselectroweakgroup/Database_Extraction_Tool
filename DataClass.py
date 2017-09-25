@@ -1,5 +1,5 @@
 from decimal import *
-from functions import spinMatchFinder, levelExtract, NUCIDgen, Correct_Uncertainty
+from functions import spinMatchFinder, levelExtract, NUCIDgen, Correct_Uncertainty, Check_Numeric
 from uncertainty import multuncert
 
     
@@ -22,7 +22,7 @@ class data:##This is the main data class.
             Avalue = ''
             ## assign Avalue and parent values
             for char in nucID:
-                if char.isnumeric():
+                if Check_Numeric(char):
                     Avalue = Avalue + char
                 elif char.isalpha():
                     parent = parent + char
