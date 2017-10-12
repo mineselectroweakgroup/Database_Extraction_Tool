@@ -238,8 +238,8 @@ def levelExtract(line,dataset):
             noGSE = True
     ## check if usable energy data (i.e. no letter at beginning or end)
     elif (energy[0].isalpha() or energy[-1].isalpha()):
-        if (not 'X' in dataset[0][2]):
-            dataset[0][2] = dataset[0][2] + 'X'
+        if (not 'X' in dataset[0].jpi):
+            dataset[0].jpi = dataset[0].jpi + 'X'
             return([-1]) ## RETURN [-1] INDICATES CONTINUE
         else:
             return([-1]) ## RETURN [-1] INDICATES CONTINUE

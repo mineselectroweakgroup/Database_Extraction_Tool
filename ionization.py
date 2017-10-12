@@ -71,19 +71,20 @@ def make_ion_dict(temperature):
 ## Include ionization data
 def addIonization(dataObj):
     for i in range(len(dataObj.data)):
-        if any(elementName.upper() in dataObj.data[i][0] for elementName in nonoElements):
+        if any(elementName.upper() in dataObj.data[i].isotope for elementName in nonoElements):
             ## The new removeElements(elementName)
             pass
-        elif dataObj.data[i][0] == 'NULL':
-            dataObj.data[i].insert(6,'0+')
+        elif dataObj.data[i].isotope == 'NULL':
+            pass
         else:
             ## create elementLabel for the dictionaries to use
             elementLabel = ''
-            for char in dataObj.data[i][0]:
+            for char in dataObj.data[i].isotope:
                 if char.isalpha():
                     elementLabel = elementLabel + char
             ## Preform Physics
-            dataObj.data[i][1] = str(float(dataObj.data[i][1]) + masschange[elementLabel]/10**3)
-            dataObj.data[i][3] = str(unc.adduncert(float(dataObj.data[i][3]),uncertainty[elementLabel]))
+            dataObj.data[i].energy = str(float(dataObj.data[i].energy) + masschange[elementLabel]/10**3)
+            dataObj.data[i].energy_uncert = str(unc.adduncert(float(dataObj.data[i].energy_uncert),uncertainty[elementLabel]))
             ## Add ionization at index i = 6, even for decay data sets
-            dataObj.data[i].insert(6,str(count[elementLabel])+'+')
+            dataObj.data[i].ionization = str(count[elementLabel])+'+'
+           # dataObj.data[i].insert(6,str(count[elementLabel])+'+')

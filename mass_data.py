@@ -23,23 +23,15 @@ def addMass(dataObj):
                 massA = massA.lstrip()
                 isoName = massA+masselement
 
-                if dataObj.data[i][0] == isoName:
-                    #print('A',i,dataObj.data[1][:3],dataObj.data[10][:3])
+                if dataObj.data[i].isotope == isoName:
                     A = int(massA)
-                    ## splitline is dataObj.data[i]
-                    #splitline = line.split(';')
                     N = int(massdata[k][6:9].replace(" ",""))
                     Z = int(massdata[k][11:14].replace(" ",""))
                     if massdata[k][106]=='#':
-                        dataObj.data[i][2] = dataObj.data[i][2] + '*'
+                        dataObj.data[i].jpi = dataObj.data[i].jpi + '*'
                     atomicMass = float(massdata[k][96:112].replace(" ","").replace("#","."))*conversion
                     
                     aMassError = unc.multuncert(float(massdata[k][96:112].replace(" ","").replace("#",".")),conversion,float(massdata[k][113:123].replace(" ","").replace("#",".")),dconversion)
-                    #print('B',i,dataObj.data[1][:3],dataObj.data[10][:3])
-                    dataObj.data[i][1] = str(float(dataObj.data[i][1]) + atomicMass)
-                    dataObj.data[i][3] = str(unc.adduncert(float(dataObj.data[i][3]),aMassError))
-                    #print('C',i,dataObj.data[1][:4],dataObj.data[10][:3])
-                    #unsplitline = splitline[0] + ';' + splitline[1] + ';' + splitline[2]+';'+splitline[3]+';'+splitline[4]+';'+splitline[5]+';'+splitline[6]+';'+splitline[7]
-                    #datafile.write(unsplitline)
+                    dataObj.data[i].energy = str(float(dataObj.data[i].energy) + atomicMass)
+                    dataObj.data[i].energy_uncert = str(unc.adduncert(float(dataObj.data[i].energy_uncert),aMassError))
             k=k+1
-            

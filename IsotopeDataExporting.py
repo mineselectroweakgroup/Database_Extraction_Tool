@@ -1,9 +1,4 @@
-##ENSDF File: Multiple Data PLT (for gnuplot) File Extractor
-##By: Markus Garbiso
-##Date Updated: April 26, 2017 by Peter Consalvi
-##Date Updated: May 24, 2017 by Matthew Martin
-
-import DataClass as dc
+import newDataClass as dc
 import os
 import re
 import mass_data as md
@@ -94,10 +89,10 @@ def datExp(option,UI=False,Filter=False):
             if option == 'one':
                 pass
             else:
-                md.addMass(indata)
+                md.addMass(indata) 
 
             ## Include ionization effects
-            addion.addIonization(indata)
+            addion.addIonization(indata) 
 
             ## export .dat file
             indata.export("_Fil.dat",wantedSpins)
