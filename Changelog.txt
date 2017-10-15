@@ -109,3 +109,7 @@ Version 0.6.0 07-26-2017 1200MT -W. McDonald:
     Beta Decay information is now extracted from ensdf files
 	Data files no longer rewritten in ionization and mass_data
 	Branching ratio information is now shown on decay plots
+
+Version 0.6.1 10-14-2017 2300MT -W. McDonald:
+    Extracted data is now stored using LevelRecord or DecayRecord class instances rather than lists
+    Extracted data is accessed via class attributes rather than list indices

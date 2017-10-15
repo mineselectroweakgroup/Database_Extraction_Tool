@@ -13,7 +13,6 @@ def function(option):
 #to check what they input against the plot they are viewing
 #The sleep is a pause so the timestamps used work correctly
 
-
     renorm.renormalize(userInput[0],userInput[1],userInput[2],userInput[3])
 
     time.sleep(0.01)

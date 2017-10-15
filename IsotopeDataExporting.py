@@ -1,4 +1,4 @@
-import newDataClass as dc
+import DataClass as dc
 import os
 import re
 import mass_data as md
@@ -96,13 +96,11 @@ def datExp(option,UI=False,Filter=False):
 
             ## export .dat file
             indata.export("_Fil.dat",wantedSpins)
-            
-            
+
     if UI:
         #readinput.message= "Data export complete"
         exit
 
-    
     #If wanted this will return the user inputs for further use
     return [elementName,lowerBound,higherBound,wantedSpins,temperature,massData,energyLim,indata.decay]
 

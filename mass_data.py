@@ -30,7 +30,6 @@ def addMass(dataObj):
                     if massdata[k][106]=='#':
                         dataObj.data[i].jpi = dataObj.data[i].jpi + '*'
                     atomicMass = float(massdata[k][96:112].replace(" ","").replace("#","."))*conversion
-                    
                     aMassError = unc.multuncert(float(massdata[k][96:112].replace(" ","").replace("#",".")),conversion,float(massdata[k][113:123].replace(" ","").replace("#",".")),dconversion)
                     dataObj.data[i].energy = str(float(dataObj.data[i].energy) + atomicMass)
                     dataObj.data[i].energy_uncert = str(unc.adduncert(float(dataObj.data[i].energy_uncert),aMassError))

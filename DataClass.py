@@ -1,6 +1,7 @@
 from decimal import *
 from functions import spinMatchFinder, levelExtract, NUCIDgen, Correct_Uncertainty
 from uncertainty import multuncert
+from RecordClasses import *
 
     
 class data:##This is the main data class.
@@ -88,11 +89,23 @@ class data:##This is the main data class.
                 ## set desiredData bool so the program wil exit after reading adopted data
                 desiredData = True
                 ##[name,energy,jpi,uncert,hlife,dhlife] <- output of levelExtract
-                recordData = levelExtract(line,self.data)                
-                ## levelExtract passes error codes for continue
-                if recordData == [-1]:
-                    continue
-                if(float(recordData[1])<=energyLimit):
+
+                extractedData = levelExtract(line, self.data)
+                ## The try/except checks if levelExtract is returning a continue code
+                try:
+                    ## assign data to LevelRecord class object
+                    recordData = LevelRecord(*extractedData)
+                except TypeError:
+                    ## levelExtract passes error codes for continue
+                    if extractedData == [-1]:
+                        continue
+                    else:
+                        print('*** Improper initialization of LevelRecord object\n')
+                        ##Deliberatly crash the program so that bugs can be found
+                        float('crash')
+
+
+                if(float(recordData.energy)<=energyLimit):
                     ## include the data 
                     self.data.append(recordData)
                 else:
@@ -101,7 +114,7 @@ class data:##This is the main data class.
                     else:
                         break
                 ## If no ground state energy is given, move on to the next isotope 
-                if recordData[2]=='X':
+                if recordData.jpi =='X':
                     print ('Missing ground state energy data for '+nucID)
                     break
 
@@ -115,11 +128,23 @@ class data:##This is the main data class.
 
                     ## Locate Parent Record and retrieve data
                     if (line[0:6] == NUCIDgen(parent) and line[6:8]==' P'):
-                        recordData = levelExtract(line,self.data)
-                        if recordData == [-1]:
-                            continue
-                        if(float(recordData[1])<=energyLimit):
+                        extractedData = levelExtract(line, self.data)
+                        ## The try/except checks if levelExtract is returning a continue code
+                        try:
+                            ## assign data to LevelRecord class object
+                            recordData = LevelRecord(*extractedData)
+                        except TypeError:
+                            ## levelExtract passes error codes for continue
+                            if extractedData == [-1]:
+                                continue
+                            else:
+                                print('*** Improper initialization of LevelRecord object\n')
+                                ##Deliberatly crash the program so that bugs can be found
+                                float('crash')
+
+                        if(float(recordData.energy)<=energyLimit):
                             self.data.append(recordData)
+
 
                     ## Locate the Normalization record for scaling branching ratios
                     if (line[0:6] == daughter and line[6:8] == ' N'):
@@ -150,7 +175,6 @@ class data:##This is the main data class.
 
                     ## Locate the PN record to use instead of N record scaling
                     ## the N rec is only used if PN rec is empty
-                    #FIXME get error & propagate
                     if (line[0:6] == daughter and line[6:8] == 'PN'):
                         NBBR = line[41:49].strip()
                         dNBBR = line[49:55].strip()
@@ -168,24 +192,36 @@ class data:##This is the main data class.
                     ## Locate daughter Level Record
                     elif (line[0:6] == daughter and line[6:8]==' L'):
                         ## Get data from adoptedLevelRec     
-                        recordData = levelExtract(line,self.data)
-                        if recordData == [-1]:
-                            continue
-                        if(float(recordData[1])<=energyLimit):   
+                        extractedData = levelExtract(line, self.data)
+                        ## The try/except checks if levelExtract is returning a continue code
+                        try:
+                            ## assign data to LevelRecord class object
+                            recordData = LevelRecord(*extractedData)
+                        except TypeError:
+                            ## levelExtract passes error codes for continue
+                            if extractedData == [-1]:
+                                continue
+                            else:
+                                print('*** Improper initialization of LevelRecord object\n')
+                                ##Deliberatly crash the program so that bugs can be found
+                                float('crash')
+
+                        if(float(recordData.energy)<=energyLimit):   
                             dataMatch = False
                             errorList = []
                             ## Frequently in the Decay Data Sets, the level records for the daughter isomers lack half life data, so that state's level record from the Adopted Gammas Data Set is used instead (all of the Gamma Level records are constained in adoptedLevelRec).
 
                             ## Find matching Adopted Gamma record
                             for record in adoptedLevelRec:
-                                if Decimal(record[1]) == Decimal(recordData[1]):
-                                    matchedRecord = record[:] ##Necessary string copy
+                                if Decimal(record.energy) == Decimal(recordData.energy):
+                                    ### Here I got rid of a proper string copy ([:]) and am now just copying LevelRecord classes. This MAY cause problems if a state is in the decay data set twice, where modifying one instance of the class also changes the other (manifesting in the duplicate state having twice as much ionization or mass energy. #FIXME confirm that this class copy works for cases such as 38K which has an excited isomer that B decays
+                                    matchedRecord = record ##Necessary string copy
                                     self.data.append(matchedRecord)
                                     dataMatch = True
                                     break
                                 ## Sometimes the energy of a state differs between the Decay Data Set and the Adopted Data Set. A percent error (of energy) calculation is used to determine the closest Adopted Data Set level record for a given Decay Data Set level record.
                                 else:
-                                    errorPercent = abs((Decimal(record[1])-Decimal(recordData[1]))/Decimal(recordData[1])*Decimal('100'))
+                                    errorPercent = abs((Decimal(record.energy)-Decimal(recordData.energy))/Decimal(recordData.energy)*Decimal('100'))
                                     errorList.append(errorPercent)
                             if not dataMatch:
                                 ## MAXERROR is the maximum percent error with which a Decay Data Set state can be matched to an Adopted Gammas state.
@@ -193,7 +229,7 @@ class data:##This is the main data class.
                                 minIndex = errorList.index(min(errorList))
                                 if errorList[minIndex] < MAXERROR:
                                     minRec = adoptedLevelRec[minIndex]
-                                    closestRec = minRec[:] ##Necessary string copy
+                                    closestRec = minRec ##Necessary string copy #FIXME remove this?
                                     self.data.append(closestRec)
                                     ## Inform the user that a state has been imperfectly matched
                                     #print(recordData[0]+' state at '+recordData[1]+' keV matched to adopted level at '+adoptedLevelRec[minIndex][1]+' keV w/ error of '+str(round(errorList[minIndex],4))+'%.')
@@ -203,7 +239,8 @@ class data:##This is the main data class.
                                     self.data.append(recordData)
                             if needDecayRec == True:
                                 ##no Decay record for previous daughter Level rec
-                                self.data[-2].append('0')
+                                decayRecData = DecayRecord(self.data[-2], '0','0', '0', '0', '0')
+                                self.data[-2] = decayRecData
                             needDecayRec = True
                             errorList = []
                         else:
@@ -232,7 +269,7 @@ class data:##This is the main data class.
                         elif ('.' in ecI):
                             decI = str(float(Correct_Uncertainty(ecI,decI))*scale_factor)
 
-                        ## get total branching intensity
+                        ## get total branching intensity FIXME error prop
                         if ecI == '' and betaI == '':
                             totBranchI = ''
                         elif ecI == '':
@@ -242,23 +279,22 @@ class data:##This is the main data class.
                         else:
                             totBranchI = str((float(betaI) + float(ecI))*scale_factor)
                         needDecayRec = False
-                        self.data[-1].append(totBranchI)
+                        decayRecData = DecayRecord(self.data[-1], betaI, dbetaI, ecI, decI, totBranchI)
+                        self.data[-1] = decayRecData
 
 
     def export(self,fExtOption = '.dat',extraTitleText = ''): 
-#            if(fExtOption==".dat"or fExtOption=="_Fil.dat"):##To make data files for use in gnuplot and plt file.
             fileName=str(self.name)+extraTitleText+fExtOption##creates filename
             fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
             datFile = open(fileName,'wb')##Creates a file with a valid file name.
             for i in range(len(self.data)):
-                lineToWrite = str(self.data[i][0])
-                for j in range(1,len(self.data[i])):
-                    lineToWrite = lineToWrite + ';' +str(self.data[i][j])
-                lineToWrite = lineToWrite + '\n'
+
+                lineToWrite = self.data[i].make_data_string()
                 datFile.write(str.encode(lineToWrite))
 
     ## Filters by desired spin states, if given
     def filterData(self,userInput,UI=False):
+        nullRecord = LevelRecord('NULL',0.0,"--",0.0,0.0,[0.0])
         ## no spin input
         if (userInput == ''):
             #print(self.data)
@@ -267,7 +303,7 @@ class data:##This is the main data class.
                     pass
                     ## Prints a statement telling user than no file was found
                     #print("Warning:No data filtered/selected for "+ self.name +".")
-                self.data=[['NULL',0.0,"--",0.0,0.0,[0.0]]]##Enters a dummy entry to file with something.
+                self.data=[nullRecord]##Enters a dummy entry to file with something.
                 
         ## Filter by spin states
         else:
@@ -277,22 +313,21 @@ class data:##This is the main data class.
                 for i in range(1,len(self.data)): 
                     #print(self.name,self.data[i])
                     ## The spinMatchFinder will identify if the state is the desired spin
-                    if any(spinMatchFinder(wantedString, self.data[i][2]) for wantedString in userInput.split(',')):
+                    if any(spinMatchFinder(wantedString, self.data[i].jpi) for wantedString in userInput.split(',')):
                         newData.append(self.data[i])
                 self.data=newData[:]##changes data to the new data.
                 if (self.data):
                     self.data.insert(0,groundSt)
                 else:
-                    
-                    if any(spinMatchFinder(wantedString,groundSt[2])for wantedString in userInput.split(',')):
+                    if any(spinMatchFinder(wantedString,groundSt.jpi)for wantedString in userInput.split(',')):
                         self.data.append(groundSt)
                     else:
-                        self.data = [['NULL',0.0,"--",0.0,0.0,0.0]]##Enters a dummy entry to file with something.
+                        self.data = [nullRecord]##Enters a dummy entry to file with something.
 
             else: ## If self.data is empty
                 if(UI):
                     ## Prints a statement telling user than no file was found
                     pass
                     #print("Warning:No data filtered/selected for "+ self.name +".")#Prints a statement telling user than no file was found
-                self.data=[['NULL',0.0,"--",0.0,0.0,0.0]]##Enters a dummy entry to file with something.
+                self.data=[nullRecord]##Enters a dummy entry to file with something.
 
