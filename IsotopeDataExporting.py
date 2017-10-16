@@ -290,7 +290,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             pltFile.write(str.encode('plot "DecayData_plot.dat" using 1:3:4 with labels left point offset 0.2,0\n'))
             pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.375):3:(0.375):5 with boxxyerrorbars linecolor rgb \'black\' fillstyle solid\n'))
             pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):3:(0.75):(0) with vectors nohead linecolor -1\n'))
-            pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):($3+$5):9 with labels left point offset 0,0.2\n'))
+            #pltFile.write(str.encode('replot "DecayData_plot.dat" using ($1-0.75):($3+$5):9 with labels left point offset 0,0.2\n'))
             pltFile.write(str.encode('replot "ArrowData_plot.dat" using 1:2:($3-$1-0.75):($4-$2) with vectors linecolor 1\n'))
 
 
