@@ -118,6 +118,23 @@ class data:##This is the main data class.
                     print ('Missing ground state energy data for '+nucID)
                     break
 
+            ## Get Gamma records ##
+            if (adoptedGammas and line[6:8]==' G' and line[0:6]==nucID):
+                isoName = line[:5].strip()
+                energy = line[9:19].strip()
+                energy_uncert = line[19:21].strip()
+                pi = line[21:29].strip() #FIXME units form N record 
+                pi_uncert = line[29:31].strip()
+                multipolarity = line[31:41].strip()
+                mr = line[41:49].strip()
+                mr_uncert = line[49:55].strip()
+                conversionCoeff = line[55:62].strip()
+                conversionCoeff_uncert = line[62:64].strip()
+               
+                gammaData = GammaRecord(isoName, energy, energy_uncert,pi,pi_uncert,multipolarity,mr,mr_uncert,conversionCoeff, conversionCoeff_uncert)
+                self.data[-1].gammarays.append(gammaData)
+
+ 
             ## Get Decay Data ##
             if self.op == "two" and not adoptedGammas:
                 
@@ -214,8 +231,7 @@ class data:##This is the main data class.
                             ## Find matching Adopted Gamma record
                             for record in adoptedLevelRec:
                                 if Decimal(record.energy) == Decimal(recordData.energy):
-                                    ### Here I got rid of a proper string copy ([:]) and am now just copying LevelRecord classes. This MAY cause problems if a state is in the decay data set twice, where modifying one instance of the class also changes the other (manifesting in the duplicate state having twice as much ionization or mass energy. #FIXME confirm that this class copy works for cases such as 38K which has an excited isomer that B decays
-                                    matchedRecord = record ##Necessary string copy
+                                    matchedRecord = record 
                                     self.data.append(matchedRecord)
                                     dataMatch = True
                                     break
@@ -282,6 +298,14 @@ class data:##This is the main data class.
                         decayRecData = DecayRecord(self.data[-1], betaI, dbetaI, ecI, decI, totBranchI)
                         self.data[-1] = decayRecData
 
+
+    def appendGamma(self, gammaFile):
+        for i in range(len(self.data)):
+            #arrowStart = [self.data[i].isotope, self.data[i].energy] ## [x,y]
+            for j in range(len(self.data[i].gammarays)):
+                finalGammaEnergy = float(self.data[i].energy)-float(str(self.data[i].gammarays[j]))
+                lineToWrite = '%s;%s;%s\n'% (self.data[i].isotope,self.data[i].energy,finalGammaEnergy)
+                gammaFile.write(str(lineToWrite))
 
     def export(self,fExtOption = '.dat',extraTitleText = ''): 
             fileName=str(self.name)+extraTitleText+fExtOption##creates filename

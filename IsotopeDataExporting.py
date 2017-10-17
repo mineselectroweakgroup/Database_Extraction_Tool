@@ -6,6 +6,7 @@ import ionization as addion
 import time
 
 
+gammaDecay = True
 
 #This function is used to bulk export a range of isotopes in a given A range.
 def datExp(option,UI=False,Filter=False):
@@ -76,6 +77,9 @@ def datExp(option,UI=False,Filter=False):
 
     ## Create dictionaries of ionization data
     addion.make_ion_dict(temperature)
+    
+    if gammaDecay:
+        gammaDataFile = open("Output/gnuPlot/GammaArrows_plot.dat","w+")
 
     #This loop goes through each wanted nuclei in the range of A values and makes the variable to be used (and iterated through) to from b in the a=b expression in data class.
     for element in elementName:
@@ -96,6 +100,12 @@ def datExp(option,UI=False,Filter=False):
 
             ## export .dat file
             indata.export("_Fil.dat",wantedSpins)
+
+            ## Append gamma ray data to file
+            if gammaDecay:
+                indata.appendGamma(gammaDataFile)
+    if gammaDecay:
+        gammaDataFile.close()
 
     if UI:
         #readinput.message= "Data export complete"
@@ -268,6 +278,12 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
 
         arrowDataFile.close()
         plotDataFile.close()       
+
+        #gammaDataFile = open("Output/gnuPlot/GammaData_plot.dat","w+")
+        #datafilelines = gammaData
+        #for line in gammaDataFile:
+            
+
         if create_file:
             setLine = setLine[:-1]+')\n'
             pltFile.write(str.encode(setLine))
@@ -330,7 +346,9 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 
                 itercount = itercount + 1
             mostrecentiter = itercount   
-                
+        if gammaDecay:
+            pltFile.write(str.encode('replot "GammaArrows_plot.dat" using 1:($2):1:($3) with vectors linecolor 1\n'))
+                 
     if UI:
         print("Program is finished plotting")
         #This defines the code required for the program to plot the information

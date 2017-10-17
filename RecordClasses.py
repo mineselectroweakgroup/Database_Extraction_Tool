@@ -9,6 +9,7 @@ class LevelRecord(object):
         self.energy_uncert = uncert
         self.hlife = hlife
         self.hlife_uncert = dhlife
+        self.gammarays = []
 
         self.ionization = '0+'
         ## self.exportAttributes are the instance attributes that will be written to file
@@ -36,3 +37,19 @@ class DecayRecord(LevelRecord):
         self.totBranchI = totBranchI
 
         self.exportAttributes.extend(['totBranchI'])
+
+class GammaRecord(object):
+    def __init__(self, name, energy, energy_uncert, pi, pi_uncert,mpol,mr,mr_uncert,cc,cc_uncert):
+        self.isoName = name
+        self.energy = energy
+        self.energy_uncert = energy_uncert
+        self.photonIntensity = pi
+        self.photonIntensity_uncert = pi_uncert
+        self.multipolarity = mpol
+        self.mixingRatio = mr
+        self.mixingRadio_uncert = mr_uncert
+        self.conversionCoeff = cc
+        self.conversionCoeff_uncert = cc_uncert
+
+    def __repr__(self):
+        return (self.energy)
