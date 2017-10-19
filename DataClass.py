@@ -300,11 +300,20 @@ class data:##This is the main data class.
 
 
     def appendGamma(self, gammaFile):
+        numGammas = {} #number of gammas for particular isoTOPE
+        totGammas = 0
         for i in range(len(self.data)):
-            #arrowStart = [self.data[i].isotope, self.data[i].energy] ## [x,y]
+            try:
+                numGammas[self.data[i].isotope] += len(self.data[i].gammarays)
+            except KeyError:
+                numGammas[self.data[i].isotope] = len(self.data[i].gammarays)
+        #positionModifier = {key: 0 for key in numGammas.keys()}
+        positionModifier = 0
+        for i in range(len(self.data)):
             for j in range(len(self.data[i].gammarays)):
-                finalGammaEnergy = float(self.data[i].energy)-float(str(self.data[i].gammarays[j]))
-                lineToWrite = '%s;%s;%s\n'% (self.data[i].isotope,self.data[i].energy,finalGammaEnergy)
+                positionModifier += 0.75/(numGammas[self.data[i].isotope]+1)
+ 
+                lineToWrite = '%s;%s;%s;%s\n'% (self.data[i].isotope,self.data[i].energy,'-'+str(self.data[i].gammarays[j]),positionModifier)
                 gammaFile.write(str(lineToWrite))
 
     def export(self,fExtOption = '.dat',extraTitleText = ''): 

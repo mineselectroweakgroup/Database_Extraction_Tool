@@ -330,10 +330,14 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
     
         itercount = 0
         mostrecentiter = 0
+        isoDic = {} ##dictionary for placing gamma rays
         for element in elementName:
             #This will write the plot coding for the labeling of each energy leven and a line that corrosponds to each one.
 
             for i in range(lowerBound + removecount[element],higherBound-removehighcount[element]+1,fileParsingFactor):
+
+                isoDic[str(i)+str(element).upper()] = str(i+1-lowerBound-removecount[element]+mostrecentiter)
+
                 if(itercount == 0): 
                     pltFile.write(str.encode(("plot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"):2:3 with labels left point offset 0.2,0\n").replace('/', '_')))
             
@@ -346,8 +350,23 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 
                 itercount = itercount + 1
             mostrecentiter = itercount   
-        if gammaDecay:
-            pltFile.write(str.encode('replot "GammaArrows_plot.dat" using 1:($2):1:($3) with vectors linecolor 1\n'))
+        ## rewrite gamma decay file with plotting location by iterating through it
+        if gammaDecay and create_file:
+            gammaDecayFile = open('Output/gnuPlot/GammaArrows_plot.dat','r+') 
+            gammaLines = gammaDecayFile.readlines()
+            ## erase file
+            gammaDecayFile.seek(0)       
+            gammaDecayFile.truncate()
+
+            ## align each decay with proper isotope position on x axis
+            for line in gammaLines:
+                gRecordData = line.split(';')
+                gRecordData[0] = isoDic[gRecordData[0]]
+                newDataLine = ';'.join(gRecordData)
+                gammaDecayFile.write(newDataLine) 
+            gammaDecayFile.close()
+
+            pltFile.write(str.encode('replot "GammaArrows_plot.dat" using ($1-$4):2:(0):3 with vectors linecolor 3\n'))
                  
     if UI:
         print("Program is finished plotting")
