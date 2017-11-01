@@ -1,6 +1,6 @@
 from tkinter import *
 root = Tk()
-root.title("Electroweak Interactions Group -- Systematic Study Program")
+root.title("Complete Evaluated Nuclear Database Extraction Tool")
 import os
 import searching_function as sf
 
