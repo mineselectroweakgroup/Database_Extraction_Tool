@@ -30,6 +30,7 @@ class DecayRecord(LevelRecord):
 
     def __init__(self, levelRec, betaI, betaI_uncert, ecI, ecI_uncert, totBranchI):
         LevelRecord.__init__(self, levelRec.isotope, levelRec.energy, levelRec.jpi, levelRec.energy_uncert, levelRec.hlife, levelRec.hlife_uncert)
+        self.gammarays = levelRec.gammarays
         self.betaI = betaI
         self.betaI_uncert = betaI_uncert
         self.ecI = ecI

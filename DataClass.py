@@ -307,6 +307,7 @@ class data:##This is the main data class.
                 numGammas[self.data[i].isotope] += len(self.data[i].gammarays)
             except KeyError:
                 numGammas[self.data[i].isotope] = len(self.data[i].gammarays)
+
         #positionModifier = {key: 0 for key in numGammas.keys()}
         positionModifier = 0
         for i in range(len(self.data)):
@@ -315,6 +316,7 @@ class data:##This is the main data class.
  
                 lineToWrite = '%s;%s;%s;%s\n'% (self.data[i].isotope,self.data[i].energy,'-'+str(self.data[i].gammarays[j]),positionModifier)
                 gammaFile.write(str(lineToWrite))
+                print(lineToWrite)
 
     def export(self,fExtOption = '.dat',extraTitleText = ''): 
             fileName=str(self.name)+extraTitleText+fExtOption##creates filename

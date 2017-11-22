@@ -101,6 +101,9 @@ def datExp(option,UI=False,Filter=False):
             ## export .dat file
             indata.export("_Fil.dat",wantedSpins)
 
+            for j in range(len(indata.data)):
+                print(indata.data[j].gammarays)
+
             ## Append gamma ray data to file
             if gammaDecay:
                 indata.appendGamma(gammaDataFile)
