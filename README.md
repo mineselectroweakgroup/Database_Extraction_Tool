@@ -1,4 +1,4 @@
-#CENDET - Complete Evaluated Nuclear Database Extraction Tool
+# CENDET - Complete Evaluated Nuclear Database Extraction Tool
 ## Version 0.6.1
 
 ### Referencing CENDET
@@ -20,9 +20,11 @@ For each program, generated plots and data files are written to the `Output/gnuP
 There are two ways to get CENDET. You can click on the download link on the GitHub page, or you can download the program with Git. If you do not have Git installed, open your Linux terminal and run `sudo apt-get install git`. With Git installed, run `git clone https://github.com/ElectroweakGroup/Database_Extraction_Tool` to download the program files to your system.
 
 CENDET has the following dependencies:
-    * Python 3.5.2 or newer
-    * gnuplot
-    * Okular (optional: only needed for viewing graphs fullscreen from within CENDET)
+
+* Python 3.5.2 or newer
+* gnuplot
+* Okular (optional: only needed for viewing graphs fullscreen from within CENDET)
+
 To install these packages, run the following commands in your terminal.
 ```
 sudo apt-get install python3
@@ -65,3 +67,6 @@ X		Ground state with missing energy
 ## Version Tracking:
 
 Version history can be found in the Change Log, [here.](http://github.com/ElectroweakGroup/Database_Extraction_Tool/blob/master/Changelog.txt)
+
+### Contact Info:
+Comments, questions, or other feedback? Reach us at electroweakgroup@gmail.com
