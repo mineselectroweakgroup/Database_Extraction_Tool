@@ -1,5 +1,8 @@
 #CENDET - Complete Evaluated Nuclear Database Extraction Tool
-## Version 0.6.0
+## Version 0.6.1
+
+### Referencing CENDET
+CENDET Extraction Program, Ver. 0.6.1, *Colorado School of Mines*, 2017
 
 ### Outline of Program
 The end goal of the **Complete Evaluated Nuclear Database Extraction Tool** (CENDET) project is to create a cohesive and intuitive set of GUIs which can be used to effectively sort through large databases for nuclear structural data and atomic binding data. This will allow for an easy, systematic study of excited nuclear states, atomic mass data, and beta decay transitions.
