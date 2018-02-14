@@ -222,7 +222,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
 
                 pltFile.write(str.encode("set pointsize 0.0001\n"))
 
-                pltFile.write(str.encode('set label "* Extrapolated Mass" at graph 0.01, graph 0.97 left\n'))
+                #pltFile.write(str.encode('set label "* Extrapolated Mass" at graph 0.01, graph 0.97 left\n'))
 
                 setLine="set xtics right rotate by 45 ("
 
