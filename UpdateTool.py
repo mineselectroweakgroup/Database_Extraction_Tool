@@ -44,12 +44,12 @@ def main():
     else:
         #Append URL to be closer to download URL
         urlfix=url+"/ensarchivals/"
-    
+        
         print("Download begin:")
         print(time.strftime("%H:%M:%S"))
         print("Estimated time until completion: 15 min")
         #Call download function
-        
+        delOld()
         
         
         filename=download(urlfix)
@@ -60,13 +60,16 @@ def main():
     
         print("Begin Unzipping, time:")
         print(time.strftime("%H:%M:%S"))
+       #Delete the Old Files
+        
         
         #Unzip Download function
         for j in range(0,len(filename)):
+             
             unZip(filename[j])
         #Feed each of the Zip files through the Unzip function?
             
-        makeTxt()
+        
         #Turn files into txt files
         print("Finished Unzipping and Converting, time:")
         print(time.strftime("%H:%M:%S"))
@@ -101,7 +104,8 @@ def download(url):
         downloadURL="http://"+url+"distributions/dist"+mostRecYr+"/ensdf_"+mostRecYr+mostRecMn+mostRecDay+"_"+j+".zip"
         filename[counter] = "Zipped"+j+".zip" 
         rstore[counter]=requests.get(downloadURL)
-        with open(filename[counter],"wb") as f:
+        new_path=os.path.join(os.getcwd(),"Data/")
+        with open(new_path+filename[counter],"wb") as f:
             f.write(rstore[counter].content)
         counter=counter+1
        
@@ -110,8 +114,10 @@ def download(url):
 #Unzip the files    
 def unZip(filename):
     try:
-        zip = zipfile.ZipFile("Database_Extraction_Tool/Data",filename)
-        zip.extractall("Database_Extraction_Tool/Data")
+        new_path=os.path.join(os.getcwd(),"Data/")
+        os.chdir(new_path)
+        zip = zipfile.ZipFile(filename)
+        zip.extractall()
     except:
         print("Checking File Path")
     #Extracts all files into current folder
@@ -121,7 +127,7 @@ def unZip(filename):
     return;
     
 #Converts files into .txt files    
-def makeTxt(path="Database_Extraction_Tool/Data"):
+def delOld(path="Data/"):
      #Path is defined to be the current folder that the .py file is in
     new_path = os.path.join(os.getcwd(), path)
     #The path to the folder where the folders exist
@@ -131,12 +137,11 @@ def makeTxt(path="Database_Extraction_Tool/Data"):
     for f in os.listdir(new_path):
         #For all the files in the folder
         try:
-            if "ensdf" in f:#Check to see if has ensdf in the name
-                    if "txt" in f:# If its already a txt file
-                        os.remove(f)
+            if "ensdf" or "Zipped" in f:#Check to see if has ensdf in the name
+                os.remove(f)
                         #Remove the old file
                         
-                    os.rename(f, f+".txt") #Make the new file into a txt file
+                    
                 
         except StandardError:
             continue;
