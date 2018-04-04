@@ -104,8 +104,8 @@ def download(url):
         downloadURL="http://"+url+"distributions/dist"+mostRecYr+"/ensdf_"+mostRecYr+mostRecMn+mostRecDay+"_"+j+".zip"
         filename[counter] = "Zipped"+j+".zip" 
         rstore[counter]=requests.get(downloadURL)
-        new_path=os.path.join(os.getcwd(),"Data/")
-        with open(new_path+filename[counter],"wb") as f:
+        new_path=os.path.join(os.getcwd(),filename[counter])
+        with open(new_path,"wb") as f:
             f.write(rstore[counter].content)
         counter=counter+1
        
@@ -116,7 +116,7 @@ def unZip(filename):
     try:
         new_path=os.path.join(os.getcwd(),"Data/")
         os.chdir(new_path)
-        zip = zipfile.ZipFile(filename)
+        zip = zipfile.ZipFile(new_path,filename)
         zip.extractall()
     except:
         print("Checking File Path")
