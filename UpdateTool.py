@@ -108,7 +108,7 @@ def download(url):
         with open(new_path,"wb") as f:
             f.write(rstore[counter].content)
         counter=counter+1
-    print(filename)   
+   # print(filename)   
     return filename; #Return the name of the file
 
 #Unzip the files    
