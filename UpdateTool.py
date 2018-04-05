@@ -108,15 +108,15 @@ def download(url):
         with open(new_path,"wb") as f:
             f.write(rstore[counter].content)
         counter=counter+1
-       
+    print(filename)   
     return filename; #Return the name of the file
 
 #Unzip the files    
 def unZip(filename):
     try:
-        new_path=os.path.join(os.getcwd(),"Data/")
-        os.chdir(new_path)
-        zip = zipfile.ZipFile(new_path,filename)
+       # new_path=os.path.join(os.getcwd(),"Data/")
+       # os.chdir(new_path)
+        zip = zipfile.ZipFile(filename)
         zip.extractall()
     except:
         print("Checking File Path")
