@@ -8,6 +8,8 @@ from PyQt5 import QtCore
 
 from Main import startup
 
+import UpdateTool
+
 class MainWindow(QDialog):
     
     def __init__(self):
@@ -36,6 +38,7 @@ class MainWindow(QDialog):
         selection.setStyleSheet("background-color:#2B4570; color:#F5EFFF; border: 0px solid black; border-radius:5px; padding: 3px;")
 
         submit = QPushButton("Open")
+        submit.clicked.connect(lambda: self.submitClicked(selection))
         submit.setStyleSheet("background-color:#EBEEF2; border: 1px solid #2B4570; border-radius:5px; color: #2B4570; height:25px;")               
         submit.installEventFilter(self)
  
@@ -45,6 +48,7 @@ class MainWindow(QDialog):
         exit.installEventFilter(self)     
 
         update = QPushButton("Update", self)
+        update.clicked.connect(UpdateTool.main)
         update.setStyleSheet("background-color:#EBEEF2; border: 1px solid #2B4570; border-radius:5px; color: #2B4570; height:25px;")                
         update.installEventFilter(self)     
 
@@ -60,7 +64,6 @@ class MainWindow(QDialog):
 
         grid.addLayout(innerGrid, 4, 0)
 
-        submit.clicked.connect(lambda: self.submitClicked(selection))
             
      
         self.setGeometry(300, 300, 380, 220) #x coord, y coord, width, height
@@ -84,6 +87,10 @@ class MainWindow(QDialog):
         option = ["one", "two", "three"]
         startup(option[index])
 #        self.exit()
+
+    def updateClicked(self):
+        main
+        print("update")
 
 def main():
     app = QApplication(sys.argv)
