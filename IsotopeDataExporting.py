@@ -14,7 +14,8 @@ def datExp(option,UI=False,Filter=False):
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
     tryAgainCounter=1
     if option == "one":
-        from GUI import guioutputs
+        #from GUI import guioutputs        
+        from Nuc_Qt import guioutputs 
         elementName= str(guioutputs.Z)
         lowerBound = int(guioutputs.isoLow)
         higherBound = int(guioutputs.isoUp)
@@ -30,7 +31,8 @@ def datExp(option,UI=False,Filter=False):
         betaVariable = 'NULL' ## Required parameter of DataClass
 
     elif option == "two":
-        from Beta_GUI import betaoutputs
+#        from Beta_GUI import betaoutputs
+        from Beta_Qt import betaoutputs
         elementName = str(betaoutputs.Z)
         lowerBound = int(betaoutputs.A)
         higherBound = int(betaoutputs.A)
@@ -39,6 +41,9 @@ def datExp(option,UI=False,Filter=False):
         massData = "YES"
         elementName = elementName.title()
         wantedSpins=str(betaoutputs.J).replace(" ","")
+        print(elementName)
+        print(lowerBound)
+        print(betaVariable)
         ''''
         perTable = open("ElementList.txt","r")
         periodicTable = perTable.readline()
@@ -57,7 +62,8 @@ def datExp(option,UI=False,Filter=False):
         exitcount = 0
 
     elif option == "three":
-        from Parabola_GUI import parabolaoutputs
+#        from Parabola_GUI import parabolaoutputs
+        from Parabola_Qt import parabolaoutputs
         elementName = str(parabolaoutputs.Z)
         lowerBound = int(parabolaoutputs.A)
         higherBound = int(parabolaoutputs.A)
@@ -79,6 +85,7 @@ def datExp(option,UI=False,Filter=False):
 
     #This loop goes through each wanted nuclei in the range of A values and makes the variable to be used (and iterated through) to from b in the a=b expression in data class.
     for element in elementName:
+        print(element)
         for i in range(lowerBound,higherBound+1):
 
             itervar= str(i)+element
