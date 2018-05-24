@@ -4,7 +4,7 @@ import re
 import mass_data as md
 import ionization as addion
 import time
-
+import CENDETcmd as cmd
 
 
 #This function is used to bulk export a range of isotopes in a given A range.
@@ -14,20 +14,42 @@ def datExp(option,UI=False,Filter=False):
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
     tryAgainCounter=1
     if option == "one":
-        from GUI import guioutputs
-        elementName= str(guioutputs.Z)
-        lowerBound = int(guioutputs.isoLow)
-        higherBound = int(guioutputs.isoUp)
-        energyLim = int(guioutputs.E)
-        exitcount = int(guioutputs.exitcount)
-        massData = str(guioutputs.mass)
-        wantedSpins=str(guioutputs.J).replace(" ","")
-        energyLim=int(guioutputs.E)
-        elementName = elementName.replace(" ","")
-        elementName = elementName.title()
-        elementName = elementName.split(',')
-        temperature = 0
-        betaVariable = 'NULL' ## Required parameter of DataClass
+        try:
+            from GUI import guioutputs
+            elementName= str(guioutputs.Z)
+            lowerBound = int(guioutputs.isoLow)
+            higherBound = int(guioutputs.isoUp)
+            energyLim = int(guioutputs.E)
+            exitcount = int(guioutputs.exitcount)
+            massData = str(guioutputs.mass)
+            wantedSpins=str(guioutputs.J).replace(" ","")
+            energyLim=int(guioutputs.E)
+            #FIXME remove print
+            #print(elementName, lowerBound, higherBound, energyLim, exitcount, massData, wantedSpins, energyLim)
+            elementName = elementName.replace(" ","")
+            elementName = elementName.title()
+            elementName = elementName.split(',')
+            temperature = 0
+            betaVariable = 'NULL' ## Required parameter of DataClass
+        except: #FIXME Errortype
+        ## Catches Error from GUI
+            print("Doodlespootls")
+            user_ins = cmd.Inputs() #replaces guioutputs
+
+
+            elementName= str(user_ins.Z)
+            lowerBound = int(user_ins.isoLow)
+            higherBound = int(user_ins.isoUp)
+            energyLim = int(user_ins.E)
+            exitcount = int(user_ins.exitcount)
+            massData = str(user_ins.mass)
+            wantedSpins=str(user_ins.J).replace(" ","")
+            energyLim=int(user_ins.E)
+            elementName = elementName.replace(" ","")
+            elementName = elementName.title()
+            elementName = elementName.split(',')
+            temperature = 0
+            betaVariable = 'NULL' ## Required parameter of DataClass
 
     elif option == "two":
         from Beta_GUI import betaoutputs
@@ -72,6 +94,7 @@ def datExp(option,UI=False,Filter=False):
 
 
     if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
+#FIXME not sure what tryAgainCounter actuall does, just plots?
             tryAgainCounter=0
 
     ## Create dictionaries of ionization data
