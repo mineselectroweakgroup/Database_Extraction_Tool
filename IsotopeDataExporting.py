@@ -4,16 +4,19 @@ import re
 import mass_data as md
 import ionization as addion
 import time
-import CENDETcmd as cmd
+#import CENDETcmd as cmd
 
 
 #This function is used to bulk export a range of isotopes in a given A range.
-def datExp(option,UI=False,Filter=False):
-
+#user_ins is the class that contains the user's search parameters for execution from the terminal
+def datExp(option,user_ins, UI=False):
+    option = "one"#FIXME
+    
 #This uses the option from the first GUI to get inputs from the correct GUI. Some of the definitions here are
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
     tryAgainCounter=1
     if option == "one":
+        print('adasdfasd')
         try:
             from GUI import guioutputs
             elementName= str(guioutputs.Z)
@@ -33,9 +36,9 @@ def datExp(option,UI=False,Filter=False):
             betaVariable = 'NULL' ## Required parameter of DataClass
         except: #FIXME Errortype
         ## Catches Error from GUI
-            print("Doodlespootls")
-            user_ins = cmd.Inputs() #replaces guioutputs
-
+#            from CENDETcmd import user_ins
+#            user_ins = cmd.Inputs() #replaces guioutputs
+            print('assignment')
 
             elementName= str(user_ins.Z)
             lowerBound = int(user_ins.isoLow)
@@ -202,6 +205,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             elif option == "three":
                 fileName = "Parabola_"+str(lowerBound)+"_"+str(temperature)[:-2]+"K.plt"
                 create_file = True
+            print(option) #FIXME option is reassigning somehow
             fileName= "Output/gnuPlot/" + fileName.replace('/','_')
             pltFile = open(fileName,'wb')
             

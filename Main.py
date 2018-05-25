@@ -5,12 +5,18 @@ import time
 import sys
 import renormalize as renorm
 
-def function(option):
+def function(option,user_args = None):
 
-    UI = False  #FIXME
+    ##FIXME only works if none of the GUI's pass a class instance to Main. If we pass instances of the Inputs class (CENDETcmd.py) to Main, then instead of checking if Null, check a membervariable such as user_args.GUI
+    if user_args == None:
+        UI = True
+    else:
+        UI = False
+
+    #UI = False #FIXME delete this line
 
 #Exports data requested by the user into text files (necessary to generate plots)
-    userInput = ided.datExp(option,True,True)
+    userInput = ided.datExp(option,user_args,UI)
 
 #Prints the user input allowing user to make sure they inputted allowing user
 #to check what they input against the plot they are viewing
@@ -48,5 +54,20 @@ def function(option):
     else:
         pass
 
-option = sys.argv[-1]
-function(option)
+
+gui_option = sys.argv[-1]
+if gui_option in ['one','two','three']:
+    function(gui_option)
+else:
+    print('nothing to see here')
+
+#if __name__ == "__Main__":
+#    float('connor licks butts')
+#    option = sys.argv[-1]
+#    function(option)
+
+
+#if UI, then option = sysarg-1
+#    option = sys.argv[-1]
+#
+#    function(option)
