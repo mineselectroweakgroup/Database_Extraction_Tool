@@ -4,15 +4,17 @@ import re
 import mass_data as md
 import ionization as addion
 import time
+import Parabola_Qt
 
 
 
 #This function is used to bulk export a range of isotopes in a given A range.
-def datExp(option,UI=False,Filter=False):
+def datExp(option,UI=False,Filter=False,gif=""):
 
 #This uses the option from the first GUI to get inputs from the correct GUI. Some of the definitions here are
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
-    tryAgainCounter=1
+    #tryAgainCounter=1
+    print('time 0')
     if option == "one":
         #from GUI import guioutputs        
         from Nuc_Qt import guioutputs 
@@ -60,22 +62,21 @@ def datExp(option,UI=False,Filter=False):
 
     elif option == "three":
 #        from Parabola_GUI import parabolaoutputs
-        from Parabola_Qt import parabolaoutputs
-        elementName = str(parabolaoutputs.Z)
-        lowerBound = int(parabolaoutputs.A)
-        higherBound = int(parabolaoutputs.A)
+        Z, A, J, T = Parabola_Qt.getparabolaoutputs(gif)
+        elementName = str(Z)
+        lowerBound = int(A)
+        higherBound = int(A)
         energyLim = 0.0
         massData = "YES"
-        wantedSpins=str(parabolaoutputs.J).replace(" ","")
+        wantedSpins=str(J).replace(" ","")
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
-        temperature = float(parabolaoutputs.T)
+        temperature = float(T)
         exitcount = 0
         betaVariable = 'NULL' ## Required parameter of DataClass
 
-
-    if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
-            tryAgainCounter=0
+    #if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
+            #tryAgainCounter=0
 
     ## Create dictionaries of ionization data
     addion.make_ion_dict(temperature)

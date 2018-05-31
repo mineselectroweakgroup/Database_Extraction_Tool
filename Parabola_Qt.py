@@ -11,18 +11,19 @@ import os
 """ Check how tabs work when selecting buttons """
 class MassParabola(QDialog):
 
-    def __init__(self):
+    def __init__(self, gif):
         super().__init__()
 
-        self.initUI()
+        self.initUI(gif)
 
         self.chemSymVar = ""
         self.A = ""
         self.T = "" 
  
-    def initUI(self):
+    def initUI(self, gif):
 
-        pixmap = QPixmap('Output/gnuPlot/nuclearChart.gif')
+        plotGif = gif or 'Output/gnuPlot/nuclearChart.gif'
+        pixmap = QPixmap(plotGif)
         label = QLabel(self)
         label.setPixmap(pixmap)
 
@@ -126,26 +127,20 @@ class MassParabola(QDialog):
         os.system("python3 StartupQt.py")
 
 
-#if __name__ == '__main__':
-
-app = QApplication(sys.argv)
-ex = MassParabola()
-ex.exec_()
-#sys.exit(app.exec_())
-app.exec_()
-
-
-#Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts
-
-class parabolaoutputs:
+def getparabolaoutputs(gif):
 #These are the Nuclear Structure (ENSDF inputs) variables
+    app = QApplication(sys.argv)
+    ex = MassParabola(gif)
+    ex.exec_()
+    #sys.exit(app.exec_())
+    app.exec_()
+
     periodicTable=open("ElementList.txt",'r')
     Z = periodicTable.readline()
     Z = Z.strip()
     A=ex.A
     J=""
     T=ex.T
-
     ##These if statements either kill the program or input preset values if the
     ##user leaves a section blank.
     if A == '' or A == "Mass #":
@@ -153,4 +148,5 @@ class parabolaoutputs:
         sys.exit()
     if T == '' or T == "Temp (K)":
         T = 0
+    return (Z, A, J, T)
 

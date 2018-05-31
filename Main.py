@@ -6,9 +6,9 @@ import sys
 import renormalize as renorm
 
 
-def startup(option):
+def startup(option, gif=""):
 #Exports data requested by the user into text files (necessary to generate plots)
-    userInput = ided.datExp(option,True,True)
+    userInput = ided.datExp(option,True,True, gif=gif)
 #Prints the user input allowing user to make sure they inputted allowing user
 #to check what they input against the plot they are viewing
 #The sleep is a pause so the timestamps used work correctly
@@ -33,18 +33,20 @@ def startup(option):
 #This code puts restarts the program so it can be used again
     os.chdir("..")
     os.chdir("..")
-    os.system("python3 Main.py "+option)
+    gifFileName = "Output/gnuPlot/"+newest.replace(".plt",".gif")
+    startup(option, gif=gifFileName)
+    #os.system("python3 Main.py "+option)
     #app = QApplication(sys.argv)
     #ex = BetaDecay()
     #sys.exit(app.exec_())
-    newest = "Output/gnuPlot/"+newest.replace(".plt",".gif")
-    if os.path.isfile(newest):
-        os.system("rm "+newest)
-    try:
-        os.system("mv Output/gnuPlot/*.dat Output/gnuPlot/OutputData")
-        os.system("mv Output/gnuPlot/*.plt Output/gnuPlot/OutputData")
-    except:
-        pass
+    # newest = "Output/gnuPlot/"+newest.replace(".plt",".gif")
+    # if os.path.isfile(newest):
+    #     #os.system("rm "+newest)
+    # try:
+    #     os.system("mv Output/gnuPlot/*.dat Output/gnuPlot/OutputData")
+    #     os.system("mv Output/gnuPlot/*.plt Output/gnuPlot/OutputData")
+    # except:
+    #     pass
 #    return option
 
 #option = sys.argv[-1]
