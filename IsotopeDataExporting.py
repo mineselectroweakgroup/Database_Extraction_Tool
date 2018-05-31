@@ -41,9 +41,6 @@ def datExp(option,UI=False,Filter=False):
         massData = "YES"
         elementName = elementName.title()
         wantedSpins=str(betaoutputs.J).replace(" ","")
-        print(elementName)
-        print(lowerBound)
-        print(betaVariable)
         ''''
         perTable = open("ElementList.txt","r")
         periodicTable = perTable.readline()
@@ -85,7 +82,6 @@ def datExp(option,UI=False,Filter=False):
 
     #This loop goes through each wanted nuclei in the range of A values and makes the variable to be used (and iterated through) to from b in the a=b expression in data class.
     for element in elementName:
-        print(element)
         for i in range(lowerBound,higherBound+1):
 
             itervar= str(i)+element
