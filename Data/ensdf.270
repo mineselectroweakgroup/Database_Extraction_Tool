@@ -1,0 +1,790 @@
+270      COMMENTS                                                05NDS    200512
+270    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+270  2 H CUT=12-Aug-2005$                                                       
+270   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+270   C  AUTH$M. GUPTA(a)                                                       
+270   C  INST$National Nuclear Data Center                                      
+270  #C       Brookhaven National Laboratory                                    
+270  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+270  #C                                                                         
+270   c  INST$Manipal Academy of Higher Education,                              
+270  #c  Manipal, KA 576 104, INDIA                                             
+270  #c  e-mail: mohini.gupta@manipal.edu                                       
+270   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+270  #c  Manipal, KA 576 104, INDIA                                             
+270   C  AUTH$THOMAS W. BURROWS                                                 
+270   C  INST$National Nuclear Data Center                                      
+270  #C       Brookhaven National Laboratory                                    
+270  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+270  #C       e-mail: burrows@bnl.gov                                           
+270   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+270  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+270  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+270  4C  RECEIVED BY August 12, 2005.                                           
+270   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+270  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+270  3C  DATE WERE CONSIDERED.                                                  
+270   C  CIT$NDS 106, 251 (2005)                                                
+270   c  COMM$                                                                  
+270  @c  {UAcronyms and notations used in this evaluation:}                     
+270  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+270  #c  BGS Berkeley Gas Filled Separator                                      
+270  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+270  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+270  #c  EVR Evaporation Residue                                                
+270  #c  GARIS Gas-filled Recoil Ion Separator                                  
+270  #c  RILAC RIKEN Linear Accelerator facility                                
+270  #c  SHIP Separator for Heavy Ion reaction Products                         
+270  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+270  2c  and detection of previous EVR or |a                                    
+270  #c  TKE Total Kinetic Energy                                               
+270  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+270  2c  Reactions, JINR, Dubna, Russia                                         
+270  #c                                                                         
+270  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+270  2c  (Z=110-112,114,116,118):}                                              
+270  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+270  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+270  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+270  5c  the evaluators have relied on the judgement of the JWP in              
+270  6c  determining the strength of the arguments made in the various papers.  
+270  7c  In the cases where there are new data or where the JWP has not yet     
+270  8c  assigned a priority of discovery for an element, the evaluators have   
+270  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+270  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+270  Bc  the data.                                                              
+270  #c                                                                         
+270  #c  In the above context, with respect to Z=112 and the collective works of
+270  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+270  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+270  4c  references therein.                                                    
+270  #c                                                                         
+270  @c                                                                         
+270  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+270  2c  discovery of an element and not a specific nuclide. The purpose of     
+270  3c  this evaluation is to present the "best" set of nuclear properties     
+270  4c  for those nuclides reported between A=266 and A=294 based on data      
+270  5c  currently available and {Bnot} to establish a priority of discovery for
+270  6c  any element.                                                           
+270  !c                                                                         
+270  #c  It is well known that alpha decay chains seen                          
+270  ac  in cold fusion reactions tend to terminate in known mass regions.      
+270  2c  The method of |a-|a or |a-SF correlations for identifying the          
+270  3c  parent has therefore been used with confidence.                        
+270  3c  Experiments carried out with hot fusion reactions,                     
+270  4c  result in alpha decay chains beginning and ending with hitherto unknown
+270  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+270  6c  in an attempt to identify the parent and daughters. The latter method  
+270  7c  is not as accurate as the first since a greater probability of         
+270  8c  randomness is inherant to the technique. As such, independent          
+270  9c  verification and confirmation of the data gains added importance.      
+270  ac  These facts should be taken into account when considering the suggested
+270  ac  properties of nuclei created following a hot fusion reaction as for    
+270  ac  the synthesis of Z=114 and above.                                      
+270  #c                                                                         
+270  #c  Finally, with regard to the some of the                                
+270  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+270  ac  2004Mo15 have pointed out that mass assignments which are based        
+270  ac  on the excitation energy of the compound nucleus may be off by a       
+270  ac  single unit. This may also be due in part to uncertainties in the beam 
+270  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+270  ac  Once again, collateral information is required to establish the charge 
+270  ac  and approximate A of the nucleus.                                      
+270  #c                                                                         
+270  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+270  2c  have not been adopted, the evaluators have used the approximations in  
+270  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+270  4c  exponential distribution to estimate the standard uncertainty (68%     
+270  5c  confidence level) in T{-1/2}:                                          
+270  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+270  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+270  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+270  9c  of events. For one and two events, the exact values given in Table 1   
+270  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+270  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+270  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+270  #c                                                                         
+270  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+270  ac  Calculations of T{-1/2}                                                
+270  2c  performed in the present evaluation used the relationship:             
+270  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+270  #c  where Z refers to the atomic                                           
+270  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+270  6c  and:                                                                   
+270  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+270  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+270  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+270  3c  parameter set used in these evaluations. We note that these systematics
+270  6c  are only an indication of |a-decay half-lives from the ground state    
+270  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+270  8c  the element under consideration. The use of this formalism in the      
+270  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+270  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+270  ac  estimate a Hindrance Factor (HF) for a given transition,               
+270  ac  attributable to the odd neutron or proton. This quantity is            
+270  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+270  ac  The HF so computed is an approximate indication.                       
+270  #c                                                                         
+270  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+270  2c  References.                                                            
+270  #c                                                                         
+270  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+270  2c  trans-fermium elements is the manifestation of shell effects in the    
+270  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+270  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+270  5c  important as QF is expected to play a greater role on the hindrance of 
+270  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+270  7c  the "island" of stability. An understanding of this mechanism is       
+270  8c  necessary to establishing the most favorable reactions for producing   
+270  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+270  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+270  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+270  Cc  to both the mass asymmetry in the entrance channel as well as the      
+270  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+270  Ec  deformations of target/projectile nuclei and their relative orientation
+270  Fc  to each other in the process of CN formation, may also play an         
+270  Gc  important role in reducing the probability of forming a compound       
+270  Hc  system. In the face of extremely low yields and a steep decrease of    
+270  Ic  production cross-sections already in evidence with available stable    
+270  Jc  beam-target combinations, the influence of all possible mitigating     
+270  Kc  factors must be accurately determined in order to                      
+270  Lc  optimize the probability of successful fusion. The formation of a      
+270  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+270  Nc  survives QF going on to form a compact compound system which must then 
+270  Oc  face competition from fission.                                         
+270  #c                                                                         
+270  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+270  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+270  3c  in collaboration with investigators from Belgium, France, and Italy.   
+270  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+270  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+270  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+270  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+270  8c  spectrometer "Corset". These experiments were inspired by              
+270  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+270  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+270  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+270  Cc  such experiments are planned or underway to investigate the various    
+270  Dc  effects.                                                               
+270  #c                                                                         
+270  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+270  2c  and references cited in these papers.                                  
+270  #c                                                                         
+270  !c  {UExperimental Estimates of Fission Barriers:}                         
+270  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+270  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+270  4c  the experimentally derived barrier heights are respectively:           
+270  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+270  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+270  #c                                                                         
+270  #c  2002It04, in an analysis of available experimental data, derive the    
+270  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+270  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+270  #c                                                                         
+270  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+270  2c  Two possibilities have been proposed in an attempt to understand the   
+270  ac  the {+289}114, {+287}114 observations:                                 
+270  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+270  ac  belongs to a rare decay mode originating from                          
+270  4c  an isomeric state, or that                                             
+270  #c  (ii) the sequence may actually originate from                          
+270  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+270  7c  Levels).                                                               
+270  #c  The evaluators believe that further investigations                     
+270  ac  are required to support either hypothesis.                             
+270  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+270  9c  unobserved. Also, T{-1/2}                                              
+270  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+270  ac  is much larger than that observed by 2004Og12 and                      
+270  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+270  ac  agreement. Such inconsistencies need to be better understood.          
+270  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+270  2c  respects. 2004OgZZ report more statistics in some cases.               
+270  #c                                                                         
+270  @c  {UOther comments on {+289}114 and {+283}112}                           
+270  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+270  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+270  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+270  4c  classified the evidence as being "very weak",                          
+270  5c  with no convincing supporting arguments for the possible production of 
+270  6c  SHE. We make the following general observations:                       
+270  #c                                                                         
+270  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+270  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+270  ac  by the Dubna-JINR collaborations for all isotopes of                   
+270  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+270  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+270  ac  {+287}114 (15 events) and {+286}114                                    
+270  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+270  ac  the |?34 min decay sequence postulated as originating from             
+270  5c  a rare decay mode of {+289}114, does not seem very likely.             
+270  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+270  7c  {+289}114 decays observed are genetically linked                       
+270  8c  and not the result of a background decay sequence. These               
+270  BC  discrepancies have to be resolved, along with some others.             
+270  #c                                                                         
+270  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+270  ac  (see also 2004Og02) with VASSILISSA, have not                          
+270  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+270  3c  lack of internal consistency through the collective measurements       
+270  ac  and the data are inconclusive as pointed                               
+270  4c  out by experimenters (reasons given in each paper). Decay properties of
+270  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+270  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+270  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+270  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+270  8c  by them. See {+283}112 Adopted Levels for details.                     
+270  #c                                                                         
+270  #c  These observations by the experimenters are consistent with the        
+270  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+270  3c  of the various arguments put                                           
+270  3c  forward therein, the following comments may be made here:              
+270  #c                                                                         
+270  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+270  #c  190 MeV and 212 MeV (1999Og05)                                         
+270  #c  65 MeV and 170 MeV  (2004Og02)                                         
+270  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+270  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+270  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+270  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+270  4c  plane and side detectors). With one exception, all the energies        
+270  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+270  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+270  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+270  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+270  9c  the second experiment) after EVR implantation resulted in              
+270  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+270  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+270  #c                                                                         
+270  #c  2. 2000Ar03 statement that correlations  between the fission events    
+270  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+270  3c  'backward' analysis of the data was reported in                        
+270  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+270  5c  evidently in contradiction with those made by the                      
+270  6c  experimenters. A more complete analysis would be beneficial.           
+270  #c                                                                         
+270  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+270  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+270  ac  quoted from an earlier                                                 
+270  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+270  4c  assignments. The proposed assignment of Z=114 to both parents may      
+270  5c  be incorrect taking into account new data which do not support         
+270  6c  these observations and for reasons already mentioned.                  
+270  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+270  !c                                                                         
+270  #c  CONCLUSIONS:                                                           
+270  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+270  ac  are not conclusive. Overall, the                                       
+270  2c  results from the VASSILISSA experiments are at variance with data from 
+270  3c  experiments using DGFRS. The latter investigations are done using      
+270  4c  more stringent methods, and have greater statistics, offering better   
+270  5c  internal consistency. Some obvious discrepancies and other             
+270  ac  inconsistencies between the two sets of                                
+270  6c  data remain and need to be resolved or adequately explained as does the
+270  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+270  8c  by 2005Gr19 and 2002Lo11.                                              
+270  #c                                                                         
+270  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+270  2c  from earlier work are not reproduced to date.                          
+270  #c                                                                         
+270  @c  {UTheoretical Calculations:}                                           
+270  @c  1995Mo29: |b2 based on the finite-range droplet                        
+270  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+270  3c  with "global" parameters.                                              
+270  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+270  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+270  3c  J|p simultaneously obtained with the calculated masses and             
+270  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+270  5c  A=239.                                                                 
+270  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+270  2c  model for the macroscopic part and the Strutinski shell correction,    
+270  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+270  4c  part.                                                                  
+270  @c  2005GaZX: |b2 based on self consistent calculations                    
+270  2c  within the framework of the Relativistic Mean Field (RMF)              
+270  3c  theory with very few "globally" fit parameters and employing the       
+270  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+270  5c  sets in use exhibit similar systematics, these results are expected to 
+270  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+270  #c                                                                         
+270  @c  {UOther Measurements:}                                                 
+270  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+270  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+270  3c  (Blocking technique in single crystals).                               
+270  #c                                                                         
+270   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+270  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+270  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+270  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+270  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+270  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+270  7c  additional information that they readily provided during this          
+270  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+270  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+270  Ac  Singh for helpful discussions. We thank A. Marinov                     
+270  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+270  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+270  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+270  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+270  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+270  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+270  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+270  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+270  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+270  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+270  Lc  insights, and suggestions until her untimely demise are hereby         
+270  Mc  acknowledged.                                                          
+270   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+270  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+270  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+270      REFERENCES                                                       200512
+270    R 1966VI04 JOUR JINCA 28 741                                             
+270    R 1984SC13 JOUR ZPAAD 316 19                                             
+270    R 1987MU15 JOUR ZPAAD 328 49                                             
+270    R 1992BA77 JOUR PPNPD 29 453                                             
+270    R 1995MO29 JOUR ADNDA 59 185                                             
+270    R 1997MO25 JOUR ADNDA 66 131                                             
+270    R 1998DA24 JOUR ARNUA 48 401                                             
+270    R 1999OG05 JOUR ZAANE 5 63                                               
+270    R 1999OG07 JOUR NATUA 400 242                                            
+270    R 1999OG10 JOUR PRLTA 83 3154                                            
+270    R 2000AR03 JOUR ZAANE 7 23                                               
+270    R 2000FI12 JOUR NDSBA 90 391                                             
+270    R 2000ZL02 JOUR ZAANE 8 81                                               
+270    R 2001AK11 JOUR NDSBA 94 131                                             
+270    R 2001HO06 JOUR ZAANE 10 5                                               
+270    R 2001KA70 JOUR PACHA 73 959                                             
+270    R 2002DU21 JOUR NATUA 418 859                                            
+270    R 2002HI20 JOUR PRLTA 89 282701                                          
+270    R 2002HO11 JOUR ZAANE 14 147                                             
+270    R 2002IT04 JOUR PRVCA 65 044602                                          
+270    R 2002LO11 JOUR PPNPD 48 123                                             
+270    R 2002LO15 JOUR PRVCA 66 044617                                          
+270    R 2003AU02 JOUR NUPAB 729 3                                              
+270    R 2003AU03 JOUR NUPAB 729 337                                            
+270    R 2003KA71 JOUR PACHA 75 1601                                            
+270    R 2003MU15 JOUR YAFIA 66 1051                                            
+270    R 2003MU26 JOUR APOBB 34 2073                                            
+270    R 2003TU05 JOUR ZAANE 17 505                                             
+270    R 2004DA11 JOUR NUPAB 734 148                                            
+270    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+270    R 2004GA18 JOUR NUPAB 734 208                                            
+270    R 2004IT05 JOUR NUPAB 734 136                                            
+270    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+270    R 2004MO15 JOUR NUPAB 734 188                                            
+270    R 2004MO42 JOUR JUPSA 73 2593                                            
+270    R 2004OG02 JOUR ZAANE 19 3                                               
+270    R 2004OG03 JOUR PRVCA 69 021601                                          
+270    R 2004OG12 JOUR PRVCA 70 064609                                          
+270    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+270    R 2004PRZW PREPRINT Prokhorova                                           
+270    R 2004VO24 JOUR RAACA 92 855                                             
+270    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+270    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+270    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+270DB    COMMENTS                                                ENSDF    201008
+270DB  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+270DB C  TITL$NUCLEAR DATA SHEETS FOR 270DB                                     
+270DB c  AUTH$M. GUPTA                                                          
+270DB c  INST$Manipal University,                                               
+270DB#c       Manipal, KA 576 104, INDIA                                        
+270DB c  ABST$The ENSDF file corresponding to Nuclear Data Sheets for A=266-294 
+270DB2c  (2005Gu33) has been updated to include the recently reported           
+270DB3c  production of {+294}117 and its daughters by 2010Og01.                 
+270DB#c                                                                         
+270DB#c  See 2005Gu33 for acronyms and notations and evaluation methodology     
+270DBxc  used                                                                   
+270DBxc  in this evaluation. The purpose of this evaluation is to present the   
+270DB3c  "best" set of nuclear properties for those nuclides reported between   
+270DB4c  A=266 and A=294 based on data currently available and {Bnot} to        
+270DB5c  establish a priority of discovery for any element.                     
+270DB c  CUT$August 1, 2010. All references relevant to the production of       
+270DB2c  {+270}Db entered into the Nuclear Science References                   
+270DB3c  File and papers and private communications received by this date were  
+270DBxc  considered.                                                            
+270DB c  ACKN$The evaluator is very grateful to J. Choquette and B. Singh,      
+270DB2c  McMaster University for compiling these data into XUNDL.               
+270DB C  CIT$ENSDF                                                              
+                                                                                
+270DB    ADOPTED LEVELS: Tentative                               ENSDF    201008
+270DB  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+270DB  Q 9.E2      SY4.9E3   SY          8.3E3   SY    2012WA38                 
+270DB CQ Note: Current evaluation has used the following Q record               
+270DB  Q -989      SY 5349   SY 2760   SY  9300     SY 2009AuZZ                 
+270DB CQ Q-$ESTIMATED UNCERTAINTY=551 KEV                                       
+270DB CQ SN$ESTIMATED UNCERTAINTY=625 KEV                                       
+270DB CQ SP$ESTIMATED UNCERTAINTY=806 KEV                                       
+270DB CQ QA$ESTIMATED UNCERTAINTY=300 KEV.                                      
+270DB c  2010Og01: This nuclide is the |a-decay descendent of                   
+270DBac  {+294}117 in                                                           
+270DBac  the reaction {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center.    
+270DBac  This corresponded to an excitation energy of 35 MeV                    
+270DBac  for the 3n evaporation channel.                                        
+270DBac  {+270}Db is the last nuclide in the |a-decay chain and has been        
+270DBac  observed to decay by SF.                                               
+270DB2c  All experiments were carried out at Dubna, Russia, in collaboration    
+270DB3c  with RIAR (Russia) and LLNL; ORNL; University of Nevada and Vanderbilt 
+270DBac  University in USA, for a period of 70 days from July 27 - October 23,  
+270DBac  2009. See adopted levels for {+294}117 for experimental details.       
+270DBac  A single |a decay chain was detected and attributed to the parent      
+270DBac  nucleus.                                                               
+270DB t  {TV} The details are provided below:                                   
+270DB3t  E{-|a1}=10.81 MeV {I10}, t{-1}=112 ms                                  
+270DB+t       - {TV}assigned to {+294}117 decay                                 
+270DB4t  E{-|a2}= 9.95 MeV {I40}, t{-2}=0.023 s                                 
+270DB+t      - {TV}assigned to {+290}115 decay                                  
+270DB5t  E{-|a3}= 9.63 MeV {I10}, t{-3}=28.3 s                                  
+270DB+t       - {TV}assigned to {+286}113 decay                                 
+270DB6t  E{-|a4}= 9.00 MeV {I10}, t{-4}=0.74 s                                  
+270DB+t       - {TV}assigned to {+282}Rg decay                                  
+270DB5t  E{-|a5}= 9.55 MeV {I19}, t{-5}=11.0 s                                  
+270DB+t       - {TV}assigned to {+278}Mt decay                                  
+270DB6t  E{-|a6}= 8.80 MeV {I10}, t{-6}=1.3 m                                   
+270DB+t        - {TV}assigned to {+274}Bh decay                                 
+270DB7t  E(SF)=219 MeV {I5}, t(SF)=33.4 h   - {TV}assigned to {+270}Db decay.   
+270DB c  The estimate of randomness (1984Sc13) was 6|*10{+-11}.                 
+270DB c  Theory: see Nuclear Science References.                                
+270DB c  Assignment: Descendent of {+294}117 produced in the reaction           
+270DBac  {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center                  
+270DB2c  (2010Og01). The evaluator suggests that the                            
+270DB5c  properties attributed to {+270}Db should be                            
+270DB6c  considered as tentative until confirmed independently.                 
+270DB  XA274BH A DECAY (54 S)                                                   
+270DB  L X                             23 H                                    ?
+270DB CL $T(SF): 23 h {I+111-11} from the measured SF lifetime of 33.4 h        
+270DBaCL using the methods of 1984Sc13.                                         
+270DB CL $^TKE: 219 {I5} MeV from two measured fragments.                       
+270DB CL $T(SF) (theory): 14 s from 2010So12.                                   
+270DB2 L %SF AP 100$ %A=?                                                       
+270DB cL %SF$presumed from one SF event (2010Og01); no |a decay events observed.
+270DB CL $Q(|a)(theory)=7830 keV from 2010So12.                                 
+270DB CL J$:|W(p)=5/2-; |W(n)=3/2+ FROM 1997MO25 (theory)                       
+270DB CL $B2:0.212 FROM 1995MO29 (theory)                                       
+270DBX L XREF=A                                                                 
+                                                                                
+270DB    274BH A DECAY (54 S)          2010Og01                  ENSDF    201008
+270DB  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+274BH  P X                             54 S                     8.930           
+274BH cP T$54 s {I+259-25} from 2010Og01.                                       
+274BH CP QP$8.930 MeV {I100} from E|a=8.80 MeV {I10} (2010Og01).                
+270DB  N                       1.0     AP                                       
+270DB  L X                             23 H                                    ?
+270DB CL $T(SF): 23 h {I+111-11} using the methods of 1984Sc13.                 
+270DB  A 8.80      10                                                           
+270DB CA E$FROM 2010Og01.                                                       
+                                                                                
+270BH    COMMENTS                                                ENSDF    200711
+270BH  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+270BH C  TITL$ENSDF UPDATE FOR A=266-294                                        
+270BH C  AUTH$M. GUPTA                                                          
+270BH c  INST$Manipal University,                                               
+270BH#c  Manipal, KA 576 104, INDIA                                             
+270BH C  AUTH$THOMAS W. BURROWS                                                 
+270BH C  INST$National Nuclear Data Center                                      
+270BH#C       Brookhaven National Laboratory                                    
+270BH#C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+270BH C  ABST$THE ENSDF FILE CORRESPONDING TO Nuclear Data Sheets FOR A=266-294 
+270BH2C  (2005GU33) HAS BEEN UPDATED TO INCLUDE THE RECENTLY REPORTED           
+270BH3C  PRODUCTION OF 28213 AND ITS DAUGHTERS BY 2007OG02 AND 2007OG01.        
+270BH#C                                                                         
+270BH#C  SEE 2005GU33 FOR ACRONYMS AND NOTATIONS AND EVALUATION METHODOLOGY USED
+270BH2C  IN THIS EVALUATION. THE PURPOSE OF THIS EVALUATION IS TO PRESENT THE   
+270BH3C  "best" SET OF NUCLEAR PROPERTIES FOR THOSE NUCLIDES REPORTED BETWEEN   
+270BH4C  A=266 AND A=294 BASED ON DATA CURRENTLY AVAILABLE AND {BNOT} TO        
+270BH5C  ESTABLISH A PRIORITY OF DISCOVERY FOR ANY ELEMENT.                     
+270BH C  CUT$November 5, 2007. ALL REFERENCES RELEVANT TO THE PRODUCTION OF 2821
+270BH2C  OR ITS DAUGHTERS ENTERED INTO THE Nuclear Science References File AND  
+270BH3C  PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS DATE WERE CONSIDERED
+270BH c  ACKN$The evaluators are very grateful to S. Geraedts and B. Singh,     
+270BH2c  McMaster University for compiling these data into XUNDL.               
+270BH C  CIT$ENSDF                                                              
+270BH C  FUND$PART OF THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.  
+270BH2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886                
+                                                                                
+270BH    ADOPTED LEVELS: Tentative                               ENSDF    200711
+270BH  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+270BH  Q -9.E2     SY5.3E3   SY2.9E3   SY9.06E3  5     2012WA38                 
+270BH CQ Note: Current evaluation has used the following Q record               
+270BH  Q -960      SY 5350   SY 2760   SY 9064   81    2007OG02,2003AU03        
+270BH CQ Q-$ESTIMATED UNCERTAINTY=550 KEV (2003AU03)                            
+270BH CQ SN$ESTIMATED UNCERTAINTY=630 KEV (2003AU03)                            
+270BH CQ SP$ESTIMATED UNCERTAINTY=810 KEV (2003AU03)                            
+270BH CQ QA$FROM EA=8.93 MeV 8 BASED ON ONE EVENT IN Strip 6 (2007OG02). OTHER: 
+270BH2CQ 9300 KEV 300 (2003AU03. SYSTEMATICS).                                  
+270BH C  2007OG02: DESCENDANT OF 28213 PRODUCED BY 237NP(48CA,3N),              
+270BH2C  E(Lab)=244 MEV AT TARGET CENTER. EXPERIMENTS WERE DONE AT DUBNA,       
+270BH3C  RUSSIA, IN COLLABORATION WITH ^LLNL, USA THROUGH JUNE-JULY 2006. SEE   
+270BH4C  28213 Adopted Levels FOR EXPERIMENTAL DETAILS. 2007OG01 GIVE           
+270BH5C  PRELIMINARY RESULTS FOR THIS STUDY.                                    
+270BH t  {TV}Details of two decay chains are provided, one with four successive 
+270BH+t   {TV}|a decays followed by SF decay, and another with three successive 
+270BH+t   {TV}|a decays.                                                        
+270BH2t  {UFirst decay chain: EVR at 13.99 MeV  (Strip 6)}                      
+270BH3t  E{-|a1}=10.62 MeV {I8}, t{-1}=88.9 ms                                  
+270BH+t       - {TV}assigned to {+282}113 decay                                 
+270BH4t  E{-|a2}=10.69 MeV {I8}, t{-2}=6.2 ms                                   
+270BH+t        - {TV}assigned to {+278}Rg decay                                 
+270BH5t  E{-|a3}=10.0 MeV {I11}, t{-3}=472.6 ms                                 
+270BH+t      - {TV}assigned to {+274}Mt decay                                   
+270BH6t  E{-|a4}=8.93 MeV {I8},  t{-4}=87.98 s                                  
+270BH+t       - {TV}assigned to {+270}Bh decay                                  
+270BH7t  E(SF)=174 MeV, t(SF)=31.74 min - {TV}assigned to {+266}Db decay.       
+270BH8t  {TV}Experimenters note that the SF events could also be from           
+270BH+t   {TV}{+266}Rf SF decay, if {+266}Db decays by |e decay. The |a decay   
+270BH+t   {TV}mode  of {+266}Db is also possible.                               
+270BH9t  {U{TV}Second decay chain: EVR at 13.11 MeV (Strip 10)}                 
+270BHAt  E{-|a1}=10.64 MeV {I10}, t{-1}=122.7 ms                                
+270BH+t    - {TV}assigned to {+282}113 decay                                    
+270BHBt  E{-|a2}=10.80 MeV {I76}, t{-2}=5.8 ms                                  
+270BH+t      - {TV}assigned to {+278}Rg decay                                   
+270BHCt  E{-|a3}=9.76 MeV {I10},  t{-3}=810.1 ms                                
+270BH+t    - {TV}assigned to {+274}Mt decay                                     
+270BHDt  E{-|a4}=8.52 MeV {I10},  t{-4}=97.02 s                                 
+270BH+t     - {TV}assigned to {+270}Bh decay                                    
+270BH C  THE EVENT ATTRIBUTED TO 270BH IN THE SECOND DECAY CHAIN (Strip 10) WAS 
+270BH2C  REGISTERED WHILE THE BEAM WAS SWITCHED ON AND IS A TENTATIVE ASSIGNMENT
+270BH3C  SINCE THE PROBABILITY THAT A RANDOM EVENT COULD OCCUR WITHIN THE TIME  
+270BH4C  FRAME OF 100 SECS WAS ESTIMATED TO BE ABOUT 0.4.                       
+270BH C  THEORY: SEE Nuclear Science References.                                
+270BH C  ASSIGNMENT: DESCENDANT OF 28213 PRODUCED BY 237NP(48CA,3N),            
+270BH2C  E(Lab)=244 MEV AT TARGET CENTER (2007OG02, 2007OG01). WHILE THE TWO    
+270BH3C  MEASURED ALPHA ENERGIES FOR 28213 DECAY MAY BE TAKEN AS SATISFYING THE 
+270BH4C  CRITERIA FOR REDUNDANCY AND BOTH HALF-LIVES AGREE WITHIN THE ASSOCIATED
+270BH5C  UNCERTAINTIES, THE EVALUATORS NOTE THAT THE PROPERTIES ATTRIBUTED TO   
+270BH6C  28213 AND ITS DAUGHTERS SHOULD BE CONSIDERED AS TENTATIVE UNTIL        
+270BH7C  CONFIRMED INDEPENDENTLY.                                               
+270BH  L X                                                                     ?
+270BH CL J$|W(p)=1/2-; |W(n)=13/2- FROM 1997MO25 (THEORY)                       
+270BH3 L T=61 S +292-28                                                         
+270BH CL T$FROM ONE EVENT IN CHAIN 1 (Strip 6) USING THE METHODS OF 1984SC13    
+270BH2CL (2007OG02). OTHER: T(CALC)=5.2 S FROM Viola-Seaborg SYSTEMATICS FOR    
+270BH3CL QA=9.064 MEV                                                           
+270BH2 L %A AP 100$ %SF=?                                                       
+270BH CL %A$NO SF DECAY EVENTS OBSERVED.                                        
+270BH CL $B2: 0.222 FROM 1995MO29; 0.229 FROM 2003MU26 (THEORY)                 
+                                                                                
+270BH    274MT A DECAY: Tentative      2007OG02,2007OG01         ENSDF    200711
+270BH  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+270BH C  ALL DATA ARE FROM 2007OG02. SEE 28213 Adopted Levels FOR DETAILS       
+274MT  P X                             0.45 S    +81-18         9905      10    
+270BH  N                       1.0     AP                                       
+270BH CN BR$NO SF DECAY EVENTS OBSERVED.                                        
+270BH  L X                                                                     ?
+270BH3 L T=61 S +292-28                                                         
+270BH2 L %A AP 100$ %SF=?                                                       
+270BH  A 9.76E3    10                                                          ?
+                                                                                
+270HS    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+270HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+270HS2 H CUT=12-Aug-2005$                                                       
+270HS  Q -5.6E3    SY7.6E3   SY3.7E3   SY9.05E3  5     2012WA38                 
+270HS CQ Note: Current evaluation has used the following Q record               
+270HS  Q -5600        7250   SY 3600   SY 9.30E3 +7-3  2003AU03,2003TU05        
+270HS CQ Q-$ESTIMATED UNCERTAINTY=610 KEV                                       
+270HS CQ SN$ESTIMATED UNCERTAINTY=310 KEV                                       
+270HS CQ SP$ESTIMATED UNCERTAINTY=500 KEV                                       
+270HS CQ QA$FROM EA=9.16 MEV +7-3 (2003TU05). OTHER: 9.30 MEV 3 (2003AU03.      
+270HS2CQ BASED ON PRELIMINARY DATA LATER REPORTED IN 2003TU05).                 
+270HS C  2002DU21, 2003TU05: FIRST REPORT OF 270HS FROM CHEMICAL INVESTIGATIONS 
+270HS2C  EMPLOYING GAS CHROMATOGRAPHY UNDERTAKEN BY A LARGE INTERNATIONAL       
+270HS3C  COLLABORATION AT GSI USING THE ^UNILAC FACILITY. 269,270HS             
+270HS4C  OBSERVED WITH TWO DECAY CHAINS ATTRIBUTED TENTATIVELY TO 270HS AND     
+270HS5C  THREE DECAY CHAINS TO 269HS (SEE 269HS Adopted Levels FOR DETAILS).    
+270HS6C  ASSUMING AN OVERALL EFFICIENCY OF AP 40%, A PRODUCTION  CROSS-SECTION  
+270HS7C  OF 4 pb FOR 270HS AND 6 pb FOR 269HS WAS ESTIMATED, ACCURATE TO WITHIN 
+270HS8C  A FACTOR OF ABOUT 3. REACTION: 26MG BEAM AT 143.7-146.8 MEV ON 248CM.  
+270HS9C  FOLLOWING CHEMICAL SEPARATION HS ATOMS WERE IDENTIFIED BY OBSERVING    
+270HSAC  GENETICALLY LINKED DECAY CHAINS. FROM THE MEASURED                     
+270HSBC  EA=9.16 MEV +7-3, AN ALPHA-DECAY HALF-LIFE OF 3.6 S +8-14 WAS ESTIMATED
+270HSCC  FOR 270HS.                                                             
+270HS t    {TV}Event #1: 12-May-2001 at 02:33:08 hrs                            
+270HS2t       E{-|a1}= 9.16 MeV {I+7-3}                 - assigned to {+270}Hs  
+270HS3t       E{-|a2}= 8.66 MeV {I+7-3}  t{-2}=25.7 s      - assigned to        
+270HS+t   {+266}Sg                                                              
+270HS4t       E{-SF}=187 MeV {I6}       t(SF)=0.199 s  - assigned to {+262}Rf   
+270HS5t  {TV}Event #2: 12-May-2001 at 17:09:09 hrs                              
+270HS6t       E{-|a1}= 8.97 MeV {I+7-3}                 - assigned to {+270}Hs  
+270HS7t       E{-|a2}= 8.64 MeV {I+7-3}  t{-2}=11.9 s      - assigned to        
+270HS+t   {+266}Sg                                                              
+270HS8t       E{-SF}= 186 MeV {I6}      t(SF)=1.2 s    - assigned to {+262}Rf   
+270HS C  THE ABOVE PROPERTIES ARE FROM 2003TU05. NOTE THAT THE LIFE-TIMES OF    
+270HS2C  THE PARENT COULD NOT BE ESTIMATED WITH THE APPLIED THERMOCHROMATOGRAPHY
+270HS3C  TECHNIQUE SINCE DEPOSITION TIMES ARE NOT MEASURED. 2002DU21 ALSO       
+270HS4C  EXPLAINS THE CHEMICAL IMPLICATIONS OF THESE EXPERIMENTS AND PROPOSES   
+270HS5C  STRONG QUALITATIVE EVIDENCE IN SUPPORT OF HS BEING AN ORDINARY MEMBER  
+270HS6C  OF Group ^VIII OF THE PERIODIC TABLE. IT IS SUGGESTED THAT IT MAY      
+270HS7C  BEHAVE LIKE ITS LIGHTER HOMOLOGUE, OS.                                 
+270HS C  2004VO24 OBSERVED SIX ALPHA-CHAINS FROM 248CM(26MG,4N) E=142-150       
+270HS2C  MEV, CHEM. ONE CHAIN WAS ASSIGNED TO 269HS; FOUR COULD BE ASSIGNED TO  
+270HS3C  269HS OR 270HS; AND THE SIXTH CHAIN IS THE MOST LIKELY CANDIDATE FOR   
+270HS4C  A RANDOM CORRELATION. SEE 269HS Adopted Levels FOR MORE DETAILS.       
+270HS5C  RESULTS OF THIS EXPERIMENT ARE NOT SUITABLE FOR PROVIDING FURTHER PROOF
+270HS6C  FOR 270HS.                                                             
+270HS C  OTHER: 2004GA18.                                                       
+270HS C  THEORY: SEE Nuclear Science References                                 
+270HS C  ASSIGNMENT: 248CM(26MG,4N) E=144-147 MEV (2002DU21,2003TU05). 2003TU05 
+270HS2C  CONSIDER THEIR ASSIGNMENT AS TENTATIVE. MEASUREMENTS BY 2004VO24 ARE   
+270HS3C  NOT SUITABLE FOR PROVIDING FURTHER PROVE FOR 270HS.                    
+270HS  L 0.0                               3.6 S +8-14                         ?
+270HS CL J$0+ IF G.S.                                                           
+270HS CL T$T(ALPHA) ESTIMATED BY 2003TU05 FROM MEASURED QA=9.30 MEV +7-3.       
+270HS2CL T(CALC)=2.1 S                                                          
+270HS2CL FROM Viola-Seaborg SYSTEMATICS WITH QA=9.30 MEV                        
+270HS2 L %A AP 100                                                              
+270HS CL %A$FROM 2/2 EVENTS                                                     
+270HS CL $B2(THEORY): 0.231 FROM 1995MO29; 0.233 FROM 2003MU26; 0.257 FROM      
+270HS2CL 2005GAZX.                                                              
+                                                                                
+270MT    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+270MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+270MT2 H CUT=12-Aug-2005$                                                       
+270MT  Q -3.97E3   SY6.7E3   SY1.17E3  SY1.018E4 5     2012WA38                 
+270MT CQ Note: Current evaluation has used the following Q record               
+270MT  Q -1860     SY 6580   SY 1140   SY 10.18E3  7   2003AU03,2004MO42        
+270MT CQ Q-$ESTIMATED UNCERTAINTY=610 KEV                                       
+270MT CQ SN$ESTIMATED UNCERTAINTY=770 KEV                                       
+270MT CQ SP$ESTIMATED UNCERTAINTY=550 KEV                                       
+270MT CQ QA$FROM EA=10.03 MEV 7 (2004MO42). OTHER: 10.35 MEV 50 (2003AU03.      
+270MT2CQ SYST.)                                                                 
+270MT C  2004MO42: GRANDDAUGHTER OF 27813 PRODUCED BY 209BI(70ZN,N) E=349 MEV.  
+270MT2C  SEE 27813 Adopted Levels FOR DETAILS.                                  
+270MT t    {TV}Event #1: Energy of the evaporation residue=36.75 MeV            
+270MT2t       E{-|a1}=11.68 MeV {I4}   t{-1}=344 |ms    -   assigned to         
+270MT+t   {+278}113                                                             
+270MT3t       E{-|a2}=11.15 MeV {I7}   t{-2}=9.26 ms   -   assigned to {+274}Rg 
+270MT4t       E{-|a3}=10.03 MeV {I7}   t{-3}=7.16 ms   -   assigned to {+270}Mt 
+270MT5t       E{-|a4}= 9.08 MeV {I4}   t{-4}=2.47 s    -   assigned to {+266}Bh 
+270MT6t       E(SF)=204.1 MeV   t(SF)=40.9 s -   assigned to {+262}Db           
+270MT C  THEORY: SEE Nuclear Science References                                 
+270MT C  ASSIGNMENTS: THE ASSIGNMENTS ARE THE {IMOST PROBABLE} ONES FOR THE     
+270MT2C  REACTION. ALSO, THE IDENTIFICATION OF THE PARENT AS 27813, ALPHA-DECAY 
+270MT3C  DAUGHTER 274RG, AND GRAND-DAUGHTER 270MT, ARE ALL RENDERED PLAUSIBLE   
+270MT4C  FOLLOWING A CONSISTENT COMPARISON OF THE 4{+th} AND 5{+th} EVENTS WITH 
+270MT5C  KNOWN DESCENDENTS. THE OBSERVATION OF EACH ISOTOPE IN THE SEQUENCE     
+270MT6C  SHOULD BE CONSIDERED AS TENTATIVE AND PENDING CONFIRMATION.            
+270MT  XA274RG A DECAY: TENTATIVE                                               
+270MT  L X                             5.0 MS    +24-3                         ?
+270MT CL J$ |W(p)=11/2+; |W(n)=3/2+  FROM 1997MO25 (THEORY)                     
+270MT CL T$4.96 MS +237-23 CORRESPONDING TO |Dt=7.16 MS (2004MO42; EXPERIMENTAL 
+270MT2CL UNCERTAINTY NOT GIVEN); UNCERTAINTY ESTIMATED BY THE EVALUATORS.       
+270MT2CL T(CALC)=14 MS FROM Viola-Seaborg SYSTEMATICS FOR QA=10.18 MEV          
+270MT2 L %A AP 100                                                              
+270MT CL %A$ASSUMED 100% FROM 1/1 EVENT                                         
+270MT CL $B2(THEORY): 0.222 FROM 1995MO29; 0.233 FROM 2003MU26; 0.255 FROM      
+270MT2CL 2005GAZX                                                               
+270MTX L XREF=A                                                                 
+                                                                                
+270MT    274RG A DECAY: TENTATIVE      2004MO42                  05NDS    200512
+270MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+270MT2 H CUT=12-Aug-2005$                                                       
+270MT C  SEE 27813 Adopted Levels FOR DETAILS.                                  
+274RG  P X                             6 MS      +31-3          11.32E3   7     
+274RG CP T$6.4 MS +308-29                                                       
+270MT  N                       1.0     AP                                       
+270MT  L X                             5.0 MS    +24-3                         ?
+270MT  A 11.15E3    7                                                           
+                                                                                
+270DS    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+270DS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+270DS2 H CUT=12-Aug-2005$                                                       
+270DS  Q             8.23E3  6 1.9E3   SY1.112E4 3     2012WA38                 
+270DS CQ Note: Current evaluation has used the following Q record               
+270DS  Q              8450   SY 2010   SY 11200    50  2003AU03                 
+270DS CQ SN$ESTIMATED UNCERTAINTY=320 KEV                                       
+270DS CQ SP$ESTIMATED UNCERTAINTY=620 KEV                                       
+270DS CQ QA$BASED ON EA=11031 KEV 50 (2001HO06).                                
+270DS C  2001HO06: EXPERIMENTS DONE AT GSI USING ^SHIP BY AN INTERNATIONAL      
+270DS2C  COLLABORATION FROM Germany, Slovakia, Poland, AND Russia USING THE     
+270DS3C  REACTION 64NI+207PB. EIGHT EVENTS MEASURED AT AN ESTIMATED             
+270DS4C  CROSS-SECTION OF 13 pb {I5}.  THE 64NI{+{9+}} BEAM WAS PROVIDED BY THE 
+270DS5C  ^UNILAC AT AN ENERGY OF 317 MEV CORRESPONDING TO AN EXCITATION ENERGY  
+270DS6C  OF 14 MEV AT THE CENTER OF THE TARGET. A TOTAL BEAM DOSE OF 1.3E+18    
+270DS7C  IONS WAS COLLECTED OVER A PERIOD OF 7.3 DAYS. THE 207PB TARGET WAS     
+270DS8C  ENRICHED TO 92.4%. OF THE EIGHT EVENTS, SIX WERE OF THE TYPE           
+270DS9C  ^EVR-|a1-|a2-SF AND TWO OF THE TYPE ^EVR-|a2-SF:                       
+270DS t    {TV}Event # 1: (Event 5 in sequence of detection)                    
+270DS2t       E{-|a1}=10987 keV {I90}     t{-1}=0.07 ms   -  assigned to        
+270DS+t   {+270}Ds                                                              
+270DS3t       E{-|a2}= 4168 keV (esc)  t{-2}=0.43 ms   -  assigned to {+266}Hs  
+270DS4t       E{-SF}=189 MeV          t{-3}=11.02 ms  -  assigned to {+262}Sg   
+270DS5t  {TV}Event # 2:  (Event 3 in sequence of detection)                     
+270DS6t       E{-|a1}=11075 keV {I90}     t{-1}=0.18 ms   -  assigned to        
+270DS+t   {+270}Ds                                                              
+270DS7t       E{-|a2}=10196 keV {I20}     t{-2}=0.87 ms   -  assigned to        
+270DS+t   {+266}Hs                                                              
+270DS8t       E{-SF}=193 MeV          t{-3}=10.26 ms  -  assigned to {+262}Sg   
+270DS9t  {TV}Event # 3:  (Event 1 in sequence of detection)                     
+270DSAt       E{-|a1}= 1925 keV (esc)  t{-1}=0.20 ms   -  assigned to {+270}Ds  
+270DSBt       E{-|a2}=10173 keV {I90}     t{-2}=2.79 ms   -  assigned to        
+270DS+t   {+266}Hs                                                              
+270DSCt       E{-SF}=164 MeV          t{-3}= 8.84 ms  -  assigned to {+262}Sg   
+270DSDt  {TV}Event # 4:  (Event 7 in sequence of detection)                     
+270DSEt       E{-|a1}=11151 keV {I20}     t{-1}=2.00 ms   -  assigned to        
+270DS+t   {+270}Ds                                                              
+270DSFt       E{-|a2}=10171 keV {I20}     t{-2}=18.22 ms  -  assigned to        
+270DS+t   {+266}Hs                                                              
+270DSGt       E{-SF}=199 MeV          t{-3}=13.06 ms  -  assigned to {+262}Sg   
+270DSHt  {TV}Event # 5:  (Event 8 in sequence of detection)                     
+270DSIt       E{-|a1}=12147 keV {I50}     t{-1}=10.35 ms  -  assigned to        
+270DS+t   {+270}Ds                                                              
+270DSJt       E{-|a2}=10281 keV {I90}     t{-2}=9.63 ms   -  assigned to        
+270DS+t   {+266}Hs                                                              
+270DSKt       E{-SF}=215 MeV          t{-3}=7.77 ms   -  assigned to {+262}Sg   
+270DSLt  {TV}Event # 6:  (Event 2 in sequence of detection)                     
+270DSMt       E{-|a1}=10954  keV {I20}    t{-1}=17.71 ms  -  assigned to        
+270DS+t   {+270}Ds                                                              
+270DSNt       E{-|a2}=10180  keV {I20}    t{-2}=0.34 ms   -  assigned to        
+270DS+t   {+266}Hs                                                              
+270DSOt       E{-SF}=190 MeV          t{-3}=3.98 ms   -  assigned to {+262}Sg   
+270DSPt  {TV}Event # 7: (Event 4 in sequence of detection)                      
+270DSQt       E{-|a2}=578 keV (esc)    t{-2}=0.46 ms   -  assigned to {+266}Hs  
+270DSRt       E{-SF}=227 MeV          t{-3}=2.00 ms   -  assigned to {+262}Sg   
+270DSSt  {TV}Event # 8: (Event 6 in sequence of detection)                      
+270DSTt       E{-|a2}=10306 keV {I90}     t{-2}=5.40 ms   -  assigned to        
+270DS+t   {+266}Hs                                                              
+270DSUt       E{-SF}=177 MeV          t{-3}=33.91 ms  -  assigned to {+262}Sg   
+270DS C  2001HO06 HAVE SUGGESTED TWO GROUPS FOR THE SIX ALPHA-DECAYS            
+270DS2C  ASSIGNED TO 270DS: EVENTS 1, 2, AND 3 LISTED ABOVE BELONG TO GS        
+270DS3C  0+|)0+|)0+ TRANSITIONS IN ALL THREE ISOTOPES AND EVENTS 4, 5, AND 6 TO 
+270DS4C  STATES ORIGINATING FROM A K-ISOMER (AS IN THE CASE OF THE LONGEST LIVED
+270DS5C  STATE, SEEN IN EVENT 6) OR G-DECAY. SEE 2001HO06 FOR DETAILS REGARDING 
+270DS6C  ASSIGNMENTS. NO FISSION BRANCH OBSERVED FOR 270DS.                     
+270DS C  2002HO11 REANALYZED ALL GSI DATA FOR Z=110, 111, AND 112 TAKEN SINCE   
+270DS2C  1994. THE DATA OF 2001HO06 WERE EXACTLY REPRODUCED.                    
+270DS C  THEORY: SEE Nuclear Science References.                                
+270DS C  ASSIGNMENT: 207PB(64NI,N) E=317 MEV (2001HO06). THE DAUGHTER (266HS)   
+270DSaC  AND GRANDDAUGHTER (262SG)                                              
+270DS2C  HAVE NOT BEEN INDEPENDENTLY OBSERVED. IN THE ABSENCE OF OBSERVED       
+270DS3C  ELEMENTAL SIGNATURES THE EVALUATORS CONSIDER THE ASSIGNMENTS AS        
+270DS4C  TENTATIVE.                                                             
+270DS  L 0.0         0+                0.10 MS   +14-4                         ?
+270DS CL T$100 US +140-40 FROM 2001HO06;                                        
+270DS2CL ARITHMETIC MEAN FOR THE THREE EVENTS ASSIGNED TO THE                   
+270DS3CL 270DS GS (EVENTS LISTED AS 1, 2, AND 3 ABOVE). T(CALC)=0.078 MS FROM   
+270DS4CL Viola-Seaborg SYSTEMATICS FOR QA=11.20 MEV.                            
+270DS2 L %A AP 100$%SF<0.2                                                      
+270DS CL %A$FROM 8/8 EVENTS. NO SF DECAY OBSERVED.                              
+270DS  L 1.13E3                        6.0 MS    +82-22                      M ?
+270DS CL E$IF 12.15-MEV ALPHA FEEDS THE 266HS GS (2001HO06)                     
+270DS CL J$J AP 10 2 ESTIMATED FROM RETARDATION OF ALPHA-DECAY PROBABILITY      
+270DS2CL (2001HO06). PI=- (2003AU02. SYST)                                      
+270DS CL T$FROM 2001HO06; UNWEIGHTED AVERAGE FOR EVENTS 4, 5 AND 6 ATTRIBUTED TO
+270DS2CL ISOMERIC STATE.                                                        
+270DS DL $THE UNWEIGHTED AVERAGED ENERGIES CORRESPONDING TO THE THREE PRESUMED  
+270DS2DL {IDIFFERENT} ISOMERIC STATES IS EA=11.417 MEV 30; QA=11.589 MEV 30.    
+270DS2 L %A>70$%IT LE 30?                                                       
+270DS CL %A,%IT$%IT AP 30 SEEMS POSSIBLE BUT COULD NOT BE DEFINITELY ESTABLISHED
+270DS2CL (2001HO06)                                                             
+270DS CL CONF$POSSIBLE HIGH-SPIN ^K-ISOMER. IN CALCULATIONS BY 2001HO06 FOR     
+270DS2CL 266HS AND 270DS, THE LOWEST TWO NEUTRON QUASIPARTICLE STATES ARE AT    
+270DS3CL 1.31 AND 1.34 MEV FOR 270DS AND AT 0.90 AND 0.94 MEV FOR 266HS. THESE  
+270DS4CL STATES ARE FORMED A PAIR IN ORBITS WITH ASYMPTOTIC NILSSON QUANTUM     
+270DS5CL NUMBERS |n[613]{-7/2+} AND |n[615]{-9/2+}, RESPECTIVELY, AND RAISING   
+270DS6CL THE NEUTRON WITH SPIN AND ANGULAR MOMENTUM IN THE SAME DIRECTION INTO  
+270DS7CL THE ORBIT |n[725]{-11/2-}. RESULTING JPI'S ARE 9- AND 10-,             
+270DS8CL RESPECTIVELY.                                                          
+270DS CL $B2(THEORY): 0.221 FROM 1995MO29; 0.228 FROM 2003MU15; 0.248 FROM      
+270DS2CL 2005GAZX                                                               
+                                                                                

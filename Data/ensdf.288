@@ -1,0 +1,567 @@
+288      COMMENTS                                                05NDS    200512
+288    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+288  2 H CUT=12-Aug-2005$                                                       
+288   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+288   C  AUTH$M. GUPTA(a)                                                       
+288   C  INST$National Nuclear Data Center                                      
+288  #C       Brookhaven National Laboratory                                    
+288  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+288  #C                                                                         
+288   c  INST$Manipal Academy of Higher Education,                              
+288  #c  Manipal, KA 576 104, INDIA                                             
+288  #c  e-mail: mohini.gupta@manipal.edu                                       
+288   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+288  #c  Manipal, KA 576 104, INDIA                                             
+288   C  AUTH$THOMAS W. BURROWS                                                 
+288   C  INST$National Nuclear Data Center                                      
+288  #C       Brookhaven National Laboratory                                    
+288  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+288  #C       e-mail: burrows@bnl.gov                                           
+288   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+288  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+288  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+288  4C  RECEIVED BY August 12, 2005.                                           
+288   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+288  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+288  3C  DATE WERE CONSIDERED.                                                  
+288   C  CIT$NDS 106, 251 (2005)                                                
+288   c  COMM$                                                                  
+288  @c  {UAcronyms and notations used in this evaluation:}                     
+288  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+288  #c  BGS Berkeley Gas Filled Separator                                      
+288  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+288  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+288  #c  EVR Evaporation Residue                                                
+288  #c  GARIS Gas-filled Recoil Ion Separator                                  
+288  #c  RILAC RIKEN Linear Accelerator facility                                
+288  #c  SHIP Separator for Heavy Ion reaction Products                         
+288  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+288  2c  and detection of previous EVR or |a                                    
+288  #c  TKE Total Kinetic Energy                                               
+288  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+288  2c  Reactions, JINR, Dubna, Russia                                         
+288  #c                                                                         
+288  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+288  2c  (Z=110-112,114,116,118):}                                              
+288  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+288  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+288  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+288  5c  the evaluators have relied on the judgement of the JWP in              
+288  6c  determining the strength of the arguments made in the various papers.  
+288  7c  In the cases where there are new data or where the JWP has not yet     
+288  8c  assigned a priority of discovery for an element, the evaluators have   
+288  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+288  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+288  Bc  the data.                                                              
+288  #c                                                                         
+288  #c  In the above context, with respect to Z=112 and the collective works of
+288  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+288  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+288  4c  references therein.                                                    
+288  #c                                                                         
+288  @c                                                                         
+288  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+288  2c  discovery of an element and not a specific nuclide. The purpose of     
+288  3c  this evaluation is to present the "best" set of nuclear properties     
+288  4c  for those nuclides reported between A=266 and A=294 based on data      
+288  5c  currently available and {Bnot} to establish a priority of discovery for
+288  6c  any element.                                                           
+288  !c                                                                         
+288  #c  It is well known that alpha decay chains seen                          
+288  ac  in cold fusion reactions tend to terminate in known mass regions.      
+288  2c  The method of |a-|a or |a-SF correlations for identifying the          
+288  3c  parent has therefore been used with confidence.                        
+288  3c  Experiments carried out with hot fusion reactions,                     
+288  4c  result in alpha decay chains beginning and ending with hitherto unknown
+288  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+288  6c  in an attempt to identify the parent and daughters. The latter method  
+288  7c  is not as accurate as the first since a greater probability of         
+288  8c  randomness is inherant to the technique. As such, independent          
+288  9c  verification and confirmation of the data gains added importance.      
+288  ac  These facts should be taken into account when considering the suggested
+288  ac  properties of nuclei created following a hot fusion reaction as for    
+288  ac  the synthesis of Z=114 and above.                                      
+288  #c                                                                         
+288  #c  Finally, with regard to the some of the                                
+288  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+288  ac  2004Mo15 have pointed out that mass assignments which are based        
+288  ac  on the excitation energy of the compound nucleus may be off by a       
+288  ac  single unit. This may also be due in part to uncertainties in the beam 
+288  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+288  ac  Once again, collateral information is required to establish the charge 
+288  ac  and approximate A of the nucleus.                                      
+288  #c                                                                         
+288  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+288  2c  have not been adopted, the evaluators have used the approximations in  
+288  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+288  4c  exponential distribution to estimate the standard uncertainty (68%     
+288  5c  confidence level) in T{-1/2}:                                          
+288  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+288  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+288  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+288  9c  of events. For one and two events, the exact values given in Table 1   
+288  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+288  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+288  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+288  #c                                                                         
+288  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+288  ac  Calculations of T{-1/2}                                                
+288  2c  performed in the present evaluation used the relationship:             
+288  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+288  #c  where Z refers to the atomic                                           
+288  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+288  6c  and:                                                                   
+288  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+288  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+288  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+288  3c  parameter set used in these evaluations. We note that these systematics
+288  6c  are only an indication of |a-decay half-lives from the ground state    
+288  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+288  8c  the element under consideration. The use of this formalism in the      
+288  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+288  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+288  ac  estimate a Hindrance Factor (HF) for a given transition,               
+288  ac  attributable to the odd neutron or proton. This quantity is            
+288  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+288  ac  The HF so computed is an approximate indication.                       
+288  #c                                                                         
+288  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+288  2c  References.                                                            
+288  #c                                                                         
+288  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+288  2c  trans-fermium elements is the manifestation of shell effects in the    
+288  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+288  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+288  5c  important as QF is expected to play a greater role on the hindrance of 
+288  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+288  7c  the "island" of stability. An understanding of this mechanism is       
+288  8c  necessary to establishing the most favorable reactions for producing   
+288  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+288  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+288  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+288  Cc  to both the mass asymmetry in the entrance channel as well as the      
+288  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+288  Ec  deformations of target/projectile nuclei and their relative orientation
+288  Fc  to each other in the process of CN formation, may also play an         
+288  Gc  important role in reducing the probability of forming a compound       
+288  Hc  system. In the face of extremely low yields and a steep decrease of    
+288  Ic  production cross-sections already in evidence with available stable    
+288  Jc  beam-target combinations, the influence of all possible mitigating     
+288  Kc  factors must be accurately determined in order to                      
+288  Lc  optimize the probability of successful fusion. The formation of a      
+288  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+288  Nc  survives QF going on to form a compact compound system which must then 
+288  Oc  face competition from fission.                                         
+288  #c                                                                         
+288  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+288  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+288  3c  in collaboration with investigators from Belgium, France, and Italy.   
+288  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+288  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+288  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+288  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+288  8c  spectrometer "Corset". These experiments were inspired by              
+288  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+288  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+288  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+288  Cc  such experiments are planned or underway to investigate the various    
+288  Dc  effects.                                                               
+288  #c                                                                         
+288  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+288  2c  and references cited in these papers.                                  
+288  #c                                                                         
+288  !c  {UExperimental Estimates of Fission Barriers:}                         
+288  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+288  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+288  4c  the experimentally derived barrier heights are respectively:           
+288  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+288  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+288  #c                                                                         
+288  #c  2002It04, in an analysis of available experimental data, derive the    
+288  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+288  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+288  #c                                                                         
+288  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+288  2c  Two possibilities have been proposed in an attempt to understand the   
+288  ac  the {+289}114, {+287}114 observations:                                 
+288  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+288  ac  belongs to a rare decay mode originating from                          
+288  4c  an isomeric state, or that                                             
+288  #c  (ii) the sequence may actually originate from                          
+288  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+288  7c  Levels).                                                               
+288  #c  The evaluators believe that further investigations                     
+288  ac  are required to support either hypothesis.                             
+288  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+288  9c  unobserved. Also, T{-1/2}                                              
+288  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+288  ac  is much larger than that observed by 2004Og12 and                      
+288  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+288  ac  agreement. Such inconsistencies need to be better understood.          
+288  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+288  2c  respects. 2004OgZZ report more statistics in some cases.               
+288  #c                                                                         
+288  @c  {UOther comments on {+289}114 and {+283}112}                           
+288  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+288  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+288  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+288  4c  classified the evidence as being "very weak",                          
+288  5c  with no convincing supporting arguments for the possible production of 
+288  6c  SHE. We make the following general observations:                       
+288  #c                                                                         
+288  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+288  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+288  ac  by the Dubna-JINR collaborations for all isotopes of                   
+288  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+288  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+288  ac  {+287}114 (15 events) and {+286}114                                    
+288  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+288  ac  the |?34 min decay sequence postulated as originating from             
+288  5c  a rare decay mode of {+289}114, does not seem very likely.             
+288  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+288  7c  {+289}114 decays observed are genetically linked                       
+288  8c  and not the result of a background decay sequence. These               
+288  BC  discrepancies have to be resolved, along with some others.             
+288  #c                                                                         
+288  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+288  ac  (see also 2004Og02) with VASSILISSA, have not                          
+288  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+288  3c  lack of internal consistency through the collective measurements       
+288  ac  and the data are inconclusive as pointed                               
+288  4c  out by experimenters (reasons given in each paper). Decay properties of
+288  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+288  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+288  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+288  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+288  8c  by them. See {+283}112 Adopted Levels for details.                     
+288  #c                                                                         
+288  #c  These observations by the experimenters are consistent with the        
+288  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+288  3c  of the various arguments put                                           
+288  3c  forward therein, the following comments may be made here:              
+288  #c                                                                         
+288  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+288  #c  190 MeV and 212 MeV (1999Og05)                                         
+288  #c  65 MeV and 170 MeV  (2004Og02)                                         
+288  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+288  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+288  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+288  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+288  4c  plane and side detectors). With one exception, all the energies        
+288  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+288  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+288  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+288  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+288  9c  the second experiment) after EVR implantation resulted in              
+288  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+288  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+288  #c                                                                         
+288  #c  2. 2000Ar03 statement that correlations  between the fission events    
+288  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+288  3c  'backward' analysis of the data was reported in                        
+288  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+288  5c  evidently in contradiction with those made by the                      
+288  6c  experimenters. A more complete analysis would be beneficial.           
+288  #c                                                                         
+288  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+288  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+288  ac  quoted from an earlier                                                 
+288  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+288  4c  assignments. The proposed assignment of Z=114 to both parents may      
+288  5c  be incorrect taking into account new data which do not support         
+288  6c  these observations and for reasons already mentioned.                  
+288  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+288  !c                                                                         
+288  #c  CONCLUSIONS:                                                           
+288  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+288  ac  are not conclusive. Overall, the                                       
+288  2c  results from the VASSILISSA experiments are at variance with data from 
+288  3c  experiments using DGFRS. The latter investigations are done using      
+288  4c  more stringent methods, and have greater statistics, offering better   
+288  5c  internal consistency. Some obvious discrepancies and other             
+288  ac  inconsistencies between the two sets of                                
+288  6c  data remain and need to be resolved or adequately explained as does the
+288  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+288  8c  by 2005Gr19 and 2002Lo11.                                              
+288  #c                                                                         
+288  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+288  2c  from earlier work are not reproduced to date.                          
+288  #c                                                                         
+288  @c  {UTheoretical Calculations:}                                           
+288  @c  1995Mo29: |b2 based on the finite-range droplet                        
+288  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+288  3c  with "global" parameters.                                              
+288  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+288  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+288  3c  J|p simultaneously obtained with the calculated masses and             
+288  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+288  5c  A=239.                                                                 
+288  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+288  2c  model for the macroscopic part and the Strutinski shell correction,    
+288  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+288  4c  part.                                                                  
+288  @c  2005GaZX: |b2 based on self consistent calculations                    
+288  2c  within the framework of the Relativistic Mean Field (RMF)              
+288  3c  theory with very few "globally" fit parameters and employing the       
+288  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+288  5c  sets in use exhibit similar systematics, these results are expected to 
+288  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+288  #c                                                                         
+288  @c  {UOther Measurements:}                                                 
+288  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+288  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+288  3c  (Blocking technique in single crystals).                               
+288  #c                                                                         
+288   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+288  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+288  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+288  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+288  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+288  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+288  7c  additional information that they readily provided during this          
+288  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+288  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+288  Ac  Singh for helpful discussions. We thank A. Marinov                     
+288  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+288  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+288  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+288  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+288  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+288  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+288  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+288  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+288  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+288  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+288  Lc  insights, and suggestions until her untimely demise are hereby         
+288  Mc  acknowledged.                                                          
+288   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+288  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+288  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+288      REFERENCES                                                       200512
+288    R 1966VI04 JOUR JINCA 28 741                                             
+288    R 1984SC13 JOUR ZPAAD 316 19                                             
+288    R 1987MU15 JOUR ZPAAD 328 49                                             
+288    R 1992BA77 JOUR PPNPD 29 453                                             
+288    R 1995MO29 JOUR ADNDA 59 185                                             
+288    R 1997MO25 JOUR ADNDA 66 131                                             
+288    R 1997SM03 JOUR PRVCA 56 812                                             
+288    R 1998DA24 JOUR ARNUA 48 401                                             
+288    R 1999OG05 JOUR ZAANE 5 63                                               
+288    R 1999OG07 JOUR NATUA 400 242                                            
+288    R 1999OG10 JOUR PRLTA 83 3154                                            
+288    R 2000AR03 JOUR ZAANE 7 23                                               
+288    R 2000FI12 JOUR NDSBA 90 391                                             
+288    R 2000OG05 JOUR PRVCA 62 041604                                          
+288    R 2000OG07 JOUR YAFIA 63,No 10,1769                                      
+288    R 2000ZL02 JOUR ZAANE 8 81                                               
+288    R 2001AK11 JOUR NDSBA 94 131                                             
+288    R 2001KA70 JOUR PACHA 73 959                                             
+288    R 2001OG01 JOUR PRVCA 63 011301                                          
+288    R 2002HI20 JOUR PRLTA 89 282701                                          
+288    R 2002IT04 JOUR PRVCA 65 044602                                          
+288    R 2002LO11 JOUR PPNPD 48 123                                             
+288    R 2002LO15 JOUR PRVCA 66 044617                                          
+288    R 2002OG03 JOUR ZAANE 13 135                                             
+288    R 2002OG09 JOUR ZAANE 15 201                                             
+288    R 2002OG13 JOUR PTPSA 146 94                                             
+288    R 2003AU03 JOUR NUPAB 729 337                                            
+288    R 2003GE09 JOUR PRVCA 68 061303                                          
+288    R 2003KA71 JOUR PACHA 75 1601                                            
+288    R 2003MU15 JOUR YAFIA 66 1051                                            
+288    R 2003MU26 JOUR APOBB 34 2073                                            
+288    R 2003OGZY REPT JINR-E7-2003-178,Oganessian                              
+288    R 2004BA86 JOUR JPGPE 30 B35                                             
+288    R 2004DA11 JOUR NUPAB 734 148                                            
+288    R 2004DMZZ REPT JINR-E12-2004-157,Dmitriev                               
+288    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+288    R 2004GAZU PREPRINT Gambhir                                              
+288    R 2004GUZW PREPRINT Gupta                                                
+288    R 2004IT05 JOUR NUPAB 734 136                                            
+288    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+288    R 2004MO15 JOUR NUPAB 734 188                                            
+288    R 2004OG02 JOUR ZAANE 19 3                                               
+288    R 2004OG03 JOUR PRVCA 69 021601                                          
+288    R 2004OG05 JOUR NUPAB 734 109                                            
+288    R 2004OG07 JOUR PRVCA 69 054607                                          
+288    R 2004OG12 JOUR PRVCA 70 064609                                          
+288    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+288    R 2004PRZW PREPRINT Prokhorova                                           
+288    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+288    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+288    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+28814    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+28814  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+288142 H CUT=12-Aug-2005$                                                       
+28814  Q -4.8E3    SY7.3E3   SY3.4E3   SY10072   14    2012WA38                 
+28814 CQ Note: Current evaluation has used the following Q record               
+28814  Q -6340     SY 7990   SY 2960   SY 10090    70  2003AU03,2004OG12        
+28814 CQ Q-$ESTIMATED UNCERTAINTY=1210 KEV                                      
+28814 CQ SN$ESTIMATED UNCERTAINTY=1150 KEV                                      
+28814 CQ SP$ESTIMATED UNCERTAINTY=1190 KEV                                      
+28814 CQ QA$FROM EA=9.95 MEV 7 (2004OG12). OTHER: 9970 KEV 50 (2003AU03. SYST.).
+28814 C  ALL ASSIGNMENTS FOR THIS NUCLEUS STAND REVISED IN 2004OG07. THE        
+28814aC  EVALUATORS PRESENT RESULTS PRIOR TO 2004OG07 WITH THE ORIGINAL         
+28814aC  NOMENCLATURE.                                                          
+28814 C  ALSO PRODUCED AS ALPHA-DECAY DAUGHTER OF 29216. SEE 29216 Adopted      
+288142C  Levels FOR 29216.                                                      
+28814 C  2000OG05: AT DUBNA WITH 244PU+48CA IN THE 4{In} EVAPORATION CHANNEL    
+288142C  WITH A CROSS-SECTION OF AP 1 PICOBARN. THE EXPERIMENTAL SET-UP IS      
+288143C  SIMILAR TO THAT USED IN THE SYNTHESIS OF 28914 (2001OG01) WITH AN      
+288144C  IMPROVED DATA AQUISITION SYSTEM ALLOWING A NARROWER RANGE OF EXCITATION
+288145C  ENERGIES TO BE ASSIGNED TO EACH RECOIL. AT A BEAM ENERGY OF AP 236 MEV 
+288146C  THE EXCITATION ENERGY OF THE {+292}114 ^CN WAS ESTIMATED TO BE         
+288147C  31.5-39 MEV.                                                           
+288148C  TWO IDENTICAL GENETICALLY CORRELATED EVENT SEQUENCES WERE RECORDED     
+288149C  OF THE TYPE ^EVR-|a-|a-SF; THE TWO EVENTS FROM 280DS HAD TOTAL ENERGIES
+28814AC  OF 221 AND 213 MEV. THE PROBABILITY OF RANDOMNESS FOR THE SEQUENCE     
+28814BC  WAS ESTIMATED TO BE 5E-13.                                             
+28814 C  2004OG07: SEE Adopted Levels FOR 29316 FOR EXPERIMENTAL SET-UP.        
+288142C  EXPERIMENTS DONE AT DUBNA WITH 244PU+48CA AIMED AT GAINING             
+288143C  IMPROVED SENSITIVITY OF >2 ORDERS OF MAGNITUDE OVER PREVIOUS           
+288144C  ATTEMPTS, FOR PICOBARN CROSS-SECTIONS EXPECTED IN THE PRODUCTION OF    
+288145C  Z=114.                                                                 
+288146C  AT A BEAM ENERGIES OF 243 MEV (^E*=41 MEV AT TARGET CENTER, 7          
+288147C  EVENTS)                                                                
+288148C  250 MEV (^E*=47 MEV, 4 EVENTS) AND                                     
+288149C  257 MEV (^E*=51 MEV, 1 EVENT) A TOTAL OF                               
+28814AC  12 ^EVR-|a-SF EVENTS OBSERVED                                          
+28814BC  IN SEQUENCE OVER A PERIOD OF 1 SECOND.                                 
+28814CC  {IVIA} THIS 4{In} CHANNEL, THE MAXIMUM YIELD FOR 28814                 
+28814DC  CORRESPONDS TO ABOUT 43 MEV WITH AN EXPECTED CROSS-SECTION OF          
+28814EC  5.3 pb {I+36-21}. t(SF) AP 0.1 S WAS RECORDED FOR ALL 12 EVENTS THOUGH 
+28814FC  ONE |a-DECAY CHAIN HAD A MISSING ALPHA.                                
+28814GC  DATA FROM 11 EVENTS:                                                   
+28814HC  E(|a)=9.95 MEV 8, t(|a)=0.63 S +27-14 TO 28412 DAUGHTER:               
+28814IC  t(SF)=98 MS +41-23.                                                    
+28814 C  2004OG12,2004OGZZ: A COMPREHENSIVE STUDY OF EXCITATION FUNCTIONS,      
+288142C  AND CROSS-BOMBARDMENTS USING MORE STRINGENT METHODS                    
+288143C  (1992BA77,2004OG05) WERE UNDERTAKEN AT DUBNA REVISITING THE SYNTHESIS  
+288144C  OF Z=112, Z=114, AND Z=116 USING FUSION REACTIONS                      
+288145C  WITH A 48CA BEAM AND {+233,238}U, 242PU AND 248CM TARGETS.             
+288146C  PREVIOUS (re)assignments ARE CONFIRMED AND 29216 DIRECTLY MEASURED.    
+288149C  THE DECAY PROPERTIES OF FOUR Z=114 (A=286-289)                         
+28814AC  ISOTOPES PROVIDE CONSISTENT MASS IDENTIFICATION FOR HEAVIER Z=116      
+28814BC  (A=290,291,293) ISOTOPES SYNTHESIZED IN 245,248CM REACTIONS AND ALSO   
+28814CC  FOR THE ONE Z=118 CHAIN. USING THE 242PU+48CA REACTION AT              
+28814DC  E(LAB)=235 MEV A SINGLE ^EVR-|a-SF CHAIN WAS RECORDED.                 
+28814EC  THE ASSIGNMENT TO {+288}114 VIA THE 2{In} EVAPORATION CHANNEL WITH A   
+28814FC  CROSS-SECTION OF ABOUT 0.5 PICOBARN IS SUGGESTED. THE RADIOACTIVE      
+28814GC  PROPERTIES AGREE WELL WITH 11 CHAINS MEASURED EARLIER IN 2004OG07      
+28814HC  USING A 244PU TARGET IN THE REACTION 244PU(48CA,4N). PROPERTIES OF     
+28814IC  DAUGHTER ARE IN AGREEMENT WITH THE EARLIER OBSERVATIONS OF 28412.      
+28814aC  A TOTAL OF 12 EVENTS WERE TAKEN INTO ACCOUNT FOR THE                   
+28814OC  THE ESTIMATION OF HALF-LIFE ADOPTED HERE (2004OG12).                   
+28814JC  THIS NUCLEUS WAS ALSO SYNTHESISED AS |a-DECAY DAUGHTER FROM PARENT     
+28814KC  29216 PRODUCED IN THE REACTION 248CM+48CA AT E=247 MEV                 
+28814aC  (SEE TABLE 4, 2004OGZZ).                                               
+28814LC  SIX NEW ^EVR-|a1-|a2-SF DECAY WERE REPORTED BY 2004OGZZ                
+28814MC  SPANNING ABOUT 0.5 TO 2 SECONDS, WHICH WERE NOT OBSERVED               
+28814NC  EARLIER. THE EVALUATORS NOTE THAT THESE TWO PAPERS ARE IDENTICAL IN    
+28814OC  MANY RESPECTS. 2004OGZZ REPORT MORE STATISTICS IN SOME CASES.          
+28814PC  SEE 29216 Adopted Levels FOR DETAILS.                                  
+28814 C  OTHERS: 2000OG07, 2002OG03, 2002OG09, 2002OG13.                        
+28814 D  2004MO15 GIVE A                                                        
+28814aD  SUMMARY OF BOMBARDMENTS LISTING TWO ATOMS FROM AN                      
+28814aD  EXCITATION FUNCTION MEASUREMENT ONGOING AT THE TIME. THEY ALSO REPORT  
+28814aD  TWO ATOMS AT 236 MEV USING 48CA+244PU WITHOUT PROVIDING DETAILS. THE   
+28814aD  THE EVALUATORS BELIEVE THIS WAS REPORTED PRIOR TO REASSIGNMENT.        
+28814 C  THEORY: 1997SM03, 1997MO25, 2004GAZU. SEE ALSO Nuclear Science         
+288142C  References.                                                            
+28814 C  ASSIGNMENT: ^IUPAP/^IUPAC ^JWP ASSESSMENT (2003KA71): DISCOVERY OF     
+288142C  Z=114 WAS NOT YET WARRANTED DUE TO UNSECURED CONNECTIONS TO KNOWN      
+288143C  DESCENDENTS AND THE ABSENCE OF FURTHER ELEMENTAL SIGNATURES SUCH       
+288144C  AS X-RAYS. THESE OBSERVATIONS MAY STILL HOLD GOOD EVEN AS              
+288145C  THE MORE RECENT CROSS BOMBARDMENT AND EXCITATION                       
+288146C  FUNCTION STUDIES FOR 28814 PROVIDE ADDITIONAL STRONG EVIDENCE FOR THE  
+288147C  ASSIGNMENT. FURTHERMORE, DUE TO THE DIFFICULTIES INHERENT TO           
+288148C  HOT/WARM FUSION EXPERIMENTS, ADDITIONAL CONFIRMATION WOULD BE          
+288149C  BENEFICIAL (SEE GENERAL COMMENTS SECTION FOR DETAILS).                 
+28814  XA29216 A DECAY: TENTATIVE                                               
+28814  L X                             0.80 S    +32-18                        ?
+28814 CL J$0+ IF G.S.                                                           
+28814 CL T$PER 12/11 EVENTS FROM 2004OG12. OTHER: 0.80 S +27-16 FROM            
+28814aCL 16/16 EVENTS (HALF-LIVES/ALPHA ENERGIES) FROM 2004OGZZ.                
+288142CL T(CALC)=0.90 S FROM  Viola-Seaborg SYSTEMATICS                         
+288142 L %A AP 100                                                              
+28814 CL %A$FROM 12/11 EVENTS                                                   
+28814 CL $B2(THEORY): 0.053 FROM 1995MO29; 0.086 FROM 2003MU15; 0.008 FROM      
+288142CL 2005GAZX                                                               
+28814X L XREF=A                                                                 
+                                                                                
+28814    29216 A DECAY: TENTATIVE      2004OG12                  05NDS    200512
+28814  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+288142 H CUT=12-Aug-2005$                                                       
+29216  P 0.0          0+               18 MS     +16-6          10800     70    
+29216 CP T$FROM 2004OG12                                                        
+29216 CP QP$FROM 2004OG12                                                       
+28814  N                       1.0     AP                                       
+28814  L X                             0.80 S    +32-18                        ?
+28814 CL E,T$FROM THE Adopted Levels                                            
+28814  A 10.66E3   7                                                           ?
+                                                                                
+28815    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+28815  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+288152 H CUT=12-Aug-2005$                                                       
+28815  Q             6.2E3   SY1.7E3   SY1.063E4 5     2012WA38                 
+28815 CQ Note: Current evaluation has used the following Q record               
+28815  Q              6850   SY 870    SY 10.61E3  6   2003AU03,2004OG03        
+28815 CQ SN$ESTIMATED UNCERTAINTY=1160 KEV                                      
+28815 CQ SP$ESTIMATED UNCERTAINTY=1150 KEV                                      
+28815 CQ QA$FROM EA=10.46 MEV 6 (2004OG03). OTHER: 11.0 MEV 3 (2003AU03. SYST.) 
+28815 C  2003OGZY AND 2004OG03: IDENTIFICATION OF NEW NUCLIDES: 28815, 28413,   
+288152C  280RG, 276MT, 272BH, AND 268DB. REACTION: 243AM(48CA,3N) E=248 MEV     
+288155C  CORRESPONDING TO AN EXCITATION ENERGY OF 38.0 TO 42.5 MEV AT THE TARGET
+288156C  CENTER. EXPERIMENTS PERFORMED BY THE DUBNA-^LLNL COLLABORATION.        
+288157C  28815 WAS FORMED AT A CROSS-SECTION OF 2.7 pb {I+48-16}.               
+28815 C  REACTION: 243AM(48CA,3N) E=248 MEV                                     
+288155C  CORRESPONDING TO AN EXCITATION ENERGY OF 38.0 TO 42.5 MEV AT THE TARGET
+288156C  CENTER. EXPERIMENTS PERFORMED BY THE DUBNA-^LLNL COLLABORATION.        
+288157C  28815 WAS FORMED AT A CROSS-SECTION OF 2.7 pb {I+48-16}. 2004OG03 HAVE 
+288158C  NOTED THAT THESE CORRESPOND TO THE MAXIMUM CROSS-SECTIONS MEASURED IN  
+288159C  2004OG07 IN THE 244PU+48CA REACTIONS USED TO SYNTHESISE Z=116 AND Z=114
+28815AC  WHERE THE 4{In} CHANNEL HAD A MAXIMUM OF 5 pb, 3{In}=2 pb AND          
+28815BC  5{In}=1 pb.                                                            
+28815 C  EXPERIMENTS WERE DONE AT THE ^U400 CYCLOTRON WITH THE DUBNA            
+288152C  GAS-FILLED RECOIL SEPERATOR (^DGFRS) AT ^FLNR-^JINR.                   
+288153C  THE ^EVR'S RECOILING FROM THE TARGET WERE SEPARATED                    
+288154C  BY ^DGFRS IN FLIGHT FROM THE 48CA BEAM IONS, SCATTERED PARTICLES AND   
+288155C  TRANSFER-REACTION PRODUCTS WITH A TRANSMISSION EFFICIENCY OF           
+288156C  35% FOR 115 NUCLEI. IF CONFIRMED, IT IS POSSIBLE THAT DIFFERENT STATES 
+288157C  IN THE SAME NUCLEUS 28815 HAVE BEEN POPULATED RESULTING IN THE         
+288158C  DIFFERENCES BETWEEN QA AND T MEASUREMENTS OF THE THREE EVENTS.         
+28815 t    {TV}Event #1: Energy of the evaporation residue=10.4 MeV             
+288152t       E{-|a1}=10510 keV         t{-1}=80.3 ms   - assigned to {+288}115 
+288153t         {TV}{+272}Bh |a decay proceeds to {+268}Db which decays by SF   
+28815+t   (total kinetic energy=205 MeV); 28.69 h                               
+288154t  {TV}Event #2: Energy of the evaporation residue=11.0 MeV               
+288155t       E{-|a1}=10380 keV         t{-1}=18.6 ms   - assigned to {+288}115 
+288156t         {TV}{+272}Bh |a decay proceeds to {+268}Db which decays by SF   
+28815+t   (total kinetic energy=200 MeV); 23.54 h                               
+288157t  {TV}Event #3: Energy of the evaporation residue=9.1 MeV                
+288158t       E{-|a1}=10500 keV         t{-1}=280 ms    - assigned to {+288}115 
+288159t         {TV}{+272}Bh |a decay proceeds to {+268}Db which decays by SF   
+28815+t   (total kinetic energy=140 MeV); 16.80 h                               
+28815 C  THEORY: 1997MO25, 2003MU15, 2003GE09, 2004BA86, 2004GUZW AND Nuclear   
+288152C  Science References                                                     
+28815 C  ASSIGNMENT: PRODUCED BY 243AM(48CA,3N) E=248                           
+288152C  MEV (2003OGZY,2004OG03) AND E=243 MEV, CHEM (2004DMZZ). THE EVALUATORS 
+288153C  SUGGEST THAT 2004DMZZ OFFERS INDEPENDENT SUPPORT TO THE SYNTHESIS OF   
+288154C  28815 (2004OG03) HAVING PRECISELY DETERMINED THE ATOMIC NUMBER FOR     
+288155C  Z=105 BY ISOLATION OF Group ^V ELEMENTS. THE PROPERTIES ARE IN         
+288156C  AGREEMENT WITH 268DB MEASURED IN THE THREE CHAINS SEEN EARLIER BY      
+288157C  2004OG03, THEREBY PROVIDING EVIDENCE IN FAVOR OF THE SYNTHESIS OF      
+288158C  28815 AND DAUGHTERS. HOWEVER, SINCE THE IDENTIFICATION RELIES          
+288159C  ON THE MEASUREMENT OF SF FRAGMENTS, THE POSSIBILITY THAT THE OBSERVED  
+28815aC  NUCLEUS IS ACTUALLY 268RF FOLLOWING (UNDETECTED) EC FROM THE PARENT    
+28815aC  268DB, CANNOT BE EXCLUDED.                                             
+28815  L X                                                                     ?
+28815 CL J$ |W(p)=5/2-; |W(n)=3/2+  FROM 1997MO25 (THEORY)                      
+288152 L T=87 MS +105-30 (2004OG03)                                             
+28815 CL T$T(CALC)=62 MS FROM Viola-Seaborg SYSTEMATICS FOR QA=10.61 MEV        
+288153 L %A AP 100                                                              
+28815 CL %A$FROM THREE EVENTS                                                   
+28815 CL $B2(THEORY): -0.087 FROM 1995MO29; 0.072 FROM 2003MU15; 0.017 FROM     
+288152CL 2005GAZX                                                               
+                                                                                

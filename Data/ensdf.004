@@ -1,0 +1,372 @@
+  4      COMMENTS                                                92NP     199807
+  4    H TYP=FUL$AUT=J. H. KELLEY, D. R. TILLEY, H.R. WELLER AND G.M. H$        
+  4  2 H CIT=NP A541 1 (1992)$CUT=8-Oct-1991$                                   
+  4   C  TITL$COMMENTS DATASET FOR A=4                                          
+  4   c  AUTH$J. H. KELLEY, D. R. TILLEY, H.R. WELLER AND G.M. HALE             
+  4   c  INST$Triangle Universities Nuclear Laboratory                          
+  4  #c       Durham, North Carolina 27708-0308                                 
+  4   c  ABST$Compilation of energy levels of A=4 nuclei, with emphasis on the  
+  4  2c  review of material leading to information about structure of the A=4   
+  4  3c  system. This work is a summary of 1992Ti02, and has updates of mass    
+  4  5c  and lifetime data as noted in the text.                                
+  4   c  CUT$October 8, 1991                                                    
+  4   c  FUND$This work is supported by the US Department of Energy, office of  
+  4  xc  high energy and nuclear physics, under: contract no.                   
+  4  xc  DEFGO2-97-ER41042 (NORTH CAROLINA STATE University); contract no.      
+  4  xc  DEFGO2-97-ER41033 (DUKE University)                                    
+  4   C  CIT$NP A541 1 (1992)                                                   
+                                                                                
+  4      REFERENCES                                                       199907
+  4    R 1952SH44 Phys.Rev. 87, 557 (1952)                                      
+  4    R 1960GO36 JOUR ZETFA 38 1637                                            
+  4    R 1960ZE03 JOUR ZETFA 38 1123                                            
+  4    R 1963AR06 Phys.Letters 4, 350 (1963)                                    
+  4    R 1963FR14 JOUR PHLTA 6 322                                              
+  4    R 1963SC35 JOUR PHLTA 5 292                                              
+  4    R 1963WE10 Phys.Letters 6, 113 (1963)                                    
+  4    R 1964GO25 JOUR PHLTA 9 184                                              
+  4    R 1965AJ03 Phys.Rev.Letters 14, 444 (1965)                               
+  4    R 1965TA14 JOUR PRLTA 15 165                                             
+  4    R 1965TA15 JOUR NUPHA 65 203                                             
+  4    R 1966KR06 Phys.Letters 23, 574(1966)                                    
+  4    R 1967BE74 JOUR PHRVA 158 907                                            
+  4    R 1968BA20 JOUR NUPAB A113 557                                           
+  4    R 1968BA48 JOUR YAFIA 7 28                                               
+  4    R 1968KA35 JOUR PHRVA 175 1358                                           
+  4    R 1968ME03 Nucl.Phys. A109, 1(1968)                                      
+  4    R 1970SZ03 JOUR PRVCA 1 146                                              
+  4    R 1970TH12 JOUR NUPAB 143 304                                            
+  4    R 1972SZ07 JOUR BAPSA 17 553,HD 2,Szydik                                 
+  4    R 1973FI04 JOUR NUPAB A206 1                                             
+  4    R 1975FI08 JOUR NUPAB A251 1                                             
+  4    R 1976JA24 JOUR PTPKA 55 1653                                            
+  4    R 1979HU02 JOUR PRVCA C20 273                                            
+  4    R 1980BE22 JOUR NUPAB A341 414                                           
+  4    R 1980PH01 JOUR PRVCA 22 384                                             
+  4    R 1981KA39 JOUR YAFIA 34 661                                             
+  4    R 1983VA31 JOUR ZPAAD 314 323                                            
+  4    R 1985BA39 JOUR YAFIA 41 1460                                            
+  4    R 1985RA32 JOUR PYLBB 165 39                                             
+  4    R 1986KA35 JOUR JPHGB 12 L113                                            
+  4    R 1987TI07 JOUR NUPAB 474 1                                              
+  4    R 1988AJ01 JOUR NUPAB 490 1                                              
+  4    R 1988CA19 JOUR PRVCA 38 1879                                            
+  4    R 1988CO15 JOUR PYLBB 210 31                                             
+  4    R 1988GO27 JOUR YAFIA 48 1255                                            
+  4    R 1988WA18 JOUR ADNDA 39 281                                             
+  4    R 1989GO18 JOUR YAFIA 50 347                                             
+  4    R 1989GU16 JOUR YAFIA 50 19                                              
+  4    R 1990BR14 JOUR PRVCA 42 448                                             
+  4    R 1990BR17 JOUR PRVCA 42 550                                             
+  4    R 1990CH06 JOUR PYLBB 235 225                                            
+  4    R 1990HA23 JOUR PRVCA 42 438                                             
+  4    R 1991AR01 JOUR PRVCA 43 983                                             
+  4    R 1991CA35 JOUR NUPAB 522 185c                                           
+  4    R 1992TI02 JOUR NUPAB 541 1                                              
+  4    R 1997AU07 JOUR PRBMD 56 11294                                           
+                                                                                
+  4NN    ADOPTED LEVELS                1992TI02                  92NP     199807
+  4NN  H TYP=FUL$AUT=J. H. KELLEY, D. R. TILLEY, H.R. WELLER AND G.M. HALE$     
+  4NN2 H CIT=NP A541 1 (1992)$CUT=8-OCT-1991$                                   
+  4NN  Q                                                                        
+  4NN c  The stability of {+8}He (1968Ba48, 1968Me03, 1973Fi04, 1988Aj01) sets  
+  4NN2c  an upper limit to the total binding energy of 4nNbecause the decay     
+  4NN3c  {+8}He -->{+4}He+4n does not occur (1964Go25). The most precisely      
+  4NN4c  determined mass excess of {+8}He (1988Wa18) yields B(4n)<3.1 MeV.      
+  4NN5c  Noting that in all known nuclei the proton binding energy increases    
+  4NN6c  when two neutrons are added, it can be shown (see references in        
+  4NN7c  1992Ti02) that B(4n)<-Q, where Q is the decay                          
+  4NN8c  energy for {+5}h-->{+3}h+2n. Since Q>0 (1988Aj01), 4nNmust be unbound. 
+  4NN9c  No 4nNevents have been seen.                                           
+  4NN c  Shell model calculations predict J{+|p}=0+ and T=2 for the 4nNground   
+  4NN2c  state (1980Be22). If bound 4nNexists, a T=2 state should be found in   
+  4NN3c  {+4}He (see 1968Me03, 1973Fi04) at 26<E{-ex}<29 MeV. Also a T=2        
+  4NN4c  resonance should occur in n+{+3}h at 6<E(c.m.)<9 MeV. Resonances have  
+  4NN5c  been found in n+{+3}H, but there is no evidence to support a           
+  4NN6c  suggestion (1963Ar06) of T=2. No low-lying T=2 states of {+4}He have   
+  4NN7c  been found; systematics give E{-ex}(T=2)|?34 MeV (1963Fr14), |>32 MeV  
+  4NN8c  (Kurath, quoted in 1963Sc35) and |>{ 50 MeV} based on shell model      
+  4NN9c  calculations by 1966Kr06, 1970Sz03, 1972Sz07. All experimental         
+  4NNxc  searches for 4nNhave failed!                                           
+  4NN c  Variational calculations of the energy of the 4nNsystem, in which      
+  4NN2c  the trial wave function assumes a relative s-wave motion of two        
+  4NN3c  di-neutron clusters fail to produce either a bound state or a          
+  4NN4c  low-lying resonance (1965Ta14, 1970Th12), although a similar           
+  4NN5c  theoretical technique successfully reproduces the binding energies of  
+  4NN6c  {+3}H, {+3}He and {+4}He (1965Ta15) and the {+2}H(d,d){+2}h            
+  4NN7c  differential cross section (1970Th12). A K-harmonic approach also      
+  4NN8c  finds that the 4nNstate is absent (1968Ba20). A hyper-spherical-basis  
+  4NN9c  study of A=3-8 multineutron systems (1989Go18) indicates that these    
+  4NN0c  systems have no bound states. However, a similar theoretical study     
+  4NNAc  (1989Gu16) reports that 4nNhas a resonance state because of the        
+  4NNxc  existance of a kinematic barrier.                                      
+  4NN c  Arguments based on pairing-energy systematics (1960Ze03, 1960Go36)     
+  4NN2c  would require the stability of 4n, if 3n is stable (1965Ta14), but     
+  4NN3c  see 1968Ka35. Suspicion of the stability of 3n (1965Aj03) has not      
+  4NN4c  been confirmed (see 1986Ka35, 1968Me03, 1975Fi08 and 1987Ti07).        
+                                                                                
+  4H     ADOPTED LEVELS                1992TI02                  92NP     199807
+  4H   H TYP=ERR$AUT=J. H. KELLEY$DAT=4-Mar-2009$COM=fixed typo$                
+  4H   H TYP=FUL$AUT=J. H. KELLEY, D. R. TILLEY, H.R. WELLER AND G.M. HALE$     
+  4H 2 H CIT=NP A541 1 (1992)$CUT=8-OCT-1991$                                   
+  4H   Q 2.220E4   10-1.60E3 10                        2012WA38                 
+  4H  CQ Note: Current evaluation has used the following Q record               
+  4H   Q  23.51E3  11-2.91E3 11                        1997AU07                 
+  4H  c  The stability of the first excited state of {+8}Li against decay into  
+  4H 2c  decay into {+4}He+{+4}H (1988Aj01) sets an upper limit for             
+  4H 3c  B({+4}H)|<3.53 MeV (see refs in 1992Ti02). This also sets a lower limit
+  4H 4c  to the |b{+-} decay energy                                             
+  4H 5c  {+4}H-->{+4}He of 17.06 MeV. The upper limit of the |b{+-} decay       
+  4H 6c  energy would be 20.60 MeV, if {+4}H is stable against decay into       
+  4H 7c  {+3}H+n. Estimates for the expected half-life of the |b decay: if      
+  4H 8c  J{+|p}({+4}H)=0-, 1-, 2-, T{-1/2}|>10 min; if J{+|p} ({+4}H)=0+, 1+,   
+  4H 9c  T{-1/2}|>0.03 s (see discussion in 1992Ti02).                          
+  4H Ac  Experimentally there is no evidence for any |b{+-} decay of {+4}H, nor 
+  4H Bc  has particle stable {+4}H been observed. Evidence for a                
+  4H Cc  particle-unstable state of {+4}H has been obtained in                  
+  4H Dc  {+7}Li(|p{+-},t){+3}H+n at 8 MeV {i3} above the unbound {+3}H+n mass   
+  4H Ec  with a width of 4 MeV. For other theoretical work see (1976Ja24,       
+  4H xc  1983Va31, 1985Ba39, 1988Go27).                                         
+  4H  c  The level structure presented here is obtained from a                  
+  4H 2c  charge-symmetric reflection of the R-matrix parameters for {+4}Li after
+  4H 3c  shifting all the p-{+3}He E(|l) values by the internal Coulomb energy  
+  4H 4c  difference |DE(Coulomb)=-{ 0.86 MeV}. The parameters then account      
+  4H 5c  well for measurements of the n-{+3}H total cross section (1980Ph01) and
+  4H 6c  coherent scattering length (1985Ra32), as is reported in (1990Ha23).   
+  4H 7c  The Breit-Wigner resonance parameters from that analysis for channel   
+  4H 8c  radius a(n-t)={ 4.9 fm} are given. The levels are located substantially
+  4H 9c  lower in energy than they were in the previous compilation (1973Fi04), 
+  4H 0c  as will be true for all the T=1 levels of the A=4 system. The {+4}Li   
+  4H Ac  analysis unambiguously determined the lower 1- level to be             
+  4H Bc  predominantly {+3}p{-1} and the upper one to be mainly {+1}p{-1};      
+  4H Cc  that order is                                                          
+  4H Dc  preserved, of course, in the {+4}H levels. In addition to the given    
+  4H Ec  levels, the analysis predicts very broad positive-parity states        
+  4H Fc  at excitation energies in the range 14-{ 22 MeV}, having widths much   
+  4H Gc  greater than the excitation energy,                                    
+  4H Hc  as well as antibound p-wave states approximately { 13 MeV} below the   
+  4H Ic  2- ground state. Parameters were not given for these states because    
+  4H Jc  there is no clear evidence for them in the data.                       
+  4H  c  The structure given by the s-matrix poles is quite different,          
+  4H 2c  however. The p-wave resonances occur in a different order, and the     
+  4H 3c  positive-parity levels (especially for 0+ and 1+) are much narrower    
+  4H 4c  and lower in energy. It is possible that these differences in the      
+  4H 5c  s-matrix and K(R)-matrix pole structures, which are not yet fully      
+  4H 6c  understood, could explain the puzzling differences that occur when     
+  4H 7c  these resonances are observed in the spectra of multi-body final       
+  4H 8c  states.                                                                
+  4H   XA4HE(PI-,X)                                                             
+  4H   XB4HE(N,P)                                                               
+  4H  cL E$Level energies from an R-matrix calculation                          
+  4H   L 0.0          2-                                                        
+  4H 2 L WIDTH=5.42 MEV$ %N=100$ ISPIN=1                                        
+  4H 3 L XREF=A                                                                 
+  4H  cL ${ 3.19 MeV} above the N+{+3}H mass                                    
+  4H   L  310         1-               6.73 MEV                                 
+  4H 2 L %N=100$ ISPIN=1                                                        
+  4H 3 L XREF=AB                                                                
+  4H  cL $Strength is primarily {+3}p{-1}                                       
+  4H   L 2080         0-               8.92 MEV                                 
+  4H 2 L %N=100$ ISPIN=1                                                        
+  4H   L 2830         1-               12.99 MEV                                
+  4H 2 L %N=100$ ISPIN=1                                                        
+  4H 3 L XREF=AB                                                                
+  4H  cL $Strength is primarily {+1}p{-1}                                       
+                                                                                
+  4HE    ADOPTED LEVELS                1992TI02                  92NP     199807
+  4HE  H TYP=FMT$AUT=J. Tuli$DAT=11-Apr-2005$COM=corrected typo/fmt$            
+  4HE  H TYP=ERR$AUT=J. H. KELLEY$DAT=2-Dec-2004$COM=fixed xref for 28670 lev$  
+  4HE  H TYP=FUL$AUT=J. H. KELLEY, D. R. TILLEY, H.R. WELLER AND G.M. HALE$     
+  4HE2 H CIT=NP A541, 1 (1992)$CUT=8-OCT-1991$                                  
+  4HE  Q -2.290E4  222.058E4   1.981E4                 2012WA38                 
+  4HE CQ Note: Current evaluation has used the following Q record               
+  4HE  Q -22.90E3  2120577.62 119813.85 1              1997AU07                 
+  4HE c  Ground state: due to non-central forces, the wave function for the     
+  4HE2c  J{+|p}=0+ ground state of {+4}He can be a positive-parity mixture of   
+  4HE3c  three {+1}s{-0}, six {+3}p{-0}, and five {+5}d{-0} orthogonal states   
+  4HE4c  (1967Be74). The symmetric                                              
+  4HE5c  s-wave component is the dominant part of the wavefunction, with        
+  4HE6c  significant d-wave and almost negligible p-wave contributions. Since   
+  4HE7c  the d-state admixture can be inferred from measurements such as the    
+  4HE8c  tensor analysing powers for {+2}H(d,|g){+4}He, it has been the subject 
+  4HE9c  of much experimental and theoretical attention since the previous      
+  4HEAc  compilation (1973Fi04), despite confusion stemming from the fact that  
+  4HEBc  in some cases the results refer to only part of the full d-state       
+  4HECc  probability as calculated in 1988Ca19, 1990Ch06 and 1991Ar01.          
+  4HE c  Recent variational and Green Function Monte Carlo (gfmc)               
+  4HE2c  calculations                                                           
+  4HE3c  (1988Ca19, 1991Ca35) using realistic nucleon-nucleon potentials have   
+  4HE4c  been highly succesful in reproducing the ground-state properties of    
+  4HE5c  light nuclei. These calculations for {+4}He give d-state probabilities 
+  4HE6c  ranging from 15-17.5%, depending on the potential model (including     
+  4HE7c  3-body forces) used, and p-wave probabilities that are much smaller    
+  4HE8c  (approx. 1%). Other theoretical and experimental estimates of the      
+  4HE9c  d-state percentage are considerably lower, but these inferences can be 
+  4HEAc  complicated by the presence of more than one multipole and other       
+  4HEBc  d-state effects. See further discussion in 1992Ti02.                   
+  4HE c  Excited states: the unbound excited-state level structure presented    
+  4HE2c  here is based on the comprehensive, Coulomb-corrected,                 
+  4HE3c  charge-independent R-matrix analysis discussed in 1992Ti02. This       
+  4HE4c  analysis takes                                                         
+  4HE5c  its isospin-1 parameters from an analysis of p-{+3}He scattering data, 
+  4HE6c  but with eigenenergies shifted by the internal Coulomb energy          
+  4HE7c  difference |DE(C)=-0.64 MeV and the p-{+3}h and n-{+3}He reduced-width 
+  4HE8c  amplitudes scaled by the isospin Clebsch-Gordon coefficient 0.7071.    
+  4HE9c  The isospin-0 parameters are then varied to fit the experimental data  
+  4HE0c  for the reactions among the two-body channels p+{+3}H, n+{+3}He and    
+  4HEAc  d+{+2}H, at energies corresponding to excitations in {+4}He below      
+  4HEBc  approximately 29 MeV. In this fit, the T=0 nucleon-trinucleon reduced  
+  4HECc  width amplitudes are constrained and a small amount of internal        
+  4HEDc  Coulomb isospin mixing is introduced (see 1992Ti02) to reproduce the   
+  4HEEc  differences between the two branches of the d+d reaction. The          
+  4HEFc  Breit-Wigner resonance parameters at channel radii                     
+  4HEGc  a(p-t)=a(n-{+3}He)=4.9 fm and a(d-d)=7.0 fm are given. See further     
+  4HExc  discussion in 1992Ti02.                                                
+  4HE c  Estimated uncertainties on the resonance parameters given for {+4}He   
+  4HE2c  are as follows: at excitation energies below 26 MeV, the positions are 
+  4HE3c  uncertain by { 20 keV} or less, except for the (1-, T=0) level at      
+  4HE4c  { 24.25 MeV}, which is uncertain by { 150 keV}. At excitation energies 
+  4HE5c  between 26 and { 30 MeV}, the uncertainties in the positions are       
+  4HE6c  generally less than { 90 keV}, with that of the (1-, T=0) level at     
+  4HE7c  28.37 MeV level less than 10 keV. The widths of the levels (partial    
+  4HE8c  and total) are generally known to about 10%.                           
+  4HE9c  See further discussion in 1992Ti02.                                    
+  4HE  XA2H(D,N)                                                                
+  4HE  XB2H(D,P)                                                                
+  4HE  XC2H(D,D)                                                                
+  4HE  XD3H(P,G)                                                                
+  4HE  XE3HE(N,P)                                                               
+  4HE  XF4HE(G,X)                                                               
+  4HE  XG4HE(E,E')                                                              
+  4HE  XH4HE(N,N)                                                               
+  4HE  XI4HE(3HE,3HE)                                                           
+  4HE  XJ4HE(A,A), 4HE(A,A')                                                    
+  4HE  XK4HE(N,T)                                                               
+  4HE  XL4HE(P,3HE), 4HE(P,P+D)                                                 
+  4HE cL E$Level energies from an R-matrix calculation                          
+  4HE  L 0.0          0+               STABLE                                   
+  4HE2 L ISPIN=0                                                                
+  4HE  L 20210        0+               0.50 MEV                                 
+  4HE2 L %P=100$ ISPIN=0                                                        
+  4HE3 L WIDTHP=0.50 MEV$ XREF=EGHIK                                            
+  4HE  L 21010        0-               0.84 MEV                                 
+  4HE2 L %P=76$ %N=24$ ISPIN=0                                                  
+  4HE3 L WIDTHP=0.64 MEV$ WIDTHN=0.20 MEV$ XREF=H                               
+  4HE  L 21840        2-               2.01 MEV                                 
+  4HE2 L %P=63$ %N=37$ ISPIN=0                                                  
+  4HE3 L WIDTHP=1.26 MEV$ WIDTHN=0.75 MEV$ XREF=HJ                              
+  4HE  L 23330        2-               5.01 MEV                                 
+  4HE2 L %P=53$ %N=47$ ISPIN=1                                                  
+  4HE3 L WIDTHP=2.64 MEV$ WIDTHN=2.37 MEV                                       
+  4HE  L 23640        1-               6.20 MEV                                 
+  4HE2 L %P=55$ %N=45$ %IT=?$ ISPIN=1                                           
+  4HE3 L WIDTHP=3.44 MEV$ WIDTHN=2.76 MEV                                       
+  4HE cL $Strength is primarily {+3}p{-1}                                       
+  4HE  L 24250        1-               6.10 MEV                                 
+  4HE2 L %P=50$ %N=47$ %D=3$ ISPIN=0                                            
+  4HE3 L WIDTHP=3.08 MEV$ WIDTHN=2.87 MEV$ XREF=AB                              
+  4HE cL $|G{-p} and |G{-n} are primarily {+3}p{-1} and |G{-d}={ 0.15 MeV}      
+  4HE  L 25280        0-               7.97 MEV                                 
+  4HE2 L %P=52$ %N=48$ ISPIN=1                                                  
+  4HE3 L WIDTHP=4.12 MEV$ WIDTHN=3.85 MEV                                       
+  4HE  L 25950        1-               12.66 MEV                                
+  4HE2 L %P=52$ %N=48$ %IT=?$ ISPIN=1                                           
+  4HE3 L WIDTHP=6.52 MEV$ WIDTHN=6.14 MEV$ XREF=D                               
+  4HE cL $Strength is primarily {+1}p{-1}                                       
+  4HE  L 27420        2+               8.69 MEV                                 
+  4HE2 L %P=3$ %N=3$ %D=94$ ISPIN=0                                             
+  4HE3 L WIDTHP=0.25 MEV$ WIDTHN=0.23 MEV$ XREF=CIL                             
+  4HE cL $|G{-d}={ 8.21 MeV} and is primarily {+5}s{-2}                         
+  4HE  L 28310        1+               9.89 MEV                                 
+  4HE2 L %P=48$ %N=47$ %D=5$ ISPIN=0                                            
+  4HE3 L WIDTHP=4.72 MEV$ WIDTHN=4.66 MEV                                       
+  4HE cL $|G{-d}={ 0.51 MeV}                                                    
+  4HE  L 28370        1-               3.92 MEV                                 
+  4HE2 L %P=2$ %N=2$ %D=96$ ISPIN=0                                             
+  4HE3 L WIDTHP=0.07 MEV$ WIDTHN=0.08 MEV$ XREF=ABCI                            
+  4HE cL $|G{-d}={ 3.77 MeV}                                                    
+  4HE  L 28390        2-               8.75 MEV                                 
+  4HE2 L %P=0.2$ %N=0.2$ %D=99.6$ ISPIN=0                                       
+  4HE3 L WIDTHP=0.02 MEV$ WIDTHN=0.02 MEV$ XREF=ABC                             
+  4HE cL $|G{-d}={ 8.71 MeV}                                                    
+  4HE  L 28640        0-               4.89 MEV                                 
+  4HE2 L %D=100$ ISPIN=0                                                        
+  4HE3 L XREF=C                                                                 
+  4HE cL $|G{-d}={ 4.89 MeV}                                                    
+  4HE  L 28670        2+               3.78 MEV                                 
+  4HE2 L %IT=?$ %D=100$ ISPIN=0                                                 
+  4HE3 L XREF=CF                                                                
+  4HE cL $|G{-d}=3.78 and is primarily {+1}d{-2}                                
+  4HE  L 29890        2+               9.72 MEV                                 
+  4HE2 L %P=0.4$ %N=0.4$ %D=99.2$ ISPIN=0                                       
+  4HE3 L WIDTHP=0.04 MEV$ WIDTHN=0.04 MEV$ XREF=I                               
+  4HE cL $|G{-d}=9.64 and is primarily {+5}d{-2}                                
+                                                                                
+  4LI    ADOPTED LEVELS                1992TI02                  92NP     199807
+  4LI  H TYP=FUL$AUT=J. H. KELLEY, D. R. TILLEY, H.R. WELLER AND G.M. HALE$     
+  4LI2 H CIT=NP A541 1 (1992)$CUT=8-OCT-1991$                                   
+  4LI  Q             1.14E4  SY-3.10E3 22              2012WA38                 
+  4LI CQ Note: Current evaluation has used the following Q record               
+  4LI  Q                       3.10E3  21              1997AU07                 
+  4LI c  The stability of {+8}B against particle decay into {+4}He+{+4}Li, sets 
+  4LI2c  an upper limit of 1.7 MeV on the separation energy of {+4}Li into      
+  4LI3c  p+{+3}He (1952Sh44). The instability of {+4}h against particle decay   
+  4LI4c  (discussion in 1992Ti02)                                               
+  4LI5c  makes the particle stability of {+4}Li very unlikely, since the Coulomb
+  4LI6c  energy of {+4}Li is approximately { 1.7 MeV} larger than that of {+4}He
+  4LI7c  (1963We10), and the nuclear energies should be identical because of    
+  4LI8c  charge symmetry. Indeed all decisive tests of the stability of {+4}Li  
+  4LI9c  have failed. Searches for its |b decay have given negative             
+  4LI0c  results (discussion in 1992Ti02). Indirect proof of the non-existence  
+  4LIAc  of {+4}Li can be                                                       
+  4LIBc  provided by a measurement of the solar neutrino flux which would be    
+  4LICc  strongly influenced by the existence of {+4}Li. See 1968Me03. For other
+  4LIDc  theoretical work on {+4}Li see 1979Hu02, 1981Ka39, 1988Co15.           
+  4LI c  The level structure of {+4}Li presented here is based on an R-matrix   
+  4LI2c  analysis (discussed in 1992Ti02) that gives a good representation of   
+  4LI3c  all the p+{+3}He                                                       
+  4LI4c  scattering data at proton energies below 20 MeV. Breit-Wigner          
+  4LI5c  resonance parameters from the analysis are given. The spin-correlation 
+  4LI6c  and {+3}He analyzing-power data included in the p-{+3}He analysis      
+  4LI7c  determined that the lower 1- level is primarily in the {+3}p state,    
+  4LI8c  while the upper 1- is primarily in the {+1}p state, removing the       
+  4LI9c  ambiguities in the earlier phase-shift solutions, as was discussed in  
+  4LIxc  1973Fi04.                                                              
+  4LI c  As in the case of the {+4}h levels, which were based on the {+4}Li     
+  4LI2c  parameters, all the levels are at least 1 MeV lower than they were in  
+  4LI3c  1973Fi04. The only significant difference between the {+4}h and {+4}Li 
+  4LI4c  levels is the position of the ground state above the nucleon-trinucleon
+  4LI5c  threshold, as would be expected from the simple model used to obtain   
+  4LI6c  the {+4}h parameters. Again, the parameters predict very broad,        
+  4LI7c  positive- parity, T=1 states in the E{-ex}=15-20 MeV range and         
+  4LI8c  antibound p-wave states that cannot yet be identified in the data. The 
+  4LI9c  known T=1 levels in the A=4 nuclei are summarized in the isobar        
+  4LIxc  diagram of 1992Ti02 fig.4.                                             
+  4LI c  The s-matrix poles resulting from the analysis are all far from the    
+  4LI2c  real axis with large decay widths, while their residues are relatively 
+  4LI3c  small, leading to small values of the strengths. Although the          
+  4LI4c  connection is not clear, the small residues for these poles may be     
+  4LI5c  connected with the anomalously small widths that have been observed in 
+  4LI6c  1990Br14 and 1990Br17 that detect {+4}Li states in the particle        
+  4LI7c  spectra of breakup reactions. It may even be possible that these       
+  4LI8c  experiments are not detecting the 2- and 1- states as they assume, but 
+  4LI9c  positive parity states (0+ and 1+) whose s-matrix poles are much lower 
+  4LI0c  in energy than are the K(R)-matrix poles.                              
+  4LI  XA3HE(P,P)                                                               
+  4LI cL E$Level energies from an R-matrix calculation                          
+  4LI  L 0.0          2-                                                        
+  4LI2 L WIDTH=6.03 MEV$ %P=100$ ISPIN=1                                        
+  4LI3 L XREF=A                                                                 
+  4LI cL ${ 4.07 MeV} above the p+{+3}He mass                                   
+  4LI  L  320         1-               7.35 MEV                                 
+  4LI2 L %P=100$ ISPIN=1                                                        
+  4LI3 L XREF=A                                                                 
+  4LI cL $Strength is primarily {+3}p{-1}                                       
+  4LI  L 2080         0-               9.35 MEV                                 
+  4LI2 L %P=100$ ISPIN=1                                                        
+  4LI3 L XREF=A                                                                 
+  4LI  L 2850         1-               13.51 MEV                                
+  4LI2 L %P=100$ ISPIN=1                                                        
+  4LI3 L XREF=A                                                                 
+  4LI cL $Strength is primarily {+1}p{-1}                                       
+                                                                                

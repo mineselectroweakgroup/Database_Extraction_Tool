@@ -1,0 +1,464 @@
+276      COMMENTS                                                05NDS    200512
+276    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+276  2 H CUT=12-Aug-2005$                                                       
+276   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+276   C  AUTH$M. GUPTA(a)                                                       
+276   C  INST$National Nuclear Data Center                                      
+276  #C       Brookhaven National Laboratory                                    
+276  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+276  #C                                                                         
+276   c  INST$Manipal Academy of Higher Education,                              
+276  #c  Manipal, KA 576 104, INDIA                                             
+276  #c  e-mail: mohini.gupta@manipal.edu                                       
+276   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+276  #c  Manipal, KA 576 104, INDIA                                             
+276   C  AUTH$THOMAS W. BURROWS                                                 
+276   C  INST$National Nuclear Data Center                                      
+276  #C       Brookhaven National Laboratory                                    
+276  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+276  #C       e-mail: burrows@bnl.gov                                           
+276   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+276  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+276  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+276  4C  RECEIVED BY August 12, 2005.                                           
+276   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+276  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+276  3C  DATE WERE CONSIDERED.                                                  
+276   C  CIT$NDS 106, 251 (2005)                                                
+276   c  COMM$                                                                  
+276  @c  {UAcronyms and notations used in this evaluation:}                     
+276  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+276  #c  BGS Berkeley Gas Filled Separator                                      
+276  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+276  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+276  #c  EVR Evaporation Residue                                                
+276  #c  GARIS Gas-filled Recoil Ion Separator                                  
+276  #c  RILAC RIKEN Linear Accelerator facility                                
+276  #c  SHIP Separator for Heavy Ion reaction Products                         
+276  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+276  2c  and detection of previous EVR or |a                                    
+276  #c  TKE Total Kinetic Energy                                               
+276  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+276  2c  Reactions, JINR, Dubna, Russia                                         
+276  #c                                                                         
+276  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+276  2c  (Z=110-112,114,116,118):}                                              
+276  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+276  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+276  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+276  5c  the evaluators have relied on the judgement of the JWP in              
+276  6c  determining the strength of the arguments made in the various papers.  
+276  7c  In the cases where there are new data or where the JWP has not yet     
+276  8c  assigned a priority of discovery for an element, the evaluators have   
+276  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+276  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+276  Bc  the data.                                                              
+276  #c                                                                         
+276  #c  In the above context, with respect to Z=112 and the collective works of
+276  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+276  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+276  4c  references therein.                                                    
+276  #c                                                                         
+276  @c                                                                         
+276  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+276  2c  discovery of an element and not a specific nuclide. The purpose of     
+276  3c  this evaluation is to present the "best" set of nuclear properties     
+276  4c  for those nuclides reported between A=266 and A=294 based on data      
+276  5c  currently available and {Bnot} to establish a priority of discovery for
+276  6c  any element.                                                           
+276  !c                                                                         
+276  #c  It is well known that alpha decay chains seen                          
+276  ac  in cold fusion reactions tend to terminate in known mass regions.      
+276  2c  The method of |a-|a or |a-SF correlations for identifying the          
+276  3c  parent has therefore been used with confidence.                        
+276  3c  Experiments carried out with hot fusion reactions,                     
+276  4c  result in alpha decay chains beginning and ending with hitherto unknown
+276  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+276  6c  in an attempt to identify the parent and daughters. The latter method  
+276  7c  is not as accurate as the first since a greater probability of         
+276  8c  randomness is inherant to the technique. As such, independent          
+276  9c  verification and confirmation of the data gains added importance.      
+276  ac  These facts should be taken into account when considering the suggested
+276  ac  properties of nuclei created following a hot fusion reaction as for    
+276  ac  the synthesis of Z=114 and above.                                      
+276  #c                                                                         
+276  #c  Finally, with regard to the some of the                                
+276  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+276  ac  2004Mo15 have pointed out that mass assignments which are based        
+276  ac  on the excitation energy of the compound nucleus may be off by a       
+276  ac  single unit. This may also be due in part to uncertainties in the beam 
+276  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+276  ac  Once again, collateral information is required to establish the charge 
+276  ac  and approximate A of the nucleus.                                      
+276  #c                                                                         
+276  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+276  2c  have not been adopted, the evaluators have used the approximations in  
+276  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+276  4c  exponential distribution to estimate the standard uncertainty (68%     
+276  5c  confidence level) in T{-1/2}:                                          
+276  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+276  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+276  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+276  9c  of events. For one and two events, the exact values given in Table 1   
+276  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+276  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+276  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+276  #c                                                                         
+276  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+276  ac  Calculations of T{-1/2}                                                
+276  2c  performed in the present evaluation used the relationship:             
+276  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+276  #c  where Z refers to the atomic                                           
+276  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+276  6c  and:                                                                   
+276  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+276  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+276  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+276  3c  parameter set used in these evaluations. We note that these systematics
+276  6c  are only an indication of |a-decay half-lives from the ground state    
+276  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+276  8c  the element under consideration. The use of this formalism in the      
+276  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+276  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+276  ac  estimate a Hindrance Factor (HF) for a given transition,               
+276  ac  attributable to the odd neutron or proton. This quantity is            
+276  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+276  ac  The HF so computed is an approximate indication.                       
+276  #c                                                                         
+276  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+276  2c  References.                                                            
+276  #c                                                                         
+276  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+276  2c  trans-fermium elements is the manifestation of shell effects in the    
+276  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+276  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+276  5c  important as QF is expected to play a greater role on the hindrance of 
+276  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+276  7c  the "island" of stability. An understanding of this mechanism is       
+276  8c  necessary to establishing the most favorable reactions for producing   
+276  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+276  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+276  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+276  Cc  to both the mass asymmetry in the entrance channel as well as the      
+276  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+276  Ec  deformations of target/projectile nuclei and their relative orientation
+276  Fc  to each other in the process of CN formation, may also play an         
+276  Gc  important role in reducing the probability of forming a compound       
+276  Hc  system. In the face of extremely low yields and a steep decrease of    
+276  Ic  production cross-sections already in evidence with available stable    
+276  Jc  beam-target combinations, the influence of all possible mitigating     
+276  Kc  factors must be accurately determined in order to                      
+276  Lc  optimize the probability of successful fusion. The formation of a      
+276  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+276  Nc  survives QF going on to form a compact compound system which must then 
+276  Oc  face competition from fission.                                         
+276  #c                                                                         
+276  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+276  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+276  3c  in collaboration with investigators from Belgium, France, and Italy.   
+276  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+276  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+276  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+276  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+276  8c  spectrometer "Corset". These experiments were inspired by              
+276  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+276  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+276  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+276  Cc  such experiments are planned or underway to investigate the various    
+276  Dc  effects.                                                               
+276  #c                                                                         
+276  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+276  2c  and references cited in these papers.                                  
+276  #c                                                                         
+276  !c  {UExperimental Estimates of Fission Barriers:}                         
+276  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+276  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+276  4c  the experimentally derived barrier heights are respectively:           
+276  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+276  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+276  #c                                                                         
+276  #c  2002It04, in an analysis of available experimental data, derive the    
+276  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+276  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+276  #c                                                                         
+276  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+276  2c  Two possibilities have been proposed in an attempt to understand the   
+276  ac  the {+289}114, {+287}114 observations:                                 
+276  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+276  ac  belongs to a rare decay mode originating from                          
+276  4c  an isomeric state, or that                                             
+276  #c  (ii) the sequence may actually originate from                          
+276  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+276  7c  Levels).                                                               
+276  #c  The evaluators believe that further investigations                     
+276  ac  are required to support either hypothesis.                             
+276  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+276  9c  unobserved. Also, T{-1/2}                                              
+276  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+276  ac  is much larger than that observed by 2004Og12 and                      
+276  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+276  ac  agreement. Such inconsistencies need to be better understood.          
+276  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+276  2c  respects. 2004OgZZ report more statistics in some cases.               
+276  #c                                                                         
+276  @c  {UOther comments on {+289}114 and {+283}112}                           
+276  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+276  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+276  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+276  4c  classified the evidence as being "very weak",                          
+276  5c  with no convincing supporting arguments for the possible production of 
+276  6c  SHE. We make the following general observations:                       
+276  #c                                                                         
+276  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+276  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+276  ac  by the Dubna-JINR collaborations for all isotopes of                   
+276  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+276  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+276  ac  {+287}114 (15 events) and {+286}114                                    
+276  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+276  ac  the |?34 min decay sequence postulated as originating from             
+276  5c  a rare decay mode of {+289}114, does not seem very likely.             
+276  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+276  7c  {+289}114 decays observed are genetically linked                       
+276  8c  and not the result of a background decay sequence. These               
+276  BC  discrepancies have to be resolved, along with some others.             
+276  #c                                                                         
+276  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+276  ac  (see also 2004Og02) with VASSILISSA, have not                          
+276  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+276  3c  lack of internal consistency through the collective measurements       
+276  ac  and the data are inconclusive as pointed                               
+276  4c  out by experimenters (reasons given in each paper). Decay properties of
+276  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+276  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+276  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+276  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+276  8c  by them. See {+283}112 Adopted Levels for details.                     
+276  #c                                                                         
+276  #c  These observations by the experimenters are consistent with the        
+276  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+276  3c  of the various arguments put                                           
+276  3c  forward therein, the following comments may be made here:              
+276  #c                                                                         
+276  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+276  #c  190 MeV and 212 MeV (1999Og05)                                         
+276  #c  65 MeV and 170 MeV  (2004Og02)                                         
+276  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+276  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+276  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+276  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+276  4c  plane and side detectors). With one exception, all the energies        
+276  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+276  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+276  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+276  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+276  9c  the second experiment) after EVR implantation resulted in              
+276  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+276  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+276  #c                                                                         
+276  #c  2. 2000Ar03 statement that correlations  between the fission events    
+276  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+276  3c  'backward' analysis of the data was reported in                        
+276  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+276  5c  evidently in contradiction with those made by the                      
+276  6c  experimenters. A more complete analysis would be beneficial.           
+276  #c                                                                         
+276  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+276  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+276  ac  quoted from an earlier                                                 
+276  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+276  4c  assignments. The proposed assignment of Z=114 to both parents may      
+276  5c  be incorrect taking into account new data which do not support         
+276  6c  these observations and for reasons already mentioned.                  
+276  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+276  !c                                                                         
+276  #c  CONCLUSIONS:                                                           
+276  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+276  ac  are not conclusive. Overall, the                                       
+276  2c  results from the VASSILISSA experiments are at variance with data from 
+276  3c  experiments using DGFRS. The latter investigations are done using      
+276  4c  more stringent methods, and have greater statistics, offering better   
+276  5c  internal consistency. Some obvious discrepancies and other             
+276  ac  inconsistencies between the two sets of                                
+276  6c  data remain and need to be resolved or adequately explained as does the
+276  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+276  8c  by 2005Gr19 and 2002Lo11.                                              
+276  #c                                                                         
+276  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+276  2c  from earlier work are not reproduced to date.                          
+276  #c                                                                         
+276  @c  {UTheoretical Calculations:}                                           
+276  @c  1995Mo29: |b2 based on the finite-range droplet                        
+276  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+276  3c  with "global" parameters.                                              
+276  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+276  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+276  3c  J|p simultaneously obtained with the calculated masses and             
+276  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+276  5c  A=239.                                                                 
+276  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+276  2c  model for the macroscopic part and the Strutinski shell correction,    
+276  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+276  4c  part.                                                                  
+276  @c  2005GaZX: |b2 based on self consistent calculations                    
+276  2c  within the framework of the Relativistic Mean Field (RMF)              
+276  3c  theory with very few "globally" fit parameters and employing the       
+276  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+276  5c  sets in use exhibit similar systematics, these results are expected to 
+276  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+276  #c                                                                         
+276  @c  {UOther Measurements:}                                                 
+276  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+276  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+276  3c  (Blocking technique in single crystals).                               
+276  #c                                                                         
+276   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+276  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+276  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+276  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+276  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+276  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+276  7c  additional information that they readily provided during this          
+276  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+276  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+276  Ac  Singh for helpful discussions. We thank A. Marinov                     
+276  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+276  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+276  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+276  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+276  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+276  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+276  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+276  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+276  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+276  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+276  Lc  insights, and suggestions until her untimely demise are hereby         
+276  Mc  acknowledged.                                                          
+276   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+276  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+276  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+276      REFERENCES                                                       200512
+276    R 1966VI04 JOUR JINCA 28 741                                             
+276    R 1984SC13 JOUR ZPAAD 316 19                                             
+276    R 1987MU15 JOUR ZPAAD 328 49                                             
+276    R 1992BA77 JOUR PPNPD 29 453                                             
+276    R 1995MO29 JOUR ADNDA 59 185                                             
+276    R 1997MO25 JOUR ADNDA 66 131                                             
+276    R 1998DA24 JOUR ARNUA 48 401                                             
+276    R 1999OG05 JOUR ZAANE 5 63                                               
+276    R 1999OG07 JOUR NATUA 400 242                                            
+276    R 1999OG10 JOUR PRLTA 83 3154                                            
+276    R 2000AR03 JOUR ZAANE 7 23                                               
+276    R 2000FI12 JOUR NDSBA 90 391                                             
+276    R 2000ZL02 JOUR ZAANE 8 81                                               
+276    R 2001AK11 JOUR NDSBA 94 131                                             
+276    R 2001KA70 JOUR PACHA 73 959                                             
+276    R 2002HI20 JOUR PRLTA 89 282701                                          
+276    R 2002IT04 JOUR PRVCA 65 044602                                          
+276    R 2002LO11 JOUR PPNPD 48 123                                             
+276    R 2002LO15 JOUR PRVCA 66 044617                                          
+276    R 2003AU03 JOUR NUPAB 729 337                                            
+276    R 2003GE09 JOUR PRVCA 68 061303                                          
+276    R 2003KA71 JOUR PACHA 75 1601                                            
+276    R 2003MU15 JOUR YAFIA 66 1051                                            
+276    R 2003MU26 JOUR APOBB 34 2073                                            
+276    R 2003OGZY REPT JINR-E7-2003-178,Oganessian                              
+276    R 2004BA86 JOUR JPGPE 30 B35                                             
+276    R 2004DA11 JOUR NUPAB 734 148                                            
+276    R 2004DMZZ REPT JINR-E12-2004-157,Dmitriev                               
+276    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+276    R 2004GUZW PREPRINT Gupta                                                
+276    R 2004IT05 JOUR NUPAB 734 136                                            
+276    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+276    R 2004MO15 JOUR NUPAB 734 188                                            
+276    R 2004OG02 JOUR ZAANE 19 3                                               
+276    R 2004OG03 JOUR PRVCA 69 021601                                          
+276    R 2004OG12 JOUR PRVCA 70 064609                                          
+276    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+276    R 2004PRZW PREPRINT Prokhorova                                           
+276    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+276    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+276    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+276MT    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+276MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+276MT2 H CUT=12-Aug-2005$                                                       
+276MT  Q -1.3E3    SY5.5E3   SY2.7E3   SY9.99E3  SY    2012WA38                 
+276MT CQ Note: Current evaluation has used the following Q record               
+276MT  Q -1750     SY 5730   SY 2440   SY 9.85E3    6  2003AU03,2004OG03        
+276MT CQ Q-$ESTIMATED UNCERTAINTY=910 KEV                                       
+276MT CQ SN$ESTIMATED UNCERTAINTY=900 KEV                                       
+276MT CQ SP$ESTIMATED UNCERTAINTY=990 KEV                                       
+276MT CQ QA$FROM EA=9.71 MEV 6 (2004OG03). OTHER: 9.8 MEV 3 (2003AU03. SYST.)   
+276MT C  2003OGZY AND 2004OG03: IDENTIFICATION OF NEW NUCLIDES: 28815, 28413,   
+276MT2C  280RG, 276MT, 272BH, AND 268DB. 276MT OBSERVED AS GREAT-GRANDDAUGHTER  
+276MT3C  OF 288115.                                                             
+276MT C  REACTION: 243AM(48CA,3N) E(LAB)=248 MEV CORRESPONDING TO               
+276MT2C  AN EXCITATION ENERGY OF 38.0 TO 42.5 MEV AT THE TARGET CENTER.         
+276MTAC  EXPERIMENTS PERFORMED BY THE DUBNA-^LLNL COLLABORATION.                
+276MTAC  Z=115 WAS FORMED AT A CROSS-SECTION OF 2.7 pb {I+48-16}.               
+276MT C  EXPERIMENTS WERE DONE AT THE ^U400 CYCLOTRON WITH THE DUBNA GAS-FILLED 
+276MT2C  RECOIL SEPERATOR (^DGFRS) AT ^FLNR-^JINR IN COLLABORATION WITH ^LLNL,  
+276MT3C  USA. THE ^EVR'S RECOILING FROM THE TARGET WERE SEPARATED               
+276MT4C  BY ^DGFRS IN FLIGHT FROM THE 243AM+48CA BEAM IONS, SCATTERED PARTICLES,
+276MT5C  AND TRANSFER-REACTION PRODUCTS WITH A TRANSMISSION EFFICIENCY OF       
+276MT6C  35% FOR Z=115 NUCLEI.                                                  
+276MT C  DETECTION SYSTEM: MULTIWIRE PROPORTIONAL COUNTER FOR TOF MEASUREMENT;  
+276MT2C  SEMI-CONDUCTOR FOCAL-PLANE DETECTOR ARRAY WITH 12 VERTICAL             
+276MT3C  POSITION-SENSITIVE STRIPS, WHICH MEASURED THE DECAY OF THE IMPLANTED   
+276MT4C  RECOILS. THIS DETECTION SYSTEM SURROUNDED BY EIGHT SIDE DETECTORS WITH 
+276MT5C  NO POSITION SENSITIVITY. THE ALPHA SPECTRUM WAS MEASURED IN THE RANGE  
+276MT6C  9.6 TO 11.0 MEV. THE RESOLUTION OF THE DETECTOR SYSTEM WAS             
+276MT7C  FWHM=60-100 KEV FOR ALPHA PARTICLES ABSORBED IN THE FOCAL-PLANE        
+276MT8C  DETECTOR; 140-200 KEV FOR ALPHA'S ESCAPING THE FOCAL-PLANE DETECTOR AND
+276MT9C  REGISTERED BY THE SIDE DETECTORS.                                      
+276MT C  THREE SIMILAR DECAY CHAINS WITH FIVE CONSECUTIVE ALPHA DECAYS WERE     
+276MT2C  DETECTED IN A TIME INTERVAL OF 20 S (IN THE BEAM-OFF MODE FOLLOWING THE
+276MT3C  FIRST RECOIL EXPECTED TO BELONG TO Z=115) TERMINATED BY AN SF EVENT    
+276MT4C  WITH A RELEASE OF TOTAL KINETIC ENERGY OF AP 220 MEV. THESE EVENTS WERE
+276MT5C  ASSIGNED TO THE (48CA,3N) CHANNEL WITH THE PRODUCTION OF THE PARENT    
+276MT6C  NUCLIDE 28815; THE FOURTH EVENT IN THE CHAIN WAS ASSIGNED TO 276MT.    
+276MT7C  PROPERTIES OF 276MT FROM THE THREE CHAINS ARE LISTED BELOW BY EVENT.   
+276MT t    {TV}Event #1: Energy of the evaporation residue=10.4 MeV             
+276MT2t       E{-|a}=9650 keV         t=1.055 s    - assigned to {+276}Mt       
+276MT3t  {TV}Event #2: Energy of the evaporation residue=11.0 MeV               
+276MT4t       E{-|a}=9800 keV         t=0.249 s    - assigned to {+276}Mt       
+276MT5t  {TV}Event #3: Energy of the evaporation residue=9.1 MeV                
+276MT6t       E{-|a}=9740 keV         t=1.834 s    - assigned to {+276}Mt       
+276MT C  THEORY: 1997MO25, 2003MU15, 2003GE09, 2004BA86, 2004GUZW AND Nuclear   
+276MT2C  Science References                                                     
+276MT C  ASSIGNMENT: DESCENDENT OF 28815 PRODUCED BY 243AM(48CA,3N) E=248       
+276MT2C  MEV (2003OGZY,2004OG03) AND E=243 MEV, CHEM (2004DMZZ). THE EVALUATORS 
+276MT3C  SUGGEST THAT 2004DMZZ OFFERS INDEPENDENT SUPPORT TO THE SYNTHESIS OF   
+276MT4C  28815 (2004OG03) HAVING PRECISELY DETERMINED THE ATOMIC NUMBER FOR     
+276MT5C  Z=105 BY ISOLATION OF Group ^V ELEMENTS. THE PROPERTIES ARE IN         
+276MT6C  AGREEMENT WITH 268DB MEASURED IN THE THREE CHAINS SEEN EARLIER BY      
+276MT7C  2004OG03, THEREBY PROVIDING EVIDENCE IN FAVOR OF THE SYNTHESIS OF      
+276MT8C  28815 AND DAUGHTERS. HOWEVER, SINCE THE IDENTIFICATION RELIES          
+276MT9C  ON THE MEASUREMENT OF SF FRAGMENTS, THE POSSIBILITY THAT THE OBSERVED  
+276MTaC  NUCLEUS IS ACTUALLY 268RF FOLLOWING (UNDETECTED) EC FROM THE PARENT    
+276MTaC  268DB, CANNOT BE EXCLUDED.                                             
+276MT  XA280RG A DECAY: TENTATIVE                                               
+276MT  L X                               0.72 S  +87-25                        ?
+276MT CL J$|W(p)=11/2+; |W(n)=5/2+ FROM 1997MO25 (THEORY)                       
+276MT CL T$T(CALC)=0.11 S FROM Viola-Seaborg SYSTEMATICS FOR QA=9.85 MEV        
+276MT2 L %A AP 100                                                              
+276MT CL %A$ASSUMED FROM THREE EVENTS                                           
+276MT CL $B2(THEORY): 0.202 FROM 1995MO29; 0.211 FROM 2003MU26; 0.193 FROM      
+276MT2CL 2005GAZX                                                               
+276MTX L XREF=A                                                                 
+                                                                                
+276MT    280RG A DECAY: TENTATIVE      2004OG03                  05NDS    200512
+276MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+276MT2 H CUT=12-Aug-2005$                                                       
+276MT C  SEE 280RG Adopted Levels FOR DETAILS.                                  
+280RG  P X                             3.6 S     +43-13         9.87E3    6     
+280RG CP T$FROM 2004OG03                                                        
+280RG CP QP$FROM 2004OG03                                                       
+276MT  N                       1.0     AP                                       
+276MT  L X                               0.72 S  +87-25                         
+276MT CL E,T$FROM THE Adopted Levels                                            
+276MT  A 9.75E3    6                                                            
+276MT CA E$FROM 2004OG03                                                        
+                                                                                

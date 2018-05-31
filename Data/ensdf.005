@@ -1,0 +1,332 @@
+  5      COMMENTS                                                02NP     200212
+  5    H TYP=FUL$AUT=D.R. Tilley, et al$CUT=23-Aug-2001$CIT=NP A708, 3 (2002)$  
+  5   C  TITL$ABSTRACT FOR A=5                                                  
+  5   c  AUTH$D.R. Tilley, J.H. Kelley                                          
+  5   c  INST$Triangle Universities Nuclear Laboratory                          
+  5  #c       Durham, NC 27708 and Dept. of Physics, North Carolina             
+  5  #c       State University, Raleigh, |a(N) 27695                            
+  5   c  AUTH$C.M. Cheves, J.L. Godwin, G. Sheu,H.R. Weller                     
+  5   c  INST$Triangle Universities Nuclear Laboratory                          
+  5  #c       Durham, NC 27708 and Dept. of Physics, Duke University            
+  5  #c       Durham, NC 27708                                                  
+  5   c  AUTH$G.M. Hale                                                         
+  5   c  INST$Los Alamos National Laboratory, Los Alamos, NM 87545              
+  5   c  AUTH$H.M. Hoffmann                                                     
+  5   c  INST$Universiteat Erlangen-Neurenberg, Germany                         
+  5   c  ABST$Compilation of energy levels of A=5 nuclei, with emphasis on the  
+  5  2c  review of material leading to information about structure of the A=5   
+  5  3c  system. This work is a summary of 2002Ti10, D.R. Tilley, C.M. Cheves,  
+  5  4c  J.L. Godwin, G.M. Hale, H.M. Hofmann, J.H. Kelley, G. Sheu and H.R.    
+  5  5c  Weller, Nuclear Physics A 708 (2002) 3.                                
+  5   c  CUT$August 23, 2001.                                                   
+  5   c  FUND$This work is supported by the US Department of Energy, Office of  
+  5  xc  High Energy and Nuclear Physics, under: contract no. DEFGO2-97-ER41042 
+  5  xc  (North Carolina State University); contract no. DEFGO2-97-ER41033      
+  5  xc  (Duke University)                                                      
+  5   C  CIT$NP A708, 3 (2002)                                                  
+                                                                                
+  5      REFERENCES                                                             
+  5    R 1979AJ01 JOUR NUPAB A320 1                                             
+  5    R 1982SM09 JOUR NUPBB 206 333                                            
+  5    R 1983ANZQ REPT JAERI-M-83-025,Ando                                      
+  5    R 1984AJ01 JOUR NUPAB 413 1                                              
+  5    R 1985PO10 JOUR PYLBB 157 120                                            
+  5    R 1986BE35 JOUR NUPAB 460 352                                            
+  5    R 1986BE44 JOUR IANFA 50 1936                                            
+  5    R 1987BO40 JOUR RRPQA 32 497                                             
+  5    R 1987GO25 JOUR PZETA 45 205                                             
+  5    R 1987KO47 JOUR PZETA 46 306                                             
+  5    R 1988SEZJ CONF Rosseau Lake(Nuclei Far from Stability) Proc,P324,Seth   
+  5    R 1990AM04 JOUR PZETA 51 607                                             
+  5    R 1991GO19 JOUR NUPAB 531 613                                            
+  5    R 1991SE06 JOUR PRLTA 66 2448                                            
+  5    R 1995ALZU CONF Arles(Exotic Nuclei and Atomic Masses) Proc,P329,Aleksand
+  5    R 1997AU07 JOUR PRBMD 56 11294                                           
+  5    R 1997KO07 JOUR NUPAB 616 223c                                           
+  5    R 2002TI10 JOUR NUPAB 708 3                                              
+                                                                                
+  5H     ADOPTED LEVELS                2002TI10                  02NP     200211
+  5H   H TYP=FUL$AUT=X. HU, D.R.TILLEY, J.H.KELLEY $                            
+  5H 2 H CIT=NP A708,3 (2002)$CUT=23-AUG-2001$                                  
+  5H   Q 2.166E4   10-2.0E2  14                        2012WA38                 
+  5H  CQ Note: Current evaluation has used the following Q record               
+  5H   Q  25.44E3  95-2.83E3 96                        1997AU07                 
+  5H  C     THE 9BE(11B,15O) REACTION AT E(11B)=52-76 MEV SHOWS NO EVIDENCE     
+  5H 2C  FOR THE FORMATION OF 5H (1986BE35, 1987BO40). FOR THE EARLIER WORK SEE 
+  5H 3C  1984AJ01,1987KO47 AND 1988SEZJ. THERE IS SOME EVIDENCE IN THE          
+  5H 4C  9BE(PI-, P+T) REACTION FOR THE FORMATION OF A VERY BROAD, 8 MEV 3,     
+  5H 5C  RESONANCE IN 5H THAT IS 7.4 MEV ABOVE THE GROUND STATE RESONANCE       
+  5H 6C  (SEE 1987GO25 AND 1991GO19). MEASUREMENTS OF                           
+  5H 7C  6LI(PI-,P) REPORTED IN 1990AM04 PROVIDE EVIDENCE FOR A RESONANCE       
+  5H 8C  11.8 MEV 7, ABOVE THE GROUND STATE, WIDTH=5.6 MEV 9. A RESONANCE 9.1   
+  5H 9C  MEV 7 ABOVE THE GROUND STATE, WIDTH=7.4 MEV 6, WAS                     
+  5H DC  REPORTED IN 7LI(PI-,D) ALSO BY 1990AM04. REFERENCES CITED              
+  5H 9C  IN 2002TI10 REPORT WORK ON 6LI(PI-,P) THAT INCLUDED A BROAD,           
+  5H AC  WIDTH=14 MEV, RESONANCE 11.1 MEV 15 ABOVE THE GROUND STATE.            
+  5H BC  WORK ON 7LI(6LI,8B)5H DESCRIBED IN 1995ALZU REPORTED EVIDENCE FOR      
+  5H CC  AN UNSTABLE 5H NUCLEUS AT 5.2 MEV 4 ABOVE THE 3H + 2N THRESHOLD. A     
+  5H DC  RESONANCE 1.1 MEV 0.4 ABOVE THE 3H + 2N THRESHOLD IS REPORTED IN       
+  5H EC  1997KO07.  A DINEUTRON-CONTAINING BREAKUP CHANNEL IS REPORTED          
+  5H FC  IN 1991SE06.                                                           
+  5H  C       5H IS CALCULATED TO HAVE JPI=1/2+, TO BE UNSTABLE WITH RESPECT    
+  5H 2C  TO TWO-NEUTRON EMISSION AND TO HAVE EXCITED STATES AT E(X)=2.44,       
+  5H 3C  4.29 AND 7.39 MEV WITH JPI=5/2+, 3/2+ AND 3/2+ IN (0+1) HOMEGA         
+  5H 4C  MODEL SPACE, WHILE (0+2) HOMEGA MODEL SPACE YIELDS E(X)=2.85,          
+  5H 5C  3.46 AND 6.02 MEV WITH JPI=3/2+, 5/2+ AND 3/2+ (1985PO10). SEE ALSO    
+  5H 6C  1982SM09, 1986BE44 AND 1983ANZQ.                                       
+  5H   L 0.0                                                                    
+  5H 2 L %N=100                                                                 
+                                                                                
+  5HE    ADOPTED LEVELS                2002TI10                  02NP     200211
+  5HE  H TYP=FUL$AUT=X. HU, D.R.TILLEY, J.H.KELLEY $                            
+  5HE2 H CIT=NP A708,3 (2002)$CUT=23-AUG-2001$                                  
+  5HE  Q -4.5E2    6 -735    202.068E4 11735     20    2012WA38                 
+  5HE CQ Note: Current evaluation has used the following Q record               
+  5HE  Q  -290.    71-894.   5021.83E3 12              1997AU07                 
+  5HE  XA3H(D,X),4HE(N,X)                                                       
+  5HE  L 0.0          3/2-             0.648 MEV                                
+  5HE2 L %N=? $ ISPIN=1/2                                                       
+  5HE3 L WIDTHN=66.578 MEV $ WIDTHN0=0.578 MEV                                  
+  5HE4 L XREF=A                                                                 
+  5HE CL           WIDTHD=8.80 MEV                                              
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 66 MEV, AND (LARGE) PARTIAL WIDTHS IN CLOSED        
+  5HE3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+                                                                                
+  5HE    3H(D,X),4HE(N,X)              2002TI10                  02NP     200211
+  5HE CL           LEVELS ARE BASED ON THE COMPLEX POLES AND RESIDUES OF THE    
+  5HE2CL ^S-MATRIX (EXTENDED ^R-MATRIX).                                        
+  5HE3CL SEE 2002TI10 FOR A DISCUSSION OF THE ADOPTED (^S-MATRIX) LEVELS.       
+  5HE4CL THE FITS ARE BASED ON DATA FROM ALL POSSIBLE REACTIONS FOR THE TWO-BODY
+  5HE5CL CHANNELS D + 3H AND N + 4HE AT ^CM ENERGIES CORRESPONDING TO E{-X} < 23
+  5HE6CL MEV. IN ADDITION, N + 4HE* CHANNELS ARE INCLUDED TO APPROXIMATE THE    
+  5HE7CL EFFECTS OF THREE-BODY BREAKUP PROCESSES.                               
+  5HE  L 0.0          3/2-             0.648 MEV                                
+  5HE2 L %N=? $ ISPIN=1/2                                                       
+  5HE3 L WIDTHN=66.578 MEV $ WIDTHN0=0.578 MEV                                  
+  5HE CL           WIDTHD=8.80 MEV                                              
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 66 MEV, AND (LARGE) PARTIAL WIDTHS IN CLOSED        
+  5HE3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+  5HE  L 1270         1/2-             5.57 MEV                                 
+  5HE2 L %N=? $ ISPIN=1/2                                                       
+  5HE3 L WIDTHN=4.45 MEV $ WIDTHN0=3.18 MEV                                     
+  5HE CL           WIDTHD=38.0 MEV                                              
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 1.27 MEV.                                           
+  5HE CL           (LARGE) PARTIAL WIDTHS IN CLOSED CHANNELS                    
+  5HE2CL HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.                
+  5HE  L 16840        3/2+             74.5 KEV                                 
+  5HE2 L %N=? $ %D=? $ %IT=? $ ISPIN=1/2                                        
+  5HE3 L WIDTHN=40 KEV                                                          
+  5HE CL           WIDTHD=25 KEV                                                
+  5HE  G 15544                                                                  
+  5HE  G 16810                                                                  
+  5HE  L 19140        5/2+             3.56 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=3 KEV                                                           
+  5HE CL           WIDTHD=1.62  MEV                                             
+  5HE  L 19260        3/2+             3.96 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=14 KEV                                                          
+  5HE CL           WIDTHD=1.83 MEV                                              
+  5HE  L 19310        7/2+             3.02 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=45 KEV                                                          
+  5HE CL           WIDTHD=1.89  MEV                                             
+  5HE  L 19960        3/2-             1.92 MEV                                 
+  5HE2 L %N=? $ %D=? $ %P=? $ ISPIN=1/2                                         
+  5HE3 L WIDTHN=865 KEV $ WIDTHN0=3 KEV                                         
+  5HE CL           WIDTHD=325 KEV                                               
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 862 KEV.                                            
+  5HE  L 21250        3/2+             4.61 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=98 KEV                                                          
+  5HE CL           WIDTHD=2.38 MEV                                              
+  5HE  L 21390        5/2+             3.95 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=91 KEV                                                          
+  5HE CL           WIDTHD=2.12 MEV                                              
+  5HE  L 21640        1/2+             4.03 MEV                                 
+  5HE2 L %N=? $ %D=? $ %P=? $ ISPIN=1/2                                         
+  5HE3 L WIDTHN=776 KEV $ WIDTHN0=50 KEV                                        
+  5HE CL           WIDTHD=878 KEV.                                              
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 726 KEV.                                            
+  5HE  L 23970        7/2+             5.44 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=53 KEV                                                          
+  5HE CL           WIDTHD=2.85 MEV                                              
+  5HE  L 24060        5/2-             5.23 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=13 KEV                                                          
+  5HE CL           WIDTHD=2.18 MEV                                              
+  5HE  L 35.7E3    4                   2 MEV     AP                            ?
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+                                                                                
+  5LI    ADOPTED LEVELS                2002TI10                  02NP     200211
+  5LI  H TYP=FUL$AUT=X. HU, D.R.TILLEY, J.H.KELLEY $                            
+  5LI2 H CIT=NP A708,3 (2002)$CUT=23-AUG-2001$                                  
+  5LI  Q -2.55E4   SY2.172E4 22-1.97E3 5 1.97E3  5     2012WA38                 
+  5LI CQ Note: Current evaluation has used the following Q record               
+  5LI  Q -26300    SY21.71E3 22-1966.  50 1966.  50    1997AU07                 
+  5LI  XA3HE(D,X),4HE(P,X)                                                      
+  5LI  L 0.0          3/2-             1.23 MEV                                 
+  5LI2 L %P=? $ ISPIN=1/2                                                       
+  5LI3 L WIDTHP=10.06 MEV $ WIDTHP0=1.06 MEV                                    
+  5LI4 L XREF=A                                                                 
+  5LI CL           WIDTHD=43.1 MEV                                              
+  5LI CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5LI2CL THE FINAL STATE IS 9 MEV, AND (LARGE) PARTIAL WIDTHS IN CLOSED         
+  5LI3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+                                                                                
+  5LI    9C B+A DECAY                  1988MI03,2000GE09,2001BE51               
+  5LI  H TYP=UPD$AUT=J. Kelley$CUT=26-FEB-2013$CIT=ENSDF$                       
+  5LI2 H COM=Updated data set since last full evaluation$                       
+  5LI C  1988MI03: Implanted 9C into a thick SI detector and measured the total 
+  5LI2C  |b-delayed breakup energy; deduced |b-decay feeding to low-lying       
+  5LI3C  states. They missed several higherlying states that are fed and did not
+  5LI4C  directly distinguish delayed p vs. |a emission.                        
+  5LI C  2000GE09: 9C from the ^TRIUMF/^TISOL facility was implanted in a thin  
+  5LI2C  carbon foil. Data were taken in two detector configurations; one       
+  5LI3C  configuration was sensitive to decay through the p+8BE{-g.s.} decay    
+  5LI4C  mode while the other configuration was sensitive to the |a+5LI{-g.s.}  
+  5LI5C  and p+8BE^*(3.0) decay channels. Breakup particles from 9C -> 8BE+p -> 
+  5LI6C  2|a+p and 9C -> 5LI+|a -> 2|a+p were detected either in an array of    
+  5LI7C  4 DE-E telescopes configured with two segmented SI annular detectors   
+  5LI8C  or with a similar array 2 DE-E telescopes configured with two          
+  5LI9C  doublesided position sensitive SI strip detectors and a plastic        
+  5LIaC  scintillator to count |b-particles. Detector sensitivities and         
+  5LIbC  coincidence efficiencies were evaluated by Monte Carlo techniques,     
+  5LIcC  and a phenomenological approach was used to deduce the |b-decay        
+  5LIdC  reaction branching ratios.                                             
+  5LI C  2001BE51: At the ^CERN/^ISOLDE facility, doublesided strip detectors   
+  5LI2C  (^DSSD) were coupled with thick stopping detectors to provide          
+  5LI3C  high-granularity and large solid angle coverage for detecting decay    
+  5LI4C  particles. Emphasis was placed on characterizing population and decay  
+  5LI5C  of the AP 14.65 MEV IAS. Furthermore a thin DE ^DSSD was implemented   
+  5LI6C  to avoid threshold (efficiency) concerns that troubled (2000GE09).     
+  5LI7C  Lastly, the experimenters evaluated the decay branching ratios for the 
+  5LI8C  12B^*(12.2) state. Little comment is given on other populated levels.  
+  5LI C  2001BU05: The authors of (2000GE09) give a more rigorous alternate     
+  5LI2C  interpretation of their data in a full R-MATRIX analysis. There is a   
+  5LI3C  poor agreement between deduced level energies and accepted energy      
+  5LI4C  values.                                                                
+  5LI C                                                                         
+  5LI C  Comments:                                                              
+  5LI C  Four relevant articles are given that discuss three different          
+  5LI2C  experimental efforts. Agreement is relatively mixed.                   
+  5LI C  The experiments that are most sensitive to decay to 9B{-g.s.} find the 
+  5LI2C  largest feeding to that state, we take (54.1 15)% from (2001BE51). Data
+  5LI3C  from ^TRIUMF produced the most comprehensive set of populated          
+  5LI4C  levels, though they are analyzed via two different methods in          
+  5LI5C  (2000GE09) and (2001BU05) yielding somewhat different results, due in  
+  5LI6C  part to differences in the 9B{-g.s.} branch and subsequent             
+  5LI7C  renormalization. Lastly are the states above 14 MEV, (2000GE09) reports
+  5LI8C  only 9B^*(14.0: JPI= ?) which decays mainly via proton emission, while 
+  5LI9C  (2001BE51) reports population of 9B^*(14.6: JPI=3/2-) which decays     
+  5LIaC  about evenly via p and |a emission. On the other hand the analysis of  
+  5LIbC  (2001BU05) reports population of both levels. Finally, in (2000GE09,   
+  5LIcC  2001BU05) a previously unknown 9B level at E{-x}=13.3 MEV is reported. 
+  5LI C  The 9B ground state feeding from (2001BE51) is accepted here; the      
+  5LI2C  branching ratios from (2000GE09) including the mostly |a background    
+  5LI3C  component are then renormalized ( * 0.864). The branches feeding both  
+  5LI4C  of the E{-x}=14.0 and 14.6 MEV states are accepted, though it may      
+  5LI5C  be that only one level was populated. The particle breakup branching   
+  5LI6C  ratios for 9B^*(12.2) are accepted from (2001BE51). And lastly, the    
+  5LI7C  weak branch to 9B^*(13.3) is included with some uncertainty.           
+  5LI CL T$LABEL=WIDTH                                                          
+  5LI CL E,J,T$From (2002TI10).                                                 
+  9C   P 0           (3/2-)            126.5 MS  9              14807     50    
+  9C  CP QP$from 2012WA38.                                                      
+  5LI  N 1           1         0.379   58                                       
+  5LI PN                                                                     1  
+  5LI  L 0.0         3/2-              1.23 MEV                                 
+  5LI  DA365       2830.3    582345                                             
+  5LI  DA606       930.605   862780                                             
+  5LI  DA5818      363.53    5512160                                            
+  5LI  DA7204      310.005   6714655                                            
+  5LI  L 1490        1/2-              6.60 MEV                                 
+  5LI  DA4990      360.35    2412160                                            
+                                                                                
+  5LI    3HE(D,X),4HE(P,X)             2002TI10                  02NP     200211
+  5LI CL           LEVELS ARE BASED ON THE COMPLEX POLES AND RESIDUES OF THE    
+  5LI2CL ^S-MATRIX (EXTENDED ^R-MATRIX). SEE 2002TI10 FOR A DISCUSSION OF THE   
+  5LI3CL ADOPTED(^S-MATRIX) LEVELS AND THE ALTERNATE (^R-MATRIX) LEVELS.        
+  5LI4CL THE FITS ARE BASED ON DATA FROM ALL POSSIBLE REACTIONS FOR THE         
+  5LI5CL TWO-BODY CHANNELS D + 3HE AND P + 4HE AT ^CM ENERGIES CORRESPONDING TO 
+  5LI6CL E{-X} < 23 MEV. IN ADDITION, P + 4HE* CHANNELS ARE INCLUDED TO         
+  5LI7CL APPROXIMATE THE EFFECTS OF THREE-BODY BREAKUP PROCESSES.               
+  5LI  L 0.0          3/2-             1.23 MEV                                 
+  5LI2 L %P=? $ ISPIN=1/2                                                       
+  5LI3 L WIDTHP=10.06 MEV $ WIDTHP0=1.06 MEV                                    
+  5LI CL           WIDTHD=43.1 MEV                                              
+  5LI CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5LI2CL THE FINAL STATE IS 9 MEV, AND (LARGE) PARTIAL WIDTHS IN CLOSED         
+  5LI3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+  5LI  L  1490        1/2-             6.60 MEV                                 
+  5LI2 L %P=? $ ISPIN=1/2                                                       
+  5LI3 L WIDTHP=3.78 MEV                                                        
+  5LI CL           WIDTHD=16.4 MEV                                              
+  5LI2CL           BUT NOTE THAT (LARGE) PARTIAL WIDTHS IN CLOSED               
+  5LI3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+  5LI  L 16870        3/2+             267 KEV                                  
+  5LI2 L %P=? $ %D=? $ %IT=? $ ISPIN=1/2                                        
+  5LI3 L WIDTHP=55 KEV                                                          
+  5LI CL           WIDTHD=134 KEV                                               
+  5LI  G 15355                                                                  
+  5LI  G 16840                                                                  
+  5LI  L 19280        3/2-             959 KEV                                  
+  5LI2 L %P=? $ %D=? $ %N=? $ ISPIN=1/2                                         
+  5LI3 L WIDTHP=742 KEV                                                         
+  5LI CL           WIDTHD=40 KEV                                                
+  5LI  L 19450        7/2+             3.28 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=40 KEV                                                          
+  5LI CL           WIDTHD=1.82 MEV                                              
+  5LI  L 19710        5/2+             4.31 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=11 KEV                                                          
+  5LI CL           WIDTHD=2.03 MEV                                              
+  5LI  L 20530        1/2+             5.00 MEV                                 
+  5LI2 L %P=? $ %D=? $ %N=? $ ISPIN=1/2                                         
+  5LI3 L WIDTHP=222 KEV                                                         
+  5LI CL           WIDTHD=1.53 MEV                                              
+  5LI  L 22060        5/2-             15.0 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=928 KEV                                                         
+  5LI CL           WIDTHD=2.33 MEV                                              
+  5LI  L 23740        5/2+             5.43 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=234 KEV                                                         
+  5LI CL           WIDTHD=2.49 MEV                                              
+  5LI  L 25420        3/2+             534 KEV                                  
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=23 KEV                                                          
+  5LI CL           WIDTHD=467 KEV                                               
+  5LI  L 25440        7/2+             2.63 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=43 KEV                                                          
+  5LI CL           WIDTHD=1.94 MEV                                              
+  5LI  L 32530        1/2-             35.7 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=8.75 MEV                                                        
+  5LI CL           WIDTHD=13 KEV                                                
+                                                                                
+  5BE    ADOPTED LEVELS                2002TI10                  02NP     200211
+  5BE  H TYP=FUL$AUT=X. HU, D.R.TILLEY, J.H.KELLEY $                            
+  5BE2 H CIT=NP A708,3 (2002)$CUT=23-AUG-2001$                                  
+  5BE  Q                       -4.5E3  SY              2012WA38                 
+  5BE CQ Note: Current evaluation has used the following Q record               
+  5BE  Q                       -5400   SY              1997AU07                 
+  5BE C     5BE HAS NOT BEEN OBSERVED.                                          
+  5BE2C     THE ABSENCE OF ANY GROUP STRUCTURE IN THE NEUTRON SPECTRUM IN THE   
+  5BE3C  REACTION 3HE(3HE,N) AT E(3HE)=18.0 TO 26.0 MEV INDICATES THAT          
+  5BE4C  5BE IS AT LEAST 4.2 MEV UNSTABLE WITH RESPECT TO 3HE+2P DECAY          
+  5BE5C  [(M-^A)>33.7 MEV]. WITH COULOMB CORRECTIONS ADJUSTED TO MATCH THE      
+  5BE6C  16.7 MEV STATES OF 5HE-5LI, THIS OBSERVATION PLACES THE FIRST ^T=3/2   
+  5BE7C  LEVEL IN THESE NUCLEI ABOVE 21.4 MEV: SEE 1979AJ01.                    
+  5BE  L 0.0                                                                    
+  5BE2 L %P=100                                                                 
+                                                                                

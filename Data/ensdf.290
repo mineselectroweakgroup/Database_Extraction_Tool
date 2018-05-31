@@ -1,0 +1,621 @@
+290      COMMENTS                                                05NDS    200512
+290    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+290  2 H CUT=12-Aug-2005$                                                       
+290   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+290   C  AUTH$M. GUPTA(a)                                                       
+290   C  INST$National Nuclear Data Center                                      
+290  #C       Brookhaven National Laboratory                                    
+290  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+290  #C                                                                         
+290   c  INST$Manipal Academy of Higher Education,                              
+290  #c  Manipal, KA 576 104, INDIA                                             
+290  #c  e-mail: mohini.gupta@manipal.edu                                       
+290   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+290  #c  Manipal, KA 576 104, INDIA                                             
+290   C  AUTH$THOMAS W. BURROWS                                                 
+290   C  INST$National Nuclear Data Center                                      
+290  #C       Brookhaven National Laboratory                                    
+290  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+290  #C       e-mail: burrows@bnl.gov                                           
+290   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+290  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+290  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+290  4C  RECEIVED BY August 12, 2005.                                           
+290   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+290  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+290  3C  DATE WERE CONSIDERED.                                                  
+290   C  CIT$NDS 106, 251 (2005)                                                
+290   c  COMM$                                                                  
+290  @c  {UAcronyms and notations used in this evaluation:}                     
+290  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+290  #c  BGS Berkeley Gas Filled Separator                                      
+290  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+290  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+290  #c  EVR Evaporation Residue                                                
+290  #c  GARIS Gas-filled Recoil Ion Separator                                  
+290  #c  RILAC RIKEN Linear Accelerator facility                                
+290  #c  SHIP Separator for Heavy Ion reaction Products                         
+290  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+290  2c  and detection of previous EVR or |a                                    
+290  #c  TKE Total Kinetic Energy                                               
+290  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+290  2c  Reactions, JINR, Dubna, Russia                                         
+290  #c                                                                         
+290  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+290  2c  (Z=110-112,114,116,118):}                                              
+290  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+290  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+290  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+290  5c  the evaluators have relied on the judgement of the JWP in              
+290  6c  determining the strength of the arguments made in the various papers.  
+290  7c  In the cases where there are new data or where the JWP has not yet     
+290  8c  assigned a priority of discovery for an element, the evaluators have   
+290  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+290  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+290  Bc  the data.                                                              
+290  #c                                                                         
+290  #c  In the above context, with respect to Z=112 and the collective works of
+290  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+290  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+290  4c  references therein.                                                    
+290  #c                                                                         
+290  @c                                                                         
+290  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+290  2c  discovery of an element and not a specific nuclide. The purpose of     
+290  3c  this evaluation is to present the "best" set of nuclear properties     
+290  4c  for those nuclides reported between A=266 and A=294 based on data      
+290  5c  currently available and {Bnot} to establish a priority of discovery for
+290  6c  any element.                                                           
+290  !c                                                                         
+290  #c  It is well known that alpha decay chains seen                          
+290  ac  in cold fusion reactions tend to terminate in known mass regions.      
+290  2c  The method of |a-|a or |a-SF correlations for identifying the          
+290  3c  parent has therefore been used with confidence.                        
+290  3c  Experiments carried out with hot fusion reactions,                     
+290  4c  result in alpha decay chains beginning and ending with hitherto unknown
+290  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+290  6c  in an attempt to identify the parent and daughters. The latter method  
+290  7c  is not as accurate as the first since a greater probability of         
+290  8c  randomness is inherant to the technique. As such, independent          
+290  9c  verification and confirmation of the data gains added importance.      
+290  ac  These facts should be taken into account when considering the suggested
+290  ac  properties of nuclei created following a hot fusion reaction as for    
+290  ac  the synthesis of Z=114 and above.                                      
+290  #c                                                                         
+290  #c  Finally, with regard to the some of the                                
+290  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+290  ac  2004Mo15 have pointed out that mass assignments which are based        
+290  ac  on the excitation energy of the compound nucleus may be off by a       
+290  ac  single unit. This may also be due in part to uncertainties in the beam 
+290  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+290  ac  Once again, collateral information is required to establish the charge 
+290  ac  and approximate A of the nucleus.                                      
+290  #c                                                                         
+290  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+290  2c  have not been adopted, the evaluators have used the approximations in  
+290  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+290  4c  exponential distribution to estimate the standard uncertainty (68%     
+290  5c  confidence level) in T{-1/2}:                                          
+290  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+290  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+290  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+290  9c  of events. For one and two events, the exact values given in Table 1   
+290  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+290  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+290  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+290  #c                                                                         
+290  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+290  ac  Calculations of T{-1/2}                                                
+290  2c  performed in the present evaluation used the relationship:             
+290  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+290  #c  where Z refers to the atomic                                           
+290  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+290  6c  and:                                                                   
+290  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+290  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+290  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+290  3c  parameter set used in these evaluations. We note that these systematics
+290  6c  are only an indication of |a-decay half-lives from the ground state    
+290  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+290  8c  the element under consideration. The use of this formalism in the      
+290  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+290  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+290  ac  estimate a Hindrance Factor (HF) for a given transition,               
+290  ac  attributable to the odd neutron or proton. This quantity is            
+290  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+290  ac  The HF so computed is an approximate indication.                       
+290  #c                                                                         
+290  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+290  2c  References.                                                            
+290  #c                                                                         
+290  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+290  2c  trans-fermium elements is the manifestation of shell effects in the    
+290  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+290  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+290  5c  important as QF is expected to play a greater role on the hindrance of 
+290  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+290  7c  the "island" of stability. An understanding of this mechanism is       
+290  8c  necessary to establishing the most favorable reactions for producing   
+290  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+290  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+290  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+290  Cc  to both the mass asymmetry in the entrance channel as well as the      
+290  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+290  Ec  deformations of target/projectile nuclei and their relative orientation
+290  Fc  to each other in the process of CN formation, may also play an         
+290  Gc  important role in reducing the probability of forming a compound       
+290  Hc  system. In the face of extremely low yields and a steep decrease of    
+290  Ic  production cross-sections already in evidence with available stable    
+290  Jc  beam-target combinations, the influence of all possible mitigating     
+290  Kc  factors must be accurately determined in order to                      
+290  Lc  optimize the probability of successful fusion. The formation of a      
+290  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+290  Nc  survives QF going on to form a compact compound system which must then 
+290  Oc  face competition from fission.                                         
+290  #c                                                                         
+290  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+290  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+290  3c  in collaboration with investigators from Belgium, France, and Italy.   
+290  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+290  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+290  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+290  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+290  8c  spectrometer "Corset". These experiments were inspired by              
+290  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+290  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+290  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+290  Cc  such experiments are planned or underway to investigate the various    
+290  Dc  effects.                                                               
+290  #c                                                                         
+290  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+290  2c  and references cited in these papers.                                  
+290  #c                                                                         
+290  !c  {UExperimental Estimates of Fission Barriers:}                         
+290  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+290  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+290  4c  the experimentally derived barrier heights are respectively:           
+290  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+290  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+290  #c                                                                         
+290  #c  2002It04, in an analysis of available experimental data, derive the    
+290  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+290  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+290  #c                                                                         
+290  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+290  2c  Two possibilities have been proposed in an attempt to understand the   
+290  ac  the {+289}114, {+287}114 observations:                                 
+290  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+290  ac  belongs to a rare decay mode originating from                          
+290  4c  an isomeric state, or that                                             
+290  #c  (ii) the sequence may actually originate from                          
+290  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+290  7c  Levels).                                                               
+290  #c  The evaluators believe that further investigations                     
+290  ac  are required to support either hypothesis.                             
+290  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+290  9c  unobserved. Also, T{-1/2}                                              
+290  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+290  ac  is much larger than that observed by 2004Og12 and                      
+290  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+290  ac  agreement. Such inconsistencies need to be better understood.          
+290  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+290  2c  respects. 2004OgZZ report more statistics in some cases.               
+290  #c                                                                         
+290  @c  {UOther comments on {+289}114 and {+283}112}                           
+290  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+290  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+290  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+290  4c  classified the evidence as being "very weak",                          
+290  5c  with no convincing supporting arguments for the possible production of 
+290  6c  SHE. We make the following general observations:                       
+290  #c                                                                         
+290  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+290  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+290  ac  by the Dubna-JINR collaborations for all isotopes of                   
+290  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+290  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+290  ac  {+287}114 (15 events) and {+286}114                                    
+290  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+290  ac  the |?34 min decay sequence postulated as originating from             
+290  5c  a rare decay mode of {+289}114, does not seem very likely.             
+290  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+290  7c  {+289}114 decays observed are genetically linked                       
+290  8c  and not the result of a background decay sequence. These               
+290  BC  discrepancies have to be resolved, along with some others.             
+290  #c                                                                         
+290  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+290  ac  (see also 2004Og02) with VASSILISSA, have not                          
+290  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+290  3c  lack of internal consistency through the collective measurements       
+290  ac  and the data are inconclusive as pointed                               
+290  4c  out by experimenters (reasons given in each paper). Decay properties of
+290  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+290  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+290  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+290  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+290  8c  by them. See {+283}112 Adopted Levels for details.                     
+290  #c                                                                         
+290  #c  These observations by the experimenters are consistent with the        
+290  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+290  3c  of the various arguments put                                           
+290  3c  forward therein, the following comments may be made here:              
+290  #c                                                                         
+290  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+290  #c  190 MeV and 212 MeV (1999Og05)                                         
+290  #c  65 MeV and 170 MeV  (2004Og02)                                         
+290  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+290  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+290  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+290  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+290  4c  plane and side detectors). With one exception, all the energies        
+290  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+290  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+290  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+290  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+290  9c  the second experiment) after EVR implantation resulted in              
+290  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+290  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+290  #c                                                                         
+290  #c  2. 2000Ar03 statement that correlations  between the fission events    
+290  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+290  3c  'backward' analysis of the data was reported in                        
+290  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+290  5c  evidently in contradiction with those made by the                      
+290  6c  experimenters. A more complete analysis would be beneficial.           
+290  #c                                                                         
+290  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+290  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+290  ac  quoted from an earlier                                                 
+290  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+290  4c  assignments. The proposed assignment of Z=114 to both parents may      
+290  5c  be incorrect taking into account new data which do not support         
+290  6c  these observations and for reasons already mentioned.                  
+290  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+290  !c                                                                         
+290  #c  CONCLUSIONS:                                                           
+290  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+290  ac  are not conclusive. Overall, the                                       
+290  2c  results from the VASSILISSA experiments are at variance with data from 
+290  3c  experiments using DGFRS. The latter investigations are done using      
+290  4c  more stringent methods, and have greater statistics, offering better   
+290  5c  internal consistency. Some obvious discrepancies and other             
+290  ac  inconsistencies between the two sets of                                
+290  6c  data remain and need to be resolved or adequately explained as does the
+290  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+290  8c  by 2005Gr19 and 2002Lo11.                                              
+290  #c                                                                         
+290  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+290  2c  from earlier work are not reproduced to date.                          
+290  #c                                                                         
+290  @c  {UTheoretical Calculations:}                                           
+290  @c  1995Mo29: |b2 based on the finite-range droplet                        
+290  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+290  3c  with "global" parameters.                                              
+290  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+290  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+290  3c  J|p simultaneously obtained with the calculated masses and             
+290  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+290  5c  A=239.                                                                 
+290  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+290  2c  model for the macroscopic part and the Strutinski shell correction,    
+290  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+290  4c  part.                                                                  
+290  @c  2005GaZX: |b2 based on self consistent calculations                    
+290  2c  within the framework of the Relativistic Mean Field (RMF)              
+290  3c  theory with very few "globally" fit parameters and employing the       
+290  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+290  5c  sets in use exhibit similar systematics, these results are expected to 
+290  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+290  #c                                                                         
+290  @c  {UOther Measurements:}                                                 
+290  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+290  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+290  3c  (Blocking technique in single crystals).                               
+290  #c                                                                         
+290   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+290  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+290  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+290  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+290  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+290  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+290  7c  additional information that they readily provided during this          
+290  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+290  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+290  Ac  Singh for helpful discussions. We thank A. Marinov                     
+290  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+290  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+290  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+290  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+290  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+290  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+290  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+290  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+290  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+290  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+290  Lc  insights, and suggestions until her untimely demise are hereby         
+290  Mc  acknowledged.                                                          
+290   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+290  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+290  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+290      REFERENCES                                                       200512
+290    R 1966VI04 JOUR JINCA 28 741                                             
+290    R 1984SC13 JOUR ZPAAD 316 19                                             
+290    R 1987MU15 JOUR ZPAAD 328 49                                             
+290    R 1992BA77 JOUR PPNPD 29 453                                             
+290    R 1995MO29 JOUR ADNDA 59 185                                             
+290    R 1997MO25 JOUR ADNDA 66 131                                             
+290    R 1998DA24 JOUR ARNUA 48 401                                             
+290    R 1999CW01 JOUR PRLTA 83 1108                                            
+290    R 1999OG05 JOUR ZAANE 5 63                                               
+290    R 1999OG07 JOUR NATUA 400 242                                            
+290    R 1999OG10 JOUR PRLTA 83 3154                                            
+290    R 2000AR03 JOUR ZAANE 7 23                                               
+290    R 2000FI12 JOUR NDSBA 90 391                                             
+290    R 2000OG05 JOUR PRVCA 62 041604                                          
+290    R 2000OG07 JOUR YAFIA 63,No 10,1769                                      
+290    R 2000ZL02 JOUR ZAANE 8 81                                               
+290    R 2001AK11 JOUR NDSBA 94 131                                             
+290    R 2001KA70 JOUR PACHA 73 959                                             
+290    R 2002HI20 JOUR PRLTA 89 282701                                          
+290    R 2002IT04 JOUR PRVCA 65 044602                                          
+290    R 2002LO11 JOUR PPNPD 48 123                                             
+290    R 2002LO15 JOUR PRVCA 66 044617                                          
+290    R 2002OG10 JOUR PRVCA 66 051601                                          
+290    R 2002OGZX REPT JINR-D7-2002-287,Oganessian                              
+290    R 2002ZA01 JOUR PRVCA 65 014607                                          
+290    R 2002ZA16 JOUR PTPSA 146 642                                            
+290    R 2002ZA19 JOUR JNRSA 3,No 1,13                                          
+290    R 2003AU02 JOUR NUPAB 729 3                                              
+290    R 2003AU03 JOUR NUPAB 729 337                                            
+290    R 2003KA71 JOUR PACHA 75 1601                                            
+290    R 2003MU15 JOUR YAFIA 66 1051                                            
+290    R 2003MU26 JOUR APOBB 34 2073                                            
+290    R 2003OGZZ REPT UCRL-ID-151619,Oganessian                                
+290    R 2004DA11 JOUR NUPAB 734 148                                            
+290    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+290    R 2004IT05 JOUR NUPAB 734 136                                            
+290    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+290    R 2004MO15 JOUR NUPAB 734 188                                            
+290    R 2004OG02 JOUR ZAANE 19 3                                               
+290    R 2004OG03 JOUR PRVCA 69 021601                                          
+290    R 2004OG05 JOUR NUPAB 734 109                                            
+290    R 2004OG07 JOUR PRVCA 69 054607                                          
+290    R 2004OG10 JOUR PTPSA 154 406                                            
+290    R 2004OG12 JOUR PRVCA 70 064609                                          
+290    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+290    R 2004PRZW PREPRINT Prokhorova                                           
+290    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+290    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+290    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+29014    ADOPTED LEVELS: NOT OBSERVED                            05NDS    200512
+29014  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+290142 H CUT=12-Aug-2005$                                                       
+29014  Q                                                                        
+29014 C  SEE 28914 Adopted Levels FOR DETAILS OF THE EXPERIMENTS.               
+29014 C  2004OG10: THE REINTERPRETATION OF ONE LONG LIVED DECAY CHAIN FIRST     
+290142C  OBSERVED IN 1999OG10 AT DUBNA, AND TENTATIVELY ASSIGNED TO THE DECAY OF
+290143C  28914, IS NOW PROPOSED AS POSSIBLY ORIGINATING FROM THE ^CN 29014      
+290144C  {IVIA} THE 2{IN} CHANNEL. THE SUBSEQUENT ALPHA-DECAYS WOULD THEN BE:   
+290145C  {+286}112|){+282}Ds|){+278}Hs (SF). THE                                
+290145C  CROSS-SECTION FOR THIS EVENT WAS AP 0.2                                
+290146C  PICOBARN IN THE REACTION 244PU+48CA AT 236 MEV (^E*=35 MEV). THIS EVENT
+290147C  WAS NOT OBSERVED IN LATER EXPERIMENTS DONE AT ENERGIES OF ^E*=41-53 MEV
+290148C  (2000OG05,2000OG07). THE ALPHA PARTICLE ENERGY OF THE FIRST DECAY IS   
+290149C  AP 0.1 MEV LESS THAN THAT ATTRIBUTED TO 28914 FROM LATER WORK. AN      
+29014AC  ALTERNATIVE INTERPRETATION BASED ON CALCULATIONS (1999CW01) IS THAT    
+29014BC  THIS CHAIN MAY BELONG TO A RARE  DECAY BRANCH OF 28914 STARTING FROM   
+29014CC  AN EXCITED STATE AND GOING TO LOW LYING LEVELS IN THE DAUGHTER GOVERNED
+29014DC  BY THE APPROPRIATE SELECTION RULES. 3 MINUTE ALPHA-SF EVENT OBSERVED IN
+29014EC  1999OG07 AT ^E*=32.6 MEV FOR 29014 AND ASSIGNED TO 28714 NOT SEEN BY   
+29014FC  2004OG10.                                                              
+29014 C  ASSIGNMENT: ^IUPAP/^IUPAC ^JWP ASSESSMENT (2003KA71): DISCOVERY OF     
+290142C  Z=114 WAS NOT YET WARRANTED DUE TO UNSECURED CONNECTIONS TO KNOWN      
+290143C  DESCENDENTS AND THE ABSENCE OF FURTHER ELEMENTAL SIGNATURES SUCH AS    
+290144C  X-RAYS. THE EVALUATORS BELIEVE THAT THERE IS TOO LITTLE DATA TO SUPPORT
+290145C  THE ASSIGNMENT OF THIS DECAY CHAIN TO EITHER 29014 OR 28914 AND,       
+290146C  THEREFORE, 29014, 28612, 282DS AND 278HS REMAIN UNOBSERVED. SEE THE    
+290147C  General Comments FOR MORE DETAILS.                                     
+29014 C  THEORY: SEE Nuclear Science References                                 
+                                                                                
+29015    COMMENTS                                                ENSDF    201008
+29015  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+29015 C  TITL$NUCLEAR DATA SHEETS FOR 29015                                     
+29015 c  AUTH$M. GUPTA                                                          
+29015 c  INST$Manipal University,                                               
+29015#c       Manipal, KA 576 104, INDIA                                        
+29015 c  ABST$The ENSDF file corresponding to Nuclear Data Sheets for A=266-294 
+290152c  (2005Gu33) has been updated to include the recently reported           
+290153c  production of {+294}117 and its daughters by 2010Og01.                 
+29015#c                                                                         
+29015#c  See 2005Gu33 for acronyms and notations and evaluation methodology     
+29015xc  used                                                                   
+29015xc  in this evaluation. The purpose of this evaluation is to present the   
+290153c  "best" set of nuclear properties for those nuclides reported between   
+290154c  A=266 and A=294 based on data currently available and {Bnot} to        
+290155c  establish a priority of discovery for any element.                     
+29015 c  CUT$August 1, 2010. All references relevant to the production of       
+290152c  {+290}115 or its daughters entered into the Nuclear Science References 
+290153c  File and papers and private communications received by this date were  
+29015xc  considered.                                                            
+29015 c  ACKN$The evaluator is very grateful to J. Choquette and B. Singh,      
+290152c  McMaster University for compiling these data into XUNDL.               
+29015 C  CIT$ENSDF                                                              
+                                                                                
+29015    ADOPTED LEVELS: Tentative                               ENSDF    201008
+29015  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+29015  Q -2.5E3    SY5.9E3   SY2.1E3   SY1.040E4 SY    2012WA38                 
+29015 CQ Note: Current evaluation has used the following Q record               
+29015  Q -4144     SY 6743   SY 896    SY 10300     SY 2009AuZZ                 
+29015 CQ Q-$ESTIMATED UNCERTAINTY=1279 KEV                                      
+29015 CQ SN$ESTIMATED UNCERTAINTY=1420 KEV                                      
+29015 CQ SP$ESTIMATED UNCERTAINTY=1226 KEV                                      
+29015 CQ QA$ESTIMATED UNCERTAINTY=300 KEV.                                      
+29015aCQ OTHERS: 10089 keV {I400} from E|a=9.95 MeV {I40} (2010Og01).           
+29015 c  2010Og01: This nuclide produced as the daughter of {+294}117 in the    
+29015ac  reaction {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center. This   
+29015ac  corresponded to an excitation energy of 35 MeV                         
+29015ac  for the 3n evaporation channel.                                        
+290152c  All experiments were carried out at Dubna, Russia, in collaboration    
+290153c  with RIAR (Russia) and LLNL; ORNL; University of Nevada and Vanderbilt 
+29015ac  University in USA, for a period of 70 days from July 27 - October 23,  
+29015ac  2009. See adopted levels for {+294}117 for experimental details.       
+29015ac  A single |a decay chain was detected and attributed to the parent      
+29015ac  nucleus.                                                               
+29015 t  {TV} The details are provided below:                                   
+290153t  E{-|a1}=10.81 MeV {I10}, t{-1}=112 ms                                  
+29015+t       - {TV}assigned to {+294}117 decay                                 
+290154t  E{-|a2}= 9.95 MeV {I40}, t{-2}=0.023 s                                 
+29015+t      - {TV}assigned to {+290}115 decay                                  
+290155t  E{-|a3}= 9.63 MeV {I10}, t{-3}=28.3 s                                  
+29015+t       - {TV}assigned to {+286}113 decay                                 
+290156t  E{-|a4}= 9.00 MeV {I10}, t{-4}=0.74 s                                  
+29015+t       - {TV}assigned to {+282}Rg decay                                  
+290155t  E{-|a5}= 9.55 MeV {I19}, t{-5}=11.0 s                                  
+29015+t       - {TV}assigned to {+278}Mt decay                                  
+290156t  E{-|a6}= 8.80 MeV {I10}, t{-6}=1.3 m                                   
+29015+t        - {TV}assigned to {+274}Bh decay                                 
+290157t  E(SF)=219 MeV {I5}, t(SF)=33.4 h   - {TV}assigned to {+270}Db decay.   
+29015 c  The estimate of randomness (1984Sc13) was 6|*10{+-11}.                 
+29015 c  Theory: see Nuclear Science References.                                
+29015 c  Assignment: Daughter of {+294}117 produced in the reaction             
+29015ac  {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center                  
+290152c  (2010Og01). The evaluator suggests that the                            
+290155c  properties attributed to {+290}115 and its daughters should be         
+290156c  considered as tentative until confirmed independently.                 
+29015  XA29417 A DECAY (78 MS)                                                  
+29015  L X                             16 MS      +76-7                         
+29015 CL T$from the measured lifetime of 23 ms                                  
+29015aCL using the methods of 1984Sc13.                                         
+29015 CL $T(CALC): 1.7 S FROM  Viola-Seaborg SYSTEMATICS for QA=10.089 MeV      
+29015 CL $T(theory): 0.7 s from 2010So12.                                       
+290152 L %A AP 100$ %SF=?                                                       
+29015 cL %A$no SF decay events observed.                                        
+29015 CL $Q(|a)=10089 keV {I400} from E|a=9.95 MeV {I40}.                       
+29015 CL $Q(|a) (theory)=10370 keV from 2010So12.                               
+29015 CL J$:|W(p)=5/2-; |W(n)=5/2+ FROM 1997MO25 (theory)                       
+29015 CL $B2:-0.079 FROM 1995MO29; 0.056 FROM 2003MU15 (theory)                 
+29015X L XREF=A                                                                 
+                                                                                
+29015    29417 A DECAY (78 MS)         2010Og01                  ENSDF    201008
+29015  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+29417  P X                             78 MS                    10.96     10    
+29417 CP T$78 MS {I+372-36} from Adopted Levels using the methods of 1984Sc13.  
+29417 cP QP$10.960 MeV {I100} from E|a=10.81 MeV {I10} (2010Og01).              
+29015  N                       1.0     AP                                       
+29015  L X                             16 MS     +76-7                          
+29015 CL T$using the methods of 1984Sc13.                                       
+29015  A 10.81     10                                                           
+29015 CA E$FROM 2010Og01.                                                       
+                                                                                
+29016    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+29016  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+290162 H CUT=12-Aug-2005$                                                       
+29016  Q             7.6E3   SY2.6E3   SY1.099E4 9     2012WA38                 
+29016 CQ Note: Current evaluation has used the following Q record               
+29016  Q              8330   SY 1820   SY 11000     80 2003AU03,2004OG12        
+29016 CQ SN$ESTIMATED UNCERTAINTY=1380 KEV                                      
+29016 CQ SP$ESTIMATED UNCERTAINTY=1330 KEV                                      
+29016 CQ QA$FROM EA=10.85 MEV 8 (2004OG12,2004OGZZ). OTHER: 11.30 MEV 35        
+290162CQ (2003AU03. SYST.)                                                      
+29016 C  2002OGZX, 2003OGZZ: BY THE COMPLETE FUSION REACTION                    
+290162C  249CF(48CA,3N) AT AN ENERGY OF 265 MEV. 29016 IS THE EXPECTED          
+290163C  DAUGHTER PRODUCED BY THE |a-DECAY OF Z=118 IN THIS REACTION. SEE       
+290164C  THE 29418 Adopted Levels FOR DETAILS OF EXPERIMENTAL APPARATUS.        
+290165C  THE OPTIMAL CROSS-SECTION AND THE HIGHEST YIELD OF EVR's IS EXPECTED   
+290164C  FOR THE ABOVE CHANNEL BY THEORY (2002ZA19,2002ZA16,2002ZA01) AND       
+290165C  SYSTEMATIC EXTRAPOLATIONS FROM THE RADIOACTIVE PROPERTIES OF           
+290166C  NEIGHBORING EVEN-EVEN NUCLEI SUCH AS 29216, 28814, 28412 AND 280DS     
+290167C  CREATED WITH 244PU AND 248CM TARGETS. THE BEAM OF 48CA IONS WAS        
+290168C  PROVIDED BY THE ^JINR ^U400 CYCLOTRON AND ^EVR's WERE SEPARATED BY     
+290169C  ^DGFRS. A FISSION FRAGMENT CALIBRATION WAS PERFORMED USING SF          
+29016AC  FRAGMENTS FROM 252NO WITH A KNOWN AVERAGE ENERGY RELEASE OF ABOUT      
+29016BC  176 MEV.                                                               
+29016 C  18 SF EVENTS OBSERVED SEPARABLE INTO TWO GROUPS BY ENERGY:             
+290162C  16 EVENTS WITH AN AVERAGE TOTAL E=158 MEV (125 LE E(TOT) LE 175 MEV)   
+290163C  1 EVENT WITH E(TOT)=207 MEV AND 1 EVENT WITH E(TOT)=223 MEV.           
+290164C  CORRESPONDING LOWER LIMIT OF HALF-LIFE FOR THE GROUP OF 16 EVENTS      
+290165C  WAS ESTIMATED TO BE T(SF)>0.5 H ASCRIBED TO LONG LIVED NUCLIDES IN THE 
+290166C  CF-FM REGION VIA INCOMPLETE FUSION REACTIONS SUPPRESSED BY >5 ORDERS   
+290167C  OF MAGNITUDE IN ^DGFRS.                                                
+29016 C  THE OTHER TWO FISSION EVENTS WERE PRECEDED BY RECOIL SIGNALS ASCRIBED  
+290162C  TO ALPHA DECAY FROM A HIGHER ^A-PARENT. IN PARTICULAR, THE EVENT WITH  
+290163C  E(TOT)=207 MEV POINTS TO A STRONG CORRELATION OF ALPHA DECAYS IN A     
+290164C  ^EVR-|a1-|a2-SF SEQUENCE. THE PROBABILITY OF RANDOMNESS FOR ALL 4      
+290165C  EVENTS IN THE SEQUENCE WAS CALCULATED AS BEING LESS THAN 1.5E-06. THE  
+290166C  INSTANTANEOUS BEAM ENERGY WAS 245.6 MEV CORRESPONDING TO AN EXCITATION 
+290167C  ENERGY OF 29.8 MEV 20 IN THE COMPOUND SYSTEM {+297}118.                
+29016 C  E1=11650 KEV 60, t1=2.55 MS; E2=10710 KEV 170, t2=42.1 MS,             
+29016AC  E{-TOT}(SF)=207 MEV, t(SF)=0.52 S. THE SECOND DECAY WAS ATTRIBUTED TO  
+29016BC  29016. EXTRAPOLATED VALUE FOR QA FROM NEIGHBOURING E-E ISOTOPES        
+29016CC  IS 10.86 MEV |+ 0.17 WITH AN ESTIMATED T1/2=29 MS +140-33.             
+29016 C  FOR THE SECOND EVENT WITH E(TOT)= 223 MEV. NO |a-LIKE SIGNALS WERE     
+290162C  DETECTED DURING THE ^EVR-SF EVENT. TWO COINCIDENT FRAGMENTS SEEN WITH  
+290163C  WITH ENERGIES OF 137 MEV (FOCAL PLANE DETECTOR) AND 86 MEV             
+290164C  (SIDE DETECTOR). THE INSTANTANEOUS BEAM ENERGY WAS 246.1 MEV           
+290165C  CORRESPONDING TO A COMPOUND NUCLEUS  EXCITATION ENERGY OF              
+290166C  30.2 MEV 23.                                                           
+29016 C  2004OG07: DIRECTLY SYNTHESISED AT Dubna IN THE REACTION 245CM(48CA,3N) 
+29016aC  AT A BEAM ENERGY OF                                                    
+290162C  243 MEV (^E*=30.9-35.0 MEV) OPTIMIZED FOR THE PRODUCTION OF            
+290163C  29016 AND 29116. THE REACTION CROSS-SECTION WAS AP 1 pB AND THE        
+290164C  ACCUMULATED BEAM DOSE WAS 1.2E19 IONS. THIS MEASUREMENT INITIATED A NEW
+29016aC  SERIES OF EXPERIMENTS WHICH RESULTED IN THE SYNTHESIS OF NEW Z=116     
+290165C  ISOTOPES.  THE 48CA BEAM WAS ACCELERATED BY THE ^U400 CYCLOTRON AT     
+290166C  THE ^FLNR/^JINR. THE TYPICAL BEAM INTENSITY WAS 1.2 p|mA. THE TARGET   
+290167C  WAS ENRICHED TO 98.7%. THE ^EVR's RECOILING FROM THE TARGET WERE       
+290168C  SEPARATED BY THE ^DGFRS WITH A TRANSMISSION EFFICIENCY OF              
+290169C  35-40% FOR Z=114 AND 116 NUCLEI. ^EVR RECOILS PASSED THROUGH A TOF     
+29016AC  SYSTEM AND WERE IMPLANTED IN A SEMICONDUCTOR ARRAY. THE POSITION       
+29016BC  AVERAGED DETECTION EFFICIENCY FOR |a-DECAYS OF IMPLANTED NUCLEI WAS    
+29016CC  87% OF 4PI WITH AN ENERGY RESOLUTION OF 60-90 KEV FOR ALPHA'S ABSORBED 
+29016DC  IN THE FOCAL PLANE DETECTOR. THOSE THAT ESCAPED REGISTERED A SUMMED    
+29016EC  SIGNAL OF 140-200 KEV IN THE SIDE DETECTOR. ALL THE CORRELATED         
+29016FC  EVENTS OBSERVED IN THESE EXPERIMENTS HAD POSITION DEVIATIONS           
+29016GC  CORRESPONDING TO THE GIVEN POSITION RESOLUTIONS: 0.8-1.3 MM FOR        
+29016HC  ^EVR-|a SIGNALS AND 0.5-0.8 MM FOR ^EVR-^SF SIGNALS. TWO ^EVR-|a-SF    
+29016IC  AND ONE ^EVR-|a-a-SF EVENTS WERE SEEN ALTHOUGH TWO |a's WERE MISSED.   
+29016JC  THE ONLY |a-DECAY RECORDED FROM THE PARENT HAD: EA=10.88 MEV 8,        
+29016KC  t=0.233 MS FOLLOWING EVAPORATION. EXPERIMETERS QUOTE MEASURED          
+29016LC  EA=10.85 MEV 8, T=15 MS +26-6 FOR A TOTAL OF TWO EVENTS MEASURED TO    
+29016MC  DATE. SEE ALSO 2004OG05 AND 29316 AND 28614 Adopted Levels.            
+29016 C  OTHER: SEE ALSO 2004OG10.                                              
+29016 D  2004MO15 WHO LIST THREE EVENTS WITHOUT                                 
+29016aD  PROVIDING DETAILS.                                                     
+29016 C  2004OG12, 2004OGZZ DISCUSS                                             
+290162C  ALL ASSIGNMENTS AT LENGTH. THESE TWO PAPERS ARE IDENTICAL IN MOST      
+290163C  RESPECTS. 2004OGZZ REPORT MORE STATISTICS IN SOME CASES.               
+29016 C  THEORY: SEE Nuclear Science References.                                
+29016 C  ASSIGNMENT: 245CM(48CA,3N), E=243 MEV (2004OG07). DAUGHTER OF 29418    
+290162C  FROM 249CF(48CA,3N), E=265 MEV (2002OGZX,2003OGZZ). A TOTAL OF TWO     
+290163C  EVENTS, ONE EACH, TAKEN INTO ACCOUNT FOR HALF-LIFE ESTIMATION. 2004MO15
+290164C  NOTE THAT THEIR ASSIGNMENT OF MASS BASED ON THE ^CN  EXCITATION ENERGY 
+290165C  MAY BE OFF BY SINGLE UNIT. THE EVALUATORS CONSIDER ALL ASSIGNMENTS FOR 
+290166C  THIS DECAY CHAIN AS TENTATIVE.                                         
+29016  XA29418 A DECAY: TENTATIVE                                               
+29016  L 0            0+               15 MS     +26-6                          
+29016 CL T$FROM TWO EVENTS (2004OG07). T(CALC)=12 MS FROM Viola-Seaborg         
+290162CL SYSTEMATICS FOR QA=11.00 MEV. 2003AU02 SUGGEST 50 MS BASED ON          
+290163CL SYSTEMATICS.                                                           
+290162 L %A AP 100                                                              
+29016 CL %A$ESTIMATED FROM 2 EVENTS FOR HALF-LIFE CALCULATIONS/2 |a-DECAYS      
+29016 CL $B2(THEORY): 0.072 FROM 1995MO29; 0.076 FROM 2003MU15; 0.003 FROM      
+290162CL 2005GAZX                                                               
+29016X L XREF=A                                                                 
+                                                                                
+29016    29418 A DECAY: TENTATIVE      2002OGZX,2003OGZZ,2004OG1205NDS    200512
+29016  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+290162 H CUT=12-Aug-2005$                                                       
+29016 C  SEE 29418 Adopted Levels FOR DETAILS.                                  
+29418  P 0.0         0+                1.8 MS    +84-8           11810    60    
+29418 CP T$FROM ONE EVENT (2002OGZX,2003OGZZ. DT AT 68% CONFIDENCE LEVEL).      
+294182CP 1.8 MS +750-13 (2004OG12) IF 95% CONFIDENCE LEVEL USED.                
+29418 CP QP$FROM 2002OG10 AND 2004OG12                                          
+29016  N                       1.0     AP                                       
+29016 CN BR$2004MO15 INDICATE TWO EVENTS WITH EA=11.64 MEV AND E(SF)=213 MEV BUT
+290162CN GIVE NO ADDITIONAL DETAILS.                                            
+29016  L 0            0+               15 MS     +26-6                          
+29016 CL E,J,T$FROM THE Adopted Levels                                          
+29016  A 11.65E+3  6                                                            
+                                                                                

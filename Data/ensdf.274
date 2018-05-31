@@ -1,0 +1,632 @@
+274      COMMENTS                                                05NDS    200512
+274    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+274  2 H CUT=12-Aug-2005$                                                       
+274   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+274   C  AUTH$M. GUPTA(a)                                                       
+274   C  INST$National Nuclear Data Center                                      
+274  #C       Brookhaven National Laboratory                                    
+274  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+274  #C                                                                         
+274   c  INST$Manipal Academy of Higher Education,                              
+274  #c  Manipal, KA 576 104, INDIA                                             
+274  #c  e-mail: mohini.gupta@manipal.edu                                       
+274   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+274  #c  Manipal, KA 576 104, INDIA                                             
+274   C  AUTH$THOMAS W. BURROWS                                                 
+274   C  INST$National Nuclear Data Center                                      
+274  #C       Brookhaven National Laboratory                                    
+274  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+274  #C       e-mail: burrows@bnl.gov                                           
+274   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+274  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+274  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+274  4C  RECEIVED BY August 12, 2005.                                           
+274   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+274  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+274  3C  DATE WERE CONSIDERED.                                                  
+274   C  CIT$NDS 106, 251 (2005)                                                
+274   c  COMM$                                                                  
+274  @c  {UAcronyms and notations used in this evaluation:}                     
+274  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+274  #c  BGS Berkeley Gas Filled Separator                                      
+274  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+274  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+274  #c  EVR Evaporation Residue                                                
+274  #c  GARIS Gas-filled Recoil Ion Separator                                  
+274  #c  RILAC RIKEN Linear Accelerator facility                                
+274  #c  SHIP Separator for Heavy Ion reaction Products                         
+274  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+274  2c  and detection of previous EVR or |a                                    
+274  #c  TKE Total Kinetic Energy                                               
+274  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+274  2c  Reactions, JINR, Dubna, Russia                                         
+274  #c                                                                         
+274  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+274  2c  (Z=110-112,114,116,118):}                                              
+274  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+274  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+274  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+274  5c  the evaluators have relied on the judgement of the JWP in              
+274  6c  determining the strength of the arguments made in the various papers.  
+274  7c  In the cases where there are new data or where the JWP has not yet     
+274  8c  assigned a priority of discovery for an element, the evaluators have   
+274  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+274  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+274  Bc  the data.                                                              
+274  #c                                                                         
+274  #c  In the above context, with respect to Z=112 and the collective works of
+274  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+274  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+274  4c  references therein.                                                    
+274  #c                                                                         
+274  @c                                                                         
+274  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+274  2c  discovery of an element and not a specific nuclide. The purpose of     
+274  3c  this evaluation is to present the "best" set of nuclear properties     
+274  4c  for those nuclides reported between A=266 and A=294 based on data      
+274  5c  currently available and {Bnot} to establish a priority of discovery for
+274  6c  any element.                                                           
+274  !c                                                                         
+274  #c  It is well known that alpha decay chains seen                          
+274  ac  in cold fusion reactions tend to terminate in known mass regions.      
+274  2c  The method of |a-|a or |a-SF correlations for identifying the          
+274  3c  parent has therefore been used with confidence.                        
+274  3c  Experiments carried out with hot fusion reactions,                     
+274  4c  result in alpha decay chains beginning and ending with hitherto unknown
+274  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+274  6c  in an attempt to identify the parent and daughters. The latter method  
+274  7c  is not as accurate as the first since a greater probability of         
+274  8c  randomness is inherant to the technique. As such, independent          
+274  9c  verification and confirmation of the data gains added importance.      
+274  ac  These facts should be taken into account when considering the suggested
+274  ac  properties of nuclei created following a hot fusion reaction as for    
+274  ac  the synthesis of Z=114 and above.                                      
+274  #c                                                                         
+274  #c  Finally, with regard to the some of the                                
+274  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+274  ac  2004Mo15 have pointed out that mass assignments which are based        
+274  ac  on the excitation energy of the compound nucleus may be off by a       
+274  ac  single unit. This may also be due in part to uncertainties in the beam 
+274  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+274  ac  Once again, collateral information is required to establish the charge 
+274  ac  and approximate A of the nucleus.                                      
+274  #c                                                                         
+274  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+274  2c  have not been adopted, the evaluators have used the approximations in  
+274  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+274  4c  exponential distribution to estimate the standard uncertainty (68%     
+274  5c  confidence level) in T{-1/2}:                                          
+274  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+274  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+274  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+274  9c  of events. For one and two events, the exact values given in Table 1   
+274  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+274  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+274  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+274  #c                                                                         
+274  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+274  ac  Calculations of T{-1/2}                                                
+274  2c  performed in the present evaluation used the relationship:             
+274  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+274  #c  where Z refers to the atomic                                           
+274  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+274  6c  and:                                                                   
+274  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+274  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+274  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+274  3c  parameter set used in these evaluations. We note that these systematics
+274  6c  are only an indication of |a-decay half-lives from the ground state    
+274  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+274  8c  the element under consideration. The use of this formalism in the      
+274  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+274  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+274  ac  estimate a Hindrance Factor (HF) for a given transition,               
+274  ac  attributable to the odd neutron or proton. This quantity is            
+274  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+274  ac  The HF so computed is an approximate indication.                       
+274  #c                                                                         
+274  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+274  2c  References.                                                            
+274  #c                                                                         
+274  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+274  2c  trans-fermium elements is the manifestation of shell effects in the    
+274  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+274  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+274  5c  important as QF is expected to play a greater role on the hindrance of 
+274  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+274  7c  the "island" of stability. An understanding of this mechanism is       
+274  8c  necessary to establishing the most favorable reactions for producing   
+274  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+274  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+274  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+274  Cc  to both the mass asymmetry in the entrance channel as well as the      
+274  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+274  Ec  deformations of target/projectile nuclei and their relative orientation
+274  Fc  to each other in the process of CN formation, may also play an         
+274  Gc  important role in reducing the probability of forming a compound       
+274  Hc  system. In the face of extremely low yields and a steep decrease of    
+274  Ic  production cross-sections already in evidence with available stable    
+274  Jc  beam-target combinations, the influence of all possible mitigating     
+274  Kc  factors must be accurately determined in order to                      
+274  Lc  optimize the probability of successful fusion. The formation of a      
+274  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+274  Nc  survives QF going on to form a compact compound system which must then 
+274  Oc  face competition from fission.                                         
+274  #c                                                                         
+274  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+274  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+274  3c  in collaboration with investigators from Belgium, France, and Italy.   
+274  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+274  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+274  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+274  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+274  8c  spectrometer "Corset". These experiments were inspired by              
+274  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+274  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+274  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+274  Cc  such experiments are planned or underway to investigate the various    
+274  Dc  effects.                                                               
+274  #c                                                                         
+274  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+274  2c  and references cited in these papers.                                  
+274  #c                                                                         
+274  !c  {UExperimental Estimates of Fission Barriers:}                         
+274  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+274  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+274  4c  the experimentally derived barrier heights are respectively:           
+274  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+274  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+274  #c                                                                         
+274  #c  2002It04, in an analysis of available experimental data, derive the    
+274  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+274  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+274  #c                                                                         
+274  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+274  2c  Two possibilities have been proposed in an attempt to understand the   
+274  ac  the {+289}114, {+287}114 observations:                                 
+274  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+274  ac  belongs to a rare decay mode originating from                          
+274  4c  an isomeric state, or that                                             
+274  #c  (ii) the sequence may actually originate from                          
+274  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+274  7c  Levels).                                                               
+274  #c  The evaluators believe that further investigations                     
+274  ac  are required to support either hypothesis.                             
+274  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+274  9c  unobserved. Also, T{-1/2}                                              
+274  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+274  ac  is much larger than that observed by 2004Og12 and                      
+274  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+274  ac  agreement. Such inconsistencies need to be better understood.          
+274  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+274  2c  respects. 2004OgZZ report more statistics in some cases.               
+274  #c                                                                         
+274  @c  {UOther comments on {+289}114 and {+283}112}                           
+274  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+274  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+274  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+274  4c  classified the evidence as being "very weak",                          
+274  5c  with no convincing supporting arguments for the possible production of 
+274  6c  SHE. We make the following general observations:                       
+274  #c                                                                         
+274  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+274  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+274  ac  by the Dubna-JINR collaborations for all isotopes of                   
+274  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+274  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+274  ac  {+287}114 (15 events) and {+286}114                                    
+274  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+274  ac  the |?34 min decay sequence postulated as originating from             
+274  5c  a rare decay mode of {+289}114, does not seem very likely.             
+274  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+274  7c  {+289}114 decays observed are genetically linked                       
+274  8c  and not the result of a background decay sequence. These               
+274  BC  discrepancies have to be resolved, along with some others.             
+274  #c                                                                         
+274  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+274  ac  (see also 2004Og02) with VASSILISSA, have not                          
+274  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+274  3c  lack of internal consistency through the collective measurements       
+274  ac  and the data are inconclusive as pointed                               
+274  4c  out by experimenters (reasons given in each paper). Decay properties of
+274  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+274  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+274  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+274  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+274  8c  by them. See {+283}112 Adopted Levels for details.                     
+274  #c                                                                         
+274  #c  These observations by the experimenters are consistent with the        
+274  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+274  3c  of the various arguments put                                           
+274  3c  forward therein, the following comments may be made here:              
+274  #c                                                                         
+274  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+274  #c  190 MeV and 212 MeV (1999Og05)                                         
+274  #c  65 MeV and 170 MeV  (2004Og02)                                         
+274  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+274  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+274  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+274  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+274  4c  plane and side detectors). With one exception, all the energies        
+274  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+274  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+274  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+274  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+274  9c  the second experiment) after EVR implantation resulted in              
+274  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+274  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+274  #c                                                                         
+274  #c  2. 2000Ar03 statement that correlations  between the fission events    
+274  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+274  3c  'backward' analysis of the data was reported in                        
+274  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+274  5c  evidently in contradiction with those made by the                      
+274  6c  experimenters. A more complete analysis would be beneficial.           
+274  #c                                                                         
+274  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+274  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+274  ac  quoted from an earlier                                                 
+274  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+274  4c  assignments. The proposed assignment of Z=114 to both parents may      
+274  5c  be incorrect taking into account new data which do not support         
+274  6c  these observations and for reasons already mentioned.                  
+274  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+274  !c                                                                         
+274  #c  CONCLUSIONS:                                                           
+274  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+274  ac  are not conclusive. Overall, the                                       
+274  2c  results from the VASSILISSA experiments are at variance with data from 
+274  3c  experiments using DGFRS. The latter investigations are done using      
+274  4c  more stringent methods, and have greater statistics, offering better   
+274  5c  internal consistency. Some obvious discrepancies and other             
+274  ac  inconsistencies between the two sets of                                
+274  6c  data remain and need to be resolved or adequately explained as does the
+274  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+274  8c  by 2005Gr19 and 2002Lo11.                                              
+274  #c                                                                         
+274  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+274  2c  from earlier work are not reproduced to date.                          
+274  #c                                                                         
+274  @c  {UTheoretical Calculations:}                                           
+274  @c  1995Mo29: |b2 based on the finite-range droplet                        
+274  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+274  3c  with "global" parameters.                                              
+274  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+274  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+274  3c  J|p simultaneously obtained with the calculated masses and             
+274  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+274  5c  A=239.                                                                 
+274  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+274  2c  model for the macroscopic part and the Strutinski shell correction,    
+274  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+274  4c  part.                                                                  
+274  @c  2005GaZX: |b2 based on self consistent calculations                    
+274  2c  within the framework of the Relativistic Mean Field (RMF)              
+274  3c  theory with very few "globally" fit parameters and employing the       
+274  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+274  5c  sets in use exhibit similar systematics, these results are expected to 
+274  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+274  #c                                                                         
+274  @c  {UOther Measurements:}                                                 
+274  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+274  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+274  3c  (Blocking technique in single crystals).                               
+274  #c                                                                         
+274   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+274  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+274  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+274  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+274  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+274  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+274  7c  additional information that they readily provided during this          
+274  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+274  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+274  Ac  Singh for helpful discussions. We thank A. Marinov                     
+274  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+274  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+274  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+274  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+274  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+274  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+274  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+274  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+274  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+274  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+274  Lc  insights, and suggestions until her untimely demise are hereby         
+274  Mc  acknowledged.                                                          
+274   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+274  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+274  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+274      REFERENCES                                                       200512
+274    R 1966VI04 JOUR JINCA 28 741                                             
+274    R 1984SC13 JOUR ZPAAD 316 19                                             
+274    R 1987MU15 JOUR ZPAAD 328 49                                             
+274    R 1992BA77 JOUR PPNPD 29 453                                             
+274    R 1995MO29 JOUR ADNDA 59 185                                             
+274    R 1997MO25 JOUR ADNDA 66 131                                             
+274    R 1998DA24 JOUR ARNUA 48 401                                             
+274    R 1998HO13 JOUR RPPHA 61 639                                             
+274    R 1999GRZM REPT GSI-Nachrichten 1-99,P5,Gross                            
+274    R 1999HOZV REPT GSI 99-1,P7,Hofmann                                      
+274    R 1999OG05 JOUR ZAANE 5 63                                               
+274    R 1999OG07 JOUR NATUA 400 242                                            
+274    R 1999OG10 JOUR PRLTA 83 3154                                            
+274    R 2000AR03 JOUR ZAANE 7 23                                               
+274    R 2000FI12 JOUR NDSBA 90 391                                             
+274    R 2000ZL02 JOUR ZAANE 8 81                                               
+274    R 2001AK11 JOUR NDSBA 94 131                                             
+274    R 2001KA70 JOUR PACHA 73 959                                             
+274    R 2002HI20 JOUR PRLTA 89 282701                                          
+274    R 2002IT04 JOUR PRVCA 65 044602                                          
+274    R 2002LO11 JOUR PPNPD 48 123                                             
+274    R 2002LO15 JOUR PRVCA 66 044617                                          
+274    R 2003AU03 JOUR NUPAB 729 337                                            
+274    R 2003KA71 JOUR PACHA 75 1601                                            
+274    R 2003MU15 JOUR YAFIA 66 1051                                            
+274    R 2003MU26 JOUR APOBB 34 2073                                            
+274    R 2004DA11 JOUR NUPAB 734 148                                            
+274    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+274    R 2004IT05 JOUR NUPAB 734 136                                            
+274    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+274    R 2004MO15 JOUR NUPAB 734 188                                            
+274    R 2004MO42 JOUR JUPSA 73 2593                                            
+274    R 2004OG02 JOUR ZAANE 19 3                                               
+274    R 2004OG03 JOUR PRVCA 69 021601                                          
+274    R 2004OG12 JOUR PRVCA 70 064609                                          
+274    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+274    R 2004PRZW PREPRINT Prokhorova                                           
+274    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+274    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+274    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+274BH    COMMENTS                                                ENSDF    201008
+274BH  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+274BH C  TITL$NUCLEAR DATA SHEETS FOR 274BH                                     
+274BH c  AUTH$M. GUPTA                                                          
+274BH c  INST$Manipal University,                                               
+274BH#c       Manipal, KA 576 104, INDIA                                        
+274BH c  ABST$The ENSDF file corresponding to Nuclear Data Sheets for A=266-294 
+274BH2c  (2005Gu33) has been updated to include the recently reported           
+274BH3c  production of {+294}117 and its daughters by 2010Og01.                 
+274BH#c                                                                         
+274BH#c  See 2005Gu33 for acronyms and notations and evaluation methodology     
+274BHxc  used                                                                   
+274BHxc  in this evaluation. The purpose of this evaluation is to present the   
+274BH3c  "best" set of nuclear properties for those nuclides reported between   
+274BH4c  A=266 and A=294 based on data currently available and {Bnot} to        
+274BH5c  establish a priority of discovery for any element.                     
+274BH c  CUT$August 1, 2010. All references relevant to the production of       
+274BH2c  {+274}Bh or its daughters entered into the Nuclear Science References  
+274BH3c  File and papers and private communications received by this date were  
+274BHxc  considered.                                                            
+274BH c  ACKN$The evaluator is very grateful to J. Choquette and B. Singh,      
+274BH2c  McMaster University for compiling these data into XUNDL.               
+274BH C  CIT$ENSDF                                                              
+                                                                                
+274BH    ADOPTED LEVELS: Tentative                               ENSDF    201008
+274BH  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+274BH  Q 2.E2      SY5.0E3   SY3.6E3   SY8.93E3  5     2012WA38                 
+274BH CQ Note: Current evaluation has used the following Q record               
+274BH  Q -644      SY 5443   SY 3358   SY  8500     SY 2009AuZZ                 
+274BH CQ Q-$ESTIMATED UNCERTAINTY=1014 KEV                                      
+274BH CQ SN$ESTIMATED UNCERTAINTY=1139 KEV                                      
+274BH CQ SP$ESTIMATED UNCERTAINTY=1023 KEV                                      
+274BH CQ QA$ESTIMATED UNCERTAINTY=300 KEV.                                      
+274BHaCQ OTHERS:8930 keV {I100} from E|a=8.80 MeV {I10} (2010Og01).             
+274BH c  2010Og01: This nuclide produced as the |a-decay descendent of          
+274BHac  {+294}117 in                                                           
+274BHac  the reaction {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center.    
+274BHac  This corresponded to an excitation energy of 35 MeV                    
+274BHac  for the 3n evaporation channel.                                        
+274BH2c  All experiments were carried out at Dubna, Russia, in collaboration    
+274BH3c  with RIAR (Russia) and LLNL; ORNL; University of Nevada and Vanderbilt 
+274BHac  University in USA, for a period of 70 days from July 27 - October 23,  
+274BHac  2009. See adopted levels for {+294}117 for experimental details.       
+274BHac  A single |a decay chain was detected and attributed to the parent      
+274BHac  nucleus.                                                               
+274BH t  {TV} The details are provided below:                                   
+274BH3t  E{-|a1}=10.81 MeV {I10}, t{-1}=112 ms                                  
+274BH+t       - {TV}assigned to {+294}117 decay                                 
+274BH4t  E{-|a2}= 9.95 MeV {I40}, t{-2}=0.023 s                                 
+274BH+t      - {TV}assigned to {+290}115 decay                                  
+274BH5t  E{-|a3}= 9.63 MeV {I10}, t{-3}=28.3 s                                  
+274BH+t       - {TV}assigned to {+286}113 decay                                 
+274BH6t  E{-|a4}= 9.00 MeV {I10}, t{-4}=0.74 s                                  
+274BH+t       - {TV}assigned to {+282}Rg decay                                  
+274BH5t  E{-|a5}= 9.55 MeV {I19}, t{-5}=11.0 s                                  
+274BH+t       - {TV}assigned to {+278}Mt decay                                  
+274BH6t  E{-|a6}= 8.80 MeV {I10}, t{-6}=1.3 m                                   
+274BH+t        - {TV}assigned to {+274}Bh decay                                 
+274BH7t  E(SF)=219 MeV {I5}, t(SF)=33.4 h   - {TV}assigned to {+270}Db decay.   
+274BH c  The estimate of randomness (1984Sc13) was 6|*10{+-11}.                 
+274BH c  Theory: see Nuclear Science References.                                
+274BH c  Assignment: Descendent of {+294}117 produced in the reaction           
+274BHac  {+249}Bk({+48}Ca,3n), E(Lab)=247 MeV at target center                  
+274BH2c  (2010Og01). The evaluator suggests that the                            
+274BH5c  properties attributed to {+274}Bh and its daughters should be          
+274BH6c  considered as tentative until confirmed independently.                 
+274BH  XA278MT A DECAY (7.6 S)                                                  
+274BH  L X                             54 S                                     
+274BH CL T$54 S {I+259-25} from the measured lifetime of 78 s                   
+274BHaCL using the methods of 1984Sc13.                                         
+274BH CL $T(CALC): 13.73 S FROM  Viola-Seaborg SYSTEMATICS for QA=8.930 MeV.    
+274BH CL $T(theory): 210 s from 2010So12.                                       
+274BH2 L %A AP 100$ %SF=?                                                       
+274BH cL %A$no SF decay events observed.                                        
+274BH CL $Q(|a)=8930 keV {I100} from E|a=8.80 MeV {I10}.                        
+274BH CL $Q(|a)(theory)=8600 keV from 2010So12.                                 
+274BH CL J$:|W(p)=1/2-; |W(n)=3/2+ FROM 1997MO25 (theory)                       
+274BH CL $B2:0.192 FROM 1995MO29;0.214 FROM 2003MU26 (theory)                   
+274BHX L XREF=A                                                                 
+                                                                                
+274BH    278MT A DECAY (7.6 S)         2010Og01                  ENSDF    201008
+274BH  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+278MT  P X                             7.6 S                    9.689           
+278MT cP T$7.6 s {I+365-35} from Adopted Levels using the methods of 1984Sc13.  
+278MT CP QP$9.689 MeV {I190} from E|a=9.55 MeV {I19} (2010Og01).                
+274BH  N                         1     AP                                       
+274BH  L X                             54 S                                     
+274BH CL T$54 S {I+259-25} using the methods of 1984Sc13.                       
+274BH  A 9.55      19                                                           
+274BH CA E$FROM 2010Og01.                                                       
+                                                                                
+274MT    COMMENTS                                                ENSDF    200711
+274MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+274MT C  TITL$ENSDF UPDATE FOR A=266-294                                        
+274MT C  AUTH$M. GUPTA                                                          
+274MT c  INST$Manipal University,                                               
+274MT#c  Manipal, KA 576 104, INDIA                                             
+274MT C  AUTH$THOMAS W. BURROWS                                                 
+274MT C  INST$National Nuclear Data Center                                      
+274MT#C       Brookhaven National Laboratory                                    
+274MT#C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+274MT C  ABST$THE ENSDF FILE CORRESPONDING TO Nuclear Data Sheets FOR A=266-294 
+274MT2C  (2005GU33) HAS BEEN UPDATED TO INCLUDE THE RECENTLY REPORTED           
+274MT3C  PRODUCTION OF 28213 AND ITS DAUGHTERS BY 2007OG02 AND 2007OG01.        
+274MT#C                                                                         
+274MT#C  SEE 2005GU33 FOR ACRONYMS AND NOTATIONS AND EVALUATION METHODOLOGY USED
+274MT2C  IN THIS EVALUATION. THE PURPOSE OF THIS EVALUATION IS TO PRESENT THE   
+274MT3C  "best" SET OF NUCLEAR PROPERTIES FOR THOSE NUCLIDES REPORTED BETWEEN   
+274MT4C  A=266 AND A=294 BASED ON DATA CURRENTLY AVAILABLE AND {Bnot} TO        
+274MT5C  ESTABLISH A PRIORITY OF DISCOVERY FOR ANY ELEMENT.                     
+274MT C  CUT$November 5, 2007. ALL REFERENCES RELEVANT TO THE PRODUCTION OF 2821
+274MT2C  OR ITS DAUGHTERS ENTERED INTO THE Nuclear Science References File AND  
+274MT3C  PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS DATE WERE CONSIDERED
+274MT c  ACKN$The evaluators are very grateful to S. Geraedts and B. Singh,     
+274MT2c  McMaster University for compiling these data into XUNDL.               
+274MT C  CIT$ENSDF                                                              
+274MT C  FUND$PART OF THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.  
+274MT2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886                
+                                                                                
+274MT    ADOPTED LEVELS: Tentative                               ENSDF    200711
+274MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+274MT  Q -2.0E3    SY5.4E3   SY2.1E3   SY1.051E4 SY    2012WA38                 
+274MT CQ Note: Current evaluation has used the following Q record               
+274MT  Q -1860     SY 5670   SY 2160   SY 9905   10    2007OG02,2003AU03        
+274MT CQ Q-$ESTIMATED UNCERTAINTY=740 KEV (2003AU03)                            
+274MT CQ SN$ESTIMATED UNCERTAINTY=760 KEV (2003AU03)                            
+274MT CQ SP$ESTIMATED UNCERTAINTY=1000 KEV (2003AU03)                           
+274MT CQ QA$FROM EA=9.76 MEV 10 (2007OG02). OTHER: 10.50 MEV 30 (2003AU03;      
+274MT2CQ SYSTEMATICS)                                                           
+274MT C  2007OG02: GRANDDAUGHTER OF 28213 PRODUCED BY 237NP(48CA,3N),           
+274MT2C  E(Lab)=244 MEV AT TARGET CENTER. EXPERIMENTS WERE DONE AT DUBNA,       
+274MT3C  RUSSIA, IN COLLABORATION WITH ^LLNL, USA THROUGH JUNE-JULY 2006. SEE   
+274MT4C  28213 Adopted Levels FOR EXPERIMENTAL DETAILS. 2007OG01 GIVE           
+274MT5C  PRELIMINARY RESULTS FOR THIS STUDY. THE THIRD EVENT IN THE DECAY       
+274MT6C  CHAIN IS ASSIGNED TO 274MT AND WAS MEASURED UNDER BEAM-OFF CONDITIONS. 
+274MT t  {TV}Details of two decay chains are provided, one with four successive 
+274MT+t   {TV}|a decays followed by SF decay, and another with three successive 
+274MT+t   {TV}|a decays.                                                        
+274MT2t  {UFirst decay chain: EVR at 13.99 MeV  (Strip 6)}                      
+274MT3t  E{-|a1}=10.62 MeV {I8}, t{-1}=88.9 ms                                  
+274MT+t       - {TV}assigned to {+282}113 decay                                 
+274MT4t  E{-|a2}=10.69 MeV {I8}, t{-2}=6.2 ms                                   
+274MT+t        - {TV}assigned to {+278}Rg decay                                 
+274MT5t  E{-|a3}=10.0 MeV {I11}, t{-3}=472.6 ms                                 
+274MT+t      - {TV}assigned to {+274}Mt decay                                   
+274MT6t  E{-|a4}=8.93 MeV {I8},  t{-4}=87.98 s                                  
+274MT+t       - {TV}assigned to {+270}Bh decay                                  
+274MT7t  E(SF)=174 MeV, t(SF)=31.74 min - {TV}assigned to {+266}Db decay.       
+274MT8t  {TV}Experimenters note that the SF events could also be from           
+274MT+t   {TV}{+266}Rf SF decay, if {+266}Db decays by |e decay. The |a decay   
+274MT+t   {TV}mode  of {+266}Db is also possible.                               
+274MT9t  {U{TV}Second decay chain: EVR at 13.11 MeV (Strip 10)}                 
+274MTAt  E{-|a1}=10.64 MeV {I10}, t{-1}=122.7 ms                                
+274MT+t    - {TV}assigned to {+282}113 decay                                    
+274MTBt  E{-|a2}=10.80 MeV {I76}, t{-2}=5.8 ms                                  
+274MT+t      - {TV}assigned to {+278}Rg decay                                   
+274MTCt  E{-|a3}=9.76 MeV {I10},  t{-3}=810.1 ms                                
+274MT+t    - {TV}assigned to {+274}Mt decay                                     
+274MTDt  E{-|a4}=8.52 MeV {I10},  t{-4}=97.02 s                                 
+274MT+t     - {TV}assigned to {+270}Bh decay                                    
+274MT C  THE THIRD EVENT IN THE FIRST DECAY CHAIN (STRIP 6) WAS REGISTERED ONLY 
+274MT2C  BY THE A SIDE DETECTOR WITHOUT THE ASSOCIATED SIGNAL FROM THE FOCAL    
+274MT3C  PLANE DETECTOR. THE UNCERTAINTY ON THE ENERGY MEASUREMENT FOR THIS     
+274MT4C  EVENT IS THUS 1.08 MEV OR ROUGHLY 11% OF THE MEASURED VALUE. IN THE    
+274MT5C  SECOND DECAY CHAIN, THE THIRD EVENT WAS RECORDED ONLY IN THE FOCAL     
+274MT6C  PLANE DETECTOR WITHOUT AN APPRECIABLE INCREASE IN THE UNCERTAINTY ON   
+274MT7C  MEASUREMENT.                                                           
+274MT C  THEORY: SEE Nuclear Science References.                                
+274MT C  ASSIGNMENT: GRANDDAUGHTER OF 28213 PRODUCED BY 237NP(48CA,3N),         
+274MT2C  E(Lab)=244 MEV AT TARGET CENTER (2007OG02, 2007OG01). WHILE THE TWO    
+274MT3C  MEASURED ALPHA ENERGIES FOR 28213 DECAY MAY BE TAKEN AS SATISFYING THE 
+274MT4C  CRITERIA FOR REDUNDANCY AND BOTH HALF-LIVES AGREE WITHIN THE ASSOCIATED
+274MT5C  UNCERTAINTIES, THE EVALUATORS NOTE THAT THE PROPERTIES ATTRIBUTED TO   
+274MT6C  28213 AND ITS DAUGHTERS SHOULD BE CONSIDERED AS TENTATIVE UNTIL        
+274MT7C  CONFIRMED INDEPENDENTLY.                                               
+274MT  L X                             0.45 S    +81-18                        ?
+274MT CL J$|W(p)=11/2+; |W(n)=3/2+ FROM 1997MO25 (theory)                       
+274MT CL T$ FROM TWO EVENTS USING THE METHODS OF 1984SC13. OTHER: 0.079 S FROM  
+274MT2CL Viola-Seaborg SYSTEMATICS ASSUMING QA=9.905 MeV                        
+274MT2 L %A AP 100$ %SF=?                                                       
+274MT CL %A$NO SF DECAY EVENTS OBSERVED.                                        
+274MT CL $B2: 0.222  FROM 1995MO29; 0.218 FROM 2003MU26 (THEORY)                
+                                                                                
+274MT    278RG A DECAY: Tentative      2007OG02,2007OG01         ENSDF    200711
+274MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+274MT C  ALL DATA ARE FROM 2007OG02. SEE 28213 Adopted Levels FOR DETAILS       
+278RG  P X                             4.2 MS    +76-17         9.90E+3   10    
+274MT  N                       1.0     AP                                       
+274MT CN BR$NO SF DECAY EVENTS OBSERVED.                                        
+274MT  L X                             0.45 S    +81-18                        ?
+274MT2 L %A AP 100$ %SF=?                                                       
+274MT  A 9.76E+3   10                                                          ?
+                                                                                
+274RG    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+274RG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+274RG2 H CUT=12-Aug-2005$                                                       
+274RG  Q             6.1E3   SY1.06E3  SY1.148E4 5     2012WA38                 
+274RG CQ Note: Current evaluation has used the following Q record               
+274RG  Q             6180    SY 910    SY11.32E3  7    2003AU03,2004MO42        
+274RG CQ SN$ESTIMATED UNCERTAINTY=860 KEV                                       
+274RG CQ SP$ESTIMATED UNCERTAINTY=630 KEV                                       
+274RG CQ QA$FROM EA=11.15 MEV 7 (2004MO42). OTHER: 11.6 MEV 3 (2003AU03. SYST.) 
+274RG C  2004MO42: COLD FUSION EXPERIMENT DONE AT ^RIKEN IN COLLABORATION       
+274RG2C  WITH Chinese SCIENTISTS IN 2003/2004. REACTION: 209BI(70ZN,N) AT A     
+274RG3C  BEAM ENERGY OF 352.6 MEV PROVIDED BY ^RILAC CORRESPONDING TO AN ENERGY 
+274RG4C  AT TARGET CENTER OF 349 MEV. THE ABSOLUTE ACCURACY OF THE BEAM ENERGY  
+274RG5C  WAS |+0.6 MEV. THE PRODUCTION CROSS-SECTION WAS 55 fb {I+150-45}. SEE  
+274RG6C  27813 Adopted Levels FOR EXPERIMENTAL DETAILS.                         
+274RG t    {TV}Event #1: Energy of the evaporation residue=36.75 MeV            
+274RG2t       E{-|a1}=11.68 MeV {I4}   t{-1}=344 |ms    -   assigned to         
+274RG+t   {+278}113                                                             
+274RG3t       E{-|a2}=11.15 MeV {I7}   t{-2}=9.26 ms   -   assigned to {+274}Rg 
+274RG4t       E{-|a3}=10.03 MeV {I7}   t{-3}=7.16 ms   -   assigned to {+270}Mt 
+274RG5t       E{-|a4}= 9.08 MeV {I4}   t{-4}=2.47 s    -   assigned to {+266}Bh 
+274RG6t       E(SF)=204.1 MeV   t(SF)=40.9 s -   assigned to {+262}Db           
+274RG C  OTHER: SEE 1998HO13, 1999GRZM, AND 1999HOZV FOR EXPERIMENTS PRODUCING  
+274RG2C  Z=113.                                                                 
+274RG C  THEORY: SEE Nuclear Science References                                 
+274RG C  ASSIGNMENTS: THE ASSIGNMENTS ARE THE {IMOST PROBABLE} ONES FOR THE     
+274RG2C  REACTION. ALSO, THE IDENTIFICATION OF THE PARENT AS 27813, ALPHA-DECAY 
+274RG3C  DAUGHTER 274RG, AND GRAND-DAUGHTER 270MT, ARE ALL RENDERED PLAUSIBLE   
+274RG4C  FOLLOWING A CONSISTENT COMPARISON OF THE 4{+th} AND 5{+th} EVENTS WITH 
+274RG5C  KNOWN DESCENDENTS. THE OBSERVATION OF EACH ISOTOPE IN THE SEQUENCE     
+274RG6C  SHOULD BE CONSIDERED AS TENTATIVE AND PENDING CONFIRMATION.            
+274RG  XA27813 A DECAY: TENTATIVE                                               
+274RG  L X                                                                     ?
+274RG CL J$|W(p)=3/2-; |W(n)=13/2- FROM 1997MO25 (THEORY)                       
+274RG2 L T=6.4 MS +307-29                                                       
+274RG CL T$FROM |Dt=9.26 MS; UNCERTAINTY ESTIMATED BY THE EVALUATORS.           
+274RG2CL T(CALC)=79 US FROM Viola-Seaborg SYSTEMATICS FOR QA=11.315 MEV.        
+274RG3 L %A AP 100                                                              
+274RG CL %A$ASSUMED FROM 1/1 EVENT                                              
+274RG CL $B2(THEORY): 0.222 FROM 1995MO29; 0.226 FROM 2003MU15; 0.222 FROM      
+274RG2CL 2005GAZX                                                               
+274RGX L XREF=A                                                                 
+                                                                                
+274RG    27813 A DECAY: TENTATIVE      2004MO42                  05NDS    200512
+274RG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+274RG2 H CUT=12-Aug-2005$                                                       
+274RG C  SEE 27813 Adopted Levels FOR DETAILS                                   
+27813  P X                             0.2 MS    +12-2          11.85E3   4     
+27813 CP T$0.24 MS +114-11 (2004MO42)                                           
+27813 CP QP$FROM 2004MO42                                                       
+274RG  N                       1.0     AP                                       
+274RG  L X                                                                     ?
+274RG2 L T=6.4 MS +307-29                                                       
+274RG CL E,T$FROM THE Adopted Levels                                            
+274RG  A 11.68E3   4                                                           ?
+274RG CA E$FROM 2004MO42                                                        
+                                                                                

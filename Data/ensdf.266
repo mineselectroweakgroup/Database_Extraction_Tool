@@ -1,0 +1,1050 @@
+266      COMMENTS                                                05NDS    200512
+266    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+266  2 H CUT=12-Aug-2005$                                                       
+266   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+266   C  AUTH$M. GUPTA(a)                                                       
+266   C  INST$National Nuclear Data Center                                      
+266  #C       Brookhaven National Laboratory                                    
+266  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+266  #C                                                                         
+266   c  INST$Manipal Academy of Higher Education,                              
+266  #c  Manipal, KA 576 104, INDIA                                             
+266  #c  e-mail: mohini.gupta@manipal.edu                                       
+266   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+266  #c  Manipal, KA 576 104, INDIA                                             
+266   C  AUTH$THOMAS W. BURROWS                                                 
+266   C  INST$National Nuclear Data Center                                      
+266  #C       Brookhaven National Laboratory                                    
+266  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+266  #C       e-mail: burrows@bnl.gov                                           
+266   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+266  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+266  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+266  4C  RECEIVED BY August 12, 2005.                                           
+266   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+266  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+266  3C  DATE WERE CONSIDERED.                                                  
+266   C  CIT$NDS 106, 251 (2005)                                                
+266   c  COMM$                                                                  
+266  @c  {UAcronyms and notations used in this evaluation:}                     
+266  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+266  #c  BGS Berkeley Gas Filled Separator                                      
+266  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+266  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+266  #c  EVR Evaporation Residue                                                
+266  #c  GARIS Gas-filled Recoil Ion Separator                                  
+266  #c  RILAC RIKEN Linear Accelerator facility                                
+266  #c  SHIP Separator for Heavy Ion reaction Products                         
+266  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+266  2c  and detection of previous EVR or |a                                    
+266  #c  TKE Total Kinetic Energy                                               
+266  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+266  2c  Reactions, JINR, Dubna, Russia                                         
+266  #c                                                                         
+266  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+266  2c  (Z=110-112,114,116,118):}                                              
+266  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+266  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+266  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+266  5c  the evaluators have relied on the judgement of the JWP in              
+266  6c  determining the strength of the arguments made in the various papers.  
+266  7c  In the cases where there are new data or where the JWP has not yet     
+266  8c  assigned a priority of discovery for an element, the evaluators have   
+266  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+266  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+266  Bc  the data.                                                              
+266  #c                                                                         
+266  #c  In the above context, with respect to Z=112 and the collective works of
+266  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+266  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+266  4c  references therein.                                                    
+266  #c                                                                         
+266  @c                                                                         
+266  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+266  2c  discovery of an element and not a specific nuclide. The purpose of     
+266  3c  this evaluation is to present the "best" set of nuclear properties     
+266  4c  for those nuclides reported between A=266 and A=294 based on data      
+266  5c  currently available and {Bnot} to establish a priority of discovery for
+266  6c  any element.                                                           
+266  !c                                                                         
+266  #c  It is well known that alpha decay chains seen                          
+266  ac  in cold fusion reactions tend to terminate in known mass regions.      
+266  2c  The method of |a-|a or |a-SF correlations for identifying the          
+266  3c  parent has therefore been used with confidence.                        
+266  3c  Experiments carried out with hot fusion reactions,                     
+266  4c  result in alpha decay chains beginning and ending with hitherto unknown
+266  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+266  6c  in an attempt to identify the parent and daughters. The latter method  
+266  7c  is not as accurate as the first since a greater probability of         
+266  8c  randomness is inherant to the technique. As such, independent          
+266  9c  verification and confirmation of the data gains added importance.      
+266  ac  These facts should be taken into account when considering the suggested
+266  ac  properties of nuclei created following a hot fusion reaction as for    
+266  ac  the synthesis of Z=114 and above.                                      
+266  #c                                                                         
+266  #c  Finally, with regard to the some of the                                
+266  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+266  ac  2004Mo15 have pointed out that mass assignments which are based        
+266  ac  on the excitation energy of the compound nucleus may be off by a       
+266  ac  single unit. This may also be due in part to uncertainties in the beam 
+266  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+266  ac  Once again, collateral information is required to establish the charge 
+266  ac  and approximate A of the nucleus.                                      
+266  #c                                                                         
+266  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+266  2c  have not been adopted, the evaluators have used the approximations in  
+266  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+266  4c  exponential distribution to estimate the standard uncertainty (68%     
+266  5c  confidence level) in T{-1/2}:                                          
+266  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+266  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+266  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+266  9c  of events. For one and two events, the exact values given in Table 1   
+266  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+266  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+266  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+266  #c                                                                         
+266  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+266  ac  Calculations of T{-1/2}                                                
+266  2c  performed in the present evaluation used the relationship:             
+266  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+266  #c  where Z refers to the atomic                                           
+266  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+266  6c  and:                                                                   
+266  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+266  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+266  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+266  3c  parameter set used in these evaluations. We note that these systematics
+266  6c  are only an indication of |a-decay half-lives from the ground state    
+266  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+266  8c  the element under consideration. The use of this formalism in the      
+266  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+266  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+266  ac  estimate a Hindrance Factor (HF) for a given transition,               
+266  ac  attributable to the odd neutron or proton. This quantity is            
+266  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+266  ac  The HF so computed is an approximate indication.                       
+266  #c                                                                         
+266  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+266  2c  References.                                                            
+266  #c                                                                         
+266  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+266  2c  trans-fermium elements is the manifestation of shell effects in the    
+266  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+266  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+266  5c  important as QF is expected to play a greater role on the hindrance of 
+266  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+266  7c  the "island" of stability. An understanding of this mechanism is       
+266  8c  necessary to establishing the most favorable reactions for producing   
+266  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+266  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+266  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+266  Cc  to both the mass asymmetry in the entrance channel as well as the      
+266  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+266  Ec  deformations of target/projectile nuclei and their relative orientation
+266  Fc  to each other in the process of CN formation, may also play an         
+266  Gc  important role in reducing the probability of forming a compound       
+266  Hc  system. In the face of extremely low yields and a steep decrease of    
+266  Ic  production cross-sections already in evidence with available stable    
+266  Jc  beam-target combinations, the influence of all possible mitigating     
+266  Kc  factors must be accurately determined in order to                      
+266  Lc  optimize the probability of successful fusion. The formation of a      
+266  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+266  Nc  survives QF going on to form a compact compound system which must then 
+266  Oc  face competition from fission.                                         
+266  #c                                                                         
+266  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+266  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+266  3c  in collaboration with investigators from Belgium, France, and Italy.   
+266  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+266  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+266  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+266  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+266  8c  spectrometer "Corset". These experiments were inspired by              
+266  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+266  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+266  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+266  Cc  such experiments are planned or underway to investigate the various    
+266  Dc  effects.                                                               
+266  #c                                                                         
+266  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+266  2c  and references cited in these papers.                                  
+266  #c                                                                         
+266  !c  {UExperimental Estimates of Fission Barriers:}                         
+266  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+266  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+266  4c  the experimentally derived barrier heights are respectively:           
+266  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+266  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+266  #c                                                                         
+266  #c  2002It04, in an analysis of available experimental data, derive the    
+266  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+266  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+266  #c                                                                         
+266  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+266  2c  Two possibilities have been proposed in an attempt to understand the   
+266  ac  the {+289}114, {+287}114 observations:                                 
+266  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+266  ac  belongs to a rare decay mode originating from                          
+266  4c  an isomeric state, or that                                             
+266  #c  (ii) the sequence may actually originate from                          
+266  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+266  7c  Levels).                                                               
+266  #c  The evaluators believe that further investigations                     
+266  ac  are required to support either hypothesis.                             
+266  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+266  9c  unobserved. Also, T{-1/2}                                              
+266  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+266  ac  is much larger than that observed by 2004Og12 and                      
+266  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+266  ac  agreement. Such inconsistencies need to be better understood.          
+266  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+266  2c  respects. 2004OgZZ report more statistics in some cases.               
+266  #c                                                                         
+266  @c  {UOther comments on {+289}114 and {+283}112}                           
+266  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+266  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+266  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+266  4c  classified the evidence as being "very weak",                          
+266  5c  with no convincing supporting arguments for the possible production of 
+266  6c  SHE. We make the following general observations:                       
+266  #c                                                                         
+266  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+266  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+266  ac  by the Dubna-JINR collaborations for all isotopes of                   
+266  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+266  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+266  ac  {+287}114 (15 events) and {+286}114                                    
+266  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+266  ac  the |?34 min decay sequence postulated as originating from             
+266  5c  a rare decay mode of {+289}114, does not seem very likely.             
+266  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+266  7c  {+289}114 decays observed are genetically linked                       
+266  8c  and not the result of a background decay sequence. These               
+266  BC  discrepancies have to be resolved, along with some others.             
+266  #c                                                                         
+266  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+266  ac  (see also 2004Og02) with VASSILISSA, have not                          
+266  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+266  3c  lack of internal consistency through the collective measurements       
+266  ac  and the data are inconclusive as pointed                               
+266  4c  out by experimenters (reasons given in each paper). Decay properties of
+266  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+266  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+266  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+266  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+266  8c  by them. See {+283}112 Adopted Levels for details.                     
+266  #c                                                                         
+266  #c  These observations by the experimenters are consistent with the        
+266  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+266  3c  of the various arguments put                                           
+266  3c  forward therein, the following comments may be made here:              
+266  #c                                                                         
+266  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+266  #c  190 MeV and 212 MeV (1999Og05)                                         
+266  #c  65 MeV and 170 MeV  (2004Og02)                                         
+266  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+266  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+266  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+266  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+266  4c  plane and side detectors). With one exception, all the energies        
+266  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+266  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+266  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+266  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+266  9c  the second experiment) after EVR implantation resulted in              
+266  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+266  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+266  #c                                                                         
+266  #c  2. 2000Ar03 statement that correlations  between the fission events    
+266  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+266  3c  'backward' analysis of the data was reported in                        
+266  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+266  5c  evidently in contradiction with those made by the                      
+266  6c  experimenters. A more complete analysis would be beneficial.           
+266  #c                                                                         
+266  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+266  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+266  ac  quoted from an earlier                                                 
+266  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+266  4c  assignments. The proposed assignment of Z=114 to both parents may      
+266  5c  be incorrect taking into account new data which do not support         
+266  6c  these observations and for reasons already mentioned.                  
+266  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+266  !c                                                                         
+266  #c  CONCLUSIONS:                                                           
+266  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+266  ac  are not conclusive. Overall, the                                       
+266  2c  results from the VASSILISSA experiments are at variance with data from 
+266  3c  experiments using DGFRS. The latter investigations are done using      
+266  4c  more stringent methods, and have greater statistics, offering better   
+266  5c  internal consistency. Some obvious discrepancies and other             
+266  ac  inconsistencies between the two sets of                                
+266  6c  data remain and need to be resolved or adequately explained as does the
+266  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+266  8c  by 2005Gr19 and 2002Lo11.                                              
+266  #c                                                                         
+266  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+266  2c  from earlier work are not reproduced to date.                          
+266  #c                                                                         
+266  @c  {UTheoretical Calculations:}                                           
+266  @c  1995Mo29: |b2 based on the finite-range droplet                        
+266  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+266  3c  with "global" parameters.                                              
+266  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+266  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+266  3c  J|p simultaneously obtained with the calculated masses and             
+266  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+266  5c  A=239.                                                                 
+266  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+266  2c  model for the macroscopic part and the Strutinski shell correction,    
+266  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+266  4c  part.                                                                  
+266  @c  2005GaZX: |b2 based on self consistent calculations                    
+266  2c  within the framework of the Relativistic Mean Field (RMF)              
+266  3c  theory with very few "globally" fit parameters and employing the       
+266  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+266  5c  sets in use exhibit similar systematics, these results are expected to 
+266  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+266  #c                                                                         
+266  @c  {UOther Measurements:}                                                 
+266  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+266  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+266  3c  (Blocking technique in single crystals).                               
+266  #c                                                                         
+266   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+266  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+266  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+266  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+266  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+266  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+266  7c  additional information that they readily provided during this          
+266  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+266  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+266  Ac  Singh for helpful discussions. We thank A. Marinov                     
+266  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+266  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+266  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+266  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+266  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+266  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+266  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+266  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+266  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+266  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+266  Lc  insights, and suggestions until her untimely demise are hereby         
+266  Mc  acknowledged.                                                          
+266   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+266  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+266  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+266      REFERENCES                                                       200512
+266    R 1966VI04 JOUR JINCA 28 741                                             
+266    R 1974AU05 JOUR NUIMA 115 75                                             
+266    R 1975MU16 JOUR NUIMA 128 425                                            
+266    R 1982MU15 JOUR ZPAAD 309 89                                             
+266    R 1984MO07 JOUR PRVCA 29 1699                                            
+266    R 1984MU07 JOUR ZPAAD 315 145                                            
+266    R 1984OG03 JOUR RAACA 37 113                                             
+266    R 1984SC13 JOUR ZPAAD 316 19                                             
+266    R 1987MU15 JOUR ZPAAD 328 49                                             
+266    R 1987SCZR REPT GSI-87-1,P15,Schadel                                     
+266    R 1988MU15 JOUR ZPAAD 330 435                                            
+266    R 1989MU16 JOUR NUPAB 502 571c                                           
+266    R 1990HO03 JOUR PRVCA 41 631                                             
+266    R 1992BA77 JOUR PPNPD 29 453                                             
+266    R 1994LA22 JOUR PRLTA 73 624                                             
+266    R 1995MO29 JOUR ADNDA 59 185                                             
+266    R 1996LA11 JOUR PRVCA 53 2893                                            
+266    R 1997HO14 JOUR ZPAAD 358 377                                            
+266    R 1997MO25 JOUR ADNDA 66 131                                             
+266    R 1997SC48 JOUR RAACA 77 149                                             
+266    R 1998DA24 JOUR ARNUA 48 401                                             
+266    R 1998TU01 JOUR PRVCA 57 1648                                            
+266    R 1999OG05 JOUR ZAANE 5 63                                               
+266    R 1999OG07 JOUR NATUA 400 242                                            
+266    R 1999OG10 JOUR PRLTA 83 3154                                            
+266    R 2000AR03 JOUR ZAANE 7 23                                               
+266    R 2000FI12 JOUR NDSBA 90 391                                             
+266    R 2000HO27 JOUR PACHA 72 1525                                            
+266    R 2000WI15 JOUR PRLTA 85 2697                                            
+266    R 2000ZL02 JOUR ZAANE 8 81                                               
+266    R 2001AK11 JOUR NDSBA 94 131                                             
+266    R 2001HO06 JOUR ZAANE 10 5                                               
+266    R 2001KA70 JOUR PACHA 73 959                                             
+266    R 2002BA85 JOUR ADNDA 81 1                                               
+266    R 2002DU21 JOUR NATUA 418 859                                            
+266    R 2002HI20 JOUR PRLTA 89 282701                                          
+266    R 2002IT04 JOUR PRVCA 65 044602                                          
+266    R 2002LO11 JOUR PPNPD 48 123                                             
+266    R 2002LO15 JOUR PRVCA 66 044617                                          
+266    R 2002TU05 JOUR ZAANE 15 271                                             
+266    R 2003AU02 JOUR NUPAB 729 3                                              
+266    R 2003AU03 JOUR NUPAB 729 337                                            
+266    R 2003KA71 JOUR PACHA 75 1601                                            
+266    R 2003KR24 JOUR PACHA 75 103                                             
+266    R 2003MU15 JOUR YAFIA 66 1051                                            
+266    R 2003MU26 JOUR APOBB 34 2073                                            
+266    R 2003TU05 JOUR ZAANE 17 505                                             
+266    R 2004DA11 JOUR NUPAB 734 148                                            
+266    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+266    R 2004IT05 JOUR NUPAB 734 136                                            
+266    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+266    R 2004MO15 JOUR NUPAB 734 188                                            
+266    R 2004MO42 JOUR JUPSA 73 2593                                            
+266    R 2004OG02 JOUR ZAANE 19 3                                               
+266    R 2004OG03 JOUR PRVCA 69 021601                                          
+266    R 2004OG12 JOUR PRVCA 70 064609                                          
+266    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+266    R 2004PRZW PREPRINT Prokhorova                                           
+266    R 2004VO24 JOUR RAACA 92 855                                             
+266    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+266    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+266    R 2005GR19 JOUR PRVCA 72 014605                                          
+266    R 2005KIZW CONF Santa Fe (Nucl Data for Sci and Technol) Proc,Vol1,P268  
+                                                                                
+266LR    COMMENTS                                                ENSDF    201406
+266LR  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=27-MAY-2014                     
+266LR C  TITL$NUCLEAR DATA SHEETS FOR 266LR                                     
+266LR c  AUTH$BALRAJ SINGH                                                      
+266LR c  INST$Department of Physics and Astronomy,                              
+266LR#c       McMaster University, Hamilton, Ontario,                           
+266LR#c       Canada, L8S 4M1                                                   
+266LR c  ABST$Information about the identification of the {+266}Lr nuclide from 
+266LR2c  |a decay of {+270}Db (2014Kh04) is presented.                          
+266LR c  CUT$Literature available up to May 27, 2014 has been consulted.        
+266LR C  CIT$ENSDF                                                              
+266LR c  FUND$Work supported by the Office of Nuclear Physics, Office of        
+266LRxc  Science of the DOE of the U.S.A.                                       
+                                                                                
+266LR    ADOPTED LEVELS                                          ENSDF    201406
+266LR  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=27-MAY-2014                     
+266LR  Q  1550     SY 4680   SY 4680   CA 7570   SY    2012WA38,1997MO25        
+266LR cQ $Q(|b{+-}), S(n) and Q(|a) from 2012Wa38; S(p) from 1997Mo25           
+266LR cQ $Estimated uncertainties (2012Wa38): 700 for Q(|b{+-}), 800 for S(n),  
+266LR2cQ 300 for Q(|a)                                                          
+266LR cQ $S(2n)=10900 {I680} (syst,2012Wa38). S(2p)=11180 (theoretical,1997Mo25)
+266LR c  2014Kh04: first identification of {+266}Lr nuclide from |a decay chain:
+266LR2c  {+294}117 --> {+290}115 --> {+286}113 -->{+282}Rg --> {+278}Mt -->     
+266LR3c  {+274}Bh --> {+270}Db --> {+266}Lr; {+294}117 formed and identified in 
+266LR4c  reaction {+249}Bk({+48}Ca,3n),E=252.1, 254.0, 258.0 MeV. Four events   
+266LR5c  were assigned to the decay of {+294}117. Facility: accelerator complex 
+266LR6c  at GSI. Gas-filled Trans-Actinide Separator and Chemistry Apparatus    
+266LR7c  (TASCA) at GSI; detector system consisted of multiwire                 
+266LR8c  proportional counter (MWPC), and a focal plane detector box containing 
+266LR9c  double-sided silicon strip detectors (DSSSDs). Measured position and   
+266LRAc  time correlations between evaporation residues (Er), |a, and SF events,
+266LRBc  E|a, half-lives, Er-|a-|a, and Er-|a-|a-SF correlations.               
+266LR  XA270DB A DECAY (1.2 H)                                                  
+266LR  L  0                             11 H     +21-5                          
+266LR2 L %SF=100 (2014Kh04)                                                     
+266LRX L XREF=A                                                                 
+266LR cL E$observed activity is assumed to correspond to the g.s. of {+266}Lr   
+266LR cL T$measured by 2014Kh04. The |a decay mode is less likely as suggested  
+266LR2cL by the theoretical half-life of 10{+10.67} y for |a decay (1997Mo25)   
+                                                                                
+266LR    270DB A DECAY (1.0 H)         2014KH04                  ENSDF    201406
+266LR  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=27-MAY-2014                     
+266LR c  First identification of {+266}Lr nuclide; and first report on          
+266LR2c  the |a decay mode of {+270}Db                                          
+266LR c  {+270}Db from |a decay chain: {+294}117 --> {+290}115 --> {+286}113 -->
+266LR2c  {+282}Rg --> {+278}Mt --> {+274}Bh --> {+270}Db --> {+266}Lr; {+294}117
+266LR3c  formed and identified in reaction {+249}Bk({+48}Ca,3n),E=252.1, 254.0, 
+266LR4c  258.0 MeV. Four events were assigned to the decay of {+294}117.        
+266LR5c  See details in 2014Kh04                                                
+266LR c  Facility: accelerator complex at GSI. Gas-filled Trans-Actinide        
+266LR2c  Separator and Chemistry Apparatus (TASCA) at GSI.                      
+266LR c  Detection system: TASCA consisted of multiwire proportional counter    
+266LR2c  (MWPC), and a focal plane detector box containing double-sided silicon 
+266LR3c  strip detectors (DSSSDs).                                              
+266LR c  Measured position and time correlations between evaporation residues   
+266LR2c  (Er), |a, and SF events, E|a, half-lives, Er-|a-|a, and Er-|a-|a-SF    
+266LR3c  correlations.                                                          
+270DB  P  0                             1.0 H    +19-4           8020     30    
+270DB cP E$Assumed g.s.                                                         
+270DB cP T$Measured by 2014Kh04, who also list half-life of 1.1 h {+15-4} by    
+270DB2cP combining their measured value with 17 h {I+15-6} measured by 2013Og04 
+270DB cP QP$From measured E|a=7.90 MeV {I3} (2014Kh04), if reported |a          
+270DB2cP transition is g.s. to g.s. 2012Wa38 give 8310 {I300} from systematics  
+266LR  N                        0.83                                            
+266LR cN BR$%|a=83, %SF=17 (2014Kh04)                                           
+266LR  L 0                              11 H     +21-5                          
+266LR2 L %SF AP 100 (2014Kh04)                                                  
+266LR cL E$observed activity is assumed to correspond to the g.s. of {+266}Lr   
+266LR cL T$measured by 2014Kh04.                                                
+266LR  A  7.90E3   3                                                            
+266LR cA E$assumed g.s. to g.s. transition                                      
+                                                                                
+266DB    COMMENTS                                                ENSDF    200711
+266DB  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+266DB C  TITL$ENSDF UPDATE FOR A=266-294                                        
+266DB C  AUTH$M. GUPTA                                                          
+266DB c  INST$Manipal University,                                               
+266DB#c  Manipal, KA 576 104, INDIA                                             
+266DB C  AUTH$THOMAS W. BURROWS                                                 
+266DB C  INST$National Nuclear Data Center                                      
+266DB#C       Brookhaven National Laboratory                                    
+266DB#C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+266DB C  ABST$THE ENSDF FILE CORRESPONDING TO Nuclear Data Sheets FOR A=266-294 
+266DB2C  (2005GU33) HAS BEEN UPDATED TO INCLUDE THE RECENTLY REPORTED           
+266DB3C  PRODUCTION OF 28213 AND ITS DAUGHTERS BY 2007OG02 AND 2007OG01.        
+266DB#C                                                                         
+266DB#C  SEE 2005GU33 FOR ACRONYMS AND NOTATIONS AND EVALUATION METHODOLOGY USED
+266DB2C  IN THIS EVALUATION. THE PURPOSE OF THIS EVALUATION IS TO PRESENT THE   
+266DB3C  "best" SET OF NUCLEAR PROPERTIES FOR THOSE NUCLIDES REPORTED BETWEEN   
+266DB4C  A=266 AND A=294 BASED ON DATA CURRENTLY AVAILABLE AND {Bnot} TO        
+266DB5C  ESTABLISH A PRIORITY OF DISCOVERY FOR ANY ELEMENT.                     
+266DB C  CUT$November 5, 2007. ALL REFERENCES RELEVANT TO THE PRODUCTION OF 2821
+266DB2C  OR ITS DAUGHTERS ENTERED INTO THE Nuclear Science References File AND  
+266DB3C  PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS DATE WERE CONSIDERED
+266DB c  ACKN$The evaluators are very grateful to S. Geraedts and B. Singh,     
+266DB2c  McMaster University for compiling these data into XUNDL.               
+266DB C  CIT$ENSDF                                                              
+266DB C  FUND$PART OF THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.  
+266DB2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886                
+                                                                                
+266DB    ADOPTED LEVELS: Tentative                               ENSDF    200711
+266DB  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+266DB  Q -9.E2     SY5.8E3   SY3.2E3   SY8.21E3  SY    2012WA38                 
+266DB CQ Note: Current evaluation has used the following Q record               
+266DB  Q -970      SY 5810   SY 3260   SY 8190   SY    2003AU03                 
+266DB CQ Q-$ESTIMATED UNCERTAINTY=460 KEV                                       
+266DB CQ SN$ESTIMATED UNCERTAINTY=460 KEV                                       
+266DB CQ SP$ESTIMATED UNCERTAINTY=560 KEV                                       
+266DB CQ QA$ESTIMATED UNCERTAINTY=300 KEV. OTHER: LE 8.24 MEV (2007OG01)        
+266DB C  2007OG02, 2007OG01: DESCENDANT OF 28213 PRODUCED BY                    
+266DB2C  237NP(48CA,3N), E(Lab)=244 MEV AT TARGET CENTER. EXPERIMENTS WERE DONE 
+266DB3C  AT DUBNA, RUSSIA, IN COLLABORATION WITH ^LLNL, USA THROUGH JUNE-JULY   
+266DB4C  2006. SEE 28213 Adopted Levels FOR EXPERIMENTAL DETAILS. 2007OG01 GIVE 
+266DB5C  PRELIMINARY RESULTS FOR THIS STUDY.                                    
+266DB t  {TV}Details of two decay chains are provided, one with four successive 
+266DB+t   {TV}|a decays followed by SF decay, and another with three successive 
+266DB+t   {TV}|a decays.                                                        
+266DB2t  {UFirst decay chain: EVR at 13.99 MeV  (Strip 6)}                      
+266DB3t  E{-|a1}=10.62 MeV {I8}, t{-1}=88.9 ms                                  
+266DB+t       - {TV}assigned to {+282}113 decay                                 
+266DB4t  E{-|a2}=10.69 MeV {I8}, t{-2}=6.2 ms                                   
+266DB+t        - {TV}assigned to {+278}Rg decay                                 
+266DB5t  E{-|a3}=10.0 MeV {I11}, t{-3}=472.6 ms                                 
+266DB+t      - {TV}assigned to {+274}Mt decay                                   
+266DB6t  E{-|a4}=8.93 MeV {I8},  t{-4}=87.98 s                                  
+266DB+t       - {TV}assigned to {+270}Bh decay                                  
+266DB7t  E(SF)=174 MeV, t(SF)=31.74 min - {TV}assigned to {+266}Db decay.       
+266DB8t  {TV}Experimenters note that the SF events could also be from           
+266DB+t   {TV}{+266}Rf SF decay, if {+266}Db decays by |e decay. The |a decay   
+266DB+t   {TV}mode of {+266}Db is also possible.                                
+266DB9t  {U{TV}Second decay chain: EVR at 13.11 MeV (Strip 10)}                 
+266DBAt  E{-|a1}=10.64 MeV {I10}, t{-1}=122.7 ms                                
+266DB+t    - {TV}assigned to {+282}113 decay                                    
+266DBBt  E{-|a2}=10.80 MeV {I76}, t{-2}=5.8 ms                                  
+266DB+t      - {TV}assigned to {+278}Rg decay                                   
+266DBCt  E{-|a3}=9.76 MeV {I10},  t{-3}=810.1 ms                                
+266DB+t    - {TV}assigned to {+274}Mt decay                                     
+266DBDt  E{-|a4}=8.52 MeV {I10},  t{-4}=97.02 s                                 
+266DB+t     - {TV}assigned to {+270}Bh decay                                    
+266DB C  NO SF DECAY WAS OBSERVED IN THE SECOND CHAIN (Strip 10) WITH THE       
+266DB2C  PROBABILITY OF ABOUT 2% ATTRIBUTED TO THE EVENT BEING MISSED.          
+266DB3C  THE NONOBSERVATION IN STRIP 10 COULD ALSO BE ATTRIBUTED TO THE DECAY   
+266DB4C  PROPERTIES OF THIS NUCLEUS FOR WHICH, APART FROM SF,                   
+266DB5C  ALPHA OR EC DECAYS ARE NOT RULED OUT AS COMPETING DECAY MODES. EITHER  
+266DB6C  BE ATTRIBUTED DIRECTLY TO THE SF OF 266DB, OR TO ITS EC DECAY TO 266RF 
+266DB6C  WITH A THEORETICALLY PREDICTED SHORT SF LIFETIME OF 23 S (1995SM05).   
+266DB7C  EXPERIMENTERS FURTHER DETERMINED THAT THE NONOBSERVATION OF AN A       
+266DB8C  PARTICLE IN THE FIRST CHAIN WITH THE BEAM OFF WAS POSSIBLE AND WITHIN  
+266DB9C  THE 87% OPERATING EFFICIENCY FOR THE DETECTORS. IN THIS CASE, 266DB    
+266DBAC  WOULD EMIT AN ALPHA FOLLOWING WHICH THE SF EVENT COULD BE ATTRIBUTABLE 
+266DBBC  TO {+262}NO.                                                           
+266DB C  THEORY: SEE Nuclear Science References.                                
+266DB C  ASSIGNMENT: DESCENDANT OF 28213 PRODUCED BY                            
+266DB2C  237NP(48CA,3N), E(Lab)=244 MEV AT TARGET CENTER (2007OG02, 2007OG01).  
+266DB3C  WHILE THE TWO MEASURED ALPHA ENERGIES FOR 28213 DECAY MAY BE TAKEN AS  
+266DB4C  SATISFYING THE CRITERIA FOR REDUNDANCY AND BOTH HALF-LIVES AGREE WITHIN
+266DB5C  THE ASSOCIATED UNCERTAINTIES, THE EVALUATORS NOTE THAT THE             
+266DB6C  PROPERTIES ATTRIBUTED TO 28213 AND ITS DAUGHTERS SHOULD BE CONSIDERED  
+266DB7C  AS TENTATIVE UNTIL CONFIRMED INDEPENDENTLY. IN ADDITION FOR 266DB,     
+266DB8C  GIVEN THE THREE COMPETING DECAY MODES POSSIBLE FOR THIS NUCLEUS AND THE
+266DB9C  UNCERTAINTY IN MEASURING THE SINGLE EVENT ASSIGNED TO THIS NUCLEUS, THE
+266DBAC  ASSIGNMENT TO 266DB MAY BE CONSIDERED TO BE SOMEWHAT SPECULATIVE.      
+266DB  L X                                                                     ?
+266DB CL J$|W(p)=1/2-; |W(n)=3/2+ FROM 1997MO25 (theory)                        
+266DB3 L T=22 M +105-10?                                                        
+266DB CL T$FROM ONE SF EVENT IN CHAIN 1 (STRIP 6) USING THE METHODS OF 1984SC13 
+266DB2CL (2007OG02) FROM 266DB OR 266RF. OTHER: 0.23 M FROM Viola-Seaborg       
+266DB3CL SYSTEMATICS ASSUMING QA=8.19 MEV                                       
+266DB4 L %A=?$%SF=?$%EC=?                                                       
+266DB CL %A,%SF,%EC$DECAYS BY SF MODE OR EC DECAY TO 266RF; ALPHA DECAY TO      
+266DB2CL 262NO IS ALSO POSSIBLE.                                                
+266DB CL $B2: 0.221 FROM 1995MO29; 0.239 FROM 2003MU26 (THEORY)                 
+                                                                                
+266DB    270BH A DECAY: Tentative      2007OG02,2007OG01         ENSDF    200711
+266DB  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CUT=5-Nov-2007$CIT=ENSDF$      
+266DB C  ALL DATA ARE FROM 2007OG02. SEE 28213 Adopted Levels FOR DETAILS       
+270BH  P X                             6E1 S     +29-3          9064      81    
+270BH CP T$61 S +292-28.                                                        
+266DB  N                       1.0     AP                                       
+266DB CN BR$NO SF DECAY EVENTS OBSERVED.                                        
+266DB  L X                                                                     ?
+266DB3 L T=22 M +105-10?                                                        
+266DB4 L %A=?$%SF=?$%EC=?                                                       
+266DB  A 8.93E3    8                                                           ?
+                                                                                
+266SG    ADOPTED LEVELS                                          05NDS    200512
+266SG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+266SG2 H CUT=12-Aug-2005$                                                       
+266SG  Q -4.5E3    SY7.3E3   SY4.2E3   SY8.80E3  SY    2012WA38                 
+266SG CQ Note: Current evaluation has used the following Q record               
+266SG  Q -4540        7190   SY 4060   SY 8880     30  2003AU03                 
+266SG CQ Q-$ESTIMATED UNCERTAINTY=350 KEV                                       
+266SG CQ SN$ESTIMATED UNCERTAINTY=290 KEV                                       
+266SG CQ SP$ESTIMATED UNCERTAINTY=400 KEV                                       
+266SG CQ QA$BASED ON DATA FROM 1994LA22, 1998TU01, AND 2002TU05. OTHER:         
+266SG2CQ 8.78 MEV +5-3 FROM EA=8.65 MEV +5-3 (WEIGHTED AV (INT) OF TWO EVENTS   
+266SG3CQ REPORTED BY 2003TU05.)                                                 
+266SG C  1994LA22: 248CM(22NE,4N) E=116, 121 MEV AT THE ^JINR ^U400 CYCLOTRON.  
+266SG2C  97% 248CM AND 3% 246CM TARGETS. THE TOTAL BEAM DOSE WAS AP 1.6E+19     
+266SG3C  PARTICLES WITH TYPICAL INTENSITIES OF 1.3E+13 PARTICLES/S OF 22NE.     
+266SG4C  ^EVR'S WERE SEPARATED WITH THE ^DGFRS. ASSIGNMENT OF SIX ALPHA-SF      
+266SG5C  CORRELATIONS TO 266SG BASED ON: ALPHA-SF CORRELATIONS WITH EA=8.63 MEV 
+266SG6C  AND 0.2 TO 6.5S TIME INTERVALS ARE UNIQUE; FOR THE SYNTHESIS REACTION  
+266SG7C  USED, NO OTHER CANDIDATE ALPHA-SF DECAY SEQUENCES WITH OTHER Z,A VALUES
+266SG8C  WOULD HAVE SIMILAR DECAY PROPERTIES.                                   
+266SG t    {TV}Event #1: E=116 MeV{TF}                {TV}Event #4: E=116 MeV   
+266SG2t       E{-|a}=8.60 MeV                      E{-|a}=8.74 MeV              
+266SG3t       E{-SF}=105 MeV t=191 ms             | E{-SF}=118 MeV t=6453 ms    
+266SG4t  {TV}Event #2: E=116 MeV{TF}                {TV}Event #5: E=121 MeV     
+266SG5t       E{-|a}=8.54 MeV                      E{-|a}=8.69 MeV              
+266SG6t       E{-SF}=89 MeV  t=215 ms             | E{-SF}=103 MeV t=360 ms     
+266SG7t  {TV}Event #3: E=116 MeV{TF}                {TV}Event #6: E=121 MeV     
+266SG8t       E{-|a}=8.59 MeV                      E{-|a}=8.60 MeV              
+266SG9t       E{-SF}=96 MeV  t=748 ms             | E{-SF}=118 MeV t=2011 ms    
+266SGAt  {TV}From these six events, 1994La22 obtain E{-|a}=8.63 MeV {I5} for    
+266SG+t   {+266}Sg and T{-1/2}({+262}Rf)=1.2 s {I+10-5} and an                  
+266SG+t   estimated T{-1/2}({+266}Sg)=10-30 s from E{-|a}.                      
+266SG C  1998TU01: 248CM(22NE,4N) E=121, 123 MEV AT the GSI ^UNILAC. RECOILING  
+266SG2C  REACTION PRODUCTS WERE STOPPED IN He GAS LOADED WITH CARBON AEROSOLS.  
+266SG3C  ATTACHED TO THE SURFACE OF THE AEROSOLS, THE REACTION PRODUCTS WERE    
+266SG4C  TRANSPORTED WITHIN AP 2 S ALONG A 10 M LONG CAPILLARY (i.d. 2 MM) TO   
+266SG5C  THE On-Line Gas chemistry Apparatus (^OLGA) WHICH ALLOWS CHEMICAL      
+266SG6C  SEPARATION OF VOLATILE SPECIES WITHIN AP 3 S.                          
+266SG t    {TV}Decay Chain #17 (Isothermal temperature=400 \|' C. Expected      
+266SG+t   number of random events=0.03)                                         
+266SG2t       E{-|a}=8.52 MeV |Dt=48.9 s                                        
+266SG3t       E{-SF}|>20 MeV  |Dt=2.8 s                                         
+266SG4t  {TV}Decay Chain #18 (Isothermal temperature=350 \|' C. Expected        
+266SG+t   number of random events=0.09)                                         
+266SG5t       E{-|a}=8.79 MeV |Dt=15.1 s                                        
+266SG6t       E{-SF}|>20 MeV  |Dt=1.1 s                                         
+266SG7t  {TV}Decay Chain #19 (Direct catch experiment. Expected                 
+266SG+t   number of random events=0.45)                                         
+266SG8t       E{-|a}=8.74 MeV |Dt=3.5 s                                         
+266SG9t       E{-SF}|>20 MeV  |Dt=2.4 s                                         
+266SGAt  {TV}From these three chains, 1998Tu01 obtain T{-1/2}({+266}Sg)=21 s    
+266SG+t   {I+20-12} (1 |s) and E{-|a}=8.52 MeV {I3} (33%) and 8.77 MeV {I4}     
+266SG+t   (66%) and T{-1/2}({+262}Rf)=2.5 s {I+25-16}.                          
+266SG C  2002DU21, 2003TU05: DAUGHTER OF 270HS PRODUCED BY 248CM(26MG,4N)       
+266SG2C  E=143.7-146.8 MEV, CHEMISTRY. SEE 270HS Adopted Levels, Gammas FOR     
+266SG3C  DETAILS.                                                               
+266SG t    {TV}Event #1: 12-May-2001 at 02:33:08 hrs                            
+266SG2t       E{-|a1}= 9.16 MeV {I+7-3}                 - assigned to {+270}Hs  
+266SG3t       E{-|a2}= 8.66 MeV {I+7-3}  t{-2}=25.7 s      - assigned to        
+266SG+t   {+266}Sg                                                              
+266SG4t       E{-SF}=187 MeV {I6}       t(SF)=0.199 s  - assigned to {+262}Rf   
+266SG5t  {TV}Event #2: 12-May-2001 at 17:09:09 hrs                              
+266SG6t       E{-|a1}= 8.97 MeV {I+7-3}                 - assigned to {+270}Hs  
+266SG7t       E{-|a2}= 8.64 MeV {I+7-3}  t{-2}=11.9 s      - assigned to        
+266SG+t   {+266}Sg                                                              
+266SG8t       E{-SF}= 186 MeV {I6}      t(SF)=1.2 s    - assigned to {+262}Rf   
+266SG C  THE ABOVE PROPERTIES ARE FROM 2003TU05. NOTE THAT THE LIFE-TIMES OF    
+266SG2C  THE PARENT COULD NOT BE ESTIMATED WITH THE APPLIED THERMOCHROMATOGRAPHY
+266SG3C  TECHNIQUE SINCE DEPOSITION TIMES ARE NOT MEASURED. 2002DU21            
+266SG4C  EXPLAINS THE CHEMICAL IMPLICATIONS OF THESE EXPERIMENTS.               
+266SG C  2004VO24 OBSERVED SIX ALPHA-CHAINS FROM 248CM(26MG,4N) E=142-150       
+266SG2C  MEV, CHEM.  266SG WAS EXPECTED TO BE PRODUCED AS THE DAUGHTER OF       
+266SG3C  270HS. ONLY ONE CHAIN WAS ASSIGNED TO 269HS AND                        
+266SG4C  FOUR COULD BE ASSIGNED TO EITHER                                       
+266SG5C  269HS {IOR} 270HS. THE SIXTH CHAIN IS THE MOST LIKELY CANDIDATE FOR    
+266SG6C  A RANDOM CORRELATION. SEE 269HS Adopted Levels FOR MORE DETAILS. THE   
+266SG7C  RESULTS OF THIS EXPERIMENT ARE NOT SUITABLE FOR PROVIDING FURTHER PROOF
+266SG8C  FOR 270HS OR THE DAUGHTER PRODUCTS.                                    
+266SG C  OTHER: 1997SC48 AND 2002TU05. SEE ALSO 2003KR24 FOR A CRITICAL         
+266SGAC  EVALUATION OF THE CHEMISTRY AND A DESCRIPTION OF THE TECHNIQUES USED.  
+266SG C  THEORY: SEE Nuclear Science References                                 
+266SG C  ASSIGNMENT: 248CM(22NE,4N) E=116, 121 MEV (1994LA22) AND E=121, 123    
+266SG2C  MEV, CHEM (1998TU01). T(262RF)=1.2 S +10-5 (1994LA22) AND 2.5 S +24-16 
+266SG3C  (1998TU01) CONSISTENT WITH T(262RF)=2.1 S 2 FROM 244PU(22NE,4N)        
+266SG4C  E=114-124 MEV, EXCIT (1996LA11).                                       
+266SG  XA270HS A DECAY: TENTATIVE                                               
+266SG  L 0.0         0+                21 S      +20-12                         
+266SG CL T$FROM 1998TU01 (68% c.i.). 2001AK11 NOTE THAT A CALCULATED HF(8520A)  
+266SG2CL OF 0.3 FOR IA AP 33% MAY INDICATE THE EXISTENCE OF A CONTAMINANT UNDER 
+266SG3CL THIS PEAK. IF THIS IS CORRECT AND THE ASSOCIATED |Dt=48.9 S WERE       
+266SG4CL EXCLUDED FROM CONSIDERATION, T=6.4 S +118-26. OTHERS: 17.8 S ESTIMATED 
+266SG5CL BY 2003TU05 FROM EA, 10-30 S ESTIMATED BY 1994LA22 FROM EA, AND        
+266SG6CL 14.6 S +118-45 FROM TAU=21.0 S (ARITHMETIC MEAN OF 48.9 S, 3.5 S, AND  
+266SG7CL 15.1 S (1998TU01), 25.7 S AND 11.9 S (2003TU05)). T(CALC)=9.0 S FROM   
+266SG8CL Viola-Seaborg SYSTEMATICS FOR QA=8.88 MEV. T(SF) GE 11 S (2000HO27).   
+266SG2 L %A GT 18 LE 50$%SF GT 50 LE 82                                         
+266SG CL %A,%SF$THE ALPHA AND SF BRANCHINGS WERE DETERMINED AS 15 LE %A LE 50 BY
+266SG2CL 1994LA22 AND %A GT 18 BY 1998TU01. 1994LA22 SET THE LOWER LIMIT BY     
+266SG3CL ASSUMING THAT ALL OF THE DETECTED FISSION ACTIVITIES WERE FROM SF DECAY
+266SG4CL OF 266SG OR FROM ITS ALPHA DAUGHTER, 262RF, AND THE UPPER LIMIT WAS    
+266SG5CL BASED ON THE COMPARISON OF EXPERIMENTAL AND EXPECTED CROSS SECTIONS.   
+266SG CL $B2(THEORY): 0.230 FROM 1995MO29; 0.240 FROM 2003MU26; 0.262 FROM      
+266SG2CL 2005GAZX.                                                              
+266SGX L XREF=A                                                                 
+                                                                                
+266SG    270HS A DECAY: TENTATIVE      2003TU05                  05NDS    200512
+266SG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+266SG2 H CUT=12-Aug-2005$                                                       
+266SG C  SEE 270HS Adopted Levels FOR DETAILS.                                  
+270HS  P 0.0         0+                3.6 S     +8-14          9.30E3    7     
+270HS CP QP$9.30 MEV +7-3                                                       
+266SG  N                       1.0     AP                                       
+266SG CN BR$FROM 2/2 EVENTS                                                     
+266SG  L 0.0         0+                20 S      +20-12                         
+266SG CL E,J,T$FROM THE Adopted Levels.                                         
+266SG  A 9.16E3                                                                ?
+266SG2 A DE=+7-3                                                                
+                                                                                
+266BH    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+266BH  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+266BH2 H CUT=12-Aug-2005$                                                       
+266BH  Q -3.03E3   SY6.3E3   SY1.98E3  SY9.43E3  SY    2012WA38                 
+266BH CQ Note: Current evaluation has used the following Q record               
+266BH  Q -2940     SY 6400   SY 1860   SY 9.22E3   4   2003AU03,2004MO42        
+266BH CQ Q-$ESTIMATED UNCERTAINTY=350 KEV                                       
+266BH CQ SN$ESTIMATED UNCERTAINTY=430 KEV                                       
+266BH CQ SP$ESTIMATED UNCERTAINTY=210 KEV                                       
+266BH CQ QA$FROM EA=9.08 MEV 4 (2004MO42). OTHERS: 9.55 MEV 9 (2003AU03. SYST)  
+266BH2CQ AND 9.43 MEV FROM EA=9.29 MEV (2000WI15)                               
+266BH C  2000WI15: CHEMICAL INVESTIGATION BY American-Swiss COLLABORATION       
+266BH2C  AIMED AT THE STUDY OF 266,267BH. SEE Adopted Levels FOR 267BH FOR      
+266BH3C  DETAILS. REACTION: 249BK(22NE,5N) AT ^LBNL. THE 88-INCH CYCLOTRON      
+266BH4C  PROVIDED THE 22NE{+(6+)} BEAM AT TWO ENERGIES; 148 AND 153 MEV         
+266BH5C  CORRESPONDING TO 116-118 MEV AND 122-124 MEV RESPECTIVELY              
+266BH6C  IN THE TARGET. THE TARGET WAS MADE USING 0.81 mg/cm{+2} 249BK AS OXIDE 
+266BH7C  PREPARED BY THE MOLECULAR PLATING TECHNIQUE (1974AU05,1975MU16).       
+266BH8C  CHEMICAL SEPARATION PRIOR TO THIS ENSURED THAT LESS THAN 0.5% OF 249CF 
+266BH9C  WAS PRESENT. REACTION PRODUCTS COLLECTED IN A RECOIL CHAMBER           
+266BHAC  LOCATED DIRECTLY BEHIND THE TARGET. THIS CHAMBER WAS CONTINUOUSLY      
+266BHBC  SWEPT WITH He GAS CONTAINING KCl AEROSOLS TO COLLECT THE PRODUCTS.     
+266BHCC  THE PRODUCTS WERE THEN GUIDED THROUGH A ^TEFLON CAPILLARY (1.4 MM,     
+266BHDC  7 M IN LENGTH) TO THE MERRY-GO-ROUND (^MG) ROTATING WHEEL SYSTEM       
+266BHEC  (1990HO03, 1996LA11) WITH A TRANSPORT TIME AP 0.6 S AND A TRANSPORT    
+266BHFC  EFFICIENCY OF 38% 4. SEE THE ORIGINAL SOURCES FOR DETAILS OF THE ^MG   
+266BHGC  AND THE METHOD OF DATA COLLECTION AND ANALYSIS. ONE ATOM OF 266BH WAS  
+266BHHC  OBSERVED AT THE HIGHER BEAM ENERGY OF 122-124                          
+266BHIC  MEV FOLLOWED BY AN ALPHA-DECAY SEQUENCE:                               
+266BH t    {TV}Event #1:                                                        
+266BH2t       E{-|a1}=9290 keV        t{-1}=0.87 s    -  assigned to {+266}Bh   
+266BH3t       E{-|a2}=8540 keV        t{-2}=27.83 s   -  assigned to {+262}Db   
+266BH4t       E{-|a3}=8740 keV        t{-3}=0.04 s    -  assigned to {+258}Lr   
+266BH C  THE CROSS-SECTION ESTIMATED FOR THE 5{In} CHANNEL WAS 25-250 pb.       
+266BH2C  BASED ON AN EXPECTED UNHINDERED HALF-LIFE OF T AP 0.5 S FOR THIS       
+266BH3C  NUCLIDE WITH QA=9.29 MEV. DUE TO THE EXPERIMENTAL SET-UP, THIS         
+266BH4C  CROSS-SECTION WAS STRONGLY DEPENDENT ON THE ASSUMED 267BH HALF-LIFE.   
+266BH5C  THE ESTIMATED HALF-LIFE FOR 266BH WAS T AP 1-10 s; SUGGESTED VALUE     
+266BH6C  IS WITHIN 1 S. FISSION DECAY PROPERTIES OF 266,267BH COULD NOT BE      
+266BH7C  DETERMINED DUE TO FISSION CONTAMINATION ATTRIBUTED TO 256FM.           
+266BH C  2004MO42: GREAT GRANDDAUGHTER OF 27813 PRODUCED BY 209BI(70ZN,N) E=349 
+266BH2C  MEV. SEE 27813 Adopted Levels FOR DETAILS.                             
+266BH t    {TV}Event #1: Energy of the evaporation residue=36.75 MeV            
+266BH2t       E{-|a1}=11.68 MeV {I4}   t{-1}=344 |ms    -   assigned to         
+266BH+t   {+278}113                                                             
+266BH3t       E{-|a2}=11.15 MeV {I7}   t{-2}=9.26 ms   -   assigned to {+274}Rg 
+266BH4t       E{-|a3}=10.03 MeV {I7}   t{-3}=7.16 ms   -   assigned to {+270}Mt 
+266BH5t       E{-|a4}= 9.08 MeV {I4}   t{-4}=2.47 s    -   assigned to {+266}Bh 
+266BH6t       E(SF)=204.1 MeV   t(SF)=40.9 s -   assigned to {+262}Db           
+266BH C  THE ASSIGNMENTS OF 2004MO42 ARE THE {IMOST PROBABLE} ONES FOR THE      
+266BH2C  REACTION. ALSO, THE IDENTIFICATION OF THE PARENT AS 27813, ALPHA-DECAY 
+266BH3C  DAUGHTER 274RG, AND GRANDDAUGHTER 270MT, ARE ALL RENDERED PLAUSIBLE    
+266BH4C  FOLLOWING A CONSISTENT COMPARISON OF THE 4{+th} AND 5{+th} EVENTS WITH 
+266BH5C  KNOWN DESCENDENTS. THE OBSERVATION OF EACH ISOTOPE IN THE SEQUENCE     
+266BH6C  SHOULD BE CONSIDERED AS TENTATIVE AND PENDING CONFIRMATION.            
+266BH C  OTHER: 1987SCZR                                                        
+266BH C  THEORY: SEE Nuclear Science References                                 
+266BH C  ASSIGNMENT: 2004MO42 NOTE THAT THE DECAY TIME MEASURED CORRESPONDING TO
+266BH2C  T1/2=1.7 S +82-8 AGREES TO WITHIN 1 STANDARD DEVIATION OF THE          
+266BH3C  VALUE REPORTED BY 2000WI15. ALSO, THE DISCREPENCIES IN                 
+266BH4C  EA(266BH) BETWEEN 2000WI15 AND 2004MO42 MAY BE EXPLAINED BY THE        
+266BH5C  KNOWN WIDE SPREAD IN ALPHA ENERGIES FOR ODD-ODD NUCLIDES IN THIS       
+266BH6C  REGION. HOWEVER, THE EVALUATORS BELIEVE THAT WITH ONLY TWO EVENTS THE  
+266BH7C  ASSIGNMENT SHOULD BE CONSIDERED AS TENTATIVE.                          
+266BH  XA270MT A DECAY: TENTATIVE                                               
+266BH  L X                             1.7 S     +82-8                         ?
+266BH CL J$|W(p)=5/2-;|W(n)=1/2+ FROM 1997MO25 (THEORY)                         
+266BH CL T$FROM 2004MO42 (1 |s). OTHER: 0.6 S +29-3 FROM t=0.87 S               
+266BH2CL (2000WI15). T(CALC)=1.7 S FROM Viola-Seaborg SYSTEMATICS FOR QA=9.22   
+266BH2CL MEV FROM 2004MO42.                                                     
+266BH2 L %A AP 100                                                              
+266BH CL %A$ASSUMED 100% FROM 2/2 EVENTS                                        
+266BH CL $B2(THEORY): 0.230 FROM 1995MO29; 0.245 FROM 2003MU26; 0.262 FROM      
+266BH2CL 2005GAZX                                                               
+266BHX L XREF=A                                                                 
+                                                                                
+266BH    270MT A DECAY: TENTATIVE      2004MO42                  05NDS    200512
+266BH  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+266BH2 H CUT=12-Aug-2005$                                                       
+266BH C  SEE 270MT Adopted Levels FOR DETAILS.                                  
+270MT  P X                             5.0 MS    +24-3          10.18E3   7     
+270MT CP QP$FROM EA=10.03 MEV 7 (2004MO42). OTHER: 10.35 MeV 50 (2003AU03.      
+270MT2CP SYST.)                                                                 
+266BH  N                       1.0     AP                                       
+266BH CN BR$PRESUMED 100% BASED ON 1/1 EVENT                                    
+266BH  L X                             1.7 S     +82-8                         ?
+266BH CL E,T$FROM THE Adopted Levels                                            
+266BH  A 10.03E+3  7                                                            
+                                                                                
+266HS    ADOPTED LEVELS, GAMMAS: ?                               05NDS    200512
+266HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+266HS2 H CUT=12-Aug-2005$                                                       
+266HS  Q -6.8E3    SY7.84E3  5 2.51E3  SY10346   16    2012WA38                 
+266HS CQ Note: Current evaluation has used the following Q record               
+266HS  Q -6710     SY 8060   SY 2680   SY 10336    20  2003AU03                 
+266HS CQ Q-$ESTIMATED UNCERTAINTY=450 KEV                                       
+266HS CQ SN$ESTIMATED UNCERTAINTY=320 KEV                                       
+266HS CQ SP$ESTIMATED UNCERTAINTY=470 KEV                                       
+266HS CQ QA$ADOPTED BY 2003AU03 FROM EA=10.18 MEV 2 (2001HO06. UNWEIGHTED       
+266HS2CQ AVERAGE OF EVENTS 2, 3, 4, AND 6)                                      
+266HS C  2001HO06: DAUGHTER OF 270DS PRODUCED BY 207PB(64NI,N) E=317 MEV AT     
+266HS2C  GSI/^SHIP. SEE 270DS Adopted Levels FOR DETAILS.                       
+266HS t    {TV}Event # 1: (Event 5 in sequence of detection)                    
+266HS2t       E{-|a1}=10987 keV {I90}     t{-1}=0.07 ms   -  assigned to        
+266HS+t   {+270}Ds                                                              
+266HS3t       E{-|a2}= 4168 keV (esc)  t{-2}=0.43 ms   -  assigned to {+266}Hs  
+266HS4t       E{-SF}=189 MeV          t{-3}=11.02 ms  -  assigned to {+262}Sg   
+266HS5t  {TV}Event # 2:  (Event 3 in sequence of detection)                     
+266HS6t       E{-|a1}=11075 keV {I90}     t{-1}=0.18 ms   -  assigned to        
+266HS+t   {+270}Ds                                                              
+266HS7t       E{-|a2}=10196 keV {I20}     t{-2}=0.87 ms   -  assigned to        
+266HS+t   {+266}Hs                                                              
+266HS8t       E{-SF}=193 MeV          t{-3}=10.26 ms  -  assigned to {+262}Sg   
+266HS9t  {TV}Event # 3:  (Event 1 in sequence of detection)                     
+266HSAt       E{-|a1}= 1925 keV (esc)  t{-1}=0.20 ms   -  assigned to {+270}Ds  
+266HSBt       E{-|a2}=10173 keV {I90}     t{-2}=2.79 ms   -  assigned to        
+266HS+t   {+266}Hs                                                              
+266HSCt       E{-SF}=164 MeV          t{-3}= 8.84 ms  -  assigned to {+262}Sg   
+266HSDt  {TV}Event # 4:  (Event 7 in sequence of detection)                     
+266HSEt       E{-|a1}=11151 keV {I20}     t{-1}=2.00 ms   -  assigned to        
+266HS+t   {+270}Ds                                                              
+266HSFt       E{-|a2}=10171 keV {I20}     t{-2}=18.22 ms  -  assigned to        
+266HS+t   {+266}Hs                                                              
+266HSGt       E{-SF}=199 MeV          t{-3}=13.06 ms  -  assigned to {+262}Sg   
+266HSHt  {TV}Event # 5:  (Event 8 in sequence of detection)                     
+266HSIt       E{-|a1}=12147 keV {I50}     t{-1}=10.35 ms  -  assigned to        
+266HS+t   {+270}Ds                                                              
+266HSJt       E{-|a2}=10281 keV {I90}     t{-2}=9.63 ms   -  assigned to        
+266HS+t   {+266}Hs                                                              
+266HSKt       E{-SF}=215 MeV          t{-3}=7.77 ms   -  assigned to {+262}Sg   
+266HSLt  {TV}Event # 6:  (Event 2 in sequence of detection)                     
+266HSMt       E{-|a1}=10954  keV {I20}    t{-1}=17.71 ms  -  assigned to        
+266HS+t   {+270}Ds                                                              
+266HSNt       E{-|a2}=10180  keV {I20}    t{-2}=0.34 ms   -  assigned to        
+266HS+t   {+266}Hs                                                              
+266HSOt       E{-SF}=190 MeV          t{-3}=3.98 ms   -  assigned to {+262}Sg   
+266HSPt  {TV}Event # 7: (Event 4 in sequence of detection)                      
+266HSQt       E{-|a2}=578 keV (esc)    t{-2}=0.46 ms   -  assigned to {+266}Hs  
+266HSRt       E{-SF}=227 MeV          t{-3}=2.00 ms   -  assigned to {+262}Sg   
+266HSSt  {TV}Event # 8: (Event 6 in sequence of detection)                      
+266HSTt       E{-|a2}=10306 keV {I90}     t{-2}=5.40 ms   -  assigned to        
+266HS+t   {+266}Hs                                                              
+266HSUt       E{-SF}=177 MeV          t{-3}=33.91 ms  -  assigned to {+262}Sg   
+266HS C  SEE 2001HO06 FOR DETAILS REGARDING ASSIGNMENTS AND PERTAINING TO       
+266HS2C  270DS. NO FISSION EVENT WAS OBSERVED WHICH MAY HAVE BEEN               
+266HS3C  ATTRIBUTABLE TO 266HS.                                                 
+266HS C  THEORY: SEE Nuclear Science References.                                
+266HS C  ASSIGNMENT: DAUGHTER OF 270DS PRODUCED BY 207PB(64NI,N) E=317 MEV      
+266HS2C  (2001HO06). THE DAUGHTER 262SG HAS NOT BEEN INDEPENDENTLY OBSERVED AND 
+266HS3C  THERE ARE NO OBSERVED ELEMENTAL SIGNATURES. THEREFORE, THE EVALUATORS  
+266HS4C  CONSIDER THE ASSIGNMENTS AS TENTATIVE.                                 
+266HS CG $SEE 6.0-MS 270DS A DECAY FOR UNPLACED GAMMA                           
+266HS CL $2001HO06 DO NOT RULE OUT THE POSSIBILITY THAT AN ISOMERIC STATE MAY   
+266HS2CL EXIST ANALOGOUS TO THE ONE IN 270DS. IN THIS CASE, THE ALPHA-DECAY     
+266HS3CL WOULD HAVE TWO COMPONENTS WITH HALF-LIVES: T=0.35 MS +28-11 AND        
+266HS4CL 6.3 MS +86-23 AT ENERGIES CALCULATED TO BE 0.90 MEV AND 0.94 MEV ABOVE 
+266HS5CL THE GROUND STATE. ON THE BASIS OF THIS DATA HOWEVER, THE EXPERIMENTERS 
+266HS6CL RULE OUT ANY CONCLUSIVE ISOMERIC ASSIGNMENTS FOR 266HS NOTING THAT     
+266HS7CL THEORY IS ONLY INDICATIVE. IF THERE ARE TWO STATES, 2001AK11 SUGGEST   
+266HS8CL THAT THE 6.3-MS STATE IS MORE LIKELY TO BE THE GS, BASED ON THE        
+266HS9CL R0(262SG) PARAMETERS CALCULATED BY USING HF(10180A)=1.0: T1/2=0.35 MS. 
+266HSACL THIS YIELDS R0=1.56 3 WHICH IS MUCH HIGHER THAN EXPECTED FROM THESE R0 
+266HSBCL SYSTEMATICS.                                                           
+266HS  XA270DS A DECAY (0.10 MS): ?                                             
+266HS  XB270DS A DECAY (6.0 MS): ?                                              
+266HS  L 0.0         0+                2.3 MS    +13-6                         ?
+266HS CL T$FROM 2001HO06. SEE COMMENT ABOVE ON POSSIBLE EXISTENCE OF TWO        
+266HS2CL COMPONENTS IN THE ALPHA-DECAY. THE EVALUATORS NOTE THAT THE UNWEIGHTED 
+266HS3CL AVERAGES FOR CHAINS 1, 2, 3, AND 7 (EVENTS 2, 3, 4, AND 6 ABOVE), ALL  
+266HS4CL FOUR ASSIGNED TO THE GROUND STATE OF 266HS, ARE TAU=5.56 MS; T=3.85 MS 
+266HS5CL (CORRESPONDING TO EA=10.180 MEV AND QA=10.335 MEV). T(CALC)=2.7 MS FROM
+266HS6CL Viola-Seaborg SYSTEMATICS FOR QA=10336 KEV.                            
+266HS CL $THE EVALUATORS NOTE THAT FOUR OF THE MEASURED ALPHA-ENERGIES FROM     
+266HS2CL EVENTS 2, 3, 4 AND 6 AGREE REASONABLY WELL TO WITHIN THE DETECTOR      
+266HS3CL RESOLUTION OF 20 KEV (THE DIFFERENCE IN SPREAD BEING ABOUT 17 KEV TO 25
+266HS4CL KEV OVER THE INDIVIDUAL ENERGIES).                                     
+266HS2 L %A AP 100$%SF<1.4                                                      
+266HS CL %A,%SF$FROM 8/8 EVENTS. FISSION BRANCHING ESTIMATED TO BE WITHIN 1.4%  
+266HS2CL IN THE ABSENCE OF OBSERVED SF FOR THIS NUCLEUS (2001HO06).             
+266HS CL $B2(THEORY): 0.230 FROM 1995MO29; 0.242 FROM 2003MU26; 0.263 FROM      
+266HS2CL 2005GAZX.                                                              
+266HSX L XREF=AB                                                                
+266HS  L 1.00E3    6                                                           ?
+266HSF L XREF=B                                                                 
+266HS  L 1.20E3    6                                                           ?
+266HSF L XREF=B                                                                 
+                                                                                
+266HS    270DS A DECAY (0.10 MS): ?    2001HO06                  05NDS    200512
+266HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+266HS2 H CUT=12-Aug-2005$                                                       
+266HS C  SEE 270DS Adopted Levels FOR DETAILS.                                  
+270DS  P 0.0         0+                0.10 MS   +14-4            11200   50    
+266HS  N                       1.0     AP                                       
+266HS  L 0.0         0+                2.3 MS    +13-6                         ?
+266HS CL E,J,T$FROM THE Adopted Levels                                          
+266HS  A 11.03E3    5                                                           
+                                                                                
+266HS    270DS A DECAY (6.0 MS): ?     2001HO06                  05NDS    200512
+266HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+266HS2 H CUT=12-Aug-2005$                                                       
+266HS C  SEE 270DS Adopted Levels FOR DETAILS.                                  
+266HS CL E(A)$FROM DE(ALPHA) (EVALUATORS)                                       
+270DS  P 1.13E+3                       6.0 MS    +82-22           11200   50    
+270DS CP E$IF 12.15 MEV ALPHA FEEDS THE 266HS G.S.                              
+270DS CP J$J AP 10 2 ESTIMATED FROM RETARDATION OF ALPHA-DECAY PROBABILITY      
+270DS2CP (2001HO06). PI=- (2003AU02. SYST)                                      
+266HS  N                       0.7     GT                                       
+266HS CN BR$%IT AP 30 SEEMS POSSIBLE BUT COULD NOT BE DEFINITELY ESTABLISHED.   
+266HS  G 218                                                                 C ?
+266HS CG $218G IN coincidence WITH 11.15 MEV ALPHA                              
+266HS CG $2001HO06 NOTE THAT EG IS CLOSE TO THE CALCULATED ENERGY OF 299 KEV    
+266HS2CG FROM THE 8+ TO 6+ ROTATIONAL LEVEL IN 266HS                            
+266HS CG CC$AP 1.87 IF E2 (2005KIZW,2002BA85)                                   
+266HS  L 0.0         0+                2.3 MS    +13-6                         ?
+266HS CL E,J,T$FROM THE Adopted Levels                                          
+266HS  A 12.15E3   5                                                           ?
+266HS CA HF$HF=37 DUE TO A CONFIGURATION CHANGE SEEMS REASONABLE (2001HO06)     
+266HS  L 1.00E3    6                                                           ?
+266HSF L FLAG=A                                                                 
+266HS  A 11.15E3   2                                                        C  ?
+266HS CA $218G IN COINCIDENCE                                                   
+266HS  L 1.20E3    6                                                           ?
+266HSF L FLAG=A                                                                 
+266HS  A 10.95E3   2                                                           ?
+266HS CA $MAY CORRESPOND TO ALPHA DECAY OF THE 6.0-MS STATE OR THE DECAY OF THE 
+266HS2CA GS FOLLOWING G-DECAY OF THE 6.0-MS STATE TO THE GS (2001HO06)          
+                                                                                
+266MT    ADOPTED LEVELS                                          05NDS    200512
+266MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+266MT2 H CUT=12-Aug-2005$                                                       
+266MT  Q             6.8E3   SY2.E2    SY1.100E4 3     2012WA38                 
+266MT CQ Note: Current evaluation has used the following Q record               
+266MT  Q              7000   SY 570    SY 10996  25    2003AU03                 
+266MT CQ SN$ESTIMATED UNCERTAINTY=580 KEV                                       
+266MT CQ SP$ESTIMATED UNCERTAINTY=370 KEV                                       
+266MT CQ QA$2003AU03 ADOPTED 10996 KEV 25 BASED ON THE DATA OF 1997HO14. BASED  
+266MT2CQ THE COMMENTS ASSOCIATED WITH THE INPUT VALUES USED IN THE ADJUSTMENT,  
+266MT3CQ THE 11739|a AND 11306|a (EVENTS 6 AND 8 IN TABLE BELOW) AND SEVERAL    
+266MT4CQ LOWER ENERGY ALPHA'S REPORTED BY 1997HO14 AND THE ALPHA'S REPORTED BY  
+266MT5CQ 1984MO07 AND 1989MU16 (EVENTS ^A AND ^B IN TABLE BELOW) WERE APPARENTLY
+266MT6CQ CONSIDERED AS ARISING FROM THE DECAY OF AN ISOMERIC STATE.             
+266MT C  NO NEW EXPERIMENTAL DATA HAS APPEARED SINCE THE LAST EVALUATION        
+266MT2C  (2001AK11)                                                             
+266MT C  1984OG03: 209BI(58FE,N) E=5.5 MEV/NUCLEON (3.6E+18 IONS) AT Dubna      
+266MT2C  ^U400 CYCLOTRON; OFF-LINE DETECTION OF LONG-LIVED DAUGHTERS BY         
+266MT3C  RADIOCHEMICAL SEPARATION OF Cm, CF, ES, AND Fm. DETECTED ONE TRACK OF  
+266MT4C  258DB AND SEVEN ALPHAS FROM 246CF (T=35 H +39-14).                     
+266MT C  1997HO14: MEASURED EXCITATION FUNCTION OF 209BI(58FE,N) E=287.6,       
+266MT2C  289.8, AND 292.0 MEV AT THE ^GSI ^UNILAC. A CROSS SECTION MAXIMUM OF   
+266MT3C  7.5 pb {27} WAS ATTAINED (SIGMA(287.6 MEV)=7.4 pb {I+48-33},           
+266MT4C  SIGMA(289.8 MEV)=6.1 pb {I+49-29}, AND SIGMA(292.0)=2.5 pb {I+25-14}). 
+266MT5C  TOTAL BEAM DOSE WAS 5.4E+18 IONS IN 17.4 DAYS; ABSOLUTE ACCURACY OF    
+266MT6C  BEAM ENERGY WAS |+0.01 MEV/u.                                          
+266MT t    {TV}Event 1:                                                         
+266MT2t    E{-|a1}=10814 keV      t{-1}=1.8 ms  - assigned to {+266}Mt          
+266MT3t    E{-|a2}=10213 keV      t{-2}=11.5 ms - assigned to {+262}Bh          
+266MT4t    |e                  t{-3}=1.18 s  - assigned to {+258}Db             
+266MT t    {TV}Event 2:                                                         
+266MT6t    E{-|a1}=10661 keV      t{-1}=1.1 ms  - assigned to {+266}Mt          
+266MT7t    E{-|a2}= 9834 keV      t{-2}=14.1 ms - assigned to {+262}Bh          
+266MT8t    E{-|a3}= 9387 keV      t{-3}=9.6 s   - assigned to {+258}Db          
+266MT t    {TV}Event 3:                                                         
+266MTAt    E{-|a1}=10576 keV      t{-1}=0.4 ms  - assigned to {+266}Mt          
+266MTBt    E{-|a2}=10379 keV      t{-2}=16.7 ms - assigned to {+262}Bh          
+266MTCt    E{-|a3}= 9189 keV      t{-3}=2.2 s   - assigned to {+258}Db          
+266MT t    {TV}Event 4:                                                         
+266MTEt    E{-|a1}=10561 keV      t{-1}=1.9 ms  - assigned to {+266}Mt          
+266MTFt    E{-|a2}=10443 keV      t{-2}=18.4 ms - assigned to {+262}Bh          
+266MTGt    E{-|a3}= 9380 keV      t{-3}=0.60 s  - assigned to {+258}Db          
+266MT t    {TV}Event 5:                                                         
+266MTIt    E{-|a1}=10809 keV      t{-1}=1.3 ms  - assigned to {+266}Mt          
+266MTJt    E{-|a2}= 9763 keV      t{-2}=255 ms  - assigned to {+262}Bh          
+266MTKt    |e                  t{-3}=11.2 s  - assigned to {+258}Db             
+266MT t    {TV}Event 6:                                                         
+266MTMt    E{-|a1}=11739 keV      t{-1}=7.8 ms  - assigned to {+266}Mt          
+266MTNt    E{-|a2}=6.4 MeV (esc)  t{-2}=6.9 ms  - assigned to {+262}Bh          
+266MTOt    E{-|a3}= 9179 keV      t{-3}=1.85 s  - assigned to {+258}Db          
+266MT t    {TV}Event 7:                                                         
+266MTQt    E{-|a1}=10456 keV      t{-1}=4.5 ms  - assigned to {+266}Mt          
+266MTRt    E{-|a2}=10372 keV      t{-2}=17.3 ms - assigned to {+262}Bh          
+266MTSt    E{-|a3}=1.0 MeV (esc)  t{-3}=11.2 s  - assigned to {+258}Db          
+266MT t    {TV}Event 8:                                                         
+266MTTt    E{-|a1}=11306 keV      t{-1}=2.0 ms  - assigned to {+266}Mt          
+266MTUt    E{-|a2}=10001 keV      t{-2}=45 ms   - assigned to {+262}Bh          
+266MTVt    E{-|a3}=0.6 MeV (esc)  t{-3}=1.38 s  - assigned to {+258}Db          
+266MT t    {TV}Event 9:                                                         
+266MTXt    E{-|a1}=10484 keV      t{-1}=0.2 ms  - assigned to {+266}Mt          
+266MTYt    E{-|a2}= 9902 keV      t{-2}=7.5 ms  - assigned to {+262}Bh          
+266MTZt    |e                  t{-3}=7.0 s   - assigned to {+258}Db             
+266MT t    {TV}Event 10:                                                        
+266MTbt    E{-|a1}=11682 keV      t{-1}=0.2 ms  - assigned to {+266}Mt          
+266MTct    E{-|a2}= 9831 keV      t{-2}=278 ms  - assigned to {+262}Bh          
+266MTdt    E{-|a3}=1.1 MeV (esc)  t{-3}=0.11 s  - assigned to {+258}Db          
+266MT t    {TV}Event 11:                                                        
+266MTft    E{-|a1}=10859 keV      t{-1}=0.7 ms  - assigned to {+266}Mt          
+266MTgt    E{-|a2}= 9803 keV      t{-2}=21.1 ms - assigned to {+262}Bh          
+266MT t    {TV}Event 12:                                                        
+266MTit    E{-|a1}=10848 keV      t{-1}=2.5 ms  - assigned to {+266}Mt          
+266MTjt    E{-|a2}=10143 keV      t{-2}=225 ms  - assigned to {+262}Bh          
+266MTkt    E{-|a3}= 9064 keV      t{-3}=4.19 s  - assigned to {+258}Db          
+266MT t    {TV}Event A (1982Mu15,1984Mu07,1988Mu15,1989Mu16):                   
+266MTmt    E{-|a1}=11.10 MeV      t{-1}=5.0 ms  - assigned to {+266}Mt          
+266MTnt    E{-|a2}= 1.1 MeV (esc) t{-2}=22.3 ms - assigned to {+262}Bh          
+266MTot    |e                  t{-3}=12.9 s  - assigned to {+258}Db             
+266MT t    {TV}Event B (1982Mu15,1984Mu07,1988Mu15,1989Mu16):                   
+266MTqt    E{-|a1}= 5.8 MeV (esc) t{-1}=4.8 ms  - assigned to {+266}Mt          
+266MTrt    E{-|a2}=10.21 MeV      t{-2}=13.2 ms - assigned to {+262}Bh          
+266MTst    |e                  t{-3}=12.9 s  - assigned to {+258}Db             
+266MTtt  {TV}Only the decay data for the first three members of the chains are  
+266MT+t   given.                                                                
+266MT C  1997HO14 OBTAIN T=1.7 MS +6-4 FROM THE ARITHMETIC MEAN OF 14 DECAY     
+266MT2C  TIMES.                                                                 
+266MT C  THEORY: SEE Nuclear Science References.                                
+266MT C  ASSIGNMENT: 209BI(58FE,N) E=288-292 MEV, EXCIT (1997HO14).             
+266MT2C  209BI(58FE,N) E=5.5 MEV/NUCLEON, CHEM; PARENT OF 258RF (OBSERVED SF    
+266MT3C  DECAY OF 258RF, FOLLOWING 258DB EC DECAY TO 258RF) (1984OG03).         
+266MT4C  ^IUPAC/^IUPAP ^TWG (1992BA77) ASSESSMENT WAS THAT 1982MU15 GAVE        
+266MT5C  CONFIDENCE THAT ELEMENT 109 HAD BEEN OBSERVED. THE WORK OF 1984OG03    
+266MT6C  AGREES REASONABLY WELL AND COULD BE CONSIDERED A CONFIRMATION.         
+266MT  L X                             1.7 MS    +18-16                         
+266MT CL T         1.7 MS +6-4 WAS OBTAINED BY 1997HO14 FROM THE ARITHMETIC     
+266MT2CL MEAN OF THE DECAY TIME OF FOURTEEN ALPHA GROUPS WITH LIFETIMES BETWEEN 
+266MT3CL 0.2 MS AND 7.8 MS. 1997HO14 POINTED OUT THAT, IN VIEW OF THE OBSERVED  
+266MT4CL ISOMERIC STATES IN NEIGHBORING ODD-MASS NUCLEI, THE POSSIBILITY OF     
+266MT5CL EXISTENCE OF ISOMERIC STATES WITH VERY SIMILAR HALF-LIVES COULD NOT BE 
+266MT6CL EXCLUDED. OTHER POSSIBILITIES, SUCH AS A SHORT-LIVED ISOMER DECAYING IN
+266MT7CL FLIGHT, WERE ALSO NOT RULED OUT. ADDITIONALLY, TAKING INTO ACCOUNT THE 
+266MT8CL THE DISPERSION OF THE MEASURED LIFETIMES RESULTING IN THE ADOPTED      
+266MT9CL VALUE, THE UNCERTAINTY OF MEASURED T1/2 WAS INCREASED BY 2001AK11.     
+266MTACL T(CALC)=123 US IF QA=10996 KEV AND 78 US IF QA=11.08 MEV (EA=10.92 MEV.
+266MTBCL UNWEIGHTED AVERAGE OF 13 EA'S) FROM Viola-Seaborg SYSTEMATICS.         
+266MT2 L %A LE 100                                                              
+266MT CL %A$ONLY ALPHA DECAY HAS BEEN OBSERVED. THE SF EVENTS DETECTED          
+266MT2CL WERE INTERPRETED BY 1984OG03 AS BEING FROM 258RF, THE EC DECAY DAUGHTER
+266MT3CL OF 258SG WHICH IS THE GRANDDAUGHTER OF 266MT BY ALPHA DECAYS. FROM THE 
+266MT4CL SYSTEMATICS OF SF HALF-LIVES, 1984OG03 DEDUCED THAT THE NUCLEUS DECAYS 
+266MT5CL MOSTLY BY ALPHA. 2000HO27 RECOMMENDED T1/2(SF)>5.3 MS BASED ON THE DATA
+266MT6CL OF 1988MU15 AND 1997HO14. CALCULATIONS BY 1997MO25 FOR T(A)/T(BETA)    
+266MT7CL PREDICT %EC+%B+=0.48.                                                  
+266MT CL $B2(THEORY)=0.230 FROM 1995MO29; B2=0.237 FROM 2003MU26; B2=0.255 FROM 
+266MT2CL 2005GAZX                                                               
+                                                                                
