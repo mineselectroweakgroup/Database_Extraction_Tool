@@ -11,10 +11,10 @@ import os
 """ Check how tabs work when selecting buttons """
 class BetaDecay(QDialog):
 
-    def __init__(self):
+    def __init__(self, gif):
         super().__init__()
 
-        self.initUI()
+        self.initUI(gif)
 
         self.chemSymVar = ""
         self.A = ""
@@ -23,9 +23,10 @@ class BetaDecay(QDialog):
         self.betaVar = ""
       
 
-    def initUI(self):
+    def initUI(self, gif):
 
-        pixmap = QPixmap('Output/gnuPlot/nuclearChart.gif')
+        plotGif = gif or 'Output/gnuPlot/nuclearChart.gif'
+        pixmap = QPixmap(plotGif)
         label = QLabel(self)
         label.setPixmap(pixmap)
 
@@ -51,7 +52,7 @@ class BetaDecay(QDialog):
         self.beta = QComboBox(self)
         self.beta.addItem("B+")
         self.beta.addItem("B-")
-        self.beta.setStyleSheet("color:#2B4570; border: 1px solid #2B4570; border-radius:5px;")
+#        self.beta.setStyleSheet("color:#2B4570; border: 1px solid #2B4570; border-radius:5px;")
 
         # Buttons defined below
     
@@ -133,7 +134,6 @@ class BetaDecay(QDialog):
         self.A = self.element.text()
         self.energyVar = self.energy.text()
         self.betaVar = self.beta.currentText()
-        print(self.betaVar)
         self.tempVar = self.temp.text()
         self.accept()
  
@@ -147,18 +147,18 @@ class BetaDecay(QDialog):
         os.system("python3 StartupQt.py")
        
 
-#if __name__ == '__main__':
-
-app = QApplication(sys.argv)
-ex = BetaDecay()
-ex.exec_()
-#sys.exit(app.exec_())
-app.exec_()
 
 #Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts
 
-class betaoutputs:
+def getbetaoutputs(gif):
 #These are the Nuclear Structure (ENSDF inputs) variables
+
+    app = QApplication(sys.argv)
+    ex = BetaDecay(gif)
+    ex.exec_()
+    #sys.exit(app.exec_())
+    app.exec_()
+
     a=ex.chemSymVar.upper()
     b=ex.A
     J=""
@@ -184,4 +184,4 @@ class betaoutputs:
         print("Please enter a valid element and mass number.")
         sys.exit()
 
-
+    return (Z, A, J, E, B, temp)

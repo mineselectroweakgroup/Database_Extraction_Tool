@@ -33,6 +33,7 @@ def startup(option, gif=""):
 #This code puts restarts the program so it can be used again
     os.chdir("..")
     os.chdir("..")
+    print(newest)
     gifFileName = "Output/gnuPlot/"+newest.replace(".plt",".gif")
     startup(option, gif=gifFileName)
     #os.system("python3 Main.py "+option)

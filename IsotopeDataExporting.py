@@ -4,7 +4,7 @@ import re
 import mass_data as md
 import ionization as addion
 import time
-import Parabola_Qt
+import Parabola_Qt, Beta_Qt
 
 
 
@@ -33,16 +33,15 @@ def datExp(option,UI=False,Filter=False,gif=""):
         betaVariable = 'NULL' ## Required parameter of DataClass
 
     elif option == "two":
-#        from Beta_GUI import betaoutputs
-        from Beta_Qt import betaoutputs
-        elementName = str(betaoutputs.Z)
-        lowerBound = int(betaoutputs.A)
-        higherBound = int(betaoutputs.A)
-        betaVariable = str(betaoutputs.B)
-        energyLim = int(betaoutputs.E)
+        Z, A, J, E, B, T = Beta_Qt.getbetaoutputs(gif)
+        elementName = str(Z)
+        lowerBound = int(A)
+        higherBound = int(A)
+        betaVariable = str(B)
+        energyLim = int(E)
         massData = "YES"
         elementName = elementName.title()
-        wantedSpins=str(betaoutputs.J).replace(" ","")
+        wantedSpins=str(J).replace(" ","")
         ''''
         perTable = open("ElementList.txt","r")
         periodicTable = perTable.readline()
@@ -57,7 +56,7 @@ def datExp(option,UI=False,Filter=False,gif=""):
         '''
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
-        temperature = float(betaoutputs.temp)
+        temperature = float(T)
         exitcount = 0
 
     elif option == "three":
