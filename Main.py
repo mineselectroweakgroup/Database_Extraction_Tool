@@ -17,6 +17,7 @@ def startup(option, gif=""):
     time.sleep(0.01)
 
 #Makes plot (.012 s)
+    print(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],True)
     ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],True)
 
 

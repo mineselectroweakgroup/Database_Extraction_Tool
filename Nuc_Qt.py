@@ -7,15 +7,15 @@ from PyQt5.QtGui import (QIcon, QFont, QPixmap)
 from PyQt5 import QtCore
 import os
 
-from StartupQt import main
+#from StartupQt import main
 
 " Check how tabs work when selecting buttons """
 class NucEval(QDialog):
 
-    def __init__(self):
+    def __init__(self, gif):
         super().__init__()
 
-        self.initUI()
+        self.initUI(gif)
 
         self.chemSymVar = ""
         self.lowBoundIsoVar = "" 
@@ -27,16 +27,17 @@ class NucEval(QDialog):
         self.exitcount = 0
       
 
-    def initUI(self):
+    def initUI(self, gif):
 
-        pixmap = QPixmap('Output/gnuPlot/nuclearChart.gif')
+        plotGif = gif or 'Output/gnuPlot/nuclearChart.gif'
+        pixmap = QPixmap(plotGif)
         label = QLabel(self)
         label.setPixmap(pixmap)
 
         # Input Dialogs defined below
 
         self.mass = QLineEdit(self)
-        self.mass.setText("Mass #")
+        self.mass.setText("Element")
         self.mass.setStyleSheet("border: 1px solid #2B4570; border-radius:5px; width: 25px; height: 25px; margin: 0px 20px 0px 20px;")
 
         self.loA = QLineEdit(self)
@@ -134,7 +135,6 @@ class NucEval(QDialog):
 
     def submitClicked(self):
         """Send user input to nuclear structure sorting function"""
-        #from IsotopeDataExporting import datExp
         self.chemSymVar = self.mass.text()
         self.lowBoundIsoVar = self.loA.text()
         self.upBoundIsoVar = self.hiA.text()
@@ -154,16 +154,18 @@ class NucEval(QDialog):
         #print("main")
 
 
-app = QApplication(sys.argv)
-ex = NucEval()
-ex.exec_()
-#sys.exit(app.exec_())
-app.exec_()
 
 #Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts
 
-class guioutputs:
+def getguioutputs(gif):
 #These are the Nuclear Structure (ENSDF inputs) variables
+
+    app = QApplication(sys.argv)
+    ex = NucEval(gif)
+    ex.exec_()
+    #sys.exit(app.exec_())
+    app.exec_()
+
     Z=ex.chemSymVar
     try:
         Z=Z.upper()
@@ -179,8 +181,9 @@ class guioutputs:
     ##user leaves a section blank.
     if exitcount == 1:
         sys.exit()
-    if Z == '' or Z == 'Mass #':
-        print("Enter valid mass value.")
+    if Z == '' or Z == "Element":
+        #TODO: reload window
+        print("Enter valid element.")
         sys.exit()
     if isoLow == '' or isoLow == "Low A":
         isoLow = 1
@@ -188,5 +191,8 @@ class guioutputs:
         isoUp = 299
     if E == '' or E == "Energy (keV)":
         E = 9999999
+    if J == "Spin":
+        J = ''
     mass = "NO"
 
+    return (Z, isoLow, isoUp, E, exitcount, mass, J)

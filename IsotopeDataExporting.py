@@ -1,10 +1,10 @@
 import DataClass as dc
-import os
+import os, sys
 import re
 import mass_data as md
 import ionization as addion
 import time
-import Parabola_Qt, Beta_Qt
+import Parabola_Qt, Beta_Qt, Nuc_Qt
 
 
 
@@ -14,18 +14,18 @@ def datExp(option,UI=False,Filter=False,gif=""):
 #This uses the option from the first GUI to get inputs from the correct GUI. Some of the definitions here are
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
     #tryAgainCounter=1
-    print('time 0')
     if option == "one":
         #from GUI import guioutputs        
-        from Nuc_Qt import guioutputs 
-        elementName= str(guioutputs.Z)
-        lowerBound = int(guioutputs.isoLow)
-        higherBound = int(guioutputs.isoUp)
-        energyLim = int(guioutputs.E)
-        exitcount = int(guioutputs.exitcount)
-        massData = str(guioutputs.mass)
-        wantedSpins=str(guioutputs.J).replace(" ","")
-        energyLim=int(guioutputs.E)
+#        from Nuc_Qt import guioutputs 
+        Z, isoLo, isoHi, E, exitcount, mass, J = Nuc_Qt.getguioutputs(gif)
+        elementName= str(Z)
+        lowerBound = int(isoLo)
+        higherBound = int(isoHi)
+        energyLim = int(E)
+        exitcount = int(exitcount)
+        massData = str(mass)
+        wantedSpins=str(J).replace(" ","")
+        energyLim=int(E)
         elementName = elementName.replace(" ","")
         elementName = elementName.title()
         elementName = elementName.split(',')
@@ -184,7 +184,6 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 create_file = True
             fileName= "Output/gnuPlot/" + fileName.replace('/','_')
             pltFile = open(fileName,'wb')
-            
 
             infile = open(fileName,'r')
             if infile.readline() != "reset":
@@ -330,6 +329,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.375):2:(0.375):4 with boxxyerrorbars linecolor rgb 'black' fillstyle solid\n").replace('/', '_')))
 
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
+
                 
                 itercount = itercount + 1
             mostrecentiter = itercount   
@@ -343,6 +343,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         try:
             pltFile.write(str.encode("set term png size 5600,4000\n"))
             fileName = fileName[15:].replace('.plt','.png')
+            print("fileName: {0}".format(fileName))
             bigfileName = "Large_"+fileName.replace(".gif",".png")
             pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 95\"\n"))
 #FIXME program stops here
@@ -381,7 +382,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             pltFile.write(str.encode("replot\n"))
             pltFile.write(str.encode("set term x11"))
         except:
-            print('Error generating .plt file')
+            print('Error generating .plt file: {0}'.format(sys.exc_info()))
         exit
 
     else:
