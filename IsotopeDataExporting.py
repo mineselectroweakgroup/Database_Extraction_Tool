@@ -15,8 +15,6 @@ def datExp(option,UI=False,Filter=False,gif=""):
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
     #tryAgainCounter=1
     if option == "one":
-        #from GUI import guioutputs        
-#        from Nuc_Qt import guioutputs 
         Z, isoLo, isoHi, E, exitcount, mass, J = Nuc_Qt.getguioutputs(gif)
         elementName= str(Z)
         lowerBound = int(isoLo)
@@ -60,7 +58,6 @@ def datExp(option,UI=False,Filter=False,gif=""):
         exitcount = 0
 
     elif option == "three":
-#        from Parabola_GUI import parabolaoutputs
         Z, A, J, T = Parabola_Qt.getparabolaoutputs(gif)
         elementName = str(Z)
         lowerBound = int(A)
@@ -143,7 +140,6 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             with open("Output/gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
                 first_line = first_line.split(';')
-                #print(first_line)
                 nodatatest = str(first_line[2][-2:])
             if (nodatatest == "--" or nodatatest == "-*"):
                 os.remove("Output/"+"gnuPlot/"+filenameopen)
@@ -343,7 +339,6 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         try:
             pltFile.write(str.encode("set term png size 5600,4000\n"))
             fileName = fileName[15:].replace('.plt','.png')
-            print("fileName: {0}".format(fileName))
             bigfileName = "Large_"+fileName.replace(".gif",".png")
             pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 95\"\n"))
 #FIXME program stops here

@@ -17,7 +17,6 @@ def startup(option, gif=""):
     time.sleep(0.01)
 
 #Makes plot (.012 s)
-    print(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],True)
     ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],True)
 
 
@@ -34,13 +33,9 @@ def startup(option, gif=""):
 #This code puts restarts the program so it can be used again
     os.chdir("..")
     os.chdir("..")
-    print(newest)
     gifFileName = "Output/gnuPlot/"+newest.replace(".plt",".gif")
     startup(option, gif=gifFileName)
     #os.system("python3 Main.py "+option)
-    #app = QApplication(sys.argv)
-    #ex = BetaDecay()
-    #sys.exit(app.exec_())
     # newest = "Output/gnuPlot/"+newest.replace(".plt",".gif")
     # if os.path.isfile(newest):
     #     #os.system("rm "+newest)
