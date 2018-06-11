@@ -35,16 +35,4 @@ def startup(option, gif=""):
     os.chdir("..")
     gifFileName = "Output/gnuPlot/"+newest.replace(".plt",".gif")
     startup(option, gif=gifFileName)
-    #os.system("python3 Main.py "+option)
-    # newest = "Output/gnuPlot/"+newest.replace(".plt",".gif")
-    # if os.path.isfile(newest):
-    #     #os.system("rm "+newest)
-    # try:
-    #     os.system("mv Output/gnuPlot/*.dat Output/gnuPlot/OutputData")
-    #     os.system("mv Output/gnuPlot/*.plt Output/gnuPlot/OutputData")
-    # except:
-    #     pass
-#    return option
 
-#option = sys.argv[-1]
-#startup(option)

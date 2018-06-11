@@ -44,6 +44,7 @@ class MainWindow(QDialog):
  
         exit = QPushButton("Exit", self)
         exit.clicked.connect(QApplication.instance().quit)
+#        exit.clicked.connect(self.exitClicked)
         exit.setStyleSheet("background-color:#EBEEF2; border: 1px solid #2B4570; border-radius:5px; color: #2B4570; height:25px;")                
         exit.installEventFilter(self)     
 
@@ -91,6 +92,10 @@ class MainWindow(QDialog):
     def updateClicked(self):
         main
         print("update")
+
+    def exitClicked(self):
+        #Input default variables
+        return 0
 
 def main():
     app = QApplication(sys.argv)

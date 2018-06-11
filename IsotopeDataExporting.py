@@ -40,18 +40,6 @@ def datExp(option,UI=False,Filter=False,gif=""):
         massData = "YES"
         elementName = elementName.title()
         wantedSpins=str(J).replace(" ","")
-        ''''
-        perTable = open("ElementList.txt","r")
-        periodicTable = perTable.readline()
-        periodicTable = periodicTable.split(',')
-        for item in periodicTable:
-            if item == elementName:
-                index = periodicTable.index(item)
-                if betaVariable == "B+":
-                    elementName = periodicTable[index-1] + "," + elementName
-                if betaVariable == "B-":
-                    elementName = elementName + "," + periodicTable[index+1]
-        '''
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
         temperature = float(T)
@@ -384,42 +372,3 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         print("Nothing to plot")
         exit
 
-
-#To make poster graphics, comment out the previous section and uncomment this. This will
-#make the graphic significantly more detailed and large enough to not lose clarity on
-#a poster. You will also need to switch the title font size line above for this purpose
-#NOTE: This will screw up the resolution for the GUIs and only show part of the image
-    '''
-    if UI:
-        print("Program is finished plotting")
-        #This defines the code required for the program to plot the information
-        #as a .gif file.
-        #Also in here is the font and font size for the .gif file
-        #if os.path.isfile(fileName):
-        try:
-            pltFile.write(str.encode("set term gif size 5600,4000\n"))
-            fileName = fileName.replace('.plt','.gif')
-            fileName = fileName[15:]
-            if os.path.isfile(fileName):
-                os.remove(fileName)
-            if rangecount >= 20:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 56\n"))
-            elif rangecount >= 15:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 64\n"))
-            elif rangecount >= 10:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 70\n"))
-            elif rangecount >= 5:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 80\n"))
-            else:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 90\n"))
-            pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
-            pltFile.write(str.encode("refresh\n"))
-            pltFile.write(str.encode("set term x11"))
-        except:
-            pass
-        exit
-    
-    else:
-        print("Nothing to plot")
-        exit
-    '''
