@@ -13,12 +13,10 @@ def function(option,user_args = None):
     else:
         UI = False
 
-    #UI = False #FIXME delete this line
 
 #Exports data requested by the user into text files (necessary to generate plots)
     userInput = ided.datExp(option,user_args,UI)
 
-#Prints the user input allowing user to make sure they inputted allowing user
 #to check what they input against the plot they are viewing
 #The sleep is a pause so the timestamps used work correctly
 
@@ -27,9 +25,11 @@ def function(option,user_args = None):
     time.sleep(0.01)
 
 #Makes plot (.012 s)
-    ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],True)
+    ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],UI)
 
+    #FIXME if change
     if UI:
+    #if True:
     #This code creates the .git file which is the actual plot
         os.chdir("Output/gnuPlot")
         directory = os.getcwd()
@@ -39,6 +39,7 @@ def function(option,user_args = None):
             os.system("gnuplot "+newest)
         except:
             print('No new plot')
+    if UI:
 #This code puts restarts the program so it can be used again
         os.chdir("..")
         os.chdir("..")
@@ -54,7 +55,8 @@ def function(option,user_args = None):
     else:
         pass
 
-
+## CENDETcmd calls Main.function(...) on its own
+## This will stop function(gui_option) from runnning when CENDETcmd imports this file
 gui_option = sys.argv[-1]
 if gui_option in ['one','two','three']:
     function(gui_option)

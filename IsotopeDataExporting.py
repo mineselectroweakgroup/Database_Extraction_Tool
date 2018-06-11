@@ -10,13 +10,11 @@ import time
 #This function is used to bulk export a range of isotopes in a given A range.
 #user_ins is the class that contains the user's search parameters for execution from the terminal
 def datExp(option,user_ins, UI=False):
-    option = "one"#FIXME
-    
+    #FIXME allow massData to be modified below
 #This uses the option from the first GUI to get inputs from the correct GUI. Some of the definitions here are
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
     tryAgainCounter=1
     if option == "one":
-        print('adasdfasd')
         try:
             from GUI import guioutputs
             elementName= str(guioutputs.Z)
@@ -27,18 +25,9 @@ def datExp(option,user_ins, UI=False):
             massData = str(guioutputs.mass)
             wantedSpins=str(guioutputs.J).replace(" ","")
             energyLim=int(guioutputs.E)
-            #FIXME remove print
-            #print(elementName, lowerBound, higherBound, energyLim, exitcount, massData, wantedSpins, energyLim)
-            elementName = elementName.replace(" ","")
-            elementName = elementName.title()
-            elementName = elementName.split(',')
             temperature = 0
-            betaVariable = 'NULL' ## Required parameter of DataClass
         except: #FIXME Errortype
         ## Catches Error from GUI
-#            from CENDETcmd import user_ins
-#            user_ins = cmd.Inputs() #replaces guioutputs
-            print('assignment')
 
             elementName= str(user_ins.Z)
             lowerBound = int(user_ins.isoLow)
@@ -48,38 +37,41 @@ def datExp(option,user_ins, UI=False):
             massData = str(user_ins.mass)
             wantedSpins=str(user_ins.J).replace(" ","")
             energyLim=int(user_ins.E)
+            temperature = 0
+        finally:
             elementName = elementName.replace(" ","")
             elementName = elementName.title()
             elementName = elementName.split(',')
-            temperature = 0
             betaVariable = 'NULL' ## Required parameter of DataClass
-
+            
+        
     elif option == "two":
-        from Beta_GUI import betaoutputs
-        elementName = str(betaoutputs.Z)
-        lowerBound = int(betaoutputs.A)
-        higherBound = int(betaoutputs.A)
-        betaVariable = str(betaoutputs.B)
-        energyLim = int(betaoutputs.E)
-        massData = "YES"
-        elementName = elementName.title()
-        wantedSpins=str(betaoutputs.J).replace(" ","")
-        ''''
-        perTable = open("ElementList.txt","r")
-        periodicTable = perTable.readline()
-        periodicTable = periodicTable.split(',')
-        for item in periodicTable:
-            if item == elementName:
-                index = periodicTable.index(item)
-                if betaVariable == "B+":
-                    elementName = periodicTable[index-1] + "," + elementName
-                if betaVariable == "B-":
-                    elementName = elementName + "," + periodicTable[index+1]
-        '''
-        elementName = elementName.replace(" ","")
-        elementName = elementName.split(',')
-        temperature = float(betaoutputs.temp)
-        exitcount = 0
+        try:
+            from Beta_GUI import betaoutputs
+            elementName = str(betaoutputs.Z)
+            lowerBound = int(betaoutputs.A)
+            higherBound = int(betaoutputs.A)
+            betaVariable = str(betaoutputs.B)
+            energyLim = int(betaoutputs.E)
+            massData = "YES"
+            wantedSpins=str(betaoutputs.J).replace(" ","")
+            temperature = float(betaoutputs.temp)
+        except:
+            elementName = str(user_ins.Z)
+            #FIXME Check what happes for a range of A
+            lowerBound = int(user_ins.isoLow)
+            higherBound = int(user_ins.isoUp)
+            betaVariable = str(user_ins.Beta)
+            energyLim = int(user_ins.E)
+            massData = "YES"
+            wantedSpins=str(user_ins.J).replace(" ","")
+            temperature = float(user_ins.temp)
+            #if massData =
+        finally:
+            elementName = elementName.title()
+            elementName = elementName.replace(" ","")
+            elementName = elementName.split(',')
+            exitcount = 0
 
     elif option == "three":
         from Parabola_GUI import parabolaoutputs
@@ -108,14 +100,16 @@ def datExp(option,user_ins, UI=False):
         for i in range(lowerBound,higherBound+1):
 
             itervar= str(i)+element
+
             indata=dc.data('ensdf.'+str(i).zfill(3),itervar,option,betaVariable,energyLim)
             indata.filterData(wantedSpins,UI)
-            
+
             ## Include Atomic Mass Energy Data
             if option == 'one':
                 pass
             else:
                 md.addMass(indata) 
+
 
             ## Include ionization effects
             addion.addIonization(indata) 
@@ -139,7 +133,8 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
     fileParsingFactorStr="_every_"+str(fileParsingFactor)
 
     tryAgainCounter=1
-    while(tryAgainCounter and UI):
+    #while(tryAgainCounter and UI):
+    while(tryAgainCounter):
         try:
             fileParsingFactor=int(1)
             fileParsingFactorStr="_every_"+str(fileParsingFactor)
@@ -357,8 +352,9 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 
                 itercount = itercount + 1
             mostrecentiter = itercount   
-                
-    if UI:
+    # FIXME plot generation works w/ if true instead of if UI
+    if True:
+#    if UI:
         print("Program is finished plotting")
         #This defines the code required for the program to plot the information
         #as a .gif file.
@@ -413,41 +409,3 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         exit
 
 
-#To make poster graphics, comment out the previous section and uncomment this. This will
-#make the graphic significantly more detailed and large enough to not lose clarity on
-#a poster. You will also need to switch the title font size line above for this purpose
-#NOTE: This will screw up the resolution for the GUIs and only show part of the image
-    '''
-    if UI:
-        print("Program is finished plotting")
-        #This defines the code required for the program to plot the information
-        #as a .gif file.
-        #Also in here is the font and font size for the .gif file
-        #if os.path.isfile(fileName):
-        try:
-            pltFile.write(str.encode("set term gif size 5600,4000\n"))
-            fileName = fileName.replace('.plt','.gif')
-            fileName = fileName[15:]
-            if os.path.isfile(fileName):
-                os.remove(fileName)
-            if rangecount >= 20:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 56\n"))
-            elif rangecount >= 15:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 64\n"))
-            elif rangecount >= 10:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 70\n"))
-            elif rangecount >= 5:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 80\n"))
-            else:
-                pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 90\n"))
-            pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
-            pltFile.write(str.encode("refresh\n"))
-            pltFile.write(str.encode("set term x11"))
-        except:
-            pass
-        exit
-    
-    else:
-        print("Nothing to plot")
-        exit
-    '''

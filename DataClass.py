@@ -78,7 +78,6 @@ class data:##This is the main data class.
                     continue
                 else: ## Option 1 & 3
                     break
-
             ## dsid is used in identifying decay data
             dsid = line[9:39].split(' ')
 
@@ -108,6 +107,7 @@ class data:##This is the main data class.
                 if(float(recordData.energy)<=energyLimit):
                     ## include the data 
                     self.data.append(recordData)
+                    #recordData.print_record()
                 else:
                     if option == 'two':
                         continue
@@ -283,14 +283,15 @@ class data:##This is the main data class.
                         self.data[-1] = decayRecData
 
 
-    def export(self,fExtOption = '.dat',extraTitleText = ''): 
-            fileName=str(self.name)+extraTitleText+fExtOption##creates filename
-            fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
-            datFile = open(fileName,'wb')##Creates a file with a valid file name.
-            for i in range(len(self.data)):
 
-                lineToWrite = self.data[i].make_data_string()
-                datFile.write(str.encode(lineToWrite))
+    def export(self,fExtOption = '.dat',extraTitleText = ''): 
+        fileName=str(self.name)+extraTitleText+fExtOption##creates filename
+        fileName="Output/" + "gnuPlot/"+fileName.replace('/','_')
+        datFile = open(fileName,'wb')##Creates a file with a valid file name.
+        for i in range(len(self.data)):
+
+            lineToWrite = self.data[i].make_data_string()
+            datFile.write(str.encode(lineToWrite))
 
     ## Filters by desired spin states, if given
     def filterData(self,userInput,UI=False):
