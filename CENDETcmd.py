@@ -16,14 +16,19 @@ class Inputs:
         parser.add_argument("-a", help='Atomic mass(es).', metavar = 'Amin-Amax OR A')
         parser.add_argument("-j", default='', help = "Spin and parity.", metavar = 'JPi')
         parser.add_argument("-e", dest="maxEnergy", default=9999999, type=int, help = "Maximum level energy in keV.")
-        parser.add_argument("-m", action='store_true', help = "Include AMCD mass-energy data")
+        mass_group = parser.add_mutually_exclusive_group()
+        mass_group.add_argument("-m", action='store_true', help = "Include AMCD mass-energy data")
+        mass_group.add_argument('-n', action='store_true', help = "Exclude AMDC mass-energy data.")
         
         parser.add_argument('-B', dest='Beta', choices=['+','-'], help="Extract data from Beta+ or Beta-/EC decay record.")
+        parser.add_argument('-p', dest='png', action='store_true', help='Create plot as PNG.')
+        parser.add_argument('-g', dest='gif', action='store_true', help='Create plot as GIF.')
+
 
         #FIXME change option for beta prgm
 
         userin = parser.parse_args()
-        print(userin)
+        #print(userin)
 
 
 
@@ -35,12 +40,24 @@ class Inputs:
 
         if userin.Beta == None:
             self.option = 'one'
+            if userin.m:
+                self.mass = True
+            else:
+                self.mass = False
         elif userin.Beta == '-':
             userin.Beta = 'B-'
             self.option = 'two'
+            if userin.n:
+                self.mass = False
+            else:
+                self.mass = True
         else:
             userin.Beta = 'B+'
             self.option = 'two'
+            if userin.n:
+                self.mass = False
+            else:
+                self.mass = True
 
         ## Check if element labels provided
         if userin.elements == None:
@@ -71,21 +88,18 @@ class Inputs:
         self.E = userin.maxEnergy
         self.J = userin.j
         self.exitcount = 0 #FIXME is this used? it is hardcoded to zero for prgm 2 & 3
-        self.mass = userin.m #FIXME boolean instead of "NO"
+        self.png = userin.png
+        self.gif = userin.gif
 
         self.Beta = userin.Beta
         self.temp = 0 #FIXME new argument
 
+    def checkplot(self):
+        if self.png or self.gif:
+            return True
+        else:
+            return False
+
 
 user_ins = Inputs()
 Main.function(user_ins.option, user_ins) ##FIXME dont need to pass option separately
-
-## main_call is the fuction that calls Main.py
-## written such that running CENDETcmd.py from the terminal calls Main.py first, and then creates an Input class instance and retrieves the user's arguments when CENDETcmd.py is executed for the second time from IsotopeDataExporting (near the top of file when parsing user inputs)
-#def main_call():
-#    def main_call():
-#        print('second pass bioch')
-#        user_ins = Inputs()
-#    Main.function("one")
-#
-#main_call()

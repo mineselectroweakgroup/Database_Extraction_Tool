@@ -4,13 +4,11 @@ import re
 import mass_data as md
 import ionization as addion
 import time
-#import CENDETcmd as cmd
 
 
 #This function is used to bulk export a range of isotopes in a given A range.
 #user_ins is the class that contains the user's search parameters for execution from the terminal
 def datExp(option,user_ins, UI=False):
-    #FIXME allow massData to be modified below
 #This uses the option from the first GUI to get inputs from the correct GUI. Some of the definitions here are
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
     tryAgainCounter=1
@@ -22,7 +20,7 @@ def datExp(option,user_ins, UI=False):
             higherBound = int(guioutputs.isoUp)
             energyLim = int(guioutputs.E)
             exitcount = int(guioutputs.exitcount)
-            massData = str(guioutputs.mass)
+            massData = False #str(guioutputs.mass)
             wantedSpins=str(guioutputs.J).replace(" ","")
             energyLim=int(guioutputs.E)
             temperature = 0
@@ -34,7 +32,7 @@ def datExp(option,user_ins, UI=False):
             higherBound = int(user_ins.isoUp)
             energyLim = int(user_ins.E)
             exitcount = int(user_ins.exitcount)
-            massData = str(user_ins.mass)
+            massData = user_ins.mass
             wantedSpins=str(user_ins.J).replace(" ","")
             energyLim=int(user_ins.E)
             temperature = 0
@@ -53,7 +51,7 @@ def datExp(option,user_ins, UI=False):
             higherBound = int(betaoutputs.A)
             betaVariable = str(betaoutputs.B)
             energyLim = int(betaoutputs.E)
-            massData = "YES"
+            massData = True 
             wantedSpins=str(betaoutputs.J).replace(" ","")
             temperature = float(betaoutputs.temp)
         except:
@@ -63,10 +61,9 @@ def datExp(option,user_ins, UI=False):
             higherBound = int(user_ins.isoUp)
             betaVariable = str(user_ins.Beta)
             energyLim = int(user_ins.E)
-            massData = "YES"
+            massData = user_ins.mass
             wantedSpins=str(user_ins.J).replace(" ","")
             temperature = float(user_ins.temp)
-            #if massData =
         finally:
             elementName = elementName.title()
             elementName = elementName.replace(" ","")
@@ -79,7 +76,7 @@ def datExp(option,user_ins, UI=False):
         lowerBound = int(parabolaoutputs.A)
         higherBound = int(parabolaoutputs.A)
         energyLim = 0.0
-        massData = "YES"
+        massData = True
         wantedSpins=str(parabolaoutputs.J).replace(" ","")
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
@@ -105,11 +102,9 @@ def datExp(option,user_ins, UI=False):
             indata.filterData(wantedSpins,UI)
 
             ## Include Atomic Mass Energy Data
-            if option == 'one':
-                pass
-            else:
-                md.addMass(indata) 
-
+            if massData:
+                md.addMass(indata)
+            
 
             ## Include ionization effects
             addion.addIonization(indata) 
@@ -128,9 +123,17 @@ def datExp(option,user_ins, UI=False):
 
        
 #This function will create a plt file for use in gnuplot to plot data from a eiter filtered data files or the whoel data file. This function is best used if used with datExp.
-def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,decayType,wantedSpins='',UI=False,fileParsingFactor=0):
+def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,decayType,wantedSpins='',UI=False,userArgs=None,fileParsingFactor=0):
+    
+    try:
+        makePNG = userArgs.png
+        makeGIF = userArgs.gif
+    except AtrributeError: ## GUI used
+        makePNG = True
+        makeGIF = True
 
     fileParsingFactorStr="_every_"+str(fileParsingFactor)
+    print(fileParsingFactor)
 
     tryAgainCounter=1
     #while(tryAgainCounter and UI):
@@ -142,7 +145,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 tryAgainCounter=0
         except:
             print("Invalid Input")
-
+    print('@x2 %s'%fileParsingFactor)
 
     elementnamestring = "".join(elementName)
     if len(elementnamestring) > 50:
@@ -200,7 +203,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             elif option == "three":
                 fileName = "Parabola_"+str(lowerBound)+"_"+str(temperature)[:-2]+"K.plt"
                 create_file = True
-            print(option) #FIXME option is reassigning somehow
+            #print(option) #FIXME option is reassigning somehow
             fileName= "Output/gnuPlot/" + fileName.replace('/','_')
             pltFile = open(fileName,'wb')
             
@@ -216,11 +219,11 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
 
         #This labels the y axis and the Title
                 pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
+                pltFile.write(str.encode("set term png\n"))
                 if option == "one":
                     pltFile.write(str.encode("set title \"Excited States of ^{"+str(lowerBound)+"}"+elementnamestring+" to ^{"+str(higherBound)+"}"+elementnamestring+" with "+wantedSpins+" Spins up to "+str(energyLim)+" keV\"\n"))
                 elif option == "two":
                     pltFile.write(str.encode("set title \"B^{"+decayType[-1]+"} Decay Scheme for ^{"+str(lowerBound)+"}"+str(elementName[0])+" at "+str(temperature)+" K\\nup to "+str(energyLim)+" keV Excitation Energy\"\n"))
-                    #pltFile.write(str.encode("set title \"Beta Decay Scheme for ^{"+str(lowerBound)+"}"+str(elementName[0])+" and ^{"+str(higherBound)+"}"+str(elementName[1])+" at "+str(temperature)+" K\\nup to "+str(energyLim)+" keV Excitation Energy\"\n"))
                 elif option == "three":
                     pltFile.write(str.encode("set title \"Mass Parabola for A = "+str(lowerBound)+" at "+str(temperature)+" K\"\n"))
                 else:
@@ -352,20 +355,20 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 
                 itercount = itercount + 1
             mostrecentiter = itercount   
-    # FIXME plot generation works w/ if true instead of if UI
-    if True:
+    try:
 #    if UI:
-        print("Program is finished plotting")
         #This defines the code required for the program to plot the information
         #as a .gif file.
         #Also in here is the font and font size for the .gif file
-        #if os.path.isfile(fileName):
-        try:
+
+        fileName = fileName[15:]
+        gif_filename = fileName[:-4]+'.gif'
+        png_filename = fileName[:-4]+'.png'
+
+        if makePNG:
+            bigfileName = "Large_"+png_filename
             pltFile.write(str.encode("set term png size 5600,4000\n"))
-            fileName = fileName[15:].replace('.plt','.png')
-            bigfileName = "Large_"+fileName.replace(".gif",".png")
             pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 95\"\n"))
-#FIXME program stops here
             if os.path.isfile(bigfileName):
                 os.remove(bigfileName)
             if rangecount >= 20:
@@ -382,11 +385,9 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             pltFile.write(str.encode("set output "+"'"+bigfileName+"'"+"\n"))
             pltFile.write(str.encode("replot\n"))
 
+        if makeGIF:
             pltFile.write(str.encode("set term gif size 840,600\n"))
-            fileName = fileName.replace('.png','.gif')
             pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 15\"\n"))
-            if os.path.isfile(fileName):
-                os.remove(fileName)
             if rangecount >= 20:
                 pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 7\n"))
             elif rangecount >= 15:
@@ -397,15 +398,10 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
             else:
                 pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 15\n"))
-            pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
+            pltFile.write(str.encode("set output "+"'"+gif_filename+"'"+"\n"))
             pltFile.write(str.encode("replot\n"))
-            pltFile.write(str.encode("set term x11"))
-        except:
-            print('Error generating .plt file')
-        exit
-
-    else:
-        print("Nothing to plot")
-        exit
-
-
+        print("Program is finished plotting.")
+    except:
+        print('Error generating .plt file.')
+        raise
+    exit
