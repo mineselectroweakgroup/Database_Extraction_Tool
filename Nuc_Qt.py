@@ -122,7 +122,6 @@ class NucEval(QDialog):
         self.setWindowTitle('Evaluated Nuclear Structure Data')
         self.setStyleSheet("background-color: white")
 
-        #self.exec_()
 
     def eventFilter(self, object, event):
         if event.type() == QtCore.QEvent.HoverEnter:
