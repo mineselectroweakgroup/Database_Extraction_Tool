@@ -143,11 +143,10 @@ class NucEval(QDialog):
         self.accept()
 
     def mainClicked(self):
-        # 
-        self.checmSymVar = "Zn"
-        self.A = 10
-        self.spinVar = "0+"
-        self.exitCount = 1
+#        self.chemSymVar = "Zn"
+#        self.A = 10
+#        self.spinVar = "0+"
+#        self.exitCount = 1
         self.close()
         os.system("python3 StartupQt.py")
         #main()
@@ -158,13 +157,16 @@ class NucEval(QDialog):
 #Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts
 
 def getguioutputs(gif):
-#These are the Nuclear Structure (ENSDF inputs) variables
+    """
+    Method called by IsotopeDataExporting to launch the plotting 
+    window and pass inputs
+    """
 
-    app = QApplication(sys.argv)
+    #app = QApplication(sys.argv)
     ex = NucEval(gif)
     ex.exec_()
     #sys.exit(app.exec_())
-    app.exec_()
+    #app.exec_()
 
     Z=ex.chemSymVar
     try:

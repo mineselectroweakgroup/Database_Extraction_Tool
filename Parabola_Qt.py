@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys
+import sys, os
 from PyQt5.QtWidgets import (QDialog, QWidget, QApplication, QPushButton, QGridLayout, QLabel, QLineEdit, QComboBox, QFrame)
 from PyQt5.QtGui import (QIcon, QFont, QPixmap)
 from PyQt5 import QtCore
 
-import os
 
 """ Check how tabs work when selecting buttons """
 class MassParabola(QDialog):
@@ -38,7 +37,7 @@ class MassParabola(QDialog):
         self.temp.setMaximumWidth(260)
         self.temp.setStyleSheet("border: 1px solid #2B4570; border-radius:5px; width: 25px; height: 25px; margin: 0px 25px 0px 25px;")
 
-        # Button defined below 
+        # Buttons defined below 
 
         submit = QPushButton("Submit", self)
         submit.clicked.connect(self.submitClicked)
@@ -119,21 +118,25 @@ class MassParabola(QDialog):
 
     def mainClicked(self):
         #TODO: Resolve bug when exiting from main window
-        self.chemSymVar = "Zn"
-        self.A = 10
-        self.spinVar = "0+"
-        self.exitcount = 1
-        self.close()
+        self.close()     
         os.system("python3 StartupQt.py")
+        #self.chemSymVar = ""
+        #self.A = ""
+        #self.spinVar = ""
+        #self.exitcount = ""
+#        os.system("python3 StartupQt.py")
 
 
 def getparabolaoutputs(gif):
-#These are the Nuclear Structure (ENSDF inputs) variables
-    app = QApplication(sys.argv)
+    """
+    Method called by IsotopeDataExporting to launch the plotting 
+    window and pass inputs
+    """
+#    app = QApplication(sys.argv)
     ex = MassParabola(gif)
     ex.exec_()
-    #sys.exit(app.exec_())
-    app.exec_()
+#    sys.exit(app.exec_())
+    #app.exec_()
 
     periodicTable=open("ElementList.txt",'r')
     Z = periodicTable.readline()

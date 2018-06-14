@@ -43,7 +43,7 @@ class MainWindow(QDialog):
         submit.installEventFilter(self)
  
         exit = QPushButton("Exit", self)
-        exit.clicked.connect(QApplication.instance().quit)
+        exit.clicked.connect(QApplication.quit)
 #        exit.clicked.connect(self.exitClicked)
         exit.setStyleSheet("background-color:#EBEEF2; border: 1px solid #2B4570; border-radius:5px; color: #2B4570; height:25px;")                
         exit.installEventFilter(self)     
@@ -86,22 +86,26 @@ class MainWindow(QDialog):
         if index >= 0:
             combo.setCurrentIndex(index)
         option = ["one", "two", "three"]
+        self.close()
         startup(option[index])
+        
 #        self.exit()
 
     def updateClicked(self):
         main
-        print("update")
 
     def exitClicked(self):
         #Input default variables
-        return 0
+        print("close")
+        sys.exit()
+        return 0;       
 
 def main():
     app = QApplication(sys.argv)
     ex = MainWindow()
     ex.show()
     sys.exit(app.exec_())
+#    app.exec_()
 
 if __name__ == '__main__':
     main()

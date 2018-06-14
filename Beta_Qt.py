@@ -115,7 +115,7 @@ class BetaDecay(QDialog):
         grid.addLayout(botGrid, 4, 0)
 
         self.setGeometry(300, 300, 500, 420) #x coord, y coord, width, height
-        self.setWindowTitle('Beta Decay Eval')
+        self.setWindowTitle('Beta Decay Evaluation')
         self.setStyleSheet("background-color: white")
 
         #self.exec_()
@@ -139,10 +139,10 @@ class BetaDecay(QDialog):
  
     def mainClicked(self):
         #TODO: Fix bug when closing main window
-        self.chemSymVar = "Zn"
-        self.A = 10
-        self.spinVar = "0+"
-        self.exitcount = 1
+#        self.chemSymVar = "Zn"
+#        self.A = 10
+#        self.spinVar = "0+"
+#        self.exitcount = 1
         self.close()
         os.system("python3 StartupQt.py")
        
@@ -151,13 +151,15 @@ class BetaDecay(QDialog):
 #Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts
 
 def getbetaoutputs(gif):
-#These are the Nuclear Structure (ENSDF inputs) variables
-
-    app = QApplication(sys.argv)
+    """
+    Method called by IsotopeDataExporting to launch the plotting 
+    window and pass inputs
+    """
+#    app = QApplication(sys.argv)
     ex = BetaDecay(gif)
     ex.exec_()
-    #sys.exit(app.exec_())
-    app.exec_()
+#    sys.exit(app.exec_())
+    #app.exec_()
 
     a=ex.chemSymVar.upper()
     b=ex.A
@@ -180,7 +182,7 @@ def getbetaoutputs(gif):
         E = 50000
 
     ##These if statements kill the program if the user leaves a section blank
-    if Z == "" or A == "":
+    if Z == "" or A == "" or Z == "Mass #" or A == "Element":
         print("Please enter a valid element and mass number.")
         sys.exit()
 
