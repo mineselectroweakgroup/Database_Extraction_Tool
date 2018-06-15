@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys
+import sys, os
 from PyQt5.QtWidgets import (QDialog, QWidget, QApplication, QPushButton, QGridLayout, QLabel, QLineEdit, QComboBox, QFrame)
 from PyQt5.QtGui import (QIcon, QFont, QPixmap)
 from PyQt5 import QtCore
 
-import os
 
-""" Check how tabs work when selecting buttons """
 class BetaDecay(QDialog):
 
     def __init__(self, gif):
@@ -29,7 +27,6 @@ class BetaDecay(QDialog):
         pixmap = QPixmap(plotGif)
         label = QLabel(self)
         label.setPixmap(pixmap)
-
        
         #Input Dialogs
         self.mass = QLineEdit(self)
@@ -106,7 +103,6 @@ class BetaDecay(QDialog):
         botGrid.addWidget(self.energy, 0, 7)
         botGrid.addWidget(self.beta, 0, 9)
         botGrid.addWidget(submit, 0, 11)
-#        botGrid.setSpacing(20)    
 
         grid.addLayout(topGrid, 0, 0)
         grid.addWidget(line, 1, 0, 1, 6)
@@ -128,7 +124,6 @@ class BetaDecay(QDialog):
 
     def submitClicked(self):
         """Send user input to nuclear structure sorting function"""
-        #from IsotopeDataExporting import datExp
         self.chemSymVar = self.mass.text()
         self.A = self.element.text()
         self.energyVar = self.energy.text()
@@ -146,19 +141,14 @@ class BetaDecay(QDialog):
         os.system("python3 StartupQt.py")
        
 
-
-#Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts
-
 def getbetaoutputs(gif):
     """
     Method called by IsotopeDataExporting to launch the plotting 
     window and pass inputs
     """
-#    app = QApplication(sys.argv)
+
     ex = BetaDecay(gif)
     ex.exec_()
-#    sys.exit(app.exec_())
-    #app.exec_()
 
     a=ex.chemSymVar.upper()
     b=ex.A
@@ -180,7 +170,7 @@ def getbetaoutputs(gif):
     if E == "" or E == "Energy (keV)":
         E = 50000
 
-    ##These if statements kill the program if the user leaves a section blank
+    #This if statement kills the program if user leaves a section blank
     if Z == "" or A == "" or Z == "Mass #" or A == "Element":
         print("Please enter a valid element and mass number.")
         sys.exit()

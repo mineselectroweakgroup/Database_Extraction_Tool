@@ -89,8 +89,6 @@ class MainWindow(QDialog):
         self.close()
         startup(option[index])
         
-#        self.exit()
-
     def updateClicked(self):
         main
 
@@ -105,7 +103,6 @@ def main():
     ex = MainWindow()
     ex.show()
     sys.exit(app.exec_())
-#    app.exec_()
 
 if __name__ == '__main__':
     main()

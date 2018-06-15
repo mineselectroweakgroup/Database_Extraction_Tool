@@ -1,15 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys
+import sys, os
 from PyQt5.QtWidgets import (QDialog, QWidget, QApplication, QPushButton, QGridLayout, QLabel, QLineEdit, QComboBox, QFrame)
 from PyQt5.QtGui import (QIcon, QFont, QPixmap)
 from PyQt5 import QtCore
-import os
 
-#from StartupQt import main
 
-" Check how tabs work when selecting buttons """
 class NucEval(QDialog):
 
     def __init__(self, gif):
@@ -148,12 +145,7 @@ class NucEval(QDialog):
 #        self.exitCount = 1
         self.close()
         os.system("python3 StartupQt.py")
-        #main()
-        #print("main")
 
-
-
-#Need to define a class for the variables output by the gui (the user inputs), to be used in the other scripts
 
 def getguioutputs(gif):
     """
@@ -161,11 +153,8 @@ def getguioutputs(gif):
     window and pass inputs
     """
 
-    #app = QApplication(sys.argv)
     ex = NucEval(gif)
     ex.exec_()
-    #sys.exit(app.exec_())
-    #app.exec_()
 
     Z=ex.chemSymVar
     try:
@@ -178,8 +167,8 @@ def getguioutputs(gif):
     E=ex.upBoundEnergyVar
     exitcount=ex.exitcount
 
-    ##These if statements either kill the program or input preset values if the
-    ##user leaves a section blank.
+    #These if statements either kill the program or input preset values if the
+    #user leaves a section blank.
     if exitcount == 1:
         sys.exit()
     if Z == '' or Z == "Element":

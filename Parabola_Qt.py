@@ -7,7 +7,6 @@ from PyQt5.QtGui import (QIcon, QFont, QPixmap)
 from PyQt5 import QtCore
 
 
-""" Check how tabs work when selecting buttons """
 class MassParabola(QDialog):
 
     def __init__(self, gif):
@@ -123,7 +122,6 @@ class MassParabola(QDialog):
         #self.A = ""
         #self.spinVar = ""
         #self.exitcount = ""
-#        os.system("python3 StartupQt.py")
 
 
 def getparabolaoutputs(gif):
@@ -131,11 +129,9 @@ def getparabolaoutputs(gif):
     Method called by IsotopeDataExporting to launch the plotting 
     window and pass inputs
     """
-#    app = QApplication(sys.argv)
+    
     ex = MassParabola(gif)
     ex.exec_()
-#    sys.exit(app.exec_())
-    #app.exec_()
 
     periodicTable=open("ElementList.txt",'r')
     Z = periodicTable.readline()
@@ -143,8 +139,9 @@ def getparabolaoutputs(gif):
     A=ex.A
     J=""
     T=ex.T
-    ##These if statements either kill the program or input preset values if the
-    ##user leaves a section blank.
+    
+    #These if statements either kill the program or input preset values if the
+    #user leaves a section blank.
     if A == '' or A == "Mass #":
         print("Please choose a valid mass number.")
         sys.exit()
