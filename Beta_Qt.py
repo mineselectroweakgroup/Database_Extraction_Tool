@@ -52,7 +52,7 @@ class BetaDecay(QDialog):
         self.beta = QComboBox(self)
         self.beta.addItem("B+")
         self.beta.addItem("B-")
-#        self.beta.setStyleSheet("color:#2B4570; border: 1px solid #2B4570; border-radius:5px;")
+        self.beta.setStyleSheet("background-color:#F5EFFF; color:#2B4570; border: 1px solid #2B4570; border-radius:5px; width: 33px;")
 
         # Buttons defined below
     
@@ -118,7 +118,6 @@ class BetaDecay(QDialog):
         self.setWindowTitle('Beta Decay Evaluation')
         self.setStyleSheet("background-color: white")
 
-        #self.exec_()
     def eventFilter(self, object, event):
         if event.type() == QtCore.QEvent.HoverEnter:
             object.setStyleSheet("background-color:#1E555C; color:#EBEEF2; border:1px solid #1E555C; border-radius:5px; height:25px; margin: 0px 25px 0px 25px;padding: 0px 15px 0px 15px;")
