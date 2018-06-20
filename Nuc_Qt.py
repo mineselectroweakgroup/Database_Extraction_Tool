@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys, os
+import sys, os, glob
 from PyQt5.QtWidgets import (QDialog, QWidget, QApplication, QPushButton, QGridLayout, QLabel, QLineEdit, QComboBox, QFrame)
 from PyQt5.QtGui import (QIcon, QFont, QPixmap)
 from PyQt5 import QtCore
@@ -26,12 +26,16 @@ class NucEval(QDialog):
 
     def initUI(self, gif):
 
+        # Appropriate image loaded into plot window
+        # Most recent gif or default image
+
         plotGif = gif or 'Output/gnuPlot/nuclearChart.gif'
         pixmap = QPixmap(plotGif)
         label = QLabel(self)
         label.setPixmap(pixmap)
 
         # Input Dialogs defined below
+        # Defined in order for sequential tabbing
 
         self.mass = QLineEdit(self)
         self.mass.setText("Element")
@@ -55,7 +59,7 @@ class NucEval(QDialog):
         self.spin.setStyleSheet("border: 1px solid #2B4570; border-radius:5px; width: 25px; height: 25px; margin: 10px 20px 10px 20px;")
 
 
-        # Button defined below 
+        # Buttons defined below 
 
         submit = QPushButton("Submit", self)
         submit.clicked.connect(self.submitClicked)
@@ -64,6 +68,7 @@ class NucEval(QDialog):
 
 
         full = QPushButton("Full", self)
+        full.clicked.connect(self.fullClicked)
         full.setStyleSheet("background-color:#EBEEF2; border: 1px solid #2B4570; border-radius:5px; color: #2B4570; height:25px; margin-left: 25px; margin-right: 25px;")      
         full.installEventFilter(self)      
 
@@ -139,12 +144,17 @@ class NucEval(QDialog):
         self.accept()
 
     def mainClicked(self):
-#        self.chemSymVar = "Zn"
-#        self.A = 10
-#        self.spinVar = "0+"
-#        self.exitCount = 1
+        """Return to startup window to select new plotting program"""
         self.close()
         os.system("python3 StartupQt.py")
+
+    def fullClicked(self):
+        """Open okular to display large plot"""
+        directory = "Output/gnuPlot"
+        newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
+        newest = newest.replace(os.getcwd()+"/","").replace(".gif",".png")
+        newest = "Large_"+newest
+        os.system("okular --presentation "+newest+" &")
 
 
 def getguioutputs(gif):

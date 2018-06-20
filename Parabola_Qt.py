@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys, os
+import sys, os, glob
 from PyQt5.QtWidgets import (QDialog, QWidget, QApplication, QPushButton, QGridLayout, QLabel, QLineEdit, QComboBox, QFrame)
 from PyQt5.QtGui import (QIcon, QFont, QPixmap)
 from PyQt5 import QtCore
@@ -20,12 +20,17 @@ class MassParabola(QDialog):
  
     def initUI(self, gif):
 
+        # Appropriate image loaded into plot window
+        # Most recent gif or default image
+
         plotGif = gif or 'Output/gnuPlot/nuclearChart.gif'
         pixmap = QPixmap(plotGif)
         label = QLabel(self)
         label.setPixmap(pixmap)
 
-        #Input Dialogs
+        # Input Dialogs defined below
+        # Defined in order for sequential tabbing
+
         self.mass = QLineEdit(self)
         self.mass.setText("Mass #")
         self.mass.setMaximumWidth(260)
@@ -45,6 +50,7 @@ class MassParabola(QDialog):
 
 
         full = QPushButton("Full", self)
+        full.clicked.connect(self.fullClicked)
         full.setStyleSheet("background-color:#EBEEF2; border: 1px solid #2B4570; border-radius:5px; color: #2B4570; height:25px; margin-left: 25px; margin-right: 25px;")      
         full.installEventFilter(self)      
 
@@ -115,13 +121,17 @@ class MassParabola(QDialog):
         self.accept()
 
     def mainClicked(self):
-        #TODO: Resolve bug when exiting from main window
+        """Return to startup window to select new plotting program"""
         self.close()     
         os.system("python3 StartupQt.py")
-        #self.chemSymVar = ""
-        #self.A = ""
-        #self.spinVar = ""
-        #self.exitcount = ""
+
+    def fullClicked(self):
+        """Open okular to display large plot"""
+        directory = "Output/gnuPlot"
+        newest = max(glob.iglob(directory+"/*"),key=os.path.getctime)
+        newest = newest.replace(os.getcwd()+"/","").replace(".gif",".png")
+        newest = "Large_"+newest
+        os.system("okular --presentation "+newest+" &")
 
 
 def getparabolaoutputs(gif):
