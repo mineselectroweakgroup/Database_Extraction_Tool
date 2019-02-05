@@ -274,26 +274,101 @@
 150    R 2012WA38 JOUR CPCHC 36 1603                                            
 150    R 2012ZH03 JOUR PRVCA 85 014330                                          
                                                                                 
-150CS    ADOPTED LEVELS                                          13NDS    201306
+150CS    COMMENTS                                                ENSDF    201711
+150CS  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+150CS C  TITL$NUCLEAR DATA SHEETS FOR 150CS                                     
+150CS c  AUTH$FILIP G. KONDEV                                                   
+150CS c  INST$Nuclear Engineering Division                                      
+150CS#c       Argonne National Laboratory                                       
+150CS#c       9700 South Cass Avenue                                            
+150CS#c       Argonne, Illinois 60439, USA                                      
+150CS c  ABST$Information about the nuclear structure properties of the         
+150CS2c  {+150}Cs nuclide is presented                                          
+150CS c  CUT$Literature available up to February 20, 2017 has been consulted.   
+150CS c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+150CS1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+150CS C  CIT$ENSDF                                                              
+                                                                                
+150CS    ADOPTED LEVELS                                          ENSDF    201711
 150CS  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
 150CS2 H CUT=1-Apr-2013$                                                        
+150CS  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 150CS  Q 11439     SY 3125   SY                        2012WA38                 
-150CS CQ $DQ-=422, DSN=357,  S(2N)=7662 SY 648,  Q(B-N)=6134 SY 357 (2012WA38)  
-150CS C  ISOLDE On-Line Mass Separator, CERN (1987Ra12)                         
-150CS  L 0.0                            50 MS     GT                            
-150CS2 L %B-=100$%B-N=?                                                         
-150CS CL T$from 1987Ra12                                                        
+150CS cQ $|DQ(|b{+-})=422, |DS(n)=357                                           
+150CS cQ $S(2n)=7662 {I648}, Q(|b{+-}n)=6134 {I357} (2012Wa38, syst).           
+150CS c  1987Ra12: Yield of {+150}Cs was measured in U(p,X)                     
+150CS2c  E=600 MeV reaction using ISOLDE On-Line Mass Separator                 
+150CS c  2000KoZH: ISOLDE On-Line Mass Separator. Measured E|g,                 
+150CS2c  I|g, En, In; deduced T{-1/2}, nuclear magnetic moments,                
+150CS3c  |b-delayed neutron emission probabilities                              
+150CS c  2017Wu04: The {+150}Cs nuclide was produced at the RIBF-RIKEN facility 
+150CS2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+150CS3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+150CS4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+150CS5c  pnA, respectively. The identification of the nuclide of interest was   
+150CS6c  made in the BigRIPS separator by determining the atomic number and the 
+150CS7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+150CS8c  reaction products were transported through the ZeroDegree Spectrometer 
+150CS9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+150CSac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+150CSbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+150CScc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+150CSdc  Deduced: T{-1/2}.                                                      
+150CS  L 0.0                           84 MS     8                              
+150CS2 L %B-=100 $ %B-N=20 10                                                   
+150CS cL %B-$Only |b{+-} decay mode is expected.                                
+150CS cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+150CS2cL using the least-squares and maximum-likelihood methods. The data       
+150CS3cL analysis included contributions from the parent, daughter and          
+150CS4cL grand-daughter decays, as well as a constant background.               
+150CS5cL T{-1/2}=0.0844 s {I82} is reported in 2017Wu04. Other:                 
+150CS5cL 82 ms {I7} using |bn(t) in 2000KoZH                                    
+150CS CL %B-N$From 2000KoZH                                                     
                                                                                 
-150BA    ADOPTED LEVELS                                          13NDS    201306
+150BA    COMMENTS                                                ENSDF    201711
+150BA  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+150BA C  TITL$NUCLEAR DATA SHEETS FOR 150BA                                     
+150BA c  AUTH$FILIP G KONDEV                                                    
+150BA c  INST$Nuclear Engineering Division                                      
+150BA#c       Argonne National Laboratory                                       
+150BA#c       9700 South Cass Avenue                                            
+150BA#c       Argonne, Illinois 60439, USA                                      
+150BA c  ABST$Information about the nuclear structure properties of the         
+150BA2c  {+150}Ba nuclide is presented                                          
+150BA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+150BA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+150BA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+150BA C  CIT$ENSDF                                                              
+                                                                                
+150BA    ADOPTED LEVELS                                          ENSDF    201711
 150BA  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
 150BA2 H CUT=1-Apr-2013$                                                        
+150BA  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 150BA  Q 6129      SY 5305   SY 13781  SY -4724   SY   2012WA38                 
-150BA CQ $DQ-=357, DSN=357, DSP=357, DQA=299,  S(2N)=8803 SY 305,  S(2P)=25830  
-150BA2CQ SY 357,  Q(B-N)=1894 SY 359 (2012WA38)                                 
-150BA  L 0.0          0+                0.3 S                                   
-150BA2 L %B-=100$%B-N=?                                                         
-150BA CL T$from X, |g, X|g and |g|g measurements on separated fission products  
-150BA2CL from a thermal ion source at TRISTAN (1987MaZY)                        
+150BA cQ $|DQ(|b{+-})=357, |DS(n)=357, |DS(p)=357, |DQ(|a)=299                  
+150BA cQ $S(2n)=8803 {I305}, S(2p)=25830 {I357}, Q(|b{+-}n)=1894 {I359}         
+150BA2cQ (2012Wa38, syst)                                                       
+150BA c  2017Wu04: The {+150}Ba nuclide was produced at the RIBF-RIKEN facility 
+150BA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+150BA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+150BA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+150BA5c  pnA, respectively. The identification of the nuclide of interest was   
+150BA6c  made in the BigRIPS separator by determining the atomic number and the 
+150BA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+150BA8c  reaction products were transported through the ZeroDegree Spectrometer 
+150BA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+150BAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+150BAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+150BAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+150BAdc  Deduced: T{-1/2}.                                                      
+150BA  L 0.0          0+               0.259 S   5                              
+150BA2 L %B-=100 $ %B-N=?                                                       
+150BA cL %B-$Only |b{+-} decay mode is expected.                                
+150BA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+150BA2cL using the least-squares and maximum-likelihood methods. The data       
+150BA3cL analysis included contributions from the parent, daughter and          
+150BA4cL ground-daughter decays, as well as a constant background.              
+150BA5cL Other: 0.3 s from 1987MaZY                                             
                                                                                 
 150LA    ADOPTED LEVELS                                          13NDS    201306
 150LA  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
@@ -6347,153 +6422,6 @@
 150SMX G EKC=0.038E-3 2                                                         
 150SM CG RI$from 1963Gr18                                                       
                                                                                 
-150SM    149SM(N,G): AV RES            1970BU19                  13NDS    201306
-150SM  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
-150SM2 H CUT=1-Apr-2013$                                                        
-150SM C  The average intensity of primary |g-transitions to low-lying levels    
-150SM2C  was measured during neutron capture in a large number of resonances.   
-150SM3C  100 eV to 10 keV epithermal neutrons were used. Spectra were taken     
-150SM4C  both in singles and in triple coincidences between the double escape   
-150SM5C  peak and the two annihilation rays. Data below 6 MeV are considered    
-150SM6C  less reliable as contributions from the odd isotopes of Sm increase    
-150SM7C  the complexity of the spectrum.                                        
-150SM CL J$Established by |g strength (I|g/E|g{+5}) from average resonance      
-150SM2CL capture.                                                               
-150SM CG M$|g mult established by |g strength (I|g/E|g{+5}) from average        
-150SM2CG resonance capture.                                                     
-150SM CG E$An energy spread in the captured neutrons introduced a shape change  
-150SM2CG in the |g peaks, which resulted in a 1 or more keV shift to higher     
-150SM3CG values for their centroids relative to thermal capture values. An      
-150SM4CG added shift of 0.8 keV for M1, E2 relative to E1 transitions resulted  
-150SM5CG from the presence of p-wave capture. Consult original paper to obtain  
-150SM6CG details of corrections.                                                
-150SM C                                                                         
-150SM CG RI$Relative to 1000 for the 7214.1-keV transition.                     
-150SM CG DRI$|DI|g given as a percentage of I|g.                                
-150SM CL J(A)$From adopted levels, used to define the 3+,4+ group.              
-150SM CL J(B)$From adopted levels, used to define the 2+,5+ group.              
-150SM  L 334.3        2+                                                    B   
-150SM  L 740.4        (0+)                                                     ?
-150SM  L 773.3        4+                                                    A   
-150SM  L 1045.9       2+,5+                                                     
-150SM  L 1071.8       3-,4-                                                     
-150SM  L 1165.5       (1-,6-)                                                   
-150SM  L 1193.6       2+,5+                                                     
-150SM  L 1256.6       (0+)                                                     ?
-150SM  L 1278.8                                                                ?
-150SM CL J$not 2+,3+,4+, or 5+                                                  
-150SM  L 1357.7       3-,4-                                                     
-150SM CL J$adopted value is 5-, which is less likely from I|g/E|g{+5} but not   
-150SM2CL completely ruled out.                                                  
-150SM  L 1416.8       2+,5+                                                     
-150SM  L 1448.7       3+,4+                                                     
-150SM  L 1504.4       3+,4+                                                     
-150SM  L 1642.1       3+,4+                                                     
-150SM  L 1672.7       (2-,5-)                                                  ?
-150SM CL J$could also be LT 1 or GT 6.                                          
-150SM  L 1684.5       3-,4-                                                     
-150SM  L 1760.3       3-,4-                                                     
-150SM CL J$less probably 2-,5-.                                                 
-150SM  L 1773.3       2-,5-                                                    ?
-150SM CL J$less probably 3-,4-.                                                 
-150SM  L 1793.7       2+,5+                                                     
-150SM  L 1818.9       3+,4+                                                     
-150SM  L 1883.3       2+,5+                                                     
-150SM  L 1948.4       2-,5-                                                     
-150SM CL J$less probably 3-,4-.                                                 
-150SM  L 1969.9       3+,4+                                                     
-150SM  L 1979.3       3-,4-                                                     
-150SM  L 2003.8       2+,5+                                                    ?
-150SM  L 2019.2       2+,5+                                                    ?
-150SM  L 2023.8       3+,4+                                                     
-150SM  L 2043.0       3+,4+                                                     
-150SM  L 2054.5       2+,5+                                                    ?
-150SM  L 2061.7       3+,4+                                                     
-150SM  L 2094.8       2+,5+                                                     
-150SM  L 2108.9       2- TO 5-                                                 ?
-150SM  L 2151.4       (3+,4+)                                                   
-150SM  L 2193.1       3+,4+                                                     
-150SM  L 2223.7                                                                 
-150SM CL J$not 2+,3+,4+, or 5+                                                  
-150SM  L 2233.5       2- TO 5-                                                  
-150SM  L 2247.5       (3+,4+)                                                   
-150SM  L 2260.4       3+,4+                                                     
-150SM  L 2280.1       3-,4-                                                     
-150SM  L 2290.3       3+,4+                                                     
-150SM  L 2328.1       3-,4-                                                     
-150SM  L 2359.2       3+,4+                                                    ?
-150SM  L 2368.6       3+,4+                                                     
-150SM  L 2452.7       3+,4+                                                     
-150SM  L 2471.7       3+,4+                                                     
-150SM CL J$less probably 2+,5+.                                                 
-150SM  L 2494.3       3+,4+                                                     
-150SM  L 7986.4    18 3-,4-                                                     
-150SM CL E$authors report SN=7986.4 {I18} keV, taking account the finite        
-150SM2CL energy of the captured neutron.                                        
-                                                                                
-150SM    149SM(N,G) E=RESONANCE        1974BE37                  13NDS    201306
-150SM  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
-150SM2 H CUT=1-Apr-2013$                                                        
-150SM C  The {+149}Sm(n,|g) reaction was studied as a function of neutron       
-150SM2C  energy in the range 0.04 eV to 34 eV at the Brookhaven National        
-150SM3C  Laboratory high flux beam reactor using time-of-flight techniques.     
-150SM4C  Data were taken at 9 resonances for which J|p=3- was deduced (on the   
-150SM5C  assumption that only s-wave resonances would appear) with resonance    
-150SM6C  energies (keV) 6.48, 9.0, 12.2, 14.9, 16.0, 25.3, 26.1, 28.1, and      
-150SM7C  29.8. Data were also taken at 7 additional resonances assigned J|p=4-  
-150SM8C  with resonance energies (keV) 0.0976, 0.873, 4.98, 17.2, 23.2, 30.9,   
-150SM9C  and 34.0. To study partial radiation cross sections in and between     
-150SMaC  the resonances, data were taken in 30 narrow consecutive intervals of  
-150SMbC  time-of-flight in the 1700 rpm run in the neutron energy region 0.04   
-150SMcC  to 5.5 eV. In order to cover this energy range, three separate runs    
-150SMdC  were made with chopper speeds 1700, 6000 and 13500 rpm providing       
-150SMeC  neutron bursts with FWHM 50, 14 and 6.5 |ms, respectively. J|p for     
-150SMfC  levels in {+150}Sm were deduced from |g strengths observed in the      
-150SMgC  above individual resonances.                                           
-150SM CL $E(level) deduced by 1974Be37 using ^S(n)=7986.4                       
-150SM  L 334.3     2  2+                                                        
-150SM  L 773.3     2  3+,4+                                                     
-150SM  L 1046.3    3  2+                                                        
-150SM  L 1193.6    2  2+                                                        
-150SM  L 1417.2    4  2+                                                        
-150SM  L 1449.5    3  3+,4+                                                     
-150SM  L 1504.7    3  3+,4+                                                     
-150SM  L 1643.0    2  3+,4+                                                     
-150SM  L 1793.8    4  2+,(3+,4+)                                                
-150SM  L 1819.9    3  3+,4+                                                     
-150SM  L 1833.8    3  2+,(3+,4+)                                                
-150SM  L 1927.3    4  2+,(3+,4+)                                                
-150SM  L 1970.9    3  3+,4+                                                     
-150SM  L 2005.5    8  2+                                                        
-150SM  L 2020.4    10 5+,(3+,4+)                                                
-150SM  L 2024.7    10 3+,4+                                                     
-150SM  L 2044.1    3  3+,4+                                                     
-150SM  L 2063.3    4  3+,4+                                                     
-150SM  L 2095.6    3  3+,4+                                                     
-150SM  L 2118.0    4  3+,4+                                                     
-150SM  L 2153.4    4  3+,4+                                                     
-150SM  L 2194.7    6  3+,4+                                                     
-150SM  L 2199.7    11 2,3,4                                                     
-150SM  L 2250.4    6  3+,4+                                                     
-150SM  L 2261.7    7  3+,4+                                                     
-150SM  L 2289.5    6  3+,4+                                                     
-150SM  L 2292.2    8  3+,4+                                                     
-150SM  L 2342.0    6  2+,3+,4+                                                  
-150SM  L 2360.3    4  3+,4+                                                     
-150SM  L 2371.2    5  3+,4+                                                     
-150SM  L 2395.9    4  3+,4+                                                     
-150SM  L 2455.5    5  3+,4+                                                     
-150SM  L 2465.3    4  3+,4+                                                     
-150SM  L 2472.4    5  3+,4+                                                     
-150SM  L 2480.5    4  3+,4+                                                     
-150SM  L 2495.6    7  3+,4+                                                     
-150SM  L 2507.5    6  3+,4+                                                     
-150SM  L 2522.3    6  3+,4+                                                     
-150SM  L 2556.0    6  3+,4+                                                     
-150SM  L 2565.3    7  3+,4+                                                     
-150SM  L 2575.3    7  3+,4+                                                     
-150SM  L 2587.3    5  3+,4+                                                     
-                                                                                
 150SM    149SM(N,G):HIGH RESOLUTION    2006BO10                  13NDS    201306
 150SM  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
 150SM2 H CUT=1-Apr-2013$                                                        
@@ -6626,6 +6554,153 @@
 150SM CL T$range: 0.54 to 2.0 ps: if 558|g is correctly placed                  
 150SM  G 558.1131  10                                                          ?
 150SML G FL=1278.9025                                                           
+                                                                                
+150SM    149SM(N,G) E=RESONANCE        1974BE37                  13NDS    201306
+150SM  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
+150SM2 H CUT=1-Apr-2013$                                                        
+150SM C  The {+149}Sm(n,|g) reaction was studied as a function of neutron       
+150SM2C  energy in the range 0.04 eV to 34 eV at the Brookhaven National        
+150SM3C  Laboratory high flux beam reactor using time-of-flight techniques.     
+150SM4C  Data were taken at 9 resonances for which J|p=3- was deduced (on the   
+150SM5C  assumption that only s-wave resonances would appear) with resonance    
+150SM6C  energies (keV) 6.48, 9.0, 12.2, 14.9, 16.0, 25.3, 26.1, 28.1, and      
+150SM7C  29.8. Data were also taken at 7 additional resonances assigned J|p=4-  
+150SM8C  with resonance energies (keV) 0.0976, 0.873, 4.98, 17.2, 23.2, 30.9,   
+150SM9C  and 34.0. To study partial radiation cross sections in and between     
+150SMaC  the resonances, data were taken in 30 narrow consecutive intervals of  
+150SMbC  time-of-flight in the 1700 rpm run in the neutron energy region 0.04   
+150SMcC  to 5.5 eV. In order to cover this energy range, three separate runs    
+150SMdC  were made with chopper speeds 1700, 6000 and 13500 rpm providing       
+150SMeC  neutron bursts with FWHM 50, 14 and 6.5 |ms, respectively. J|p for     
+150SMfC  levels in {+150}Sm were deduced from |g strengths observed in the      
+150SMgC  above individual resonances.                                           
+150SM CL $E(level) deduced by 1974Be37 using ^S(n)=7986.4                       
+150SM  L 334.3     2  2+                                                        
+150SM  L 773.3     2  3+,4+                                                     
+150SM  L 1046.3    3  2+                                                        
+150SM  L 1193.6    2  2+                                                        
+150SM  L 1417.2    4  2+                                                        
+150SM  L 1449.5    3  3+,4+                                                     
+150SM  L 1504.7    3  3+,4+                                                     
+150SM  L 1643.0    2  3+,4+                                                     
+150SM  L 1793.8    4  2+,(3+,4+)                                                
+150SM  L 1819.9    3  3+,4+                                                     
+150SM  L 1833.8    3  2+,(3+,4+)                                                
+150SM  L 1927.3    4  2+,(3+,4+)                                                
+150SM  L 1970.9    3  3+,4+                                                     
+150SM  L 2005.5    8  2+                                                        
+150SM  L 2020.4    10 5+,(3+,4+)                                                
+150SM  L 2024.7    10 3+,4+                                                     
+150SM  L 2044.1    3  3+,4+                                                     
+150SM  L 2063.3    4  3+,4+                                                     
+150SM  L 2095.6    3  3+,4+                                                     
+150SM  L 2118.0    4  3+,4+                                                     
+150SM  L 2153.4    4  3+,4+                                                     
+150SM  L 2194.7    6  3+,4+                                                     
+150SM  L 2199.7    11 2,3,4                                                     
+150SM  L 2250.4    6  3+,4+                                                     
+150SM  L 2261.7    7  3+,4+                                                     
+150SM  L 2289.5    6  3+,4+                                                     
+150SM  L 2292.2    8  3+,4+                                                     
+150SM  L 2342.0    6  2+,3+,4+                                                  
+150SM  L 2360.3    4  3+,4+                                                     
+150SM  L 2371.2    5  3+,4+                                                     
+150SM  L 2395.9    4  3+,4+                                                     
+150SM  L 2455.5    5  3+,4+                                                     
+150SM  L 2465.3    4  3+,4+                                                     
+150SM  L 2472.4    5  3+,4+                                                     
+150SM  L 2480.5    4  3+,4+                                                     
+150SM  L 2495.6    7  3+,4+                                                     
+150SM  L 2507.5    6  3+,4+                                                     
+150SM  L 2522.3    6  3+,4+                                                     
+150SM  L 2556.0    6  3+,4+                                                     
+150SM  L 2565.3    7  3+,4+                                                     
+150SM  L 2575.3    7  3+,4+                                                     
+150SM  L 2587.3    5  3+,4+                                                     
+                                                                                
+150SM    149SM(N,G): AV RES            1970BU19                  13NDS    201306
+150SM  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
+150SM2 H CUT=1-Apr-2013$                                                        
+150SM C  The average intensity of primary |g-transitions to low-lying levels    
+150SM2C  was measured during neutron capture in a large number of resonances.   
+150SM3C  100 eV to 10 keV epithermal neutrons were used. Spectra were taken     
+150SM4C  both in singles and in triple coincidences between the double escape   
+150SM5C  peak and the two annihilation rays. Data below 6 MeV are considered    
+150SM6C  less reliable as contributions from the odd isotopes of Sm increase    
+150SM7C  the complexity of the spectrum.                                        
+150SM CL J$Established by |g strength (I|g/E|g{+5}) from average resonance      
+150SM2CL capture.                                                               
+150SM CG M$|g mult established by |g strength (I|g/E|g{+5}) from average        
+150SM2CG resonance capture.                                                     
+150SM CG E$An energy spread in the captured neutrons introduced a shape change  
+150SM2CG in the |g peaks, which resulted in a 1 or more keV shift to higher     
+150SM3CG values for their centroids relative to thermal capture values. An      
+150SM4CG added shift of 0.8 keV for M1, E2 relative to E1 transitions resulted  
+150SM5CG from the presence of p-wave capture. Consult original paper to obtain  
+150SM6CG details of corrections.                                                
+150SM C                                                                         
+150SM CG RI$Relative to 1000 for the 7214.1-keV transition.                     
+150SM CG DRI$|DI|g given as a percentage of I|g.                                
+150SM CL J(A)$From adopted levels, used to define the 3+,4+ group.              
+150SM CL J(B)$From adopted levels, used to define the 2+,5+ group.              
+150SM  L 334.3        2+                                                    B   
+150SM  L 740.4        (0+)                                                     ?
+150SM  L 773.3        4+                                                    A   
+150SM  L 1045.9       2+,5+                                                     
+150SM  L 1071.8       3-,4-                                                     
+150SM  L 1165.5       (1-,6-)                                                   
+150SM  L 1193.6       2+,5+                                                     
+150SM  L 1256.6       (0+)                                                     ?
+150SM  L 1278.8                                                                ?
+150SM CL J$not 2+,3+,4+, or 5+                                                  
+150SM  L 1357.7       3-,4-                                                     
+150SM CL J$adopted value is 5-, which is less likely from I|g/E|g{+5} but not   
+150SM2CL completely ruled out.                                                  
+150SM  L 1416.8       2+,5+                                                     
+150SM  L 1448.7       3+,4+                                                     
+150SM  L 1504.4       3+,4+                                                     
+150SM  L 1642.1       3+,4+                                                     
+150SM  L 1672.7       (2-,5-)                                                  ?
+150SM CL J$could also be LT 1 or GT 6.                                          
+150SM  L 1684.5       3-,4-                                                     
+150SM  L 1760.3       3-,4-                                                     
+150SM CL J$less probably 2-,5-.                                                 
+150SM  L 1773.3       2-,5-                                                    ?
+150SM CL J$less probably 3-,4-.                                                 
+150SM  L 1793.7       2+,5+                                                     
+150SM  L 1818.9       3+,4+                                                     
+150SM  L 1883.3       2+,5+                                                     
+150SM  L 1948.4       2-,5-                                                     
+150SM CL J$less probably 3-,4-.                                                 
+150SM  L 1969.9       3+,4+                                                     
+150SM  L 1979.3       3-,4-                                                     
+150SM  L 2003.8       2+,5+                                                    ?
+150SM  L 2019.2       2+,5+                                                    ?
+150SM  L 2023.8       3+,4+                                                     
+150SM  L 2043.0       3+,4+                                                     
+150SM  L 2054.5       2+,5+                                                    ?
+150SM  L 2061.7       3+,4+                                                     
+150SM  L 2094.8       2+,5+                                                     
+150SM  L 2108.9       2- TO 5-                                                 ?
+150SM  L 2151.4       (3+,4+)                                                   
+150SM  L 2193.1       3+,4+                                                     
+150SM  L 2223.7                                                                 
+150SM CL J$not 2+,3+,4+, or 5+                                                  
+150SM  L 2233.5       2- TO 5-                                                  
+150SM  L 2247.5       (3+,4+)                                                   
+150SM  L 2260.4       3+,4+                                                     
+150SM  L 2280.1       3-,4-                                                     
+150SM  L 2290.3       3+,4+                                                     
+150SM  L 2328.1       3-,4-                                                     
+150SM  L 2359.2       3+,4+                                                    ?
+150SM  L 2368.6       3+,4+                                                     
+150SM  L 2452.7       3+,4+                                                     
+150SM  L 2471.7       3+,4+                                                     
+150SM CL J$less probably 2+,5+.                                                 
+150SM  L 2494.3       3+,4+                                                     
+150SM  L 7986.4    18 3-,4-                                                     
+150SM CL E$authors report SN=7986.4 {I18} keV, taking account the finite        
+150SM2CL energy of the captured neutron.                                        
                                                                                 
 150SM    149SM(D,P)                    1964KE03                  13NDS    201306
 150SM  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
@@ -11702,6 +11777,113 @@
 150GD  L 1947                                                                  ?
 150GD  L 1980                                                                  ?
                                                                                 
+150GD    (HI,XNG)                      1983BAZG                  13NDS    201306
+150GD  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
+150GD2 H CUT=1-Apr-2013$                                                        
+150GD C  See SD band data in (HI,xn|g):SD. References are: 1999ErZZ, 1998ErZY,  
+150GD2C  1998Be06, 1994Fa13, 1993Be37, 1991Fa07, 1990By01, 1989Fa02.            
+150GD C  1980BaYO,1983BaZG: {+124}Sn({+30}Si,4n|g) E=135 MeV. Measurements      
+150GD2C  were performed on-line and singles; |g|g(t) multiparameter             
+150GD3C  coincidence, angular distribution, and pulsed beam |g(t) data were     
+150GD4C  collected.                                                             
+150GD CG E,RI$From 1980BaYO and 1983BaZG for levels up to 12678. See level      
+150GD2CG listing.                                                               
+150GD CG M$From adopted gammas, except as noted                                 
+150GD CL J$On-line |g, |g(|q), and |g|g(t) measurements were the bases for the  
+150GD2CL J|p assignments. Dipole and quadrupole transitions were identified     
+150GD3CL from |g(|q); Q was assumed to be E2 (stretched) (1983BaZG). In         
+150GD4CL agreement with systematics, the presence of stretched Q transitions,   
+150GD5CL with no transitions to lower levels from the levels in question,       
+150GD6CL suggest bands and yrast transitions. The band-like series of |DJ=2     
+150GD7CL levels reflects the parity of the level on which they are based.       
+150GD8CL Below spin 19-, J|p are from adopted levels.                           
+150GD CG M(A)$From |g(|q) aligned (1983BaZG)                                    
+150GD CL E$From least squares fit to EG assuming |DE|g=1 keV.                   
+150GD  L 0            0+                                                        
+150GD  L 638.0     10 2+                                                        
+150GD  G 638          100       E2                                           C  
+150GD  L 1134.0    13 3-                                                        
+150GD  G 496                                                                 C  
+150GD  L 1288.0    13 4+                                                        
+150GD  G 650                    E2                                           C  
+150GD  L 1700.1    14 5-                                                        
+150GD  G 412                                                                    
+150GD  G 566                    E2                                           C  
+150GD  L 1935.9    15 6+                                                        
+150GD  G 648                    E2                                           C  
+150GD  L 2115.9    14 6+                                                        
+150GD  G 416                                                                    
+150GD  G 828                                                                 C  
+150GD  L 2211.3    15 7-                                                        
+150GD  G 511                    E2                                           C  
+150GD  L 2391.9    15 7+                                                        
+150GD  G 276                                                                 C  
+150GD  G 456                    (M1+E2)                                         
+150GD  L 2553.8    15 8+                                                        
+150GD  G 162                    M1                                              
+150GD  G 342                    E1                                              
+150GD  G 438                    E2                                              
+150GD  L 2816.1    17 9-                                                        
+150GD  G 605                    E2                                           C  
+150GD  L 3220.0    18 10-                                                       
+150GD  G 404                                                                 C  
+150GD  L 3288.0    17 10+                                                       
+150GD  G 472                                                                 C  
+150GD  G 734                                                                 C  
+150GD  L 3366.0    18 11-                                                       
+150GD  G 78                                                                    ?
+150GD  G 146                                                                 C  
+150GD  G 550                                                                 C  
+150GD  L 4105.2    19 12+                                                       
+150GD  G 817                                                                 C  
+150GD  L 4130.8    19 13-                                                       
+150GD  G 765                                                                 C  
+150GD  L 4739.3    20 14+                                                       
+150GD  G 634                                                                 C  
+150GD  L 4834.6    20 15-                                                       
+150GD  G 704                                                                 C  
+150GD  L 5428.5    21 16+                                                       
+150GD  G 594                                                                 C  
+150GD  G 689                                                                 C  
+150GD  L 5450.6    22 17-                                                       
+150GD  G 616                                                                 C  
+150GD  L 5632.5    22 17+                                                       
+150GD  G 204                                                                 C  
+150GD  L 5764.6    21 18+                                                       
+150GD  G 132                                                                    
+150GD  G 314                    D                                            C  
+150GDF G FLAG=A                                                                 
+150GD  G 336                                                                 C  
+150GD  L 6311.6    24 19-                                                       
+150GD  G 547                                                                 C  
+150GD  L 6450.6    24 20+                                                       
+150GD  G 686                                                                 C  
+150GD  L 6496      3  21-                                                       
+150GD  G 184                                                                    
+150GD  L 7276      3  23-                                                       
+150GD  G 780                                                                 C  
+150GD  L 7930      3  25-                                                       
+150GD  G 654                                                                 C  
+150GD  L 8325      3  27-                                                       
+150GD  G 395                                                                 C  
+150GD  L 9410      3  28+                                                      ?
+150GD  G 1085                                                                   
+150GD  L 9497      3  (29-)                                                     
+150GD  G 1172                                                                C  
+150GD  L 9582      3  29+                                                       
+150GD  G 172                                                                 C  
+150GD  L 9851      3  (30+)                                                     
+150GD  G 269                                                                 C  
+150GD  G 354                                                                 C  
+150GD  L 10532     3  31+                                                       
+150GD  G 950                                                                 C  
+150GD  L 11231     4  33(+)                                                     
+150GD  G 699                                                                 C  
+150GD  L 12185     4  34(-)                                                     
+150GD  G 954                                                                 C  
+150GD  L 12678     4  (36-,34+)                                                 
+150GD  G 493                                                                 C  
+                                                                                
 150GD    (HI,XNG):SD                   1999ERZZ,1993BE37,1991FA0713NDS    201306
 150GD  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
 150GD2 H CUT=1-Apr-2013$                                                        
@@ -12326,113 +12508,6 @@
 150GD  G 1530.8    8  0.35   4                                                  
 150GD  L 20638+D   3  J7+36                                                 X   
 150GD  G 1592.1    9  0.24   4                                                  
-                                                                                
-150GD    (HI,XNG)                      1983BAZG                  13NDS    201306
-150GD  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
-150GD2 H CUT=1-Apr-2013$                                                        
-150GD C  See SD band data in (HI,xn|g):SD. References are: 1999ErZZ, 1998ErZY,  
-150GD2C  1998Be06, 1994Fa13, 1993Be37, 1991Fa07, 1990By01, 1989Fa02.            
-150GD C  1980BaYO,1983BaZG: {+124}Sn({+30}Si,4n|g) E=135 MeV. Measurements      
-150GD2C  were performed on-line and singles; |g|g(t) multiparameter             
-150GD3C  coincidence, angular distribution, and pulsed beam |g(t) data were     
-150GD4C  collected.                                                             
-150GD CG E,RI$From 1980BaYO and 1983BaZG for levels up to 12678. See level      
-150GD2CG listing.                                                               
-150GD CG M$From adopted gammas, except as noted                                 
-150GD CL J$On-line |g, |g(|q), and |g|g(t) measurements were the bases for the  
-150GD2CL J|p assignments. Dipole and quadrupole transitions were identified     
-150GD3CL from |g(|q); Q was assumed to be E2 (stretched) (1983BaZG). In         
-150GD4CL agreement with systematics, the presence of stretched Q transitions,   
-150GD5CL with no transitions to lower levels from the levels in question,       
-150GD6CL suggest bands and yrast transitions. The band-like series of |DJ=2     
-150GD7CL levels reflects the parity of the level on which they are based.       
-150GD8CL Below spin 19-, J|p are from adopted levels.                           
-150GD CG M(A)$From |g(|q) aligned (1983BaZG)                                    
-150GD CL E$From least squares fit to EG assuming |DE|g=1 keV.                   
-150GD  L 0            0+                                                        
-150GD  L 638.0     10 2+                                                        
-150GD  G 638          100       E2                                           C  
-150GD  L 1134.0    13 3-                                                        
-150GD  G 496                                                                 C  
-150GD  L 1288.0    13 4+                                                        
-150GD  G 650                    E2                                           C  
-150GD  L 1700.1    14 5-                                                        
-150GD  G 412                                                                    
-150GD  G 566                    E2                                           C  
-150GD  L 1935.9    15 6+                                                        
-150GD  G 648                    E2                                           C  
-150GD  L 2115.9    14 6+                                                        
-150GD  G 416                                                                    
-150GD  G 828                                                                 C  
-150GD  L 2211.3    15 7-                                                        
-150GD  G 511                    E2                                           C  
-150GD  L 2391.9    15 7+                                                        
-150GD  G 276                                                                 C  
-150GD  G 456                    (M1+E2)                                         
-150GD  L 2553.8    15 8+                                                        
-150GD  G 162                    M1                                              
-150GD  G 342                    E1                                              
-150GD  G 438                    E2                                              
-150GD  L 2816.1    17 9-                                                        
-150GD  G 605                    E2                                           C  
-150GD  L 3220.0    18 10-                                                       
-150GD  G 404                                                                 C  
-150GD  L 3288.0    17 10+                                                       
-150GD  G 472                                                                 C  
-150GD  G 734                                                                 C  
-150GD  L 3366.0    18 11-                                                       
-150GD  G 78                                                                    ?
-150GD  G 146                                                                 C  
-150GD  G 550                                                                 C  
-150GD  L 4105.2    19 12+                                                       
-150GD  G 817                                                                 C  
-150GD  L 4130.8    19 13-                                                       
-150GD  G 765                                                                 C  
-150GD  L 4739.3    20 14+                                                       
-150GD  G 634                                                                 C  
-150GD  L 4834.6    20 15-                                                       
-150GD  G 704                                                                 C  
-150GD  L 5428.5    21 16+                                                       
-150GD  G 594                                                                 C  
-150GD  G 689                                                                 C  
-150GD  L 5450.6    22 17-                                                       
-150GD  G 616                                                                 C  
-150GD  L 5632.5    22 17+                                                       
-150GD  G 204                                                                 C  
-150GD  L 5764.6    21 18+                                                       
-150GD  G 132                                                                    
-150GD  G 314                    D                                            C  
-150GDF G FLAG=A                                                                 
-150GD  G 336                                                                 C  
-150GD  L 6311.6    24 19-                                                       
-150GD  G 547                                                                 C  
-150GD  L 6450.6    24 20+                                                       
-150GD  G 686                                                                 C  
-150GD  L 6496      3  21-                                                       
-150GD  G 184                                                                    
-150GD  L 7276      3  23-                                                       
-150GD  G 780                                                                 C  
-150GD  L 7930      3  25-                                                       
-150GD  G 654                                                                 C  
-150GD  L 8325      3  27-                                                       
-150GD  G 395                                                                 C  
-150GD  L 9410      3  28+                                                      ?
-150GD  G 1085                                                                   
-150GD  L 9497      3  (29-)                                                     
-150GD  G 1172                                                                C  
-150GD  L 9582      3  29+                                                       
-150GD  G 172                                                                 C  
-150GD  L 9851      3  (30+)                                                     
-150GD  G 269                                                                 C  
-150GD  G 354                                                                 C  
-150GD  L 10532     3  31+                                                       
-150GD  G 950                                                                 C  
-150GD  L 11231     4  33(+)                                                     
-150GD  G 699                                                                 C  
-150GD  L 12185     4  34(-)                                                     
-150GD  G 954                                                                 C  
-150GD  L 12678     4  (36-,34+)                                                 
-150GD  G 493                                                                 C  
                                                                                 
 150TB    ADOPTED LEVELS, GAMMAS                                  13NDS    201306
 150TB  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
@@ -18594,115 +18669,6 @@
 150ER2CA |a decay is calculated for an unobserved 3793-keV |a to the 2+ state   
 150ER3CA at 1578.87 keV in {+150}Er by requiring HF(3793|a) larger than 1.      
                                                                                 
-150ER    (HI,XNG): 13-93 NS DELAYED    1984CH11                  13NDS    201306
-150ER  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
-150ER2 H CUT=1-Apr-2013$                                                        
-150ER C  See other (HI,xn|g)  datasets for data taken in similar conditions.    
-150ER C  T: from beam-|g(t) delayed coincidence  measurements in the time       
-150ER2C  range 13 - 93 ns;                                                      
-150ER CL J$Tentative assignments, based on shell model calculation (1984Ch11)   
-150ER CG RI$Normalized to 100 for the 1203.7 transition. Note that the          
-150ER2CG branchings are at variance in the T1/2 <13 ns and the delayed          
-150ER3CG datasets.                                                              
-150ER  G 286.5     2  16     2                                                  
-150ER  L 0.0          0+                                                       S
-150ER  L 2797.0       (10+)             2.55 US   10                            
-150ER  L 4000.7       (11-)                                                     
-150ER  G 1203.7    1  100                                                       
-150ER  L 4243.4       (12+)                                                     
-150ER  G 1446.4    2  50     4                                                  
-150ER  L 4490.7       (13-)                                                     
-150ER  G 247.4     2  34     3                                                  
-150ER  G 490.0     1  90     6                                                  
-150ER  L 4884.6       (15-)                                                     
-150ER  G 393.9     1  131    8                                                  
-150ER  L 4927.5       (14+)                                                     
-150ER  G 684.1     2  23     2                                                  
-150ER  L 5222.2       (16+)                                                     
-150ER  G 294.8     2  18     2                                                  
-150ER  G 337.6     2  103    6                                                  
-150ER  L 6359.3                                                                 
-150ER  G 1137.1    2  92     6                                                  
-150ER  G 1474.6    4  15     3                                                  
-150ER  L 6928.3                                                                 
-150ER  G 569.0     2  44     3                                                  
-150ER  L 7153.5                                                                 
-150ER  G 1931.2    4  9      2                                                  
-150ER  L 7332.8                                                                 
-150ER  G 404.5     2  40     3                                                  
-150ER  G 973.7     4  6      2                                                  
-150ER  L 7372.4                                                                 
-150ER  G 39.4      4  24     5  E1                                              
-150ER CG M$from level scheme. I(|g+ce)(39.4|g) lower than                       
-150ER2CG I(|g+ce)(404.5+973.7) leads to |a(39.4|g) lower than 1.4. This agrees  
-150ER3CG only with E1.                                                          
-150ER  G 219.0     2  8      1                                                  
-150ER  G 1013.1    3  60     4                                                  
-150ER  L 7937.1                                                                 
-150ER  G 564.7     2  42     3                                                  
-150ER  L 8483.4                                                                 
-150ER  G 546.3     2  45     3                                                  
-150ER  L 9149.0                                                                 
-150ER  G 665.6     2  49     4                                                  
-150ER  G 1211.8    4  7      2                                                  
-150ER  L 9509.1                         43 NS     3                             
-150ER  G 360.1     2  65     4                                                  
-                                                                                
-150ER    (HI,XNG): 2.55 US DELAYED     1984CH11,1995NI10         13NDS    201306
-150ER  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
-150ER2 H CUT=1-Apr-2013$                                                        
-150ER C  1984CH11: Thin {+93}Nb and {+92,94,95}Mo targets at center of a large  
-150ER2C  NaI sum spectrometer were bombarded with {+58,60}Ni beams at 225-255   
-150ER3C  MeV to form {+153}Tm,{+152}Yb and {+153}Yb compound nuclei producing   
-150ER4C  {+150}Er by two or three nucleon evaporation (charged particle plus    
-150ER5C  neutron). The recoils were collected on a {+208}Pb catcher foil (11    
-150ER6C  mg/cm{+2}), placed 21 cm downstream. Isotopic identification was       
-150ER7C  based upon excitation function and cross bombardment results, x-|g     
-150ER8C  coincidences and energy distributions of coincident sum-spectra.       
-150ER C  1995NI10: 250 MeV {+58}Ni beams from ^ATLAS on two enriched {+94}Mo    
-150ER2C  targets. Evaporation residues were analysed by ^ANL Fragment Mass      
-150ER3C  Analyser and collected on a Al-catcher foil. In-situ |g and            
-150ER4C  conversion electron measurements were done using a large Ge detector   
-150ER5C  and two Si p-i-n dioxides.                                             
-150ER C  Others: 1981NoZY, 1982He08, 1982No07, 1982No08                         
-150ER CL J(C)$From assumption that 2797 keV level is an expected shell-model    
-150ER2CL state of configuration=(|p h{-11/2}){+4}{-10+}                         
-150ER CL J,T$From adopted levels                                                
-150ER CG M(A)$Multipolarity of transition assumed from systematics and chosen   
-150ER2CG to agree with J|p=10+ for 2797 level                                   
-150ER CG M(B)$From |a(exp) based on intensity balance arguments                 
-150ER  L 0.0          0+                18.5 S    7                             
-150ER  L 1578.79   17 2+                                                        
-150ER  G 1578.8    2  100       (E2)                                         C  
-150ERF G FLAG=A                                                                 
-150ER  L 1786.36   21 3-                                                        
-150ER CL J$from level energy systematics, based on the 3- level in {+146}Gd,    
-150ER2CL and compatibility of BE3W assignments to the assumed E3 and            
-150ER3CL determined E1 transitions with measured branching (1982No07,1984Ch11). 
-150ER  G 207.6     2  101    7  E1                                           C  
-150ERF G FLAG=B                                                                 
-150ERX G EKC=0.031 6                                                            
-150ER  G 1786.3    3  6      2  (E3)                                            
-150ER  L 2260.9    3  5-                                                        
-150ER  G 474.5     2  107    7  E2                                           C  
-150ERF G FLAG=A                                                                 
-150ERX G EKC=0.014 5                                                            
-150ER  L 2621.2    3  6+                                                        
-150ER  G 360.4     2  5.2    9                                               C  
-150ER  L 2633.3    3  7-                                                        
-150ER  G 372.4     2  101    7  E2                                           C  
-150ERF G FLAG=A                                                                 
-150ERX G EKC=0.026 7                                                            
-150ER  L 2733.8    3  8+                20 NS     AP                            
-150ER  G 100.5     1  75     5  E1                                           C  
-150ERF G FLAG=B                                                                 
-150ERX G EKC=0.30 3                                                             
-150ER  G 112.6     3  2.6    3                                               C  
-150ER  L 2797.0    5  10+               2.55 US   10                        C   
-150ER  G 63.2      3  5.8    9  E2                                              
-150ERF G FLAG=B                                                                 
-150ERX G ELC=15.9 5$EMC=3.5 5                                                   
-                                                                                
 150ER    (HI,XNG)                      1984CH11                  13NDS    201306
 150ER  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
 150ER2 H CUT=1-Apr-2013$                                                        
@@ -18760,6 +18726,115 @@
 150ER  G 1211.8    4 2       1                                                  
 150ER  L 9509.1                        43 NS     3                              
 150ER  G 360.1     2 26      2                                                  
+                                                                                
+150ER    (HI,XNG): 2.55 US DELAYED     1984CH11,1995NI10         13NDS    201306
+150ER  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
+150ER2 H CUT=1-Apr-2013$                                                        
+150ER C  1984CH11: Thin {+93}Nb and {+92,94,95}Mo targets at center of a large  
+150ER2C  NaI sum spectrometer were bombarded with {+58,60}Ni beams at 225-255   
+150ER3C  MeV to form {+153}Tm,{+152}Yb and {+153}Yb compound nuclei producing   
+150ER4C  {+150}Er by two or three nucleon evaporation (charged particle plus    
+150ER5C  neutron). The recoils were collected on a {+208}Pb catcher foil (11    
+150ER6C  mg/cm{+2}), placed 21 cm downstream. Isotopic identification was       
+150ER7C  based upon excitation function and cross bombardment results, x-|g     
+150ER8C  coincidences and energy distributions of coincident sum-spectra.       
+150ER C  1995NI10: 250 MeV {+58}Ni beams from ^ATLAS on two enriched {+94}Mo    
+150ER2C  targets. Evaporation residues were analysed by ^ANL Fragment Mass      
+150ER3C  Analyser and collected on a Al-catcher foil. In-situ |g and            
+150ER4C  conversion electron measurements were done using a large Ge detector   
+150ER5C  and two Si p-i-n dioxides.                                             
+150ER C  Others: 1981NoZY, 1982He08, 1982No07, 1982No08                         
+150ER CL J(C)$From assumption that 2797 keV level is an expected shell-model    
+150ER2CL state of configuration=(|p h{-11/2}){+4}{-10+}                         
+150ER CL J,T$From adopted levels                                                
+150ER CG M(A)$Multipolarity of transition assumed from systematics and chosen   
+150ER2CG to agree with J|p=10+ for 2797 level                                   
+150ER CG M(B)$From |a(exp) based on intensity balance arguments                 
+150ER  L 0.0          0+                18.5 S    7                             
+150ER  L 1578.79   17 2+                                                        
+150ER  G 1578.8    2  100       (E2)                                         C  
+150ERF G FLAG=A                                                                 
+150ER  L 1786.36   21 3-                                                        
+150ER CL J$from level energy systematics, based on the 3- level in {+146}Gd,    
+150ER2CL and compatibility of BE3W assignments to the assumed E3 and            
+150ER3CL determined E1 transitions with measured branching (1982No07,1984Ch11). 
+150ER  G 207.6     2  101    7  E1                                           C  
+150ERF G FLAG=B                                                                 
+150ERX G EKC=0.031 6                                                            
+150ER  G 1786.3    3  6      2  (E3)                                            
+150ER  L 2260.9    3  5-                                                        
+150ER  G 474.5     2  107    7  E2                                           C  
+150ERF G FLAG=A                                                                 
+150ERX G EKC=0.014 5                                                            
+150ER  L 2621.2    3  6+                                                        
+150ER  G 360.4     2  5.2    9                                               C  
+150ER  L 2633.3    3  7-                                                        
+150ER  G 372.4     2  101    7  E2                                           C  
+150ERF G FLAG=A                                                                 
+150ERX G EKC=0.026 7                                                            
+150ER  L 2733.8    3  8+                20 NS     AP                            
+150ER  G 100.5     1  75     5  E1                                           C  
+150ERF G FLAG=B                                                                 
+150ERX G EKC=0.30 3                                                             
+150ER  G 112.6     3  2.6    3                                               C  
+150ER  L 2797.0    5  10+               2.55 US   10                        C   
+150ER  G 63.2      3  5.8    9  E2                                              
+150ERF G FLAG=B                                                                 
+150ERX G ELC=15.9 5$EMC=3.5 5                                                   
+                                                                                
+150ER    (HI,XNG): 13-93 NS DELAYED    1984CH11                  13NDS    201306
+150ER  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        
+150ER2 H CUT=1-Apr-2013$                                                        
+150ER C  See other (HI,xn|g)  datasets for data taken in similar conditions.    
+150ER C  T: from beam-|g(t) delayed coincidence  measurements in the time       
+150ER2C  range 13 - 93 ns;                                                      
+150ER CL J$Tentative assignments, based on shell model calculation (1984Ch11)   
+150ER CG RI$Normalized to 100 for the 1203.7 transition. Note that the          
+150ER2CG branchings are at variance in the T1/2 <13 ns and the delayed          
+150ER3CG datasets.                                                              
+150ER  G 286.5     2  16     2                                                  
+150ER  L 0.0          0+                                                       S
+150ER  L 2797.0       (10+)             2.55 US   10                            
+150ER  L 4000.7       (11-)                                                     
+150ER  G 1203.7    1  100                                                       
+150ER  L 4243.4       (12+)                                                     
+150ER  G 1446.4    2  50     4                                                  
+150ER  L 4490.7       (13-)                                                     
+150ER  G 247.4     2  34     3                                                  
+150ER  G 490.0     1  90     6                                                  
+150ER  L 4884.6       (15-)                                                     
+150ER  G 393.9     1  131    8                                                  
+150ER  L 4927.5       (14+)                                                     
+150ER  G 684.1     2  23     2                                                  
+150ER  L 5222.2       (16+)                                                     
+150ER  G 294.8     2  18     2                                                  
+150ER  G 337.6     2  103    6                                                  
+150ER  L 6359.3                                                                 
+150ER  G 1137.1    2  92     6                                                  
+150ER  G 1474.6    4  15     3                                                  
+150ER  L 6928.3                                                                 
+150ER  G 569.0     2  44     3                                                  
+150ER  L 7153.5                                                                 
+150ER  G 1931.2    4  9      2                                                  
+150ER  L 7332.8                                                                 
+150ER  G 404.5     2  40     3                                                  
+150ER  G 973.7     4  6      2                                                  
+150ER  L 7372.4                                                                 
+150ER  G 39.4      4  24     5  E1                                              
+150ER CG M$from level scheme. I(|g+ce)(39.4|g) lower than                       
+150ER2CG I(|g+ce)(404.5+973.7) leads to |a(39.4|g) lower than 1.4. This agrees  
+150ER3CG only with E1.                                                          
+150ER  G 219.0     2  8      1                                                  
+150ER  G 1013.1    3  60     4                                                  
+150ER  L 7937.1                                                                 
+150ER  G 564.7     2  42     3                                                  
+150ER  L 8483.4                                                                 
+150ER  G 546.3     2  45     3                                                  
+150ER  L 9149.0                                                                 
+150ER  G 665.6     2  49     4                                                  
+150ER  G 1211.8    4  7      2                                                  
+150ER  L 9509.1                         43 NS     3                             
+150ER  G 360.1     2  65     4                                                  
                                                                                 
 150TM    ADOPTED LEVELS, GAMMAS                                  13NDS    201306
 150TM  H TYP=FUL$AUT=S. K. Basu, A. A. Sonzogni$CIT=NDS 114, 435 (2013)$        

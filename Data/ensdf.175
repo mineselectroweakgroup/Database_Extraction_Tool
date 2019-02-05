@@ -205,25 +205,26 @@
 175    R 2004GA04 JOUR PRVCA 69 017302                                          
 175    R 2004KE06 JOUR PRVCA 69 054323                                          
                                                                                 
-175HO    COMMENTS                                                ENSDF    201309
-175HO  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+175HO    COMMENTS                                                ENSDF    201711
+175HO  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 175HO C  TITL$NUCLEAR DATA SHEETS FOR 175HO                                     
-175HO c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-175HO c  INST$Department of Physics and Astronomy,                              
-175HO#c       McMaster University, Hamilton, Ontario,                           
-175HO#c       Canada, L8S 4M1                                                   
-175HO c  ABST$Information about the identification of {+175}Ho nuclide          
-175HO2c  from 2012Ku26 is presented                                             
-175HO c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-175HO c  ACKN$                                                                  
-175HO c  FUND$Work supported by the office of Science of the U.S. Department    
-175HOxc  of Energy.                                                             
+175HO c  AUTH$FILIP G KONDEV                                                    
+175HO c  INST$Nuclear Engineering Division                                      
+175HO#c       Argonne National Laboratory                                       
+175HO#c       9700 South Cass Avenue                                            
+175HO#c       Argonne, Illinois 60439, USA                                      
+175HO c  ABST$Information about the nuclear structure properties of the         
+175HO2c  {+175}Ho nuclide is presented                                          
+175HO c  CUT$Literature available up to February 20, 2017 has been consulted.   
+175HO c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+175HO1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 175HO C  CIT$ENSDF                                                              
                                                                                 
-175HO    ADOPTED LEVELS                                          ENSDF    201309
+175HO    ADOPTED LEVELS                                          ENSDF    201711
 175HO  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+175HO  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 175HO  Q 5450      SY 5580   SY 9280   CA -1600  SY    2012Wa38,1997MO25        
-175HO cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=570, |DS(n)=500,          
+175HO cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=570, |DS(n)=500,      
 175HO2cQ |DS(|a)=640                                                            
 175HO cQ $ S(p) from 1997Mo25; others from 2012Wa38                             
 175HO cQ $S(2n)=10000 {I500}, Q(|b{+-}n)=680 {I500} from 2012Wa38 (syst).       
@@ -233,7 +234,7 @@
 175HO3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 175HO4c  Fragment Separator (FRS). Particle identification was achieved by      
 175HO5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-175HO6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+175HO6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 175HO7c  measured using two plastic scintillation detectors, energy loss or     
 175HO8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 175HO9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -245,17 +246,34 @@
 175HOFc  a scintillator for veto signal. Measured production cross section.     
 175HOGc  Comparison of measured |s with predictions from ABRABLA model and      
 175HOHc  EPAX-3 model                                                           
-175HO c  Nuclear structure calculations: 1990Wa23                               
-175HO  L 0                              160 NS   GT                             
-175HO2 L %B-=? $ %B-N=?                                                         
-175HO cL $Mainly |b{+-} decay mode is expected. Predicted %|b{+-}n=0 (1997Mo25) 
-175HO cL E$ the observed {+175}Ho fragments assumed to correspond to the g.s.   
-175HO cL J$ 7/2- from systematics (2012Au07), 7/2- predicted (1997Mo25)         
-175HO cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-175HO2cL |b-decay half-life is expected to be much longer as suggested by       
-175HO3cL 5 s from systematics (2012Au07), and 0.75 s from theoretical           
-175HO4cL calculations (1997Mo25)                                                
-175HO cL $ Production |s=22 nb {I2} (2012Ku26)                                  
+175HO c  2017Wu04: The {+175}Ho nuclide was produced at the RIBF-RIKEN facility 
+175HO2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+175HO3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+175HO4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+175HO5c  pnA, respectively. The identification of the nuclide of interest was   
+175HO6c  made in the BigRIPS separator by determining the atomic number and the 
+175HO7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+175HO8c  reaction products were transported through the ZeroDegree Spectrometer 
+175HO9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+175HOac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+175HObc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+175HOcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+175HOdc  Deduced: T{-1/2}.                                                      
+175HO  L 0.0          (7/2-)           1.9 S     6                              
+175HO2 L %B-=100 $ %B-N=?                                                       
+175HO cL %B-$Only |b{+-} decay mode is expected.                                
+175HO cL J$From systematics of known quasiparticle states in neighboring nuclei 
+175HO2cL and the proposed configuration (by the evaluator). The assignment is   
+175HO3cL tentative.                                                             
+175HO cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+175HO2cL using the least-squares and maximum-likelihood methods. The data       
+175HO3cL analysis included contributions from the parent, daughter and          
+175HO4cL ground-daughter decays, as well as a constant background.              
+175HO5cL A value of 1.88 s {I55} is quoted in 2017Wu04                          
+175HO cL CONF$|p7/2[523] Nilsson orbital, based on systematics of known         
+175HO2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+175HO3cL assignmnet is tentative.                                               
+175HO cL $ Production |s(at 1 GeV/nucleon)=22 nb {I2} (2012Ku26)                
                                                                                 
 175ER    ADOPTED LEVELS                                          04NDS    200410
 175ER  H TYP=FUL$AUT=M. SHAMSUZZOHA BASUNIA$CIT=NDS 102, 719 (2004)$            

@@ -917,8 +917,11 @@
  33MG  G 1250                                                                   
                                                                                 
  33MG    197AU(33MG,33MG'G)            2002PR09                  11NDS    201105
+ 33MG  H TYP=ERR$AUT=B. SINGH$CIT=ENSDF$DAT=22-AUG-2017$COM=GS JPI CORRECTED$   
  33MG  H TYP=FUL$AUT=JUN CHEN AND BALRAJ SINGH$CIT=NDS 112, 1393 (2011)$        
  33MG2 H CUT=31-Mar-2011$                                                       
+ 33MG c  Change made on Aug 22, 2017: previous incorrect J|p=(3/2+) corrected   
+ 33MG2c  to (5/2+).                                                             
  33MG c  Beam={+33}Mg, target={+197}Au                                          
  33MG c  2002Pr09: {+33}Mg particles produced by fragmentation of {+48}Ca beam  
  33MG2c  at 80 MeV/nucleon hitting a {+9}Be target. The fragments               
@@ -926,10 +929,10 @@
  33MG4c  of {+33}Mg at 61.8 MeV/nucleon hit a gold target;                      
  33MG5c  Time-of-flight method. The |g rays measured with an array of NaI(Tl)   
  33MG6c  detectors surrounding the target.                                      
- 33MG  L  0           (3/2+)                                                    
+ 33MG  L  0           (5/2+)                                                    
  33MG cL J$ 3/2- in Adopted Levels                                              
  33MG  L  485      1  (7/2+)                                                    
- 33MG cL E$ This level proposed as member of 3/2+ g.s. band based on            
+ 33MG cL E$ This level proposed as member of 5/2+ g.s. band based on            
  33MG2cL analysis of E2 and E1 transition probabilities deduced from            
  33MG3cL measured cross section and coupled-channel calculations.               
  33MG4cL 2002Pr09 deduced charge and mass deformation parameters as             

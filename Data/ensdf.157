@@ -463,19 +463,133 @@
 157    R 2014RO25 JOUR PRVCA 90 044323                                          
 157    R 2014STZZ REPT INDC(NDS)-0658,Stone                                     
                                                                                 
-157ND    ADOPTED LEVELS                                          16NDS    201602
-157ND  H TYP=FUL$AUT=N. NICA$CIT=NDS 132, 1 (2016)$CUT=4-Dec-2015$              
+157CE    COMMENTS                                                ENSDF    201711
+157CE  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+157CE C  TITL$NUCLEAR DATA SHEETS FOR 157CE                                     
+157CE c  AUTH$FILIP G KONDEV                                                    
+157CE c  INST$Nuclear Engineering Division                                      
+157CE#c       Argonne National Laboratory                                       
+157CE#c       9700 South Cass Avenue                                            
+157CE#c       Argonne, Illinois 60439, USA                                      
+157CE c  ABST$Information about the nuclear structure properties of the         
+157CE2c  {+157}Ce nuclide is presented                                          
+157CE c  CUT$Literature available up to February 20, 2017 has been consulted.   
+157CE c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+157CE1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+157CE C  CIT$ENSDF                                                              
+                                                                                
+157CE    ADOPTED LEVELS                                          ENSDF    201711
+157CE  H TYP=FUL$AUT=C. W. REICH$CIT=NDS 104, 1 (2005)$CUT=1-Jun-2004$          
+157CE  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+157CE  Q 8532      SY 3209   SY           -5508  SY    2012Wa38                 
+157CE cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=643, |DS(n)=643,      
+157CE2cQ |DQ(|a)=643                                                            
+157CE cQ $S(2n)=8225 {I643}, Q(|b{+-}n)=3489 {I585}                             
+157CE2cQ (2012Wa38, syst)                                                       
+157CE c  2017Wu04: The {+157}Ce nuclide was produced at the RIBF-RIKEN facility 
+157CE2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+157CE3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+157CE4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+157CE5c  pnA, respectively. The identification of the nuclide of interest was   
+157CE6c  made in the BigRIPS separator by determining the atomic number and the 
+157CE7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+157CE8c  reaction products were transported through the ZeroDegree Spectrometer 
+157CE9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+157CEac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+157CEbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+157CEcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+157CEdc  Deduced: T{-1/2}.                                                      
+157CE c  Others: 1997Be12 and 1994Be24                                          
+157CE  L 0.0          (7/2+)           0.18 S    4                              
+157CE2 L %B-=100 $ %B-N=?                                                       
+157CE cL %B-$Only |b{+-} decay mode is expected.                                
+157CE cL J$From systematics of known quasiparticle states in neighboring nuclei 
+157CE2cL and the proposed configuration (by the evaluator). The assignment is   
+157CE3cL tentative.                                                             
+157CE cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+157CE2cL using the least-squares and maximum-likelihood methods. The data       
+157CE3cL analysis included contributions from the parent, daughter and          
+157CE4cL ground-daughter decays, as well as a constant background.              
+157CE5cL T{-1/2}=0.175 s {I41} is reported in 2017Wu04                          
+157CE cL CONF$|n7/2[633] Nilsson orbital, based on systematics of known         
+157CE2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+157CE3cL assignment is tentative.                                               
+                                                                                
+157PR    COMMENTS                                                ENSDF    201704
+157PR  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+157PR C  TITL$NUCLEAR DATA SHEETS FOR 157PR                                     
+157PR c  AUTH$FILIP G. KONDEV                                                   
+157PR c  INST$Nuclear Engineering Division                                      
+157PR#c       Argonne National Laboratory                                       
+157PR#c       9700 South Cass Avenue                                            
+157PR#c       Argonne, Illinois 60439, USA                                      
+157PR c  ABST$Information about the nuclear structure properties of the         
+157PR2c  {+157}Pr nuclide is presented                                          
+157PR c  CUT$Literature available up to February 20, 2017 has been consulted.   
+157PR c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+157PR1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+157PR C  CIT$ENSDF                                                              
+                                                                                
+157PR    ADOPTED LEVELS                                          05NDS    201704
+157PR  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+157PR  Q 6869      20 5292   SY 10354  SY -4112  SY    2012WA38                 
+157PR cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=401, |DS(n)=499,      
+157PR2cQ |DS(p)=566, |DS(|a)=499                                                
+157PR cQ $S(2n)=9268 {I401}, S(2p)=24936 {I566}, Q(|b{+-}n)=3862 {I448}         
+157PR2cQ from 2012Wa38.                                                         
+157PR c  2017Wu04: The {+157}Pr nuclide was produced at the RIBF-RIKEN facility 
+157PR2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+157PR3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+157PR4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+157PR5c  pnA, respectively. The identification of the nuclide of interest was   
+157PR6c  made in the BigRIPS separator by determining the atomic number and the 
+157PR7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+157PR8c  reaction products were transported through the ZeroDegree Spectrometer 
+157PR9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+157PRac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+157PRbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+157PRcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+157PRdc  Deduced: T{-1/2}.                                                      
+157PR  L 0.0          (3/2-)           0.295 S   +29-11                         
+157PR2 L %B-=100 $ %B-N=?                                                       
+157PR cL %B-$Only |b{+-} decay mode is expected.                                
+157PR cL J$From systematics of known quasiparticle states in neighboring nuclei 
+157PR2cL and the proposed configuration (by the evaluator). The assignment is   
+157PR3cL tentative.                                                             
+157PR cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+157PR2cL using the least-squares and maximum-likelihood methods. The data       
+157PR3cL analysis included contributions from the parent, daughter and          
+157PR4cL grand-daughter decays, as well as a constant background.               
+157PR cL CONF$|p3/2[541] Nilsson orbital, based on systematics of known         
+157PR2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+157PR3cL assignment is tentative.                                               
+                                                                                
+157ND    COMMENTS                                                ENSDF    201704
+157ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+157ND C  TITL$NUCLEAR DATA SHEETS FOR 157ND                                     
+157ND c  AUTH$FILIP G KONDEV                                                    
+157ND c  INST$Nuclear Engineering Division                                      
+157ND#c       Argonne National Laboratory                                       
+157ND#c       9700 South Cass Avenue                                            
+157ND#c       Argonne, Illinois 60439, USA                                      
+157ND c  ABST$Information about the nuclear structure properties of the         
+157ND2c  {+157}Nd nuclide is presented                                          
+157ND c  CUT$Literature available up to February 20, 2017 has been consulted.   
+157ND c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+157ND1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+157ND C  CIT$ENSDF                                                              
+                                                                                
+157ND    ADOPTED LEVELS                                          16NDS    201704
+157ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 157ND  Q 5836      26 4.06E3 20 12180  SY -3860  SY    2012Wa38                 
 157ND cQ $Estimated uncertainties (2012Wa38): |DS(p)=300, |DQ(|a)=200           
 157ND cQ $S(2n)=10320 {I27}, S(2p)=23110 {I400} (syst) (2012Wa38)               
-157ND c  2012Ku26 and 2012Va02 present information about the confirmed          
-157ND2c  identification and mass measurement of {+157}Nd                        
 157ND c  2012Ku26: {+157}Nd produced and identified in {+9}Be({+238}U,F),       
 157ND2c  E=1 GeV/nucleon reaction using SIS-18 synchrotron facility at GSI.     
 157ND3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 157ND4c  Fragment Separator (FRS). Particle identification was achieved by      
 157ND5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-157ND6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+157ND6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 157ND7c  measured using two plastic scintillation detectors, energy loss or     
 157ND8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 157ND9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -487,30 +601,48 @@
 157NDFc  a scintillator for veto signal. Measured production cross section.     
 157NDGc  Comparison of measured |s with predictions from ABRABLA model and      
 157NDHc  EPAX-3 model                                                           
-157ND c  2012Va02: Penning-trap mass measurement using mass separated fragments 
-157ND2c  from {+252}Cf source at ATLAS-ANL facility                             
-157ND c  Earlier secondary reports for possible identification of {+157}Nd      
+157ND c  2017Wu04: The {+157}Nd nuclide was produced at the RIBF-RIKEN facility 
+157ND2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+157ND3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+157ND4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+157ND5c  pnA, respectively. The identification of the nuclide of interest was   
+157ND6c  made in the BigRIPS separator by determining the atomic number and the 
+157ND7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+157ND8c  reaction products were transported through the ZeroDegree Spectrometer 
+157ND9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+157NDac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+157NDbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+157NDcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+157NDdc  Deduced: T{-1/2}.                                                      
+157ND c  2012Va02: Penning-trap mass measurement using mass-separated fragments 
+157ND2c  from the {+252}Cf source at the CARIBU-ANL facility                    
+157ND c  Earlier secondary reports for possible identification of the {+157}Nd  
 157ND2c  isotope:                                                               
-157ND c  1992ShZG: tentative identification of {+157}Nd in the decay of mass    
+157ND c  1992ShZG: tentative identification of {+157}Nd in the decay of a mass  
 157ND2c  separated sample. Authors observed Pm K x rays and |g rays with T{-1/2}
-157ND3c  of several seconds which they tentatively identified as from the decay 
-157ND4c  of {+157}Nd.                                                           
+157ND3c  of several seconds, which they tentatively identified as from the      
+157ND4c  decay of {+157}Nd.                                                     
 157ND c  1997Be12, 1995CzZZ: Pb({+238}U,X),E=750 MeV/nucleon by SIS synchrotron 
 157ND2c  at GSI using FRS separator at an experiment run in 1992. These reports 
-157ND3c  seem to suggest observing {+157}Nd, but without giving any details such
-157ND4c  as production cross section or A/Z fragment yield plots. In none of    
-157ND5c  the regular publications (1994Be24, 1997Be70, 2003Be45, 2007Pe01) from 
-157ND6c  GSI group, production of {+157}Nd is mentioned.                        
-157ND  L 0.0                            100 MS   GT                             
-157ND2 L %B-=?                                                                  
-157ND cL %B-$only |b{+-} decay mode is expected.                                
-157ND cL $ Measured mass excess=-56464 keV {I43} (2012Va02)                     
-157ND cL E$ the observed {+157}Nd fragments are assumed to be from the g.s.     
-157ND cL J$ 5/2- from systematics (2012Au07), 5/2- predicted (1997Mo25)         
-157ND cL T$ limiting value from experimental setup for Penning-trap mass        
-157ND2cL measurement (2012Va02). Systematics value=2 s (2012Au07),              
-157ND3cL and theoretical value=0.52 s (1997Mo25)                                
-157ND cL $ Production |s=980 nb {I40} (2012Ku26)                                
+157ND3c  seem to suggest observing {+157}Nd, but no experimental details,       
+157ND4c  such as production cross section or A/Z fragment yield plots, were     
+157ND5c  given. The production of {+157}Nd was not mentioned in any of the      
+157ND6c  regular publications of the GSI group (1994Be24, 1997Be70, 2003Be45,   
+157ND7c  2007Pe01).                                                             
+157ND  L 0.0          (5/2-)           1.15 S    3                              
+157ND2 L %B-=100                                                                
+157ND cL %B-$Only |b{+-} decay mode is expected.                                
+157ND cL J$From systematics of known quasiparticle states in neighboring nuclei 
+157ND2cL and the proposed configuration (by the evaluator). The assignment is   
+157ND3cL tentative.                                                             
+157ND cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+157ND2cL using the least-squares and maximum-likelihood methods. The data       
+157ND3cL analysis included contributions from the parent, daughter and          
+157ND4cL grand-daughter decays, as well as a constant background.               
+157ND cL CONF$|n5/2[523] Nilsson orbital, based on systematics of known         
+157ND2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+157ND3cL assignment is tentative.                                               
+157ND cL $ Production |s(at 1 GeV/nucleon)=980 nb {I40} (2012Ku26)              
                                                                                 
 157PM    ADOPTED LEVELS                                          16NDS    201602
 157PM  H TYP=FUL$AUT=N. NICA$CIT=NDS 132, 1 (2016)$CUT=4-Dec-2015$              

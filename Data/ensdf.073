@@ -513,44 +513,99 @@
  73NI  B              30     LT                                                 
  73NI cB IB$from measured %|b{+-}n>22 {I8} from {+73}Co decay (2012Ra10)        
                                                                                 
- 73CU    ADOPTED LEVELS, GAMMAS                                  04NDS    200403
+ 73CU    COMMENTS                                                ENSDF    201709
+ 73CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 73CU C  TITL$NUCLEAR DATA SHEETS FOR 73CU                                      
+ 73CU c  AUTH$BALRAJ SINGH                                                      
+ 73CU c  INST$Department of Physics and Astronomy, McMaster University,         
+ 73CU#c       Hamilton, Ontario L8S 4M1, Canada                                 
+ 73CU c  ABST$Experimental structure data for {+73}Cu have been re-evaluated    
+ 73CU2c  and updated since the previous NDS publication (2004Si08) for A=73     
+ 73CU3c  nuclides.                                                              
+ 73CU c  CUT$Literature available up to March 31, 2017 has been consulted.      
+ 73CU C  CIT$ENSDF                                                              
+ 73CU c  FUND$                                                                  
+                                                                                
+ 73CU    ADOPTED LEVELS, GAMMAS                                  ENSDF    201709
+ 73CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  73CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 101, 193 (2004)$CUT=12-May-2003$      
- 73CU  Q 6606      3 7275.8  2412050   3 -1.124E419    2012WA38                 
- 73CU CQ Note: Current evaluation has used the following Q record               
- 73CU  Q 6251      SY 7168   SY 11769  SY -10538 SY    1995AU04                 
- 73CU cQ $|D(Q(|b{+-}))=301, |D(S(n))=357, |D(S(p))=553, |D(Q(|a))=477          
- 73CUxcQ (1995Au04)                                                             
- 73CU cQ $Q(|b{+-}n)=898 {I298} (syst,1995Au04)                                 
- 73CU c  Production and identification: W({+76}Ge,X) E=9 MeV per nucleon;       
- 73CU2c  mass separation (1983Ru06); {+238}U(p,F) E=30 MeV (2002Kr13,2002Kr10). 
- 73CU cL J$Tentative assignments (from 2001Fr21) based on shell-model           
- 73CU2cL predictions and comparisons with neighboring nuclides.                 
- 73CU cL J(A)$possibly member of |pp{-3/2}(|np{-1/2}{+-1}|ng{-9/2}{+5}){-5-}    
+ 73CU  Q 6606.0    27 7275.8 2412050.3 30-1113E1 14    2017WA10                 
+ 73CU cQ $S(2n)=12418.9 {I24}, S(2p)=29200 {I470}, Q(|b{+-}n)=1086.7 {I29}      
+ 73CU2cQ (2017Wa10)                                                             
+ 73CU c  1983Ru06: production and identification in W({+76}Ge,X) E=9 MeV/nucleon
+ 73CU2c  followed by mass separation. Other: {+238}U(p,F) E=30 MeV (2002Kr13,   
+ 73CU3c  2002Kr10).                                                             
+ 73CU c  2009Fl03, 2010Vi07: {+73}Cu was produced at ISOLDE facility in U(p,F)  
+ 73CU2c  reaction. Resonance Ionization laser ion source (RILIS) used to laser  
+ 73CU3c  ionize the atoms. Measured hyperfine structure. Deduced spin, magnetic 
+ 73CU4c  dipole and electric quadrupole moment of the ground state.             
+ 73CU5c  Collinear and in-source laser spectroscopic technique                  
+ 73CU6c  Authors state that quadrupole moments can be deduced from these        
+ 73CU7c  measurements and will be discussed in a forthcoming paper.             
+ 73CU8c  Comparison with large-scale shell-model calculations                   
+ 73CU c  2016Bi08: {+73}Cu isotope produced in U(p,X),E=1.4 GeV reaction at     
+ 73CU2c  the CERN-ISOLDE facility, followed by selective ionization using       
+ 73CU3c  RILIS laser ion source, accelerated to 30 keV and injected into a      
+ 73CU4c  gas-filled linear Paul trap. Measured isotope shift with respect to    
+ 73CU5c  {+65}Cu using the collinear laser spectroscopy setup.                  
+ 73CU6c  Comparison with droplet model predictions.                             
+ 73CU c  {+74}Ni is expected to decay by |b{+-}n mode to {+73}Cu, but no        
+ 73CU2c  details are available                                                  
+ 73CU cL J$Except for the ground state, all other assignments (from 2001Fr21)   
+ 73CU2cL are tentative, based on shell-model predictions, and comparisons with  
+ 73CU3cL the structure of neighboring nuclides.                                 
+ 73CU cL J(A)$Possible member of |pp{-3/2}(|np{-1/2}{+-1}~#|ng{-9/2}{+5}){-5-}  
  73CU2cL multiplet                                                              
  73CU  XA73NI B- DECAY (0.84 S)                                                 
+ 73CU  XBCOULOMB EXCITATION                                                     
+ 73CU  XC238U(76GE,XG)                                                          
  73CU PN                                                                     6  
- 73CU  L 0             (3/2-)          4.2 S     3                              
- 73CU2 L %B-=100                                                                
- 73CUX L XREF=A                                                                 
- 73CU cL J$possibly |pp{-3/2}|ng{-9/2}{+4}                                      
+ 73CU  L 0.0            3/2-           4.2 S     3                              
+ 73CU2 L %B-=100 $ %B-N=?                                                       
+ 73CU2 L MOMM1=+1.7426 8 (2009FL03,2010VI07,2014STZZ)                           
+ 73CU2 L MOME2=-0.210 10 (2010VI07,2016ST14)                                    
+ 73CUX L XREF=ABC                                                               
+ 73CU cL $Theoretical T{-1/2}=2.53 s, %|b{+-}n=0.02 (2003Mo09)                  
+ 73CU cL $Theoretical T{-1/2}=294 s, %|b{+-}n=0.7 (2016Ma12)                    
+ 73CU cL $|d<r{+2}>({+65}Cu,{+73}Cu)=0.523 fm{+2} {I15}(stat) {I58}(syst)       
+ 73CU2cL (2016Bi08); the systematic uncertainty for isotope shift resulted from 
+ 73CU3cL those in the atomic factors.                                           
+ 73CU cL J$spin from hyperfine structure measurement in 2009Fl03 and 2010Vi07,  
+ 73CU2cL parity from comparison of level energies, g factors and quadrupole     
+ 73CU3cL moments with shell-model calculations. Dominant |pp{-3/2}              
+ 73CU4cL configuration for odd-A Cu isotopes, with some |ng{-9/2}{+4} admixture 
+ 73CU5cL for {+73}Cu as suggested by 2001Fr21                                   
  73CU cL T$weighted average of 4.4 s {I3} (1998Hu20) and 3.9 s {I3} (1983Ru06)  
- 73CU  L     166.0710  (5/2-)                                                   
- 73CUX L XREF=A                                                                 
- 73CU cL J$possibly |pf{-5/2} configuration                                     
- 73CU  G 166.1     1   100      [M1,E2]                 0.05  4                 
- 73CU  L     961.2120  (7/2-)                                                   
- 73CUX L XREF=A                                                                 
- 73CU cL J$possibly |pp{-3/2}~#(2+ in {+72}Ni)                                  
- 73CU  G  961.2    2   100                                                      
+ 73CU cL MOMM1$measured relative to that for {+65}Cu g.s.=+2.3817 {I3}          
+ 73CU cL MOME2$value of -0.200 {I10} in 2010Vi07 is re-evaluated by 2016St14    
+ 73CU  L 135.4     1  (1/2)-                                                    
+ 73CUX L XREF=B                                                                 
+ 73CU  G 135.4     1   100      [M1+E2]                 0.11  9                 
+ 73CU2 G BE2W=23.1 21 (2008St04)                                                
+ 73CU  L     166.0710  (5/2)-                                                   
+ 73CUX L XREF=ABC                                                               
+ 73CU cL J$possible |pf{-5/2} configuration                                     
+ 73CU  G 166.1     1   100      [M1+E2]                 0.05  4                 
+ 73CU2 G BE2W=4.4 5 (2008St04)                                                  
+ 73CU  L     961.2120  (7/2)-           2.6 PS   3                              
+ 73CUX L XREF=AB                                                                
+ 73CU cL T$deduced by the evaluator from experimental B(E2)(W.u.).              
+ 73CU cL $Configuration=|p2p{-3/2}~#2+ in {+70},{+72}Ni proposed earlier        
+ 73CU2cL is consistent with B(E2) values (2008St04)                             
+ 73CU cL J$possible |pp{-3/2}~#(2+ in {+72}Ni)                                  
+ 73CU  G  961.2    2   100      [E2]                                            
+ 73CU2 G BE2W=14.9 18 (2008St04)                                                
  73CU  L    1010.1415  (7/2-)                                                   
  73CUX L XREF=A                                                                 
- 73CU cL J$possibly |pf{-7/2}{+-1}                                              
+ 73CU cL J$possible |pf{-7/2}{+-1}                                              
  73CU  G  844.2    2   73    8                                                  
  73CU  G 1010.0    2   100   10                                                 
- 73CU  L    1297.9622  (7/2-,9/2-)                                              
- 73CUX L XREF=A                                                                 
- 73CU cL J$possibly |pf{-5/2}~#(2+ in {+72}Ni)                                  
- 73CU  G  1131.9   2   100                                                      
+ 73CU  L    1297.9622  (7/2-)           15 PS    8                              
+ 73CUX L XREF=AC                                                                
+ 73CU cL T$from recoil-distance Doppler-shift (RDDS) method (2015Sa09)          
+ 73CU cL J$possible |pf{-5/2}~#(2+ in {+72}Ni)                                  
+ 73CU  G  1131.9   2   100       [E2]                                           
+ 73CUB G BE2W=1.1 6                                                             
  73CU  L    1489.0418  (9/2-)                                                   
  73CUX L XREF=A                                                                 
  73CU cL J$possible member of |pf{-7/2}{+-1} configuration                      
@@ -566,68 +621,124 @@
  73CU  G  676.9    7    100  22                                                 
  73CU  G  1088.2   6    76   22                                                 
                                                                                 
- 73CU    73NI B- DECAY (0.84 S)        2001FR21,1998FR15         04NDS    200403
+ 73CU    73NI B- DECAY (0.84 S)        2001FR21,1998FR15         ENSDF    201709
+ 73CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  73CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 101, 193 (2004)$CUT=12-May-2003$      
- 73CU c  2001Fr21, 1998Fr15: Measured E|g, I|g,                                 
- 73CU2c  |g|g, |b|g coin. {+73}Ni obtained from                                 
- 73CU2c  fission of {+238}U by 30-MeV protons followed by mass separation       
- 73CU3c  using LISE-3 separator. See also 2000Mu10 and 1997Wo06 for the         
- 73CU4c  production of {+73}Ni isotope                                          
+ 73CU c  2001Fr21, 1998Fr15: Measured E|g, I|g, |g|g-coin, |b|g coin. {+73}Ni   
+ 73CU2c  obtained from fission of {+238}U by 30-MeV protons followed by mass    
+ 73CU3c  separation using LISE-3 separator. See also 2000Mu10 and 1997Wo06 for  
+ 73CU4c  the production of {+73}Ni isotope                                      
  73CU c  1998Am04: Measured half-life of {+73}Ni isotope                        
  73CU c  1983Ru06: production and half-life measurement of {+73}Cu isotope      
  73CU cB IB,LOGFT$All values are given as limits since the level scheme         
  73CU2cB is not considered as well established                                  
- 73CU cL E$From least-squares fit to E|g's                                      
- 73CU cL J$All spin assignments (by 2001Fr21) are tentative;                    
- 73CU2cL based on shell-model predictions and comparison with                   
+ 73CU cL E$From least-squares fit to E|g data                                   
+ 73CU cL J$From Adopted Levels, essentially as proposed by 2001Fr21 for         
+ 73CU2cL excited states, based on shell-model predictions and comparison with   
  73CU3cL neighboring nuclides.                                                  
- 73CU cL J(A)$possibly member of |pp{-3/2}(|np{-1/2}{+-1}|ng{-9/2}{+5}){-5-}    
+ 73CU cL J(A)$Possible member of |pp{-3/2}~#|n[p{-1/2}{+-1,}g{-9/2}{+5}]{-5-}   
  73CU2cL multiplet                                                              
- 73NI  P  0.0         (9/2+)             0.84 S  3                8933    SY    
- 73NI cP QP$8933 {I667} (syst,1995Au04)                                         
- 73CU  N  0.58     AP           1.0                                             
- 73CU cN NR$|S(I(|g+ce) of |g's to g.s.)=100, assuming no |b{+-} feeding to g.s.
+ 73NI  P  0.0         (9/2+)             0.84 S  3                8879    3     
+ 73NI cP J,T$from {+73}Ni Adopted Levels in the ENSDF database                  
+ 73NI2cP (March 2016 update)                                                    
+ 73NI cP QP$From 2017Wa10                                                       
+ 73CU  N  0.58     AP           1                                               
+ 73CU cN NR$Summed |g intensity to g.s.=100, assuming no |b{+-} feeding to g.s. 
+ 73CU2cN as expected from |DJ|p involved                                        
  73CU PN                                                                     3  
- 73CU  L  0            (3/2-)                                                   
- 73CU cL J$possibly |pp{-3/2}|ng{-9/2}{+4}                                      
- 73CU  L     166.0710  (5/2-)                                                   
- 73CU cL J$possibly |pf{-5/2} configuration                                     
+ 73CU  L  0             3/2(-)                                                  
+ 73CU cL J$possible |pp{-3/2}~#|ng{-9/2}{+4}                                    
+ 73CU  L    166.07 10  (5/2-)                                                   
+ 73CU cL J$possible |pf{-5/2} configuration                                     
  73CU  B               17.4  LT             5.8  GT                             
- 73CUS B EAV=4082 327                                                           
- 73CU  G 166.1     1   100.0    [M1,E2]                  0.05 4                 
- 73CU  L     961.2120  (7/2-)                                                   
- 73CU cL J$possibly |pp{-3/2}~#(2+ in {+72}Ni)                                  
+ 73CUS B EAV=4057.5 15                                                          
+ 73CU  G 166.1     1   100.0    [M1+E2]                  0.05 4                 
+ 73CU  L    961.21 20  (7/2)-                                                   
+ 73CU cL J$possible |pp{-3/2}~#(2+ in {+72}Ni)                                  
  73CU  B               19.2  LT             5.6  GT                             
- 73CUS B EAV=3695 327                                                           
+ 73CUS B EAV=3670.3 15                                                          
  73CU  G  961.2    2   33    4                                                  
- 73CU  L    1010.1415  (7/2-)                                                   
- 73CU cL J$possibly |pf{-7/2}{+-1}                                              
- 73CU  B               24.3  LT             5.5  GT                             
- 73CUS B EAV=3671 327                                                           
+ 73CU  L   1010.14 15  (7/2-)                                                   
+ 73CU cL J$possible |pf{-7/2}{+-1}                                              
+ 73CU  B               24.3  LT             5.4  GT                             
+ 73CUS B EAV=3646.5 15                                                          
  73CU  G  844.2    2   29    3                                                  
  73CU  G 1010.0    2    40   4                                                  
- 73CU  L    1297.9622  (7/2-,9/2-)                                              
- 73CU cL J$possibly |pf{-5/2}~#(2+ in {+72}Ni)                                  
+ 73CU  L   1297.96 22  (7/2-)                                                   
+ 73CU cL J$possible |pf{-5/2}~#(2+ in {+72}Ni)                                  
  73CU  B               14.4  LT             5.6  GT                             
- 73CUS B EAV=3531 327                                                           
+ 73CUS B EAV=3506.2 15                                                          
  73CU  G  1131.9   2   29    3                                                  
  73CU cG E$1131.1 in figure 8 of 2001Fr21                                       
- 73CU  L    1489.0418  (9/2-)                                                   
+ 73CU  L   1489.04 18  (9/2-)                                                   
  73CU cL J$possible member of |pf{-7/2}{+-1} configuration                      
  73CU  B               15.7  LT             5.5  GT                             
- 73CUS B EAV=3438 327                                                           
+ 73CUS B EAV=3413.1 15                                                          
  73CU  G   478.9   1   27.2  24                                                 
  73CU  L     1708.8 7                                                          ?
  73CU  G 1542.2    10   5.0  13                                                 
- 73CU  L     2161.614  (7/2+)                                               A   
+ 73CU  L    2161.6 14  (7/2+)                                               A   
  73CU  B                 3.9 LT             5.9  GT                             
- 73CUS B EAV=3110 327                                                           
+ 73CUS B EAV=3085.4 17                                                          
  73CU  G  1995.5   14   6.8  18                                                 
  73CU  L     2386.0 6  (9/2+,11/2+)                                         A   
- 73CU  B                 5.1 LT             5.8  GT                             
- 73CUS B EAV=3001 327                                                           
+ 73CU  B                 5.1 LT             5.7  GT                             
+ 73CUS B EAV=2976.1 15                                                          
  73CU  G  676.9    7    5.0  11                                                 
  73CU  G  1088.2   6    3.8  11                                                 
+                                                                                
+ 73CU    COULOMB EXCITATION            2008ST04                  ENSDF    201709
+ 73CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 73CU c  Beam={+73}Cu, target={+120}Sn                                          
+ 73CU c  2008St04: E=2.99 MeV/nucleon {+73}Cu beam provided by REX-ISOLDE       
+ 73CU2c  facility. Radioactive ion beam produced in the reaction U(p,X) at      
+ 73CU3c  1.4 GeV protons (target=UC{-x}) using laser ionization RILIS.          
+ 73CU4c  Measured E|g, I|g, (particle)|g coin using MINIBALL Ge array, and      
+ 73CU5c  charged particles with a double-sided silicon strip detector. Deduced  
+ 73CU6c  B(E2)(W.u.) values from experimental Coulomb excitation cross sections 
+ 73CU7c  deduced from observed gamma-ray yields normalized to the known cross   
+ 73CU8c  section for excitation of the first 2+ state in {+120}Sn target.       
+ 73CU9c  Comparisons with large-scale shell-model calculations.                 
+ 73CU cL J$As proposed by 2008St04                                              
+ 73CU  L 0            3/2-                                                      
+ 73CU  L 135.4     1  1/2-                                                      
+ 73CU cL $Level and |g first reported by 2008St04                               
+ 73CU cL $Since |d(135|g) is unknown, level half-life cannot be deduced         
+ 73CU  G 135.4     1            [M1+E2]                 0.11  9                 
+ 73CU2 G BE2W=23.1 21 (2008St04)                                                
+ 73CU  L 166          5/2-                                                      
+ 73CU cL $Since |d(166|g) is unknown, level half-life cannot be deduced         
+ 73CU  G 166                    [M1+E2]                 0.05  4                 
+ 73CU2 G BE2W=4.4 5 (2008St04)                                                  
+ 73CU  L 961          7/2-               2.6 PS  3                              
+ 73CU cL T$deduced by evaluator from experimental B(E2)(W.u.).                  
+ 73CU cL $Configuration=|p2p{-3/2}~#2+ in {+70},{+72}Ni proposed earlier        
+ 73CU2cL is consistent with B(E2) values (2008St04)                             
+ 73CU  G 961                    [E2]                                            
+ 73CU2 G BE2W=14.9 18 (2008St04)                                                
+                                                                                
+ 73CU    238U(76GE,XG)                 2015SA09                  ENSDF    201709
+ 73CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 73CU c  2015Sa09: neutron-rich Cu isotopes were populated via multinucleon     
+ 73CU2c  transfer reactions using a E=577 MeV {+76}Ge beam from the Tandem-XTU  
+ 73CU3c  and the ALPI superconducting LINAC accelerators at LNL-Legnaro,        
+ 73CU4c  bombarding a thin, metallic {+238}U target of 1.5                      
+ 73CU5c  mg/cm{+2} thickness evaporated onto a {+181}Ta backing of 1.4 mg/cm{+2}
+ 73CU6c  thickness. Reaction products were separated according to the measured  
+ 73CU7c  |DE-E matrix by the PRISMA magnetic spectrometer. |g rays were detected
+ 73CU8c  by the AGATA Demonstrator array of four triple clusters, each          
+ 73CU9c  consisting of three 36-fold segmented HPGe detector. Measured E|g, I|g,
+ 73CUac  particle-|g(t), and lifetime of the 1298 level using the differential  
+ 73CUbc  recoil-distance Doppler-shift (RDDS) method. Deduced B(E2), and        
+ 73CUcc  compared with shell-model calculation                                  
+ 73CU cL J$From Adopted Levels                                                  
+ 73CU cL T$From 2015Sa09 using the differential recoil-distance                 
+ 73CU2cL Doppler-shift method (RDDS)                                            
+ 73CU  L 0             3/2(-)                                                   
+ 73CU  L 166           (5/2-)                                                   
+ 73CU  L 1298         (7/2-)           15 PS     8                              
+ 73CU  G 1132                  [E2]                                             
+ 73CU2 G BE2=0.0020 11 (2015Sa09)                                               
                                                                                 
  73ZN    ADOPTED LEVELS, GAMMAS                                  04NDS    200403
  73ZN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 101, 193 (2004)$CUT=12-May-2003$      

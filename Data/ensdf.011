@@ -7052,9 +7052,9 @@
  11N  CL E         WIDTH: FROM E{-RES}=6.80 MEV 30 (2003GU06)                   
  11N 2CL AND 11N{-G.S.}=E{-RES.}=1.49 MEV 6.                                    
                                                                                 
- 11O     ADOPTED LEVELS                2013Fo20,2012Ch40                  201601
- 11O   H TYP=FUL$AUT=J.H. Kelley, C.G. Sheu$CUT=16-Jan-2016$CIT=ENSDF$          
- 11O   Q -0.63E3   93                                  2012WO38,2012CH40        
+ 11O     ADOPTED LEVELS                2013Fo20,2012Ch40                        
+ 11O   H TYP=FUL$AUT=J.H. Kelley, C.G. Sheu$CUT=10-August-2017$CIT=ENSDF$       
+ 11O   Q -0.63E3   93                                  2012WA38,2012CH40        
  11O  c  The nucleus {+11}O is particle unbound, and so far no resonances have  
  11O 2c  been observed in any experiments. The ground state is expected to decay
  11O 3c  by 2p emission.                                                        
@@ -7080,5 +7080,11 @@
  11O 2c  and p-shell energies in {+11}O, and the relationship between S{-2p} and
  11O 3c  P(s{+2}) is explored.                                                  
  11O  c  Others:                                                                
+ 11O  c  2017Fo14:                                                              
+ 11O  c  A potential model is used to estimate the {+11}O sequential decay      
+ 11O 2c  probabilities through {+10}N states. The expected decay intensities    
+ 11O 3c  through negative parity states are only slightly smaller that those to 
+ 11O 4c  positive parity states; while the dominant decay mechanism predicts    
+ 11O 5c  simultaneous 2p decay to {+9}C.                                        
  11O  c  See also (1974Ir04,1987Sa15,2000Po32)                                  
                                                                                 

@@ -367,25 +367,75 @@
 159    R 2010RE03 JOUR NDSBA 111 1211                                           
 159    R 2010SC02 JOUR PRVCA 81 014306                                          
                                                                                 
-159ND    COMMENTS                                                ENSDF    201309
-159ND  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+159PR    COMMENTS                                                ENSDF    201704
+159PR  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+159PR C  TITL$NUCLEAR DATA SHEETS FOR 159PR                                     
+159PR c  AUTH$FILIP G. KONDEV                                                   
+159PR c  INST$Nuclear Engineering Division                                      
+159PR#c       Argonne National Laboratory                                       
+159PR#c       9700 South Cass Avenue                                            
+159PR#c       Argonne, Illinois 60439, USA                                      
+159PR c  ABST$Information about the nuclear structure properties of the         
+159PR2c  {+159}Pr nuclide is presented                                          
+159PR c  CUT$Literature available up to February 20, 2017 has been consulted.   
+159PR c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+159PR1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+159PR C  CIT$ENSDF                                                              
+                                                                                
+159PR    ADOPTED LEVELS                                          05NDS    201704
+159PR  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+159PR  Q 6719      SY 4830   SY           -5331  SY    2012WA38                 
+159PR cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=643, |DS(n)=643,      
+159PR2cQ |DS(|a)=643                                                            
+159PR cQ $S(2n)=8691 {I643}, Q(|b{+-}n)=4895 {I585}                             
+159PR2cQ from 2012Wa38.                                                         
+159PR c  2017Wu04: The {+159}Pr nuclide was produced at the RIBF-RIKEN facility 
+159PR2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+159PR3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+159PR4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+159PR5c  pnA, respectively. The identification of the nuclide of interest was   
+159PR6c  made in the BigRIPS separator by determining the atomic number and the 
+159PR7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+159PR8c  reaction products were transported through the ZeroDegree Spectrometer 
+159PR9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+159PRac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+159PRbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+159PRcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+159PRdc  Deduced: T{-1/2}.                                                      
+159PR  L 0.0          (3/2-)           0.13 S    4                              
+159PR2 L %B-=100 $ %B-N=?                                                       
+159PR cL %B-$Only |b{+-} decay mode is expected.                                
+159PR cL J$From systematics of known quasiparticle states in neighboring nuclei 
+159PR2cL and the proposed configuration (by the evaluator). The assignment is   
+159PR3cL tentative.                                                             
+159PR cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+159PR2cL using the least-squares and maximum-likelihood methods. The data       
+159PR3cL analysis included contributions from the parent, daughter and          
+159PR4cL grand-daughter decays, as well as a constant background.               
+159PR5cL T{-1/2}=0.134 s {I43} is reported in 2017Wu04                          
+159PR cL CONF$|p3/2[541] Nilsson orbital, based on systematics of known         
+159PR2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+159PR3cL assignment is tentative.                                               
+                                                                                
+159ND    COMMENTS                                                ENSDF    201704
+159ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 159ND C  TITL$NUCLEAR DATA SHEETS FOR 159ND                                     
-159ND c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-159ND c  INST$Department of Physics and Astronomy,                              
-159ND#c       McMaster University, Hamilton, Ontario,                           
-159ND#c       Canada, L8S 4M1                                                   
-159ND c  ABST$Information about the identification of {+159}Nd nuclide          
-159ND2c  from 2012Ku26 is presented.                                            
-159ND c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-159ND c  ACKN$                                                                  
-159ND c  FUND$Work supported by the office of Science of the U.S. Department    
-159NDxc  of Energy.                                                             
+159ND c  AUTH$FILIP G KONDEV                                                    
+159ND c  INST$Nuclear Engineering Division                                      
+159ND#c       Argonne National Laboratory                                       
+159ND#c       9700 South Cass Avenue                                            
+159ND#c       Argonne, Illinois 60439, USA                                      
+159ND c  ABST$Information about the nuclear structure properties of the         
+159ND2c  {+159}Nd nuclide is presented                                          
+159ND c  CUT$Literature available up to February 20, 2017 has been consulted.   
+159ND c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+159ND1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 159ND C  CIT$ENSDF                                                              
                                                                                 
-159ND    ADOPTED LEVELS                                          ENSDF    201309
-159ND  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+159ND    ADOPTED LEVELS                                          ENSDF    201704
+159ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 159ND  Q 6750      SY 3820   SY 12770  SY -4310  SY    2012WA38                 
-159ND cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=400, |DS(n)=500,          
+159ND cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=400, |DS(n)=500,      
 159ND2cQ |DS(p)=570, |DS(|a)=570                                                
 159ND cQ $S(2n)=9490 {I400}, S(2p)=24380 {I640}, Q(|b{+-}n)=1210 {I400}         
 159ND2cQ from 2012Wa38 (syst).                                                  
@@ -394,7 +444,7 @@
 159ND3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 159ND4c  Fragment Separator (FRS). Particle identification was achieved by      
 159ND5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-159ND6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+159ND6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 159ND7c  measured using two plastic scintillation detectors, energy loss or     
 159ND8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 159ND9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -406,17 +456,33 @@
 159NDFc  a scintillator for veto signal. Measured production cross section.     
 159NDGc  Comparison of measured |s with predictions from ABRABLA model and      
 159NDHc  EPAX-3 model                                                           
-159ND  L 0                              160 NS   GT                             
-159ND2 L %B-=?$ %B-N=?                                                          
-159ND cL $ Mainly |b{+-} decay mode is expected. Predicted %|b{+-}n=0.02        
-159ND2cL (1997Mo25)                                                             
-159ND cL E$ the observed {+159}Nd fragments assumed to correspond to the g.s.   
-159ND cL J$ 7/2+ from systematics (2012Au07), 1/2- predicted (1997Mo25)         
-159ND cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-159ND2cL |b-decay half-life is expected to be much longer as suggested by       
-159ND3cL 500 ms from systematics (2012Au07), and 0.91 s from theoretical        
-159ND4cL calculations (1997Mo25)                                                
-159ND cL $ Production |s=39 nb {I4} (2012Ku26)                                  
+159ND c  2017Wu04: The {+159}Nd nuclide was produced at the RIBF-RIKEN facility 
+159ND2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+159ND3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+159ND4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+159ND5c  pnA, respectively. The identification of the nuclide of interest was   
+159ND6c  made in the BigRIPS separator by determining the atomic number and the 
+159ND7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+159ND8c  reaction products were transported through the ZeroDegree Spectrometer 
+159ND9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+159NDac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+159NDbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+159NDcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+159NDdc  Deduced: T{-1/2}.                                                      
+159ND  L 0.0          (7/2+)           0.485 S   +39-20                         
+159ND2 L %B-=100 $ %B-N=?                                                       
+159ND cL %B-$Only |b{+-} decay mode is expected.                                
+159ND cL J$From systematics of known quasiparticle states in neighboring nuclei 
+159ND2cL and the proposed configuration (by the evaluator). The assignment is   
+159ND3cL tentative.                                                             
+159ND cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+159ND2cL using the least-squares and maximum-likelihood methods. The data       
+159ND3cL analysis included contributions from the parent, daughter and          
+159ND4cL grand-daughter decays, as well as a constant background.               
+159ND cL CONF$|n7/2[633] Nilsson orbital, based on systematics of known         
+159ND2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+159ND3cL assignment is tentative.                                               
+159ND cL $ Production |s(at 1 GeV/nucleon)=39 nb {I4} (2012Ku26)                
                                                                                 
 159PM    ADOPTED LEVELS                                          12NDS    201201
 159PM  H TYP=FUL$AUT=C. W. Reich$CIT=NDS 113, 157 (2012)$CUT=31-Dec-2010$       

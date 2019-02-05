@@ -417,23 +417,63 @@
 162    R 2006ME13 JOUR PYLBB 638 44                                             
 162    R 2006ME25 JOUR PRVCA 74 044309                                          
                                                                                 
-162PM    COMMENTS                                                ENSDF    201309
-162PM  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+162ND    COMMENTS                                                ENSDF    201704
+162ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+162ND C  TITL$NUCLEAR DATA SHEETS FOR 162ND                                     
+162ND c  AUTH$FILIP G KONDEV                                                    
+162ND c  INST$Nuclear Engineering Division                                      
+162ND#c       Argonne National Laboratory                                       
+162ND#c       9700 South Cass Avenue                                            
+162ND#c       Argonne, Illinois 60439, USA                                      
+162ND c  ABST$Information about the nuclear structure properties of the         
+162ND2c  {+162}Nd nuclide is presented                                          
+162ND c  CUT$Literature available up to February 20, 2017 has been consulted.   
+162ND c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+162ND1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+162ND C  CIT$ENSDF                                                              
+                                                                                
+162ND    ADOPTED LEVELS                                          ENSDF    201704
+162ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+162ND  Q 6590      CA 5080   CA 14130  CA -5330  CA    1997Mo25                 
+162ND cQ $S(2n)=8680 and S(2p)=26070 from 1997Mo25 (theory).                    
+162ND c  2017Wu04: The {+162}Nd nuclide was produced at the RIBF-RIKEN facility 
+162ND2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+162ND3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+162ND4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+162ND5c  pnA, respectively. The identification of the nuclide of interest was   
+162ND6c  made in the BigRIPS separator by determining the atomic number and the 
+162ND7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+162ND8c  reaction products were transported through the ZeroDegree Spectrometer 
+162ND9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+162NDac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+162NDbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+162NDcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+162NDdc  Deduced: T{-1/2}.                                                      
+162ND  L 0.0          0+               0.31 S    20                             
+162ND2 L %B-=100 $ %B-N=?                                                       
+162ND cL %B-$Only |b{+-} decay mode is expected.                                
+162ND cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+162ND2cL using the least-squares and maximum-likelihood methods. The data       
+162ND3cL analysis included contributions from the parent, daughter and          
+162ND4cL grand-daughter decays, as well as a constant background.               
+                                                                                
+162PM    COMMENTS                                                ENSDF    201704
+162PM  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
 162PM C  TITL$NUCLEAR DATA SHEETS FOR 162PM                                     
-162PM c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-162PM c  INST$Department of Physics and Astronomy,                              
-162PM#c       McMaster University, Hamilton, Ontario,                           
-162PM#c       Canada, L8S 4M1                                                   
-162PM c  ABST$Information about the identification of {+162}Pm nuclide          
-162PM2c  from 2012Ku26 is presented.                                            
-162PM c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-162PM c  ACKN$                                                                  
-162PM c  FUND$Work supported by the office of Science of the U.S. Department    
-162PMxc  of Energy.                                                             
+162PM c  AUTH$FILIP G. KONDEV                                                   
+162PM c  INST$Nuclear Engineering Division                                      
+162PM#c       Argonne National Laboratory                                       
+162PM#c       9700 South Cass Avenue                                            
+162PM#c       Argonne, Illinois 60439, USA                                      
+162PM c  ABST$Information about the nuclear structure properties of the         
+162PM2c  {+162}Pm nuclide is presented                                          
+162PM c  CUT$Literature available up to February 20, 2017 has been consulted.   
+162PM c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+162PM1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 162PM C  CIT$ENSDF                                                              
                                                                                 
-162PM    ADOPTED LEVELS                                          ENSDF    201309
-162PM  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+162PM    ADOPTED LEVELS                                          ENSDF    201704
+162PM  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
 162PM  Q 8160      SY 4210   SY 11070  SY -4470  SY    2012Wa38                 
 162PM cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=450, |DS(n)=500,          
 162PM2cQ |DS(p)=640, |DS(|a)=570                                                
@@ -444,7 +484,7 @@
 162PM3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 162PM4c  Fragment Separator (FRS). Particle identification was achieved by      
 162PM5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-162PM6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+162PM6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 162PM7c  measured using two plastic scintillation detectors, energy loss or     
 162PM8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 162PM9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -456,18 +496,36 @@
 162PMFc  a scintillator for veto signal. Measured production cross section.     
 162PMGc  Comparison of measured |s with predictions from ABRABLA model and      
 162PMHc  EPAX-3 model                                                           
-162PM  L 0                              160 NS   GT                             
-162PM2 L %B-=?$ %B-N=?                                                          
-162PM cL $ Only |b{+-} decay mode is expected. Predicted %|b{+-}n=0.76          
-162PM2cL  (1997Mo25)                                                            
-162PM cL E$ the observed {+162}Pm fragments assumed to correspond to the g.s.   
-162PM cL J$ 5/2- for valence proton and 7/2+ for valence neutron                
-162PM2cL  predicted (1997Mo25)                                                  
-162PM cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-162PM2cL |b-decay half-life is expected to be much longer as suggested by       
-162PM3cL 500 ms from systematics (2012Au07), and 0.268 s from theoretical       
-162PM4cL calculations (1997Mo25)                                                
-162PM cL $ Production |s=25 nb {I3} (2012Ku26)                                  
+162PM c  2017Wu04: The {+162}Pm nuclide was produced at the RIBF-RIKEN facility 
+162PM2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+162PM3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+162PM4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+162PM5c  pnA, respectively. The identification of the nuclide of interest was   
+162PM6c  made in the BigRIPS separator by determining the atomic number and the 
+162PM7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+162PM8c  reaction products were transported through the ZeroDegree Spectrometer 
+162PM9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+162PMac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+162PMbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+162PMcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+162PMdc  Deduced: T{-1/2}.                                                      
+162PM  L 0.0          (2+)             0.63 S    18                             
+162PM2 L %B-=100 $ %B-N=?                                                       
+162PM cL %B-$Only |b{+-} decay mode is expected.                                
+162PM cL J$From systematics of known quasiparticle states in neighboring nuclei 
+162PM2cL and the proposed configuration (by the evaluator). The assignment is   
+162PM3cL tentative.                                                             
+162PM cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+162PM2cL using the least-squares and maximum-likelihood methods. The data       
+162PM3cL analysis included contributions from the parent, daughter and          
+162PM4cL grand-daughter decays, as well as a constant background.               
+162PM cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+162PM2cL |p5/2[532] and |n1/2[521] Nilsson orbitals are expected near the proton
+162PM3cL and neutron Fermi surfaces, respectively. Thus, using the              
+162PM4cL Gallagher-Moszkowski rule, one may expect the K|p=2+,                  
+162PM5cL |p5/2[532]~#|n1/2[521] configuration for the ground state.             
+162PM8cL The assignment is made by the evaluator.                               
+162PM cL $ Production |s(at 1 GeV/nucleon)=25 nb {I3} (2012Ku26)                
                                                                                 
 162SM    ADOPTED LEVELS                                          07NDS    200708
 162SM  H TYP=FUL$AUT=C. W. Reich$CIT=NDS 108,1807 (2007)$CUT=1-Mar-2007$        

@@ -334,27 +334,27 @@
 171    R 2002ST11 JOUR NUPAB 700 83                                             
 171    R 2002ZI04 JOUR JPAMA 35 2693                                            
                                                                                 
-171TB    COMMENTS                                                ENSDF    201309
-171TB  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+171TB    COMMENTS                                                ENSDF    201704
+171TB  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 171TB C  TITL$NUCLEAR DATA SHEETS FOR 171TB                                     
-171TB c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-171TB c  INST$Department of Physics and Astronomy,                              
-171TB#c       McMaster University, Hamilton, Ontario,                           
-171TB#c       Canada, L8S 4M1                                                   
-171TB c  ABST$Information about the identification of {+171}Tb nuclide          
-171TB2c  from 2012Ku26 is presented                                             
-171TB c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-171TB c  ACKN$                                                                  
-171TB c  FUND$Work supported by the office of Science of the U.S. Department    
-171TBxc  of Energy.                                                             
+171TB c  AUTH$FILIP G KONDEV                                                    
+171TB c  INST$Nuclear Engineering Division                                      
+171TB#c       Argonne National Laboratory                                       
+171TB#c       9700 South Cass Avenue                                            
+171TB#c       Argonne, Illinois 60439, USA                                      
+171TB c  ABST$Information about the nuclear structure properties of the         
+171TB2c  {+171}Tb nuclide is presented                                          
+171TB c  CUT$Literature available up to February 20, 2017 has been consulted.   
+171TB c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+171TB1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 171TB C  CIT$ENSDF                                                              
                                                                                 
-171TB    ADOPTED LEVELS                                          ENSDF    201309
-171TB  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+171TB    ADOPTED LEVELS                                          ENSDF    201704
+171TB  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 171TB  Q 6160      SY 5380   SY 9710   CA -2570  SY    2012Wa38,1997MO25        
-171TB cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=590, |DS(n)=640,          
+171TB cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=590, |DS(n)=640,      
 171TB2cQ |DS(|a)=640                                                            
-171TB CQ $ SP form 1997Mo25; others from 2012Wa38                               
+171TB cQ $S(p) form 1997Mo25; others from 2012Wa38                              
 171TB cQ $S(2n)=9850 {I590}, Q(|b{+-}n)=1560 {I540} from 2012Wa38 (syst).       
 171TB2cQ S(2p)=22250 (1997Mo25, theory).                                        
 171TB c  2012Ku26: {+171}Tb produced and identified in {+9}Be({+238}U,F),       
@@ -362,7 +362,7 @@
 171TB3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 171TB4c  Fragment Separator (FRS). Particle identification was achieved by      
 171TB5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-171TB6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+171TB6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 171TB7c  measured using two plastic scintillation detectors, energy loss or     
 171TB8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 171TB9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -374,37 +374,54 @@
 171TBFc  a scintillator for veto signal. Measured production cross section.     
 171TBGc  Comparison of measured |s with predictions from ABRABLA model and      
 171TBHc  EPAX-3 model                                                           
-171TB  L 0                              160 NS   GT                             
-171TB2 L %B-=? $ %B-N=?                                                         
-171TB cL $ Only |b{+-} decay mode is expected. Predicted %|b{+-}n=0.76          
-171TB2cL  (1997Mo25)                                                            
-171TB cL E$ the observed {+171}Tb fragments assumed to correspond to the g.s.   
-171TB cL J$ 3/2+ from systematics (2012Au07), 3/2+ predicted (1997Mo25)         
-171TB cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-171TB2cL |b-decay half-life is expected to be much longer as suggested by       
-171TB3cL 500 ms from systematics (2012Au07), and 2.51 s from theoretical        
-171TB4cL calculations (1997Mo25)                                                
-171TB cL $ Production |s=14 nb {I2} (2012Ku26)                                  
+171TB c  2017Wu04: The {+171}Tb nuclide was produced at the RIBF-RIKEN facility 
+171TB2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+171TB3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+171TB4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+171TB5c  pnA, respectively. The identification of the nuclide of interest was   
+171TB6c  made in the BigRIPS separator by determining the atomic number and the 
+171TB7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+171TB8c  reaction products were transported through the ZeroDegree Spectrometer 
+171TB9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+171TBac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+171TBbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+171TBcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+171TBdc  Deduced: T{-1/2}.                                                      
+171TB  L 0.0          (3/2+)           1.24 S    +9-10                          
+171TB2 L %B-=100 $ %B-N=?                                                       
+171TB cL %B-$Only |b{+-} decay mode is expected.                                
+171TB cL J$From systematics of known quasiparticle states in neighboring nuclei 
+171TB2cL and the proposed configuration (by the evaluator). The assignment is   
+171TB3cL tentative.                                                             
+171TB cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+171TB2cL using the least-squares and maximum-likelihood methods. The data       
+171TB3cL analysis included contributions from the parent, daughter and          
+171TB4cL grand-daughter decays, as well as a constant background.               
+171TB cL CONF$|p3/2[411] Nilsson orbital, based on systematics of known         
+171TB2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+171TB3cL assignment is tentative.                                               
+171TB cL $ Production |s(at 1 GeV/nucleon)=14 nb {I2} (2012Ku26)                
                                                                                 
-171DY    COMMENTS                                                ENSDF    201309
-171DY  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+171DY    COMMENTS                                                ENSDF    201711
+171DY  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 171DY C  TITL$NUCLEAR DATA SHEETS FOR 171DY                                     
-171DY c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-171DY c  INST$Department of Physics and Astronomy,                              
-171DY#c       McMaster University, Hamilton, Ontario,                           
-171DY#c       Canada, L8S 4M1                                                   
-171DY c  ABST$Information about the identification of {+171}Dy nuclide          
-171DY2c  from 2012Ku26 is presented                                             
-171DY c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-171DY c  ACKN$                                                                  
-171DY c  FUND$Work supported by the office of Science of the U.S. Department    
-171DYxc  of Energy.                                                             
+171DY c  AUTH$FILIP G KONDEV                                                    
+171DY c  INST$Nuclear Engineering Division                                      
+171DY#c       Argonne National Laboratory                                       
+171DY#c       9700 South Cass Avenue                                            
+171DY#c       Argonne, Illinois 60439, USA                                      
+171DY c  ABST$Information about the nuclear structure properties of the         
+171DY2c  {+171}Dy nuclide is presented                                          
+171DY c  CUT$Literature available up to February 20, 2017 has been consulted.   
+171DY c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+171DY1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 171DY C  CIT$ENSDF                                                              
                                                                                 
-171DY    ADOPTED LEVELS                                          ENSDF    201309
+171DY    ADOPTED LEVELS                                          ENSDF    201711
 171DY  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+171DY  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 171DY  Q 4330      SY 4600   SY 10750  SY -1800  SY    2012Wa38                 
-171DY cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=670, |DS(n)=360,          
+171DY cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=670, |DS(n)=360,      
 171DY2cQ |DS(p)=500, |DS(|a)=500                                                
 171DY cQ $S(2n)=10730 {I420}, S(2p)=20610 {I590} from 2012Wa38 (syst).          
 171DY c  2012Ku26: {+171}Dy produced and identified in {+9}Be({+238}U,F),       
@@ -412,7 +429,7 @@
 171DY3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 171DY4c  Fragment Separator (FRS). Particle identification was achieved by      
 171DY5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-171DY6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+171DY6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 171DY7c  measured using two plastic scintillation detectors, energy loss or     
 171DY8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 171DY9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -425,19 +442,37 @@
 171DYGc  Comparison of measured |s with predictions from ABRABLA model and      
 171DYHc  EPAX-3 model                                                           
 171DY c  2010So03: possible production of {+171}Dy in {+170}Er({+82}Se,X),      
-171DY2c  E=460 MeV/nucleon at LNL, Legnaro facilityas; measured yield of        
+171DY2c  E=460 MeV/nucleon at LNL, Legnaro facility; measured yield of          
 171DY3c  beam-like fragment {+81}Kr which implies production of compelementary  
 171DY4c  "target-like fragment" {+171}Dy                                        
-171DY  L 0                              160 NS   GT                             
-171DY2 L %B-=?                                                                  
-171DY cL $ Only |b{+-} decay mode is expected                                   
-171DY cL E$ the observed {+171}Dy fragments assumed to correspond to the g.s.   
-171DY cL J$ 7/2- from systematics (2012Au07), 7/2- predicted (1997Mo25)         
-171DY cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-171DY2cL |b-decay half-life is expected to be much longer as suggested by       
-171DY3cL 6 s from systematics (2012Au07), and 1.38 s from theoretical           
-171DY4cL calculations (1997Mo25)                                                
-171DY cL $ Production |s=441 nb {I18} (2012Ku26)                                
+171DY c  2017Wu04: The {+171}Dy nuclide was produced at the RIBF-RIKEN facility 
+171DY2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+171DY3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+171DY4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+171DY5c  pnA, respectively. The identification of the nuclide of interest was   
+171DY6c  made in the BigRIPS separator by determining the atomic number and the 
+171DY7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+171DY8c  reaction products were transported through the ZeroDegree Spectrometer 
+171DY9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+171DYac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+171DYbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+171DYcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+171DYdc  Deduced: T{-1/2}.                                                      
+171DY  L 0.0          (7/2-)           4.1 S     4                              
+171DY2 L %B-=100                                                                
+171DY cL %B-$Only |b{+-} decay mode is expected.                                
+171DY cL J$From systematics of known quasiparticle states in neighboring nuclei 
+171DY2cL and the proposed configuration (by the evaluator). The assignment is   
+171DY3cL tentative.                                                             
+171DY cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+171DY2cL using the least-squares and maximum-likelihood methods. The data       
+171DY3cL analysis included contributions from the parent, daughter and          
+171DY4cL ground-daughter decays, as well as a constant background.              
+171DY5cL A value of 4.07 s {I40} is quoted in 2017Wu04                          
+171DY cL CONF$|n7/2[514] Nilsson orbital, based on systematics of known         
+171DY2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+171DY3cL assignment is tentative.                                               
+171DY cL $ Production |s(at 1 GeV/nucleon)=441 nb {I18} (2012Ku26)              
                                                                                 
 171HO    ADOPTED LEVELS                                          02NDS    200209
 171HO  H TYP=FUL$AUT=CORAL M. BAGLIN$CIT=NDS 96,399 (2002)$CUT=5-Aug-2002$      

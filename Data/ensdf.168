@@ -433,32 +433,33 @@
 168    R 2010DR02 JOUR PRVCA 81 054313                                          
 168    R 2010SO03 JOUR PRVCA 81 034310                                          
                                                                                 
-168EU    COMMENTS                                                ENSDF    201309
-168EU  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+168EU    COMMENTS                                                ENSDF    201711
+168EU  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 168EU C  TITL$NUCLEAR DATA SHEETS FOR 168EU                                     
-168EU c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-168EU c  INST$Department of Physics and Astronomy,                              
-168EU#c       McMaster University, Hamilton, Ontario,                           
-168EU#c       Canada, L8S 4M1                                                   
-168EU c  ABST$Information about the identification of {+168}Eu nuclide          
-168EU2c  from 2012Ku26 is presented                                             
-168EU c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-168EU c  ACKN$                                                                  
-168EU c  FUND$Work supported by the office of Science of the U.S. Department    
-168EUxc  of Energy.                                                             
+168EU c  AUTH$FILIP G. KONDEV                                                   
+168EU c  INST$Nuclear Engineering Division                                      
+168EU#c       Argonne National Laboratory                                       
+168EU#c       9700 South Cass Avenue                                            
+168EU#c       Argonne, Illinois 60439, USA                                      
+168EU c  ABST$Information about the nuclear structure properties of the         
+168EU2c  {+168}Eu nuclide is presented                                          
+168EU c  CUT$Literature available up to February 20, 2017 has been consulted.   
+168EU c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+168EU1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 168EU C  CIT$ENSDF                                                              
                                                                                 
-168EU    ADOPTED LEVELS                                          ENSDF    201309
+168EU    ADOPTED LEVELS                                          ENSDF    201711
 168EU  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+168EU  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 168EU  Q 8930      CA 3570   CA 10840  CA -2960  CA    1997MO25                 
 168EU cQ $S(2n)=8670, S(2p)=23830 (1997Mo25, theory).                           
-168EU2cQ Using values from 1997Mo25 and 2012Wa38, deduced Q(|b{+-}n)=3310 {I570}
+168EU2cQ Deduced Q(|b{+-}n)=3310 {I570} (1997Mo25, theory and 2012Wa38, syst)   
 168EU c  2012Ku26: {+168}Eu produced and identified in {+9}Be({+238}U,F),       
 168EU2c  E=1 GeV/nucleon reaction using SIS-18 synchrotron facility at GSI.     
 168EU3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 168EU4c  Fragment Separator (FRS). Particle identification was achieved by      
 168EU5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-168EU6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+168EU6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 168EU7c  measured using two plastic scintillation detectors, energy loss or     
 168EU8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 168EU9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -470,36 +471,61 @@
 168EUFc  a scintillator for veto signal. Measured production cross section.     
 168EUGc  Comparison of measured |s with predictions from ABRABLA model and      
 168EUHc  EPAX-3 model                                                           
-168EU  L 0                              160 NS   GT                             
-168EU2 L %B-=?$ %B-N=?                                                          
-168EU cL $ Predicted %|b{+-}n=9.5 (1997Mo25)                                    
-168EU cL E$ the observed {+168}Eu fragments assumed to correspond to the g.s.   
-168EU cL J$ 5/2+ for valence proton and 7/2- for valence neutron                
-168EU2cL  predicted (1997Mo25)                                                  
-168EU cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-168EU2cL |b-decay half-life is expected to be much longer as suggested by       
-168EU3cL 0.20 s from theoretical calculations (1997Mo25)                        
-168EU cL $ Production |s=2.0 nb {I8} (2012Ku26)                                 
+168EU c  2017Wu04: The {+168}Eu nuclide was produced at the RIBF-RIKEN facility 
+168EU2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+168EU3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+168EU4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+168EU5c  pnA, respectively. The identification of the nuclide of interest was   
+168EU6c  made in the BigRIPS separator by determining the atomic number and the 
+168EU7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+168EU8c  reaction products were transported through the ZeroDegree Spectrometer 
+168EU9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+168EUac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+168EUbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+168EUcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+168EUdc  Deduced: T{-1/2}.                                                      
+168EU  L 0.0          (6-)             0.20 S    10                             
+168EU2 L %B-=100 $ %B-N=?                                                       
+168EU cL %B-$Only |b{+-} decay mode is expected.                                
+168EU cL J$From systematics of known quasiparticle states in neighboring nuclei 
+168EU2cL and the proposed configuration (by the evaluator). The assignment is   
+168EU3cL tentative.                                                             
+168EU cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+168EU2cL using the least-squares and maximum-likelihood methods. The data       
+168EU3cL analysis included contributions from the parent, daughter and          
+168EU4cL ground-daughter decays, as well as a constant background.              
+168EU5cL The assignment to the ground state is ambiguous, given the possible    
+168EU6cL existence of an isomeric state.                                        
+168EU cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+168EU2cL |p5/2[413] and |n7/2[514] Nilsson orbitals are expected near the proton
+168EU3cL and neutron Fermi surfaces, respectively. Thus, using the              
+168EU4cL Gallagher-Moszkowski rule, one may expect the K|p=6-,                  
+168EU5cL |p5/2[413]~#|n7/2[514] configuration for the ground state. The         
+168EU6cL existence of a low-spin, K|p=1- isomer, arising from the same          
+168EU7cL configuration, is also possible. The assignment is made by the         
+168EU8cL evaluator.                                                             
+168EU cL $ Production |s(at 1 GeV/nucleon)=2.0 nb {I8} (2012Ku26)               
                                                                                 
-168GD    COMMENTS                                                ENSDF    201309
-168GD  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+168GD    COMMENTS                                                ENSDF    201711
+168GD  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 168GD C  TITL$NUCLEAR DATA SHEETS FOR 168GD                                     
-168GD c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-168GD c  INST$Department of Physics and Astronomy,                              
-168GD#c       McMaster University, Hamilton, Ontario,                           
-168GD#c       Canada, L8S 4M1                                                   
-168GD c  ABST$Information about the identification of {+168}Gd nuclide          
-168GD2c  from 2012Ku26 is presented                                             
-168GD c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-168GD c  ACKN$                                                                  
-168GD c  FUND$Work supported by the office of Science of the U.S. Department    
-168GDxc  of Energy.                                                             
+168GD c  AUTH$FILIP G KONDEV                                                    
+168GD c  INST$Nuclear Engineering Division                                      
+168GD#c       Argonne National Laboratory                                       
+168GD#c       9700 South Cass Avenue                                            
+168GD#c       Argonne, Illinois 60439, USA                                      
+168GD c  ABST$Information about the nuclear structure properties of the         
+168GD2c  {+168}Gd nuclide is presented                                          
+168GD c  CUT$Literature available up to February 20, 2017 has been consulted.   
+168GD c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+168GD1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 168GD C  CIT$ENSDF                                                              
                                                                                 
-168GD    ADOPTED LEVELS                                          ENSDF    201309
+168GD    ADOPTED LEVELS                                          ENSDF    201711
 168GD  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+168GD  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 168GD  Q 4360      SY 5620   SY 11770  SY -2690  SY    2012Wa38                 
-168GD cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=500, |DS(n)=570,          
+168GD cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=500, |DS(n)=570,      
 168GD2cQ |DS(p)=570, |DS(|a)=500                                                
 168GD cQ $S(2n)=9980 {I720} from 2012Wa38 (syst).                               
 168GD2cQ S(2p)=22000 (1997Mo25, theory).                                        
@@ -508,7 +534,7 @@
 168GD3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 168GD4c  Fragment Separator (FRS). Particle identification was achieved by      
 168GD5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-168GD6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+168GD6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 168GD7c  measured using two plastic scintillation detectors, energy loss or     
 168GD8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 168GD9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -520,17 +546,29 @@
 168GDFc  a scintillator for veto signal. Measured production cross section.     
 168GDGc  Comparison of measured |s with predictions from ABRABLA model and      
 168GDHc  EPAX-3 model                                                           
+168GD c  2017Wu04: The {+168}Gd nuclide was produced at the RIBF-RIKEN facility 
+168GD2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+168GD3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+168GD4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+168GD5c  pnA, respectively. The identification of the nuclide of interest was   
+168GD6c  made in the BigRIPS separator by determining the atomic number and the 
+168GD7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+168GD8c  reaction products were transported through the ZeroDegree Spectrometer 
+168GD9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+168GDac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+168GDbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+168GDcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+168GDdc  Deduced: T{-1/2}.                                                      
 168GD c  Nuclear structure calculations: 1997Lo07, 1996Ba16, 1987Ne03,          
 168GD2c  1985He14, 1984Sa16                                                     
-168GD  L 0              0+              160 NS   GT                             
-168GD2 L %B-=?                                                                  
-168GD cL $ Only |b{+-} decay mode is expected.                                  
-168GD cL E$ the observed {+168}Gd fragments assumed to correspond to the g.s.   
-168GD cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-168GD2cL |b-decay half-life is expected to be much longer as suggested by       
-168GD3cL 300 ms from systematics (2012Au07), and 4.77 s from theoretical        
-168GD4cL calculations (1997Mo25)                                                
-168GD cL $ Production |s=78 nb {I5} (2012Ku26)                                  
+168GD  L 0.0          0+               3.03 S    16                             
+168GD2 L %B-=100                                                                
+168GD cL %B-$Only |b{+-} decay mode is expected.                                
+168GD cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+168GD2cL using the least-squares and maximum-likelihood methods. The data       
+168GD3cL analysis included contributions from the parent, daughter and          
+168GD4cL ground-daughter decays, as well as a constant background.              
+168GD cL $ Production |s(at 1 GeV/nucleon)=78 nb {I5} (2012Ku26)                
                                                                                 
 168TB    ADOPTED LEVELS                                          10NDS    201008
 168TB  H TYP=FUL$AUT=CORAL M. BAGLIN$CIT=NDS 111, 1807 (2010)$CUT=15-Jun-2010$  

@@ -689,66 +689,146 @@
 151    R 2008RO02 JOUR PRVCA 77 014308                                          
 151    R 2008RO23 JOUR PRVCA 78 034319                                          
                                                                                 
-151CS    ADOPTED LEVELS                                          09NDS    200901
+151CS    COMMENTS                                                ENSDF    201711
+151CS  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+151CS C  TITL$NUCLEAR DATA SHEETS FOR 151CS                                     
+151CS c  AUTH$FILIP G. KONDEV                                                   
+151CS c  INST$Nuclear Engineering Division                                      
+151CS#c       Argonne National Laboratory                                       
+151CS#c       9700 South Cass Avenue                                            
+151CS#c       Argonne, Illinois 60439, USA                                      
+151CS c  ABST$Information about the nuclear structure properties of the         
+151CS2c  {+151}Cs nuclide is presented                                          
+151CS c  CUT$Literature available up to February 20, 2017 has been consulted.   
+151CS c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+151CS1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+151CS C  CIT$ENSDF                                                              
+                                                                                
+151CS    ADOPTED LEVELS                                          ENSDF    201711
 151CS  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 110, 1 (2009)$CUT=20-Nov-2008$        
-151CS  Q 1.05E4    SY4.1E3   SY                        2012WA38                 
-151CS CQ Note: Current evaluation has used the following Q record               
-151CS  Q  10600    SY 4330   SY 12400  CA -5810  CA    2003AU03,1997MO25        
-151CS CQ $ Q- and SN from 2003Au03; ^S(p) and QA from 1997Mo25                  
-151CS cQ $ |DQ(|b{+-})=640, |DS(n)=590 (syst,2003Au03).                         
-151CS cQ $ Q(|b{+-}n)=7310 {I640} (syst,2003Au03)                               
-151CS c  1987Ra12: identification and yield of mass-separated {+151}Cs measured 
-151CS2c  in fission of uranium by 600-MeV protons, time-of-flight technique.    
-151CS  L 0                               50 MS   GT                             
-151CS2 L %B-=?$ %B-N=?                                                          
-151CS CL $ CALCULATED %B-N=85.9, %B-2N=0.4 (1997MO25)                           
-151CS cL E$the observed {+151}Cs fragments are assumed to correspond to the g.s.
-151CS cL J$ 3/2+ (syst,2003Au02); 3/2 (1997Mo25)                                
-151CS cL T$ limiting value from time-of-flight.                                 
-151CS2cL Others: 60 ms (syst,2003Au02), 89 ms (calculated,1997Mo25)             
+151CS  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+151CS  Q 10535     SY 4112   SY                        2012WA38                 
+151CS cQ $|DQ(|b{+-})=499, |DS(n)=499                                           
+151CS cQ $S(2n)=7238 {I446}, Q(|b{+-}n)=7326 {I499} (2012Wa38, syst).           
+151CS c  1987Ra12: Yield of {+151}Cs was measured in U(p,X)                     
+151CS2c  E=600 MeV reaction using ISOLDE On-Line Mass Separator                 
+151CS c  2017Wu04: The {+151}Cs nuclide was produced at the RIBF-RIKEN facility 
+151CS2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+151CS3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+151CS4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+151CS5c  pnA, respectively. The identification of the nuclide of interest was   
+151CS6c  made in the BigRIPS separator by determining the atomic number and the 
+151CS7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+151CS8c  reaction products were transported through the ZeroDegree Spectrometer 
+151CS9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+151CSac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+151CSbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+151CScc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+151CSdc  Deduced: T{-1/2}.                                                      
+151CS  L 0.0                           69 MS     26                             
+151CS2 L %B-=100 $ %B-N=?                                                       
+151CS cL %B-$Only |b{+-} decay mode is expected.                                
+151CS cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+151CS2cL using the least-squares and maximum-likelihood methods. The data       
+151CS3cL analysis included contributions from the parent, daughter and          
+151CS4cL ground-daughter decays, as well as a constant background.              
                                                                                 
-151BA    ADOPTED LEVELS                                          09NDS    200901
+151BA    COMMENTS                                                ENSDF    201711
+151BA  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+151BA C  TITL$NUCLEAR DATA SHEETS FOR 151BA                                     
+151BA c  AUTH$FILIP G KONDEV                                                    
+151BA c  INST$Nuclear Engineering Division                                      
+151BA#c       Argonne National Laboratory                                       
+151BA#c       9700 South Cass Avenue                                            
+151BA#c       Argonne, Illinois 60439, USA                                      
+151BA c  ABST$Information about the nuclear structure properties of the         
+151BA2c  {+151}Ba nuclide is presented                                          
+151BA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+151BA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+151BA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+151BA C  CIT$ENSDF                                                              
+                                                                                
+151BA    ADOPTED LEVELS                                          ENSDF    201711
 151BA  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 110, 1 (2009)$CUT=20-Nov-2008$        
-151BA  Q 8.3E3     SY3.2E3   SY1.39E4  SY-5.2E3  SY    2012WA38                 
-151BA CQ Note: Current evaluation has used the following Q record               
-151BA  Q  8470     SY 3290   SY 14150  SY -4990  SY    2003AU03                 
-151BA cQ           |DQ(|b{+-})=|DS(n)=|DQ(|a)=570, |DS(p)=500 (2003Au03)        
-151BA cQ           Q(|b{+-}n)=3140 {I570} (syst,2003Au03)                       
-151BA c  1994Be24: Identification in reaction: Pb({+238}U,F) at                 
-151BA2c  750 MeV/nucleon. Residual products Fragment Recoil Separator           
-151BA3c  (FRS), time-of-flight technique. A total of 13 counts were             
-151BA4c  observed corresponding to a cross section of 4 |mb.                    
-151BA  L  0                              300 NS  GT                             
-151BA2 L %B-=?$ %B-N=?                                                          
-151BA CL $ CALCULATED %B-N=6.5 (1997MO25)                                       
-151BA cL E$the observed {+151}Ba fragments are assumed to correspond to the g.s.
-151BA cL J$ 3/2- (syst,2003Au02), 5/2+ (1997Mo25)                               
-151BA cL T$ limiting value from time-of-flight. Actual half-life                
-151BA2cL is expected to be much longer. Others: 200 ms (syst,2003Au02),         
-151BA3cL 360 ms (calculated,1997Mo25)                                           
+151BA  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+151BA  Q 8337      SY 3209   SY 13865  SY -5210   SY   2012WA38                 
+151BA cQ $|DQ(|b{+-})=357, |DS(n)=422, |DS(p)=422, |DQ(|a)=357                  
+151BA cQ $S(2n)=8514 {I357},  Q(|b{+-}n)=2920 {I357}                            
+151BA2cQ (2012Wa38, syst)                                                       
+151BA c  2017Wu04: The {+151}Ba nuclide was produced at the RIBF-RIKEN facility 
+151BA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+151BA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+151BA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+151BA5c  pnA, respectively. The identification of the nuclide of interest was   
+151BA6c  made in the BigRIPS separator by determining the atomic number and the 
+151BA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+151BA8c  reaction products were transported through the ZeroDegree Spectrometer 
+151BA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+151BAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+151BAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+151BAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+151BAdc  Deduced: T{-1/2}.                                                      
+151BA  L 0.0                           0.167 S   5                              
+151BA2 L %B-=100 $ %B-N=?                                                       
+151BA cL %B-$Only |b{+-} decay mode is expected.                                
+151BA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+151BA2cL using the least-squares and maximum-likelihood methods. The data       
+151BA3cL analysis included contributions from the parent, daughter and          
+151BA4cL ground-daughter decays, as well as a constant background.              
                                                                                 
-151LA    ADOPTED LEVELS                                          09NDS    200901
+151LA    COMMENTS                                                ENSDF    201711
+151LA  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+151LA C  TITL$NUCLEAR DATA SHEETS FOR 151LA                                     
+151LA c  AUTH$FILIP G. KONDEV                                                   
+151LA c  INST$Nuclear Engineering Division                                      
+151LA#c       Argonne National Laboratory                                       
+151LA#c       9700 South Cass Avenue                                            
+151LA#c       Argonne, Illinois 60439, USA                                      
+151LA c  ABST$Information about the nuclear structure properties of the         
+151LA2c  {+151}La nuclide is presented                                          
+151LA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+151LA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+151LA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+151LA C  CIT$ENSDF                                                              
+                                                                                
+151LA    ADOPTED LEVELS                                          ENSDF    201711
 151LA  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 110, 1 (2009)$CUT=20-Nov-2008$        
-151LA  Q 7.50E3    SY5.4E3   SY1.08E4  SY-4.14E3 SY    2012WA38                 
-151LA CQ Note: Current evaluation has used the following Q record               
-151LA  Q  6940     SY 5320   SY 10980  SY -4690  SY    2003AU03                 
-151LA cQ Q-$ From mass of neutral {+151}La=150.941720 u {I430} (syst,2003Au03)  
-151LA2cQ and mass of neutral {+151}Ce=150.934272 u {I19} (2006Sa56, Penning     
-151LA3cQ trap method). Other: 7210 {I410} (syst,2003Au03)                       
-151LA cQ $ |DQ(|b{+-})=400, |DS(n)=|DS(p)=570, |DQ(|a)=400 (syst,2003Au03)      
-151LA cQ           Q(|b{+-}n)=2470 {I400} (syst,2003Au03)                       
+151LA  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+151LA  Q 7496      SY 5417   SY 10763  SY -4135  SY    2012WA38                 
+151LA cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=196, |DS(n)=277,      
+151LA2cQ |DS(p)=357, |DS(|a)=203                                                
+151LA cQ $S(2n)=9651 {I280}, S(2p)=24545 {I277}, Q(|b{+-}n)=3047 {I196}         
+151LA2cQ from 2012Wa38.                                                         
+151LA c  2017Wu04: The {+151}La nuclide was produced at the RIBF-RIKEN facility 
+151LA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+151LA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+151LA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+151LA5c  pnA, respectively. The identification of the nuclide of interest was   
+151LA6c  made in the BigRIPS separator by determining the atomic number and the 
+151LA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+151LA8c  reaction products were transported through the ZeroDegree Spectrometer 
+151LA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+151LAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+151LAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+151LAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+151LAdc  Deduced: T{-1/2}.                                                      
 151LA c  1994Be24: Identification in reaction: Pb({+238}U,F) at                 
 151LA2c  750 MeV/nucleon. Residual products Fragment Recoil Separator           
 151LA3c  (FRS), time-of-flight technique. A total of 106 counts were            
 151LA4c  observed corresponding to a cross section of >52 |mb.                  
-151LA  L  0                              300 NS  GT                             
-151LA2 L %B-=?$ %B-N=?                                                          
-151LA CL $ CALCULATED %B-N=5.8 (1997MO25)                                       
-151LA cL E$the observed {+151}La fragments are assumed to correspond to the g.s.
-151LA cL J$5/2+ (syst,2003Au02), 1/2+ (1997Mo25)                                
-151LA cL T$limiting value from time-of-flight. Actual half-life                 
-151LA2cL is expected to be much longer. Others: 300 ms (syst,2003Au02),         
-151LA3cL 790 ms (calculated,1997Mo25)                                           
+151LA  L 0.0          (1/2+)           0.457 S   +30-18                         
+151LA2 L %B-=100 $ %B-N=?                                                       
+151LA cL %B-$Only |b{+-} decay mode is expected.                                
+151LA cL J$From systematics of known quasiparticle states in neighboring nuclei 
+151LA2cL and the proposed configuration (by the evaluator). The assignment is   
+151LA3cL tentative.                                                             
+151LA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+151LA2cL using the least-squares and maximum-likelihood methods. The data       
+151LA3cL analysis included contributions from the parent, daughter and          
+151LA4cL ground-daughter decays, as well as a constant background.              
+151LA cL CONF$|p1/2[420] (d{-5/2}) Nilsson orbital, expected from systematics of
+151LA2cL well-deformed nuclei in the region (by the evaluator).                 
+151LA3cL The assignment is tentative.                                           
                                                                                 
 151CE    ADOPTED LEVELS, GAMMAS                                  09NDS    200901
 151CE  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 110, 1 (2009)$CUT=20-Nov-2008$        

@@ -950,6 +950,9 @@
  22F   L 5260      30                                                           
                                                                                 
  22NE    ADOPTED LEVELS, GAMMAS                                  15NDS    201507
+ 22NE  H TYP=MOD$AUT=M.S. Basunia$DAT=17-Oct-2017$COM=Removed spin-parity       
+ 22NE2 H assignments quoted from 18O(A,N): RES based on e-mail msg received from
+ 22NE3 H 1st author of 2013Be12 (A,N) (Dated: Oct. 17, 2017).                   
  22NE  H TYP=FUL$AUT=M. Shamsuzzoha Basunia$CIT=NDS 127, 69(2015)$              
  22NE2 H CUT=1-Apr-2015$                                                        
  22NE  Q -2842.20  1710364.26 4 15266.118-9666.81 2    2012WA38                 
@@ -1480,25 +1483,21 @@
  22NE cL J$L=2 in (t,p)                                                         
  22NE  L 10616     3     (5-)           6 KEV                               J   
  22NEX L XREF=DEFGO                                                             
- 22NE CL J$From |a|g angular distribution measurements (A,G). J|p=2+ in         
- 22NE2CL (|a,n): Res - no discussion is presented in 2013Be12 - and the source  
- 22NE3CL of this discrepancy is not clear.                                      
+ 22NE CL J$From |a|g angular distribution measurements (A,G).                   
  22NE  G     4270         100 8                                             Y   
  22NE  G     7258          52 8                                             Y   
  22NE  L 10696     4                    4 KEV    LT                         N   
  22NEX L XREF=DO                                                                
  22NE CL E$From (|a,|g)                                                         
  22NE  G 7337          100                                                      
- 22NE  L 10706     6   3-               10 KEV   LT                         N   
+ 22NE  L 10706     6                    10 KEV   LT                         N   
  22NEX L XREF=DEF(10720)                                                        
  22NE CL E$From (|a,|g)                                                         
- 22NE CL J$From (|a,n): Res                                                     
  22NE  G 9429          100                                                      
- 22NE  L 10749     3   5-,4+            6 KEV                                   
+ 22NE  L 10749     3   5-               6 KEV                                   
  22NEX L XREF=DEG                                                               
  22NE CL E$From (|a,n)                                                          
- 22NE CL J$5- in (A,G); 4+ in (|a,n): Res. Natural parity listed in 1990En08    
- 22NE2CL Table 22.11 for this state.                                            
+ 22NE CL J$From (A,G). Natural parity listed in 1990En08 Table 22.11.           
  22NE  G 4437          100   10                                             Y   
  22NE  G 7390           92   10                                             Y   
  22NE  L 10857     3  3-                6 KEV                               J   
@@ -1515,7 +1514,7 @@
  22NE  G 10918          79    9                                             Y   
  22NE  L 11032     6   (8+,6+)          10 KEV   LT                         I   
  22NEX L XREF=CDEGO                                                             
- 22NE cL J$8+ in (|a,p|g), (8+,6+) in (|a,|g), 6+ in (|a,n).                    
+ 22NE cL J$8+ in (|a,p|g), (8+,6+) in (|a,|g).                                  
  22NE2 L FLAG=N                                                                 
  22NE  G 4721                                                               ZC  
  22NE  L 11064     10  2+                                                       
@@ -1526,41 +1525,32 @@
  22NE cL J$From (|a,p|g), angular correlation measurements                      
  22NE2 L FLAG=N                                                                 
  22NE  G 4818          100                                                      
- 22NE  L 11172         3-                                                       
+ 22NE  L 11172                                                                  
  22NEX L XREF=E                                                                 
- 22NE CL J$From (|a,n): Res, based on best-fit R-matrix parameters.             
- 22NE  L 11194     3   2+               7 KEV                               J   
+ 22NE  L 11194     3                    7 KEV                               J   
  22NEX L XREF=DEF                                                               
- 22NE CL J$From (|a,n): Res, based on best-fit R-matrix parameters.             
  22NE  G 2294          100    4                                             Y   
  22NE  G 9917           18    4                                             Y   
- 22NE  L 11269     5   (3-)             12 KEV                              J   
+ 22NE  L 11269     5   2+,3+,4+         12 KEV                              J   
  22NEX L XREF=DEFO                                                              
- 22NE CL J$From (|a,n):Res based on R-matrix fit. In 1978Tr05 (|a,|g) -         
- 22NE2CL J|p=2+,3+,4+ from |a|g angular distribution measurements.              
+ 22NE CL J$From 1978Tr05 (|a,|g) - based on |a|g angular distribution           
+ 22NE2CL measurements.                                                          
  22NE  G 6122          100   15                                             Y   
  22NE  G 7910           81   15                                             Y   
- 22NE  L 11323        5-                                                        
+ 22NE  L 11323                                                                  
  22NEX L XREF=E                                                                 
- 22NE CL J$From (|a,n):Res based on R-matrix fit.                               
- 22NE  L 11431     8  1-                48 KEV                              J   
+ 22NE  L 11431     8                    48 KEV                              J   
  22NEX L XREF=DEF                                                               
- 22NE CL J$From (|a,n):Res based on R-matrix fit. Natural parity in 1978Tr05    
- 22NE2CL (|a,|g).                                                               
+ 22NE CL J$Natural parity in 1978Tr05 (|a,|g).                                  
  22NE  G 10154         100                                                      
  22NE  L 11465     3    (1-)            3 KEV    LT                         J   
  22NEX L XREF=DE                                                                
  22NE CL J$From 1978Tr05,1970Ch18 (|a,|g).                                      
- 22NE2CL 2013Be12 (|a,n):Res suggested 4+ without any discussion about this     
- 22NE3CL discrepancy.                                                           
  22NE  G 6320          100    4                                             Y   
  22NE  G 10190          33    4                                             Y   
  22NE  G 11464          49    4                                             Y   
- 22NE  L 11518        (2+)                                                      
- 22NEX L XREF=E                                                                 
- 22NE CL J$From (|a,n):Res based on R-matrix fit                                
  22NE  L 11522     8  7-                                                        
- 22NEX L XREF=DFG                                                               
+ 22NEX L XREF=DEFG                                                              
  22NE CL E$Weighted average of data 11533 10 (1994Ma37) and 11520 15 (1974Fl07) 
  22NE2CL in (T,P), and 11482 20 (|a,p|g).                                       
  22NE cL J$From (|a,p|g), angular correlation measurements. Natural parity      
@@ -1577,7 +1567,6 @@
  22NE  L 11708     15   (2+)            5 KEV                               A   
  22NEX L XREF=EFZ                                                               
  22NE CL E$From (T,P)                                                           
- 22NE CL J$J|p=0+ reported in (|a,n):Res, no discussion about the discrepancy.  
  22NE  L 11745                         41 KEV                                   
  22NEX L XREF=D                                                                 
  22NE  L 11751          1-              8 KEV                                   
@@ -2150,6 +2139,8 @@
  22NE CL J$From |g(|q) measurements in 1968Gr07                                 
                                                                                 
  22NE    18O(A,N): RES                 2013BE12,1973BA10         15NDS    201507
+ 22NE  H TYP=MOD$AUT=M.S. Basunia$DAT=17-Oct-2017$COM=Modified spin-parity      
+ 22NE2 H footnote.                                                              
  22NE  H TYP=FUL$AUT=M. Shamsuzzoha Basunia$CIT=NDS 127, 69(2015)$              
  22NE2 H CUT=1-Apr-2015$                                                        
  22NE c  2013Be12: E(|a)=1280-2300 keV provided by the 4 MV KN accelerator at   
@@ -2166,55 +2157,52 @@
  22NE CL E$From 1973BA10, except otherwise noted. Excited energies deduced      
  22NE2CL from E|a*0.818 {I08} + 9667.0 keV in 1973Ba10.                         
  22NE CL E(A)$From 2013Be12.                                                    
- 22NE CL J$From 2013Be12, based on best-fit R-matrix parameters. Some           
- 22NE2CL of the proposed assignments are in disagreement with earlier values.   
- 22NE3CL Evaluator noted those difference in this data set and Adopted Levels.  
- 22NE  L 10615     3  2+                    6 KEV                               
+ 22NE CL J$Assumed value (2013Be12) for the fit (e-mail from 1st author of      
+ 22NE2CL 2013Be12 - Oct. 17, 2017). Square brakets introduced by evaluator. Not 
+ 22NE3CL considered for spin-parity in the Adopted Levels.                      
+ 22NE  L 10615     3  [2+]                  6 KEV                               
  22NE cL $|G(|a)=0.133 eV for l=2, s=0; |G(n0)=1.47 keV for l=0, s=2            
- 22NE CL J$(5-) in Adopted Levels. Source of this discrepancy is not clear.     
- 22NE  L 10713        3-                                                    A   
+ 22NE  L 10713        [3-]                                                  A   
  22NE cL $|G(|a)=0.0445 eV for l=3, s=0; |G(n0)=1.7 keV for l=1, s=2            
- 22NE  L 10749     3  4+                    6 KEV                               
+ 22NE  L 10749     3  [4+]                  6 KEV                               
  22NE CL E$Other value: 10751 (2013Be12)                                        
  22NE cL $|G(|a)=0.225 eV for l=4, s=0; |G(n0)=1.6 keV for l=2, s=2             
- 22NE  L 10853     3  3-                    6 KEV                               
+ 22NE  L 10853     3  [3-]                  6 KEV                               
  22NE cL $|G(|a)=0.224 eV for l=3, s=0; |G(n1)=1.9 keV for l=1, s=2;            
  22NE2cL |G(n1)=45.8 eV for l=1, s=3; |G(n0)=1.7 keV for l=1, s=2               
- 22NE  L 10919     3  1-                   24 KEV                               
+ 22NE  L 10919     3  [1-]                 24 KEV                               
  22NE CL E$Other value: 10922 (2013Be12)                                        
  22NE cL $|G(|a)=10.5 eV for l=1, s=0; |G(n1)=6.1 keV for l=1, s=2;             
  22NE2cL |G(n0)=14.1 keV for l=1, s=1; |G(n0)=6.6 keV for l=1, s=2              
- 22NE  L 11030        6+                                                    A   
+ 22NE  L 11030        [6+]                                                  A   
  22NE cL $|G(|a)=0.0014 eV for l=6, s=0; |G(n1)=9.3 eV for l=4, s=3;            
  22NE2cL |G(n0)=9.0 eV for l=4, s=2                                             
- 22NE CL J$(8+,6+) in Adopted Levels.                                           
- 22NE  L 11172        3-                                                    A   
+ 22NE  L 11172        [3-]                                                  A   
  22NE cL $|G(|a)=0.359 eV for l=3, s=0; |G(n1)=19.3 keV for l=1, s=2;           
  22NE2cL |G(n1)=476 eV for l=1, s=3                                             
- 22NE  L 11192     3  2+                    7 KEV                               
+ 22NE  L 11192     3  [2+]                  7 KEV                               
  22NE CL E$Other value: 11195 (2013Be12)                                        
  22NE cL $|G(|a)=13.8 eV for l=2, s=0; |G(n1)=440 eV for l=0, s=2;              
  22NE2cL |G(n0)=4.8 keV for l=0, s=2                                            
- 22NE  L 11266     5  3-                   12 KEV                               
+ 22NE  L 11266     5  [3-]                 12 KEV                               
  22NE CL E$Other value: 11268 (2013Be12)                                        
  22NE cL $|G(|a)=1.6 eV for l=3, s=0; |G(n1)=412 eV for l=1, s=2;               
  22NE2cL |G(n1)=10.2 eV for l=1, s=3; |G(n0)=1.2 keV for l=1, s=2               
- 22NE  L 11323        5-                                                    A   
+ 22NE  L 11323        [5-]                                                  A   
  22NE cL $|G(|a)=0.098 eV for l=5, s=0; |G(n0)=7.4 keV for l=3, s=2             
- 22NE  L 11434     8  1-                   48 KEV                               
+ 22NE  L 11434     8  [1-]                 48 KEV                               
  22NE CL E$Other value: 11432 (2013Be12)                                        
  22NE cL $|G(|a)=126 eV for l=1, s=0; |G(n1)=25.0 keV for l=1, s=2;             
  22NE2cL |G(n0)=10.2 keV for l=1, s=1; |G(n0)=5.1 keV for l=1, s=2              
- 22NE  L 11463     3  4+                    3 KEV LE                            
- 22NE CL J$1- in Adopted Levels considering |g-ray transitions.                 
+ 22NE  L 11463     3  [4+]                  3 KEV LE                            
  22NE cL $|G(|a)=49.9 eV for l=4, s=0; |G(n1)=1.0 keV for l=2, s=2;             
  22NE2cL |G(n1)=1.0 keV for l=2, s=3; |G(n0)=2.5 keV for l=2, s=2               
- 22NE  L 11518        2+                                                    A   
+ 22NE  L 11518        [2+]                                                  A   
  22NE cL $|G(|a)=4.6 eV for l=2, s=0; |G(n1)=1.6 keV for l=0, s=2;              
  22NE2cL |G(n0)=1.5 keV for l=0, s=2                                            
  22NE  L 11577     5                       18 KEV                               
  22NE  L 11685     5                        9 KEV                               
- 22NE  L 11709        0+                                                    A   
+ 22NE  L 11709        [0+]                                                  A   
  22NE cL $|G(|a)=3.3 keV for l=0, s=0; |G(n1)=199 keV for l=2, s=2;             
  22NE2cL |G(n0)=476 keV for l=2, s=2                                            
                                                                                 

@@ -355,27 +355,27 @@
 161    R 2011CH26 JOUR CPCHC 35 545                                             
 161    R 2011LA01 JOUR PRVCA 83 014313                                          
                                                                                 
-161ND    COMMENTS                                                ENSDF    201309
-161ND  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+161ND    COMMENTS                                                ENSDF    201704
+161ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 161ND C  TITL$NUCLEAR DATA SHEETS FOR 161ND                                     
-161ND c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-161ND c  INST$Department of Physics and Astronomy,                              
-161ND#c       McMaster University, Hamilton, Ontario,                           
-161ND#c       Canada, L8S 4M1                                                   
-161ND c  ABST$Information about the identification of {+161}Nd nuclide          
-161ND2c  from 2012Ku26 is presented.                                            
-161ND c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-161ND c  ACKN$                                                                  
-161ND c  FUND$Work supported by the office of Science of the U.S. Department    
-161NDxc  of Energy.                                                             
+161ND c  AUTH$FILIP G KONDEV                                                    
+161ND c  INST$Nuclear Engineering Division                                      
+161ND#c       Argonne National Laboratory                                       
+161ND#c       9700 South Cass Avenue                                            
+161ND#c       Argonne, Illinois 60439, USA                                      
+161ND c  ABST$Information about the nuclear structure properties of the         
+161ND2c  {+161}Nd nuclide is presented                                          
+161ND c  CUT$Literature available up to February 20, 2017 has been consulted.   
+161ND c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+161ND1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 161ND C  CIT$ENSDF                                                              
                                                                                 
-161ND    ADOPTED LEVELS                                          ENSDF    201309
-161ND  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+161ND    ADOPTED LEVELS                                          ENSDF    201704
+161ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 161ND  Q 7650      SY 3530   SY 13540  CA -5010  SY    2012Wa38,1997MO25        
-161ND cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=590, |DS(n)=640,          
+161ND cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=590, |DS(n)=640,      
 161ND2cQ |DS(|a)=710                                                            
-161ND CQ $ SP from 1997Mo25; others from 2012Wa38                               
+161ND cQ $S(p) from 1997Mo25; others from 2012Wa38                              
 161ND cQ $S(2n)=8920 {I640}, Q(|b{+-}n)=2340 {I590} from 2012Wa38 (syst).       
 161ND cQ $S(2p)=25450 from 1997Mo25 (theory).                                   
 161ND c  2012Ku26: {+161}Nd produced and identified in {+9}Be({+238}U,F),       
@@ -383,7 +383,7 @@
 161ND3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 161ND4c  Fragment Separator (FRS). Particle identification was achieved by      
 161ND5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-161ND6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+161ND6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 161ND7c  measured using two plastic scintillation detectors, energy loss or     
 161ND8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 161ND9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -395,31 +395,48 @@
 161NDFc  a scintillator for veto signal. Measured production cross section.     
 161NDGc  Comparison of measured |s with predictions from ABRABLA model and      
 161NDHc  EPAX-3 model                                                           
-161ND  L 0                              160 NS   GT                             
-161ND2 L %B-=?$ %B-N=?                                                          
-161ND cL $ Mainly |b{+-} decay mode is expected. Predicted %|b{+-}n=0.62        
-161ND2cL (1997Mo25)                                                             
-161ND cL E$ the observed {+161}Nd fragments assumed to correspond to the g.s.   
-161ND cL J$ 1/2- from systematics (2012Au07), 7/2+ predicted (1997Mo25)         
-161ND cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-161ND2cL |b-decay half-life is expected to be much longer as suggested by       
-161ND3cL 200 ms from systematics (2012Au07), and 0.49 s from theoretical        
-161ND4cL calculations (1997Mo25)                                                
-161ND cL $ Production |s=3.0 nb {I17} (2012Ku26)                                
+161ND c  2017Wu04: The {+161}Nd nuclide was produced at the RIBF-RIKEN facility 
+161ND2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+161ND3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+161ND4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+161ND5c  pnA, respectively. The identification of the nuclide of interest was   
+161ND6c  made in the BigRIPS separator by determining the atomic number and the 
+161ND7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+161ND8c  reaction products were transported through the ZeroDegree Spectrometer 
+161ND9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+161NDac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+161NDbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+161NDcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+161NDdc  Deduced: T{-1/2}.                                                      
+161ND  L 0.0          (1/2-)           0.22 S    8                              
+161ND2 L %B-=100 $ %B-N=?                                                       
+161ND cL %B-$Only |b{+-} decay mode is expected.                                
+161ND cL J$From systematics of known quasiparticle states in neighboring nuclei 
+161ND2cL and the proposed configuration (by the evaluator). The assignment is   
+161ND3cL tentative.                                                             
+161ND cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+161ND2cL using the least-squares and maximum-likelihood methods. The data       
+161ND3cL analysis included contributions from the parent, daughter and          
+161ND4cL grand-daughter decays, as well as a constant background.               
+161ND5cL T{-1/2}=0.215 s {I76} is reported in 2017Wu04.                         
+161ND cL CONF$|n1/2[521] Nilsson orbital, based on systematics of known         
+161ND2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+161ND3cL assignment is tentative.                                               
+161ND cL $ Production |s(at 1 GeV/nucleon)=3.0 nb {I17} (2012Ku26)              
                                                                                 
-161PM    COMMENTS                                                ENSDF    201309
-161PM  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+161PM    COMMENTS                                                ENSDF    201704
+161PM  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
 161PM C  TITL$NUCLEAR DATA SHEETS FOR 161PM                                     
-161PM c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-161PM c  INST$Department of Physics and Astronomy,                              
-161PM#c       McMaster University, Hamilton, Ontario,                           
-161PM#c       Canada, L8S 4M1                                                   
-161PM c  ABST$Information about the identification of {+161}Pm nuclide          
-161PM2c  from 2012Ku26 is presented.                                            
-161PM c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-161PM c  ACKN$                                                                  
-161PM c  FUND$Work supported by the office of Science of the U.S. Department    
-161PMxc  of Energy.                                                             
+161PM c  AUTH$FILIP G. KONDEV                                                   
+161PM c  INST$Nuclear Engineering Division                                      
+161PM#c       Argonne National Laboratory                                       
+161PM#c       9700 South Cass Avenue                                            
+161PM#c       Argonne, Illinois 60439, USA                                      
+161PM c  ABST$Information about the nuclear structure properties of the         
+161PM2c  {+161}Pm nuclide is presented                                          
+161PM c  CUT$Literature available up to February 20, 2017 has been consulted.   
+161PM c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+161PM1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 161PM C  CIT$ENSDF                                                              
                                                                                 
 161PM    ADOPTED LEVELS                                          ENSDF    201309
@@ -457,6 +474,123 @@
 161PM3cL 700 ms from systematics (2012Au07), and 0.32 s from theoretical        
 161PM4cL calculations (1997Mo25)                                                
 161PM cL $ Production |s=161 nb {I9} (2012Ku26)                                 
+                                                                                
+161PM    ADOPTED LEVELS, GAMMAS                                  ENSDF    201704
+161PM  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+161PM  Q 6440      SY 5310   SY 10390  SY -4120  SY    2012Wa38                 
+161PM cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=300, |DS(n)=420,          
+161PM2cQ |DS(p)=500, |DS(|a)=500                                                
+161PM cQ $S(2n)=9820 {I300}, S(2p)=23730 {I590}, Q(|b{+-}n)=1930 {I300}         
+161PM2cQ  from 2012Wa38 (syst).                                                 
+161PM  XA161PM IT DECAY                                                         
+161PM c  2012Ku26: {+161}Pm produced and identified in {+9}Be({+238}U,F),       
+161PM2c  E=1 GeV/nucleon reaction using SIS-18 synchrotron facility at GSI.     
+161PM3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
+161PM4c  Fragment Separator (FRS). Particle identification was achieved by      
+161PM5c  event-by-event in-flight analysis of time-of-flight, energy loss       
+161PM6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
+161PM7c  measured using two plastic scintillation detectors, energy loss or     
+161PM8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
+161PM9c  time-projection chambers (TPC), which also provided energy deposit     
+161PMAc  information. Isomer tagging method for known |ms isomers was used      
+161PMBc  to verify event-by-event identification and in-flight separation of    
+161PMCc  new isotopes. Gamma rays from the known isomers were recorded in       
+161PMDc  coincidence with the incoming ions using either the RISING array of    
+161PMEc  Ge detectors at GSI or only two Ge detectors, a stopper foil and       
+161PMFc  a scintillator for veto signal. Measured production cross section.     
+161PMGc  Comparison of measured |s with predictions from ABRABLA model and      
+161PMHc  EPAX-3 model                                                           
+161PM c  2017Wu04: The {+161}Pm nuclide was produced at the RIBF-RIKEN facility 
+161PM2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+161PM3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+161PM4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+161PM5c  pnA, respectively. The identification of the nuclide of interest was   
+161PM6c  made in the BigRIPS separator by determining the atomic number and the 
+161PM7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+161PM8c  reaction products were transported through the ZeroDegree Spectrometer 
+161PM9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+161PMac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+161PMbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+161PMcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+161PMdc  Deduced: T{-1/2}.                                                      
+161PM cL E$From a least-squares fit to E|g.                                     
+161PM cL J$From 2015YoZX, based on the observed band structure,                 
+161PM2cL unless otherwise stated                                                
+161PM cL BAND(A)$K|p=5/2- band, based on the |p5/2[532] Nilsson orbital         
+161PM cG E$From 2015YoZX. Uncertainties in E|g were estimated                   
+161PM2cG by the evaluator                                                       
+161PM  L 0.0          (5/2-)           1.05 S    15                         A   
+161PM2 L XREF=A                                                                 
+161PM3 L %B-=100 $ %B-N=?                                                       
+161PM cL %B-$Only |b{+-} decay mode is expected.                                
+161PM cL J$From systematics of known quasiparticle states in neighboring nuclei 
+161PM2cL and the proposed configuration (by the evaluator). The assignment is   
+161PM3cL tentative.                                                             
+161PM cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+161PM2cL using the least-squares and maximum-likelihood methods. The data       
+161PM3cL analysis included contributions from the parent, daughter and          
+161PM4cL ground-daughter decays, as well as a constant background.              
+161PM cL CONF$|p5/2[532] Nilsson orbital, based on systematics of known         
+161PM2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+161PM3cL assignment is tentative.                                               
+161PM cL $ Production |s(at 1 GeV/nucleon)=161 nb {I9} (2012Ku26)               
+161PM  L 61.5       5 (7/2-)                                                A   
+161PM2 L XREF=A                                                                 
+161PM  G 61.5      5                                                            
+161PM  L 141.7      7 (9/2-)                                                A   
+161PM2 L XREF=A                                                                 
+161PM  G  80.2     5                                                            
+161PM  L 238.4      8 (11/2-)                                               A   
+161PM2 L XREF=A                                                                 
+161PM  G  96.7     5                                                            
+161PM  G 177       1                                                            
+161PM  L 356.7      9 (13/2-)                                               A   
+161PM2 L XREF=A                                                                 
+161PM  G 118.2     5                                                            
+161PM  L 965.9      9 (13/2+)          0.89 US    6                          M  
+161PM2 L XREF=A                                                                 
+161PM cL J$609.2|g to (13/2-), 727.5|g to (11/2-); proposed configuration       
+161PM cL T$weighted average of values deduced from 61.5|g(t), 80.2|g(t),        
+161PM2cL 96.7|g(t), 177|g(t), 118.2|g(t), 609.2|g(t) and 727.5|g(t) (2015YoZX). 
+161PM cL CONF$K|p=13/2+, |p5/2[532]~#|n{+2}(1/2[521],7/2[633])                  
+161PM  G 609.2     5                                                            
+161PM  G 727.5     5                                                            
+                                                                                
+161PM    161PM IT DECAY                2015YOZX                           201704
+161PM  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+161PM c  {+161}Pm produced via projectile fragmentation of a 345 MeV/nucleon    
+161PM2c  {+238}U beam on a 4-mm thick Be target at the RIBF facility of the     
+161PM3c  RIKEN Nishina Center. Ions of interest were separated and identified   
+161PM4c  on an ion-by-ion basis using the BigRIPS in-flight separator using     
+161PM5c  the |DE-ToF-B|r method.  Selected fragments were transported through   
+161PM6c  the ZeroDegree spectrometer and implanted into the WAS3ABi Si array or 
+161PM7c  a passive Cu stopper. Measured E|g, |g, |g|g coincidence, |g(t) using  
+161PM7c  the EURICA array consisting of 12 large-volume Ge cluster detectors.   
+161PM cL E$From a least-squares fit to E|g.                                     
+161PM cL J$From 2015YoZX, based on the observed band structure and proposed     
+161PM2cL configurations                                                         
+161PM cG E$From 2015YoZX. Uncertainties in E|g were estimated                   
+161PM2cG by the evaluator                                                       
+161PM cL BAND(A)$K|p=5/2-, |p5/2[532] band                                      
+161PM  P  965.9    9  (13/2+)          0.89 US   6                              
+161PM  N 1.0          1.0       1.0                                             
+161PM  L 0.0          (5/2-)           1.05 S    15                         A   
+161PM cL T$From adopted levels                                                  
+161PM  L 61.5       5 (7/2-)                                                A   
+161PM  G 61.5      5                                                            
+161PM  L 141.7      7 (9/2-)                                                A   
+161PM  G  80.2     5                                                            
+161PM  L 238.4      8 (11/2-)                                               A   
+161PM  G  96.7     5                                                            
+161PM  G 177       1                                                            
+161PM  L 356.7      9 (13/2-)                                               A   
+161PM  G 118.2     5                                                            
+161PM  L 965.9      9 (13/2+)          0.89 US    6                          M  
+161PM cL T$weighted average of values deduced from 61.5|g(t), 80.2|g(t),        
+161PM2cL 96.7|g(t), 177|g(t), 118.2|g(t), 609.2|g(t) and 727.5|g(t) (2015YoZX). 
+161PM cL CONF$K|p=13/2+, |p5/2[532]~#|n{+2}(1/2[521],7/2[633])                  
+161PM  G 609.2     5                                                            
+161PM  G 727.5     5                                                            
                                                                                 
 161SM    ADOPTED LEVELS                                          11NDS    201111
 161SM  H TYP=FUL$AUT=C. W. Reich$CIT=NDS 112,2497 (2011)$CUT=1-Jun-2011$        

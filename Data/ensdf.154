@@ -627,22 +627,142 @@
 154    R 2007LI14 JOUR NUPAB 786 47                                             
 154    R 2007PA27 JOUR PRVCA 75 061302                                          
                                                                                 
-154CE    ADOPTED LEVELS                                          09NDS    200910
+154BA    COMMENTS                                                ENSDF    201711
+154BA  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+154BA C  TITL$NUCLEAR DATA SHEETS FOR 154BA                                     
+154BA c  AUTH$FILIP G KONDEV                                                    
+154BA c  INST$Nuclear Engineering Division                                      
+154BA#c       Argonne National Laboratory                                       
+154BA#c       9700 South Cass Avenue                                            
+154BA#c       Argonne, Illinois 60439, USA                                      
+154BA c  ABST$Information about the nuclear structure properties of the         
+154BA2c  {+154}Ba nuclide is presented                                          
+154BA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+154BA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+154BA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+154BA C  CIT$ENSDF                                                              
+                                                                                
+154BA    ADOPTED LEVELS                                          ENSDF    201711
+154BA  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+154BA  Q 8240      CA 4530   CA 15090  CA -6090  CA    1997MO25                 
+154BA cQ $S(2n)=7440, S(2p)=28220 (1997Mo25, theory)                            
+154BA c  2017Wu04: The {+154}Ba nuclide was produced at the RIBF-RIKEN facility 
+154BA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+154BA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+154BA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+154BA5c  pnA, respectively. The identification of the nuclide of interest was   
+154BA6c  made in the BigRIPS separator by determining the atomic number and the 
+154BA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+154BA8c  reaction products were transported through the ZeroDegree Spectrometer 
+154BA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+154BAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+154BAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+154BAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+154BAdc  Deduced: T{-1/2}.                                                      
+154BA  L 0.0          0+               53 MS     48                             
+154BA2 L %B-=100 $ %B-N=?                                                       
+154BA cL %B-$Only |b{+-} decay mode is expected.                                
+154BA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+154BA2cL using the least-squares and maximum-likelihood methods. The data       
+154BA3cL analysis included contributions from the parent, daughter and          
+154BA4cL ground-daughter decays, as well as a constant background.              
+                                                                                
+154LA    COMMENTS                                                ENSDF    201704
+154LA  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+154LA C  TITL$NUCLEAR DATA SHEETS FOR 154LA                                     
+154LA c  AUTH$FILIP G. KONDEV                                                   
+154LA c  INST$Nuclear Engineering Division                                      
+154LA#c       Argonne National Laboratory                                       
+154LA#c       9700 South Cass Avenue                                            
+154LA#c       Argonne, Illinois 60439, USA                                      
+154LA c  ABST$Information about the nuclear structure properties of the         
+154LA2c  {+154}La nuclide is presented                                          
+154LA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+154LA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+154LA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+154LA C  CIT$ENSDF                                                              
+                                                                                
+154LA    ADOPTED LEVELS                                                   201704
+154LA  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+154LA  Q 10591     SY 3591   SY 12123  SY -5368  SY    2012WA38                 
+154LA cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=499, |DS(n)=499,      
+154LA2cQ |DS(p)=566, |DS(|a)=499                                                
+154LA cQ $S(2n)=8365 {I499}, Q(|b{+-}n)=5193 {I446}                             
+154LA2cQ from 2012Wa38.                                                         
+154LA c  2017Wu04: The {+154}La nuclide was produced at the RIBF-RIKEN facility 
+154LA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+154LA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+154LA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+154LA5c  pnA, respectively. The identification of the nuclide of interest was   
+154LA6c  made in the BigRIPS separator by determining the atomic number and the 
+154LA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+154LA8c  reaction products were transported through the ZeroDegree Spectrometer 
+154LA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+154LAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+154LAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+154LAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+154LAdc  Deduced: T{-1/2}.                                                      
+154LA  L 0.0          (2-)             0.161 S   15                             
+154LA2 L %B-=100 $ %B-N=?                                                       
+154LA cL %B-$Only |b{+-} decay mode is expected.                                
+154LA cL J$From systematics of known quasiparticle states in neighboring nuclei 
+154LA2cL and the proposed configuration (by the evaluator). The assignment is   
+154LA3cL tentative.                                                             
+154LA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+154LA2cL using the least-squares and maximum-likelihood methods. The data       
+154LA3cL analysis included contributions from the parent, daughter and          
+154LA4cL grand-daughter decays, as well as a constant background.               
+154LA cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+154LA2cL |p1/2[420] and |n5/2[523] Nilsson orbitals are expected near the proton
+154LA3cL and neutron Fermi surfaces, respectively. Thus, using the              
+154LA4cL Gallagher-Moszkowski rule, one may expect the K|p=2-,                  
+154LA5cL |p1/2[420]~#|n5/2[523] configuration for the ground state.             
+154LA7cL The assignment is tentative and it is made by the evaluator.           
+                                                                                
+154CE    COMMENTS                                                ENSDF    201711
+154CE  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+154CE C  TITL$NUCLEAR DATA SHEETS FOR 154CE                                     
+154CE c  AUTH$FILIP G KONDEV                                                    
+154CE c  INST$Nuclear Engineering Division                                      
+154CE#c       Argonne National Laboratory                                       
+154CE#c       9700 South Cass Avenue                                            
+154CE#c       Argonne, Illinois 60439, USA                                      
+154CE c  ABST$Information about the nuclear structure properties of the         
+154CE2c  {+154}Ce nuclide is presented                                          
+154CE c  CUT$Literature available up to February 20, 2017 has been consulted.   
+154CE c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+154CE1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+154CE C  CIT$ENSDF                                                              
+                                                                                
+154CE    ADOPTED LEVELS                                          ENSDF    201711
 154CE  H TYP=FUL$AUT=C. W. Reich$CIT=NDS 110, 2257 (2009)$CUT=1-May-2008$       
-154CE  Q 5.8E3     SY5.4E3   SY1.34E4  SY-4.5E3  SY    2012WA38                 
-154CE CQ Note: Current evaluation has used the following Q record               
-154CE  Q   5500    SY 5430   SY  13060 SY -4530  SY    2003AU03                 
-154CE cQ           The uncertainties given by 2003Au03 for Q-, S(n), S(p),      
-154CE2cQ      and Q(|a) are 530, 640, 780, and 640 keV, respectively.           
-154CE C  This nuclide was observed in projectile fission of 238U at             
-154CE2c  a beam energy of 750 MeV per nucleon with a fragment separator         
-154CE3c  (1997Be12,1994Be24). No decay or structure data measured.              
-154CE  L    0                          100 NS    GT                             
-154CE2 L %B-=100                                                                
-154CE cL T         Lower limit is suggested by evaluators from 300 ns transit   
-154CE2cL      time through the separator.                                       
-154CE cL %B-       Assumed to be 100%, since other decay modes seem to be       
-154CE2cL   unlikely.                                                            
+154CE  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+154CE  Q 5844      SY 5398   SY 13400  SY -4521  SY    2012Wa38                 
+154CE cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=334, |DS(n)=357,      
+154CE2cQ |DS(p)=422, |DQ(|a)=422                                                
+154CE cQ $S(2n)=9436 {I357}, S(2p)=24834 {I499}, Q(|b{+-}n)=1147 {I298}         
+154CE2cQ (2012Wa38, syst)                                                       
+154CE c  2017Wu04: The {+154}Ce nuclide was produced at the RIBF-RIKEN facility 
+154CE2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+154CE3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+154CE4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+154CE5c  pnA, respectively. The identification of the nuclide of interest was   
+154CE6c  made in the BigRIPS separator by determining the atomic number and the 
+154CE7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+154CE8c  reaction products were transported through the ZeroDegree Spectrometer 
+154CE9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+154CEac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+154CEbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+154CEcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+154CEdc  Deduced: T{-1/2}.                                                      
+154CE c  Others: 1997Be12 and 1994Be24                                          
+154CE  L 0.0          0+               0.722 S   14                             
+154CE2 L %B-=100 $ %B-N=?                                                       
+154CE cL %B-$Only |b{+-} decay mode is expected.                                
+154CE cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+154CE2cL using the least-squares and maximum-likelihood methods. The data       
+154CE3cL analysis included contributions from the parent, daughter and          
+154CE4cL ground-daughter decays, as well as a constant background.              
                                                                                 
 154PR    ADOPTED LEVELS                                          09NDS    200910
 154PR  H TYP=FUL$AUT=C. W. Reich$CIT=NDS 110, 2257 (2009)$CUT=1-May-2008$       

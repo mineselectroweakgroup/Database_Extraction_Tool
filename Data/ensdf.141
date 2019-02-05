@@ -479,6 +479,56 @@
 141    R 2012TO09 JOUR PRVCA 86 034340                                          
 141    R 2012WA38 JOUR CPCHC 36 1603                                            
                                                                                 
+141SB    COMMENTS                                                ENSDF    201802
+141SB  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-JAN-2018$                    
+141SB C  TITL$NUCLEAR DATA SHEETS FOR 141SB                                     
+141SB c  AUTH$BALRAJ SINGH                                                      
+141SB c  INST$Department of Physics and Astronomy,                              
+141SB#c       McMaster University, Hamilton, Ontario,                           
+141SB#c       Canada, L8S 4M1                                                   
+141SB c  ABST$Information about identification of the {+141}Sb nuclide from     
+141SB2c  2015Lo04 is presented.                                                 
+141SB c  CUT$Literature available up to January 31, 2018 has been consulted.    
+141SB C  CIT$ENSDF                                                              
+141SB c  FUND$                                                                  
+                                                                                
+141SB    ADOPTED LEVELS                                          ENSDF    201802
+141SB  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-JAN-2018$                    
+141SB  Q 11380     SY  3240  SY 12330  CA -6500  SY    2017WA10,1997MO25        
+141SB cQ $Estimated |DQ(|b{+-})=640, |DS(n)=780, |DQ(|a)=710 (2017Wa10)         
+141SB cQ $S(p) is theoretical value from 1997Mo25, others are from 2017Wa10     
+141SB cQ $S(2n)=5460 {I640}, Q(|b{+-}n)=9400 {I500} (2017Wa10).                 
+141SB2cQ From mass excesses of relevant nuclides taken                          
+141SB3cQ from 2017Wa10, evaluator deduces Q(|b{+-}2n)=4953 {I500} and           
+141SB4cQ Q(|b{+-}3n)=2373 {I500}. S(2p)=30080 (1997Mo25,theory)                 
+141SB c  2015Lo04: {+141}Sb nuclide produced at RIBF-RIKEN facility in          
+141SB2c  {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon with an average        
+141SB3c  intensity of 6|*10{+10} ions/s. Identification of {+141}Sb was made by 
+141SB4c  determining atomic Z and mass-to-charge ratio A/Q, where Q=charge state
+141SB5c  of the ions. The selectivity of ions was based on magnetic rigidity,   
+141SB6c  time-of-flight and energy loss. The separated nuclei were implanted at 
+141SB7c  a rate of 50 ions/s in a stack of eight double-sided silicon-strip     
+141SB8c  detectors (WAS3ABi), surrounded by EURICA array of 84 HPGe detectors.  
+141SB9c  Correlations were recorded between the implanted ions and |b rays.     
+141SB c  2007Ji14, 2007Ot03: theoretical calculations: levels, J, |p, moments.  
+141SB  L 0                                                                      
+141SB2 L %B-=100 $ %B-N=? $ %B-2N=? %B-3N=?                                     
+141SB cL $There is no measurement of any decay mode, but %|b{+-}=100 is assigned
+141SB2cL by inference as this is the only decay mode allowed, followed by       
+141SB3cL possible delayed neutron emissions.                                    
+141SB cL $Theoretical T{-1/2}=76.2 ms, %|b{+-}n=92.7, %|b{+-}2n=3.3,            
+141SB2cL %|b{+-}3n=0.76 (2003Mo09)                                              
+141SB cL $Theoretical T{-1/2}=29.7 ms, %|b{+-}n=45.0, %|b{+-}2n=0.4,            
+141SB2cL %|b{+-}3n=0.1 (2016Ma12)                                               
+141SB cL E$observed fragments are assumed to correspond to the ground state     
+141SB cL J$7/2+ from systematics (2017Au03); 1/2+ proton orbital proposed in    
+141SB2cL theoretical calculations of 1997Mo25                                   
+141SB cL T$from time-of-flight, half-life is implied as >300 ns. From systematic
+141SB2cL trend of decreasing half-life with increasing neutron number in an     
+141SB3cL isotopic chain, half-life is expected to be <130 ms from known         
+141SB4cL half-lives of 484 ms for {+137}Sb, 150 ms for {+138}Sb and 130 ms for  
+141SB5cL {+139}Sb. 2017Au03 give 100 ms from some other systematics.            
+                                                                                
 141TE    ADOPTED LEVELS                                          14NDS    201411
 141TE  H TYP=FUL$AUT=N. NICA$CIT=NDS 122, 1 (2014)$CUT=1-Jan-2012$              
 141TE  Q 9420      SY  2200  SY 13840  SY   -3120 SY   2012WA38                 

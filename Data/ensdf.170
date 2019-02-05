@@ -337,32 +337,33 @@
 170    R 2002YOZZ PC W Younes                                                   
 170    R 2002ZI04 JOUR JPAMA 35 2693                                            
                                                                                 
-170GD    COMMENTS                                                ENSDF    201309
-170GD  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+170GD    COMMENTS                                                ENSDF    201711
+170GD  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 170GD C  TITL$NUCLEAR DATA SHEETS FOR 170GD                                     
-170GD c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-170GD c  INST$Department of Physics and Astronomy,                              
-170GD#c       McMaster University, Hamilton, Ontario,                           
-170GD#c       Canada, L8S 4M1                                                   
-170GD c  ABST$Information about the identification of {+170}Gd nuclide          
-170GD2c  from 2012Ku26 is presented                                             
-170GD c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-170GD c  ACKN$                                                                  
-170GD c  FUND$Work supported by the office of Science of the U.S. Department    
-170GDxc  of Energy.                                                             
+170GD c  AUTH$FILIP G KONDEV                                                    
+170GD c  INST$Nuclear Engineering Division                                      
+170GD#c       Argonne National Laboratory                                       
+170GD#c       9700 South Cass Avenue                                            
+170GD#c       Argonne, Illinois 60439, USA                                      
+170GD c  ABST$Information about the nuclear structure properties of the         
+170GD2c  {+170}Gd nuclide is presented                                          
+170GD c  CUT$Literature available up to February 20, 2017 has been consulted.   
+170GD c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+170GD1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 170GD C  CIT$ENSDF                                                              
                                                                                 
-170GD    ADOPTED LEVELS                                          ENSDF    201309
+170GD    ADOPTED LEVELS                                          ENSDF    201711
 170GD  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+170GD  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 170GD  Q 5010      CA 5380   CA 12540  CA -2760  CA    1997MO25                 
 170GD cQ $S(2n)=9060, S(2p)=23310 from 1997Mo25 (theory).                       
-170GD2cQ Using values from 1997Mo25 and 2012Wa38, deduced Q(|b{+-}n)=540 {I500} 
+170GD2cQ Deduced Q(|b{+-}n)=540 {I500} (1997Mo25, theory and 2012Wa38, syst)    
 170GD c  2012Ku26: {+170}Gd produced and identified in {+9}Be({+238}U,F),       
 170GD2c  E=1 GeV/nucleon reaction using SIS-18 synchrotron facility at GSI.     
 170GD3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 170GD4c  Fragment Separator (FRS). Particle identification was achieved by      
 170GD5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-170GD6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+170GD6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 170GD7c  measured using two plastic scintillation detectors, energy loss or     
 170GD8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 170GD9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -374,36 +375,49 @@
 170GDFc  a scintillator for veto signal. Measured production cross section.     
 170GDGc  Comparison of measured |s with predictions from ABRABLA model and      
 170GDHc  EPAX-3 model                                                           
+170GD c  2017Wu04: The {+170}Gd nuclide was produced at the RIBF-RIKEN facility 
+170GD2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+170GD3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+170GD4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+170GD5c  pnA, respectively. The identification of the nuclide of interest was   
+170GD6c  made in the BigRIPS separator by determining the atomic number and the 
+170GD7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+170GD8c  reaction products were transported through the ZeroDegree Spectrometer 
+170GD9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+170GDac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+170GDbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+170GDcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+170GDdc  Deduced: T{-1/2}.                                                      
 170GD c  Nuclear structure calculations: 2011Bh06, 1997Lo07, 1996Ba16,          
 170GD2c  1987Ne03, 1985He09, 1984Sa16                                           
-170GD  L 0              0+              160 NS   GT                             
-170GD2 L %B-=?                                                                  
-170GD cL $ Only |b{+-} decay mode is expected. Predicted %|b{+-}n=0 (1997Mo25)  
-170GD cL E$ the observed {+170}Gd fragments assumed to correspond to the g.s.   
-170GD cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-170GD2cL |b-decay half-life is expected to be much longer as suggested by       
-170GD3cL 1.11 s from theoretical calculations (1997Mo25)                        
-170GD cL $ Production |s=2.6 nb {I8} (2012Ku26)                                 
+170GD  L 0.0          0+               0.41 S    +14-12                         
+170GD2 L %B-=100 $ %B-N=?                                                       
+170GD cL %B-$Only |b{+-} decay mode is expected.                                
+170GD cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+170GD2cL using the least-squares and maximum-likelihood methods. The data       
+170GD3cL analysis included contributions from the parent, daughter and          
+170GD4cL ground-daughter decays, as well as a constant background.              
+170GD cL $ Production |s(at 1 GeV/nucleon)=2.6 nb {I8} (2012Ku26)               
                                                                                 
-170TB    COMMENTS                                                ENSDF    201309
-170TB  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+170TB    COMMENTS                                                ENSDF    201704
+170TB  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 170TB C  TITL$NUCLEAR DATA SHEETS FOR 170TB                                     
-170TB c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-170TB c  INST$Department of Physics and Astronomy,                              
-170TB#c       McMaster University, Hamilton, Ontario,                           
-170TB#c       Canada, L8S 4M1                                                   
-170TB c  ABST$Information about the identification of {+170}Tb nuclide          
-170TB2c  from 2012Ku26 is presented                                             
-170TB c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-170TB c  ACKN$                                                                  
-170TB c  FUND$Work supported by the office of Science of the U.S. Department    
-170TBxc  of Energy.                                                             
+170TB c  AUTH$FILIP G KONDEV                                                    
+170TB c  INST$Nuclear Engineering Division                                      
+170TB#c       Argonne National Laboratory                                       
+170TB#c       9700 South Cass Avenue                                            
+170TB#c       Argonne, Illinois 60439, USA                                      
+170TB c  ABST$Information about the nuclear structure properties of the         
+170TB2c  {+170}Tb nuclide is presented                                          
+170TB c  CUT$Literature available up to February 20, 2017 has been consulted.   
+170TB c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+170TB1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 170TB C  CIT$ENSDF                                                              
                                                                                 
-170TB    ADOPTED LEVELS                                          ENSDF    201309
-170TB  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+170TB    ADOPTED LEVELS                                          ENSDF    201704
+170TB  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 170TB  Q 6940      SY 4470   SY 9860   SY -2220  SY    2012Wa38                 
-170TB cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=450, |DS(n)=500,          
+170TB cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=450, |DS(n)=500,      
 170TB2cQ |DS(p)=640, |DS(|a)=500                                                
 170TB cQ $S(2n)=10140 {I500}, Q(|b{+-}n)=800 {I500} from 2012Wa38 (syst).       
 170TB2cQ S(2p)=21430 (1997Mo25, theory).                                        
@@ -412,7 +426,7 @@
 170TB3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 170TB4c  Fragment Separator (FRS). Particle identification was achieved by      
 170TB5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-170TB6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+170TB6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 170TB7c  measured using two plastic scintillation detectors, energy loss or     
 170TB8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 170TB9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -424,18 +438,43 @@
 170TBFc  a scintillator for veto signal. Measured production cross section.     
 170TBGc  Comparison of measured |s with predictions from ABRABLA model and      
 170TBHc  EPAX-3 model                                                           
-170TB  L 0                              160 NS   GT                             
-170TB2 L %B-=?$ %B-N=?                                                          
-170TB cL $ Mainly |b{+-} decay mode is expected. Predicted %|b{+-}n=0.01        
-170TB2cL  (1997Mo25)                                                            
-170TB cL E$ the observed {+170}Tb fragments assumed to correspond to the g.s.   
-170TB cL J$ 3/2+ for valence proton and 7/2- for valence neutron                
-170TB2cL  predicted (1997Mo25)                                                  
-170TB cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-170TB2cL |b-decay half-life is expected to be much longer as suggested by       
-170TB3cL 3 s from systematics (2012Au07), and 0.61 s from theoretical           
-170TB4cL calculations (1997Mo25)                                                
-170TB cL $ Production |s=99 nb {I6} (2012Ku26)                                  
+170TB c  2017Wu04: The {+170}Tb nuclide was produced at the RIBF-RIKEN facility 
+170TB2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+170TB3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+170TB4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+170TB5c  pnA, respectively. The identification of the nuclide of interest was   
+170TB6c  made in the BigRIPS separator by determining the atomic number and the 
+170TB7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+170TB8c  reaction products were transported through the ZeroDegree Spectrometer 
+170TB9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+170TBac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+170TBbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+170TBcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+170TBdc  Deduced: T{-1/2}. Other: 2016So13 (same collaboration)                 
+170TB  L 0.0          (2-)             0.96 S    8                              
+170TB2 L %B-=100 $ %B-N=?                                                       
+170TB cL %B-$Only |b{+-} decay mode is expected.                                
+170TB cL J$From systematics of known quasiparticle states in neighboring nuclei 
+170TB2cL and the proposed configuration (by the evaluator). The assignment is   
+170TB3cL tentative.                                                             
+170TB cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+170TB2cL using the least-squares and maximum-likelihood methods. The data       
+170TB3cL analysis included contributions from the parent, daughter and          
+170TB4cL grand-daughter decays, as well as a constant background.               
+170TB5cL The assignment to the ground state is ambiguous, given the possible    
+170TB5cL existence of an isomeric state.                                        
+170TB6cL T{-1/2}=0.960 s {I78} is reported in 2017Wu04.                         
+170TB7cL Other: T{-1/2}=0.91 s {I+18-13} using implant-|b|g(t) in 2016So13, same
+170TB8cL group as 2017Wu04                                                      
+170TB cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+170TB2cL |p3/2[411] and |n7/2[514] Nilsson orbitals are expected near the proton
+170TB3cL and neutron Fermi surfaces, respectively. Thus, using the              
+170TB4cL Gallagher-Moszkowski rule, one may expect the K|p=2-,                  
+170TB5cL |p3/2[411]~#|n7/2[514] configuration for the ground state. The         
+170TB6cL existence of a high-spin, K|p=5- isomer, arising from the same         
+170TB7cL configuration, is also possible. The assignment is made by the         
+170TB8cL evaluator.                                                             
+170TB cL $ Production |s(at 1 GeV/nucleon)=99 nb {I6} (2012Ku26)                
                                                                                 
 170DY    COMMENTS                                                ENSDF    201005
 170DY  H TYP=FUL$AUT=CORAL M. BAGLIN$CIT=ENSDF$CUT=15-Apr-2010$                 

@@ -587,32 +587,58 @@
 196RE2 L %IT=100                                                                
 196RE cL T$ from decay curve of delayed Re x rays (2011St21)                    
                                                                                 
-196OS    ADOPTED LEVELS                                          07NDS    200706
-196OS  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
-196OS  XA198PT(14C,16O)                                                         
-196OS  Q 1.16E3    6 6.84E3  8 1.00E4  SY-1.05E3 SY    2012WA38                 
-196OS CQ Note: Current evaluation has used the following Q record               
-196OS  Q 1158      566.66E3  509537    SY-1.06E+3 60   2003Au03                 
-196OS CQ SP        From 1967Ze05.                                               
-196OS C  No ^XREF entries are given since all of these levels are observed in   
-196OS2C  the 198PT(14C,16O) study.                                              
-196OS C  Nuclear structure calculations: 1989Bo24, 1986An02, 1985He14,          
-196OS2C  1984Sa16, 1981Sa31, 1980St30.                                          
-196OS  L 0.0         0+                34.9 M    2                              
-196OSX L XREF=A                                                                 
-196OS2 L %B-=100                                                                
-196OS CL T         from least-squares fit of decay curve for EB GT 1.5 MEV      
-196OS2CL (1977Ha32).                                                            
-196OS cL J$From systematics of even-mass Os.                                    
-196OS  L 300       20(2+)                                                       
-196OSX L XREF=A                                                                 
-196OS CL J         Systematics of 2+ states in even-even Os isotopes.           
-196OS  L 760       20(2+,4+)                                                    
-196OSX L XREF=A                                                                 
-196OS cL J         Possible doublet. J|p=2+ and 4+ states are expected from     
-196OS2cL systematics of even-even Os isotopes.                                  
+196OS    COMMENTS                                                ENSDF    201704
+196OS  H TYP=FUL$AUT=M.S. Basunia$CIT=ENSDF$CUT=1-Feb-2017$                     
+196OS C  TITL$NUCLEAR DATA SHEETS FOR 196OS                                     
+196OS C  AUTH$M.S. Basunia                                                      
+196OS C  INST$Nuclear Science Division                                          
+196OS#C       Lawrence Berkeley National Laboratory                             
+196OS#c       MS 88R0192                                                        
+196OS#C       1 Cyclotron Road                                                  
+196OS#C       Berkeley, California 94720                                        
+196OS C  ABST$Nuclear structure information for {+196}Os has been evaluated and 
+196OS2C  updated. This supersedes the earlier one by ^X. Huang  (2007Hu013).    
+196OS C  CUT$ Literature available up to February 1, 2017 has been considered.  
+196OS C  ACKN$The evaluator would like to thank ^B. Singh (McMaster) for initial
+196OS2C  entry of ^XUNDL data set from 2014Jo05.                                
+196OS c  FUND$This work was supported by the Office of Basic Energy Sciences,   
+196OS2c  US Department of Energy, under contract DE-AC02-05CH11231.             
+196OS C  CIT$ENSDF                                                              
                                                                                 
-196OS    198PT(14C,16O)                1983BO29                  07NDS    200706
+196OS    ADOPTED LEVELS, GAMMAS                                  07NDS    201704
+196OS  H TYP=FUL$AUT=M.S. Basunia$CIT=ENSDF$CUT=1-Feb-2017$                     
+196OS  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
+196OS  Q 1159      566839    739989    SY-1054   SY    2012WA38                 
+196OS CQ           |DS(p)=301 (SY), |DQ(|a)=200 (SY) (2012Wa38).                
+196OS C  Other studies:                                                         
+196OS C  2009Po02: 9BE(208PB,X), E=1 GeV/nucleon, 121|*10{+3} 196OS implants    
+196OS2C  in the catcher - no isomeric state was observed.                       
+196OS C                                                                         
+196OS CG E$From (82SE,XG)                                                       
+196OS CL BAND(D)$Ground-state band                                              
+196OS CL J$From (82SE,XG), based on proposed g.s. band assignment.              
+196OS  XA198PT(14C,16O)                                                         
+196OS  XB198PT(82SE,XG)                                                         
+196OS  XC198PT(136XE,XG)                                                        
+196OS PN                                                                     6  
+196OS  L 0.0         0+                34.9 M    2                          D   
+196OSX L XREF=AB                                                                
+196OS2 L %B-=100                                                                
+196OS CL T         From least-squares fit of decay curve for EB GT 1.5 MEV      
+196OS2CL (1977Ha32).                                                            
+196OS  L 324.4     10(2+)                                                   D   
+196OSX L XREF=A(300)B                                                           
+196OS  G 324.4     10  100                                                   C  
+196OS CG E$Other: 324 keV (136XE,XG)                                            
+196OS  L 791.4     14(4+)                                                   D   
+196OSX L XREF=A(760)B                                                           
+196OS  G 467.0     10  100                                                   C  
+196OS  L 1430.6    17  (6+)                                                 D  ?
+196OSX L XREF=B                                                                 
+196OS  G 639.2     10  100                                                     ?
+                                                                                
+196OS    198PT(14C,16O)                1983BO29                  07NDS    201704
+196OS  H TYP=FUL$AUT=M.S. Basunia$CIT=ENSDF$CUT=1-Feb-2017$                     
 196OS  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
 196OS C  E=100 MEV.                                                             
 196OS C  Targets enriched to 96% in 198PT; measured momentum of 16O (Q3D        
@@ -624,10 +650,58 @@
 196OS C  Q(g.s)=+6.13 4 MEV, corresponding to a mass excess of -28.28 MEV.      
 196OS2C  Mass excess=-28.300 40 MEV from midstream least-squares                
 196OS3C  adjustment (1988Wa18).                                                 
-196OS CL J,T       From adopted levels.                                         
+196OS CL T         From adopted levels.                                         
 196OS  L 0.0         0+                34.9 M    2                              
 196OS  L 300       20(2+)                                                       
+196OS CL J         Systematics of 2+ states in even-even Os isotopes.           
 196OS  L 760       20(2+,4+)                                                    
+196OS cL J         Possible doublet. J|p=2+ and 4+ states are expected from     
+196OS2cL systematics of even-even Os isotopes.                                  
+                                                                                
+196OS    198PT(82SE,XG)                2014JO05                  ENSDF    201704
+196OS  H TYP=FUL$AUT=M.S. Basunia$CIT=ENSDF$CUT=1-Feb-2017$                     
+196OS C  Other: 2015Jo04                                                        
+196OS c  Two-proton transfer from {+198}Pt target populating states in {+196}Os 
+196OS c  {+82}Se beam at E=426 MeV was provided by the Tandem-ALPI accelerator  
+196OS2c  complex at LNL, Legnaro. Target=2 mg/cm{+2} {+198}Pt. Beam-like        
+196OS3c  fragments were detected by PRISMA spectrometer with optimization for   
+196OS4c  Kr isotopes, binary partner of Os isotopes. Measured E|g, I|g,         
+196OS5c  |g|g-coin, (particle)|g-coin using AGATA array with five triple        
+196OS6c  clusters, each cluster having three hexagonal tapered coaxial HPGe     
+196OS7c  detectors with 36 outer segments with a common core contact. Deduced   
+196OS8c  levels, J, |p.                                                         
+196OS c  No delayed |g rays were observed within a time window of 8-400 ns.     
+196OS CG RI$For Q value <30 MeV (reconstruction condition). Other values,       
+196OS2CG with conditions of Q <12 MeV and a multiplicity of one for             
+196OS3CG G rays, are listed in comments section.                                
+196OS4CG Former condition useful for G-G COIN studies with higher statistics.   
+196OS CL BAND(A)$Ground-state band                                              
+196OS PN                                                                     5  
+196OS  L 0.0           0+                                                   A   
+196OS  L 324.4     10  (2+)                                                 A   
+196OS  G 324.4     10  100   12                                              C  
+196OS CG RI$Other: 100 17                                                       
+196OS  L 791.4     14  (4+)                                                 A   
+196OS  G 467.0     10  41    10                                              C  
+196OS CG RI$Other: 31 11                                                        
+196OS  L 1430.6    17  (6+)                                                 A  ?
+196OS  G 639.2     10  12    8                                                 ?
+196OS CG E$2014Jo05 expected coincidence with 467.0G and 324.4G for the proposed
+196OS2CG placement, but note that it did not appear possibly due to the low     
+196OS3CG statistics.                                                            
+196OS CG RI$Other: 22 10                                                        
+                                                                                
+196OS    198PT(136XE,XG)               2015WA30                  ENSDF    201704
+196OS  H TYP=FUL$AUT=M.S. Basunia$CIT=ENSDF$CUT=1-Feb-2017$                     
+196OS c  Target=91.6% enriched {+198}Pt (thickness 1.3 mg/cm{+2}); Projectile:  
+196OS2C  136XE, E=7.98 MeV/nucleon; projectile like fragments around |J30|'     
+196OS3c  detected by the VAMOS++ at GANIL; VAMOS++ consists of a pair of        
+196OS4c  quadrupole magnets, a dipole magnet, and a detection system to         
+196OS5c  determine scattering angle, kinetic energy, ionic charge, mass,        
+196OS6c  and atomic number of the detected particle. The EXOGAM array with      
+196OS7c  ten CLOVER germanium detectors, surrounding the target, was used to    
+196OS8c  detect |g rays.                                                        
+196OS  G 324                                                                    
                                                                                 
 196IR    ADOPTED LEVELS, GAMMAS                                  07NDS    200706
 196IR  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
@@ -7195,142 +7269,6 @@
 196AU  L 637       10                                                       A   
 196AU  L 730       10                                                       A   
                                                                                 
-196AU    197AU(P,D)                    1993RO12,1969YA08         07NDS    200706
-196AU  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
-196AU C  1993Ro12: E(P)=25 MEV. Split-pole magnetic spectrometer, FWHM=12 KEV.  
-196AU2C  Measured angular distribution from 5 DEG to 60 DEG.                    
-196AU3C  Estimated ^S and L from DWBA fits to data.                             
-196AU C  1969Ya08: E(P)=55.07 MEV. Spectrometer, energy resolution=0.16%.       
-196AU2C  Measured angular distribution from 5 DEG to 50 DEG.                    
-196AU C  Q(p)=5.6 5 MEV (1965Is06).                                             
-196AU CL E(A)      Possible unresolved doublet.                                 
-196AU CL J         JPI values are tentative from similarities with level        
-196AU2CL energies in 196AU and 198AU.                                           
-196AU CL L         From DWBA analysis of SIGMA(THETA).                          
-196AU2CL L=1, 3, and 6 are assumed to be 3p3/2, 2f5/2, and 1i13/2               
-196AU3CL except for the ground state (3P1/2).                                   
-196AU CL S$LABEL=C2S                                                            
-196AU CL S         From comparison of the appropriately normalized              
-196AU2CL average angular distributions with DWBA calculations.                  
-196AU3CL C2S=((2J+1)/^N)|*(DS/DW(exp)/DS/DW(DWBA)) with N=2.3.                  
-196AU CL S(B),L(B) For 1263+1269+1277 levels, L=1, C2S=0.04.                    
-196AU CL S(C),L(C) For 1288+1296 levels, L=3, C2S=0.28.                         
-196AU CL S(D),L(D) For 1308+1315 levels, L=3, C2S=0.15 (corrected by evaluators)
-196AU CL S(E),L(E) For 1528+1534 levels, L=(3), C2S=0.10.                       
-196AU CL S(F)      S=1.7 for NU f7/2 (1969Ya08).                                
-196AU CL S(G)      S=0.88 for NU f7/2 (1969Ya08).                               
-196AU  L 0.0         2-                                1        0.51            
-196AU CL S         S=0.40 for NU P1/2 (1969Ya08).                               
-196AU  L 39        4                                   1        0.03            
-196AU  L 82        4                                   6        0.70            
-196AU  L 162       4 (1-)                              1        1.01            
-196AU  L 192       4                                   1        0.10            
-196AU  L 209       4 (4-)                              3        0.79            
-196AU CL E         E=190 20 (1969Ya08).                                         
-196AU CL S         S=3.5 for NU F5/2 (1969Ya08).                                
-196AU  L 230       4 (3-)                              3        0.30            
-196AU  L 250       4                                   1+3      0.13+0.33   A   
-196AU  L 284       4                                   (1)+3    0.01+0.10   A   
-196AU  L 305       4                                   1        0.14        A   
-196AU  L 325       4                                   1        0.03            
-196AU  L 353       4                                   1+6      0.03+0.27   A   
-196AU  L 360       20                                  6        11.6            
-196AU CL S         S=11.6 for NU I13/2 (1969Ya08).                              
-196AU  L 377       4 (2-)                              1+6      0.36+1.07       
-196AU  L 405       4 (4-)                              1+3      0.03+0.22   A   
-196AU  L 424       4                                   6        1.65        A   
-196AU  L 460       4                                   1        0.02        A   
-196AU  L 482       4                                   (3)      0.05            
-196AU  L 493       4                                   1        0.03        A   
-196AU  L 511       10                                  (6)      0.23            
-196AU  L 521       4                                   3        0.11            
-196AU  L 543       4                                   1        0.02            
-196AU  L 558       10                                  (1)      0.01            
-196AU  L 566       4                                   1+3      0.03+0.16   A   
-196AU  L 580       20                                  1                        
-196AU CL S         S=1.5 for NU P3/2 (1969Ya08).                                
-196AU  L 589       4                                   6        0.95        A   
-196AU  L 599       4                                   6        0.19            
-196AU  L 623       8                                   3        0.07            
-196AU  L 637       8                                   1        0.03        A   
-196AU  L 650       8                                   1        0.02            
-196AU  L 655       8                                   3        0.06            
-196AU  L 667       8                                   1        0.02        A   
-196AU  L 682       8                                   3        0.14        A   
-196AU  L 691       8                                   3        0.06        A   
-196AU  L 706       8                                   1        0.01            
-196AU  L 710       8                                   3        0.10            
-196AU  L 720       10                                  1        0.02            
-196AU  L 735       8                                   1        0.03        A   
-196AU  L 750       8                                   3        0.14            
-196AU  L 786       8                                   1        0.03        A   
-196AU  L 802       10                                  3        0.10        A   
-196AU  L 811       8                                   1+6      0.01+0.08       
-196AU  L 817       8                                   3        0.07            
-196AU  L 839       8                                   6        0.29            
-196AU  L 840       20                                  (1)                      
-196AU CL S         S=0.72 for NU P3/2 (1969Ya08).                               
-196AU  L 851       8                                   3+6      0.22+0.20   A   
-196AU  L 882       8                                   1        0.03        A   
-196AU  L 893       8                                   1+6      0.03+0.10   A   
-196AU  L 903       10                                  3        0.10            
-196AU  L 938       8                                   3        0.20            
-196AU  L 948       10                                  (6)      0.43            
-196AU  L 954       8                                   1        0.02            
-196AU  L 970       8                                   (3)      0.11            
-196AU  L 988       8                                   3+6      0.53+0.50   A   
-196AU  L 1000      20                                  3                        
-196AU CL S         S=1.7 for NU F7/2 (1969Ya08).                                
-196AU  L 1018      8                                   1        0.03            
-196AU  L 1025      8                                   3        0.10            
-196AU  L 1043      8                                   1        0.02            
-196AU  L 1086      8                                   3        0.53            
-196AU  L 1096      10                                                           
-196AU  L 1100      20                                  (1)                      
-196AU CL S         S=(0.96) for NU P3/2 (1969Ya08).                             
-196AU  L 1105      8                                   1        0.01            
-196AU  L 1112      8                                   3        0.08            
-196AU  L 1119      8                                   1        0.05            
-196AU  L 1130      8                                   1+6      0.01+0.30       
-196AU  L 1141      8                                   3        0.10            
-196AU  L 1147      8                                   1        0.02            
-196AU  L 1187      8                                   1        0.16            
-196AU  L 1205      8                                   3        0.14            
-196AU  L 1221      8                                   1        0.05            
-196AU  L 1237      8                                                            
-196AU  L 1246      8                                   1        0.06            
-196AU  L 1254      8                                   3        0.10            
-196AU  L 1263      8                                   1        0.04        B   
-196AU  L 1269      8                                   1        0.04        B   
-196AU  L 1277      8                                   1        0.04        B   
-196AU  L 1288      8                                   3        0.28        C   
-196AU  L 1296      8                                   3        0.28        C   
-196AU  L 1308      8                                   3        0.15        D   
-196AU  L 1315      8                                   3        0.15        D   
-196AU  L 1320      20                                  3                        
-196AU CL S         S=2.2 for NU F7/2 (1969Ya08).                                
-196AU  L 1327      8                                   1        0.02            
-196AU  L 1335      10                                  3        0.09            
-196AU  L 1354      8                                   3        0.33            
-196AU  L 1384      8                                   3        0.06            
-196AU  L 1391      8                                   (1)      0.02            
-196AU  L 1399      8                                   (3)      0.07            
-196AU  L 1408      8                                   (1)      0.02            
-196AU  L 1421      8                                   1        0.01            
-196AU  L 1462      8                                                            
-196AU  L 1476      8                                   3        0.14            
-196AU  L 1483      8                                   6        0.30            
-196AU  L 1495      8                                   1        0.02            
-196AU  L 1505      8                                   1        0.03            
-196AU  L 1513      8                                   (3)      0.11            
-196AU  L 1528      8                                   (3)      0.10        E   
-196AU CL S         S=7.8 for NU H9/2 (1969Ya08).                                
-196AU  L 1534      8                                   (3)      0.10        E   
-196AU  L 1555      8                                   3        0.10            
-196AU  L 1586      8                                                            
-196AU  L 1720      20                                  3                    F   
-196AU  L 1880      20                                  3                    G   
-                                                                                
 196AU    197AU(P,D),(POL D,T)          2004WI08                  07NDS    200706
 196AU  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
 196AU c  {+197}Au(p,d){+196}Au: E=26 MeV. Measured E(deuteron) with a focal     
@@ -7860,6 +7798,142 @@
 196AU3cL 0.050 {I3} for L=3, f{-7/2}                                            
 196AU cL L$|s(|q), a{-y}(|q) not shown for this level in figure 14 of           
 196AU2cL accompanying on-line appendix.                                         
+                                                                                
+196AU    197AU(P,D)                    1993RO12,1969YA08         07NDS    200706
+196AU  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
+196AU C  1993Ro12: E(P)=25 MEV. Split-pole magnetic spectrometer, FWHM=12 KEV.  
+196AU2C  Measured angular distribution from 5 DEG to 60 DEG.                    
+196AU3C  Estimated ^S and L from DWBA fits to data.                             
+196AU C  1969Ya08: E(P)=55.07 MEV. Spectrometer, energy resolution=0.16%.       
+196AU2C  Measured angular distribution from 5 DEG to 50 DEG.                    
+196AU C  Q(p)=5.6 5 MEV (1965Is06).                                             
+196AU CL E(A)      Possible unresolved doublet.                                 
+196AU CL J         JPI values are tentative from similarities with level        
+196AU2CL energies in 196AU and 198AU.                                           
+196AU CL L         From DWBA analysis of SIGMA(THETA).                          
+196AU2CL L=1, 3, and 6 are assumed to be 3p3/2, 2f5/2, and 1i13/2               
+196AU3CL except for the ground state (3P1/2).                                   
+196AU CL S$LABEL=C2S                                                            
+196AU CL S         From comparison of the appropriately normalized              
+196AU2CL average angular distributions with DWBA calculations.                  
+196AU3CL C2S=((2J+1)/^N)|*(DS/DW(exp)/DS/DW(DWBA)) with N=2.3.                  
+196AU CL S(B),L(B) For 1263+1269+1277 levels, L=1, C2S=0.04.                    
+196AU CL S(C),L(C) For 1288+1296 levels, L=3, C2S=0.28.                         
+196AU CL S(D),L(D) For 1308+1315 levels, L=3, C2S=0.15 (corrected by evaluators)
+196AU CL S(E),L(E) For 1528+1534 levels, L=(3), C2S=0.10.                       
+196AU CL S(F)      S=1.7 for NU f7/2 (1969Ya08).                                
+196AU CL S(G)      S=0.88 for NU f7/2 (1969Ya08).                               
+196AU  L 0.0         2-                                1        0.51            
+196AU CL S         S=0.40 for NU P1/2 (1969Ya08).                               
+196AU  L 39        4                                   1        0.03            
+196AU  L 82        4                                   6        0.70            
+196AU  L 162       4 (1-)                              1        1.01            
+196AU  L 192       4                                   1        0.10            
+196AU  L 209       4 (4-)                              3        0.79            
+196AU CL E         E=190 20 (1969Ya08).                                         
+196AU CL S         S=3.5 for NU F5/2 (1969Ya08).                                
+196AU  L 230       4 (3-)                              3        0.30            
+196AU  L 250       4                                   1+3      0.13+0.33   A   
+196AU  L 284       4                                   (1)+3    0.01+0.10   A   
+196AU  L 305       4                                   1        0.14        A   
+196AU  L 325       4                                   1        0.03            
+196AU  L 353       4                                   1+6      0.03+0.27   A   
+196AU  L 360       20                                  6        11.6            
+196AU CL S         S=11.6 for NU I13/2 (1969Ya08).                              
+196AU  L 377       4 (2-)                              1+6      0.36+1.07       
+196AU  L 405       4 (4-)                              1+3      0.03+0.22   A   
+196AU  L 424       4                                   6        1.65        A   
+196AU  L 460       4                                   1        0.02        A   
+196AU  L 482       4                                   (3)      0.05            
+196AU  L 493       4                                   1        0.03        A   
+196AU  L 511       10                                  (6)      0.23            
+196AU  L 521       4                                   3        0.11            
+196AU  L 543       4                                   1        0.02            
+196AU  L 558       10                                  (1)      0.01            
+196AU  L 566       4                                   1+3      0.03+0.16   A   
+196AU  L 580       20                                  1                        
+196AU CL S         S=1.5 for NU P3/2 (1969Ya08).                                
+196AU  L 589       4                                   6        0.95        A   
+196AU  L 599       4                                   6        0.19            
+196AU  L 623       8                                   3        0.07            
+196AU  L 637       8                                   1        0.03        A   
+196AU  L 650       8                                   1        0.02            
+196AU  L 655       8                                   3        0.06            
+196AU  L 667       8                                   1        0.02        A   
+196AU  L 682       8                                   3        0.14        A   
+196AU  L 691       8                                   3        0.06        A   
+196AU  L 706       8                                   1        0.01            
+196AU  L 710       8                                   3        0.10            
+196AU  L 720       10                                  1        0.02            
+196AU  L 735       8                                   1        0.03        A   
+196AU  L 750       8                                   3        0.14            
+196AU  L 786       8                                   1        0.03        A   
+196AU  L 802       10                                  3        0.10        A   
+196AU  L 811       8                                   1+6      0.01+0.08       
+196AU  L 817       8                                   3        0.07            
+196AU  L 839       8                                   6        0.29            
+196AU  L 840       20                                  (1)                      
+196AU CL S         S=0.72 for NU P3/2 (1969Ya08).                               
+196AU  L 851       8                                   3+6      0.22+0.20   A   
+196AU  L 882       8                                   1        0.03        A   
+196AU  L 893       8                                   1+6      0.03+0.10   A   
+196AU  L 903       10                                  3        0.10            
+196AU  L 938       8                                   3        0.20            
+196AU  L 948       10                                  (6)      0.43            
+196AU  L 954       8                                   1        0.02            
+196AU  L 970       8                                   (3)      0.11            
+196AU  L 988       8                                   3+6      0.53+0.50   A   
+196AU  L 1000      20                                  3                        
+196AU CL S         S=1.7 for NU F7/2 (1969Ya08).                                
+196AU  L 1018      8                                   1        0.03            
+196AU  L 1025      8                                   3        0.10            
+196AU  L 1043      8                                   1        0.02            
+196AU  L 1086      8                                   3        0.53            
+196AU  L 1096      10                                                           
+196AU  L 1100      20                                  (1)                      
+196AU CL S         S=(0.96) for NU P3/2 (1969Ya08).                             
+196AU  L 1105      8                                   1        0.01            
+196AU  L 1112      8                                   3        0.08            
+196AU  L 1119      8                                   1        0.05            
+196AU  L 1130      8                                   1+6      0.01+0.30       
+196AU  L 1141      8                                   3        0.10            
+196AU  L 1147      8                                   1        0.02            
+196AU  L 1187      8                                   1        0.16            
+196AU  L 1205      8                                   3        0.14            
+196AU  L 1221      8                                   1        0.05            
+196AU  L 1237      8                                                            
+196AU  L 1246      8                                   1        0.06            
+196AU  L 1254      8                                   3        0.10            
+196AU  L 1263      8                                   1        0.04        B   
+196AU  L 1269      8                                   1        0.04        B   
+196AU  L 1277      8                                   1        0.04        B   
+196AU  L 1288      8                                   3        0.28        C   
+196AU  L 1296      8                                   3        0.28        C   
+196AU  L 1308      8                                   3        0.15        D   
+196AU  L 1315      8                                   3        0.15        D   
+196AU  L 1320      20                                  3                        
+196AU CL S         S=2.2 for NU F7/2 (1969Ya08).                                
+196AU  L 1327      8                                   1        0.02            
+196AU  L 1335      10                                  3        0.09            
+196AU  L 1354      8                                   3        0.33            
+196AU  L 1384      8                                   3        0.06            
+196AU  L 1391      8                                   (1)      0.02            
+196AU  L 1399      8                                   (3)      0.07            
+196AU  L 1408      8                                   (1)      0.02            
+196AU  L 1421      8                                   1        0.01            
+196AU  L 1462      8                                                            
+196AU  L 1476      8                                   3        0.14            
+196AU  L 1483      8                                   6        0.30            
+196AU  L 1495      8                                   1        0.02            
+196AU  L 1505      8                                   1        0.03            
+196AU  L 1513      8                                   (3)      0.11            
+196AU  L 1528      8                                   (3)      0.10        E   
+196AU CL S         S=7.8 for NU H9/2 (1969Ya08).                                
+196AU  L 1534      8                                   (3)      0.10        E   
+196AU  L 1555      8                                   3        0.10            
+196AU  L 1586      8                                                            
+196AU  L 1720      20                                  3                    F   
+196AU  L 1880      20                                  3                    G   
                                                                                 
 196AU    197AU(D,T)                    1991JO01                  07NDS    200706
 196AU  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
@@ -13010,6 +13084,331 @@
 196PB  L    2645.082110+                                                        
 196PB  G 337.29    7 0.0039  14                                                 
                                                                                 
+196PB    (HI,XNG):SD                   1995VA32,1997AZ05,2005Wi2107NDS    200706
+196PB  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
+196PB C  Main references: 1991Wa14, 1990Br10, 1993Mo19, 1993Da04, 1994Cl02,     
+196PB2C  1995Va32, 1997Az05 (also 1997Bo28), 1998Va18, 2001Hu18,                
+196PB3C  2001Ro20, 2002Ro30, 2005Wi21                                           
+196PB c  2005Wi21: {+170}Er({+30}Si,4n|g), E=144 MeV. Measured E|g, I|g, |g|g,  
+196PB2c  using time-correlated spectroscopy and Euroball IV array. An inner     
+196PB3c  ball of 210 BGO scintillators was used as a multiplicity filter.       
+196PB4c  Deduced superdeformed band excitation energy.                          
+196PB c  2002Ro30: {+170}Er({+30}Si,4n|g), E=144 MeV. Measured E|g, I|g, |g|g,  
+196PB2c  lifetimes by Doppler Shift Attenuation Method using EUROBALL-IV        
+196PB3c  spectrometer comprised of 30 Compton-suppressed conventional Ge        
+196PB4c  detectors, 26 clover and 15 cluster composite Ge detectors             
+196PB5c  (with a total of 230 individual functioning Ge                         
+196PB6c  detector crystals). An inner ball of 210 BGO scintillators was used as 
+196PB7c  a multiplicity filter.                                                 
+196PB C  2001Ro20: 170ER(30SI,4NG) E=144 MEV. Measured G, GG, G(LIN POL) OF     
+196PB2C  INTERBAND(SD) TRANSITIONS USING THE CLOVER DETECTORS OF ^EUROBALL      
+196PB3C  ^IV ARRAY. DEDUCED EVIDENCE FOR OCTUPOLE VIBRATIONAL EXCITATION        
+196PB4C  IN THE SUPERDEFORMED MINIMUM OF 196PB                                  
+196PB C  2001Hu18: 170ER(30SI,4NG) E=144 MEV. Measured EG, IG, GG-COIN,         
+196PB2C  G(LIN POL) OF INTERBAND(SD) TRANSITIONS USING THE SPECTROMETER         
+196PB3C  ARRAYS GAMMASPHERE AND EUROBALL. DEDUCED SUPERDEFORMED 196PB.          
+196PB C  1998Va18: 176YB(26MG,6NG) E=135 MeV. ^Gammasphere array of 98 large    
+196PB2C  volume Compton-suppressed ^Ge detectors. Measured lifetimes by         
+196PB3C  ^DSAM (line shape and centroid-shift methods). Deduced                 
+196PB4C  MOME2(intrinsic) for SD-1 band.                                        
+196PB C  1995Va32: 170ER(30SI,4NG) E=143 MEV. Measured G, GG, with gasp array of
+196PB2C  40 COMPTON-suppressed GE detectors.                                    
+196PB C  1997Az05 (also 1997Bo28): 186W(16O,6NG) E=110 MeV. Measured E|g,       
+196PB2C  |g|g coin, |g|g(|q)(^DCO) using ^Eurogam ^II array of ^Ge detectors.   
+196PB3C  Deduced four SD bands.                                                 
+196PB C  1994Cl02: 186W(18O,8NG) E=113 MEV. Measured EG, IG, GGG, SD band       
+196PB2C  using ^EUROGAM array (43 detectors).                                   
+196PB C  1993Da04: 184W(16O,4NG) E=98 MEV and 186W(16O,6NG) E=120 MEV.          
+196PB C  1993Mo19: 170ER(30SI,4NG) E=142-151 MEV. Measured G, GG, GG(THETA),    
+196PB2C  T1/2 by DSA method.                                                    
+196PB C  1990Br10,1991Wa14: 176YB(24MG,4NG) E=122 MEV; 176YB(26MG,6NG) E=135    
+196PB2C  MEV. ^HERA spectrometer. Twofold coincidences with sum energy h >3.25  
+196PB3C  MEV and multiplicity K>8. Identified superdeformed band.               
+196PB C  Theoretical treatment of SD bands: 1992Sk01, 1992Wu01, 1992Wu05,       
+196PB2C  1991Sa12, 1990Ho13, 1990Be37, 1990Ja03.                                
+196PB CG E$From 1994Cl02 for                                                    
+196PB3CG SD-1 band and from 1995Va32 for SD-2 and SD-3 bands. See also 1993Mo19 
+196PB4CG and 1995Va32 for EG's in SD-1 band. Energies quoted by 1993Mo19 are    
+196PB5CG systematically lower than those given by 1994Cl02 and 1995Va32 by      
+196PB6CG AP 1 KEV up to 500 KEV, the agreement is somewhat better for EG>500.   
+196PB7CG Uncertainties on EG's for SD-1 band are estimated by the               
+196PB8CG evaluator based on energies available from different studies           
+196PB CG TI        Relative intensities within the SD-1 band taken from an      
+196PB2CG intensity plot given by 1994Cl02.                                      
+196PB3CG See also 1993Mo19 for a list of TI's. Above 508G, values               
+196PB4CG from 1994Cl02 and 1993Mo19 are in poor agreement.                      
+196PB CG M$From GG(THETA) and T1/2(level). Mult=^D,Q from dipole G              
+196PB2CG transition band (1995Mo19).                                            
+196PB CG M(D)$ From |g(lin pol) measurement of 2001Ro20.                        
+196PB2CG Six interband (SD-3 to SD-1) transitions from 935-945                  
+196PB3CG were analyzed as one group giving ^POL=+1.14 51 (2001Ro20) for         
+196PB4CG the entire group                                                       
+196PB CG E(A)      Values of the fraction of full DOPPLER shift given for       
+196PB2CG this transition in SD band (1993Mo19), deduced from DSAM data.         
+196PB CG E(B)$Interband transition from 1997Az05                                
+196PB CL E$From least-squares fit to E|g's. Uncertainties, when not quoted      
+196PB2CL by the original authors, are assumed as: 0.5 keV for E|g quoted to     
+196PB3CL tenth of a keV, 2 keV for uncertain |g rays and 1 keV for others.      
+196PB CL BAND(P)$ Yrast SD-1 BAND BASED ON 6+ (1997Az05,1995Va32,1994Cl02).     
+196PB2CL Others: 2002Ro30, 2001Hu18, 2001Ro20, 1993Mo19, 1991Wa14, 1990Br10.    
+196PB3CL Percent population=1.5 (1994Cl02) in 186W(18O,8NG); 1.3 (1993Mo19)     
+196PB4CL in 170ER(30SI,4NG).                                                    
+196PB5CL MOME2(intrinsic)=19.5 +4-3 (centroid-shift method) (1998Va18),         
+196PB6CL 20.9 20 (line shape analysis) (1998Va18), 18.3 30 (1993Mo19).          
+196PB CL BAND(M)$ SD-2 BAND BASED ON (8-), |a=0 (1997Az05,1995Va32).            
+196PB2CL Others: 2002Ro30, 2001Ro20, 2001Hu18.                                  
+196PB3CL Population intensity=20% of SD-1 band (1997Az05), 35% of SD-1 band     
+196PB4CL (1995Va32). SD-2 and SD-3 bands are probably signature partners.       
+196PB CL BAND(m)$ SD-3 BAND BASED ON (9-), |a=1 (1997Az05,1995Va32).            
+196PB2CL Other: 2001Hu18, 2001Ro20.                                             
+196PB3CL Population intensity=20% of SD-1 band (1997Az05), 35% of SD-1 band     
+196PB4CL (1995Va32). SD-2 and SD-3 bands are probably signature partners.       
+196PB CL BAND(N)$ SD-4 BAND (1997Az05).                                         
+196PB2CL Population intensity=5% of SD-1 band (1997Az05).                       
+196PB cL E(T),J(T),T(T)$ From adopted levels.                                   
+196PB cL T(W)$Doppler-shift line shape analysis (Gating below).                 
+196PB2cL Values for "gating above" are given under comments (2002Ro30)          
+196PB PN                                                                     5  
+196PB  L  1797.51  145-                140 NS    14                             
+196PB3 L FLAG=T                                                                 
+196PB  L   2333.9   3(8-)                                                       
+196PB3 L FLAG=T                                                                 
+196PB  L  5859     2   6+                                                   P   
+196PB CL J$from 1997Az05,2005Wi21                                               
+196PB cL E         From 2005Wi21                                                
+196PB  G 4062      2 0.6     2 E1                      0.00190                  
+196PBS G KC=0.000212 3$LC=3.07E-5 5$MC=7.03E-6 10$NC+=0.001646 23               
+196PB cG E$From 2005Wi21. Uncertainties are estimated by evaluator.             
+196PB cG RI$From 2005Wi21.                                                      
+196PB cG M$From the J|p values of known levels (2005Wi21).                      
+196PB  L 6030.40   20  8+                                                   P   
+196PB  G 171.4     2                                              0.20    5     
+196PB CG E$169.9 3 (1993Mo19), 171.5 (1995Va32)                                 
+196PB  G 3698      2 0.3     2 E1                      1.78E-3                  
+196PBS G KC=0.000244 4$LC=3.55E-5 5$MC=8.13E-6 12$NC+=0.001488 21               
+196PB cG E$From 2005Wi21. Uncertainties are estimated by evaluator.             
+196PB cG RI$From 2005Wi21.                                                      
+196PB cG M$From the J|p values of known levels (2005Wi21).                      
+196PB  L 6246.0     3  10+                                                  P   
+196PB  G 215.6     2           (E2)                    0.331      0.60    5     
+196PB CG E$214.8 2 (1993Mo19), 215.5 (1995Va32)                                 
+196PB CG           R(DCO)=1.37 28 (1993Mo19)                                    
+196PBS G N/T=0.00699 11$O/T=0.001268 19$P+/T=6.59E-5 10                         
+196PB  L 6505.4     4  12+                                                  P   
+196PB  G 259.5     2           E2                      0.180      0.90    5 D   
+196PB CG E$258.5 2 (1993Mo19), 259.6 (1995Va32)                                 
+196PB CG           R(DCO)=1.35 19 (1993Mo19); ^POL=+0.6 3 (2001Ro20)            
+196PBS G N/T=0.00369 6$O/T=0.000673 10$P+/T=3.83E-5 6                           
+196PB  L 6808.4     4  14+                                                  P   
+196PB  G 303.0     2           (E2)                    0.1123     0.95    5     
+196PB CG           R(DCO)=1.32 15 (1993Mo19)                                    
+196PB CG E$301.7 2 (1993Mo19), 302.8 (1991Wa14), 303.0 (1995Va32)               
+196PBS G N/T=0.00213 3$O/T=0.000392 6$P+/T=2.41E-5 4                            
+196PB  L 6846.1     9 (8-)                                                  M   
+196PB CL J$from 1997Az05                                                        
+196PB  G  815                                                               B  ?
+196PB  L 6944.8    11  (9-)                                                 m   
+196PB CL J$from 1997Az05                                                        
+196PB  G 98                                                                 B  ?
+196PB  L 7050.6    14  (10-)                                                M   
+196PB  G  107                                                               B  ?
+196PB  G  204.5                                                                 
+196PB  G  805                                                               B  ?
+196PB  L 7154.2     5  16+                                                  P   
+196PB  G 345.8     2           E2                      0.0767     1.00    5 D   
+196PB CG E$344.9 2 (1993Mo19), 346.0 (1995Va32)                                 
+196PB CG           R(DCO)=1.38 13 (1993Mo19); ^POL=+0.3 1 (2001Ro20)            
+196PBS G N/T=0.001340 19$O/T=0.000248 4$P+/T=1.631E-5 23                        
+196PB  L 7172.1    11  (11-)                                                m   
+196PB  G  120                                                               B  ?
+196PB  G  226.7                                                                 
+196PB  L 7298.5    17  (12-)                                                M   
+196PB  G  128                                                               B  ?
+196PB  G  247.9                                                                 
+196PB  G  794                                                               B  ?
+196PB  L 7440.5     8  (13-)                                                m   
+196PB  G  140                                                               B  ?
+196PB  G  267.7                                                                 
+196PB  G 935                   (E1)                    0.00283              B   
+196PBF G FLAG=D                                                                 
+196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
+196PBS G KC=0.00236 4$LC=0.000361 5$MC=8.33E-5 12$NC+=2.57E-5 4                 
+196PB  L 7541.8     5  18+             0.46 PS   8                          P   
+196PB3 L FLAG=W                                                                 
+196PB cL T$0.53 ps {I9} from gating above (2002Ro30)                            
+196PB CL           MOME2(transition)=20.1 17, 18.6 16(2002Ro30)                 
+196PB  G 387.6     2           (E2)                    0.0561     1.05    5 A   
+196PB CG E$387.3 2 (1993Mo19), 388.1 (1995Va32)                                 
+196PB CG           R(DCO)=1.40 12 (1993Mo19)                                    
+196PBS G N/T=0.000907 13$O/T=0.0001689 24$P+/T=1.174E-5 17                      
+196PB  L 7587.9    20  (14-)                                                M   
+196PB  G  289.4                                                                 
+196PB  L 7749.5     8  (15-)                                                m   
+196PB  G  308.3                                                                 
+196PB  G 941                   (E1)                    0.00279              B   
+196PBF G FLAG=D                                                                 
+196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
+196PBS G KC=0.00233 4$LC=0.000357 5$MC=8.23E-5 12$NC+=2.54E-5 4                 
+196PB  L 7917.6    22  (16-)                                                M   
+196PB  G  329.7                                                                 
+196PB  L 7970.3     6  20+             0.23 PS   4                          P   
+196PB3 L FLAG=W                                                                 
+196PB cL T$0.27 ps {I5} from gating above (2002Ro30)                            
+196PB CL           MOME2(transition)=21.9 18, 20.1 18(2002Ro30)                 
+196PB  G 428.5     2           (E2)                    0.0431     1.03    5 A   
+196PB CG E$428.1 2 (1993Mo19), 428.9 (1995Va32)                                 
+196PB CG           R(DCO)=1.28 15 (1993Mo19)                                    
+196PBS G N/T=0.000650 10$O/T=0.0001217 18$P+/T=8.87E-6 13                       
+196PB  L 8098.8     8  (17-)                                                m   
+196PB  G  348.4                                                                 
+196PB  G 945                   (E1)                    0.00277              B   
+196PBF G FLAG=D                                                                 
+196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
+196PBS G KC=0.00231 4$LC=0.000354 5$MC=8.16E-5 12$NC+=2.52E-5 4                 
+196PB  L 8144.4    10  (17-)                                                N   
+196PB CL J$from 1997Az05                                                        
+196PB  G  990                                                               B   
+196PB  L 8287.1    25  (18-)                                                M   
+196PB  G  369.5                                                                 
+196PB  L 8439.7     6  22+             0.152 PS  28                         P   
+196PB3 L FLAG=W                                                                 
+196PB cL T$0.187 ps {I35} from gating above (2002Ro30).                         
+196PB2cL Other: 0.23 ps 10 from line-shape analysis (1993Mo19)                  
+196PB CL           MOME2(transition)=17.3 +61-30 (1993Mo19),                    
+196PB2CL 21.2 17, 19.2 18(2002Ro30).                                            
+196PB  G 469.4     2           E2                      0.0343     1.00    5 A   
+196PBF G FLAG=D                                                                 
+196PB CG           R(DCO)=1.37 17 (1993Mo19); ^POL=+0.3 1 (2001Ro20)            
+196PB CG E$468.5 2 (1993Mo19), 469.5 (1993Da04), 469.7 (1995Va32)               
+196PBS G N/T=0.000484 7$O/T=9.12E-5 13$P+/T=6.93E-6 10                          
+196PB  L 8487.4     9  (19-)                                                m   
+196PB  G  388.2                                                                 
+196PB  G 946                   (E1)                    0.00277              B   
+196PBF G FLAG=D                                                                 
+196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
+196PBS G KC=0.00231 4$LC=0.000353 5$MC=8.15E-5 12$NC+=2.51E-5 4                 
+196PB  L 8549.6    10  (19-)                                                N   
+196PB  G  405                                                               B   
+196PB  G 1008                                                               B   
+196PB  L 8696       3  (20-)                                                M   
+196PB  G  409.4                                                                 
+196PB  L 8915.0     9  (21-)                                                m   
+196PB  G  427.6                                                                 
+196PB  G 945                   (E1)                    0.00277              B   
+196PBF G FLAG=D                                                                 
+196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
+196PBS G KC=0.00231 4$LC=0.000354 5$MC=8.16E-5 12$NC+=2.52E-5 4                 
+196PB  L 8948.2     6  24+             0.097 PS  14                         P   
+196PB3 L FLAG=W                                                                 
+196PB cL T$0.118 ps {I21} from gating above (2002Ro30).                         
+196PB2cL Other: 0.12 ps +3-5 from line-shape analysis (1993Mo19).               
+196PB CL           MOME2(transition)=19.1 +65-18 (1993Mo19),                    
+196PB2CL 21.9 15, 20.2 18(2002Ro30).                                            
+196PB  G 508.5     2           (E2)                    0.0282    0.85     5 A   
+196PB CG E$508.1 2 (1993Mo19), 508.7 (1995Va32)                                 
+196PB CG           R(DCO)=1.43 22 (1993Mo19)                                    
+196PBS G N/T=0.000377 6$O/T=7.14E-5 10$P+/T=5.61E-6 8                           
+196PB  L 8991.6    14  (21-)                                                N   
+196PB  G  442                                                               B   
+196PB  G 1021                                                               B  ?
+196PB  L 9144       3 (22-)            0.32 PS   8                          M   
+196PB3 L FLAG=W                                                                 
+196PB CL           MOME2(transition)=16.7 20 (2002Ro30).                        
+196PB  G  447.8                                                                 
+196PB  L 9380.9    10  (23-)                                                m   
+196PB  G  466.2                                                                 
+196PB  G 941                   (E1)                    0.00279              B   
+196PBF G FLAG=D                                                                 
+196PBS G KC=0.00233 4$LC=0.000357 5$MC=8.23E-5 12$NC+=2.54E-5 4                 
+196PB  L 9471.6    17  (23-)                                                N   
+196PB  G  480                                                               B   
+196PB  L 9495.1     7  26+             0.076 PS  14                         P   
+196PB3 L FLAG=W                                                                 
+196PB cL T$0.090 ps {I14} from gating above (2002Ro30).                         
+196PB2cL Other: 0.08 ps +5-2 from line-shape analysis (1993Mo19).               
+196PB CL           MOME2(transition)=19.6 +30-40 (1993Mo19),                    
+196PB2CL 20.2 18, 19.2 16(2002Ro30).                                            
+196PB  G 546.9     2           (E2)                    0.0238     1.00    5 A   
+196PB CG E$546.4 2 (1993Mo19), 547.1 (1995Va32)                                 
+196PB CG RI$0.53 9 (1993Mo19)                                                   
+196PB CG           R(DCO)=1.39 25 (1993Mo19)                                    
+196PBS G N/T=0.000303 5$O/T=5.75E-5 8$P+/T=4.66E-6 7                            
+196PB  L 9630       3 (24-)            0.152 PS  35                         M   
+196PB3 L FLAG=W                                                                 
+196PB CL           MOME2(transition)=19.8 22 (2002Ro30).                        
+196PB  G  485.3                                                                 
+196PB  L 9884.0    14  (25-)                                                m   
+196PB  G  503.1                                                                 
+196PB  L 9990.6    20  (25-)                                                N   
+196PB  G  519                                                               B   
+196PB  L 10079.3    7  28+             0.055 PS  9                          P   
+196PB3 L FLAG=W                                                                 
+196PB cL T$0.053 ps {I9} from gating above (2002Ro30).                          
+196PB CL           MOME2(transition)=20.4 16, 21.0 18 (2002Ro30).               
+196PB  G 584.2     2           (E2)                    0.0205      0.75   5 A   
+196PB CG RI$0.41 6 (1993Mo19)                                                   
+196PB CG           R(DCO)=1.25 25 (1993Mo19)                                    
+196PB CG E$584.3 2 (1993Mo19), 583.4 (1991Wa14), 584.4 (1993Da04), 584.5        
+196PBxCG (1995Va32)                                                             
+196PBS G N/T=0.000249 4$O/T=4.76E-5 7$P+/T=3.95E-6 6                            
+196PB  L 10152      4 (26-)            0.111 PS  21                         M   
+196PB3 L FLAG=W                                                                 
+196PB CL           MOME2(transition)=19.3 19 (2002Ro30).                        
+196PB  G  522.6                                                                 
+196PB  L 10424.2   17  (27-)                                                m   
+196PB  G  540.2                                                                 
+196PB  L 10547.6   22  (27-)                                                N   
+196PB  G  557                                                               B   
+196PB  L 10699.9    7  30+             0.052 PS  9                          P   
+196PB3 L FLAG=W                                                                 
+196PB cL T$0.069 ps {I22} from gating above (2002Ro30).                         
+196PB CL           MOME2(transition)=18.2 16, 15.7 25 (2002Ro30).               
+196PB  G 620.6     2           (E2)                    0.0179      0.65   5 A   
+196PB CG           R(DCO)=1.29 35 (1993Mo19)                                    
+196PB CG E$620.2 2 (1993Mo19), 619.1 (1993Da05), 619.6 (1991Wa14), 620.7        
+196PBxCG (1995Va32)                                                             
+196PB CG RI$0.36 8 (1993Mo19)                                                   
+196PBS G N/T=0.000210 3$O/T=4.01E-5 6$P+/T=3.41E-6 5                            
+196PB  L 10710      4 (28-)            0.068 PS  11                         M   
+196PB3 L FLAG=W                                                                 
+196PB CL           MOME2(transition)=20.6 17 (2002Ro30).                        
+196PB  G  558.2                                                                 
+196PB  L 11000.0   20  (29-)                                                m   
+196PB  G  575.8                                                                 
+196PB  L 11304      4 (30-)            0.055 PS  12                         M   
+196PB3 L FLAG=W                                                                 
+196PB CL           MOME2(transition)=19.6 21 (2002Ro30).                        
+196PB  G  594.1                                                                 
+196PB  L 11354.8    8  32+             0.026 PS  4                          P   
+196PB3 L FLAG=W                                                                 
+196PB cL T$0.029 ps {I5} from gating above (2002Ro30).                          
+196PB CL           MOME2(transition)=22.5 18, 21.2 18 (2002Ro30).               
+196PB  G 654.9     3                                               0.65   5 A   
+196PB CG E$654.5 3 (1993Mo19), 655.5 (1995Va32)                                 
+196PB CG RI$0.15 3 (1993Mo19)                                                   
+196PB  L 11610.8   23  (31-)                                                m   
+196PB  G  610.8                                                                 
+196PB  L 11934      4  (32-)                                                M   
+196PB  G  630.0                                                                 
+196PB  L 12043.6    8  34+             0.032 PS  7                          P   
+196PB3 L FLAG=W                                                                 
+196PB CL           MOME2(transition)=17.8 20 (2002Ro30).                        
+196PB  G 688.8     3                                                0.55  5 A   
+196PB CG E$688.6 3 (1993Mo19), 688.3 (1995Va32)                                 
+196PB CG RI$0.14 4 (1993Mo19)                                                   
+196PB  L 12256.4   25  (33-)                                                m   
+196PB  G  645.6                                                                 
+196PB  L 12600      4  (34-)                                                M   
+196PB  G  665.2                                                                 
+196PB  L 12763.7   10  36+                                                  P   
+196PB  G 720.1     5                                               0.35   5 A   
+196PB CG E$720.7 (1995Va32)                                                     
+196PB  L 12936      3  (35-)                                                m   
+196PB  G  679.7                                                                 
+196PB  L 13515.8   11  38+                                                  P   
+196PB  G 752.1     5                                               0.20   5 A   
+196PB CG E$753.1 (1995Va32)                                                     
+                                                                                
 196PB    (HI,XNG)                      1986VA03,1995Va32,2002Si2007NDS    200706
 196PB  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
 196PB C  Main references: 2005Dr11, 2002Si20, 2002Si29, 2002Vy02,               
@@ -15308,331 +15707,6 @@
 196PB  L   4906.8+X23    J+14                                               G  ?
 196PB  G 520.2     6     0.1 LTM1                      0.0981                  ?
 196PBS G KC=0.0804 12$LC=0.01353 20$MC=0.00316 5$NC+=0.000981 14                
-                                                                                
-196PB    (HI,XNG):SD                   1995VA32,1997AZ05,2005Wi2107NDS    200706
-196PB  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    
-196PB C  Main references: 1991Wa14, 1990Br10, 1993Mo19, 1993Da04, 1994Cl02,     
-196PB2C  1995Va32, 1997Az05 (also 1997Bo28), 1998Va18, 2001Hu18,                
-196PB3C  2001Ro20, 2002Ro30, 2005Wi21                                           
-196PB c  2005Wi21: {+170}Er({+30}Si,4n|g), E=144 MeV. Measured E|g, I|g, |g|g,  
-196PB2c  using time-correlated spectroscopy and Euroball IV array. An inner     
-196PB3c  ball of 210 BGO scintillators was used as a multiplicity filter.       
-196PB4c  Deduced superdeformed band excitation energy.                          
-196PB c  2002Ro30: {+170}Er({+30}Si,4n|g), E=144 MeV. Measured E|g, I|g, |g|g,  
-196PB2c  lifetimes by Doppler Shift Attenuation Method using EUROBALL-IV        
-196PB3c  spectrometer comprised of 30 Compton-suppressed conventional Ge        
-196PB4c  detectors, 26 clover and 15 cluster composite Ge detectors             
-196PB5c  (with a total of 230 individual functioning Ge                         
-196PB6c  detector crystals). An inner ball of 210 BGO scintillators was used as 
-196PB7c  a multiplicity filter.                                                 
-196PB C  2001Ro20: 170ER(30SI,4NG) E=144 MEV. Measured G, GG, G(LIN POL) OF     
-196PB2C  INTERBAND(SD) TRANSITIONS USING THE CLOVER DETECTORS OF ^EUROBALL      
-196PB3C  ^IV ARRAY. DEDUCED EVIDENCE FOR OCTUPOLE VIBRATIONAL EXCITATION        
-196PB4C  IN THE SUPERDEFORMED MINIMUM OF 196PB                                  
-196PB C  2001Hu18: 170ER(30SI,4NG) E=144 MEV. Measured EG, IG, GG-COIN,         
-196PB2C  G(LIN POL) OF INTERBAND(SD) TRANSITIONS USING THE SPECTROMETER         
-196PB3C  ARRAYS GAMMASPHERE AND EUROBALL. DEDUCED SUPERDEFORMED 196PB.          
-196PB C  1998Va18: 176YB(26MG,6NG) E=135 MeV. ^Gammasphere array of 98 large    
-196PB2C  volume Compton-suppressed ^Ge detectors. Measured lifetimes by         
-196PB3C  ^DSAM (line shape and centroid-shift methods). Deduced                 
-196PB4C  MOME2(intrinsic) for SD-1 band.                                        
-196PB C  1995Va32: 170ER(30SI,4NG) E=143 MEV. Measured G, GG, with gasp array of
-196PB2C  40 COMPTON-suppressed GE detectors.                                    
-196PB C  1997Az05 (also 1997Bo28): 186W(16O,6NG) E=110 MeV. Measured E|g,       
-196PB2C  |g|g coin, |g|g(|q)(^DCO) using ^Eurogam ^II array of ^Ge detectors.   
-196PB3C  Deduced four SD bands.                                                 
-196PB C  1994Cl02: 186W(18O,8NG) E=113 MEV. Measured EG, IG, GGG, SD band       
-196PB2C  using ^EUROGAM array (43 detectors).                                   
-196PB C  1993Da04: 184W(16O,4NG) E=98 MEV and 186W(16O,6NG) E=120 MEV.          
-196PB C  1993Mo19: 170ER(30SI,4NG) E=142-151 MEV. Measured G, GG, GG(THETA),    
-196PB2C  T1/2 by DSA method.                                                    
-196PB C  1990Br10,1991Wa14: 176YB(24MG,4NG) E=122 MEV; 176YB(26MG,6NG) E=135    
-196PB2C  MEV. ^HERA spectrometer. Twofold coincidences with sum energy h >3.25  
-196PB3C  MEV and multiplicity K>8. Identified superdeformed band.               
-196PB C  Theoretical treatment of SD bands: 1992Sk01, 1992Wu01, 1992Wu05,       
-196PB2C  1991Sa12, 1990Ho13, 1990Be37, 1990Ja03.                                
-196PB CG E$From 1994Cl02 for                                                    
-196PB3CG SD-1 band and from 1995Va32 for SD-2 and SD-3 bands. See also 1993Mo19 
-196PB4CG and 1995Va32 for EG's in SD-1 band. Energies quoted by 1993Mo19 are    
-196PB5CG systematically lower than those given by 1994Cl02 and 1995Va32 by      
-196PB6CG AP 1 KEV up to 500 KEV, the agreement is somewhat better for EG>500.   
-196PB7CG Uncertainties on EG's for SD-1 band are estimated by the               
-196PB8CG evaluator based on energies available from different studies           
-196PB CG TI        Relative intensities within the SD-1 band taken from an      
-196PB2CG intensity plot given by 1994Cl02.                                      
-196PB3CG See also 1993Mo19 for a list of TI's. Above 508G, values               
-196PB4CG from 1994Cl02 and 1993Mo19 are in poor agreement.                      
-196PB CG M$From GG(THETA) and T1/2(level). Mult=^D,Q from dipole G              
-196PB2CG transition band (1995Mo19).                                            
-196PB CG M(D)$ From |g(lin pol) measurement of 2001Ro20.                        
-196PB2CG Six interband (SD-3 to SD-1) transitions from 935-945                  
-196PB3CG were analyzed as one group giving ^POL=+1.14 51 (2001Ro20) for         
-196PB4CG the entire group                                                       
-196PB CG E(A)      Values of the fraction of full DOPPLER shift given for       
-196PB2CG this transition in SD band (1993Mo19), deduced from DSAM data.         
-196PB CG E(B)$Interband transition from 1997Az05                                
-196PB CL E$From least-squares fit to E|g's. Uncertainties, when not quoted      
-196PB2CL by the original authors, are assumed as: 0.5 keV for E|g quoted to     
-196PB3CL tenth of a keV, 2 keV for uncertain |g rays and 1 keV for others.      
-196PB CL BAND(P)$ Yrast SD-1 BAND BASED ON 6+ (1997Az05,1995Va32,1994Cl02).     
-196PB2CL Others: 2002Ro30, 2001Hu18, 2001Ro20, 1993Mo19, 1991Wa14, 1990Br10.    
-196PB3CL Percent population=1.5 (1994Cl02) in 186W(18O,8NG); 1.3 (1993Mo19)     
-196PB4CL in 170ER(30SI,4NG).                                                    
-196PB5CL MOME2(intrinsic)=19.5 +4-3 (centroid-shift method) (1998Va18),         
-196PB6CL 20.9 20 (line shape analysis) (1998Va18), 18.3 30 (1993Mo19).          
-196PB CL BAND(M)$ SD-2 BAND BASED ON (8-), |a=0 (1997Az05,1995Va32).            
-196PB2CL Others: 2002Ro30, 2001Ro20, 2001Hu18.                                  
-196PB3CL Population intensity=20% of SD-1 band (1997Az05), 35% of SD-1 band     
-196PB4CL (1995Va32). SD-2 and SD-3 bands are probably signature partners.       
-196PB CL BAND(m)$ SD-3 BAND BASED ON (9-), |a=1 (1997Az05,1995Va32).            
-196PB2CL Other: 2001Hu18, 2001Ro20.                                             
-196PB3CL Population intensity=20% of SD-1 band (1997Az05), 35% of SD-1 band     
-196PB4CL (1995Va32). SD-2 and SD-3 bands are probably signature partners.       
-196PB CL BAND(N)$ SD-4 BAND (1997Az05).                                         
-196PB2CL Population intensity=5% of SD-1 band (1997Az05).                       
-196PB cL E(T),J(T),T(T)$ From adopted levels.                                   
-196PB cL T(W)$Doppler-shift line shape analysis (Gating below).                 
-196PB2cL Values for "gating above" are given under comments (2002Ro30)          
-196PB PN                                                                     5  
-196PB  L  1797.51  145-                140 NS    14                             
-196PB3 L FLAG=T                                                                 
-196PB  L   2333.9   3(8-)                                                       
-196PB3 L FLAG=T                                                                 
-196PB  L  5859     2   6+                                                   P   
-196PB CL J$from 1997Az05,2005Wi21                                               
-196PB cL E         From 2005Wi21                                                
-196PB  G 4062      2 0.6     2 E1                      0.00190                  
-196PBS G KC=0.000212 3$LC=3.07E-5 5$MC=7.03E-6 10$NC+=0.001646 23               
-196PB cG E$From 2005Wi21. Uncertainties are estimated by evaluator.             
-196PB cG RI$From 2005Wi21.                                                      
-196PB cG M$From the J|p values of known levels (2005Wi21).                      
-196PB  L 6030.40   20  8+                                                   P   
-196PB  G 171.4     2                                              0.20    5     
-196PB CG E$169.9 3 (1993Mo19), 171.5 (1995Va32)                                 
-196PB  G 3698      2 0.3     2 E1                      1.78E-3                  
-196PBS G KC=0.000244 4$LC=3.55E-5 5$MC=8.13E-6 12$NC+=0.001488 21               
-196PB cG E$From 2005Wi21. Uncertainties are estimated by evaluator.             
-196PB cG RI$From 2005Wi21.                                                      
-196PB cG M$From the J|p values of known levels (2005Wi21).                      
-196PB  L 6246.0     3  10+                                                  P   
-196PB  G 215.6     2           (E2)                    0.331      0.60    5     
-196PB CG E$214.8 2 (1993Mo19), 215.5 (1995Va32)                                 
-196PB CG           R(DCO)=1.37 28 (1993Mo19)                                    
-196PBS G N/T=0.00699 11$O/T=0.001268 19$P+/T=6.59E-5 10                         
-196PB  L 6505.4     4  12+                                                  P   
-196PB  G 259.5     2           E2                      0.180      0.90    5 D   
-196PB CG E$258.5 2 (1993Mo19), 259.6 (1995Va32)                                 
-196PB CG           R(DCO)=1.35 19 (1993Mo19); ^POL=+0.6 3 (2001Ro20)            
-196PBS G N/T=0.00369 6$O/T=0.000673 10$P+/T=3.83E-5 6                           
-196PB  L 6808.4     4  14+                                                  P   
-196PB  G 303.0     2           (E2)                    0.1123     0.95    5     
-196PB CG           R(DCO)=1.32 15 (1993Mo19)                                    
-196PB CG E$301.7 2 (1993Mo19), 302.8 (1991Wa14), 303.0 (1995Va32)               
-196PBS G N/T=0.00213 3$O/T=0.000392 6$P+/T=2.41E-5 4                            
-196PB  L 6846.1     9 (8-)                                                  M   
-196PB CL J$from 1997Az05                                                        
-196PB  G  815                                                               B  ?
-196PB  L 6944.8    11  (9-)                                                 m   
-196PB CL J$from 1997Az05                                                        
-196PB  G 98                                                                 B  ?
-196PB  L 7050.6    14  (10-)                                                M   
-196PB  G  107                                                               B  ?
-196PB  G  204.5                                                                 
-196PB  G  805                                                               B  ?
-196PB  L 7154.2     5  16+                                                  P   
-196PB  G 345.8     2           E2                      0.0767     1.00    5 D   
-196PB CG E$344.9 2 (1993Mo19), 346.0 (1995Va32)                                 
-196PB CG           R(DCO)=1.38 13 (1993Mo19); ^POL=+0.3 1 (2001Ro20)            
-196PBS G N/T=0.001340 19$O/T=0.000248 4$P+/T=1.631E-5 23                        
-196PB  L 7172.1    11  (11-)                                                m   
-196PB  G  120                                                               B  ?
-196PB  G  226.7                                                                 
-196PB  L 7298.5    17  (12-)                                                M   
-196PB  G  128                                                               B  ?
-196PB  G  247.9                                                                 
-196PB  G  794                                                               B  ?
-196PB  L 7440.5     8  (13-)                                                m   
-196PB  G  140                                                               B  ?
-196PB  G  267.7                                                                 
-196PB  G 935                   (E1)                    0.00283              B   
-196PBF G FLAG=D                                                                 
-196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
-196PBS G KC=0.00236 4$LC=0.000361 5$MC=8.33E-5 12$NC+=2.57E-5 4                 
-196PB  L 7541.8     5  18+             0.46 PS   8                          P   
-196PB3 L FLAG=W                                                                 
-196PB cL T$0.53 ps {I9} from gating above (2002Ro30)                            
-196PB CL           MOME2(transition)=20.1 17, 18.6 16(2002Ro30)                 
-196PB  G 387.6     2           (E2)                    0.0561     1.05    5 A   
-196PB CG E$387.3 2 (1993Mo19), 388.1 (1995Va32)                                 
-196PB CG           R(DCO)=1.40 12 (1993Mo19)                                    
-196PBS G N/T=0.000907 13$O/T=0.0001689 24$P+/T=1.174E-5 17                      
-196PB  L 7587.9    20  (14-)                                                M   
-196PB  G  289.4                                                                 
-196PB  L 7749.5     8  (15-)                                                m   
-196PB  G  308.3                                                                 
-196PB  G 941                   (E1)                    0.00279              B   
-196PBF G FLAG=D                                                                 
-196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
-196PBS G KC=0.00233 4$LC=0.000357 5$MC=8.23E-5 12$NC+=2.54E-5 4                 
-196PB  L 7917.6    22  (16-)                                                M   
-196PB  G  329.7                                                                 
-196PB  L 7970.3     6  20+             0.23 PS   4                          P   
-196PB3 L FLAG=W                                                                 
-196PB cL T$0.27 ps {I5} from gating above (2002Ro30)                            
-196PB CL           MOME2(transition)=21.9 18, 20.1 18(2002Ro30)                 
-196PB  G 428.5     2           (E2)                    0.0431     1.03    5 A   
-196PB CG E$428.1 2 (1993Mo19), 428.9 (1995Va32)                                 
-196PB CG           R(DCO)=1.28 15 (1993Mo19)                                    
-196PBS G N/T=0.000650 10$O/T=0.0001217 18$P+/T=8.87E-6 13                       
-196PB  L 8098.8     8  (17-)                                                m   
-196PB  G  348.4                                                                 
-196PB  G 945                   (E1)                    0.00277              B   
-196PBF G FLAG=D                                                                 
-196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
-196PBS G KC=0.00231 4$LC=0.000354 5$MC=8.16E-5 12$NC+=2.52E-5 4                 
-196PB  L 8144.4    10  (17-)                                                N   
-196PB CL J$from 1997Az05                                                        
-196PB  G  990                                                               B   
-196PB  L 8287.1    25  (18-)                                                M   
-196PB  G  369.5                                                                 
-196PB  L 8439.7     6  22+             0.152 PS  28                         P   
-196PB3 L FLAG=W                                                                 
-196PB cL T$0.187 ps {I35} from gating above (2002Ro30).                         
-196PB2cL Other: 0.23 ps 10 from line-shape analysis (1993Mo19)                  
-196PB CL           MOME2(transition)=17.3 +61-30 (1993Mo19),                    
-196PB2CL 21.2 17, 19.2 18(2002Ro30).                                            
-196PB  G 469.4     2           E2                      0.0343     1.00    5 A   
-196PBF G FLAG=D                                                                 
-196PB CG           R(DCO)=1.37 17 (1993Mo19); ^POL=+0.3 1 (2001Ro20)            
-196PB CG E$468.5 2 (1993Mo19), 469.5 (1993Da04), 469.7 (1995Va32)               
-196PBS G N/T=0.000484 7$O/T=9.12E-5 13$P+/T=6.93E-6 10                          
-196PB  L 8487.4     9  (19-)                                                m   
-196PB  G  388.2                                                                 
-196PB  G 946                   (E1)                    0.00277              B   
-196PBF G FLAG=D                                                                 
-196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
-196PBS G KC=0.00231 4$LC=0.000353 5$MC=8.15E-5 12$NC+=2.51E-5 4                 
-196PB  L 8549.6    10  (19-)                                                N   
-196PB  G  405                                                               B   
-196PB  G 1008                                                               B   
-196PB  L 8696       3  (20-)                                                M   
-196PB  G  409.4                                                                 
-196PB  L 8915.0     9  (21-)                                                m   
-196PB  G  427.6                                                                 
-196PB  G 945                   (E1)                    0.00277              B   
-196PBF G FLAG=D                                                                 
-196PB CG $BE1=1.0 * 10{+-4} 2 (2001Hu18,2001Ro20)                               
-196PBS G KC=0.00231 4$LC=0.000354 5$MC=8.16E-5 12$NC+=2.52E-5 4                 
-196PB  L 8948.2     6  24+             0.097 PS  14                         P   
-196PB3 L FLAG=W                                                                 
-196PB cL T$0.118 ps {I21} from gating above (2002Ro30).                         
-196PB2cL Other: 0.12 ps +3-5 from line-shape analysis (1993Mo19).               
-196PB CL           MOME2(transition)=19.1 +65-18 (1993Mo19),                    
-196PB2CL 21.9 15, 20.2 18(2002Ro30).                                            
-196PB  G 508.5     2           (E2)                    0.0282    0.85     5 A   
-196PB CG E$508.1 2 (1993Mo19), 508.7 (1995Va32)                                 
-196PB CG           R(DCO)=1.43 22 (1993Mo19)                                    
-196PBS G N/T=0.000377 6$O/T=7.14E-5 10$P+/T=5.61E-6 8                           
-196PB  L 8991.6    14  (21-)                                                N   
-196PB  G  442                                                               B   
-196PB  G 1021                                                               B  ?
-196PB  L 9144       3 (22-)            0.32 PS   8                          M   
-196PB3 L FLAG=W                                                                 
-196PB CL           MOME2(transition)=16.7 20 (2002Ro30).                        
-196PB  G  447.8                                                                 
-196PB  L 9380.9    10  (23-)                                                m   
-196PB  G  466.2                                                                 
-196PB  G 941                   (E1)                    0.00279              B   
-196PBF G FLAG=D                                                                 
-196PBS G KC=0.00233 4$LC=0.000357 5$MC=8.23E-5 12$NC+=2.54E-5 4                 
-196PB  L 9471.6    17  (23-)                                                N   
-196PB  G  480                                                               B   
-196PB  L 9495.1     7  26+             0.076 PS  14                         P   
-196PB3 L FLAG=W                                                                 
-196PB cL T$0.090 ps {I14} from gating above (2002Ro30).                         
-196PB2cL Other: 0.08 ps +5-2 from line-shape analysis (1993Mo19).               
-196PB CL           MOME2(transition)=19.6 +30-40 (1993Mo19),                    
-196PB2CL 20.2 18, 19.2 16(2002Ro30).                                            
-196PB  G 546.9     2           (E2)                    0.0238     1.00    5 A   
-196PB CG E$546.4 2 (1993Mo19), 547.1 (1995Va32)                                 
-196PB CG RI$0.53 9 (1993Mo19)                                                   
-196PB CG           R(DCO)=1.39 25 (1993Mo19)                                    
-196PBS G N/T=0.000303 5$O/T=5.75E-5 8$P+/T=4.66E-6 7                            
-196PB  L 9630       3 (24-)            0.152 PS  35                         M   
-196PB3 L FLAG=W                                                                 
-196PB CL           MOME2(transition)=19.8 22 (2002Ro30).                        
-196PB  G  485.3                                                                 
-196PB  L 9884.0    14  (25-)                                                m   
-196PB  G  503.1                                                                 
-196PB  L 9990.6    20  (25-)                                                N   
-196PB  G  519                                                               B   
-196PB  L 10079.3    7  28+             0.055 PS  9                          P   
-196PB3 L FLAG=W                                                                 
-196PB cL T$0.053 ps {I9} from gating above (2002Ro30).                          
-196PB CL           MOME2(transition)=20.4 16, 21.0 18 (2002Ro30).               
-196PB  G 584.2     2           (E2)                    0.0205      0.75   5 A   
-196PB CG RI$0.41 6 (1993Mo19)                                                   
-196PB CG           R(DCO)=1.25 25 (1993Mo19)                                    
-196PB CG E$584.3 2 (1993Mo19), 583.4 (1991Wa14), 584.4 (1993Da04), 584.5        
-196PBxCG (1995Va32)                                                             
-196PBS G N/T=0.000249 4$O/T=4.76E-5 7$P+/T=3.95E-6 6                            
-196PB  L 10152      4 (26-)            0.111 PS  21                         M   
-196PB3 L FLAG=W                                                                 
-196PB CL           MOME2(transition)=19.3 19 (2002Ro30).                        
-196PB  G  522.6                                                                 
-196PB  L 10424.2   17  (27-)                                                m   
-196PB  G  540.2                                                                 
-196PB  L 10547.6   22  (27-)                                                N   
-196PB  G  557                                                               B   
-196PB  L 10699.9    7  30+             0.052 PS  9                          P   
-196PB3 L FLAG=W                                                                 
-196PB cL T$0.069 ps {I22} from gating above (2002Ro30).                         
-196PB CL           MOME2(transition)=18.2 16, 15.7 25 (2002Ro30).               
-196PB  G 620.6     2           (E2)                    0.0179      0.65   5 A   
-196PB CG           R(DCO)=1.29 35 (1993Mo19)                                    
-196PB CG E$620.2 2 (1993Mo19), 619.1 (1993Da05), 619.6 (1991Wa14), 620.7        
-196PBxCG (1995Va32)                                                             
-196PB CG RI$0.36 8 (1993Mo19)                                                   
-196PBS G N/T=0.000210 3$O/T=4.01E-5 6$P+/T=3.41E-6 5                            
-196PB  L 10710      4 (28-)            0.068 PS  11                         M   
-196PB3 L FLAG=W                                                                 
-196PB CL           MOME2(transition)=20.6 17 (2002Ro30).                        
-196PB  G  558.2                                                                 
-196PB  L 11000.0   20  (29-)                                                m   
-196PB  G  575.8                                                                 
-196PB  L 11304      4 (30-)            0.055 PS  12                         M   
-196PB3 L FLAG=W                                                                 
-196PB CL           MOME2(transition)=19.6 21 (2002Ro30).                        
-196PB  G  594.1                                                                 
-196PB  L 11354.8    8  32+             0.026 PS  4                          P   
-196PB3 L FLAG=W                                                                 
-196PB cL T$0.029 ps {I5} from gating above (2002Ro30).                          
-196PB CL           MOME2(transition)=22.5 18, 21.2 18 (2002Ro30).               
-196PB  G 654.9     3                                               0.65   5 A   
-196PB CG E$654.5 3 (1993Mo19), 655.5 (1995Va32)                                 
-196PB CG RI$0.15 3 (1993Mo19)                                                   
-196PB  L 11610.8   23  (31-)                                                m   
-196PB  G  610.8                                                                 
-196PB  L 11934      4  (32-)                                                M   
-196PB  G  630.0                                                                 
-196PB  L 12043.6    8  34+             0.032 PS  7                          P   
-196PB3 L FLAG=W                                                                 
-196PB CL           MOME2(transition)=17.8 20 (2002Ro30).                        
-196PB  G 688.8     3                                                0.55  5 A   
-196PB CG E$688.6 3 (1993Mo19), 688.3 (1995Va32)                                 
-196PB CG RI$0.14 4 (1993Mo19)                                                   
-196PB  L 12256.4   25  (33-)                                                m   
-196PB  G  645.6                                                                 
-196PB  L 12600      4  (34-)                                                M   
-196PB  G  665.2                                                                 
-196PB  L 12763.7   10  36+                                                  P   
-196PB  G 720.1     5                                               0.35   5 A   
-196PB CG E$720.7 (1995Va32)                                                     
-196PB  L 12936      3  (35-)                                                m   
-196PB  G  679.7                                                                 
-196PB  L 13515.8   11  38+                                                  P   
-196PB  G 752.1     5                                               0.20   5 A   
-196PB CG E$753.1 (1995Va32)                                                     
                                                                                 
 196BI    ADOPTED LEVELS, GAMMAS                                  07NDS    200706
 196BI  H TYP=FUL$AUT=Huang Xiaolong$CIT=NDS 108, 1093 (2007)$CUT=1-Jan-2006$    

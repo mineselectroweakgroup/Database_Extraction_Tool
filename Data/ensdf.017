@@ -2413,21 +2413,20 @@
  17F   L 14.3E3     1                                                           
                                                                                 
  17NE    ADOPTED LEVELS                1993TI07                  93NP     199902
+ 17NE  H TYP=MOD$AUT=E. McCutchan$COM=removed XREF$DAT=25-JUL-2017$             
  17NE  H TYP=MOD$AUT=J. Blachot$COM=added T reference$DAT=15-DEC-2000$          
  17NE  H TYP=MOD$AUT=J. Tuli$COM=fixed decay modes$DAT=1-Feb-1999$              
  17NE  H TYP=FUL$AUT=J.H. KELLEY, D.R. TILLEY, H.R. WELLER AND C.M. CHEVES$     
  17NE2 H CIT=NP A564, 1 (1993)$CUT=31-DEC-1992$                                 
- 17NE CL           The evidence for excited states of 17NE has not been         
- 17NE2CL published; see 1977Aj02                                                
+ 17NE cL           The evidence for excited states of {+17}Ne has not been      
+ 17NE2cL published; see 1977Aj02                                                
  17NE  Q             15557   211469    9 -9040   10    2012WA38                 
- 17NE CQ Note: Current evaluation has used the following Q record               
+ 17NE cQ $Note: Current evaluation has used the following Q record              
  17NE  Q             15573   54 1479   51-9046   51    1997AU04                 
- 17NE  XA17NE B+ DECAY                                                          
  17NE  L 0.0          1/2-             109.2 MS   6                             
- 17NE CL T$ weighted average of : 109.3 MS 6 (1988BO39),                        
- 17NE2CL 109 MS 1 (1971HA05)                                                    
+ 17NE cL T$weighted average of: 109.3 ms {I6} (1988Bo39),                       
+ 17NE2cL 109 ms {I1} (1971Ha05)                                                 
  17NE2 L %EC+%B+=100$ %ECP AP 100$%ECA=?$ISPIN=3/2                              
- 17NE3 L XREF=A                                                                 
                                                                                 
  17NA    ADOPTED LEVELS                                                   201509
  17NA  H TYP=FUL$AUT=J.H. Kelley, G.C. Sheu$CUT=1-July-2015$CIT=ENSDF$          

@@ -651,51 +651,148 @@
 152    R 2012WA38 JOUR CPCHC 36 1603                                            
 152    R 2013WAZZ PC A V Ramayya,7/2013                                         
                                                                                 
-152BA    ADOPTED LEVELS                                          13NDS    201311
+152CS    COMMENTS                                                ENSDF    201802
+152CS  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+152CS C  TITL$NUCLEAR DATA SHEETS FOR 152CS                                     
+152CS c  AUTH$BALRAJ SINGH                                                      
+152CS c  INST$Department of Physics and Astronomy,                              
+152CS#c       McMaster University, Hamilton, Ontario,                           
+152CS#c       Canada, L8S 4M1                                                   
+152CS c  ABST$Information about the production and identification of the        
+152CS2c  {+152}Cs nuclide from 1979Ra37 and 1987Ra12 is presented. This nuclide 
+152CS3c  was not included in 2013Ma77 NDS publication, and August-2013 ENSDF    
+152CS4c  update of A=152 nuclides.                                              
+152CS c  CUT$Literature available up to January 31, 2018 has been consulted.    
+152CS C  CIT$ENSDF                                                              
+152CS c  FUND$                                                                  
+                                                                                
+152CS    ADOPTED LEVELS                                          ENSDF    201802
+152CS  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-JAN-2018$                    
+152CS  Q 12780     SY 2770   SY 13030  CA -6290  CA    2017WA10,1997MO25        
+152CS cQ $Q(|b{+-}) and S(n) are from 2017Wa10. S(p) and Q(|a) are theoretical  
+152CS2cQ values from 1997Mo25                                                   
+152CS cQ $Estimated |DQ(|b{+-})=640, |DS(n)=710 (2017Wa10)                      
+152CS cQ $S(2n)=6900 {I640}, Q(|b{+-}n)=7940 {I640} (syst,2017Wa10).            
+152CS2cQ S(2p)=28840 (theory,1997Mo25)                                          
+152CS c  1979Ra37, 1987Ra12: identification and yield of mass-separated {+152}Cs
+152CS2c  measured in the fission of uranium by 600-MeV protons at ISOLDE-CERN   
+152CS3c  using time-of-flight technique. Measured production                    
+152CS4c  yield=|?150 atoms/sec (read by evaluator from Fig. 8 in 1987Ra12)      
+152CS  L 0                               50 MS   GT                             
+152CS2 L %B-=100$ %B-N=? $ %B-2N=?                                              
+152CS cL $Only the |b{+-} decay mode, followed by beta-delayed neutron emissions
+152CS2cL is expected                                                            
+152CS cL $Theoretical T{-1/2}=29.1 ms, %|b{+-}n=46.9, %|b{+-}2n=2.7 (2003Mo09)  
+152CS cL $Theoretical T{-1/2}=36.7 ms, %|b{+-}n=38.5, %|b{+-}2n=0.5 (2016Ma12)  
+152CS cL E$the observed {+152}Cs fragments are assumed to correspond to the g.s.
+152CS cL J$2+,3+ from 1/2- proton and 5/2- neutron orbitals (theory, 1997Mo25)  
+152CS cL T$limiting value from time-of-flight (1987Ra12)                        
+                                                                                
+152BA    COMMENTS                                                ENSDF    201711
+152BA  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+152BA C  TITL$NUCLEAR DATA SHEETS FOR 152BA                                     
+152BA c  AUTH$FILIP G KONDEV                                                    
+152BA c  INST$Nuclear Engineering Division                                      
+152BA#c       Argonne National Laboratory                                       
+152BA#c       9700 South Cass Avenue                                            
+152BA#c       Argonne, Illinois 60439, USA                                      
+152BA c  ABST$Information about the nuclear structure properties of the         
+152BA2c  {+152}Ba nuclide is presented                                          
+152BA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+152BA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+152BA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+152BA C  CIT$ENSDF                                                              
+                                                                                
+152BA    ADOPTED LEVELS                                          ENSDF    201711
 152BA  H TYP=FUL$AUT=M. J. MARTIN$CIT=NDS 114, 1497 (2013)$CUT=31-Aug-2013$     
-152BA  Q  7440     SY 4770   SY 14530  SY              2012WA38                 
-152BA CQ $THE SYSTEMATICS UNCERTAINTIES IN Q-, SN, AND SP ARE 500, 500,         
-152BA2CQ AND 570, RESPECTIVELY                                                  
-152BA c  Dataset prepared by B. Singh, McMaster, August, 2010, with updates     
-152BA2c  to the Q values made by the present evaluator                          
+152BA  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+152BA  Q 7443      SY 4774   SY 14527  SY -5517   SY   2012WA38                 
+152BA cQ $|DQ(|b{+-})=499, |DS(n)=499, |DS(p)=566, |DQ(|a)=466                  
+152BA cQ $S(2n)=7983 {I499}, Q(|b{+-}n)=3563 {I446}                             
+152BA2cQ (2012Wa38, syst)                                                       
 152BA c  2010Oh02: {+152}Ba nuclide identified in Be({+238}U,F) and             
 152BA2c  Pb({+238}U,F) reactions with a {+238}U{+86+} beam energy of            
 152BA3c  345 MeV/nucleon produced by the cascade operation of the RBIF          
 152BA4c  accelerator complex of the linear accelerator RILAC and four           
-152BA5c  cyclotrons RRC, fRC, IRC and SRC. Identification of {+152}Ba nuclei    
-152BA6c  was made on the basis of magnetic rigidity, time-of-flight, and        
+152BA5c  cyclotrons RRC, fRC, IRC and SRC at RIKEN. Identification of {+152}Ba  
+152BA6c  nuclei was made on the basis of magnetic rigidity, time-of-flight, and 
 152BA7c  energy loss of the fragments, using the BigRIPS fragment separator.    
-152BA8c  Experiments were performed at the RIKEN facility                       
-152BA c  Based on A/Q spectrum and Z versus A/Q plot, 17 counts were assigned to
-152BA2c  {+152}Ba isotope. (Q=charge state)                                     
-152BA c  Structure calculations:                                                
-152BA c  1984Sa16: calculated g factor of 2+ state                              
-152BA c  1985He14: calculated |m, low-lying collective quadrupole               
-152BA2c  excitations.                                                           
-152BA c  1985Ca29: analyzed N(p)N(n) systematics                                
-152BA c  1986Au02: calculated two-neutron separation energies                   
-152BA c  1988So08: calculated equilibrium deformation, energy.                  
-152BA  L 0              0+              406 NS   GT                             
-152BA2 L %B-=100$ %B-N=?                                                        
-152BA cL T$ lower limit from time-of-flight in 2010Oh02, as communicated in a   
-152BA2cL private communication to B. Singh by T. Kubo (2010KuZV, July 14, 2010).
-152BA3cL The actual half-life is expected to be much longer as suggested by the 
-152BA4cL calculated values of 207 ms (1997Mo25) and 205 ms (2002Pf04)           
-152BA cL $Probability of misidentification of {+152}Ba isotope<0.001% (2010Oh02)
-152BA cL $Calculated %|b{+-}n=5.7 (1997Mo25); 4.5 (2002Pf04)                    
+152BA8c  17 counts were assigned to the {+152}Ba isotope.                       
+152BA c  2017Wu04: The {+152}Ba nuclide was produced at the RIBF-RIKEN facility 
+152BA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+152BA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+152BA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+152BA5c  pnA, respectively. The identification of the nuclide of interest was   
+152BA6c  made in the BigRIPS separator by determining the atomic number and the 
+152BA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+152BA8c  reaction products were transported through the ZeroDegree Spectrometer 
+152BA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+152BAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+152BAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+152BAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+152BAdc  Deduced: T{-1/2}.                                                      
+152BA  L 0.0          0+               0.139 S   8                              
+152BA2 L %B-=100 $ %B-N=?                                                       
+152BA cL %B-$Only |b{+-} decay mode is expected.                                
+152BA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+152BA2cL using the least-squares and maximum-likelihood methods. The data       
+152BA3cL analysis included contributions from the parent, daughter and          
+152BA4cL ground-daughter decays, as well as a constant background.              
                                                                                 
-152LA    ADOPTED LEVELS                                          13NDS    201311
-152LA  H TYP=FUL$AUT=M. J. MARTIN$CIT=NDS 114, 1497 (2013)$CUT=31-Aug-2013$     
-152LA  Q  9520     SY 3880   SY 11430  SY              2012WA38                 
-152LA CQ $THE UNCERTAINTIES IN THE SYSTEMATICS Q VALUES ARE 360, 360, AND       
-152LA2CQ 420 KEV FOR Q-, SN, AND SP, RESPECTIVELY                               
-152LA cL           Assignment: Pb({+238}U,F) E=750A MeV; identification by      
-152LA2cL |b|r-|DE - tof techniques (1994Be24)                                   
-152LA  L   0.0                          150 NS   GT                            S
-152LA2 L %B-=100                                                                
-152LA cL T         flight time of fission fragment (1994Be24). Nuclei were      
-152LA2cL detected in an in-beam experiment, therefore T{-1/2} must be greater   
-152LA3cL than the flight time to the detector                                   
+152LA    COMMENTS                                                ENSDF    201704
+152LA  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+152LA C  TITL$NUCLEAR DATA SHEETS FOR 152LA                                     
+152LA c  AUTH$FILIP G. KONDEV                                                   
+152LA c  INST$Nuclear Engineering Division                                      
+152LA#c       Argonne National Laboratory                                       
+152LA#c       9700 South Cass Avenue                                            
+152LA#c       Argonne, Illinois 60439, USA                                      
+152LA c  ABST$Information about the nuclear structure properties of the         
+152LA2c  {+152}La nuclide is presented                                          
+152LA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+152LA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+152LA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+152LA C  CIT$ENSDF                                                              
+                                                                                
+152LA    ADOPTED LEVELS                                                   201704
+152LA  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+152LA  Q 9520      SY 3880   SY 11434  SY -4665  SY    2012WA38                 
+152LA cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=357, |DS(n)=357,      
+152LA2cQ |DS(p)=422, |DS(|a)=648                                                
+152LA cQ $S(2n)=9296 {I357}, S(2p)=25299 {I422}, Q(|b{+-}n)=3617 {I299}         
+152LA2cQ from 2012Wa38.                                                         
+152LA c  2017Wu04: The {+152}La nuclide was produced at the RIBF-RIKEN facility 
+152LA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+152LA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+152LA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+152LA5c  pnA, respectively. The identification of the nuclide of interest was   
+152LA6c  made in the BigRIPS separator by determining the atomic number and the 
+152LA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+152LA8c  reaction products were transported through the ZeroDegree Spectrometer 
+152LA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+152LAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+152LAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+152LAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+152LAdc  Deduced: T{-1/2}.                                                      
+152LA c  1994Be24: Identification in reaction: Pb({+238}U,F) at                 
+152LA2c  750 MeV/nucleon. Residual products Fragment Recoil Separator           
+152LA3c  (FRS), time-of-flight technique.                                       
+152LA  L 0.0          (2-)             0.298 S   +6-23                          
+152LA2 L %B-=100 $ %B-N=?                                                       
+152LA cL %B-$Only |b{+-} decay mode is expected.                                
+152LA cL J$From systematics of known quasiparticle states in neighboring nuclei 
+152LA2cL and the proposed configuration (by the evaluator). The assignment is   
+152LA3cL tentative.                                                             
+152LA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+152LA2cL using the least-squares and maximum-likelihood methods. The data       
+152LA3cL analysis included contributions from the parent, daughter and          
+152LA4cL grand-daughter decays, as well as a constant background.               
+152LA cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+152LA2cL |p1/2[420] and |n3/2[521] Nilsson orbitals are expected near the proton
+152LA3cL and neutron Fermi surfaces, respectively. Thus, using the              
+152LA4cL Gallagher-Moszkowski rule, one may expect the K|p=2-,                  
+152LA5cL |p1/2[420]~#|n3/2[521] configuration for the ground state.             
+152LA3cL The assignment is tentative and it is made by the evaluator.           
                                                                                 
 152CE    ADOPTED LEVELS, GAMMAS                                  13NDS    201311
 152CE  H TYP=FUL$AUT=M. J. MARTIN$CIT=NDS 114, 1497 (2013)$CUT=31-Aug-2013$     
@@ -6747,15 +6844,6 @@
 152SM  L 1616                                                     1.3           
 152SM  L 1773                                                     8.9           
                                                                                 
-152SM    152SM(G,G'):MOSSBAUER                                   13NDS    201311
-152SM  H TYP=FUL$AUT=M. J. MARTIN$CIT=NDS 114, 1497 (2013)$CUT=31-Aug-2013$     
-152SM CL E$ROUNDED-OFF VALUES FROM ADOPTED LEVELS                               
-152SM CL J$FROM ADOPTED LEVELS                                                  
-152SM  L   0.0        0+                                                        
-152SM  L 121.8        2+                                                        
-152SM CL $G=+0.419 25 (1967AT04)                                                
-152SM CL $FOR ISOMER SHIFT DATA SEE 1967AT04, 1967ST12, 1967YE01                
-                                                                                
 152SM    152SM(G,G')                   1993ZI05,1965ME04         13NDS    201311
 152SM  H TYP=FUL$AUT=M. J. MARTIN$CIT=NDS 114, 1497 (2013)$CUT=31-Aug-2013$     
 152SM C  1993ZI05  SOURCE=BREMSSTRAHLUNG                                        
@@ -6828,6 +6916,15 @@
 152SM CL $WIDTHG1/WIDTHG0=0.00 25                                               
 152SM  L 3882.6     5                  0.018 EV  3              16.2      23    
 152SM CL $WIDTHG1/WIDTHG0=0.00 20                                               
+                                                                                
+152SM    152SM(G,G'):MOSSBAUER                                   13NDS    201311
+152SM  H TYP=FUL$AUT=M. J. MARTIN$CIT=NDS 114, 1497 (2013)$CUT=31-Aug-2013$     
+152SM CL E$ROUNDED-OFF VALUES FROM ADOPTED LEVELS                               
+152SM CL J$FROM ADOPTED LEVELS                                                  
+152SM  L   0.0        0+                                                        
+152SM  L 121.8        2+                                                        
+152SM CL $G=+0.419 25 (1967AT04)                                                
+152SM CL $FOR ISOMER SHIFT DATA SEE 1967AT04, 1967ST12, 1967YE01                
                                                                                 
 152SM    152SM(X,X')                                             13NDS    201311
 152SM  H TYP=FUL$AUT=M. J. MARTIN$CIT=NDS 114, 1497 (2013)$CUT=31-Aug-2013$     

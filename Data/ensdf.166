@@ -443,6 +443,46 @@
 166    R 2007HA57 JOUR ZAANE 34 363                                             
 166    R 2007MC08 JOUR PRVCA 76 064307                                          
                                                                                 
+166SM    COMMENTS                                                ENSDF    201704
+166SM  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+166SM C  TITL$NUCLEAR DATA SHEETS FOR 166SM                                     
+166SM c  AUTH$FILIP G KONDEV                                                    
+166SM c  INST$Nuclear Engineering Division                                      
+166SM#c       Argonne National Laboratory                                       
+166SM#c       9700 South Cass Avenue                                            
+166SM#c       Argonne, Illinois 60439, USA                                      
+166SM c  ABST$Information about the nuclear structure properties of the         
+166SM2c  {+166}Sm nuclide is presented                                          
+166SM c  CUT$Literature available up to February 20, 2017 has been consulted.   
+166SM c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+166SM1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+166SM C  CIT$ENSDF                                                              
+                                                                                
+166SM    ADOPTED LEVELS                                          ENSDF    201704
+166SM  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+166SM  Q 5960      CA 4870   CA 12900  CA -3610  CA    1997MO25                 
+166SM cQ $S(2n)=8470 {I500}, S(2p)=24410 (1997Mo25, theory).                    
+166SM c  2017Wu04: The {+166}Sm nuclide was produced at the RIBF-RIKEN facility 
+166SM2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+166SM3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+166SM4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+166SM5c  pnA, respectively. The identification of the nuclide of interest was   
+166SM6c  made in the BigRIPS separator by determining the atomic number and the 
+166SM7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+166SM8c  reaction products were transported through the ZeroDegree Spectrometer 
+166SM9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+166SMac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+166SMbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+166SMcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+166SMdc  Deduced: T{-1/2}.                                                      
+166SM  L 0.0          0+               0.80 S    63                             
+166SM2 L %B-=100 $ %B-N=?                                                       
+166SM cL %B-$Only |b{+-} decay mode is expected.                                
+166SM cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+166SM2cL using the least-squares and maximum-likelihood methods. The data       
+166SM3cL analysis included contributions from the parent, daughter and          
+166SM4cL grand-daughter decays, as well as a constant background.               
+                                                                                
 166EU    COMMENTS                                                ENSDF    201412
 166EU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=23-DEC-2014$                    
 166EU C  TITL$NUCLEAR DATA SHEETS FOR 166EU                                     
@@ -2968,6 +3008,398 @@
 166HOS G NC=0.000880 13$OC=0.0001210 17$PC=5.50E-6 8                            
 166HO CG           CEK=7 2 and CEL=1.1 2 (1965BJ03).                            
                                                                                 
+166HO    165HO(N,G) E=THERMAL: GG COIN 2000PR10                  08NDS    200804
+166HO  H TYP=FUL$AUT=CORAL M. BAGLIN$CIT=NDS 109, 1103 (2008)$CUT=1-Mar-2008$   
+166HO C  2000PR10: 99% PURITY HO METAL TARGET; Ge X-RAY DETECTOR (EG=20-465     
+166HO2C  KEV; FWHM=1.39 KEV AT 305 KEV), Ge DETECTOR (EG=59-760 KEV;            
+166HO3C  FWHM=2.2 KEV AT 305 KEV); MEASURED GG COIN (RESOLVING TIME ~23 NS).    
+166HO4C  ADDITIONAL DATA TAKEN USING 99.99% PURITY HO OXIDE TARGET; HPGE AND    
+166HO5C  GELI DETECTORS (FWHM=1.9 AND 2.1 KEV, RESPECTIVELY, AT 1332 KEV).      
+166HO6C  MEASURED EG, IG, GG COIN; DEDUCED INTERMEDIATE LEVEL ENERGIES FOR      
+166HO7C  TWO-PHOTON CASCADES TO KNOWN LOW-ENERGY STATES. SEE ALSO 2000PR03      
+166HO8C  (INCLUDED IN 165HO(N,G) E=THERMAL DATA SET) WHICH INCORPORATES SOME    
+166HO9C  OF THESE RESULTS.                                                      
+166HO CG E         FROM 2000PR10.  UNCERTAINTIES MAY HAVE BEEN UNDERESTIMATED.  
+166HO2CG THIS EXPERIMENT REPORTS A NUMBER OF TRANSITIONS WITH ENERGIES ABOVE    
+166HO3CG THE 735 KEV CUTOFF FOR DATA FROM THE (N,G) E=THERMAL STUDY IN          
+166HO4CG 1967MO05 BUT IS INSENSITIVE TO THE LOWEST ENERGY TRANSITIONS.          
+166HO CG RI        TWO-PHOTON CASCADE INTENSITY NORMALIZED SO THAT AREA         
+166HO2CG OF EXPERIMENTAL SPECTRUM IN RANGE 520<EG<(CASCADE ENERGY-520) WAS 100% 
+166HO3CG FOR EACH FINAL LEVEL.                                                  
+166HO CL E         AUTHORS' VALUES.  THESE HAVE LARGER AND MORE REALISTIC       
+166HO2CL UNCERTAINTIES THAN WOULD BE OBTAINED FROM A LEAST-SQUARES FIT TO       
+166HO3CL THE EG DATA. FURTHER, IT SHOULD BE NOTED THAT THE LEVEL DENSITY IS     
+166HO4CL HIGH AND, IN SOME CASES, THE ENERGIES ARE FOR MULTIPLETS.              
+166HO CL E(A)      DIFFERENCE BETWEEN CAPTURE STATE ENERGY AND ENERGY OF        
+166HO2CL GATE FOR SUM SPECTRUM (2000PR10).                                      
+166HO PN                                                                     6  
+166HO  G  405.4     6 0.4     1                                                 
+166HO CG           E(PRIMARY G)=5656.5, E(SUM GATE)=6062.2.                     
+166HO  G  426.8    12 0.2     1                                                 
+166HO CG           E(PRIMARY G)=5635.1, E(SUM GATE)=6062.2.                     
+166HO  G  427.4     9 0.8     2                                                 
+166HO CG           E(PRIMARY G)=5443.4, E(SUM GATE)=5870.6.                     
+166HO  G  516.4     7 0.5     2                                                 
+166HO CG           E(PRIMARY G)=5534.6, E(SUM GATE)=6051.0.                     
+166HO  G  593.1     9 0.5     2                                                 
+166HO CG           E(PRIMARY G)=5173.5, E(SUM GATE)=5766.6.                     
+166HO  G  596.1     9 0.7     3                                                 
+166HO CG           E(PRIMARY G)=5564.0, E(SUM GATE)=6160.1.                     
+166HO  G  773.8    11 0.5     2                                                 
+166HO CG           E(PRIMARY G)=5386.3, E(SUM GATE)=6160.1.                     
+166HO  G  892.6     6 0.5     1                                                 
+166HO CG           E(PRIMARY G)=5179.0, E(SUM GATE)=6071.6.                     
+166HO  G  945.4    13 0.5     2                                                 
+166HO CG           E(PRIMARY G)=5116.3, E(SUM GATE)=6062.2.                     
+166HO  L 0.0                                                                    
+166HO  L 54.3                                                               A   
+166HO  L 82.6                                                               A   
+166HO  L 171.1                                                              A   
+166HO  L 180.5                                                              A   
+166HO  L 191.7                                                              A   
+166HO  L 262.1                                                              A   
+166HO CL E         PROBABLY INCLUDES BOTH THE 260.7 AND 263.8 LEVELS FROM       
+166HO2CL Adopted Levels.                                                        
+166HO  L 329.9                                                              A   
+166HO  L 348.4                                                              A   
+166HO  L 372.1                                                              A   
+166HO CL E         PROBABLY INCLUDES BOTH THE 372.0 AND 373.1 LEVELS FROM       
+166HO2CL Adopted Levels.                                                        
+166HO  L 416.2                                                              A   
+166HO  L 430.1     10                                                           
+166HO  G  238.5     1 5.7     4                                                 
+166HO  L 453.9                                                              A   
+166HO  L 475.9     12                                                           
+166HO  G  304.2     2 2.5     3                                                 
+166HO  G  420.5     6 0.5     2                                                 
+166HO  L 483.1     11                                                           
+166HO  G  220.1     4 0.6     1                                                 
+166HO CG           PROBABLY FEEDS THE ADOPTED 260.7 LEVEL.                      
+166HO  G  303.6     5 0.5     1                                                 
+166HO CG           PLACEMENT NOT ADOPTED; EG EXPECTED FROM Adopted Gammas IS    
+166HO2CG 301.4 AND I(304G)/I(220G) HERE IS MUCH TOO LARGE FOR THE 304G TO HAVE  
+166HO3CG BEEN UNNOTICED IN INDEPENDENT STUDIES IN WHICH THE 220G WAS OBSERVED.  
+166HO  L 522.2                                                              A   
+166HO  L 543.0      8                                                           
+166HO  G  488.0     8 0.3     1                                                 
+166HO  G  543.8     7 5.0    15                                                 
+166HO CG           I(544G)/I(488G) IS MUCH LARGER THAN THE ADOPTED VALUE;       
+166HO2CG POSSIBLY, G IS CONTAMINATED IN THIS EXPERIMENT.                        
+166HO  L 548.1                                                              A   
+166HO  L 563.7     11                                                           
+166HO  G  391.6     6 0.4     1                                                 
+166HO  G  508.2     8 0.3     1                                                 
+166HO  L 593.8      7                                                           
+166HO CL           CORRESPONDS TO ADOPTED LEVEL AT 592.5.                       
+166HO  G  401.5     2 2.3     3                                                 
+166HO  G  414.0     6 0.3     1                                                 
+166HO  L 599.5     18                                                           
+166HO CL E         PROBABLY A MULTIPLET INCLUDING THE ADOPTED 597.0 AND 598.4   
+166HO2CL LEVELS.                                                                
+166HO  G  408.8     6 0.5     1                                                 
+166HO CG           BASED ON EG, THIS G PROBABLY DEEXCITES THE 598.4 LEVEL.      
+166HO  G  421.7     7 0.3     1                                                 
+166HO CG           NOT INCLUDED IN Adopted Gammas; THIS EG IMPLIES A LEVEL      
+166HO2CG AT 602.2 7 FOR WHICH NO OTHER EVIDENCE EXISTS.                         
+166HO  G  426.7     4 0.9     2                                                 
+166HO CG           PROBABLY A DOUBLET DEEXCITING BOTH THE ADOPTED 597.0 AND     
+166HO2CG 598.4 LEVELS.  FROM ADOPTED BRANCHING FOR 597 LEVEL,                   
+166HO3CG I(427G)/I(543G)=0.069 27, SO I(427G) FROM 597 LEVEL EXPECTED HERE IS   
+166HO4CG 0.07 3 LEAVING 0.83 20 TO DEEXCITE THE 598 LEVEL.                      
+166HO  G  543.1     4 1.0     2                                                 
+166HO CG           DEEXCITES 597.0 LEVEL.                                       
+166HO  L 651.5      8                                                           
+166HO  G  304.1     7 0.8     3                                                 
+166HO  G  596.6     6 0.4     1                                                 
+166HO  L 658.1      5                                                           
+166HO  G  328.2     4 1.3     3                                                 
+166HO  G  477.5     7 0.3     1                                                 
+166HO  L 668.3      4                                                           
+166HO  G  488.0     5 0.3     1                                                 
+166HO  G  613.9     6 0.5     1                                                 
+166HO CG RI        I(614G)/I(488G) IS MUCH LARGER THAN THE ADOPTED VALUE;       
+166HO2CG POSSIBLY, G IS CONTAMINATED IN THIS REACTION.                          
+166HO  L 683.3     15                                                           
+166HO  G  491.6     7 0.3     1                                                 
+166HO CG           NOT INCLUDED IN Adopted Gammas; NONE OF THE PREVIOUSLY-KNOWN 
+166HO2CG TRANSITIONS FROM THE 683 LEVEL IS PRESENT AND NO G WITH THIS ENERGY    
+166HO3CG HAS BEEN REPORTED IN (N,G) E=THERMAL.                                  
+166HO  L 701.5     16                                                           
+166HO CL           NO OTHER EVIDENCE EXISTS FOR THIS LEVEL.                     
+166HO  G  369.6    10 0.7     3                                                 
+166HO  L 717.0     14                                                           
+166HO  G  456.0     1 7.1     5                                                 
+166HO CG           PROBABLY DEEXCITES THE 719.7 LEVEL INSTEAD;                  
+166HO2CG SEE COMMENT ON 347.6G.  EG WOULD BE CONSISTENT WITH PLACEMENT          
+166HO3CG FROM THE 719.7 LEVEL IF G FED THE 263.8 (RATHER THAN THE 260.7)        
+166HO4CG MEMBER OF THE 262.1-KEV DOUBLET.                                       
+166HO  G  715.4     8 3.3    11                                                 
+166HO  L 719.7     15                                                           
+166HO  G  347.6     7 0.8     3                                                 
+166HO CG           BASED ON Adopted Gammas, THIS G SHOULD BE ACCOMPANIED BY     
+166HO2CG AN ORDER OF MAGNITUDE STRONGER 455.6G; PROBABLY THE 456.0G WHICH       
+166HO3CG 2000PR10 PLACE FROM A SEPARATE 717.0 LEVEL.                            
+166HO  L 757.7     10                                                           
+166HO  G  426.9     9 0.6     3                                                 
+166HO CG           OMITTED FROM Adopted Gammas; IG TOO LARGE FOR TRANSITION TO  
+166HO2CG HAVE BEEN MISSED IN (N,G) E=THERMAL.                                   
+166HO  G  578.1     7 0.3     1                                                 
+166HO  L 770.3      7                                                           
+166HO  G  421.9     5 1.9     5                                                 
+166HO  L 790.1     20                                                           
+166HO CL           POSSIBLY A DOUBLET INCLUDING THE ADOPTED 788.6 AND 792.8     
+166HO2CL LEVELS, BUT G DEEXCITATION PATTERN AGREES WITH NEITHER.                
+166HO  G  598.4     7 0.2     1                                                 
+166HO CG           MAY DEEXCITE THE ADOPTED 788.6 OR 792.8 LEVEL BUT OTHER      
+166HO2CG GAMMAS KNOWN TO DEEXCITE THOSE LEVELS ARE NOT SEEN HERE AND NO G WITH  
+166HO3CG THE APPROPRIATE ENERGY FOR THE FORMER PLACEMENT HAS BEEN REPORTED      
+166HO4CG IN (N,G) E=THERMAL. NOT INCLUDED IN Adopted Gammas.                    
+166HO  L 807.9     20                                                           
+166HO CL           PROBABLE MULTIPLET; LEVELS ADOPTED AT 806.6 AND 807.0 COULD  
+166HO2CL NOT HAVE BEEN RESOLVED IN THIS EXPERIMENT AND THE PRESENCE OF AN       
+166HO3CL ADDITIONAL LEVEL CANNOT BE RULED OUT. A 434G AND 546G ARE KNOWN TO     
+166HO4CL DEEXCITE THE ADOPTED 806.6 LEVEL BUT THEY SHOULD BE ACCOMPANIED BY     
+166HO5CL MUCH STRONGER 336G AND 325G, NEITHER OF WHICH IS SEEN HERE.            
+166HO  G  394.8     9 0.9     3                                                 
+166HO CG           PRESUMABLY DOES NOT DEEXCITE EITHER 806.6 OR 807.0 LEVEL     
+166HO2CG BECAUSE THOSE PLACEMENTS WOULD IMPLY E3 OR M4 MULTIPOLARITY,           
+166HO3CG RESPECTIVELY.  OMITTED FROM Adopted Levels, Gammas.                    
+166HO  G  433.1     8 0.3     1                                                 
+166HO CG           DEEXCITES THE 806.6 LEVEL IN Adopted Levels, Gammas.         
+166HO  G  479.2    11 0.4     2                                                 
+166HO CG           NOT INCLUDED IN Adopted Gammas BECAUSE IT IS UNCLEAR WHICH   
+166HO2CG MEMBER OF A PROBABLE 808 MULTIPLET IS DEEXCITED BY IT.                 
+166HO  G  545.4     5 0.5     1                                                 
+166HO CG           DEEXCITES THE 806.6 LEVEL IN Adopted Levels, Gammas.         
+166HO  G  628.4     8 0.4     2                                                 
+166HO CG           NOT INCLUDED IN Adopted Gammas BECAUSE IT IS UNCLEAR WHICH   
+166HO2CG MEMBER OF A PROBABLE 808 MULTIPLET IS DEEXCITED BY IT.                 
+166HO  L 816.0     10                                                           
+166HO  G  401.4     2 5.8     8                                                 
+166HO CG           NOT INCLUDED IN Adopted Gammas; EG FITS PLACEMENT POORLY     
+166HO2CG AND G IS FAR TOO STRONG TO HAVE BEEN OVERLOOKED IN OTHER STUDIES THAT  
+166HO3CG EXCITED THIS LEVEL.                                                    
+166HO  G  442.6     2 2.4     3                                                 
+166HO  G  485.2    10 0.5     2                                                 
+166HO CG           THE EVALUATOR CONSIDERS THIS PLACEMENT TO BE DOUBTFUL SINCE  
+166HO2CG IT IMPLIES M2 MULTIPOLARITY FOR THE 485G.                              
+166HO  G  554.4     3 1.1     2                                                 
+166HO  G  624.1     1 3.9     3                                                 
+166HO  L 826.1     16                                                           
+166HO  G  456.3     4 0.7     2                                                 
+166HO CG           PLACEMENT NOT ADOPTED.  THIS EG WOULD IMPLY THE EXISTENCE    
+166HO2CG OF A LEVEL FOR WHICH NO OTHER EVIDENCE EXISTS.                         
+166HO  G  563.3     5 0.5     1                                                 
+166HO  G  633.2     3 1.4     2                                                 
+166HO  L 832.7     12                                                           
+166HO  G  652.2     7 0.3     1                                                 
+166HO  L 873.6     24                                                           
+166HO CL           PROBABLE MULTIPLET INCLUDING LEVELS ADOPTED AT 870 AND 876.  
+166HO  G  546.6     5 1.5     3                                                 
+166HO  G  614.6     9 0.3     1                                                 
+166HO  G  692.4     7 0.3     1                                                 
+166HO  G  790.0    10 0.5     2                                                 
+166HO  G  816.1     4 1.0     2                                                 
+166HO CG           BASED ON EG, THIS G PROBABLY DEEXCITES THE 870 LEVEL IN      
+166HO2CG Adopted Levels.                                                        
+166HO  L 881.9      9                                                           
+166HO CL           POSSIBLE MULTIPLET INCLUDING LEVELS ADOPTED AT 881.2         
+166HO2CL AND 884.0.                                                             
+166HO  G  511.5     2 4.9     5                                                 
+166HO CG           NOT INCLUDED IN Adopted Levels, Gammas.  PRESUMABLY DOES NOT 
+166HO2CG DEEXCITE 882 LEVEL BECAUSE IT IS TOO STRONG TO HAVE BEEN OVERLOOKED IN 
+166HO3CG OTHER STUDIES; ALSO EG FITS PLACEMENT POORLY.                          
+166HO  G  620.5     7 0.6     2                                                 
+166HO  G  690.2     4 0.7     2                                                 
+166HO  G  708.9     6 0.5     1                                                 
+166HO CG           DEEXCITES LEVEL ADOPTED AT 881.1 KEV.                        
+166HO  G  798.3     4 3.0     5                                                 
+166HO CG           DEEXCITES LEVEL ADOPTED AT 881.1 KEV.                        
+166HO  G  826.9     3 2.0     3                                                 
+166HO CG           DEEXCITES LEVEL ADOPTED AT 881.1 KEV.                        
+166HO  L 891        5                                                           
+166HO CL           POSSIBLE MULTIPLET INCLUDING LEVELS ADOPTED AT 885.4, 891.1  
+166HO2CL AND 895.5.                                                             
+166HO  G  519.0     7 0.6     2                                                 
+166HO  G  545.7     6 1.2     4                                                 
+166HO CG           EG SUGGESTS THAT THIS G DEEXCITES THE LEVEL ADOPTED AT 895.5.
+166HO2CG NOT INCLUDED IN Adopted Gammas.                                        
+166HO  G  626.6     7 0.4     1                                                 
+166HO  G  708.6    10 0.3     2                                                 
+166HOL G FL=191.7                                                               
+166HO CG           NOT INCLUDED IN Adopted Gammas; EG IMPLIES THAT IT DEEXCITES 
+166HO2CG A LEVEL AT ~899.5 KEV.                                                 
+166HO  G  714.7     5 0.7     2                                                 
+166HOL G FL=171.1                                                               
+166HO CG           EG SUGGESTS THAT THIS G DEEXCITES THE LEVEL ADOPTED AT 885.4.
+166HO2CG NOT INCLUDED IN Adopted Gammas.                                        
+166HO  G  716.1     7 0.8     3                                                 
+166HOL G FL=180.5                                                               
+166HO CG           EG SUGGESTS THAT THIS G DEEXCITES THE LEVEL ADOPTED AT 895.5.
+166HO2CG NOT INCLUDED IN Adopted Gammas.                                        
+166HO  G  805.4     7 1.2     3                                                 
+166HO CG           NOT INCLUDED IN Adopted Gammas; E3 MULTIPOLARITY REQUIRED IF 
+166HO2CG G DEEXCITES THE 891.1 LEVEL.                                           
+166HO  L 906.0     10                                                           
+166HO  G  714.3     1 5.1     4                                                 
+166HO  G  734.4     3 0.6     1                                                 
+166HO  L 947.1      6                                                           
+166HO  G  774.9     3 0.7     1                                                 
+166HO  G  892.4     5 1.3     3                                                 
+166HO  L 953.4     11                                                           
+166HO  G  624.6    10 0.5     2                                                 
+166HO  G  898.1    10 0.4     2                                                 
+166HO  L 960.3     18                                                           
+166HO  G  542.6     7 1.0     3                                                 
+166HO  G  700.1     3 1.3     2                                                 
+166HO  G  875.9     9 0.5     2                                                 
+166HO CG           FROM Adopted Levels, Gammas, THIS PLACEMENT IMPLIES M2       
+166HO2CG MULTIPOLARITY AND THAT SEEMS UNLIKELY.                                 
+166HO  L 973.7     18                                                           
+166HO  G  889.2    10 0.5     2                                                 
+166HO  G  921.1     9 0.3     1                                                 
+166HO  L 996.8      8                                                           
+166HO  G  543.5    10 1.2     5                                                 
+166HO  G  624.2     5 0.6     2                                                 
+166HO  G  736.1    10 0.2     1                                                 
+166HO  L 1004.9     9                                                           
+166HO  G  634.3     8 0.3     1                                                 
+166HO  G  824.3     4 1.0     2                                                 
+166HO  G  950.0     4 2.5     5                                                 
+166HO  L 1010.5     6                                                           
+166HO  G  679.9     8 0.7     2                                                 
+166HO  G  838.1     6 0.5     1                                                 
+166HO  L 1014.6    19                                                           
+166HO  G  596.1     7 1.0     3                                                 
+166HO  G  825.1    11 0.2     1                                                 
+166HO  G  961.2     5 1.6     3                                                 
+166HO  L 1023.3     7                                                           
+166HO  G  831.3    12 0.2     1                                                 
+166HO  G  842.8     7 0.3     1                                                 
+166HO  L 1028.7    15                                                           
+166HO  G  552.6     9 0.6     3                                                 
+166HO  L 1029.0    12                                                           
+166HO  G  599.5     4 2.6     5                                                 
+166HO  G  765.3    11 0.4     2                                                 
+166HO  L 1030.2     7                                                           
+166HO  G  614.5     4 1.9     4                                                 
+166HO CG           NOT INCLUDED IN Adopted Levels, Gammas BECAUSE PROPOSED      
+166HO2CG PLACEMENT IMPLIES M2 MULTIPOLARITY.                                    
+166HO  G  657.5     4 0.9     2                                                 
+166HO CG           NOT INCLUDED IN Adopted Levels, Gammas BECAUSE PROPOSED      
+166HO2CG PLACEMENT IMPLIES E3 MULTIPOLARITY.                                    
+166HO  G  681.1     6 1.1     3                                                 
+166HO  G  700.8     4 1.7     3                                                 
+166HO  G  769.9     4 1.4     3                                                 
+166HO  G  838.9     7 2.2     9                                                 
+166HO  G  849.2     7 0.4     1                                                 
+166HO  G  857.3     4 0.9     2                                                 
+166HO  G  947.7     2 13.5   13                                                 
+166HO CG           NOT INCLUDED IN Adopted Levels, Gammas BECAUSE PROPOSED      
+166HO2CG PLACEMENT IMPLIES E3 MULTIPOLARITY.                                    
+166HO  G  975.4     6 0.8     2                                                 
+166HO CG           NOT INCLUDED IN Adopted Levels, Gammas BECAUSE PROPOSED      
+166HO2CG PLACEMENT IMPLIES M2 MULTIPOLARITY.                                    
+166HO  L 1035.8     6                                                           
+166HO  G  664.3     8 0.4     1                                                 
+166HO  G  952.4     9 1.9     8                                                 
+166HO  G  981.6     9 0.4     2                                                 
+166HO  G  1036.2    8 3.5     3                                                 
+166HO  L 1053.9     7                                                           
+166HO  G  999.6    11 0.3     1                                                 
+166HO  L 1060.8     6                                                           
+166HO  G  689.1     1 5.3     4                                                 
+166HO  G  798.1     9 0.2     1                                                 
+166HO  L 1062.7     9                                                           
+166HO CL           ADOPTED J=2,4 FOR THIS LEVEL BUT THE PROPOSED DEEXCITING     
+166HO2CL GAMMAS FEED LEVELS WITH JPI INCLUDING 5+ AND 4- AND 1-, SO SOME        
+166HO3CL PLACEMENTS ARE PRESUMABLY INCORRECT.                                   
+166HO  G  586.1     2 4.0     5                                                 
+166HO  G  646.1     2 7.3     9                                                 
+166HO  G  716.0     7 1.0     3                                                 
+166HO  G  734.0     7 0.6     2                                                 
+166HO  G  871.8     9 0.2     1                                                 
+166HO  G  881.1     9 0.5     2                                                 
+166HO  G  979.3     7 0.9     3                                                 
+166HO  G  1008.5    4 1.1     2                                                 
+166HO  L 1087.8    10                                                           
+166HO  G  715.6     3 1.0     2                                                 
+166HO  G  826.8     9 0.3     1                                                 
+166HO  G  894.0     9 0.2     1                                                 
+166HO  G  906.9     7 0.4     1                                                 
+166HO  G  916.1     7 0.4     1                                                 
+166HO  G  1034.3    7 0.5     2                                                 
+166HO  L 1099.8    11                                                           
+166HO  G  623.6     8 0.5     2                                                 
+166HO CG           MAY BE MISPLACED; Adopted Levels, Gammas IMPLIES THAT THIS   
+166HO2CG WOULD BE AN E3 TRANSITION.                                             
+166HO  G  753.1    10 0.6     3                                                 
+166HO  G  836.8     8 0.3     1                                                 
+166HO  L 1115.3    12                                                           
+166HO CL           POSSIBLE DOUBLET; LEVELS ARE ADOPTED AT 1114.7 AND 1118.7    
+166HO  G  567.5     5 1.6     5                                                 
+166HO  G  595.9    14 0.8     4                                                 
+166HO CG           TENTATIVELY PLACED FROM A 1118.7 LEVEL IN Adopted Levels,    
+166HO2CG  GAMMAS.                                                               
+166HO  G  661.3     2 14.5   15                                                 
+166HO  G  743.1    10 0.2     1                                                 
+166HO  G  765.9     3 3.2     5                                                 
+166HO  G  853.7     3 2.5     3                                                 
+166HO  G  943.2     9 0.4     1                                                 
+166HO  L 1121.2     7                                                           
+166HO  G  704.4     9 0.8     3                                                 
+166HO  G  791.9    11 0.5     2                                                 
+166HO  G  940.0     6 0.8     2                                                 
+166HO  G  949.2     6 0.6     2                                                 
+166HO  L 1134.3    15                                                           
+166HO CL           THIS MAY BE A DOUBLET; LEVELS ARE ADOPTED AT 1131.0 AND      
+166HO2CL 1135.0.                                                                
+166HO  G  761.5     6 0.4     1                                                 
+166HO  G  873.9     6 0.8     2                                                 
+166HO  G  942.2     7 0.3     1                                                 
+166HO  G  951.4    12 0.4     1                                                 
+166HO  L 1137.9     5                                                           
+166HO  G  957.4     3 1.4     2                                                 
+166HO  L 1143.4    16                                                           
+166HO  G  816.2    10 0.5     2                                                 
+166HO CG           NOT INCLUDED IN Adopted Levels, Gammas; FITS PLACEMENT FROM  
+166HO2CG KNOWN 1141.3 LEVEL VERY POORLY.                                        
+166HO  G  950.3     6 0.4     1                                                 
+166HO  L 1155.5    27                                                           
+166HO  G  683.4     4 1.8     3                                                 
+166HO  G  701.7     9 1.2     5                                                 
+166HO  G  787.1     4 1.4     3                                                 
+166HO  G  806.5     7 0.8     3                                                 
+166HO  G  825.5    11 0.5     2                                                 
+166HO  G  892.1     8 0.4     2                                                 
+166HO  G  959.0     7 0.3     1                                                 
+166HO CG           NOT INCLUDED IN Adopted Levels, Gammas; FITS PLACEMENT VERY  
+166HO2CG POORLY.                                                                
+166HO  G  983.3     6 0.6     2                                                 
+166HO  G  1099.0    5 0.8     2                                                 
+166HO  L 1161.5    10                                                           
+166HO  G  612.7     6 1.5     4                                                 
+166HO  G  732.1     5 1.8     4                                                 
+166HO  G  813.3     6 1.0     3                                                 
+166HO  G  831.3     7 1.1     3                                                 
+166HO  G  898.8     5 1.0     2                                                 
+166HO  G  981.0     7 0.5     1                                                 
+166HO  G  989.6     3 1.5     3                                                 
+166HO  L 1166.2    18                                                           
+166HO CL           POSSIBLE DOUBLET; EG VALUES FOR DEEXCITING TRANSITIONS       
+166HO2CL CONSISTENT WITH LEVELS AT ~1164 AND ~1167 KEV.                         
+166HO  G  689.1     5 1.4     3                                                 
+166HO CG           NOT INCLUDED IN Adopted Levels, Gammas; FITS PLACEMENT FROM  
+166HO2CG KNOWN 1168.4 LEVEL VERY POORLY.                                        
+166HO  G  713.6     6 2.4     6                                                 
+166HO  G  791.8     7 0.8     2                                                 
+166HO CG           NOT INCLUDED IN Adopted Levels, Gammas; FITS PLACEMENT FROM  
+166HO2CG KNOWN 1168.4 LEVEL VERY POORLY.                                        
+166HO  G  976.9     7 0.4     1                                                 
+166HO  L 1189.9    11                                                           
+166HO  G  712.6     7 0.5     2                                                 
+166HO  G  928.7     5 0.8     2                                                 
+                                                                                
 166HO    165HO(N,G) E=THERMAL          1967MO05,1984KE15,2000PR0308NDS    200804
 166HO  H TYP=FUL$AUT=CORAL M. BAGLIN$CIT=NDS 109, 1103 (2008)$CUT=1-Mar-2008$   
 166HO C  Other measurements: 1958SK59, 1959DR75, 1959JO33, 1960AL27, 1961ES02,  
@@ -4772,398 +5204,6 @@
 166HO  G 6072.46   4 0.063   3                                                  
 166HO CG           OTHER: EG=6072.7 4, IG=0.047 13 ('Budapest data', 2007CHZX). 
 166HO  G 6189.33   190.006   1                                                  
-                                                                                
-166HO    165HO(N,G) E=THERMAL: GG COIN 2000PR10                  08NDS    200804
-166HO  H TYP=FUL$AUT=CORAL M. BAGLIN$CIT=NDS 109, 1103 (2008)$CUT=1-Mar-2008$   
-166HO C  2000PR10: 99% PURITY HO METAL TARGET; Ge X-RAY DETECTOR (EG=20-465     
-166HO2C  KEV; FWHM=1.39 KEV AT 305 KEV), Ge DETECTOR (EG=59-760 KEV;            
-166HO3C  FWHM=2.2 KEV AT 305 KEV); MEASURED GG COIN (RESOLVING TIME ~23 NS).    
-166HO4C  ADDITIONAL DATA TAKEN USING 99.99% PURITY HO OXIDE TARGET; HPGE AND    
-166HO5C  GELI DETECTORS (FWHM=1.9 AND 2.1 KEV, RESPECTIVELY, AT 1332 KEV).      
-166HO6C  MEASURED EG, IG, GG COIN; DEDUCED INTERMEDIATE LEVEL ENERGIES FOR      
-166HO7C  TWO-PHOTON CASCADES TO KNOWN LOW-ENERGY STATES. SEE ALSO 2000PR03      
-166HO8C  (INCLUDED IN 165HO(N,G) E=THERMAL DATA SET) WHICH INCORPORATES SOME    
-166HO9C  OF THESE RESULTS.                                                      
-166HO CG E         FROM 2000PR10.  UNCERTAINTIES MAY HAVE BEEN UNDERESTIMATED.  
-166HO2CG THIS EXPERIMENT REPORTS A NUMBER OF TRANSITIONS WITH ENERGIES ABOVE    
-166HO3CG THE 735 KEV CUTOFF FOR DATA FROM THE (N,G) E=THERMAL STUDY IN          
-166HO4CG 1967MO05 BUT IS INSENSITIVE TO THE LOWEST ENERGY TRANSITIONS.          
-166HO CG RI        TWO-PHOTON CASCADE INTENSITY NORMALIZED SO THAT AREA         
-166HO2CG OF EXPERIMENTAL SPECTRUM IN RANGE 520<EG<(CASCADE ENERGY-520) WAS 100% 
-166HO3CG FOR EACH FINAL LEVEL.                                                  
-166HO CL E         AUTHORS' VALUES.  THESE HAVE LARGER AND MORE REALISTIC       
-166HO2CL UNCERTAINTIES THAN WOULD BE OBTAINED FROM A LEAST-SQUARES FIT TO       
-166HO3CL THE EG DATA. FURTHER, IT SHOULD BE NOTED THAT THE LEVEL DENSITY IS     
-166HO4CL HIGH AND, IN SOME CASES, THE ENERGIES ARE FOR MULTIPLETS.              
-166HO CL E(A)      DIFFERENCE BETWEEN CAPTURE STATE ENERGY AND ENERGY OF        
-166HO2CL GATE FOR SUM SPECTRUM (2000PR10).                                      
-166HO PN                                                                     6  
-166HO  G  405.4     6 0.4     1                                                 
-166HO CG           E(PRIMARY G)=5656.5, E(SUM GATE)=6062.2.                     
-166HO  G  426.8    12 0.2     1                                                 
-166HO CG           E(PRIMARY G)=5635.1, E(SUM GATE)=6062.2.                     
-166HO  G  427.4     9 0.8     2                                                 
-166HO CG           E(PRIMARY G)=5443.4, E(SUM GATE)=5870.6.                     
-166HO  G  516.4     7 0.5     2                                                 
-166HO CG           E(PRIMARY G)=5534.6, E(SUM GATE)=6051.0.                     
-166HO  G  593.1     9 0.5     2                                                 
-166HO CG           E(PRIMARY G)=5173.5, E(SUM GATE)=5766.6.                     
-166HO  G  596.1     9 0.7     3                                                 
-166HO CG           E(PRIMARY G)=5564.0, E(SUM GATE)=6160.1.                     
-166HO  G  773.8    11 0.5     2                                                 
-166HO CG           E(PRIMARY G)=5386.3, E(SUM GATE)=6160.1.                     
-166HO  G  892.6     6 0.5     1                                                 
-166HO CG           E(PRIMARY G)=5179.0, E(SUM GATE)=6071.6.                     
-166HO  G  945.4    13 0.5     2                                                 
-166HO CG           E(PRIMARY G)=5116.3, E(SUM GATE)=6062.2.                     
-166HO  L 0.0                                                                    
-166HO  L 54.3                                                               A   
-166HO  L 82.6                                                               A   
-166HO  L 171.1                                                              A   
-166HO  L 180.5                                                              A   
-166HO  L 191.7                                                              A   
-166HO  L 262.1                                                              A   
-166HO CL E         PROBABLY INCLUDES BOTH THE 260.7 AND 263.8 LEVELS FROM       
-166HO2CL Adopted Levels.                                                        
-166HO  L 329.9                                                              A   
-166HO  L 348.4                                                              A   
-166HO  L 372.1                                                              A   
-166HO CL E         PROBABLY INCLUDES BOTH THE 372.0 AND 373.1 LEVELS FROM       
-166HO2CL Adopted Levels.                                                        
-166HO  L 416.2                                                              A   
-166HO  L 430.1     10                                                           
-166HO  G  238.5     1 5.7     4                                                 
-166HO  L 453.9                                                              A   
-166HO  L 475.9     12                                                           
-166HO  G  304.2     2 2.5     3                                                 
-166HO  G  420.5     6 0.5     2                                                 
-166HO  L 483.1     11                                                           
-166HO  G  220.1     4 0.6     1                                                 
-166HO CG           PROBABLY FEEDS THE ADOPTED 260.7 LEVEL.                      
-166HO  G  303.6     5 0.5     1                                                 
-166HO CG           PLACEMENT NOT ADOPTED; EG EXPECTED FROM Adopted Gammas IS    
-166HO2CG 301.4 AND I(304G)/I(220G) HERE IS MUCH TOO LARGE FOR THE 304G TO HAVE  
-166HO3CG BEEN UNNOTICED IN INDEPENDENT STUDIES IN WHICH THE 220G WAS OBSERVED.  
-166HO  L 522.2                                                              A   
-166HO  L 543.0      8                                                           
-166HO  G  488.0     8 0.3     1                                                 
-166HO  G  543.8     7 5.0    15                                                 
-166HO CG           I(544G)/I(488G) IS MUCH LARGER THAN THE ADOPTED VALUE;       
-166HO2CG POSSIBLY, G IS CONTAMINATED IN THIS EXPERIMENT.                        
-166HO  L 548.1                                                              A   
-166HO  L 563.7     11                                                           
-166HO  G  391.6     6 0.4     1                                                 
-166HO  G  508.2     8 0.3     1                                                 
-166HO  L 593.8      7                                                           
-166HO CL           CORRESPONDS TO ADOPTED LEVEL AT 592.5.                       
-166HO  G  401.5     2 2.3     3                                                 
-166HO  G  414.0     6 0.3     1                                                 
-166HO  L 599.5     18                                                           
-166HO CL E         PROBABLY A MULTIPLET INCLUDING THE ADOPTED 597.0 AND 598.4   
-166HO2CL LEVELS.                                                                
-166HO  G  408.8     6 0.5     1                                                 
-166HO CG           BASED ON EG, THIS G PROBABLY DEEXCITES THE 598.4 LEVEL.      
-166HO  G  421.7     7 0.3     1                                                 
-166HO CG           NOT INCLUDED IN Adopted Gammas; THIS EG IMPLIES A LEVEL      
-166HO2CG AT 602.2 7 FOR WHICH NO OTHER EVIDENCE EXISTS.                         
-166HO  G  426.7     4 0.9     2                                                 
-166HO CG           PROBABLY A DOUBLET DEEXCITING BOTH THE ADOPTED 597.0 AND     
-166HO2CG 598.4 LEVELS.  FROM ADOPTED BRANCHING FOR 597 LEVEL,                   
-166HO3CG I(427G)/I(543G)=0.069 27, SO I(427G) FROM 597 LEVEL EXPECTED HERE IS   
-166HO4CG 0.07 3 LEAVING 0.83 20 TO DEEXCITE THE 598 LEVEL.                      
-166HO  G  543.1     4 1.0     2                                                 
-166HO CG           DEEXCITES 597.0 LEVEL.                                       
-166HO  L 651.5      8                                                           
-166HO  G  304.1     7 0.8     3                                                 
-166HO  G  596.6     6 0.4     1                                                 
-166HO  L 658.1      5                                                           
-166HO  G  328.2     4 1.3     3                                                 
-166HO  G  477.5     7 0.3     1                                                 
-166HO  L 668.3      4                                                           
-166HO  G  488.0     5 0.3     1                                                 
-166HO  G  613.9     6 0.5     1                                                 
-166HO CG RI        I(614G)/I(488G) IS MUCH LARGER THAN THE ADOPTED VALUE;       
-166HO2CG POSSIBLY, G IS CONTAMINATED IN THIS REACTION.                          
-166HO  L 683.3     15                                                           
-166HO  G  491.6     7 0.3     1                                                 
-166HO CG           NOT INCLUDED IN Adopted Gammas; NONE OF THE PREVIOUSLY-KNOWN 
-166HO2CG TRANSITIONS FROM THE 683 LEVEL IS PRESENT AND NO G WITH THIS ENERGY    
-166HO3CG HAS BEEN REPORTED IN (N,G) E=THERMAL.                                  
-166HO  L 701.5     16                                                           
-166HO CL           NO OTHER EVIDENCE EXISTS FOR THIS LEVEL.                     
-166HO  G  369.6    10 0.7     3                                                 
-166HO  L 717.0     14                                                           
-166HO  G  456.0     1 7.1     5                                                 
-166HO CG           PROBABLY DEEXCITES THE 719.7 LEVEL INSTEAD;                  
-166HO2CG SEE COMMENT ON 347.6G.  EG WOULD BE CONSISTENT WITH PLACEMENT          
-166HO3CG FROM THE 719.7 LEVEL IF G FED THE 263.8 (RATHER THAN THE 260.7)        
-166HO4CG MEMBER OF THE 262.1-KEV DOUBLET.                                       
-166HO  G  715.4     8 3.3    11                                                 
-166HO  L 719.7     15                                                           
-166HO  G  347.6     7 0.8     3                                                 
-166HO CG           BASED ON Adopted Gammas, THIS G SHOULD BE ACCOMPANIED BY     
-166HO2CG AN ORDER OF MAGNITUDE STRONGER 455.6G; PROBABLY THE 456.0G WHICH       
-166HO3CG 2000PR10 PLACE FROM A SEPARATE 717.0 LEVEL.                            
-166HO  L 757.7     10                                                           
-166HO  G  426.9     9 0.6     3                                                 
-166HO CG           OMITTED FROM Adopted Gammas; IG TOO LARGE FOR TRANSITION TO  
-166HO2CG HAVE BEEN MISSED IN (N,G) E=THERMAL.                                   
-166HO  G  578.1     7 0.3     1                                                 
-166HO  L 770.3      7                                                           
-166HO  G  421.9     5 1.9     5                                                 
-166HO  L 790.1     20                                                           
-166HO CL           POSSIBLY A DOUBLET INCLUDING THE ADOPTED 788.6 AND 792.8     
-166HO2CL LEVELS, BUT G DEEXCITATION PATTERN AGREES WITH NEITHER.                
-166HO  G  598.4     7 0.2     1                                                 
-166HO CG           MAY DEEXCITE THE ADOPTED 788.6 OR 792.8 LEVEL BUT OTHER      
-166HO2CG GAMMAS KNOWN TO DEEXCITE THOSE LEVELS ARE NOT SEEN HERE AND NO G WITH  
-166HO3CG THE APPROPRIATE ENERGY FOR THE FORMER PLACEMENT HAS BEEN REPORTED      
-166HO4CG IN (N,G) E=THERMAL. NOT INCLUDED IN Adopted Gammas.                    
-166HO  L 807.9     20                                                           
-166HO CL           PROBABLE MULTIPLET; LEVELS ADOPTED AT 806.6 AND 807.0 COULD  
-166HO2CL NOT HAVE BEEN RESOLVED IN THIS EXPERIMENT AND THE PRESENCE OF AN       
-166HO3CL ADDITIONAL LEVEL CANNOT BE RULED OUT. A 434G AND 546G ARE KNOWN TO     
-166HO4CL DEEXCITE THE ADOPTED 806.6 LEVEL BUT THEY SHOULD BE ACCOMPANIED BY     
-166HO5CL MUCH STRONGER 336G AND 325G, NEITHER OF WHICH IS SEEN HERE.            
-166HO  G  394.8     9 0.9     3                                                 
-166HO CG           PRESUMABLY DOES NOT DEEXCITE EITHER 806.6 OR 807.0 LEVEL     
-166HO2CG BECAUSE THOSE PLACEMENTS WOULD IMPLY E3 OR M4 MULTIPOLARITY,           
-166HO3CG RESPECTIVELY.  OMITTED FROM Adopted Levels, Gammas.                    
-166HO  G  433.1     8 0.3     1                                                 
-166HO CG           DEEXCITES THE 806.6 LEVEL IN Adopted Levels, Gammas.         
-166HO  G  479.2    11 0.4     2                                                 
-166HO CG           NOT INCLUDED IN Adopted Gammas BECAUSE IT IS UNCLEAR WHICH   
-166HO2CG MEMBER OF A PROBABLE 808 MULTIPLET IS DEEXCITED BY IT.                 
-166HO  G  545.4     5 0.5     1                                                 
-166HO CG           DEEXCITES THE 806.6 LEVEL IN Adopted Levels, Gammas.         
-166HO  G  628.4     8 0.4     2                                                 
-166HO CG           NOT INCLUDED IN Adopted Gammas BECAUSE IT IS UNCLEAR WHICH   
-166HO2CG MEMBER OF A PROBABLE 808 MULTIPLET IS DEEXCITED BY IT.                 
-166HO  L 816.0     10                                                           
-166HO  G  401.4     2 5.8     8                                                 
-166HO CG           NOT INCLUDED IN Adopted Gammas; EG FITS PLACEMENT POORLY     
-166HO2CG AND G IS FAR TOO STRONG TO HAVE BEEN OVERLOOKED IN OTHER STUDIES THAT  
-166HO3CG EXCITED THIS LEVEL.                                                    
-166HO  G  442.6     2 2.4     3                                                 
-166HO  G  485.2    10 0.5     2                                                 
-166HO CG           THE EVALUATOR CONSIDERS THIS PLACEMENT TO BE DOUBTFUL SINCE  
-166HO2CG IT IMPLIES M2 MULTIPOLARITY FOR THE 485G.                              
-166HO  G  554.4     3 1.1     2                                                 
-166HO  G  624.1     1 3.9     3                                                 
-166HO  L 826.1     16                                                           
-166HO  G  456.3     4 0.7     2                                                 
-166HO CG           PLACEMENT NOT ADOPTED.  THIS EG WOULD IMPLY THE EXISTENCE    
-166HO2CG OF A LEVEL FOR WHICH NO OTHER EVIDENCE EXISTS.                         
-166HO  G  563.3     5 0.5     1                                                 
-166HO  G  633.2     3 1.4     2                                                 
-166HO  L 832.7     12                                                           
-166HO  G  652.2     7 0.3     1                                                 
-166HO  L 873.6     24                                                           
-166HO CL           PROBABLE MULTIPLET INCLUDING LEVELS ADOPTED AT 870 AND 876.  
-166HO  G  546.6     5 1.5     3                                                 
-166HO  G  614.6     9 0.3     1                                                 
-166HO  G  692.4     7 0.3     1                                                 
-166HO  G  790.0    10 0.5     2                                                 
-166HO  G  816.1     4 1.0     2                                                 
-166HO CG           BASED ON EG, THIS G PROBABLY DEEXCITES THE 870 LEVEL IN      
-166HO2CG Adopted Levels.                                                        
-166HO  L 881.9      9                                                           
-166HO CL           POSSIBLE MULTIPLET INCLUDING LEVELS ADOPTED AT 881.2         
-166HO2CL AND 884.0.                                                             
-166HO  G  511.5     2 4.9     5                                                 
-166HO CG           NOT INCLUDED IN Adopted Levels, Gammas.  PRESUMABLY DOES NOT 
-166HO2CG DEEXCITE 882 LEVEL BECAUSE IT IS TOO STRONG TO HAVE BEEN OVERLOOKED IN 
-166HO3CG OTHER STUDIES; ALSO EG FITS PLACEMENT POORLY.                          
-166HO  G  620.5     7 0.6     2                                                 
-166HO  G  690.2     4 0.7     2                                                 
-166HO  G  708.9     6 0.5     1                                                 
-166HO CG           DEEXCITES LEVEL ADOPTED AT 881.1 KEV.                        
-166HO  G  798.3     4 3.0     5                                                 
-166HO CG           DEEXCITES LEVEL ADOPTED AT 881.1 KEV.                        
-166HO  G  826.9     3 2.0     3                                                 
-166HO CG           DEEXCITES LEVEL ADOPTED AT 881.1 KEV.                        
-166HO  L 891        5                                                           
-166HO CL           POSSIBLE MULTIPLET INCLUDING LEVELS ADOPTED AT 885.4, 891.1  
-166HO2CL AND 895.5.                                                             
-166HO  G  519.0     7 0.6     2                                                 
-166HO  G  545.7     6 1.2     4                                                 
-166HO CG           EG SUGGESTS THAT THIS G DEEXCITES THE LEVEL ADOPTED AT 895.5.
-166HO2CG NOT INCLUDED IN Adopted Gammas.                                        
-166HO  G  626.6     7 0.4     1                                                 
-166HO  G  708.6    10 0.3     2                                                 
-166HOL G FL=191.7                                                               
-166HO CG           NOT INCLUDED IN Adopted Gammas; EG IMPLIES THAT IT DEEXCITES 
-166HO2CG A LEVEL AT ~899.5 KEV.                                                 
-166HO  G  714.7     5 0.7     2                                                 
-166HOL G FL=171.1                                                               
-166HO CG           EG SUGGESTS THAT THIS G DEEXCITES THE LEVEL ADOPTED AT 885.4.
-166HO2CG NOT INCLUDED IN Adopted Gammas.                                        
-166HO  G  716.1     7 0.8     3                                                 
-166HOL G FL=180.5                                                               
-166HO CG           EG SUGGESTS THAT THIS G DEEXCITES THE LEVEL ADOPTED AT 895.5.
-166HO2CG NOT INCLUDED IN Adopted Gammas.                                        
-166HO  G  805.4     7 1.2     3                                                 
-166HO CG           NOT INCLUDED IN Adopted Gammas; E3 MULTIPOLARITY REQUIRED IF 
-166HO2CG G DEEXCITES THE 891.1 LEVEL.                                           
-166HO  L 906.0     10                                                           
-166HO  G  714.3     1 5.1     4                                                 
-166HO  G  734.4     3 0.6     1                                                 
-166HO  L 947.1      6                                                           
-166HO  G  774.9     3 0.7     1                                                 
-166HO  G  892.4     5 1.3     3                                                 
-166HO  L 953.4     11                                                           
-166HO  G  624.6    10 0.5     2                                                 
-166HO  G  898.1    10 0.4     2                                                 
-166HO  L 960.3     18                                                           
-166HO  G  542.6     7 1.0     3                                                 
-166HO  G  700.1     3 1.3     2                                                 
-166HO  G  875.9     9 0.5     2                                                 
-166HO CG           FROM Adopted Levels, Gammas, THIS PLACEMENT IMPLIES M2       
-166HO2CG MULTIPOLARITY AND THAT SEEMS UNLIKELY.                                 
-166HO  L 973.7     18                                                           
-166HO  G  889.2    10 0.5     2                                                 
-166HO  G  921.1     9 0.3     1                                                 
-166HO  L 996.8      8                                                           
-166HO  G  543.5    10 1.2     5                                                 
-166HO  G  624.2     5 0.6     2                                                 
-166HO  G  736.1    10 0.2     1                                                 
-166HO  L 1004.9     9                                                           
-166HO  G  634.3     8 0.3     1                                                 
-166HO  G  824.3     4 1.0     2                                                 
-166HO  G  950.0     4 2.5     5                                                 
-166HO  L 1010.5     6                                                           
-166HO  G  679.9     8 0.7     2                                                 
-166HO  G  838.1     6 0.5     1                                                 
-166HO  L 1014.6    19                                                           
-166HO  G  596.1     7 1.0     3                                                 
-166HO  G  825.1    11 0.2     1                                                 
-166HO  G  961.2     5 1.6     3                                                 
-166HO  L 1023.3     7                                                           
-166HO  G  831.3    12 0.2     1                                                 
-166HO  G  842.8     7 0.3     1                                                 
-166HO  L 1028.7    15                                                           
-166HO  G  552.6     9 0.6     3                                                 
-166HO  L 1029.0    12                                                           
-166HO  G  599.5     4 2.6     5                                                 
-166HO  G  765.3    11 0.4     2                                                 
-166HO  L 1030.2     7                                                           
-166HO  G  614.5     4 1.9     4                                                 
-166HO CG           NOT INCLUDED IN Adopted Levels, Gammas BECAUSE PROPOSED      
-166HO2CG PLACEMENT IMPLIES M2 MULTIPOLARITY.                                    
-166HO  G  657.5     4 0.9     2                                                 
-166HO CG           NOT INCLUDED IN Adopted Levels, Gammas BECAUSE PROPOSED      
-166HO2CG PLACEMENT IMPLIES E3 MULTIPOLARITY.                                    
-166HO  G  681.1     6 1.1     3                                                 
-166HO  G  700.8     4 1.7     3                                                 
-166HO  G  769.9     4 1.4     3                                                 
-166HO  G  838.9     7 2.2     9                                                 
-166HO  G  849.2     7 0.4     1                                                 
-166HO  G  857.3     4 0.9     2                                                 
-166HO  G  947.7     2 13.5   13                                                 
-166HO CG           NOT INCLUDED IN Adopted Levels, Gammas BECAUSE PROPOSED      
-166HO2CG PLACEMENT IMPLIES E3 MULTIPOLARITY.                                    
-166HO  G  975.4     6 0.8     2                                                 
-166HO CG           NOT INCLUDED IN Adopted Levels, Gammas BECAUSE PROPOSED      
-166HO2CG PLACEMENT IMPLIES M2 MULTIPOLARITY.                                    
-166HO  L 1035.8     6                                                           
-166HO  G  664.3     8 0.4     1                                                 
-166HO  G  952.4     9 1.9     8                                                 
-166HO  G  981.6     9 0.4     2                                                 
-166HO  G  1036.2    8 3.5     3                                                 
-166HO  L 1053.9     7                                                           
-166HO  G  999.6    11 0.3     1                                                 
-166HO  L 1060.8     6                                                           
-166HO  G  689.1     1 5.3     4                                                 
-166HO  G  798.1     9 0.2     1                                                 
-166HO  L 1062.7     9                                                           
-166HO CL           ADOPTED J=2,4 FOR THIS LEVEL BUT THE PROPOSED DEEXCITING     
-166HO2CL GAMMAS FEED LEVELS WITH JPI INCLUDING 5+ AND 4- AND 1-, SO SOME        
-166HO3CL PLACEMENTS ARE PRESUMABLY INCORRECT.                                   
-166HO  G  586.1     2 4.0     5                                                 
-166HO  G  646.1     2 7.3     9                                                 
-166HO  G  716.0     7 1.0     3                                                 
-166HO  G  734.0     7 0.6     2                                                 
-166HO  G  871.8     9 0.2     1                                                 
-166HO  G  881.1     9 0.5     2                                                 
-166HO  G  979.3     7 0.9     3                                                 
-166HO  G  1008.5    4 1.1     2                                                 
-166HO  L 1087.8    10                                                           
-166HO  G  715.6     3 1.0     2                                                 
-166HO  G  826.8     9 0.3     1                                                 
-166HO  G  894.0     9 0.2     1                                                 
-166HO  G  906.9     7 0.4     1                                                 
-166HO  G  916.1     7 0.4     1                                                 
-166HO  G  1034.3    7 0.5     2                                                 
-166HO  L 1099.8    11                                                           
-166HO  G  623.6     8 0.5     2                                                 
-166HO CG           MAY BE MISPLACED; Adopted Levels, Gammas IMPLIES THAT THIS   
-166HO2CG WOULD BE AN E3 TRANSITION.                                             
-166HO  G  753.1    10 0.6     3                                                 
-166HO  G  836.8     8 0.3     1                                                 
-166HO  L 1115.3    12                                                           
-166HO CL           POSSIBLE DOUBLET; LEVELS ARE ADOPTED AT 1114.7 AND 1118.7    
-166HO  G  567.5     5 1.6     5                                                 
-166HO  G  595.9    14 0.8     4                                                 
-166HO CG           TENTATIVELY PLACED FROM A 1118.7 LEVEL IN Adopted Levels,    
-166HO2CG  GAMMAS.                                                               
-166HO  G  661.3     2 14.5   15                                                 
-166HO  G  743.1    10 0.2     1                                                 
-166HO  G  765.9     3 3.2     5                                                 
-166HO  G  853.7     3 2.5     3                                                 
-166HO  G  943.2     9 0.4     1                                                 
-166HO  L 1121.2     7                                                           
-166HO  G  704.4     9 0.8     3                                                 
-166HO  G  791.9    11 0.5     2                                                 
-166HO  G  940.0     6 0.8     2                                                 
-166HO  G  949.2     6 0.6     2                                                 
-166HO  L 1134.3    15                                                           
-166HO CL           THIS MAY BE A DOUBLET; LEVELS ARE ADOPTED AT 1131.0 AND      
-166HO2CL 1135.0.                                                                
-166HO  G  761.5     6 0.4     1                                                 
-166HO  G  873.9     6 0.8     2                                                 
-166HO  G  942.2     7 0.3     1                                                 
-166HO  G  951.4    12 0.4     1                                                 
-166HO  L 1137.9     5                                                           
-166HO  G  957.4     3 1.4     2                                                 
-166HO  L 1143.4    16                                                           
-166HO  G  816.2    10 0.5     2                                                 
-166HO CG           NOT INCLUDED IN Adopted Levels, Gammas; FITS PLACEMENT FROM  
-166HO2CG KNOWN 1141.3 LEVEL VERY POORLY.                                        
-166HO  G  950.3     6 0.4     1                                                 
-166HO  L 1155.5    27                                                           
-166HO  G  683.4     4 1.8     3                                                 
-166HO  G  701.7     9 1.2     5                                                 
-166HO  G  787.1     4 1.4     3                                                 
-166HO  G  806.5     7 0.8     3                                                 
-166HO  G  825.5    11 0.5     2                                                 
-166HO  G  892.1     8 0.4     2                                                 
-166HO  G  959.0     7 0.3     1                                                 
-166HO CG           NOT INCLUDED IN Adopted Levels, Gammas; FITS PLACEMENT VERY  
-166HO2CG POORLY.                                                                
-166HO  G  983.3     6 0.6     2                                                 
-166HO  G  1099.0    5 0.8     2                                                 
-166HO  L 1161.5    10                                                           
-166HO  G  612.7     6 1.5     4                                                 
-166HO  G  732.1     5 1.8     4                                                 
-166HO  G  813.3     6 1.0     3                                                 
-166HO  G  831.3     7 1.1     3                                                 
-166HO  G  898.8     5 1.0     2                                                 
-166HO  G  981.0     7 0.5     1                                                 
-166HO  G  989.6     3 1.5     3                                                 
-166HO  L 1166.2    18                                                           
-166HO CL           POSSIBLE DOUBLET; EG VALUES FOR DEEXCITING TRANSITIONS       
-166HO2CL CONSISTENT WITH LEVELS AT ~1164 AND ~1167 KEV.                         
-166HO  G  689.1     5 1.4     3                                                 
-166HO CG           NOT INCLUDED IN Adopted Levels, Gammas; FITS PLACEMENT FROM  
-166HO2CG KNOWN 1168.4 LEVEL VERY POORLY.                                        
-166HO  G  713.6     6 2.4     6                                                 
-166HO  G  791.8     7 0.8     2                                                 
-166HO CG           NOT INCLUDED IN Adopted Levels, Gammas; FITS PLACEMENT FROM  
-166HO2CG KNOWN 1168.4 LEVEL VERY POORLY.                                        
-166HO  G  976.9     7 0.4     1                                                 
-166HO  L 1189.9    11                                                           
-166HO  G  712.6     7 0.5     2                                                 
-166HO  G  928.7     5 0.8     2                                                 
                                                                                 
 166HO    165HO(N,G) E=2 KEV            1970BO29,2000PR03         08NDS    200804
 166HO  H TYP=FUL$AUT=CORAL M. BAGLIN$CIT=NDS 109, 1103 (2008)$CUT=1-Mar-2008$   

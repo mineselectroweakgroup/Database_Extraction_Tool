@@ -3519,14 +3519,14 @@
  35CL  H TYP=FUL$AUT=JUN CHEN, JOHN CAMERON AND BALRAJ SINGH$                   
  35CL2 H CIT=NDS 112,2715 (2011)$CUT=20-Oct-2011$                               
  35CL  Q -5966.1   8 12644.775 6370.82 4 -6997.914     2012WA38                 
- 35CL CQ Note: Current evaluation has used the following Q record               
+ 35CL cQ $Note: Current evaluation has used the following Q record              
  35CL  Q -5966.1   7 12644.80 7 6370.82 5-6997.90 4    2011AUZZ                 
  35CL cQ $S(2n)=24152.9 {I4}, S(2p)=17254.1 {I11} (2011AuZZ,2003Au03)           
- 35CL CQ $ Values in 2003Au03: ^S(n)=12645.08 {I18}, S(p)=6370.72 {I10}         
- 35CL2CQ QA=6997.57 {I19}                                                       
+ 35CL cQ $Values in 2003Au03: S(n)=12645.08 {i18}, s(p)=6370.72 {i10}           
+ 35CL2cQ Q(|a)=6997.57 {i19}                                                    
  35CL c  First isotope identification by F. W. Aston from a mass-spectrum.      
  35CL d  Isotope identificatin: F. W. Aston, Nature 104 (1919) 393.             
- 35CL cG E$ Values with |DE are primarily from EC decay, (|a,p|g) and (HI,xn|g).
+ 35CL cG E$ Values with |DE are primarily from |e decay, (|a,p|g) and (HI,xn|g).
  35CL2cG Weighted average taken when available. Others are deduced              
  35CL3cG from level-energy differences.                                         
  35CL cG RI$ Primarily from (p,|g), (|a,p|g) and (HI,xn|g). Weighted average    
@@ -3559,7 +3559,7 @@
  35CL4cL and scattering of photons in (|g,|g).  Weighted averages taken when    
  35CL5cL available. |G are primarily from |G{-p} in (p,p) resonances since      
  35CL6cL when |G{-|g} is negligible.                                            
- 35CL cL T$LABEL=T{-1/2} or |G                                                  
+ 35CL CL T$LABEL=T{-1/2} or |G                                                  
  35CL CL BAND(D)$ Band based on f{-7/2} orbital                                 
  35CL CL BAND(E)$ Band based on 13/2+                                           
  35CL  XA35S B- DECAY (87.37 D)                                                 
@@ -3587,10 +3587,10 @@
  35CL  XWCOULOMB EXCITATION                                                     
  35CL  XX(HI,XNG)                                                               
  35CL PN                                                                     6  
- 35CL  L 0           3/2+                                                       
+ 35CL  L 0           3/2+              STABLE                                   
  35CLX L XREF=ABCDFGIKLMNOPQRSTUVWX                                             
- 35CL2 L MOMM1=+0.8218743 4 (1972BL07,1989RA17,2011STZZ)                        
- 35CL2 L MOME2=-0.08249 2 (1972ST38,1989RA17,2011STZZ)                          
+ 35CL2 L MOMM1=+0.8218743 4 (1972Bl07,1989Ra17,2011StZZ)                        
+ 35CL2 L MOME2=-0.08249 2 (1972St38,1989Ra17,2011StZZ)                          
  35CL cL MOMM1$using NMR method (1972Bl07)                                      
  35CL cL MOME2$using the method atomic beam magnetic resonance (1972St38).      
  35CL2cL Others: -0.076 {I5} (1986El09), -0.817 {I8} (1993Su36), 0.0819 {I11}   
@@ -3663,7 +3663,7 @@
  35CL  G 308.6       5.4     LT                                                 
  35CL  G 356.6       1.1     LT                                                 
  35CL  G 1239.2      2.2     11 E2                                              
- 35CL CG $IF M1, BM1W=0.011 6$IF E2, BE2W=27 15                                 
+ 35CL cG $If M1, B(M1)(W.u.)=0.011 {I6}; if E2, B(E2)(W.u.)=27 {I15}            
  35CL  G 1782.9      3.4     11 E2                                              
  35CLB G BE2W=7 3                                                               
  35CL cG M$from (p,p'|g)                                                        
@@ -3698,7 +3698,7 @@
  35CL cL T$from (p,|g) and (|g,|g)                                              
  35CL  G 1272.7      3.7     LT                                                 
  35CL  G 2155.1    15 22.0   12 [M1,E2]                                         
- 35CL CG $IF M1, BM1W=0.080 24$IF E2, BE2W=65 19                                
+ 35CL cG $If M1, B(M1)(W.u.)=0.080 {I24}; if E2, B(E2)(W.u.)=65 {I19}           
  35CL cG E$from |b{++} decay                                                    
  35CL  G 2699.0      0.6     LT                                                 
  35CL  G 3918.4    6 100.0   12 M1+E2    -0.21   2                              
@@ -3729,7 +3729,7 @@
  35CLB G BM1W=0.079 25                                                          
  35CL cG E$from |b{++} decay                                                    
  35CL  G 3967.2      26      4 [M1,E2]                                          
- 35CL CG $IF M1, BM1W=0.0069 24$IF E2, BE2W=1.6 6                               
+ 35CL cG $If M1, B(M1)(W.u.)=0.0069 {I24}; if E2, B(E2)(W.u.)=1.6 {I6}          
  35CL  L 3979.0     3 (3/2+,5/2+)      14 FS     3                              
  35CLX L XREF=I                                                                 
  35CL cL J$|g transitions to 1/2+,7/2+                                          
@@ -3944,9 +3944,9 @@
  35CL cL J$L({+3}He,d)=2; L(p,t)=0+2; |g(|q) in (p,|g)                          
  35CL cL J$from (p,|g)                                                          
  35CL  G 2652.1      100     6  [M1,E2]                                         
- 35CL CG $IF M1, BM1W=0.076 18$IF E2, BE2W=41 10                                
+ 35CL cG $If M1, B(M1)(W.u.)=0.076 {I18}; if E2, B(E2)(W.u.)=41 {I10}           
  35CL  G 3891.1      7.5     25 [M1,E2]                                         
- 35CL CG $IF M1, BM1W=0.0018 8$IF E2, BE2W=0.45 18                              
+ 35CL cG $If M1, B(M1)(W.u.)=0.0018 {I8}; if E2, B(E2)(W.u.)=0.45 {I18}         
  35CL  G 4434.8      7.5     LT                                                 
  35CL cG RI$additional 18% for decay to other levels                            
  35CL  L 5682.9    6 1/2-,3/2-                                                  
@@ -4262,7 +4262,7 @@
  35CL  G 3170.7      2.9     15                                                 
  35CL  G 3574.6      2.9     15                                                 
  35CL  G 4355.6      100     10 D(+Q)    +0.1    2                              
- 35CL CG $BM1W=0.01 (p,|g)                                                      
+ 35CL cG $B(M1)(W.u.)=0.01 (p,|g)                                               
  35CL  G 4872.6      4.4     22                                                 
  35CL  G 5755.1      29      3 D+Q       +0.098  22                             
  35CL  L 7548.2     37/2-              0.7 FS    LT                             
@@ -4411,13 +4411,13 @@
  35CL  G 2975.8      2.3     12                                                 
  35CL  G 3632.6      12      6                                                  
  35CL  G 3800.7      18      3 D(+Q)     -0.16   17                             
- 35CL CG $BE1W=5E-4 (p,|g)                                                      
+ 35CL cG $B(E1)(W.u.)=5|*10{+-4} (p,|g)                                         
  35CL  G 4581.7      42      4 D+Q       +0.18   8                              
  35CL cG M,MR$from (p,|g)                                                       
- 35CL CG $BM1W=0.014, BM2W=0.081 (p,|g)                                         
+ 35CL cG $B(M1)(W.u.)=0.014, B(M2)(W.u.)=0.081 (p,|g)                           
  35CL  G 5098.7      100     10 D(+Q)    +0.1    30                             
  35CL cG M,MR$from (p,|g)                                                       
- 35CL CG $BE1W=7E-4 (p,|g)                                                      
+ 35CL cG $B(E1)(W.u.)=7|*10{+-4} (p,|g)                                         
  35CL  G 5981.1      5       3                                                  
  35CL  G 6524.8      1.4     LT                                                 
  35CL  L 7750      10 (7/2:17/2)+                                               

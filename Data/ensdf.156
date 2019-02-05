@@ -552,6 +552,153 @@
 156    R 2011SO14 JOUR PRVCA 83 057302                                          
 156    R 2011SU15 JOUR PRVCA 83 064308                                          
                                                                                 
+156LA    COMMENTS                                                ENSDF    201704
+156LA  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+156LA C  TITL$NUCLEAR DATA SHEETS FOR 156LA                                     
+156LA c  AUTH$FILIP G. KONDEV                                                   
+156LA c  INST$Nuclear Engineering Division                                      
+156LA#c       Argonne National Laboratory                                       
+156LA#c       9700 South Cass Avenue                                            
+156LA#c       Argonne, Illinois 60439, USA                                      
+156LA c  ABST$Information about the nuclear structure properties of the         
+156LA2c  {+156}La nuclide is presented                                          
+156LA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+156LA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+156LA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+156LA C  CIT$ENSDF                                                              
+                                                                                
+156LA    ADOPTED LEVELS                                                   201704
+156LA  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+156LA  Q 11680     CA 3160   CA 12500  CA -5980  CA    1997MO25                 
+156LA cQ $S(2n)=7720, S(2p)=27690, from 1997Mo25 (theory)                       
+156LA c  2017Wu04: The {+156}La nuclide was produced at the RIBF-RIKEN facility 
+156LA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+156LA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+156LA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+156LA5c  pnA, respectively. The identification of the nuclide of interest was   
+156LA6c  made in the BigRIPS separator by determining the atomic number and the 
+156LA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+156LA8c  reaction products were transported through the ZeroDegree Spectrometer 
+156LA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+156LAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+156LAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+156LAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+156LAdc  Deduced: T{-1/2}.                                                      
+156LA  L 0.0          (4+)             84 MS     78                             
+156LA2 L %B-=100 $ %B-N=?                                                       
+156LA cL %B-$Only |b{+-} decay mode is expected.                                
+156LA cL J$From systematics of known quasiparticle states in neighboring nuclei 
+156LA2cL and the proposed configuration (by the evaluator). The assignment is   
+156LA3cL tentative.                                                             
+156LA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+156LA2cL using the least-squares and maximum-likelihood methods. The data       
+156LA3cL analysis included contributions from the parent, daughter and          
+156LA4cL grand-daughter decays, as well as a constant background.               
+156LA cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+156LA2cL |p1/2[420] and |n7/2[633] Nilsson orbitals are expected near the proton
+156LA3cL and neutron Fermi surfaces, respectively. Thus, using the              
+156LA4cL Gallagher-Moszkowski rule, one may expect the K|p=4+,                  
+156LA5cL |p1/2[420]~#|n7/2[633] configuration for the ground state.             
+156LA7cL The assignment is tentative and it is made by the evaluator.           
+                                                                                
+156CE    COMMENTS                                                ENSDF    201711
+156CE  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+156CE C  TITL$NUCLEAR DATA SHEETS FOR 156CE                                     
+156CE c  AUTH$FILIP G KONDEV                                                    
+156CE c  INST$Nuclear Engineering Division                                      
+156CE#c       Argonne National Laboratory                                       
+156CE#c       9700 South Cass Avenue                                            
+156CE#c       Argonne, Illinois 60439, USA                                      
+156CE c  ABST$Information about the nuclear structure properties of the         
+156CE2c  {+156}Ce nuclide is presented                                          
+156CE c  CUT$Literature available up to February 20, 2017 has been consulted.   
+156CE c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+156CE1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+156CE C  CIT$ENSDF                                                              
+                                                                                
+156CE    ADOPTED LEVELS                                          ENSDF    201711
+156CE  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+156CE  Q 6697      SY 5016   SY 13977  SY -5201  SY    2012Wa38                 
+156CE cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=499, |DS(n)=566,      
+156CE2cQ |DS(p)=566, |DQ(|a)=566                                                
+156CE cQ $S(2n)=8663 {I499}, Q(|b{+-}n)=2474 {I401}                             
+156CE2cQ (2012Wa38, syst)                                                       
+156CE c  2017Wu04: The {+156}Ce nuclide was produced at the RIBF-RIKEN facility 
+156CE2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+156CE3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+156CE4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+156CE5c  pnA, respectively. The identification of the nuclide of interest was   
+156CE6c  made in the BigRIPS separator by determining the atomic number and the 
+156CE7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+156CE8c  reaction products were transported through the ZeroDegree Spectrometer 
+156CE9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+156CEac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+156CEbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+156CEcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+156CEdc  Deduced: T{-1/2}.                                                      
+156CE  L 0.0          0+               0.233 S   9                              
+156CE2 L %B-=100 $ %B-N=?                                                       
+156CE cL %B-$Only |b{+-} decay mode is expected.                                
+156CE cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+156CE2cL using the least-squares and maximum-likelihood methods. The data       
+156CE3cL analysis included contributions from the parent, daughter and          
+156CE4cL ground-daughter decays, as well as a constant background.              
+                                                                                
+156PR    COMMENTS                                                ENSDF    201704
+156PR  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+156PR C  TITL$NUCLEAR DATA SHEETS FOR 156PR                                     
+156PR c  AUTH$FILIP G. KONDEV                                                   
+156PR c  INST$Nuclear Engineering Division                                      
+156PR#c       Argonne National Laboratory                                       
+156PR#c       9700 South Cass Avenue                                            
+156PR#c       Argonne, Illinois 60439, USA                                      
+156PR c  ABST$Information about the nuclear structure properties of the         
+156PR2c  {+156}Pr nuclide is presented                                          
+156PR c  CUT$Literature available up to February 20, 2017 has been consulted.   
+156PR c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+156PR1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+156PR C  CIT$ENSDF                                                              
+                                                                                
+156PR    ADOPTED LEVELS                                                   201704
+156PR  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+156PR  Q 8906      SY 4224   SY 10931  SY -4456  SY    2012WA38                 
+156PR cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=359, |DS(n)=299,      
+156PR2cQ |DS(p)=499, |DS(|a)=422                                                
+156PR cQ $S(2n)=9516 {I334}, S(2p)=24387 {I499}, Q(|b{+-}n)=2645 {I298}         
+156PR2cQ from 2012Wa38 (syst).                                                  
+156PR c  2017Wu04: The {+156}Pr nuclide was produced at the RIBF-RIKEN facility 
+156PR2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+156PR3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+156PR4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+156PR5c  pnA, respectively. The identification of the nuclide of interest was   
+156PR6c  made in the BigRIPS separator by determining the atomic number and the 
+156PR7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+156PR8c  reaction products were transported through the ZeroDegree Spectrometer 
+156PR9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+156PRac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+156PRbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+156PRcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+156PRdc  Deduced: T{-1/2}.                                                      
+156PR  L 0.0          (1+)             0.444 S   6                              
+156PR2 L %B-=100 $ %B-N=?                                                       
+156PR cL %B-$Only |b{+-} decay mode is expected.                                
+156PR cL J$From systematics of known quasiparticle states in neighboring nuclei 
+156PR2cL and the proposed configuration (by the evaluator). The assignment is   
+156PR3cL tentative.                                                             
+156PR cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+156PR2cL using the least-squares and maximum-likelihood methods. The data       
+156PR3cL analysis included contributions from the parent, daughter and          
+156PR4cL grand-daughter decays, as well as a constant background.               
+156PR5cL The assignment to the ground state is ambiguous, given the possible    
+156PR6cL existence of an isomeric state.                                        
+156PR cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+156PR2cL |p3/2[541] and |n5/2[523] Nilsson orbitals are expected near the proton
+156PR3cL and neutron Fermi surfaces, respectively. Thus, using the              
+156PR4cL Gallagher-Moszkowski rule, one may expect the K|p=1+,                  
+156PR5cL |p3/2[541]~#|n5/2[523] configuration for the ground state. The         
+156PR6cL existence of a K|p=4+ isomer, arising from the same configuration, is  
+156PR7cL also possible. The assignment is made by the evaluator.                
+                                                                                
 156ND    ADOPTED LEVELS, GAMMAS                                  12NDS    201210
 156ND  H TYP=FUL$AUT=C. W. REICH$CIT=NDS 113, 2537 (2012)$CUT=1-Mar-2012$       
 156ND  Q 3.69E3    206.26E3  201.235E4 20-3.8E3  SY    2012WA38                 
@@ -18861,6 +19008,231 @@
 156ER  G  898.5    2    1.50 14                                             &C  
 156ER3 G FLAG=T                                                                 
                                                                                 
+156ER    114CD(48CA,6NG):2             2011RE06                  12NDS    201210
+156ER  H TYP=FUL$AUT=C. W. REICH$CIT=NDS 113, 2537 (2012)$CUT=1-Mar-2012$       
+156ER D  NEW DATA SET, PREPARED (OCTOBER, 2011) BY CW REICH.                    
+156ER C  This study complements an earlier high-spin study (2009Pa17) using     
+156ER2C   the same reaction at the same bombarding energy by some of the same   
+156ER3C   authors. It provides new information on some of the lower-spin        
+156ER4C   non-yrast states in 156ER, although it does not extend to states      
+156ER5C   having spins as high as those reported in the earlier study.          
+156ER C  Reaction initiated using a 215-MeV 48CA beam from the ^ATLAS facility  
+156ER2C  at ^ANL. 1-MG/CM2 114CD target (enrichment not given), backed by a     
+156ER3C  13-MG/CM2 197AU layer to stop the recoils and help reduce the effect   
+156ER4C  of Doppler broadening in those instances where the recoils had stopped 
+156ER5C  prior to |g emission. |g radiation studied using the Gammasphere       
+156ER6C  array consisting of 101 HPGe detectors. Report EG and                  
+156ER7C  "angular-intensity ratios". Discuss properties                         
+156ER7C  of the |g-vibrational band                                             
+156ER8C  as relating to nuclear triaxiality, as well as the alignment           
+156ER9C  characteristics of several of the bands.                               
+156ER CG           2011Re06 define the angular-intensity ratio, ^R, as follows: 
+156ER2CG  ^R=I{-|g|g}(|q=150 DEG or 30 DEG)/I{-|g|g}(90 DEG). Expected ^R       
+156ER3CG  values are AP 1.1 for stretched quadrupole transitions and AP 0.7 for 
+156ER4CG  pure stretched dipole transitions.                                    
+156ER CG M         2011Re06 list mults for a number of |g's, some of them from  
+156ER2CG  other sources. These are listed here.                                 
+156ER CL E         As the level energies increase, the energies reported here   
+156ER2CL  differ increasingly from those in the related study of 2009Pa17 as    
+156ER3CL  the level energies increase, being lower by AP 4 keV at J=26.         
+156ER CL E         From a least-squares fit using the listed |g-ray energies.   
+156ER2CL  Since 2011Re06 list no uncertainties for the EG values, the evaluator 
+156ER3CL  has assigned equal weights to them and has not quoted uncertainties   
+156ER4CL  for the resultant level energies.                                     
+156ER CL J         Primarily from 2011Re06 and based on considerations of       
+156ER2CL  expected band structure and multipolarities of |g transitions,        
+156ER3CL  using values previously established in earlier studies.               
+156ER CL BAND(A)   g.s. band                                                    
+156ER2CL  Band crossed by an aligned (i{-13/2}) two-quasineutron (^AB)          
+156ER3CL  ~excitation near h|w=0.30 MeV (above J=10).                           
+156ER CL BAND(a)   Aligned i{-13/2} two-quasineutron (^AB) configuration.       
+156ER CL BAND(B)   First excited 0+ band.                                       
+156ER CL BAND(C)   Odd-spin negative-parity band.                               
+156ER CL BAND(D)   |g-vibrational band, |a=0 branch.                            
+156ER CL BAND(d)   |g-vibrational band, |a=1 branch.                            
+156ER CL BAND(E)   Band based on a 12+ level.                                   
+156ER2CL  Band possibly results from the coupling of the aligned i{-13/2}       
+156ER3CL  two-quasineutron (^AB) band and the |g-vibrational band.              
+156ER CL BAND(F)   Band based on an 8+ level.                                   
+156ER2CL  Possible aligned ((|n h{-9/2})(n f{-7/2})){-2+} configuration.        
+156ER  L      0         0+                                                  A   
+156ER  L    344.4       2+                                                  A   
+156ER  G    344.2                E2                                             
+156ER CG           ^R=1.11 5                                                    
+156ER  L    796.5       4+                                                  A   
+156ER  G    452.4                E2                                             
+156ER CG           ^R=1.30 6                                                    
+156ER  L    930.0       2+                                                  D   
+156ER  G    585.5                                                               
+156ER  G    930.4                                                               
+156ER  L    930.2       0+                                                  B   
+156ER  L   1219.7       2+                                                  B   
+156ER  G    289.5                                                               
+156ER2 G FL=930.2                                                               
+156ER  G    875.4                                                               
+156ER  G   1219.4                                                               
+156ER  L   1339.7       6+                                                  A   
+156ER  G    543.1                E2                                             
+156ER CG           ^R=1.16 6                                                    
+156ER  L   1350.0       3+                                                  d   
+156ER  G    420.6                                                               
+156ER2 G FL=930.0                                                               
+156ER  G    553.4                                                              ?
+156ER  G   1006.0                                                               
+156ER  L   1404.7       4+                                                  D   
+156ER  G    475.0                                                               
+156ER2 G FL=930.0                                                               
+156ER  G    608.1                                                               
+156ER  G   1060.0                                                               
+156ER  L   1545.4       4+                                                  B   
+156ER  G    325.5                                                               
+156ER  G    748.7                                                               
+156ER CG           ^R=0.65 23                                                   
+156ER  G   1201.2                                                               
+156ER CG           ^R=0.9 3                                                     
+156ER  L   1610.8       5-                                                  C   
+156ER  G    814                                                                 
+156ER  L   1834.2       5+                                                  d   
+156ER  G    483.7                                                               
+156ER  G   1038.0                                                               
+156ER CG           ^R=0.55 9                                                    
+156ER  L   1884.7       6+                                                  D   
+156ER  G    479.7                                                               
+156ER  G    544.7                                                               
+156ER  G   1088.4                                                               
+156ER  L   1957.6       8+                                                  A   
+156ER  G    617.9                E2                                             
+156ER CG           ^R=1.17 9                                                    
+156ER  L   1968.4       6+                                                  B   
+156ER  G    422.9                                                               
+156ER CG           ^R=1.18 12                                                   
+156ER  G    628.6                                                               
+156ER CG           ^R=0.79 20                                                   
+156ER  G   1172.1                                                               
+156ER CG           ^R=1.1 4                                                     
+156ER  L   2028.1       7-                                                  C   
+156ER  G    417                                                                 
+156ER  G    688.6                E1                                             
+156ER CG           ^R=0.64 19                                                   
+156ER  L   2367.5      (7+)                                                 d   
+156ER  G    533.5                                                               
+156ER  G   1027.8                                                               
+156ER  L   2375.7       8+                                                  D   
+156ER  G    490.6                                                               
+156ER  G   1036.3                                                               
+156ER  L   2479.4       8+                                                  B   
+156ER  G    510.9                                                               
+156ER  G    521.8                                                               
+156ER  G   1139.7                                                               
+156ER  L   2488.1       9-                                                  C   
+156ER  G    460                                                                 
+156ER  G    530.4                E1                                             
+156ER CG           ^R=0.73 6                                                    
+156ER  L   2631.9      10+                                                  A   
+156ER  G    674.1                E2                                             
+156ER CG           ^R=0.98 19                                                   
+156ER  L   2759.6       8+                                                  F   
+156ER  G    392.4                                                               
+156ER  G    731.4                                                               
+156ER CG           ^R=1.01 14                                                   
+156ER  L   2941.5      10+                                                  D   
+156ER  G    565.8                                                               
+156ER  L   2960.2      (9+)                                                 d   
+156ER  G    592.7                                                               
+156ER  L   2996.6      10+                                                  F   
+156ER  G    237.2                                                               
+156ER CG           ^R=1.31 24                                                   
+156ER  G    364.6                                                               
+156ER CG           ^R=0.27 3. The small ^R value suggests that this transition  
+156ER2CG  is a mixed E2/M1 transition with a large negative mixing ratio        
+156ER3CG  (2011Re06).                                                           
+156ER  G    508.6               [E1]                                            
+156ER CG           ^R=0.76 5                                                    
+156ER  L   3041.1      10+                                                  B   
+156ER  G    561.7                                                               
+156ER CG           ^R=1.04 9                                                    
+156ER  L   3312.8      12+                                                  a   
+156ER  G    681                                                                 
+156ER  L   3492.2      12+                                                  F   
+156ER  G    495.6                                                               
+156ER CG           ^R=1.12 14                                                   
+156ER  L   3586.7      12+                                                  D   
+156ER  G    645.2                                                               
+156ER  L   3598.2     (11+)                                                 d   
+156ER  G    638.0                                                               
+156ER  L   3625.9      12+                                                  E   
+156ER  G    684.3                                                               
+156ER  L   3650.0      12+                                                  B   
+156ER  G    608.9                                                               
+156ER  L   3834.6      14+                                                  a   
+156ER  G    522                                                                 
+156ER  L   4086.1      14+                                                  F   
+156ER  G    593.9                                                               
+156ER CG           ^R=1.28 12                                                   
+156ER  L   4183.3      14+                                                  E   
+156ER  G    557.3                                                               
+156ER  G    870.4                                                               
+156ER  L   4246.2      14+                                                  B   
+156ER  G    596.2                                                               
+156ER CG           ^R=1.14 11                                                   
+156ER  L   4268.7     (13+)                                                 d   
+156ER  G    670.5                                                               
+156ER  L   4278.7      14+                                                  D   
+156ER  G    692.1                                                               
+156ER  L   4378.8      16+                                                  a   
+156ER  G    544                                                                 
+156ER  L   4762.5      16+                                                  F   
+156ER  G    676.4                                                               
+156ER CG           ^R=0.97 20                                                   
+156ER  L   4780.3      16+                                                  E   
+156ER  G    501.6                                                               
+156ER CG E         |g not reported by 2009Pa17.                                 
+156ER  G    596.7                                                               
+156ER CG E         |g not reported by 2009Pa17.                                 
+156ER  G    946                                                                 
+156ER  L   4811.6      16+                                                  B   
+156ER  G    565.4                                                               
+156ER CG           ^R=1.09 6                                                    
+156ER  L   4966.3     (15+)                                                 d   
+156ER  G    697.6                                                               
+156ER  L   5003.8      18+                                                  a   
+156ER  G    625                                                                 
+156ER  L   5335.9      18+                                                  E   
+156ER  G    555.7                                                               
+156ER  G    957                                                                 
+156ER  L   5369.3      18+                                                  B   
+156ER  G    557.7                                                               
+156ER CG           ^R=1.10 13                                                   
+156ER  L   5535.6      18+                                                  F   
+156ER  G    773.1                                                               
+156ER CG           ^R=1.05 18                                                   
+156ER  L   5713.8      20+                                                  a   
+156ER  G    710                                                                 
+156ER  L   5927.8      20+                                                  E   
+156ER  G    592                                                                 
+156ER  G    924                                                                 
+156ER  L   6055.9      20+                                                  B   
+156ER  G    686.5                                                               
+156ER CG           ^R=1.29 24                                                   
+156ER  L   6294.1     (20+)                                                     
+156ER  G    758.3                                                               
+156ER  L   6409.6     (20+)                                                 F   
+156ER  G    873.8                                                               
+156ER  L   6485.8      22+                                                  a   
+156ER  G    772                                                                 
+156ER  L   6658.8      22+                                                  E   
+156ER  G    731                                                                 
+156ER  L   6821.9     (22+)                                                 B   
+156ER  G    766.0                                                               
+156ER  L   7312.8      24+                                                  a   
+156ER  G    827                                                                 
+156ER  L   7438.8      24+                                                  E   
+156ER  G    780                                                                 
+156ER  L   8079        26+                                                  a   
+156ER  G    766                                                                 
+156ER  L   8206        26+                                                  E   
+156ER  G    767                                                                 
+                                                                                
 156ER    114CD(48CA,6NG):1             2009PA17                  12NDS    201210
 156ER  H TYP=FUL$AUT=C. W. REICH$CIT=NDS 113, 2537 (2012)$CUT=1-Mar-2012$       
 156ER D  NEW DATA SET PREPARED (OCTOBER, 2011) BY CW REICH                      
@@ -19248,231 +19620,6 @@
 156ER  L  16581.5  16  44+                                                  T   
 156ER  G   2161     1    1   LT  E2                                             
 156ER2 G A2=+0.4 1 $ A4=0                                                       
-                                                                                
-156ER    114CD(48CA,6NG):2             2011RE06                  12NDS    201210
-156ER  H TYP=FUL$AUT=C. W. REICH$CIT=NDS 113, 2537 (2012)$CUT=1-Mar-2012$       
-156ER D  NEW DATA SET, PREPARED (OCTOBER, 2011) BY CW REICH.                    
-156ER C  This study complements an earlier high-spin study (2009Pa17) using     
-156ER2C   the same reaction at the same bombarding energy by some of the same   
-156ER3C   authors. It provides new information on some of the lower-spin        
-156ER4C   non-yrast states in 156ER, although it does not extend to states      
-156ER5C   having spins as high as those reported in the earlier study.          
-156ER C  Reaction initiated using a 215-MeV 48CA beam from the ^ATLAS facility  
-156ER2C  at ^ANL. 1-MG/CM2 114CD target (enrichment not given), backed by a     
-156ER3C  13-MG/CM2 197AU layer to stop the recoils and help reduce the effect   
-156ER4C  of Doppler broadening in those instances where the recoils had stopped 
-156ER5C  prior to |g emission. |g radiation studied using the Gammasphere       
-156ER6C  array consisting of 101 HPGe detectors. Report EG and                  
-156ER7C  "angular-intensity ratios". Discuss properties                         
-156ER7C  of the |g-vibrational band                                             
-156ER8C  as relating to nuclear triaxiality, as well as the alignment           
-156ER9C  characteristics of several of the bands.                               
-156ER CG           2011Re06 define the angular-intensity ratio, ^R, as follows: 
-156ER2CG  ^R=I{-|g|g}(|q=150 DEG or 30 DEG)/I{-|g|g}(90 DEG). Expected ^R       
-156ER3CG  values are AP 1.1 for stretched quadrupole transitions and AP 0.7 for 
-156ER4CG  pure stretched dipole transitions.                                    
-156ER CG M         2011Re06 list mults for a number of |g's, some of them from  
-156ER2CG  other sources. These are listed here.                                 
-156ER CL E         As the level energies increase, the energies reported here   
-156ER2CL  differ increasingly from those in the related study of 2009Pa17 as    
-156ER3CL  the level energies increase, being lower by AP 4 keV at J=26.         
-156ER CL E         From a least-squares fit using the listed |g-ray energies.   
-156ER2CL  Since 2011Re06 list no uncertainties for the EG values, the evaluator 
-156ER3CL  has assigned equal weights to them and has not quoted uncertainties   
-156ER4CL  for the resultant level energies.                                     
-156ER CL J         Primarily from 2011Re06 and based on considerations of       
-156ER2CL  expected band structure and multipolarities of |g transitions,        
-156ER3CL  using values previously established in earlier studies.               
-156ER CL BAND(A)   g.s. band                                                    
-156ER2CL  Band crossed by an aligned (i{-13/2}) two-quasineutron (^AB)          
-156ER3CL  ~excitation near h|w=0.30 MeV (above J=10).                           
-156ER CL BAND(a)   Aligned i{-13/2} two-quasineutron (^AB) configuration.       
-156ER CL BAND(B)   First excited 0+ band.                                       
-156ER CL BAND(C)   Odd-spin negative-parity band.                               
-156ER CL BAND(D)   |g-vibrational band, |a=0 branch.                            
-156ER CL BAND(d)   |g-vibrational band, |a=1 branch.                            
-156ER CL BAND(E)   Band based on a 12+ level.                                   
-156ER2CL  Band possibly results from the coupling of the aligned i{-13/2}       
-156ER3CL  two-quasineutron (^AB) band and the |g-vibrational band.              
-156ER CL BAND(F)   Band based on an 8+ level.                                   
-156ER2CL  Possible aligned ((|n h{-9/2})(n f{-7/2})){-2+} configuration.        
-156ER  L      0         0+                                                  A   
-156ER  L    344.4       2+                                                  A   
-156ER  G    344.2                E2                                             
-156ER CG           ^R=1.11 5                                                    
-156ER  L    796.5       4+                                                  A   
-156ER  G    452.4                E2                                             
-156ER CG           ^R=1.30 6                                                    
-156ER  L    930.0       2+                                                  D   
-156ER  G    585.5                                                               
-156ER  G    930.4                                                               
-156ER  L    930.2       0+                                                  B   
-156ER  L   1219.7       2+                                                  B   
-156ER  G    289.5                                                               
-156ER2 G FL=930.2                                                               
-156ER  G    875.4                                                               
-156ER  G   1219.4                                                               
-156ER  L   1339.7       6+                                                  A   
-156ER  G    543.1                E2                                             
-156ER CG           ^R=1.16 6                                                    
-156ER  L   1350.0       3+                                                  d   
-156ER  G    420.6                                                               
-156ER2 G FL=930.0                                                               
-156ER  G    553.4                                                              ?
-156ER  G   1006.0                                                               
-156ER  L   1404.7       4+                                                  D   
-156ER  G    475.0                                                               
-156ER2 G FL=930.0                                                               
-156ER  G    608.1                                                               
-156ER  G   1060.0                                                               
-156ER  L   1545.4       4+                                                  B   
-156ER  G    325.5                                                               
-156ER  G    748.7                                                               
-156ER CG           ^R=0.65 23                                                   
-156ER  G   1201.2                                                               
-156ER CG           ^R=0.9 3                                                     
-156ER  L   1610.8       5-                                                  C   
-156ER  G    814                                                                 
-156ER  L   1834.2       5+                                                  d   
-156ER  G    483.7                                                               
-156ER  G   1038.0                                                               
-156ER CG           ^R=0.55 9                                                    
-156ER  L   1884.7       6+                                                  D   
-156ER  G    479.7                                                               
-156ER  G    544.7                                                               
-156ER  G   1088.4                                                               
-156ER  L   1957.6       8+                                                  A   
-156ER  G    617.9                E2                                             
-156ER CG           ^R=1.17 9                                                    
-156ER  L   1968.4       6+                                                  B   
-156ER  G    422.9                                                               
-156ER CG           ^R=1.18 12                                                   
-156ER  G    628.6                                                               
-156ER CG           ^R=0.79 20                                                   
-156ER  G   1172.1                                                               
-156ER CG           ^R=1.1 4                                                     
-156ER  L   2028.1       7-                                                  C   
-156ER  G    417                                                                 
-156ER  G    688.6                E1                                             
-156ER CG           ^R=0.64 19                                                   
-156ER  L   2367.5      (7+)                                                 d   
-156ER  G    533.5                                                               
-156ER  G   1027.8                                                               
-156ER  L   2375.7       8+                                                  D   
-156ER  G    490.6                                                               
-156ER  G   1036.3                                                               
-156ER  L   2479.4       8+                                                  B   
-156ER  G    510.9                                                               
-156ER  G    521.8                                                               
-156ER  G   1139.7                                                               
-156ER  L   2488.1       9-                                                  C   
-156ER  G    460                                                                 
-156ER  G    530.4                E1                                             
-156ER CG           ^R=0.73 6                                                    
-156ER  L   2631.9      10+                                                  A   
-156ER  G    674.1                E2                                             
-156ER CG           ^R=0.98 19                                                   
-156ER  L   2759.6       8+                                                  F   
-156ER  G    392.4                                                               
-156ER  G    731.4                                                               
-156ER CG           ^R=1.01 14                                                   
-156ER  L   2941.5      10+                                                  D   
-156ER  G    565.8                                                               
-156ER  L   2960.2      (9+)                                                 d   
-156ER  G    592.7                                                               
-156ER  L   2996.6      10+                                                  F   
-156ER  G    237.2                                                               
-156ER CG           ^R=1.31 24                                                   
-156ER  G    364.6                                                               
-156ER CG           ^R=0.27 3. The small ^R value suggests that this transition  
-156ER2CG  is a mixed E2/M1 transition with a large negative mixing ratio        
-156ER3CG  (2011Re06).                                                           
-156ER  G    508.6               [E1]                                            
-156ER CG           ^R=0.76 5                                                    
-156ER  L   3041.1      10+                                                  B   
-156ER  G    561.7                                                               
-156ER CG           ^R=1.04 9                                                    
-156ER  L   3312.8      12+                                                  a   
-156ER  G    681                                                                 
-156ER  L   3492.2      12+                                                  F   
-156ER  G    495.6                                                               
-156ER CG           ^R=1.12 14                                                   
-156ER  L   3586.7      12+                                                  D   
-156ER  G    645.2                                                               
-156ER  L   3598.2     (11+)                                                 d   
-156ER  G    638.0                                                               
-156ER  L   3625.9      12+                                                  E   
-156ER  G    684.3                                                               
-156ER  L   3650.0      12+                                                  B   
-156ER  G    608.9                                                               
-156ER  L   3834.6      14+                                                  a   
-156ER  G    522                                                                 
-156ER  L   4086.1      14+                                                  F   
-156ER  G    593.9                                                               
-156ER CG           ^R=1.28 12                                                   
-156ER  L   4183.3      14+                                                  E   
-156ER  G    557.3                                                               
-156ER  G    870.4                                                               
-156ER  L   4246.2      14+                                                  B   
-156ER  G    596.2                                                               
-156ER CG           ^R=1.14 11                                                   
-156ER  L   4268.7     (13+)                                                 d   
-156ER  G    670.5                                                               
-156ER  L   4278.7      14+                                                  D   
-156ER  G    692.1                                                               
-156ER  L   4378.8      16+                                                  a   
-156ER  G    544                                                                 
-156ER  L   4762.5      16+                                                  F   
-156ER  G    676.4                                                               
-156ER CG           ^R=0.97 20                                                   
-156ER  L   4780.3      16+                                                  E   
-156ER  G    501.6                                                               
-156ER CG E         |g not reported by 2009Pa17.                                 
-156ER  G    596.7                                                               
-156ER CG E         |g not reported by 2009Pa17.                                 
-156ER  G    946                                                                 
-156ER  L   4811.6      16+                                                  B   
-156ER  G    565.4                                                               
-156ER CG           ^R=1.09 6                                                    
-156ER  L   4966.3     (15+)                                                 d   
-156ER  G    697.6                                                               
-156ER  L   5003.8      18+                                                  a   
-156ER  G    625                                                                 
-156ER  L   5335.9      18+                                                  E   
-156ER  G    555.7                                                               
-156ER  G    957                                                                 
-156ER  L   5369.3      18+                                                  B   
-156ER  G    557.7                                                               
-156ER CG           ^R=1.10 13                                                   
-156ER  L   5535.6      18+                                                  F   
-156ER  G    773.1                                                               
-156ER CG           ^R=1.05 18                                                   
-156ER  L   5713.8      20+                                                  a   
-156ER  G    710                                                                 
-156ER  L   5927.8      20+                                                  E   
-156ER  G    592                                                                 
-156ER  G    924                                                                 
-156ER  L   6055.9      20+                                                  B   
-156ER  G    686.5                                                               
-156ER CG           ^R=1.29 24                                                   
-156ER  L   6294.1     (20+)                                                     
-156ER  G    758.3                                                               
-156ER  L   6409.6     (20+)                                                 F   
-156ER  G    873.8                                                               
-156ER  L   6485.8      22+                                                  a   
-156ER  G    772                                                                 
-156ER  L   6658.8      22+                                                  E   
-156ER  G    731                                                                 
-156ER  L   6821.9     (22+)                                                 B   
-156ER  G    766.0                                                               
-156ER  L   7312.8      24+                                                  a   
-156ER  G    827                                                                 
-156ER  L   7438.8      24+                                                  E   
-156ER  G    780                                                                 
-156ER  L   8079        26+                                                  a   
-156ER  G    766                                                                 
-156ER  L   8206        26+                                                  E   
-156ER  G    767                                                                 
                                                                                 
 156ER    (HI,XNG)                      1985ST08,1985AZZY,1973BE4312NDS    201210
 156ER  H TYP=FUL$AUT=C. W. REICH$CIT=NDS 113, 2537 (2012)$CUT=1-Mar-2012$       

@@ -453,27 +453,27 @@
 165    R 2006SH08 JOUR IMPEE 15 719                                             
 165    R 2006TA11 JOUR PRVCA 73 034305                                          
                                                                                 
-165SM    COMMENTS                                                ENSDF    201309
-165SM  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+165SM    COMMENTS                                                ENSDF    201704
+165SM  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 165SM C  TITL$NUCLEAR DATA SHEETS FOR 165SM                                     
-165SM c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-165SM c  INST$Department of Physics and Astronomy,                              
-165SM#c       McMaster University, Hamilton, Ontario,                           
-165SM#c       Canada, L8S 4M1                                                   
-165SM c  ABST$Information about the identification of {+165}Sm nuclide          
-164SM2c  from 2012Ku26 is presented                                             
-165SM c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-165SM c  ACKN$                                                                  
-165SM c  FUND$Work supported by the office of Science of the U.S. Department    
-165SMxc  of Energy.                                                             
+165SM c  AUTH$FILIP G KONDEV                                                    
+165SM c  INST$Nuclear Engineering Division                                      
+165SM#c       Argonne National Laboratory                                       
+165SM#c       9700 South Cass Avenue                                            
+165SM#c       Argonne, Illinois 60439, USA                                      
+165SM c  ABST$Information about the nuclear structure properties of the         
+165SM2c  {+165}Sm nuclide is presented                                          
+165SM c  CUT$Literature available up to February 20, 2017 has been consulted.   
+165SM c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+165SM1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 165SM C  CIT$ENSDF                                                              
                                                                                 
-165SM    ADOPTED LEVELS                                          ENSDF    201309
-165SM  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+165SM    ADOPTED LEVELS                                          ENSDF    201704
+165SM  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 165SM  Q 6880      SY 3780   SY 12530  CA -3650  SY    2012Wa38,1997MO25        
 165SM cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=510, |DS(n)=500,          
 165SM2cQ |DS(|a)=640                                                            
-165SM CQ $ SP from 1997Mo25; others from 2012Wa38                               
+165SM cQ $S(p) from 1997Mo25; others from 2012Wa38                              
 165SM cQ $S(2n)=9230 {I500}, Q(|b{+-}n)=1450 {I450} from 2012Wa38 (syst).       
 165SM2cQ S(2p)=23950 (1997Mo25, theory)                                         
 165SM c  2012Ku26: {+165}Sm produced and identified in {+9}Be({+238}U,F),       
@@ -481,7 +481,7 @@
 165SM3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 165SM4c  Fragment Separator (FRS). Particle identification was achieved by      
 165SM5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-165SM6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+165SM6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 165SM7c  measured using two plastic scintillation detectors, energy loss or     
 165SM8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 165SM9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -493,17 +493,33 @@
 165SMFc  a scintillator for veto signal. Measured production cross section.     
 165SMGc  Comparison of measured |s with predictions from ABRABLA model and      
 165SMHc  EPAX-3 model                                                           
-165SM  L 0                              160 NS   GT                             
-165SM2 L %B-=?$ %B-N=?                                                          
-165SM cL $ Mainly |b{+-} decay mode is expected. Predicted %|b{+-}n=0.2         
-165SM2cL (1997Mo25)                                                             
-165SM cL E$ the observed {+165}Sm fragments assumed to correspond to the g.s.   
-165SM cL J$ 5/2- from systematics (2012Au07), 5/2- predicted (1997Mo25)         
-165SM cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-165SM2cL |b-decay half-life is expected to be much longer as suggested by       
-165SM3cL 200 ms from systematics (2012Au07), and 0.77 s from theoretical        
-165SM4cL calculations (1997Mo25)                                                
-165SM cL $ Production |s=7.8 nb {I16} (2012Ku26)                                
+165SM c  2017Wu04: The {+165}Sm nuclide was produced at the RIBF-RIKEN facility 
+165SM2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+165SM3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+165SM4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+165SM5c  pnA, respectively. The identification of the nuclide of interest was   
+165SM6c  made in the BigRIPS separator by determining the atomic number and the 
+165SM7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+165SM8c  reaction products were transported through the ZeroDegree Spectrometer 
+165SM9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+165SMac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+165SMbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+165SMcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+165SMdc  Deduced: T{-1/2}.                                                      
+165SM  L 0.0          (5/2-)           0.98 S    21                             
+165SM2 L %B-=100 $ %B-N=?                                                       
+165SM cL %B-$Only |b{+-} decay mode is expected.                                
+165SM cL J$From systematics of known quasiparticle states in neighboring nuclei 
+165SM2cL and the proposed configuration (by the evaluator). The assignment is   
+165SM3cL tentative.                                                             
+165SM cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+165SM2cL using the least-squares and maximum-likelihood methods. The data       
+165SM3cL analysis included contributions from the parent, daughter and          
+165SM4cL grand-daughter decays, as well as a constant background.               
+165SM cL CONF$|n5/2[512] Nilsson orbital, based on systematics of known         
+165SM2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+165SM3cL assignment is tentative.                                               
+165SM cL $ Production |s(at 1 GeV/nucleon)=7.8 nb {I16} (2012Ku26)              
                                                                                 
 165EU    ADOPTED LEVELS                                          06NDS    200808
 165EU  H TYP=FUL$AUT=BALRAJ SINGH$CUT=31-AUG-2008$CIT=ENSDF$                    

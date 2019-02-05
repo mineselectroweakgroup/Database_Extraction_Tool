@@ -3648,18 +3648,21 @@
 241AM2 L FLAG=A$XREF=C$                                                         
 241AM  G 573.0      5                                                       Y  ?
                                                                                 
-241AM    241PU B- DECAY                                          15NDS    201512
-241AM  H TYP=FUL$AUT=C.D. NESARAJA$CIT=NDS 130, 183 (2015)$CUT=30-Sep-2015$     
-241PU  P 0.0          5/2+             14.329 Y  29             20.78     13    
-241PU cP QP$From 2012Wa38                                                       
+241AM    241PU B- DECAY                                                   201711
+241AM  H TYP=ERR$AUT=C.D. Nesaraja$DAT=20-APR-2017$CIT=ENSDF$                   
+241AM2 H COM=Updated Q value using 2017Wa10, calculated log {Ift},              
+241AM3 H edited |b end point and average energies.                              
+241AM  H TYP=FUL$AUT=C.D. Nesaraja$CUT=30-Sep-2014                              
+241PU  P 0.0          5/2+             14.329 Y  29             20.78     17    
+241PU cP QP$From 2017Wa10                                                       
 241PU cP J,T$From Adopted Levels in {+241}Pu                                    
 241AM  N                        0.99998  1.0                                    
 241AM  L 0.0          5/2-                                                      
-241AM  B 20.78     13 100                                                       
-241AM CB E$WEIGHTED AVERAGE OF 20.78 20 (1999YAZX), 20.7 3                      
-241AM2CB (2000DR02,1999DR13), AND 20.8 2 (1956SH31)                             
-241AM cB           av E|b=5.78 {I31} measured by calorimeter; T{-1/2}=14.30 y   
-241AM2cB {I30} was used (1968Oe01). The calculated value is av E|b=5.23 {I5}.   
+241AM  B              100                  5.788 11                             
+241AMS B EAV=5.227 43                                                           
+241AM cB E$20.78 {I20} (1999YaZX), 20.7 {I3} (1999Dr13), 20.8 {I2} (1956Sh31)   
+241AM cB $av E|b=5.78 {I31} measured by calorimeter; T{-1/2}=14.03 y            
+241AM2cB {I30} was used (1968Oe01). The calculated value is av E|b=5.23 {I4}.   
                                                                                 
 241AM    241CM EC DECAY                1974PO08                  15NDS    201512
 241AM  H TYP=FUL$AUT=C.D. NESARAJA$CIT=NDS 130, 183 (2015)$CUT=30-Sep-2015$     

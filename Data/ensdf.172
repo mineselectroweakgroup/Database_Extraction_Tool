@@ -526,23 +526,23 @@
 172    R 1996PA01 JOUR PRVCA 53 660                                             
 172    R 1997MOZW PREPRINT Moller,4/1/97                                        
                                                                                 
-172TB    COMMENTS                                                ENSDF    201309
-172TB  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+172TB    COMMENTS                                                ENSDF    201704
+172TB  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 172TB C  TITL$NUCLEAR DATA SHEETS FOR 172TB                                     
-172TB c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-172TB c  INST$Department of Physics and Astronomy,                              
-172TB#c       McMaster University, Hamilton, Ontario,                           
-172TB#c       Canada, L8S 4M1                                                   
-172TB c  ABST$Information about the identification of {+172}Tb nuclide          
-172TB2c  from 2012Ku26 is presented                                             
-172TB c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-172TB c  ACKN$                                                                  
-172TB c  FUND$Work supported by the office of Science of the U.S. Department    
-172TBxc  of Energy.                                                             
+172TB c  AUTH$FILIP G KONDEV                                                    
+172TB c  INST$Nuclear Engineering Division                                      
+172TB#c       Argonne National Laboratory                                       
+172TB#c       9700 South Cass Avenue                                            
+172TB#c       Argonne, Illinois 60439, USA                                      
+172TB c  ABST$Information about the nuclear structure properties of the         
+172TB2c  {+172}Tb nuclide is presented                                          
+172TB c  CUT$Literature available up to February 20, 2017 has been consulted.   
+172TB c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+172TB1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 172TB C  CIT$ENSDF                                                              
                                                                                 
-172TB    ADOPTED LEVELS                                          ENSDF    201309
-172TB  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+172TB    ADOPTED LEVELS                                          ENSDF    201704
+172TB  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 172TB  Q 8190      CA 3970   CA 10200  CA -2580  CA    1997MO25                 
 172TB cQ $S(2n)=9450, S(2p)=22880 from 1997Mo25 (theory).                       
 172TB2cQ Deduced Q(|b{+-}n)=2300 {I420} (from 1997Mo25 and 2012Wa38)            
@@ -551,7 +551,7 @@
 172TB3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 172TB4c  Fragment Separator (FRS). Particle identification was achieved by      
 172TB5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-172TB6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+172TB6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 172TB7c  measured using two plastic scintillation detectors, energy loss or     
 172TB8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 172TB9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -563,16 +563,40 @@
 172TBFc  a scintillator for veto signal. Measured production cross section.     
 172TBGc  Comparison of measured |s with predictions from ABRABLA model and      
 172TBHc  EPAX-3 model                                                           
-172TB  L 0                              160 NS   GT                             
-172TB2 L %B-=?$ %B-N=?                                                          
-172TB cL $ Predicted %|b{+-}n=1.22 (1997Mo25)                                   
-172TB cL E$ the observed {+172}Tb fragments assumed to correspond to the g.s.   
-172TB cL J$ 3/2+ for valence proton and 9/2+ for valence neutron                
-172TB2cL  predicted (1997Mo25)                                                  
-172TB cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-172TB2cL |b-decay half-life is expected to be much longer as suggested by       
-172TB3cL 1.57 s from theoretical calculations (1997Mo25)                        
-172TB cL $ Production |s=1.0 nb {I4} (2012Ku26)                                 
+172TB c  2017Wu04: The {+172}Tb nuclide was produced at the RIBF-RIKEN facility 
+172TB2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+172TB3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+172TB4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+172TB5c  pnA, respectively. The identification of the nuclide of interest was   
+172TB6c  made in the BigRIPS separator by determining the atomic number and the 
+172TB7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+172TB8c  reaction products were transported through the ZeroDegree Spectrometer 
+172TB9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+172TBac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+172TBbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+172TBcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+172TBdc  Deduced: T{-1/2}.                                                      
+172TB  L 0.0          (6+)             0.76 S    19                             
+172TB2 L %B-=100 $ %B-N=?                                                       
+172TB cL %B-$Only |b{+-} decay mode is expected.                                
+172TB cL J$From systematics of known quasiparticle states in neighboring nuclei 
+172TB2cL and the proposed configuration (by the evaluator). The assignment is   
+172TB3cL tentative.                                                             
+172TB cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+172TB2cL using the least-squares and maximum-likelihood methods. The data       
+172TB3cL analysis included contributions from the parent, daughter and          
+172TB4cL grand-daughter decays, as well as a constant background.               
+172TB5cL The assignment to the ground state is ambiguous, given the possible    
+172TB5cL existence of an isomeric state.                                        
+172TB cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+172TB2cL |p3/2[411] and |n9/2[624] Nilsson orbitals are expected near the proton
+172TB3cL and neutron Fermi surfaces, respectively. Thus, using the              
+172TB4cL Gallagher-Moszkowski rule, one may expect the K|p=6+,                  
+172TB5cL |p3/2[411]~#|n9/2[624] configuration for the ground state. The         
+172TB6cL existence of a low-spin, K|p=3+ isomer, arising from the same          
+172TB7cL configuration, is also possible. The assignment is made by the         
+172TB8cL evaluator.                                                             
+172TB cL $ Production |s(at 1 GeV/nucleon)=1.0 nb {I4} (2012Ku26)               
                                                                                 
 172DY    COMMENTS                                                ENSDF    201309
 172DY  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     

@@ -405,19 +405,68 @@
 160    R 2004AN14 JOUR ADNDA 87 185                                             
 160    R 2004ES01 JOUR ZAANE 21 67                                              
                                                                                 
-160ND    COMMENTS                                                ENSDF    201309
-160ND  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+160PR    COMMENTS                                                ENSDF    201704
+160PR  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+160PR C  TITL$NUCLEAR DATA SHEETS FOR 160PR                                     
+160PR c  AUTH$FILIP G. KONDEV                                                   
+160PR c  INST$Nuclear Engineering Division                                      
+160PR#c       Argonne National Laboratory                                       
+160PR#c       9700 South Cass Avenue                                            
+160PR#c       Argonne, Illinois 60439, USA                                      
+160PR c  ABST$Information about the nuclear structure properties of the         
+160PR2c  {+160}Pr nuclide is presented                                          
+160PR c  CUT$Literature available up to February 20, 2017 has been consulted.   
+160PR c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+160PR1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+160PR C  CIT$ENSDF                                                              
+                                                                                
+160PR    ADOPTED LEVELS                                                   201704
+160PR  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+160PR  Q 10730     CA 3470   CA 11900  CA -5630  CA    1997MO25                 
+160PR cQ $S(2n)=8440, S(2p)=26520, from 1997Mo25 (theory)                       
+160PR c  2017Wu04: The {+160}Pr nuclide was produced at the RIBF-RIKEN facility 
+160PR2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+160PR3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+160PR4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+160PR5c  pnA, respectively. The identification of the nuclide of interest was   
+160PR6c  made in the BigRIPS separator by determining the atomic number and the 
+160PR7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+160PR8c  reaction products were transported through the ZeroDegree Spectrometer 
+160PR9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+160PRac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+160PRbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+160PRcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+160PRdc  Deduced: T{-1/2}.                                                      
+160PR  L 0.0          (1+)             0.17 S    14                             
+160PR2 L %B-=100 $ %B-N=?                                                       
+160PR cL %B-$Only |b{+-} decay mode is expected.                                
+160PR cL J$From systematics of known quasiparticle states in neighboring nuclei 
+160PR2cL and the proposed configuration (by the evaluator). The assignment is   
+160PR3cL tentative.                                                             
+160PR cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+160PR2cL using the least-squares and maximum-likelihood methods. The data       
+160PR3cL analysis included contributions from the parent, daughter and          
+160PR4cL grand-daughter decays, as well as a constant background.               
+160PR cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+160PR2cL |p3/2[541] and |n1/2[521] Nilsson orbitals are expected near the proton
+160PR3cL and neutron Fermi surfaces, respectively. Thus, using the              
+160PR4cL Gallagher-Moszkowski rule, one may expect the K|p=1+,                  
+160PR5cL |p3/2[541]~#|n1/2[521] configuration for the ground state.             
+160PR6cL The assignment is made by the evaluator.                               
+                                                                                
+160ND    COMMENTS                                                ENSDF    201704
+160ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 160ND C  TITL$NUCLEAR DATA SHEETS FOR 160ND                                     
-160ND c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-160ND c  INST$Department of Physics and Astronomy,                              
-160ND#c       McMaster University, Hamilton, Ontario,                           
-160ND#c       Canada, L8S 4M1                                                   
-160ND c  ABST$Information about the identification of {+160}Nd nuclide          
-160ND2c  from 2012Ku26 is presented.                                            
-160ND c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-160ND c  ACKN$                                                                  
-160ND c  FUND$Work supported by the office of Science of the U.S. Department    
-160NDxc  of Energy.                                                             
+160ND c  AUTH$FILIP G KONDEV                                                    
+160ND c  INST$Nuclear Engineering Division                                      
+160ND#c       Argonne National Laboratory                                       
+160ND#c       9700 South Cass Avenue                                            
+160ND#c       Argonne, Illinois 60439, USA                                      
+160ND c  ABST$Information about the nuclear structure properties of the         
+160ND2c  {+160}Nd nuclide is presented                                          
+160ND c  CUT$Literature available up to February 20, 2017 has been consulted.   
+160ND c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+160ND1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 160ND C  CIT$ENSDF                                                              
                                                                                 
 160ND    ADOPTED LEVELS                                          ENSDF    201309
@@ -463,23 +512,136 @@
 160ND4cL calculations (1997Mo25)                                                
 160ND cL $ Production |s=9.5 nb {I22} (2012Ku26)                                
                                                                                 
-160PM    COMMENTS                                                ENSDF    201309
-160PM  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+160ND    ADOPTED LEVELS, GAMMAS                                  ENSDF    201704
+160ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+160ND  Q 5870      SY 5400   SY 13330  SY -4690  SY    2012WA38                 
+160ND cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=500, |DS(n)=570,      
+160ND2cQ |DS(p)=640, |DS(|a)=570                                                
+160ND cQ $S(2n)=9220 {I500}, Q(|b{+-}n)=1350 {I400} from 2012Wa38 (syst).       
+160ND2cQ S(2p)=24940 from 1997Mo25 (theory).                                    
+160ND c  2012Ku26: {+160}Nd produced and identified in {+9}Be({+238}U,F),       
+160ND2c  E=1 GeV/nucleon reaction using SIS-18 synchrotron facility at GSI.     
+160ND3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
+160ND4c  Fragment Separator (FRS). Particle identification was achieved by      
+160ND5c  event-by-event in-flight analysis of time-of-flight, energy loss       
+160ND6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
+160ND7c  measured using two plastic scintillation detectors, energy loss or     
+160ND8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
+160ND9c  time-projection chambers (TPC), which also provided energy deposit     
+160NDAc  information. Isomer tagging method for known |ms isomers was used      
+160NDBc  to verify event-by-event identification and in-flight separation of    
+160NDCc  new isotopes. Gamma rays from the known isomers were recorded in       
+160NDDc  coincidence with the incoming ions using either the RISING array of    
+160NDEc  Ge detectors at GSI or only two Ge detectors, a stopper foil and       
+160NDFc  a scintillator for veto signal. Measured production cross section.     
+160NDGc  Comparison of measured |s with predictions from ABRABLA model and      
+160NDHc  EPAX-3 model                                                           
+160ND c  2017Wu04: The {+160}Nd nuclide was produced at the RIBF-RIKEN facility 
+160ND2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon. Two         
+160ND3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+160ND4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+160ND5c  pnA, respectively. The identification of the nuclide of interest was   
+160ND6c  made in the BigRIPS separator by determining the atomic number and the 
+160ND7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+160ND8c  reaction products were transported through the ZeroDegree Spectrometer 
+160ND9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+160NDac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+160NDbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+160NDcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+160NDdc  Deduced: T{-1/2}.                                                      
+160ND c  Nuclear structure calculations (levels, J, |p, moments): 2012Gh07,     
+160ND2c  1997Lo07, 1987Ne03, 1985Ro21, 1984Sa16                                 
+160ND cL E$From least-squares fit to E|g                                        
+160ND CG E,RI$From 2016Id02 in {+9}Be({+238}U,F|g)                              
+160ND D   ------------------------------------------------------ CONFIGURATION  
+160ND cL BAND(A)$K|p=0+, ground-state band                                      
+160ND cL BAND(B)$K|p=(4-), |n{+2}(1/2[521],7/2[633]) isomer                     
+160ND D   ------------------------------------------------------                
+160ND  XABE(238U,FG)                                                            
+160ND PN                                                                     6  
+160ND  L 0.0          0+               0.44 S    4                          A   
+160ND2 L XREF=A                                                                 
+160ND3 L %B-=100 $ %B-N=?                                                       
+160ND cL %B-$Only |b{+-} decay mode is expected.                                
+160ND cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+160ND2cL using the least-squares and maximum-likelihood methods. The data       
+160ND3cL analysis included contributions from the parent, daughter and          
+160ND4cL ground-daughter decays, as well as a constant background.              
+160ND5cL T{-1/2}=0.439 s {I37} is reported in 2017Wu04                          
+160ND cL $ Production |s(at 1 GeV/nucleon)=9.5 nb {I22} (2012Ku26)              
+160ND  L 65.2       5  (2+)                                                 A   
+160ND2 L XREF=A                                                                 
+160ND cL J$65.2|g to 0+; band assignment                                        
+160ND  G 65.2      5  100      [E2]                    10.7   4                 
+160ND  L 215.1      7  (4+)                                                 A   
+160ND2 L XREF=A                                                                 
+160ND cL J$149.9|g to (2+); band assignment                                     
+160ND  G 149.9     5  100      [E2]                    0.524  10                
+160ND  L 1107.9     9 (4-)               1.63 US 21                         BM  
+160ND2 L XREF=A                                                                 
+160ND cL J$892.8|g to (4+); unobserved |g's to the 2+ and 6+ members of         
+160ND2cL the ground-state band; systematics of single-particle states in        
+160ND3cL neighboring nuclei; proposed configuration                             
+160ND cL T$From a single exponential fit of a time spectrum produced by summing 
+160ND2cL individual time spectra constructed by gating on the implanted ion and 
+160ND3cL the 149.9|g and 892.8|g.                                               
+160ND cL CONF$K|p=(4-), |n{+2}(1/2[521],7/2[633])                               
+160ND  G 892.8     5  100      [E1]                    1.16E-3                  
+160NDB G BE1W=2.0E-10 3                                                         
+160ND cG $Reduced hindrance f{-|n}=1717 {I74} for |n=3 (by the evaluator)       
+                                                                                
+160ND    BE(238U,FG)                   2016ID02                           201704
+160ND  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+160ND c  2016Di02: The {+160}Nd nuclide was produced at the RIBF-RIKEN facility 
+160ND2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon. The beam    
+160ND3c  intensity was ~~7 pnA. The identification of {+160}Nd                  
+160ND4c  was made in the BigRIPS separator by determining the atomic number and 
+160ND5c  the mass-to-charge ratio of the ion using the TOF-B|r-|DE method. Two  
+160ND6c  separate experiments were performed: in the first one ~~10{+4} {+160}Nd
+160ND7c  recoils were implanted into the beta-counting system WAS3ABi, while in 
+160ND8c  the second one ~~3400 {+160}Nd recoils were implanted into a passive   
+160ND9c  stopper made of copper. In both experiments the EURICA array comprising
+160NDac  of 84 HPGe detectors was used to detect delayed |g rays in coincidences
+160NDbc  (a few |ms) with the implanted ions.  Measured: implanted ion-|g-t and 
+160NDcc  implanted ion-|g|g-t.                                                  
+160ND cL E$From least-squares fit to E|g                                        
+160ND cL J$From 2016Id02, based on systematics arguments                        
+160ND CG E,RI$From 2016Id02                                                     
+160ND D   ------------------------------------------------------ CONFIGURATION  
+160ND cL BAND(A)$K|p=0+, ground-state band                                      
+160ND cL BAND(B)$K|p=(4-), |n{+2}(1/2[521],7/2[633]) isomer                     
+160ND D   ------------------------------------------------------                
+160ND DG CC$FROM BrIcc v2.3b (16-Dec-2014) 2008Ki07, "Frozen Orbitals" appr.    
+160ND  L    0         0+                                                    A   
+160ND  L 65.2       5  (2+)                                                 A   
+160ND  G 65.2      5  7      2 [E2]                    10.7   4                 
+160ND  L 215.1      7  (4+)                                                 A   
+160ND  G 149.9     5  66     5 [E2]                    0.524  10                
+160ND  L 1107.9     9 (4-)               1.63 US 21                         BM  
+160ND cL T$From a single exponential fit of a time spectrum produced by summing 
+160ND2cL individual time spectra constructed by gating on the implanted ion and 
+160ND3cL the 149.9|g and 892.8|g.                                               
+160ND  G 892.8     5  97     6 [E1]                    1.16E-3                  
+160NDB G BE1W=2.0E-10 3                                                         
+160ND cG $Reduced hindrance f{-|n}=1717 {I74} for |n=3 (by the evaluator)       
+                                                                                
+160PM    COMMENTS                                                ENSDF    201704
+160PM  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
 160PM C  TITL$NUCLEAR DATA SHEETS FOR 160PM                                     
-160PM c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-160PM c  INST$Department of Physics and Astronomy,                              
-160PM#c       McMaster University, Hamilton, Ontario,                           
-160PM#c       Canada, L8S 4M1                                                   
-160PM c  ABST$Information about the identification of {+160}Pm nuclide          
-160PM2c  from 2012Ku26 is presented.                                            
-160PM c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-160PM c  ACKN$                                                                  
-160PM c  FUND$Work supported by the office of Science of the U.S. Department    
-160PMxc  of Energy.                                                             
+160PM c  AUTH$FILIP G. KONDEV                                                   
+160PM c  INST$Nuclear Engineering Division                                      
+160PM#c       Argonne National Laboratory                                       
+160PM#c       9700 South Cass Avenue                                            
+160PM#c       Argonne, Illinois 60439, USA                                      
+160PM c  ABST$Information about the nuclear structure properties of the         
+160PM2c  {+160}Pm nuclide is presented                                          
+160PM c  CUT$Literature available up to February 20, 2017 has been consulted.   
+160PM c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+160PM1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 160PM C  CIT$ENSDF                                                              
                                                                                 
-160PM    ADOPTED LEVELS                                          ENSDF    201309
-160PM  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+160PM    ADOPTED LEVELS                                          ENSDF    201704
+160PM  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
 160PM  Q 7230      SY 4520   SY 10480  SY -3860  SY    2012Wa38                 
 160PM cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=300, |DS(n)=300,          
 160PM2cQ |DS(p)=500, |DS(|a)=420                                                
@@ -490,7 +652,7 @@
 160PM3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 160PM4c  Fragment Separator (FRS). Particle identification was achieved by      
 160PM5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-160PM6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+160PM6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 160PM7c  measured using two plastic scintillation detectors, energy loss or     
 160PM8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 160PM9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -502,18 +664,41 @@
 160PMFc  a scintillator for veto signal. Measured production cross section.     
 160PMGc  Comparison of measured |s with predictions from ABRABLA model and      
 160PMHc  EPAX-3 model                                                           
-160PM  L 0                              160 NS   GT                             
-160PM2 L %B-=?$ %B-N=?                                                          
-160PM cL $ Mainly |b{+-} decay mode is expected. Predicted %|b{+-}n=0.03        
-160PM2cL  (1997Mo25)                                                            
-160PM cL E$ the observed {+160}Pm fragments assumed to correspond to the g.s.   
-160PM cL J$ 5/2- for valence proton and 1/2- for valence neutron                
-160PM2cL  predicted (1997Mo25)                                                  
-160PM cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-160PM2cL |b-decay half-life is expected to be much longer as suggested by       
-160PM3cL 2 s from systematics (2012Au07), and 0.526 s from theoretical          
-160PM4cL calculations (1997Mo25)                                                
-160PM cL $ Production |s=518 nb {I36} (2012Ku26)                                
+160PM c  2017Wu04: The {+160}Pm nuclide was produced at the RIBF-RIKEN facility 
+160PM2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+160PM3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+160PM4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+160PM5c  pnA, respectively. The identification of the nuclide of interest was   
+160PM6c  made in the BigRIPS separator by determining the atomic number and the 
+160PM7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+160PM8c  reaction products were transported through the ZeroDegree Spectrometer 
+160PM9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+160PMac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+160PMbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+160PMcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+160PMdc  Deduced: T{-1/2}.                                                      
+160PM  L 0.0          (6-)             0.73 S    6                              
+160PM2 L %B-=100 $ %B-N=?                                                       
+160PM cL %B-$Only |b{+-} decay mode is expected.                                
+160PM cL J$From systematics of known quasiparticle states in neighboring nuclei 
+160PM2cL and the proposed configuration (by the evaluator). The assignment is   
+160PM3cL tentative.                                                             
+160PM cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+160PM2cL using the least-squares and maximum-likelihood methods. The data       
+160PM3cL analysis included contributions from the parent, daughter and          
+160PM4cL grand-daughter decays, as well as a constant background.               
+160PM5cL The assignment to the ground state is ambiguous, given the possible    
+160PM6cL existence of an isomeric state.                                        
+160PM7cL T{-1/2}=0.725 s {I57} is reported in 2017WuAA                          
+160PM cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+160PM2cL |p5/2[532] and |n7/2[633] Nilsson orbitals are expected near the proton
+160PM3cL and neutron Fermi surfaces, respectively. Thus, using the              
+160PM4cL Gallagher-Moszkowski rule, one may expect the K|p=6-,                  
+160PM5cL |p5/2[532]~#|n7/2[633] configuration for the ground state. The         
+160PM6cL existence of a low-spin, K|p=0- isomer, arising from the same          
+160PM7cL configuration, is also possible. The assignment is made by the         
+160PM8cL evaluator.                                                             
+160PM cL $ Production |s(at 1 GeV/nucleon)=518 nb {I36} (2012Ku26)              
                                                                                 
 160SM    ADOPTED LEVELS, GAMMAS                                  05NDS    200509
 160SM  H TYP=FUL$AUT=C. W. Reich$CIT=NDS 105, 557 (2005)$CUT=1-Jun-2005$        

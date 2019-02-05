@@ -491,33 +491,151 @@
 153    R 2005BU21 JOUR NUPAB 756 308                                            
 153    R 2005ST24 JOUR ADNDA 90 75                                              
                                                                                 
-153LA    ADOPTED LEVELS                                          06NDS    200602
-153LA  H TYP=FUL$AUT=R. G. Helmer {+*}$CIT=NDS 107, 507 (2006)$CUT=31-Dec-2005$ 
-153LA  Q 8.8E3     SY4.8E3   SY1.14E4  SY-4.9E3  SY    2012WA38                 
-153LA CQ Note: Current evaluation has used the following Q record               
-153LA  Q   8420    SY  4930  SY  11620 SY -5510  SY    2003AU03                 
-153LA cQ           The estimated uncertainties from systematics (2003Au03)      
-153LA2cQ      are: Q- 720; S(n) 720; S(p) 780; and Q(|a) 630 keV.               
-153LA c  This nuclide was observed in projectile fission of {+238}U at          
-153LA2c       a beam energy of 750 MeV per nucleon with a fragment separator    
-153LA3c       (1997Be12,1994Be24).  No decay or structure data measured.        
-153LA  L    0                          100 NS    GT                             
-153LA cL T         Lower limit is suggested by evaluator from 300 ns transit    
-153LA2cL      time through separator.                                           
+153BA    COMMENTS                                                ENSDF    201711
+153BA  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+153BA C  TITL$NUCLEAR DATA SHEETS FOR 153BA                                     
+153BA c  AUTH$FILIP G KONDEV                                                    
+153BA c  INST$Nuclear Engineering Division                                      
+153BA#c       Argonne National Laboratory                                       
+153BA#c       9700 South Cass Avenue                                            
+153BA#c       Argonne, Illinois 60439, USA                                      
+153BA c  ABST$Information about the nuclear structure properties of the         
+153BA2c  {+153}Ba nuclide is presented                                          
+153BA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+153BA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+153BA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+153BA C  CIT$ENSDF                                                              
                                                                                 
-153CE    ADOPTED LEVELS                                          06NDS    200602
+153BA    ADOPTED LEVELS                                          ENSDF    201711
+153BA  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+153BA  Q 9315      SY 2902   SY                        2012WA38                 
+153BA cQ $|DQ(|b{+-})=499, |DS(n)=566                                           
+153BA cQ $S(2n)=7675 {I499},  Q(|b{+-}n)=4541 {I499}                            
+153BA2cQ (2012Wa38, syst)                                                       
+153BA c  2017Wu04: The {+153}Ba nuclide was produced at the RIBF-RIKEN facility 
+153BA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+153BA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+153BA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+153BA5c  pnA, respectively. The identification of the nuclide of interest was   
+153BA6c  made in the BigRIPS separator by determining the atomic number and the 
+153BA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+153BA8c  reaction products were transported through the ZeroDegree Spectrometer 
+153BA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+153BAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+153BAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+153BAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+153BAdc  Deduced: T{-1/2}.                                                      
+153BA  L 0.0                           0.12 S    5                              
+153BA2 L %B-=100 $ %B-N=?                                                       
+153BA cL %B-$Only |b{+-} decay mode is expected.                                
+153BA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+153BA2cL using the least-squares and maximum-likelihood methods. The data       
+153BA3cL analysis included contributions from the parent, daughter and          
+153BA4cL ground-daughter decays, as well as a constant background.              
+153BA5cL T{-1/2}=0.116 s {I52} is reported in 2017Wu04.                         
+                                                                                
+153LA    COMMENTS                                                ENSDF    201704
+153LA  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+153LA C  TITL$NUCLEAR DATA SHEETS FOR 153LA                                     
+153LA c  AUTH$FILIP G. KONDEV                                                   
+153LA c  INST$Nuclear Engineering Division                                      
+153LA#c       Argonne National Laboratory                                       
+153LA#c       9700 South Cass Avenue                                            
+153LA#c       Argonne, Illinois 60439, USA                                      
+153LA c  ABST$Information about the nuclear structure properties of the         
+153LA2c  {+153}La nuclide is presented                                          
+153LA c  CUT$Literature available up to February 20, 2017 has been consulted.   
+153LA c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+153LA1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+153LA C  CIT$ENSDF                                                              
+                                                                                
+153LA    ADOPTED LEVELS                                                   201704
+153LA  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
+153LA  Q 8784      SY 4774   SY 11434  SY -4903  SY    2012WA38                 
+153LA cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=357, |DS(n)=422,      
+153LA2cQ |DS(p)=499, |DS(|a)=357                                                
+153LA cQ $S(2n)=8653 {I357}, S(2p)=25961 {I499}, Q(|b{+-}n)=4746 {I357}         
+153LA2cQ from 2012Wa38.                                                         
+153LA c  2017Wu04: The {+153}La nuclide was produced at the RIBF-RIKEN facility 
+153LA2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+153LA3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+153LA4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+153LA5c  pnA, respectively. The identification of the nuclide of interest was   
+153LA6c  made in the BigRIPS separator by determining the atomic number and the 
+153LA7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+153LA8c  reaction products were transported through the ZeroDegree Spectrometer 
+153LA9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+153LAac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+153LAbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+153LAcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+153LAdc  Deduced: T{-1/2}.                                                      
+153LA c  1994Be24: Identification in reaction: Pb({+238}U,F) at                 
+153LA2c  750 MeV/nucleon. Residual products Fragment Recoil Separator           
+153LA3c  (FRS), time-of-flight technique.                                       
+153LA  L 0.0          (1/2+)           0.245 S   18                             
+153LA2 L %B-=100 $ %B-N=?                                                       
+153LA cL %B-$Only |b{+-} decay mode is expected.                                
+153LA cL J$From systematics of known quasiparticle states in neighboring nuclei 
+153LA2cL and the proposed configuration (by the evaluator). The assignment is   
+153LA3cL tentative.                                                             
+153LA cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+153LA2cL using the least-squares and maximum-likelihood methods. The data       
+153LA3cL analysis included contributions from the parent, daughter and          
+153LA4cL grand-daughter decays, as well as a constant background.               
+153LA cL CONF$|p1/2[420] (d{-5/2}) Nilsson orbital, expected from systematics of
+153LA2cL well-deformed nuclei in the region (by the evaluator).                 
+153LA3cL The assignment is tentative.                                           
+                                                                                
+153CE    COMMENTS                                                ENSDF    201711
+153CE  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+153CE C  TITL$NUCLEAR DATA SHEETS FOR 153CE                                     
+153CE c  AUTH$FILIP G KONDEV                                                    
+153CE c  INST$Nuclear Engineering Division                                      
+153CE#c       Argonne National Laboratory                                       
+153CE#c       9700 South Cass Avenue                                            
+153CE#c       Argonne, Illinois 60439, USA                                      
+153CE c  ABST$Information about the nuclear structure properties of the         
+153CE2c  {+153}Ce nuclide is presented                                          
+153CE c  CUT$Literature available up to February 20, 2017 has been consulted.   
+153CE c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+153CE1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+153CE C  CIT$ENSDF                                                              
+                                                                                
+153CE    ADOPTED LEVELS                                          ENSDF    201711
 153CE  H TYP=FUL$AUT=R. G. Helmer {+*}$CIT=NDS 107, 507 (2006)$CUT=31-Dec-2005$ 
-153CE  Q 6.55E3    SY4.0E3   SY1.28E4  SY-4.4E3  SY    2012WA38                 
-153CE CQ Note: Current evaluation has used the following Q record               
-153CE  Q   6280    SY 4310   SY  12570 SY -4290  SY    2003AU03                 
-153CE cQ           The estimated uncertainties from systematics (2003Au03)      
-153CE2cQ      are: Q- 410; S(n) 450; S(p) 570; and Q(|a) 450 keV.               
-153CE c  This nuclide was observed in projectile fission of {+238}U at          
-153CE2c       a beam energy of 750 MeV per nucleon with a fragment separator    
-153CE3c       (1997Be12,1994Be24). No decay or structure data measured.         
-153CE  L    0                          100 NS    GT                             
-153CE cL T         Lower limit is suggested by evaluator from 300 ns transit    
-153CE2cL      time through separator.                                           
+153CE  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+153CE  Q 6545      SY 4038   SY 12775  SY -4428  SY    2012Wa38                 
+153CE cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=196, |DS(n)=277,      
+153CE2cQ |DS(p)=357, |DQ(|a)=277                                                
+153CE cQ $S(2n)=9941 {I196}, S(2p)=24210 {I357}, Q(|b{+-}n)=663 {I196}          
+153CE2cQ (2012Wa38, syst)                                                       
+153CE c  2017Wu04: The {+153}Ce nuclide was produced at the RIBF-RIKEN facility 
+153CE2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+153CE3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+153CE4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+153CE5c  pnA, respectively. The identification of the nuclide of interest was   
+153CE6c  made in the BigRIPS separator by determining the atomic number and the 
+153CE7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+153CE8c  reaction products were transported through the ZeroDegree Spectrometer 
+153CE9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+153CEac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+153CEbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+153CEcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+153CEdc  Deduced: T{-1/2}.                                                      
+153CE c  Others: 1997Be12 and 1994Be24                                          
+153CE  L 0.0          (3/2-)           0.865 S   25                             
+153CE2 L %B-=100 $ %B-N=?                                                       
+153CE cL %B-$Only |b{+-} decay mode is expected.                                
+153CE cL J$From systematics of known quasiparticle states in neighboring nuclei 
+153CE2cL and the proposed configuration (by the evaluator). The assignment is   
+153CE3cL tentative.                                                             
+153CE cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+153CE2cL using the least-squares and maximum-likelihood methods. The data       
+153CE3cL analysis included contributions from the parent, daughter and          
+153CE4cL ground-daughter decays, as well as a constant background.              
+153CE cL CONF$|n3/2[521] Nilsson orbital, based on systematics of known         
+153CE2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+153CE3cL assignment is tentative.                                               
                                                                                 
 153PR    ADOPTED LEVELS                                          06NDS    200602
 153PR  H TYP=FUL$AUT=R. G. Helmer {+*}$CIT=NDS 107, 507 (2006)$CUT=31-Dec-2005$ 

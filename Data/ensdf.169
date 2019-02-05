@@ -462,27 +462,28 @@
 169    R 2007CHZX REPT IAEA-STI/PUB/1263,Choi                                   
 169    R 2007SA33 JOUR PRVCA 75 054321                                          
                                                                                 
-169GD    COMMENTS                                                ENSDF    201309
-169GD  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+169GD    COMMENTS                                                ENSDF    201711
+169GD  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 169GD C  TITL$NUCLEAR DATA SHEETS FOR 169GD                                     
-169GD c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-169GD c  INST$Department of Physics and Astronomy,                              
-169GD#c       McMaster University, Hamilton, Ontario,                           
-169GD#c       Canada, L8S 4M1                                                   
-169GD c  ABST$Information about the identification of {+169}Gd nuclide          
-169GD2c  from 2012Ku26 is presented                                             
-169GD c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-169GD c  ACKN$                                                                  
-169GD c  FUND$Work supported by the office of Science of the U.S. Department    
-169GDxc  of Energy.                                                             
+169GD c  AUTH$FILIP G KONDEV                                                    
+169GD c  INST$Nuclear Engineering Division                                      
+169GD#c       Argonne National Laboratory                                       
+169GD#c       9700 South Cass Avenue                                            
+169GD#c       Argonne, Illinois 60439, USA                                      
+169GD c  ABST$Information about the nuclear structure properties of the         
+169GD2c  {+169}Gd nuclide is presented                                          
+169GD c  CUT$Literature available up to February 20, 2017 has been consulted.   
+169GD c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+169GD1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 169GD C  CIT$ENSDF                                                              
                                                                                 
-169GD    ADOPTED LEVELS                                          ENSDF    201309
+169GD    ADOPTED LEVELS                                          ENSDF    201711
 169GD  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+169GD  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 169GD  Q 6180      SY 3860   SY 11820  CA -2770  SY    2012Wa38,1997MO25        
-169GD cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=590, |DS(n)=640,          
+169GD cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=590, |DS(n)=640,      
 169GD2cQ |DS(|a)=640                                                            
-169GD CQ $ SP from 1997Mo25; others from 2012Wa38                               
+169GD cQ $S(p) from 1997Mo25; others from 2012Wa38                              
 169GD cQ $S(2n)=9480 {I640}, Q(|b{+-}n)=500 {I590} from 2012Wa38 (syst).        
 169GD2cQ S(2p)=22660 (1997Mo25, theory)                                         
 169GD c  2012Ku26: {+169}Gd produced and identified in {+9}Be({+238}U,F),       
@@ -490,7 +491,7 @@
 169GD3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 169GD4c  Fragment Separator (FRS). Particle identification was achieved by      
 169GD5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-169GD6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+169GD6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 169GD7c  measured using two plastic scintillation detectors, energy loss or     
 169GD8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 169GD9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -502,36 +503,53 @@
 169GDFc  a scintillator for veto signal. Measured production cross section.     
 169GDGc  Comparison of measured |s with predictions from ABRABLA model and      
 169GDHc  EPAX-3 model                                                           
-169GD  L 0                              160 NS   GT                             
-169GD2 L %B-=?                                                                  
-169GD cL $ Only |b{+-} decay mode is expected. Predicted %|b{+-}n=0 (1997Mo25)  
-169GD cL E$ the observed {+169}Gd fragments assumed to correspond to the g.s.   
-169GD cL J$ 7/2- from systematics (2012Au07), 7/2- predicted (1997Mo25)         
-169GD cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-169GD2cL |b-decay half-life is expected to be much longer as suggested by       
-169GD3cL 1 s from systematics (2012Au07), and 0.35 s from theoretical           
-169GD4cL calculations (1997Mo25)                                                
-169GD cL $ Production |s=10.6 nb {I15} (2012Ku26)                               
+169GD c  2017Wu04: The {+169}Gd nuclide was produced at the RIBF-RIKEN facility 
+169GD2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+169GD3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+169GD4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+169GD5c  pnA, respectively. The identification of the nuclide of interest was   
+169GD6c  made in the BigRIPS separator by determining the atomic number and the 
+169GD7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+169GD8c  reaction products were transported through the ZeroDegree Spectrometer 
+169GD9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+169GDac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+169GDbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+169GDcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+169GDdc  Deduced: T{-1/2}.                                                      
+169GD  L 0.0          (7/2-)           0.75 S    21                             
+169GD2 L %B-=100 $ %B-N=?                                                       
+169GD cL %B-$Only |b{+-} decay mode is expected.                                
+169GD cL J$From systematics of known quasiparticle states in neighboring nuclei 
+169GD2cL and the proposed configuration (by the compiler). The assignment is    
+169GD3cL tentative.                                                             
+169GD cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+169GD2cL using the least-squares and maximum-likelihood methods. The data       
+169GD3cL analysis included contributions from the parent, daughter and          
+169GD4cL ground-daughter decays, as well as a constant background.              
+169GD cL CONF$|n7/2[514] Nilsson orbital, based on systematics of known         
+169GD2cL structures in neighboring, well-deformed nuclei (by the compiler). The 
+169GD3cL assignment is tentative.                                               
+169GD cL $ Production |s(at 1 GeV/nucleon)=10.6 nb {I15} (2012Ku26)             
                                                                                 
-169TB    COMMENTS                                                ENSDF    201309
-169TB  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+169TB    COMMENTS                                                ENSDF    201704
+169TB  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 169TB C  TITL$NUCLEAR DATA SHEETS FOR 169TB                                     
-169TB c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-169TB c  INST$Department of Physics and Astronomy,                              
-169TB#c       McMaster University, Hamilton, Ontario,                           
-169TB#c       Canada, L8S 4M1                                                   
-169TB c  ABST$Information about the identification of {+169}Tb nuclide          
-169TB2c  from 2012Ku26 is presented                                             
-169TB c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-169TB c  ACKN$                                                                  
-169TB c  FUND$Work supported by the office of Science of the U.S. Department    
-169TBxc  of Energy.                                                             
+169TB c  AUTH$FILIP G KONDEV                                                    
+169TB c  INST$Nuclear Engineering Division                                      
+169TB#c       Argonne National Laboratory                                       
+169TB#c       9700 South Cass Avenue                                            
+169TB#c       Argonne, Illinois 60439, USA                                      
+169TB c  ABST$Information about the nuclear structure properties of the         
+169TB2c  {+169}Tb nuclide is presented                                          
+169TB c  CUT$Literature available up to February 20, 2017 has been consulted.   
+169TB c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+169TB1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 169TB C  CIT$ENSDF                                                              
                                                                                 
-169TB    ADOPTED LEVELS                                          ENSDF    201309
-169TB  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+169TB    ADOPTED LEVELS                                          ENSDF    201704
+169TB  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 169TB  Q 5270      SY 5680   SY 9250   SY -2070  SY    2012Wa38                 
-169TB cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=420, |DS(n)=420,          
+169TB cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=420, |DS(n)=420,      
 169TB2cQ |DS(p)=500, |DS(|a)=440                                                
 169TB cQ $S(2n)=10540 {I360}, S(2p)=21020 {I500}, Q(|b{+-}n)=160 {I330}         
 169TB2cQ  from 2012Wa38 (syst).                                                 
@@ -540,7 +558,7 @@
 169TB3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 169TB4c  Fragment Separator (FRS). Particle identification was achieved by      
 169TB5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-169TB6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+169TB6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 169TB7c  measured using two plastic scintillation detectors, energy loss or     
 169TB8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 169TB9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -552,17 +570,34 @@
 169TBFc  a scintillator for veto signal. Measured production cross section.     
 169TBGc  Comparison of measured |s with predictions from ABRABLA model and      
 169TBHc  EPAX-3 model                                                           
-169TB  L 0                              160 NS   GT                             
-169TB2 L %B-=?                                                                  
-169TB cL $ Only |b{+-} decay mode is expected. Predicted %|b{+-}n=0.01          
-169TB2cL  (1997Mo25)                                                            
-169TB cL E$ the observed {+169}Tb fragments assumed to correspond to the g.s.   
-169TB cL J$ 3/2+ from systematics (2012Au07), 3/2+ predicted (1997Mo25)         
-169TB cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-169TB2cL |b-decay half-life is expected to be much longer as suggested by       
-169TB3cL 2 s from systematics (2012Au07), and 14 s from theoretical             
-169TB4cL calculations (1997Mo25)                                                
-169TB cL $ Production |s=751 nb {I28} (2012Ku26)                                
+169TB c  2017Wu04: The {+169}Tb nuclide was produced at the RIBF-RIKEN facility 
+169TB2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+169TB3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+169TB4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+169TB5c  pnA, respectively. The identification of the nuclide of interest was   
+169TB6c  made in the BigRIPS separator by determining the atomic number and the 
+169TB7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+169TB8c  reaction products were transported through the ZeroDegree Spectrometer 
+169TB9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+169TBac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+169TBbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+169TBcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+169TBdc  Deduced: T{-1/2}.                                                      
+169TB  L 0.0          (3/2+)           5.1 S     3                              
+169TB2 L %B-=100 $ %B-N=?                                                       
+169TB cL %B-$Only |b{+-} decay mode is expected.                                
+169TB cL J$From systematics of known quasiparticle states in neighboring nuclei 
+169TB2cL and the proposed configuration (by the evaluator). The assignment is   
+169TB3cL tentative.                                                             
+169TB cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+169TB2cL using the least-squares and maximum-likelihood methods. The data       
+169TB3cL analysis included contributions from the parent, daughter and          
+169TB4cL grand-daughter decays, as well as a constant background.               
+169TB5cL T{-1/2}=5.13 s {I32} is reported in 2017Wu04                           
+169TB cL CONF$|p3/2[411] Nilsson orbital, based on systematics of known         
+169TB2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+169TB3cL assignment is tentative.                                               
+169TB cL $ Production |s(at 1 GeV/nucleon)=751 nb {I28} (2012Ku26)              
                                                                                 
 169DY    ADOPTED LEVELS                                          08NDS    200809
 169DY  H TYP=FUL$AUT=CORAL M. BAGLIN$CIT=NDS 109, 2033 (2008)$CUT=15-Jun-2008$  

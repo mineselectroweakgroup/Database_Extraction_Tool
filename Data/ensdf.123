@@ -407,24 +407,238 @@
 123PD4cL 2015Lo04 for comparison of their experimental value with theoretical   
 123PD5cL values                                                                 
                                                                                 
-123AG    ADOPTED LEVELS                                          04NDS    200410
+123AG    COMMENTS                                                ENSDF    201709
+123AG  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+123AG C  TITL$NUCLEAR DATA SHEETS FOR 123AG                                     
+123AG c  AUTH$BALRAJ SINGH                                                      
+123AG c  INST$Department of Physics and Astronomy, McMaster University,         
+123AG#c       Hamilton, Ontario L8S 4M1, Canada                                 
+123AG c  ABST$Experimental structure data for {+123}Ag have been re-evaluated   
+123AG2c  and updated since the previous NDS publication (2004Ho11) for A=123    
+123AG3c  nuclides.                                                              
+123AG c  CUT$Literature available up to March 31, 2017 has been consulted.      
+123AG C  CIT$ENSDF                                                              
+123AG c  FUND$                                                                  
+                                                                                
+123AG    ADOPTED LEVELS, GAMMAS                                  ENSDF    201709
+123AG  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
 123AG  H TYP=FUL$AUT=S. Ohya$CIT=NDS 102, 547 (2004)$CUT=1-Nov-2003$            
-123AG C  ASSIGNMENT: 235U(N,F) E=TH, ON-LINE MS, DELAYED-NEUTRON COUNTING       
-123AG2C  (1976LU02).                                                            
-123AG  Q 7.87E3    3 6.51E3  5 1.222E4 4 -9.15E3 4     2012WA38                 
-123AG CQ Note: Current evaluation has used the following Q record               
-123AG  Q 7.36E+3   21680E+1  291.255E+445-9.14E+363    2003AU03                 
-123AG cQ Q-,SN,SP,QA$values estimated from systematic trends (2003Au03)         
-123AG  L 0.0         (7/2+)            0.300 S    5                             
-123AG2 L %B-=100 $ %B-N=0.55 7 (1983RE05)                                       
-123AG cL           Delayed neutron precursor.                                   
-123AG2CL Also 124AG decays by delayed neutrons to                               
-123AG3CL 123CD (1983RE05).                                                      
-123AG CL T$WEIGHTED AVERAGE OF 0.39 S 3 (1976LU02), 0.30 S 1 (1983RE05),        
-123AG2CL 0.30 S 2(1986MA42), 0.35 S 4 (1989HU10) AND 0.293 S 7 (1995FE12).      
-123AG CL J$FROM SYSTEMATICS OF LOWER MASS ODD-Ag ISOTOPES JPI=1/2- OR 7/2+.     
-123AG2CL THE OBSERVED FEEDING IN B- DECAY OF THREE LEVELS WHICH FEED THE (11/2-)
-123AG3CL ISOMER, ELIMINATES 1/2-.                                               
+123AG  Q 7870      30 6510   50 12220  40 -9150  30    2017WA10                 
+123AG cQ $S(2n)=11290 {I30}, S(2p)=27880 {I620}, Q(|b{+-}n)=2990 {I30}          
+123AG2cQ (2017Wa10)                                                             
+123AG c  1976Lu02: {+123}Ag produced and identified in {+235}U(n,F) E=th        
+123AG2c  reaction followed by on-line mass separation. Measured |b-delayed      
+123AG3c  neutrons, half-life of {+123}Ag decay                                  
+123AG c  Precise mass measurements: 2010Br02, 2008Su19 (also 2010Li02)          
+123AG d  Yield measurements in different reactions: 2015Al19, 2013La25, 2008Be33
+123AG cL E$From a least-squares fit to E|g data                                 
+123AG cL J$For excited states, tentative assignment are from 2013La11, based on 
+123AG2cL systematics and observed decay pattern                                 
+123AG  XA123AG IT DECAY (202 NS)                                                
+123AG  XB123AG IT DECAY (393 NS)                                                
+123AG PN                                                                     6  
+123AG  L 0.0         (7/2+)            0.298 S    8                             
+123AG2 L %B-=100 $ %B-N=0.55 9 (1983Re05)                                       
+123AGX L XREF=B                                                                 
+123AG cL $%|b{+-}n: from neutron measurements by 1983Re05, uncertainty of 3.6%  
+123AG2cL statistical and 15% systematic given in 1983Re05 combined in           
+123AG3cL quadrature by the evaluator. Other measurements: %|b{+-}n=0.60 {I25}   
+123AG4cL (2014TeZY, from neutron-|b measurement); 1.0 {I5} (2006Mo09, deduced   
+123AG5cL from implant-|b decay curve analysis). Weighted average of all the     
+123AG6cL three values is 0.57 {I9}                                              
+123AG cL T$weighted average of 0.272 s {I24} (2006Mo09, implant-|b              
+123AG2cL correlations); 0.293 s {I7} (1995Fe12, |b and neutron counting         
+123AG3cL using a laser-ionized source at ISOLDE-CERN facility); 0.35 s {I4}     
+123AG5cL (1989Hu10, |g-counting); 0.30 s {I2} (1986Ma42, |g counting);          
+123AG6cL 0.30 s {I1} (1983Re05; neutron counting), 0.39 s {I3} (1976Lu02,       
+123AG7cL neutron counting). Other: 0.396 s {I15} (2014TeZY) from neutron and    
+123AG8cL |g-decay curves is in disagreement                                     
+123AG cL J$from systematics of lower mass odd-Ag isotopes J|p=1/2- or 7/2+,     
+123AG2cL but 1/2- is rejected by the observed |b feeding of three levels which  
+123AG3cL feed an (11/2-) isomer                                                 
+123AG  L 0+X                                                                    
+123AGX L XREF=A                                                                 
+123AG  L 27.3       7 (9/2+)                                                    
+123AGX L XREF=B                                                                 
+123AG  G  27                                                                   S
+123AGF G FL=0.0                                                                 
+123AG cG E$level not observed experimentally in 2013La11                        
+123AG  L   593.3+X  5                                                           
+123AGX L XREF=A                                                                 
+123AG  G 593.3      5  100                                                      
+123AGF G FL=0+X                                                                 
+123AG  L 656.4      7 (11/2+)          25 NS     LT                             
+123AGX L XREF=B                                                                 
+123AG cL J$(13/2+) suggested by 2009St28                                        
+123AG  G 629.1      5 100                                                       
+123AG  L 740.7      6 (13/2+)          25 NS     LT                             
+123AGX L XREF=B                                                                 
+123AG  G 84         1 10      5                                                 
+123AG  G 713.2      5 100                                                       
+123AG  L   975.7+X  7                                                           
+123AGX L XREF=A                                                                 
+123AG  G 382.4      5   100                                                     
+123AG  L 1076.3     5 (9/2-,11/2+)                                              
+123AGX L XREF=B                                                                 
+123AG cL J$(11/2+) suggested by 2009St28                                        
+123AG  G 335.2      5  18     4                                                 
+123AG  G 1049.3     5  48     6                                                 
+123AG  G 1076.3     5 100    7                                                  
+123AGF G FL=0.0                                                                 
+123AG  L   1365.2+X 9                                                           
+123AGX L XREF=A                                                                 
+123AG  G 389.5      5  100                                                      
+123AG  L 1365.2+Y                      202 NS    20                          M1 
+123AG2 L %IT=100                                                                
+123AGX L XREF=A                                                                 
+123AG cL E$y>x                                                                  
+123AG cL T$From |g(t) (2013La11)                                                
+123AG  L 1425.2     7 (13/2-)                                                   
+123AGX L XREF=B                                                                 
+123AG cL J$(15/2+,13/2-) suggested by 2009St28                                  
+123AG  G 348.7      5  50.0  17                                                 
+123AG  G 684.7      5 100.0  27                                                 
+123AG  G 768.8      5  35.5  17                                                 
+123AG  L 1472.8     8 (17/2-)          393 NS    16                          M2 
+123AG2 L %IT=100                                                                
+123AGX L XREF=B                                                                 
+123AG cL T$from |g(t), weighted average of 393 ns {I16} (2013La11) and          
+123AG2cL 396 ns {I37} (2009St28)                                                
+123AG  G  48        1  48.7  13 [E2]                   19.9                    S
+123AGB G BE2W=6.8 8                                                             
+123AG  G 732.1      5 100    7  [M2]                   0.0068                   
+123AG cG $E|g=735.1 {I3}, I|g=8 {I2}, unplaced in 2009St28                      
+123AGB G BM2W=0.00136 12                                                        
+                                                                                
+123AG    123AG IT DECAY (202 NS)       2013LA11                  ENSDF    201709
+123AG  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+123AG c  2013La11: {+9}Be({+136}Xe,X|g),({+238}U,F|g), E({+136}Xe, {+238}U)=750 
+123AG2c  MeV/nucleon from SIS-18 synchrotron at GSI. Targets: 1 and 4 g/cm{+2}  
+123AG3c  {+9}Be. Detectors: FRS, ionization chambers, multiwire chambers,       
+123AG4c  scintillation detectors, RISING multidetector array of 105 HPGe        
+123AG5c  detectors, mounted in 15 composite Cluster detectors without           
+123AG6c  anti-Compton shields. Measured time-of-flight, |DE, B|r, E|g, I|g,     
+123AG7c  isomer half-lives by |g(t), |g|g-coin.                                 
+123AG c  2009St28 (also 2007To23, 2006ToZW, 2005WaZY): {+136}Xe beam of         
+123AG2c  E=120 MeV/nucleon. Reaction products separated by A1900 spectrometer,  
+123AG3c  and implanted in NSCL-MSU Beta Counting System, consisting of three    
+123AG4c  silicon PIN detectors, one double-sided and six single-sided silicon   
+123AG5c  detectors. Neutron-rich Pd and Ag isotopes identified based on         
+123AG6c  time-of-flight and energy loss. Measured E|g, I|g, half-life,          
+123AG7c  fragment-|g coincidence.                                               
+123AG cG E$Values in 2009St28 seem systematically high by |?2-4 keV             
+123AG cL E$From E|g data                                                        
+123AG  P 1365.2+Y                      202 NS    20                             
+123AG  N                        1                                               
+123AG PN                                                                     5  
+123AG  L 0+X                                                                    
+123AG  L   593.3+X  5                                                           
+123AG  G 593.3      5 6.5     8                                                 
+123AG cG $E|g=597.6 {I6}, I|g=7 {I2}, unplaced |g in 2009St28;                  
+123AG2cG |g not in 2006ToZW                                                     
+123AG  L   975.7+X  7                                                           
+123AG  G 382.4      5 5.5     7                                                 
+123AG cG $E|g=385.3 {I2}, I|g=4 {I1}, unplaced |g in 2009St28; E|g=383.8 {I3},  
+123AG2cG I|g=6 {I2} in 2006ToZW                                                 
+123AG  L   1365.2+X 9                                                           
+123AG  G 389.5      5 8.8     9                                                 
+123AG cG $E|g=391.2 {I3}, I|g=4 {I1}, unplaced |g in 2009St28; E|g=390.8 {I3},  
+123AG2cG I|g=3 {I2} in 2006ToZW                                                 
+123AG  L 1365.2+Y                      202 NS    20                          M2 
+123AG cL E$y>x                                                                  
+123AG cL T$From |g(t) (2013La11)                                                
+                                                                                
+123AG    123AG IT DECAY (393 NS)       2013LA11,2009ST28,2006TOZWENSDF    201709
+123AG  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+123AG c  2013La11: {+9}Be({+136}Xe,X|g),({+238}U,F|g), E({+136}Xe, {+238}U)=750 
+123AG2c  MeV/nucleon from SIS-18 synchrotron at GSI. Targets: 1 and 4 g/cm{+2}  
+123AG3c  {+9}Be. Detectors: FRS, ionization chambers, multiwire chambers,       
+123AG4c  scintillation detectors, RISING multidetector array of 105 HPGe        
+123AG5c  detectors, mounted in 15 composite Cluster detectors without           
+123AG6c  anti-Compton shields. Measured time-of-flight, |DE, B|r, E|g, I|g,     
+123AG7c  isomer half-lives by |g(t), |g|g-coin. Comparison with shell-model     
+123AG8c  calculations does not give a good agreement                            
+123AG c  2009St28 (also 2007To23, 2006ToZW, 2005WaZY): {+136}Xe beam of         
+123AG2c  E=120 MeV/nucleon. Reaction products separated by A1900 spectrometer,  
+123AG3c  and implanted in NSCL-MSU Beta Counting System, consisting of three    
+123AG4c  silicon PIN detectors, one double-sided and six single-sided silicon   
+123AG5c  detectors. Neutron-rich Pd and Ag isotopes identified based on         
+123AG6c  time-of-flight and energy loss. Measured E|g, I|g, isomer half-life,   
+123AG7c  fragment-|g coincidence.                                               
+123AG c  Level scheme, initially proposed by 2006ToZW was revised by 2009St28.  
+123AG2c  Later work by 2013La11 is more in agreement with the results from      
+123AG3c  2006ToZW than from 2009St28. Data and level scheme in 2013La11 are     
+123AG4c  adopted here                                                           
+123AG cG E$From 2013La11. Some of the values given in 2006ToZW are more precise 
+123AG2cG than in 2013La11, but these are in disagreement with the values in     
+123AG3cG 2009St28 from the same lab. The energies of all the gamma rays in      
+123AG4cG 2009St28 are systematically higher by |?2-4 keV as compared to those   
+123AG5cG in 2013La11 and 2006ToZW (also 2007To23)                               
+123AG cG E(X)$Weak |g from 2013La11 only                                        
+123AG cL T$From |g(t) (2013La11)                                                
+123AG cL E$From a least-squares fit to E|g data                                 
+123AG cL J$For excited states, tentative assignment are from 2013La11, based on 
+123AG2cL systematics and observed decay pattern                                 
+123AG  P 1472.8     8 (17/2-)          393 NS    16                             
+123AG  N 0.580     11 0.580  11  1                                              
+123AG cN NR$Summed intensities of |g rays from 1425 level and                   
+123AG2cN the 732.1|g=100                                                        
+123AG PN                                                                     3  
+123AG  G 741.2      5  4.3    7                                                 
+123AG cG $E|g=738.3 {I4}, I|g=7 {I1}, unplaced in 2009St28                      
+123AG  G 1008.2     5  1.7    4                                             X   
+123AG  G 1133.5     2  5      1                                                 
+123AG cG E$|g from 2006ToZW, 2007To23 only                                      
+123AG  L 0.0          (7/2+)                                                    
+123AG  L 27.3       7 (9/2+)                                                    
+123AG  G  27                                                                   S
+123AG cG E$level not observed experimentally in 2013La11                        
+123AG  L 656.4      7 (11/2+)          25 NS     LT                             
+123AG cL J$(13/2+) suggested by 2009St28, (11/2+) in 2006ToZW                   
+123AG  G 629.1      5 32.7   15                                                 
+123AG cG $E|g=632.9 {I1}, I|g=37 {I4} in 2009St28.                              
+123AG2cG E|g=630.1 {I1}, I|g=33 {I3} in 2006ToZW                                
+123AG  L 740.7      6 (13/2+)          25 NS     LT                             
+123AG  G 84         1 10      5                                             X   
+123AG  G 713.2      5 100                                                       
+123AG cG $E|g=716.7 {I2} and E|g=714 with combined I|g=100 {I7} in 2009St28.    
+123AG2cG Doublet at 713 keV was not confirmed by 2013La11, who place the 713|g  
+123AG3cG above the 27 level, whereas 2009St28 placed a 714|g as a ground-state  
+123AG4cG transition, and 717|g from a 1430 level.                               
+123AG5cG E|g=714.0 {I1}, I|g=100 {I4} in 2006ToZW, placed from 741 level        
+123AG  L 1076.3     5 (9/2-,11/2+)                                              
+123AG cL J$(11/2+) suggested by 2009St28 and 2006ToZW                           
+123AG  G 335.2      5 3.6     7                                             X   
+123AG  G 1049.3     5 9.1     9                                                 
+123AG cG $E|g=1052.1 {I5}, I|g=17 {I3} in 2009St28.                             
+123AG2cG E|g=1049.3 {I6}, I|g=11 {I5} in 2006ToZW                               
+123AG  G 1076.3     5 19.5   13                                                 
+123AG cG $E|g=1079.4 {I5}, I|g=22 {I3} in 2009St28.                             
+123AG2cG E|g=1076.6 {I3}, I|g=16 {I3} in 2006ToZW                               
+123AG  L 1425.2     7 (13/2-)                                                   
+123AG cL J$(15/2+,13/2-) suggested by 2009St28; (15/2+) in 2006ToZW             
+123AG  G 348.7      5 42.8   14                                                 
+123AG cG $E|g=351.4 {I1}, I|g=36 {I3} in 2009St28.                              
+123AG2cG E|g=349.5 {I1}, I|g=37 {I2} in 2006ToZW                                
+123AG  G 684.7      5 84.5   23                                                 
+123AG cG $E|g=687.3 {I1}, I|g=78 {I6} in 2009St28, placed from a 714 level.     
+123AG2cG E|g=685.6 {I1}, I|g=80 {I7} in 2006ToZW, placed from 1427 level        
+123AG  G 768.8      5 29.5   15                                                 
+123AG cG $E|g=771.6 {I4}, I|g=31 {I4} in 2009St28.                              
+123AG2cG E|g=769.8 {I1}, I|g=26 {I2} in 2006ToZW                                
+123AG  L 1472.8     8 (17/2-)          393 NS    16                          M1 
+123AG cL T$from |g(t), weighted average of 393 ns {I16} (2013La11) and          
+123AG2cL 396 ns {I37} (2009St28). Other: 0.32 |ms {I3} (2006ToZW)               
+123AG  G  48        1 7.5    2  [E2]                   19.9      156.8    31   S
+123AG cG TI$deduced by evaluator from intensity balance at 1425 level, assuming 
+123AG2cG negligible conversion coefficients                                     
+123AG cG RI$|g not observed experimentally, I|g deduced from the intensity      
+123AG2cG balance at the 1425.2-keV level, and conversion coefficient=19.9       
+123AGB G BE2W=6.8 8 (2013La11)                                                  
+123AG  G 732.1      5 15.4   11 [M2]                   0.0068                   
+123AG cG $E|g=735.1 {I3}, I|g=8 {I2}, unplaced in 2009St28.                     
+123AG2cG E|g=732.9 {I3}, I|g=6 {I3} in 2006ToZW from 1474 level                 
+123AGB G BM2W=0.00136 12 (2013La11)                                             
                                                                                 
 123CD    ADOPTED LEVELS, GAMMAS                                  04NDS    200410
 123CD  H TYP=FUL$AUT=S. Ohya$CIT=NDS 102, 547 (2004)$CUT=1-Nov-2003$            

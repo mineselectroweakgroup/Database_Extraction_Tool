@@ -224,27 +224,28 @@
 173    R 1993AU07 JOUR NUPAB 565 66                                             
 173    R 1993MEZZ PC F Meissner                                                 
                                                                                 
-173DY    COMMENTS                                                ENSDF    201309
-173DY  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+173DY    COMMENTS                                                ENSDF    201711
+173DY  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 173DY C  TITL$NUCLEAR DATA SHEETS FOR 173DY                                     
-173DY c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-173DY c  INST$Department of Physics and Astronomy,                              
-173DY#c       McMaster University, Hamilton, Ontario,                           
-173DY#c       Canada, L8S 4M1                                                   
-173DY c  ABST$Information about the identification of {+173}Dy nuclide          
-173DY2c  from 2012Ku26 is presented                                             
-173DY c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-173DY c  ACKN$                                                                  
-173DY c  FUND$Work supported by the office of Science of the U.S. Department    
-173DYxc  of Energy.                                                             
+173DY c  AUTH$FILIP G KONDEV                                                    
+173DY c  INST$Nuclear Engineering Division                                      
+173DY#c       Argonne National Laboratory                                       
+173DY#c       9700 South Cass Avenue                                            
+173DY#c       Argonne, Illinois 60439, USA                                      
+173DY c  ABST$Information about the nuclear structure properties of the         
+173DY2c  {+173}Dy nuclide is presented                                          
+173DY c  CUT$Literature available up to February 20, 2017 has been consulted.   
+173DY c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+173DY1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 173DY C  CIT$ENSDF                                                              
                                                                                 
-173DY    ADOPTED LEVELS                                          ENSDF    201309
+173DY    ADOPTED LEVELS                                          ENSDF    201711
 173DY  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+173DY  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 173DY  Q 5410      SY 4000   SY 11510  CA -2210  SY    2012Wa38,1997MO25        
-173DY cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=500, |DS(n)=500,          
+173DY cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=500, |DS(n)=500,      
 173DY2cQ |DS(|a)=640                                                            
-173DY CQ $ SP from 1997Mo25; others from 2012Wa38                               
+173DY cQ $S(p) from 1997Mo25; others from 2012Wa38                              
 173DY cQ $S(2n)=9890 {I500} from 2012Wa38 (syst).                               
 173DY2cQ S(2p)=21700 (1997Mo25, theory)                                         
 173DY c  2012Ku26: {+173}Dy produced and identified in {+9}Be({+238}U,F),       
@@ -252,7 +253,7 @@
 173DY3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 173DY4c  Fragment Separator (FRS). Particle identification was achieved by      
 173DY5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-173DY6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+173DY6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 173DY7c  measured using two plastic scintillation detectors, energy loss or     
 173DY8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 173DY9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -264,44 +265,63 @@
 173DYFc  a scintillator for veto signal. Measured production cross section.     
 173DYGc  Comparison of measured |s with predictions from ABRABLA model and      
 173DYHc  EPAX-3 model                                                           
-173DY  L 0                              160 NS   GT                             
-173DY2 L %B-=?                                                                  
-173DY cL $ Only |b{+-} decay mode is expected.                                  
-173DY cL E$ the observed {+173}Dy fragments assumed to correspond to the g.s.   
-173DY cL J$ 9/2+ from systematics (2012Au07), 9/2+ predicted (1997Mo25)         
-173DY cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-173DY2cL |b-decay half-life is expected to be much longer as suggested by       
-173DY3cL 2 s from systematics (2012Au07), and 4.19 s from theoretical           
-173DY4cL calculations (1997Mo25)                                                
-173DY cL $ Production |s=18 nb {I2} (2012Ku26)                                  
+173DY c  2017Wu04: The {+173}Dy nuclide was produced at the RIBF-RIKEN facility 
+173DY2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+173DY3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+173DY4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+173DY5c  pnA, respectively. The identification of the nuclide of interest was   
+173DY6c  made in the BigRIPS separator by determining the atomic number and the 
+173DY7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+173DY8c  reaction products were transported through the ZeroDegree Spectrometer 
+173DY9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+173DYac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+173DYbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+173DYcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+173DYdc  Deduced: T{-1/2}.                                                      
+173DY  L 0.0          (9/2+)           1.43 S    20                             
+173DY2 L %B-=100                                                                
+173DY cL %B-$Only |b{+-} decay mode is expected.                                
+173DY cL J$From systematics of known quasiparticle states in neighboring nuclei 
+173DY2cL and the proposed configuration (by the evaluator). The assignment is   
+173DY3cL tentative.                                                             
+173DY cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+173DY2cL using the least-squares and maximum-likelihood methods. The data       
+173DY3cL analysis included contributions from the parent, daughter and          
+173DY4cL ground-daughter decays, as well as a constant background.              
+173DY cL CONF$|n9/2[624] Nilsson orbital, based on systematics of known         
+173DY2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+173DY3cL assignment is tentative.                                               
+173DY cL $ Production |s(at 1 GeV/nucleon)=18 nb {I2} (2012Ku26)                
                                                                                 
-173HO    COMMENTS                                                ENSDF    201309
-173HO  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+173HO    COMMENTS                                                ENSDF    201711
+173HO  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 173HO C  TITL$NUCLEAR DATA SHEETS FOR 173HO                                     
-173HO c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-173HO c  INST$Department of Physics and Astronomy,                              
-173HO#c       McMaster University, Hamilton, Ontario,                           
-173HO#c       Canada, L8S 4M1                                                   
-173HO c  ABST$Information about the identification of {+173}Ho nuclide          
-173HO2c  from 2012Ku26 is presented                                             
-173HO c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-173HO c  ACKN$                                                                  
-173HO c  FUND$Work supported by the office of Science of the U.S. Department    
-173HOxc  of Energy.                                                             
+173HO c  AUTH$FILIP G KONDEV                                                    
+173HO c  INST$Nuclear Engineering Division                                      
+173HO#c       Argonne National Laboratory                                       
+173HO#c       9700 South Cass Avenue                                            
+173HO#c       Argonne, Illinois 60439, USA                                      
+173HO c  ABST$Information about the nuclear structure properties of the         
+173HO2c  {+173}Ho nuclide is presented                                          
+173HO c  CUT$Literature available up to February 20, 2017 has been consulted.   
+173HO c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+173HO1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 173HO C  CIT$ENSDF                                                              
                                                                                 
-173HO    ADOPTED LEVELS                                          ENSDF    201309
+173HO    ADOPTED LEVELS                                          ENSDF    201711
 173HO  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+173HO  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 173HO  Q 4300      SY 5940   SY 8630   SY -1450  SY    2012Wa38                 
-173HO cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=360, |DS(n)=360,          
+173HO cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=360, |DS(n)=360,      
 173HO2cQ |DS(p)=420, |DS(|a)=420                                                
-173HO cQ $S(2n)=10970 {I670}, S(2p)=19900 {I590} from 2012Wa38 (syst).          
+173HO cQ $S(2n)=10970 {I670}, S(2p)=19900 {I590}, Q(|b{+-}n)=-938 {I298}        
+173HO2cQ (2012Wa38, syst).                                                      
 173HO c  2012Ku26: {+173}Ho produced and identified in {+9}Be({+238}U,F),       
 173HO2c  E=1 GeV/nucleon reaction using SIS-18 synchrotron facility at GSI.     
 173HO3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 173HO4c  Fragment Separator (FRS). Particle identification was achieved by      
 173HO5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-173HO6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+173HO6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 173HO7c  measured using two plastic scintillation detectors, energy loss or     
 173HO8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 173HO9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -313,17 +333,34 @@
 173HOFc  a scintillator for veto signal. Measured production cross section.     
 173HOGc  Comparison of measured |s with predictions from ABRABLA model and      
 173HOHc  EPAX-3 model                                                           
-173HO c  Nuclear structure calculations: 1991Be31, 1984Al30                     
-173HO  L 0                              160 NS   GT                             
-173HO2 L %B-=?                                                                  
-173HO cL $ Only |b{+-} decay mode is expected.                                  
-173HO cL E$ the observed {+173}Ho fragments assumed to correspond to the g.s.   
-173HO cL J$ 7/2- from systematics (2012Au07), 7/2- predicted (1997Mo25)         
-173HO cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-173HO2cL |b-decay half-life is expected to be much longer as suggested by       
-173HO3cL 10 s from systematics (2012Au07), and 2.0 s from theoretical           
-173HO4cL calculations (1997Mo25)                                                
-173HO cL $ Production |s=341 nb {I15} (2012Ku26)                                
+173HO c  2017Wu04: The {+173}Ho nuclide was produced at the RIBF-RIKEN facility 
+173HO2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+173HO3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+173HO4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+173HO5c  pnA, respectively. The identification of the nuclide of interest was   
+173HO6c  made in the BigRIPS separator by determining the atomic number and the 
+173HO7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+173HO8c  reaction products were transported through the ZeroDegree Spectrometer 
+173HO9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+173HOac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+173HObc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+173HOcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+173HOdc  Deduced: T{-1/2}.                                                      
+173HO  L 0.0          (7/2-)           6.9 S     5                              
+173HO2 L %B-=100                                                                
+173HO cL %B-$Only |b{+-} decay mode is expected.                                
+173HO cL J$From systematics of known quasiparticle states in neighboring nuclei 
+173HO2cL and the proposed configuration (by the evaluator). The assignment is   
+173HO3cL tentative.                                                             
+173HO cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+173HO2cL using the least-squares and maximum-likelihood methods. The data       
+173HO3cL analysis included contributions from the parent, daughter and          
+173HO4cL ground-daughter decays, as well as a constant background.              
+173HO5cL A value of 6.90 s {I48} is quoted in 2017Wu04                          
+173HO cL CONF$|p7/2[523] Nilsson orbital, based on systematics of known         
+173HO2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+173HO3cL assignmnet is tentative.                                               
+173HO cL $ Production |s(at 1 GeV/nucleon)=341 nb {I15} (2012Ku26)              
                                                                                 
 173ER    ADOPTED LEVELS                                          95NDS    199509
 173ER  H TYP=FUL$AUT=V. S. SHIRLEY$CIT=NDS 75,377 (1995)$CUT=1-Oct-1993$        

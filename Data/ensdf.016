@@ -358,11 +358,12 @@
  16C   L 6109      15 (2+,3-,4+)       25 KEV    LE                             
                                                                                 
  16N     ADOPTED LEVELS, GAMMAS        1993TI07                  93NP     199902
+ 16N   H TYP=MOD$AUT=E. McCutchan$COM=fixed XREF$DAT=25-Jul-2017$               
  16N   H TYP=MOD$AUT=J. Blachot$COM=added T reference$DAT=15-MAR-2001$          
  16N   H TYP=FUL$AUT=J.H. KELLEY, D.R. TILLEY, H.R. WELLER AND C.M. CHEVES$     
  16N 2 H CIT=NP A564, 1 (1993)$CUT=31-DEC-1992$                                 
  16N   Q 10420.9   232488.9  2311478.2 25-10110  3     2012WA38                 
- 16N  CQ Note: Current evaluation has used the following Q record               
+ 16N  cQ $Note: Current evaluation has used the following Q record              
  16N   Q 10420.4   26 2489.4 26 11478.727-10110.4 30   1997AU04                 
  16N  PN                                                                     6  
  16N   XA16C B- DECAY                                                           
@@ -371,19 +372,19 @@
  16N   XD14C(3HE,P)                                                             
  16N   XE14C(A,D)                                                               
  16N   XF14N(T,P)                                                               
- 16N   XG15N(N,N)                                                               
+ 16N   XG15N(N,N) RES                                                           
  16N   XH15N(D,P)                                                               
  16N   XI16O(T,3HE)                                                             
  16N   XJ16O(7LI,7BE)                                                           
  16N   XK17O(D,3HE)                                                             
  16N   XL18O(D,A)                                                               
- 16N  C  See other reaction references in 1993Ti07.                             
- 16N  CL T(A)      Evaluator quotes WIDTH LE 7 KEV +-4                          
- 16N  CL E(B)      Decay mode not specified                                     
+ 16N  c  See other reaction references in 1993Ti07.                             
+ 16N  cL T(A)      Evaluator quotes |G|<7 keV {I|+4}                            
+ 16N  cL E(B)      Decay mode not specified                                     
  16N   L 0.0          2-               7.13 S    2                              
  16N 2 L %B-=100$%B-A=0.0012 5$ ISPIN=1                                         
- 16N  CL T$From 1970AL21; Others: 7.10 S 3 (1966SC05), 7.090 S 16 (1967KA29),   
- 16N 2CL 7.09 S 8 (1996DR09)                                                    
+ 16N  cL T$From 1970Al21; Others: 7.10 s {I3} (1966Sc05), 7.090 s {I16}         
+ 16N 2cL (1967Ka29), 7.09 s {I8} (1996Dr09)                                     
  16N 3 L XREF=ABCDFHIJKL                                                        
  16N   L 120.42    12 0-               5.25 US   6                              
  16N 2 L %IT=? $ %B-=?                                                          
@@ -391,12 +392,12 @@
  16N   G 120.42    12  100     [E2]                                             
  16N 2 G BE2W=1.7 1                                                             
  16N   L 298.22    8  3-               91.3 PS   13                             
- 16N 2 L MOMM1=1.60 6 (1989RA17)                                                
+ 16N 2 L MOMM1=1.60 6 (1989Ra17)                                                
  16N 3 L XREF=ABCDEFHIJKL                                                       
  16N   G 298.22    8  100       [M1]                                            
  16N 2 G BM1W=0.00900 15                                                        
  16N   L 397.27    10 1-               3.90 PS   4                              
- 16N 2 L MOMM1=-1.83 13 (1989RA17)                                              
+ 16N 2 L MOMM1=-1.83 13 (1989Ra17)                                              
  16N 3 L XREF=ABCDFHIKL                                                         
  16N   G 276.85    10  100.0 22[M1]                                             
  16N 2 G BM1W=0.193 4                                                           
@@ -405,7 +406,7 @@
  16N   L 3353      3 (1+)              15 KEV    5                              
  16N 2 L %N=100                                                                 
  16N 3 L XREF=ABCDFGHJL                                                         
- 16N  CL           May be a doublet                                             
+ 16N  cL           May be a doublet                                             
  16N   L 3523      3  2+               3 KEV                                    
  16N 2 L %N=100                                                                 
  16N 3 L XREF=BCDFGHJL                                                          
@@ -433,7 +434,7 @@
  16N   L 5150      7 (3)-              11 KEV    LE                         A   
  16N 2 L %N=100$ ISPIN=1                                                        
  16N 3 L XREF=BCDFGH                                                            
- 16N  CL           Probable analog of 18029 level in 16O                        
+ 16N  cL           Probable analog of 18029 level in {+16}O                     
  16N   L 5230      3  3+               4 KEV     LE                             
  16N 2 L %N=100                                                                 
  16N 3 L XREF=BDFGHL                                                            
@@ -441,7 +442,7 @@
  16N 2 L %N=100                                                                 
  16N 3 L XREF=FH                                                                
  16N   L 5318      3 (0-,1+)           260 KEV                                  
- 16N  CL T         value as given by original authors. Evaluator adopts (260)   
+ 16N  cL T         value as given by original authors. Evaluator adopts (260)   
  16N 2 L %N=100                                                                 
  16N 3 L XREF=BG                                                                
  16N   L 5521.6    25 3+               11 KEV    LE                         A   
@@ -450,8 +451,8 @@
  16N   L 5731.7    25(5+)              11 KEV    LE                         A   
  16N 2 L %N=100                                                                 
  16N 3 L XREF=BCDEFGHJKL                                                        
- 16N  CL J$may be a 2-,5+ doublet, the analogs of the 18454 and 18640 levels    
- 16N 2CL in 16O.                                                                
+ 16N  cL J$may be a 2-,5+ doublet, the analogs of the 18454 and 18640 levels    
+ 16N 2cL in {+16}O.                                                             
  16N   L 6003      3  1-               270 KEV   30                             
  16N 2 L %N=100                                                                 
  16N 3 L XREF=BFGL                                                              
@@ -467,7 +468,7 @@
  16N   L 6505      3  1+               34 KEV    6                              
  16N 2 L %N=100                                                                 
  16N 3 L XREF=BFGHKL                                                            
- 16N  CL           Neutron decay mode is tentative                              
+ 16N  cL           Neutron decay mode is tentative                              
  16N   L 6608      3 (4)               11 KEV    LE                         A   
  16N 2 L FLAG=B                                                                 
  16N 3 L XREF=BCFHL                                                             
@@ -578,7 +579,7 @@
  16N   L 13110     60                                                           
  16N 2 L %N=?$ %D=?                                                             
  16N 3 L XREF=CG                                                                
- 16N  CL           The deuteron decay mode is tentative                         
+ 16N  cL           The deuteron decay mode is tentative                         
  16N   L 13830                                                                  
  16N 2 L %N=100                                                                 
  16N 3 L XREF=G                                                                 

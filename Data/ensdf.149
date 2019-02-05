@@ -584,22 +584,56 @@
 149    R 2003SY01 JOUR PRVCA 68 024304                                          
 149    R 2003WA28 JOUR NUPAB 728 365                                            
                                                                                 
-149CS    ADOPTED LEVELS                                          04NDS    200406
+149CS    COMMENTS                                                ENSDF    201711
+149CS  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
+149CS C  TITL$NUCLEAR DATA SHEETS FOR 149CS                                     
+149CS c  AUTH$FILIP G. KONDEV                                                   
+149CS c  INST$Nuclear Engineering Division                                      
+149CS#c       Argonne National Laboratory                                       
+149CS#c       9700 South Cass Avenue                                            
+149CS#c       Argonne, Illinois 60439, USA                                      
+149CS c  ABST$Information about the nuclear structure properties of the         
+149CS2c  {+149}Cs nuclide is presented                                          
+149CS c  CUT$Literature available up to February 20, 2017 has been consulted.   
+149CS c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+149CS1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
+149CS C  CIT$ENSDF                                                              
+                                                                                
+149CS    ADOPTED LEVELS                                          ENSDF    201711
 149CS  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 102, 1 (2004)$CUT=20-Apr-2004$        
-149CS  Q 9.3E3     SY4.5E3   SY1.20E4  SY-5.2E3  SY    2012WA38                 
-149CS CQ Note: Current evaluation has used the following Q record               
-149CS  Q 9640      SY 4610   SY 11720  CA -5100  CA    2003AU03,1997MO25        
-149CS CQ $ |D(Q-)=280, |D(SN)=610 (syst,2003Au03)                               
-149CS CQ $ Q(B-N)=6100 210 (syst,2003Au03)                                      
-149CS CQ $ Q- and SN are from 2003Au03; SP and QA are from 1997Mo25             
-149CS C  Yield of 149CS is reported as 10{+5} atoms/s (1987Ra12) in U(P,X)      
-149CS2C  E=600 MEV reaction analyzed with mass separators                       
-149CS  L  0                              50 MS   GT                            ?
-149CS2 L %B-=? $ %B-N=?                                                         
-149CS cL T$ estimated from flight time of fragments (1987Ra12).                 
-149CS2cL Calculated |b half-life=0.19 s (1997Mo25) suggests a                   
-149CS3cL much longer half-life than 50 ms. 2003Au02 suggest 150 ms from syst.   
-149CS cL J$ 3/2+ (syst,2003Au02); 3/2 (CA,1997Mo25)                             
+149CS  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
+149CS  Q 9259      SY 4536   SY 12049  SY -5247  SY    2012WA38                 
+149CS cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=277, |DS(n)=608,      
+149CS2cQ |DS(p)=277, |DS(|a)=540                                                
+149CS cQ $S(2n)=7886 {I203}, Q(|b{+-}n)=5761 {I206}                             
+149CS2cQ (2012Wa38, syst).                                                      
+149CS c  1987Ra12: Yield of {+149}Cs is reported as 10{+5} atoms/s in U(p,X)    
+149CS2c  E=600 MeV reaction using ISOLDE On-Line Mass Separator                 
+149CS c  2000KoZH: ISOLDE On-Line Mass Separator. Measured E|g,                 
+149CS2c  I|g, En, In; deduced T{-1/2}, nuclear magnetic moments,                
+149CS3c  |b-delayed neutron emission probabilities                              
+149CS c  2017Wu04: The {+149}Cs nuclide was produced at the RIBF-RIKEN facility 
+149CS2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+149CS3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+149CS4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+149CS5c  pnA, respectively. The identification of the nuclide of interest was   
+149CS6c  made in the BigRIPS separator by determining the atomic number and the 
+149CS7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+149CS8c  reaction products were transported through the ZeroDegree Spectrometer 
+149CS9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+149CSac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+149CSbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+149CScc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+149CSdc  Deduced: T{-1/2}.                                                      
+149CS  L 0.0                           0.113 S   8                              
+149CS2 L %B-=100 $ %B-N=?                                                       
+149CS cL %B-$Only |b{+-} decay mode is expected.                                
+149CS cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+149CS2cL using the least-squares and maximum-likelihood methods. The data       
+149CS3cL analysis included contributions from the parent, daughter and          
+149CS4cL grand-daughter decays, as well as a constant background. Other:        
+149CS5cL 0.112 s {I3} using |bn(t) and 0.114 s {I16} using |bn-142|g(t) in      
+149CS6cL 2000KoZH                                                               
                                                                                 
 149BA    ADOPTED LEVELS                                          04NDS    200406
 149BA  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 102, 1 (2004)$CUT=20-Apr-2004$        

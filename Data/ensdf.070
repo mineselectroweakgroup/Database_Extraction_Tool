@@ -1162,7 +1162,7 @@
  70ZN  H TYP=FUL$AUT=G. G~URDAL, E.A. MCCUTCHAN$CIT=NDS 136, 1 (2016)$          
  70ZN2 H CUT=1-Jul-2016$                                                        
  70ZN  Q -654.6    16 9218.4 21 11117.524 -5983.3 24   2012WA38                 
- 70ZN CQ $S(2N)=15700.5 21;  S(2P)=20679 4 (2012WA38)                           
+ 70ZN cQ $S(2n)=15700.5 {I21}; S(2p)=20679 {I4} (2012Wa38)                      
  70ZN cG E,RI$From {+70}Cu |b{+-} decay (44.5 s), except where noted.           
  70ZN cG M$From |g(|q) in (n,n'|g), except where noted.                         
  70ZN cG MR$From |g(|q) in (n,n'|g)                                             
@@ -1261,7 +1261,7 @@
  70ZNS G KC=7.92E-5 11$LC=7.86E-6 11$MC=1.127E-6 16$NC=4.56E-8 7                
  70ZNB G BE2W=0.60 12                                                           
  70ZN  L 1786.75   10 4+                2.9 PS    8                         A   
- 70ZNX L XREF=ABEFIKLM                                                          
+ 70ZNX L XREF=ABEFIKLMN                                                         
  70ZN2 L MOMM1=+1.48 56 (2009Mu06)                                              
  70ZN cL J$L(t,p)=4                                                             
  70ZN cL T$weighted average of 2.0 ps {I+9-11} from RDDS in                     

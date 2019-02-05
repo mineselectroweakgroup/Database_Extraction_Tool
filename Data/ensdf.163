@@ -414,27 +414,27 @@
 163    R 2010SC02 JOUR PRVCA 81 014306                                          
 163    R 2010TH01 JOUR PRVCA 81 014307                                          
                                                                                 
-163PM    COMMENTS                                                ENSDF    201309
-163PM  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+163PM    COMMENTS                                                ENSDF    201704
+163PM  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
 163PM C  TITL$NUCLEAR DATA SHEETS FOR 163PM                                     
-163PM c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-163PM c  INST$Department of Physics and Astronomy,                              
-163PM#c       McMaster University, Hamilton, Ontario,                           
-163PM#c       Canada, L8S 4M1                                                   
-163PM c  ABST$Information about the identification of {+163}Pm nuclide          
-163PM2c  from 2012Ku26 is presented.                                            
-163PM c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-163PM c  ACKN$                                                                  
-163PM c  FUND$Work supported by the office of Science of the U.S. Department    
-163PMxc  of Energy.                                                             
+163PM c  AUTH$FILIP G. KONDEV                                                   
+163PM c  INST$Nuclear Engineering Division                                      
+163PM#c       Argonne National Laboratory                                       
+163PM#c       9700 South Cass Avenue                                            
+163PM#c       Argonne, Illinois 60439, USA                                      
+163PM c  ABST$Information about the nuclear structure properties of the         
+163PM2c  {+163}Pm nuclide is presented                                          
+163PM c  CUT$Literature available up to February 20, 2017 has been consulted.   
+163PM c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+163PM1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 163PM C  CIT$ENSDF                                                              
                                                                                 
-163PM    ADOPTED LEVELS                                          ENSDF    201309
-163PM  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+163PM    ADOPTED LEVELS                                          ENSDF    201704
+163PM  H TYP=FUL$AUT=FILIP G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                 
 163PM  Q 7470      SY 4950   SY 10950  CA -4590  SY    2012Wa38,1997MO25        
 163PM cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=590, |DS(n)=640,          
 163PM2cQ |DS(|a)=710                                                            
-163PM CQ $ SP from 1997Mo25; others from 2012Wa38                               
+163PM cQ $S(p) from 1997Mo25; others from 2012Wa38                              
 163PM cQ $S(2n)=9160 {I590}, Q(|b{+-}n)=3210 {I540} from 2012Wa38 (syst).       
 163PM cQ $S(2p)=25080 from 1997Mo25 (theory).                                   
 163PM c  2012Ku26: {+163}Pm produced and identified in {+9}Be({+238}U,F),       
@@ -442,7 +442,7 @@
 163PM3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 163PM4c  Fragment Separator (FRS). Particle identification was achieved by      
 163PM5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-163PM6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+163PM6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 163PM7c  measured using two plastic scintillation detectors, energy loss or     
 163PM8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 163PM9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -454,45 +454,62 @@
 163PMFc  a scintillator for veto signal. Measured production cross section.     
 163PMGc  Comparison of measured |s with predictions from ABRABLA model and      
 163PMHc  EPAX-3 model                                                           
-163PM  L 0                              160 NS   GT                             
-163PM2 L %B-=?$ %B-N=?                                                          
-163PM cL $ Predicted %|b{+-}n=1.27 (1997Mo25)                                   
-163PM cL E$ the observed {+163}Pm fragments assumed to correspond to the g.s.   
-163PM cL J$ 5/2- from systematics (2012Au07), 5/2- predicted (1997Mo25)         
-163PM cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-163PM2cL |b-decay half-life is expected to be much longer as suggested by       
-163PM3cL 200 ms from systematics (2012Au07), and 0.191 s from theoretical       
-163PM4cL calculations (1997Mo25)                                                
-163PM cL $ Production |s=4.5 nb {I15} (2012Ku26)                                
+163PM c  2017Wu04: The {+163}Pm nuclide was produced at the RIBF-RIKEN facility 
+163PM2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+163PM3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+163PM4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+163PM5c  pnA, respectively. The identification of the nuclide of interest was   
+163PM6c  made in the BigRIPS separator by determining the atomic number and the 
+163PM7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+163PM8c  reaction products were transported through the ZeroDegree Spectrometer 
+163PM9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+163PMac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+163PMbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+163PMcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+163PMdc  Deduced: T{-1/2}.                                                      
+163PM  L 0.0          (5/2-)           0.43 S    35                             
+163PM2 L %B-=100 $ %B-N=?                                                       
+163PM cL %B-$Only |b{+-} decay mode is expected.                                
+163PM cL J$From systematics of known quasiparticle states in neighboring nuclei 
+163PM2cL and the proposed configuration (by the evaluator). The assignment is   
+163PM3cL tentative.                                                             
+163PM cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+163PM2cL using the least-squares and maximum-likelihood methods. The data       
+163PM3cL analysis included contributions from the parent, daughter and          
+163PM4cL grand-daughter decays, as well as a constant background.               
+163PM cL CONF$|p5/2[532] Nilsson orbital, based on systematics of known         
+163PM2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+163PM3cL assignment is tentative.                                               
+163PM cL $ Production |s(at 1 GeV/nucleon)=4.5 nb {I15} (2012Ku26)              
                                                                                 
-163SM    COMMENTS                                                ENSDF    201309
-163SM  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+163SM    COMMENTS                                                ENSDF    201704
+163SM  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 163SM C  TITL$NUCLEAR DATA SHEETS FOR 163SM                                     
-163SM c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-163SM c  INST$Department of Physics and Astronomy,                              
-163SM#c       McMaster University, Hamilton, Ontario,                           
-163SM#c       Canada, L8S 4M1                                                   
-163SM c  ABST$Information about the identification of {+163}Sm nuclide          
-163SM2c  from 2012Ku06 is presented.                                            
-163SM c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-163SM c  ACKN$                                                                  
-163SM c  FUND$Work supported by the office of Science of the U.S. Department    
-163SMxc  of Energy.                                                             
+163SM c  AUTH$FILIP G KONDEV                                                    
+163SM c  INST$Nuclear Engineering Division                                      
+163SM#c       Argonne National Laboratory                                       
+163SM#c       9700 South Cass Avenue                                            
+163SM#c       Argonne, Illinois 60439, USA                                      
+163SM c  ABST$Information about the nuclear structure properties of the         
+163SM2c  {+163}Sm nuclide is presented                                          
+163SM c  CUT$Literature available up to February 20, 2017 has been consulted.   
+163SM c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+163SM1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 163SM C  CIT$ENSDF                                                              
                                                                                 
-163SM    ADOPTED LEVELS                                          ENSDF    201309
-163SM  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+163SM    ADOPTED LEVELS                                          ENSDF    201704
+163SM  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 163SM  Q 5920      SY 4260   SY 11640  SY -3340  SY    2012Wa38                 
 163SM cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=310, |DS(n)=360,          
 163SM2cQ |DS(p)=500, |DS(|a)=500                                                
-163SM cQ $S(2n)=10190 {I300}, S(2p)=22710 {I590, Q(|b{+-}n)=-100 {I300}         
+163SM cQ $S(2n)=10190 {I300}, S(2p)=22710 {I590}, Q(|b{+-}n)=-100 {I300}        
 163SM2cQ from 2012Wa38 (syst).                                                  
 163SM c  2012Ku26: {+163}Sm produced and identified in {+9}Be({+238}U,F),       
 163SM2c  E=1 GeV/nucleon reaction using SIS-18 synchrotron facility at GSI.     
 163SM3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 163SM4c  Fragment Separator (FRS). Particle identification was achieved by      
 163SM5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-163SM6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+163SM6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 163SM7c  measured using two plastic scintillation detectors, energy loss or     
 163SM8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 163SM9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -504,16 +521,33 @@
 163SMFc  a scintillator for veto signal. Measured production cross section.     
 163SMGc  Comparison of measured |s with predictions from ABRABLA model and      
 163SMHc  EPAX-3 model                                                           
-163SM  L 0                              160 NS   GT                             
-163SM2 L %B-=?                                                                  
-163SM cL $ Only |b{+-} decay mode is expected. Predicted %|b{+-}n=0 (1997Mo25)  
-163SM cL E$ the observed {+163}Sm fragments assumed to correspond to the g.s.   
-163SM cL J$ 1/2- from systematics (2012Au07), 7/2+ predicted (1997Mo25)         
-163SM cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-163SM2cL |b-decay half-life is expected to be much longer as suggested by       
-163SM3cL 1 s from systematics (2012Au07), and 4.4 s from theoretical            
-163SM4cL calculations (1997Mo25)                                                
-163SM cL $ Production |s=134 nb {I11} (2012Ku26)                                
+163SM c  2017Wu04: The {+163}Sm nuclide was produced at the RIBF-RIKEN facility 
+163SM2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+163SM3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+163SM4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+163SM5c  pnA, respectively. The identification of the nuclide of interest was   
+163SM6c  made in the BigRIPS separator by determining the atomic number and the 
+163SM7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+163SM8c  reaction products were transported through the ZeroDegree Spectrometer 
+163SM9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+163SMac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+163SMbc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+163SMcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+163SMdc  Deduced: T{-1/2}.                                                      
+163SM  L 0.0          (1/2-)           1.23 S    +51-47                         
+163SM2 L %B-=100 $ %B-N=?                                                       
+163SM cL %B-$Only |b{+-} decay mode is expected.                                
+163SM cL J$From systematics of known quasiparticle states in neighboring nuclei 
+163SM2cL and the proposed configuration (by the evaluator). The assignment is   
+163SM3cL tentative.                                                             
+163SM cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+163SM2cL using the least-squares and maximum-likelihood methods. The data       
+163SM3cL analysis included contributions from the parent, daughter and          
+163SM4cL ground-daughter decays, as well as a constant background.              
+163SM cL CONF$|n1/2[521] Nilsson orbital, based on systematics of known         
+163SM2cL structures in neighboring, well-deformed nuclei (by the evaluator). The
+163SM3cL assignment is tentative.                                               
+163SM cL $ Production |s(at 1 GeV/nucleon)=134 nb {I11} (2012Ku26)              
                                                                                 
 163EU    ADOPTED LEVELS                                          10NDS    201005
 163EU  H TYP=FUL$AUT=C. W. REICH, BALRAJ SINGH$CIT=NDS 111, 1211 (2010)$        

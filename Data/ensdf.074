@@ -470,25 +470,26 @@
  74    R 2006HA12 JOUR APOBB 37 77                                              
  74    R 2006RO11 JOUR NUPAB 769 1                                              
                                                                                 
- 74FE    COMMENTS                                                ENSDF    201008
- 74FE  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=15-AUG-2010$                    
+ 74FE    COMMENTS                                                ENSDF    201709
+ 74FE  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74FE C  TITL$NUCLEAR DATA SHEETS FOR 74FE                                      
  74FE c  AUTH$BALRAJ SINGH                                                      
- 74FE c  INST$Department of Physics and Astronomy,                              
- 74FE#c       McMaster University, Hamilton, Ontario,                           
- 74FE#c       Canada, L8S 4M1                                                   
- 74FE c  ABST$Information about identification of the {+74}Fe nuclide is        
- 74FE2c  presented.                                                             
- 74FE c  CUT$Literature available up to August 15, 2010 has been consulted.     
+ 74FE c  INST$Department of Physics and Astronomy, McMaster University,         
+ 74FE#c       Hamilton, Ontario L8S 4M1, Canada                                 
+ 74FE c  ABST$Experimental structure data for {+74}Fe have been re-evaluated    
+ 74FE2c  and updated since the previous ENSDF update of {+74}Fe on Aug 15, 2010 
+ 74FE c  CUT$Literature available up to March 31, 2017 has been consulted.      
  74FE C  CIT$ENSDF                                                              
  74FE c  FUND$                                                                  
                                                                                 
- 74FE    ADOPTED LEVELS                                          ENSDF    201008
+ 74FE    ADOPTED LEVELS                                          ENSDF    201709
+ 74FE  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74FE  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=15-AUG-2010$                    
- 74FE  Q 1.32E4    SY4.7E3   SY                        2012WA38                 
- 74FE CQ Note: Current evaluation has used the following Q record               
- 74FE  Q  12410    CA  4940  CA 21520  CA -16680 CA    1997MO25                 
- 74FE cQ $ S(2n)=7190, S(2p)=40310 (1997Mo25,calculated)                        
+ 74FE  Q 13230     SY 4760   SY 21520  CA -17540 SY    2017WA10,1997MO25        
+ 74FE cQ $Estimated |DQ(|b{+-})=|DS(n)=780, |DQ(|a)=750 (2017Wa10)              
+ 74FE cQ $Q(|b{+-}), S(n), Q(|a) from 2017Wa10. S(p) from 1997Mo25              
+ 74FE cQ $S(2n)=7300 {I780}, Q(|b{+-}n)=9760 {I720} (syst,2017Wa10).            
+ 74FE2cQ S(2p)=40310 (1997Mo25,theory)                                          
  74FE c  2010Oh02: {+74}Fe nuclide identified in Be({+238}U,F) and              
  74FE2c  Pb({+238}U,F) reactions with a {+238}U{+86+} beam energy of            
  74FE3c  345 MeV/nucleon produced by the cascade operation of the RBIF          
@@ -496,126 +497,298 @@
  74FE5c  cyclotrons RRC, fRC, IRC and SRC. Identification of {+74}Fe nuclei was 
  74FE6c  made on the basis of magnetic rigidity, time-of-flight and energy loss 
  74FE7c  of the fragments using BigRIPS fragment separator. Experiments         
- 74FE8c  performed at RIKEN facility.                                           
- 74FE c  Based on A/Q spectrum and Z versus A/Q plot, 1 count was assigned      
- 74FE2c  to {+74}Fe isotope. (Q=charge state)                                   
- 74FE c  2010Si11: calculated proton effective single-particle energies         
- 74FE c  2007Ma09, 2005Ni02: calculated |b-decay half-life                      
- 74FE c  2004Mi54: calculated binding energy, deformation                       
- 74FE  L 0            0+                638 NS   GT                             
+ 74FE8c  performed at RIKEN facility. Based on A/Q spectrum and Z versus A/Q    
+ 74FE9c  plot, only one count was assigned to the {+74}Fe isotope. Since no     
+ 74FEAc  events were observed for neighboring hydrogen-like peaks, the          
+ 74FEBc  misidentification of {+74}Fe was not possible                          
+ 74FE c  2014XuZZ: same reaction and laboratory as above for 2010Oh02, but      
+ 74FE2c  lot more events were detected, as well as preliminary value of         
+ 74FE3c  half-life of {+74}Fe |b{+-} decay was reported                         
+ 74FE c  2015BeZR: yield measurement in the same reaction and at the same       
+ 74FE2c  facility as for 2010Oh02; 15 ions assigned to {+74}Fe                  
+ 74FE d  2010Si11: calculated proton effective single-particle energies         
+ 74FE d  2007Ma09, 2005Ni02: calculated |b-decay half-life                      
+ 74FE d  2004Mi54: calculated binding energy, deformation                       
+ 74FE  L 0            0+                8.2 MS   +26-71                         
  74FE2 L %B-=? $ %B-N=? $ %B-2N=?                                               
- 74FE cL $ Measured |s=1 pb (2010Oh02), systematic uncertainty|?50%             
- 74FE cL T$ lower limit from time-of-flight in 2010Oh02, as communicated to     
- 74FE2cL the evaluator by T. Kubo in an e-mail reply of July 14, 2010. Actual   
- 74FE3cL half-life is expected to be much longer as suggested by the calculated 
- 74FE3cL value of 51.6 ms (1997Mo25)                                            
- 74FE cL $Since no events were observed for neighboring hydrogen-like peaks,    
- 74FE2cL the misidentification of {+74}Fe is not possible (2010Oh02)            
- 74FE cL $Calculated %|b{+-}n=31.2, %|b{+-}2n=1.61 (1997Mo25).                  
+ 74FE cL $Theoretical T{-1/2}=47 ms, %|b{+-}n=44.0, %|b{+-}2n=0.79 (2003Mo09).  
+ 74FE cL $Theoretical T{-1/2}=21 ms, %|b{+-}n=4.5, %|b{+-}2n=0.5 (2016Ma12).    
+ 74FE cL $Measured |s=1 pb (2010Oh02), systematic uncertainty|?50%              
+ 74FE cL T$preliminary value from 2014XuZZ, based on implant-|b correlations    
+ 74FE2cL and detailed analysis of decay curve which included half-lives of      
+ 74FE3cL daughters and grand-daughters, as well as P{-n} values for delayed     
+ 74FE4cL neutron emitters (see Fig. A.118 and Table A.68 on p251 in 2014XuZZ)   
                                                                                 
- 74CO    ADOPTED LEVELS                                          06NDS    200607
+ 74CO    COMMENTS                                                ENSDF    201709
+ 74CO  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 74CO C  TITL$NUCLEAR DATA SHEETS FOR 74CO                                      
+ 74CO c  AUTH$BALRAJ SINGH                                                      
+ 74CO c  INST$Department of Physics and Astronomy, McMaster University,         
+ 74CO#c       Hamilton, Ontario L8S 4M1, Canada                                 
+ 74CO c  ABST$Experimental structure data for {+74}Co have been re-evaluated    
+ 74CO2c  and updated since the previous NDS publication (2006Si19) for A=74     
+ 74CO3c  nuclides.                                                              
+ 74CO c  CUT$Literature available up to March 31, 2017 has been consulted.      
+ 74CO C  CIT$ENSDF                                                              
+ 74CO c  FUND$                                                                  
+                                                                                
+ 74CO    ADOPTED LEVELS                                          ENSDF    201709
+ 74CO  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74CO  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74CO2 H CUT=30-Apr-2006$                                                       
- 74CO  Q 1.60E4    SY3.6E3   SY1.71E4  SY-1.57E4 SY    2012WA38                 
- 74CO CQ Note: Current evaluation has used the following Q record               
- 74CO  Q  16120    SY 3280   SY 16570  CA              2003AU03                 
- 74CO CQ $ |D(Q-)=900, |D(SN)=1060 (2003AU03)                                   
- 74CO CQ $ SP FROM 1997MO25                                                     
- 74CO CQ $ Q(B-N)=9540 860 (SYST,2003AU03)                                      
+ 74CO  Q 15640     SY 3470   SY 17210  SY-15750  SY    2017WA10                 
+ 74CO cQ $Estimated |DQ(|b{+-})=540, |DS(n)=640, |DS(p)=|DQ(|a)=710 (2017Wa10)  
+ 74CO cQ $S(2n)=8760 {I640}, S(2p)=37500 {I780}, Q(|b{+-}n)=9220 {I500}         
+ 74CO2cQ (syst,2017Wa10).                                                       
  74CO c  1997Be70, 1995En07: {+74}Co identified in {+9}Be({+238}U,F),           
  74CO2c  E=750 MeV/nucleon reaction; fully-stripped fission products separated  
  74CO3c  using  Fragment-Recoil Separator (FRS). Measured magnetic rigidity,    
  74CO4c  trajectory, energy deposit, time-of-flight, production cross section   
  74CO5c  and residuals fission yields.                                          
- 74CO c  2005Ma59: {+74}Co produced by fragmentation of {+86}Kr beam at         
- 74CO2c  140 MeV/nucleon in a {+9}Be target, followed by analysis of            
+ 74CO c  2005Ma59 (also 2005Ma95): {+74}Co produced by fragmentation of {+86}Kr 
+ 74CO2c  beam at 140 MeV/nucleon in a {+9}Be target, followed by analysis of    
  74CO3c  reaction products using A1900 spectrometer. Measured |g, |b,           
  74CO4c  |g(implanted ion) coin                                                 
- 74CO  L 0.0                            30 MS    3                              
- 74CO2 L %B-=100$ %B-N>0                                                        
- 74CO cL T$ From timing of |b and |b|g correlated with {+74}Co ions (2005Ma59). 
- 74CO2cL Other: 18.7 ms (calculated,1997Mo25)                                   
- 74CO CL $ B-N decay to {+73}Ni is indicated by the presence of a 240|g         
- 74CO2CL (belonging to {+73}Ni) in |b|g coin spectrum (2005Ma59). The %B-N      
- 74CO3CL is not known, 2005Ma59 mention that a forthcoming paper will           
- 74CO4CL deal with B-N decay mode. Theoretical calculations of %B-N and         
- 74CO5CL half-life: 2005Bo19                                                    
+ 74CO c  2010Ho12: {+9}Be({+86}Kr,X) E=140 MeV/nucleon; fully-ionized {+86}Kr   
+ 74CO2c  beam, A1900 fragment separator at NSCL facility using B|r-|DE-B|r      
+ 74CO3c  method. After separation, the mixed beam was implanted into the        
+ 74CO4c  NSCL |b-counting system (BCS) consisting of stacks of Si PIN           
+ 74CO5c  detectors, a double-sided Si strip detector (DSSD) for implantation of 
+ 74CO6c  ions, and six single-sided Si strip detectors (SSSD) followed by two   
+ 74CO7c  Si PIN diodes. The identification of each implanted event was made     
+ 74CO8c  from energy loss, time-of-flight information and magnetic rigidity.    
+ 74CO9c  The implantation detector measured time and position of ion            
+ 74COAc  implantations and |b decays. Neutrons were detected with NERO detector.
+ 74COBc  Measured |b- and |bn-correlated events with ion implants;              
+ 74COCc  half-life of {+74}Co and delayed-neutron emission probability from     
+ 74CODc  a total of 331 implants, and 16 correlated |bn coincidences            
+ 74CO c  2011Da08: {+74}Co produced in the fragmentation of 57.8 MeV/nucleon    
+ 74CO2c  {+86}Kr beam impinged on 50 mg/cm{+2} thick tantalum target using      
+ 74CO3c  LISE-2000 spectrometer at GANIL facility. Detector system included a   
+ 74CO4c  three-element Si-detector telescope containing a double-sided          
+ 74CO5c  silicon-strip detector (DSSSD) backed by a Si(Li) detector and         
+ 74CO6c  surrounded by four clover type EXOGAM Ge detectors. Product            
+ 74CO7c  identified by mass, atomic number, charge, energy loss and time of     
+ 74CO8c  flight. Measured half-life of {+74}Co decay. See also 2002MaZN thesis  
+ 74CO9c  reporting some of the same results                                     
+ 74CO c  2014Xu07: {+74}Co nuclide produced in {+9}Be({+238}U,F) reaction with a
+ 74CO2c  {+238}U{+86+} beam of 345 MeV/nucleon produced by the RIKEN            
+ 74CO4c  accelerator complex. Identification of {+74}Co nuclei was made on the  
+ 74CO5c  basis of magnetic rigidity, time-of-flight and energy loss of the      
+ 74CO6c  fragments (|DE-B|r-tof method) using BigRIPS fragment separator and    
+ 74CO7c  ZeroDegree Spectrometer (ZDS) at RIBF-RIKEN facility. Based on A/Q     
+ 74CO8c  spectrum and Z versus A/Q plot. Measured heavy fragment, |b and |g     
+ 74CO9c  spectra using wide-range active silicon strip stopper array (WAS3ABi)  
+ 74COAc  for beta and ion detection, and EUROBALL-RIKEN Cluster array for |g    
+ 74COBc  detection. Decay curves were obtained from time differences between    
+ 74COCc  implantation and correlated |b decays. Also 2014XuZZ thesis by         
+ 74CODc  the first author of 2014Xu07.                                          
+ 74CO d  2015BeZR: yield measurement at RIKEN using {+9}Be+{+238}U reaction     
+ 74CO d  Theoretical calculations of T{-1/2} and %|b{+-}n: 2016Sh39, 2014Mi23,  
+ 74CO2d  2007Ma09, 2005Ni02                                                     
+ 74CO  L 0.0                            31.3 MS  15                             
+ 74CO2 L %B-=100$ %B-N=18 15 (2010HO12)$ %B-2N=?                                
+ 74CO cL $Theoretical T{-1/2}=23 ms, %|b{+-}n=6.4, %|b{+-}2n=1.5 (2003Mo09).    
+ 74CO cL $Theoretical T{-1/2}=71 ms, %|b{+-}n=4.4, %|b{+-}2n=1.3 (2016Ma12).    
+ 74CO cL T$weighted average of 30 ms {I3} (2005Ma59, 2005Ma95, |b and |b|g      
+ 74CO2cL correlated with {+74}Co ions) and 31.6 ms {I15} (2014Xu07, |b-implants 
+ 74CO3cL correlated decay curves). Other less precise measurements using        
+ 74CO4cL |b-implant correlated decay curves: 34 ms {I+6-9} (2010Ho12) and       
+ 74CO5cL 19 ms {I7} (2011Da08,2002MaZN). Weighted average of all the four values
+ 74CO6cL is 30.9 ms {I15}                                                       
+ 74CO cL $|b{+-}n decay to {+73}Ni is indicated by the presence of a 240|g      
+ 74CO2cL (belonging to {+73}Ni) in |b|g coin spectrum (2005Ma59). From          
+ 74CO3cL the detailed analysis of |b(implant) decay curve, 2010Ho12 deduce      
+ 74CO4cL %|b{+-}n=18 {I15}. Others: |>26 {I9} (2005Ma59, from |b|g data and     
+ 74CO5cL decay scheme analysis), %|b{+-}n=14 {I11} (2014XuZZ, preliminary value)
                                                                                 
- 74NI    ADOPTED LEVELS, GAMMAS                                  06NDS    200607
+ 74NI    COMMENTS                                                ENSDF    201709
+ 74NI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 74NI C  TITL$NUCLEAR DATA SHEETS FOR 74NI                                      
+ 74NI c  AUTH$BALRAJ SINGH                                                      
+ 74NI c  INST$Department of Physics and Astronomy, McMaster University,         
+ 74NI#c       Hamilton, Ontario L8S 4M1, Canada                                 
+ 74NI c  ABST$Experimental structure data for {+74}Ni have been re-evaluated    
+ 74NI2c  and updated since the previous NDS publication (2006Si19) for A=74     
+ 74NI3c  nuclides.                                                              
+ 74NI c  CUT$Literature available up to March 31, 2017 has been consulted.      
+ 74NI C  CIT$ENSDF                                                              
+ 74NI c  FUND$                                                                  
+                                                                                
+ 74NI    ADOPTED LEVELS, GAMMAS                                  ENSDF    201709
+ 74NI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74NI  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74NI2 H CUT=30-Apr-2006$                                                       
- 74NI  Q 7.6E3     SY6.4E3   SY1.88E4  SY-1.46E4 SY    2012WA38                 
- 74NI CQ Note: Current evaluation has used the following Q record               
- 74NI  Q 7630      SY 6580   SY 18630  SY -14900 SY    2003AU03                 
- 74NI cQ $|D(Q(|b{+-}))=400, |D(S(n))=500, |D(S(p))=810, |D(Q(|a))=720          
- 74NI2cQ (2003Au03)                                                             
- 74NI cQ $Q(|b{+-}n)=2540 {I400} (syst,2003Au03)                                
- 74NI c  {+74}Ni first identified by 1987Ar21 and 1990Be13 in {+235}U(n,F)      
+ 74NI  Q 7550      SY 6420   SY 18330  SY-14370  SY    2017WA10                 
+ 74NI cQ $Estimated |DQ(|b{+-})=|DS(n)=200, |DS(p)=|DQ(|a)=450 (2017Wa10)       
+ 74NI cQ $S(2n)=10370 {I200}, S(2p)=34600 {I540}, Q(|b{+-}n)=2460 {I200}        
+ 74NI2cQ (syst,2017Wa10)                                                        
+ 74NI c  {+74}Ni identified by 1987Ar21 and 1990Be13 in {+235}U(n,F)            
  74NI2c  reaction at E=thermal reaction. 1998Am04 used {+9}Be({+86}Kr,X)        
- 74NI3c  at 500 MeV/nucleon to produce {+74}Ni and measure half-life.           
- 74NI4c  1998Fr15 (also 2002Kr13,2001Fr21,2000Mu10) used {+238}U(p,F)           
+ 74NI3c  at 500 MeV/nucleon to produce {+74}Ni and measured half-life.          
+ 74NI4c  1998Fr15 (also 2002Kr13, 2001Fr21, 2000Mu10, 1998FrZY): {+238}U(p,F)   
  74NI5c  at 30 MeV to measure half-life and yield of {+74}Ni.                   
- 74NI c  Yield of {+74}Ni in {+238}U(p,F) E=30 MeV: 2002Kr13, 2001Fr21, 2000Mu10
- 74NI c  Search for microsecond isomers in {+74}Ni using Ni({+86}Kr,X) reaction 
- 74NI2c  at E=60.3 MeV/nucleon proved negative (1999Le68); no isomers found     
- 74NI3c  between 50 ns to 100 |ms.                                              
- 74NI D  Theory (structure):                                                    
- 74NI2D  2005Gr29, 2005Wa15, 2005Ot01, 2005An29, 2005Li54, 2004Li64, 2004Ca44,  
- 74NI2D  2003La05, 2003Da04, 2003Da33, 2003Bo48, 2003Bo06, 2002Gr35, 2002Gr16,  
- 74NI3D  2002Ca48, 2001Gr32, 2000Vr02, 2000Sh31, 1996Te06, 1996Sh20             
+ 74NI c  2014Xu07: {+74}Ni nuclide produced in {+9}Be({+238}U,F) reaction with a
+ 74NI2c  {+238}U{+86+} beam of 345 MeV/nucleon produced by the RIKEN            
+ 74NI4c  accelerator complex. Identification of {+74}Ni nuclei was made on the  
+ 74NI5c  basis of magnetic rigidity, time-of-flight and energy loss of the      
+ 74NI6c  fragments (|DE-B|r-tof method) using BigRIPS fragment separator and    
+ 74NI7c  ZeroDegree Spectrometer (ZDS) at RIBF-RIKEN facility. Based on A/Q     
+ 74NI8c  spectrum and Z versus A/Q plot. Measured heavy fragment, |b and |g     
+ 74NI9c  spectra using wide-range active silicon strip stopper array (WAS3ABi)  
+ 74NIAc  for beta and ion detection, and EUROBALL-RIKEN Cluster array for |g    
+ 74NIBc  detection. Decay curves were obtained from time differences between    
+ 74NICc  implantation and correlated |b decays                                  
+ 74NI c  2011Es06: mass measurements using time-of-flight at NSCL-MSU,          
+ 74NI2c  mass excess for {+74}Ni=-49210 keV {I990}                              
+ 74NI c  1999Le68 searched for microsecond isomers in {+74}Ni using             
+ 74NI2c  Ni({+86}Kr,X) reaction at E=60.3 MeV/nucleon, but proved negative; no  
+ 74NI3c  isomers were found between 50 ns to 100 |ms.                           
+ 74NI d  2015BeZR: yield measurement at RIKEN using {+9}Be+{+238}U reaction     
+ 74NI d  Yield of {+74}Ni in {+238}U(p,F) E=30 MeV: 2002Kr13, 2001Fr21, 2000Mu10
+ 74NI c  Nuclear structure (Theory): 2014Ts02, 2012Sr03, 2006An27:              
+ 74NI2c  levels, J|p, B(E2)                                                     
+ 74NI d  Other theory (structure and |b decay T{-1/2}) articles:                
+ 74NI d  2016An11, 2016Go28, 2015Du11, 2015Ka46, 2014Co04, 2014Eb02, 2014He23,  
+ 74NI2d  2014Ka03, 2014Pe08, 2014Se19, 2014Wa20, 2014Zh31, 2013Ca08, 2013Ni16,  
+ 74NI3d  2013So03, 2012Ca27, 2012Ga24, 2012Gu16, 2012Sr02, 2011Bh06, 2011Ga40,  
+ 74NI4d  2011Kh10, 2011Va06, 2010Is04, 2010Lo03, 2010Na03, 2010st12, 2009Ca14,  
+ 74NI5d  2009Li20, 2009Zh25, 2008Ma17, 2007Le07, 2007Sa23, 2006Ma82, 2006Te06,  
+ 74NI6d  2005Ni02, 2005Wa15, 2005Ot01, 2005An29, 2005Li54, 2004Li64, 2004Ca44,  
+ 74NI7d  2003La05, 2003Da04, 2003Da33, 2003Bo48, 2003Bo06, 2002Gr35, 2002Gr16,  
+ 74NI8d  2002Ca48, 2001Gr32, 2000Vr02, 2000Sh31, 1996Te06, 1996Sh20             
  74NI D  THEORY (B- DECAY): 1999En03                                            
  74NI D  THEORY ((D,D') REACTION): 1972Ka23                                     
- 74NI CL J(A)$ FROM SYSTEMATICS OF EVEN-EVEN NUCLIDES                           
- 74NI  XA74CO B- DECAY (30 MS)                                                  
- 74NI  L 0.0          0+               0.68 S    18                             
+ 74NI  XA74CO B- DECAY (31.3 MS)                                                
+ 74NI  XB1H(74NI,P'G)                                                           
+ 74NI  XCCOULOMB EXCITATION                                                     
+ 74NI PN                                                                     6  
+ 74NI  L 0            0+               507.7 MS  46                             
  74NI2 L %B-=100$ %B-N=?                                                        
- 74NIX L XREF=A                                                                 
- 74NI cL T$from weighted average of 0.9 s {I2} (1998Fr15,2001Fr21) and          
- 74NI2cL 0.54 s {I16} (1998Am04). Other: 1.1 s {I5} (1990Be13)                  
- 74NI2cL Theory (T{-1/2} and/or %|b-n): 2005Ni02, 2005Bo19, 1989Kr02, 1997Mo25  
+ 74NIX L XREF=ABC                                                               
+ 74NI cL $Theoretical T{-1/2}=1.2 s, %|b{+-}n=2.3 (2003Mo09).                   
+ 74NI cL $Theoretical T{-1/2}=5.5 s, %|b{+-}n=1.0 (2016Ma12).                   
+ 74NI cL T$from |b(implant) correlations (2014Xu07, see detailed analysis of    
+ 74NI2cL the decay curve on Figs. A.66, 67, 68 and Tables A.39, 40, pages       
+ 74NI3cL 191-193 of 2014XuZZ thesis). Others: 0.9 s {I2} (1998Fr15,2001Fr21);   
+ 74NI4cL 0.54 s {I16} (1998Am04); 1.1 s {I5} (1990Be13). Weighted average of all
+ 74NI5cL the four values is 508.0 ms {I61}, however, the most precise value from
+ 74NI6cL 2014Xu07 is preferred.                                                 
+ 74NI dL T$theory (T{-1/2} and/or %|b-n): 2005Ni02, 2005Bo19, 1989Kr02, 1997Mo25
  74NI cL $In |b|g and |g|g studies of {+74}Ni decay, 1998Fr15 reported two most 
  74NI2cL intense |g rays at 166.1 {I1} and 694.3 {I2}, forming a cascade.       
  74NI3cL These |g rays feed levels either in {+74}Cu through |b{+-} decay or in 
  74NI4cL {+73}Cu through |b{+-}n decay. The latter possibility, however, seems  
  74NI5cL less likely (1998Fr15) since the |g-ray intensities imply              
- 74NI6cL %|b{+-}n=30, much higher than the calculated value of 4.5% (1997Mo25)  
- 74NI  L  1024     1    (2+)                                                A  ?
- 74NIX L XREF=A                                                                 
- 74NI  G  1024     1                                                           ?
- 74NI  L  1763     1     (4+)                                               A  ?
- 74NIX L XREF=A                                                                 
- 74NI  G  739      1                                                           ?
+ 74NI6cL %|b{+-}n=30, much higher than the theoretical value of 2.3% (2003Mo09) 
+ 74NI  L  1024     1     2+             3.9 PS   +21-10                         
+ 74NIX L XREF=ABC                                                               
+ 74NI2 L BE2=0.064 +22-23 (2014Ma85)                                            
+ 74NI cL J$Coulomb excited state                                                
+ 74NI cL T$deduced by evaluator from B(E2) value in 2014Ma85                    
+ 74NI  G  1024     1   100      [E2]                                            
+ 74NIB G BE2W=6.9 25                                                            
+ 74NI  L  1763     1    (4+)                                                   ?
+ 74NIX L XREF=AB                                                                
+ 74NI cL E$from |b{+-} decay. Other: 1806 {I30} in {+1}H({+74}Ni,p'|g)          
+ 74NI  G  739      1   100                                                     ?
+ 74NI cG E$from |b{+-} decay. Other: 786 {I30} in {+1}H({+74}Ni,p'|g)           
                                                                                 
- 74NI    74CO B- DECAY (30 MS)         2005MA59                  06NDS    200607
+ 74NI    74CO B- DECAY (31.3 MS)       2005MA59                  ENSDF    201709
+ 74NI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74NI  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74NI2 H CUT=30-Apr-2006$                                                       
  74NI c  2005Ma59 (also 2005Ma95): {+74}Co produced by fragmentation of {+86}Kr 
  74NI2c  beam at 140 MeV/nucleon in a {+9}Be target, followed by analysis of    
  74NI3c  reaction products using A1900 spectrometer. Measured |g, |b,           
  74NI4c  |g(implanted ion) coin, |b|g coin                                      
- 74NI CG E$ WEAK PEAKS IN BG COIN SPECTRUM CORRELATED WITH IMPLANED 74CO IONS.  
- 74NI2CG THE ASSIGNMENTS IN LEVEL SCHEME ARE TENTATIVE (2005MA59). A 240G       
- 74NI3CG SEEN IN THIS SPECTRUM IS ASSIGNED TO 73NI FROM B-N DECAY OF 74CO       
- 74NI CL J(A)$ FROM SYSTEMATICS OF EVEN-EVEN NUCLIDES                           
- 74CO  P  0                             30 MS    3                7630    SY    
- 74CO CP QP$ 7630 400 (SYST,2003AU03)                                           
- 74CO cP T$ From timing of |b and |b|g events correlated with {+74}Co           
- 74CO2cP ions (2005Ma59).                                                       
+ 74NI cG E$Weak peaks in |b|g coin spectrum correlated with implanted {+74}Co   
+ 74NI2cG ions. The assignments in level scheme are tentative (2005Ma59). A 240|g
+ 74NI3cG seen in this spectrum is assigned to {+73}Ni from |b{+-}n decay of     
+ 74NIxcG {+74}Co                                                                
+ 74NI cL J$From Adopted Levels                                                  
+ 74CO  P  0                             31.3 MS  15              15640    SY    
+ 74CO cP QP$15640 {I540} (syst,2017Wa10)                                        
+ 74CO cP T$From {+74}Co Adopted Levels                                          
  74NI  N                         1                                              
  74NI  L   0             0+                                                     
- 74NI  L  1024     1    (2+)                                                A  ?
- 74NI  G  1024     1                                                           ?
- 74NI  L  1763     1     (4+)                                               A  ?
+ 74NI  L  1024     1     2+                                                     
+ 74NI  G  1024     1                                                            
+ 74NI  L  1763     1    (4+)                                                   ?
  74NI  G  739      1                                                           ?
                                                                                 
- 74CU    ADOPTED LEVELS                                          06NDS    200607
+ 74NI    1H(74NI,P'G)                  2010AO01                  ENSDF    201709
+ 74NI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 74NI c  2010Ao01: 81 MeV/nucleon {+74}Ni beam was produced from fragmentation  
+ 74NI2c  of 140 MeV/nucleon {+86}Kr beam. Liquid hydrogen target with           
+ 74NI3c  a thickness of 210 mg/cm{+2} was used. The reaction products were      
+ 74NI4c  analyzed by the S800 spectrograph. The |g rays emitted from excited    
+ 74NI5c  states of {+74}Ni were detected by a barrel array of NaI(Tl) detectors 
+ 74NI6c  surrounding the liquid hydrogen target.                                
+ 74NI cL E$From E|g values                                                      
+ 74NI PN                                                                     5  
+ 74NI  L 0             0+                                                       
+ 74NI  L 1020      11  2+                                                       
+ 74NI cL J$From Adopted Levels                                                  
+ 74NI cL $|s(p,p')=14 mb {I4}. The quoted uncertainty contains statistical (20%)
+ 74NI2cL and systematic components. The cross section was obtained with and     
+ 74NI3cL without considering feeding by 786|g, and also assuming 25% {I5}       
+ 74NI4cL contribution from an expected, but unobserved, 3- state at 2-3 MeV.    
+ 74NI cL $Deduced |b{-2}=0.21 {I3} from deformation length                      
+ 74NI2cL |d(p,p')=1.04 fm {I16}                                                 
+ 74NI  G  1020     11   100                                                     
+ 74NI  L  1806     30                                                          ?
+ 74NI cL E$this level may correspond to 1763, (4+) level in the Adopted Levels  
+ 74NI2cL (evaluator)                                                            
+ 74NI  G  786      30    20  20                                                ?
+                                                                                
+ 74NI    COULOMB EXCITATION            2014MA85                  ENSDF    201709
+ 74NI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 74NI c  2014Ma85: {+74}Ni beam at 95.8 MeV/nucleon produced in fragmentation of
+ 74NI2c  140 MeV/nucleon {+86}Kr beam with a 399 mg/cm{+2} thick {+9}Be target  
+ 74NI3c  at Coupled cyclotron facility at NSCL-MSU, followed by A1900 fragment  
+ 74NI4c  separator and S-800 magnetic spectrograph for identification of        
+ 74NI5c  fragments by energy loss and time-of-flight technique.                 
+ 74NI c  Coulomb excitation target=642 mg/cm{+2} thick {+197}Au                 
+ 74NI c  Measured Doppler-corrected |g-ray spectra correlated with incoming and 
+ 74NI2c  outgoing particles, with the selection of scattering angle consistent  
+ 74NI3c  with safe Coulomb excitation. The CAESAR array of 192 CsI(Na)          
+ 74NI3c  scintillators was used for |g detection. Deduced B(E2) for the first   
+ 74NI4c  2+ state, and compared to large-scale shell model calculations, and    
+ 74NI5c  results for first 2+ states in N=40-50 even-A Ni isotopes.             
+ 74NI  L 0            0+                                                        
+ 74NI  L 1024      1  2+                  3.9 PS  +21-10                        
+ 74NI2 L BE2=0.064 +22-23 (2014Ma85)                                            
+ 74NI cL $B(E2) deduced by 2014Ma85 from measured angle-integrated              
+ 74NI2cL cross section for 0+ to 2+ excitation=148 mb {I+50-52}, and            
+ 74NI3cL using DWEIKO computer code to translate this cross section into        
+ 74NI4cL B(E2) value. 2014Ma85 quote B(E2) in e{+2}fm{+4} units, whereas        
+ 74NI5cL here it is listed in e{+2}b{+2} units as in ENSDF database             
+ 74NI cL T$deduced by evaluator from B(E2) value in 2014Ma85                    
+ 74NI  G 1024      1                                                            
+ 74NI cG E$from Adopted Gammas                                                  
+                                                                                
+ 74CU    COMMENTS                                                ENSDF    201709
+ 74CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 74CU C  TITL$NUCLEAR DATA SHEETS FOR 74CU                                      
+ 74CU c  AUTH$BALRAJ SINGH                                                      
+ 74CU c  INST$Department of Physics and Astronomy, McMaster University,         
+ 74CU#c       Hamilton, Ontario L8S 4M1, Canada                                 
+ 74CU c  ABST$Experimental structure data for {+74}Cu have been re-evaluated    
+ 74CU2c  and updated since the previous NDS publication (2006Si19) for A=74     
+ 74CU3c  nuclides.                                                              
+ 74CU c  CUT$Literature available up to March 31, 2017 has been consulted.      
+ 74CU C  CIT$ENSDF                                                              
+ 74CU c  FUND$                                                                  
+                                                                                
+ 74CU    ADOPTED LEVELS                                          ENSDF    201709
+ 74CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74CU  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74CU2 H CUT=30-Apr-2006$                                                       
- 74CU  Q 9751      7 5090    7 13187   7 -1.15E4 3     2012WA38                 
- 74CU CQ Note: Current evaluation has used the following Q record               
- 74CU  Q 9700      50 5091   7  13430  SY-12.79E384    2003AU03                 
- 74CU cQ $|D(S(p))=300 (2003Au03)                                               
- 74CU cQ $Q(|b{+-}n)=1330 {I40} (2003Au03)                                      
+ 74CU  Q 9751      7 5090    6 13187   7 -11800  SY    2017WA10                 
+ 74CU cQ $Estimated |DQ(|a)=300 (2017Wa10)                                      
+ 74CU cQ $S(2n)=12366 {I6}, S(2p)=30390 {I400} (syst), Q(|b{+-}n)=1516 {I6}     
+ 74CU2cQ (2017Wa10)                                                             
  74CU c  {+74}Cu identified by thermal neutron fission of {+235}U:              
  74CU2c  1987Ar21, 1987LuZX, 1989Wi11, 1990Be13, 1991Kr15, 1992CzZY.            
  74CU3c  1997Hu09, 2002Kr10, 2002Kr13: {+74}Cu produced in {+238}U(p,F) E=30    
@@ -623,93 +796,170 @@
  74CU c  1987LuZX: measured T{-1/2}.                                            
  74CU c  1991Kr15: measured T{-1/2} and neutron-emission probabilities.         
  74CU c  1999GrZQ: search for microsecond isomers in Ni({+86}Kr,X) reaction     
+ 74CU c  2010Fl02, 2010Vi07: measurement of spin, static magnetic and quadrupole
+ 74CU2c  moments by collinear laser spectroscopy at the CERN-ISOLDE facility.   
+ 74CU3c  {+74}Cu produced in bombardment of uranium carbide target with 1.4 GeV 
+ 74CU4c  protons. Resonant ionization laser ion source (RILIS) was used to      
+ 74CU5c  resonantly laser ionize the Cu atoms. The ions were accelerated to     
+ 74CU6c  30 keV and mass separated by HRS and injected into radiofrequency      
+ 74CU7c  quadrupolar (RFQ) gas-filled Paul trap (ISCOOL). Measured hyperfine    
+ 74CU8c  structure for the ground state from resonance fluorescence spectra;    
+ 74CU9c  deduced spin, magnetic dipole moment and electric quadrupole moment.   
+ 74CUAc  The data were normalized to values of hyperfine structure constants,   
+ 74CUBc  and moments for {+65}Cu. Comparison with shell-model calculations      
+ 74CU c  2016Bi08: {+74}Cu isotope was produced by bombarding UC{-x} target     
+ 74CU2c  with 1.4 GeV proton beam at the CERN-ISOLDE facility.                  
+ 74CU3c  Cu isotopes were selectively ionized by the RILIS laser ion source,    
+ 74CU4c  accelerated to 30 keV, mass separated with the high-resolution mass    
+ 74CU5c  separator, and injected into the gas-filled linear Paul trap. Measured 
+ 74CU6c  isotope shift with respect to {+65}Cu using the collinear laser        
+ 74CU7c  spectroscopy setup. Studied systematics of isotope shifts on {+58-75}Cu
+ 74CU8c  isotopes. Compared with droplet model predictions.                     
  74CU c  No excited states are known from {+74}Ni |b{+-} decay. In the          
  74CU2c  fragmentation of {+86}Kr beam with a Ni target, 1999GrZQ claimed to    
  74CU3c  have observed short-lived isomer(s) in {+74}Cu, but no details are     
  74CU4c  available as to the excitation energies.                               
- 74CU C  75NI POSSIBLY DECAYS BY B-N TO 74CU; 1985RE01 ESTIMATE %B-N=1.6        
+ 74CU c  {+75}Ni decays by |b{+-}n to {+74}Cu with %|b{+-}n=10.0 {I28}          
+ 74CU2c  (2010Ho12). Other %|b{+-}n=1.6 (1985Re01). No details of the level     
+ 74CU3c  population from this decay are available                               
  74CU c  In |b|g and |g|g studies of {+74}Cu decay, 1998Fr15 reported two most  
  74CU2c  intense |g rays at 166.1 {I1} and 694.3 {I2}, forming a cascade.       
  74CU3c  These |g rays feed levels either in {+74}Cu through {+74}Ni |b{+-}     
  74CU4c  decay or in {+73}Cu through {+74}Ni |b{+-}n decay. The latter          
  74CU5c  possibility, however, seems less likely (1998Fr15) since the |g-ray    
- 74CU6c  intensities imply %|b{+-}n=30, much higher than the calculated value   
- 74CUxc  of 4.5% (1997Mo25)                                                     
- 74CU c  Mass measurement: 2005Gu36                                             
- 74CU  XA74NI B- DECAY (0.68 S)                                                 
- 74CU  L 0.0          (1+,3+)          1.63 S    5                              
+ 74CU6c  intensities imply %|b{+-}n=30, much higher than the theoretical value  
+ 74CUxc  of 2.3% (2003Mo09)                                                     
+ 74CU c  Mass measurements: 2005Gu36, 2007Gu09                                  
+ 74CU d  Theory (structure and T{-1/2}): 2016Ku21, 2015Ka46, 2007Ch82,          
+ 74CU2d  2007Ma24, 2007Na28                                                     
+ 74CU  XA74NI B- DECAY (507.7 MS)                                               
+ 74CU  L 0.0           2-              1.63 S    5                              
  74CU2 L %B-=100$ %B-N>0                                                        
+ 74CU2 L MOMM1=-1.068 3 (2010Fl02,2010Vi07,2014StZZ)                            
+ 74CU2 L MOME2=+0.27 3 (2010Fl02,2010Vi07,2016St14)                             
  74CUX L XREF=A                                                                 
- 74CU CL %B-N$ 1991Kr15 claim to have observed delayed neutrons from {+74}Cu    
- 74CU2CL decay, but no %B-N is determined in this work                          
- 74CU cL J$ from systematics of neighboring nuclides (1989Wi11)                 
- 74CU cL T$ weighted average of 1.75 s {I6} (2005Va19, timing of |g rays),      
- 74CU2cL 1.594 s {I50} (1991Kr15, timing of delayed neutrons), 1.59 s {I5}      
+ 74CU cL $|d<r{+2}>({+65}Cu,{+74}Cu)=0.505 fm{+2} {I18}(stat) {I72}(syst)       
+ 74CU2cL (2016Bi08). The systematic uncertainty for isotope shift resulted from 
+ 74CU3cL uncertainties in the atomic factors                                    
+ 74CU cL %B-N$1991Kr15 claim to have observed delayed neutrons from {+74}Cu     
+ 74CU2cL decay, but %|b{+-}n is not determined in this work                     
+ 74CU cL J$ from collinear laser spectroscopy (2010Fl02); parity from           
+ 74CU2cL comparison of measured |m and Q moments with shell-model model         
+ 74CU3cL predictions. Calculated magnetic moment is positive for all the        
+ 74CU4cL calculated 2+ states up to about 800 keV in these model predictions.   
+ 74CU5cL Best agreement of experimental |m and Q with calculated                
+ 74CU6cL moments is obtained for a predicted 2- state at 208 keV using jj44b    
+ 74CU7cL interaction and for a predicted 2- state at 44 keV using JUN45         
+ 74CU8cL interaction. Dominant configuration=|pf{-5/2}~#|ng{-9/2}               
+ 74CU cL T$weighted average of 1.75 s {I6} (2005Va19, timing of |g rays),       
+ 74CU2cL 1.594 s {I10} (1991Kr15, timing of delayed neutrons), 1.59 s {I5}      
  74CU3cL (1989Wi11, timing of |g rays). Uncertainty of 0.010 s given by 1991Kr15
  74CU4cL increased by a factor of 5 in the averaging procedure. Others:         
  74CU5cL 1.51 s {I27} (1990Be13), 1.60 s {I15} (1987LuZX)                       
+ 74CU cL MOMM1,MOME2$from hyperfine structure measurements using collinear laser
+ 74CU2cL spectroscopy (2010Fl02,2010Vi07). Value of Q=+0.26 {I3} in 2010Fl02    
+ 74CU3cL is re-evaluated to +0.27 {I3} by 2016St14                              
                                                                                 
- 74CU    74NI B- DECAY (0.68 S)        1998FR15,1998AM04,1990BE1306NDS    200607
+ 74CU    74NI B- DECAY (507.7 MS)      1998FR15,1998AM04,1990BE13ENSDF    201709
+ 74CU  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74CU  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74CU2 H CUT=30-Apr-2006$                                                       
  74CU c  {+74}Ni first identified by 1987Ar21 and 1990Be13 in {+235}U(n,F)      
  74CU2c  reaction at E=thermal reaction. 1998Am04 used {+9}Be({+86}Kr,X)        
  74CU3c  at 500 MeV/nucleon to produce {+74}Ni and measure half-life.           
- 74CU4c  1998Fr15 (also 2002Kr13,2001Fr21,2000Mu10) used {+238}U(p,F)           
+ 74CU4c  1998Fr15 (also 2002Kr13, 2001Fr21, 2000Mu10, 1998FrZY): {+238}U(p,F)   
  74CU5c  at 30 MeV to measure half-life and yield of {+74}Ni.                   
  74CU c  Yield of {+74}Ni in {+238}U(p,F) E=30 MeV: 2002Kr13, 2001Fr21, 2000Mu10
+ 74CU c  Precise measurement of T{-1/2} for {+74}Ni decay: 2014Xu07             
+ 74CU2c  (see also 2014XuZZ)                                                    
  74CU cG E(A)$In |b|g and |g|g studies of {+74}Cu decay, 1998Fr15 reported two  
  74CU2cG most intense |g rays at 166.1 {I1} and 694.3 {I2}, forming a cascade.  
  74CU3cG These |g rays feed levels either in {+74}Cu through |b{+-} decay or in 
  74CU4cG {+73}Cu through |b{+-}n decay. The latter possibility, however, seems  
  74CU5cG less likely (1998Fr15) since the |g-ray intensities imply              
- 74CU6cG %|b{+-}n=30, much higher than the calculated value of 4.5% (1997Mo25)  
- 74NI  P  0.0         0+               0.68 S    18              7630     SY    
- 74NI cP QP$7630 {I400} (syst,2003Au03)                                         
- 74NI cP T$From weighted average of 0.9 s {I2} (1998Fr15,2001Fr21) and          
- 74NI2cP 0.54 s {I16} (1998Am04). Other: 1.1 s {I5} (1990Be13)                  
+ 74CU6cG %|b{+-}n=30, much higher than the theoretical value of 2.3% (2003Mo09) 
+ 74NI  P  0.0         0+               507.7 MS  46              7550     SY    
+ 74NI cP QP$7550 {I200} (syst,2017Wa10)                                         
+ 74NI cP T$From {+74}Ni Adopted Levels                                          
  74CU  N                        1                                               
  74CU  G 166.1     1                                                        A   
  74CU  G 694.3     2                                                        A   
- 74CU  L 0.0                                                                    
+ 74CU  L  0                2-                                                   
+ 74CU cL $Assumed that g.s. is populated in |b{+-} decay of {+74}Ni             
                                                                                 
- 74ZN    ADOPTED LEVELS, GAMMAS                                  06NDS    200607
+ 74ZN    COMMENTS                                                ENSDF    201709
+ 74ZN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 74ZN C  TITL$NUCLEAR DATA SHEETS FOR 74ZN                                      
+ 74ZN c  AUTH$BALRAJ SINGH                                                      
+ 74ZN c  INST$Department of Physics and Astronomy, McMaster University,         
+ 74ZN#c       Hamilton, Ontario L8S 4M1, Canada                                 
+ 74ZN c  ABST$Experimental structure data for {+74}Zn have been re-evaluated    
+ 74ZN2c  and updated since the previous NDS publication (2006Si19) for A=74     
+ 74ZN3c  nuclides. Large discrepancy in the half-life of the first 4+ state,    
+ 74ZN4c  one determined by RDDS in a transfer reaction, and the other from B(E2)
+ 74ZN5c  in Coulomb excitation needs to be resolved by additional experiments.  
+ 74ZN c  CUT$Literature available up to March 31, 2017 has been consulted.      
+ 74ZN C  CIT$ENSDF                                                              
+ 74ZN c  FUND$                                                                  
+                                                                                
+ 74ZN    ADOPTED LEVELS, GAMMAS                                  ENSDF    201709
+ 74ZN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74ZN  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74ZN2 H CUT=30-Apr-2006$                                                       
- 74ZN  Q 2293      4 8235    4 14058   4 -8968   4     2012WA38                 
- 74ZN CQ Note: Current evaluation has used the following Q record               
- 74ZN  Q 2340      50 8370   60 14010  50 -8.98E335    2003AU03                 
+ 74ZN  Q 2293      4 8235    3 14058   3 -8968   3     2017WA10                 
+ 74ZN cQ $S(2n)=13754 {I3}, S(2p)=26109 {I3} (2017Wa10)                         
  74ZN c  Production and identification of {+74}Zn isotope: 1997Hu09, 1989Wi14,  
  74ZN2c  1988BaZX, 1983Ru06, 1981Gi17, 1974Gr29, 1972Er05                       
  74ZN c  1997Hu09: yield measurement in {+238}U(p,F) reaction                   
- 74ZN D  Nuclear structure (shell model calculations): 2005Ji06, 2005Mo27,      
- 74ZN2D  2005Mo36, 1992Er02, 1990Wi12, 1989Wi11                                 
+ 74ZN c  2008Ba54: measured mass using the ISOLTRAP mass spectrometer.          
+ 74ZN c  Nuclear structure calculations: 2015Ch31, 2013Ri08, 2012Sr02, 1990Wi12:
+ 74ZN2c  levels, J|p, B(E2)                                                     
+ 74ZN d  Other theory references: 2015Ka46, 2014Eb02, 2014Ka03, 2013Ba14,       
+ 74ZN2d  2012Sr03, 2011Ji08, 2005Ji06, 2005Mo27, 2005Mo36, 1992Er02, 1990Wi12,  
+ 74ZN3d  1989Wi11                                                               
  74ZN cL J$ From syst of even-even nuclides (1989Wi11), unless otherwise stated 
  74ZN  XA74CU B- DECAY (1.63 S)                                                 
  74ZN  XB75CU B-N DECAY (1.224 S)                                               
- 74ZN  XCCOULOMB EXCITATION                                                     
- 74ZN  XD76GE(14C,16O),(18O,20NE)                                               
+ 74ZN  XC2H(74ZN,74ZN'G)                                                        
+ 74ZN  XDCOULOMB EXCITATION                                                     
+ 74ZN  XE76GE(14C,16O),(18O,20NE)                                               
+ 74ZN  XF238U(76GE,74ZNG)                                                       
  74ZN PN                                                                     6  
  74ZN  L    0.0      0+                95.6 S    12                             
  74ZN2 L %B-=100                                                                
- 74ZNX L XREF=ABCD                                                              
+ 74ZNX L XREF=ABCDEF                                                            
  74ZN cL T$ weighted average of 95 s {I1} (1974Gr29) and 98 s {I2} (1972Er05).  
  74ZN2cL Both values are from gross |b spectrum from {+74}Zn |b{+-} decay.      
  74ZN  L     605.90 8  2+               17.7 PS  13                             
- 74ZNX L XREF=ACD(670)                                                          
- 74ZN CL J$ LEVEL IS COULOMB EXCITED FROM 0+                                    
- 74ZN CL T$ DEDUCED FROM BE2(UP)=0.196 14 (2004PEZW) IN COULOMB EXCITATION      
+ 74ZNX L XREF=ACDEF                                                             
+ 74ZN cL T$weighted average of 18.7 ps {I17} (2012Ni09,RDDS in                  
+ 74ZN2cL {+2}H({+74}Zn,{+74}Zn'|g)); 19.8 ps {I25} (2013Lo04, RDDS in           
+ 74ZN3cL {+238}U({+76}Ge,{+74}Zn|g)); 17.0 ps {I13} (from B(E2)|^=0.204 {I15}   
+ 74ZN4cL in 2006Pe13 from Coul. ex.); 17.2 ps {I14} (from B(E2)|^=0.201 {I16}   
+ 74ZN4cL in 2007Va20 from Coul. ex.)                                            
+ 74ZN cL J$level is Coulomb excited from 0+                                     
  74ZN  G 605.90    11 100        [E2]                                           
- 74ZNB G BE2W=21.2 15                                                           
- 74ZN  L    1418.5612 (0+,4+)                                                   
- 74ZNX L XREF=A$                                                                
- 74ZN  G 812.61    9 100                                                        
+ 74ZNB G BE2W=21.2 16                                                           
+ 74ZN  L    1418.5612 (4)+              13.9 PS  +12-36                         
+ 74ZNX L XREF=ADF$                                                              
+ 74ZN cL T$from RDDS in {+238}U({+76}Ge,{+74}Zn|g) (2013Lo04). Other:           
+ 74ZN2cL 3.1 ps {I4} from B(E2)|_=0.051 {I7} in Coul. ex. (2009Va01).           
+ 74ZN3cL Values of B(E2)|_=0.051 {I7} from Coul. ex. (2009Va01) and             
+ 74ZN4cL B(E2)|_=0.0116 {I+32-10} deduced from RDDS lifetime measurement in     
+ 74ZN5cL ({+76}Ge,{+74}Zn|g) reaction (2013Lo04) differ by a factor of 4.4.     
+ 74ZN6cL This disagreement is discussed in detail by 2013Lo04, concluding that  
+ 74ZN7cL additional measurements are needed to resolve the discrepancy. The     
+ 74ZN8cL evaluator has adopted here the higher lifetime from RDDS, based        
+ 74ZN9cL on a comparable B(E2)(W.u.) for the first 2+ state in {+74}Zn          
+ 74ZN cL J$level is Coulomb excited via 2+ state                                
+ 74ZN  G 812.61    9 100        [E2]                                            
+ 74ZNB G BE2W=27 +6-2                                                           
  74ZN  L    1670.25 8 (2+)                                                      
  74ZNX L XREF=A$                                                                
  74ZN  G 1064.35   6 100     8                                                  
  74ZN  G 1670.23   10 58     3                                                  
  74ZN  L 1788.9    10                                                           
- 74ZNX L XREF=AD(1840)$                                                         
+ 74ZNX L XREF=AE(1840)$                                                         
  74ZN  G 1183      1  100                                                       
  74ZN  L   2099.23 13                                                           
  74ZNX L XREF=A$                                                                
@@ -717,7 +967,7 @@
  74ZN  G 1493.36   15 100    5                                                  
  74ZN  L 2148.2     3 (1,2+)                                                    
  74ZNX L XREF=A                                                                 
- 74ZN CL J$ G TO 0+                                                             
+ 74ZN cL J$|g to 0+                                                             
  74ZN  G 1543      1  20     3                                                  
  74ZN  G 2148.1    3  100    9                                                  
  74ZN  L 2353.6     9                                                           
@@ -729,12 +979,15 @@
  74ZN  G 881.71    17 45     5                                                  
  74ZN  G 1133.05   24 100    7                                                  
  74ZN  G 1946.2    3   74    14                                                 
+ 74ZN  L 2621      4 (6+)                                                       
+ 74ZNX L XREF=F                                                                 
+ 74ZN  G 1202                                                                   
  74ZN  L 2657.6     3                                                           
  74ZNX L XREF=A$                                                                
  74ZN  G  558.24   22 100                                                       
  74ZN  L 2698.0    17  (1,2+)                                                   
  74ZNX L XREF=A$                                                                
- 74ZN CL J$ G TO 0+                                                             
+ 74ZN cL J$|g to 0+                                                             
  74ZN  G 2092      2  83     11                                                 
  74ZN  G 2698      3  100    11                                                 
  74ZN  L  2809.04  11                                                           
@@ -775,175 +1028,223 @@
  74ZNX L XREF=A$                                                                
  74ZN  G 2723      3    100                                                     
                                                                                 
- 74ZN    74CU B- DECAY (1.63 S)        2005VA19,1989WI11         06NDS    200607
+ 74ZN    74CU B- DECAY (1.63 S)        2005VA19,1989WI11         ENSDF    201709
+ 74ZN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74ZN  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74ZN2 H CUT=30-Apr-2006$                                                       
- 74ZN C  2005VA19 (ALSO THESIS: 2002VAZX): 74CU PRODUCED BY 238U(N,F)           
- 74ZN2C  AND 238U(P,F) AT ^ISOLDE FACILITY, MEASURED EG, IG, GG, BG,            
- 74ZN3C  TIMING OF BG AND GG COIN SPECTRA                                       
+ 74ZN c  2005Va19 (also thesis: 2002VaZX): {+74}Cu produced by {+238}U(n,F)     
+ 74ZN2c  and {+238}U(p,F) at ISOLDE facility, measured E|g, I|g, |g|g, |b|g,    
+ 74ZN3c  timing of |b|g and |g|g coin spectra                                   
  74ZN c  1989Wi11: Measured |g, |g|g, T{-1/2}                                   
  74ZN c  1991Kr15: Measured isotopic half-life from timing of delayed neutrons  
  74ZN2c  from the decay of {+74}Cu                                              
- 74ZN c  Other: 1987LuZX only three |g's, 606, 812, 1138 keV were reported.     
- 74ZN CB IB$ 2005VA19 STATE THAT ALL LOGFT VALUES SHOULD BE CONSIDERED          
- 74ZN2CB AS LOWER LIMITS. CORRESPONDINGLY, ALL THE BETA FEEDINGS SHOULD         
- 74ZN3CB BE CONSIDERED AS UPPER LIMITS. LARGE ENERGY GAP OF ABOUT 4 MEV         
- 74ZN4CB BETWEEN Q-=9700 AND THE HIGHEST ENERGY LEVEL POPULATED AT 5628         
- 74ZN5CB LEAVES THE POSSIBILITY THAT THERE MAY BE ADDITIONAL UNOBSERVED         
- 74ZN6CB GAMMA-RAY TRANSITIONS FROM HIGHER LEVELS.                              
- 74ZN CG $ GG COIN INFORMATION IS FROM 2005VA19 and 1998Wi11                    
- 74ZN CG E,RI$ WEIGHTED AVERAGES OF VALUES FROM 2005VA19 AND 1989WI11           
- 74ZN CG E(A),RI(A)$ G FROM 2005VA19 ONLY                                       
- 74ZN CG E(B)$ PLACEMENT FROM 2005VA19; UNPLACED IN 1989WI11                    
- 74ZN CG E(D)$ G FROM 1989WI11 ONLY, NOT CONFIRMED BY 2005VA19                  
- 74ZN CG E(E)$ PLACED FROM A 2616 LEVEL IN 1989WI11                             
- 74ZN CG E(F)$ PLACED FROM 1670 LEVEL IN 1989WI11                               
- 74ZN CG E(H)$ PLACED FROM AN 1164 LEVEL IN 1989WI11                            
- 74ZN CL $ NO 1164 AND 2616 LEVELS FROM 1989WI11 REPORTED IN 2005VA19.          
- 74ZN2CL 558G FROM 1164 LEVEL PLACED FROM 2658 LEVEL; 517.2G FROM 2616          
- 74ZN3CL NOT REPORTED BY 2005VA19; 2010.5G FROM 2616 PLACED FROM 4563 LEVEL     
- 74ZN CL J$ FROM 'ADOPTED LEVELS'                                               
- 74CU  P 0.0         (1+,3+)           1.63 S    5               9700     50    
+ 74ZN c  Other: 1987LuZX only three |g rays, 606, 812, 1138 keV were reported.  
+ 74ZN cB IB$2005Va19 state that all log| {Ift} values should be considered      
+ 74ZN2cB as lower limits. Correspondingly, all the |b feedings should           
+ 74ZN3cB be considered as upper limits. Large energy gap of about 4 MeV         
+ 74ZN4cB between Q(|b{+-})=9751 and the highest energy level populated at 5628  
+ 74ZN5cB leaves the possibility that there may be additional unobserved         
+ 74ZN6cB |g-ray transitions from higher levels.                                 
+ 74ZN cG $|g|g coin information is from 2005Va19 and 1998Wi11                   
+ 74ZN cG E,RI$Weighted averages of values from 2005Va19 and 1989Wi11            
+ 74ZN cG E(A),RI(A)$|g from 2005Va19 only                                       
+ 74ZN cG E(B)$Placement from 2005Va19; unplaced in 1989Wi11                     
+ 74ZN cG E(D)$|g from 1989Wi11 only, not confirmed by 2005Va19                  
+ 74ZN cG E(E)$Placed from a 2616 level in 1989Wi11                              
+ 74ZN cG E(F)$Placed from 1670 level in 1989Wi11                                
+ 74ZN cG E(H)$Placed from an 1164 level in 1989Wi11                             
+ 74ZN cL $No 1164 and 2616 levels from 1989Wi11 reported in 2005Va19.           
+ 74ZN2cL 558|g from 1164 level placed from 2658 level; 517.2|g from 2616        
+ 74ZN3cL not reported by 2005Va19; 2010.5|g from 2616 placed from 4563 level    
+ 74ZN cL J$From 'adopted levels'                                                
+ 74CU  P 0.0          2-               1.63 S    5               9751     7     
+ 74CU cP J,T$From {+74}Cu Adopted Levels                                        
+ 74CU cP QP$From 2017Wa10                                                       
  74ZN  N 0.86                    1                                              
- 74ZN PN                                                                    C3  
- 74ZN2PN The |g intensities are ^I(|g+ce) per 100 decays of the parent.         
- 74ZN3PN ALL IB's ARE UPPER LIMITS AND ASSOCIATED LOGFT's ARE LOWER LIMITS      
- 74ZN CN NR$ |S(RI OF G'S TO GS)=100; ZERO B FEEDING ASSUMED TO GS.             
- 74ZN2CN SINCE THE LEVEL SCHEME IS NOT KNOWN COMPLETELY, THIS NORMALIZATION     
- 74ZN3CN FACTOR IS TREATED AS APPROXIMATE. ALSO %B-N IS UNKNOWN, ALTHOUGH,      
- 74ZN4CN EXPECTED TO BE SMALL                                                   
+ 74ZN PN                                                                     3  
+ 74ZN cN NR$|S(I|g of |g rays to g.s.)=100; zero |b feeding assumed to g.s.     
+ 74ZN2cN Since the level scheme is not known completely, this normalization     
+ 74ZN3cN factor is treated as approximate. Also %|b{+-}n is unknown, although,  
+ 74ZN4cN expected to be small                                                   
  74ZN  G 505.3     6 0.8     4                                              D   
  74ZNF G FLAG=F                                                                 
  74ZN  G 517.2     5 0.6     3                                              D   
  74ZNF G FLAG=E                                                                 
  74ZN  L 0.0         0+                                                         
  74ZN  L 605.90     8  2+                                                       
- 74ZN  B               30    3             5.9                                  
- 74ZNS B EAV=4239 25                                                            
+ 74ZN  B               30    3             6.0                                  
+ 74ZNS B EAV=4263.8 34                                                          
  74ZN  G 605.90    11 100.0  20                                              C  
- 74ZN  L 1418.56   12 (0+,4+)                                                   
- 74ZN  B               5.2   14            6.5                                  
- 74ZNS B EAV=3844 25                                                            
+ 74ZN  L 1418.56   12 (4)+                                                      
+ 74ZN  B               5.2   14            8.8                               1U 
+ 74ZNS B EAV=3871.1 35                                                          
  74ZN  G 812.61    9 15.2    15                                              C  
  74ZN  L 1670.25    8 (2+)                                                      
  74ZN  B               6.4   18            6.4                                  
- 74ZNS B EAV=3721 25                                                            
+ 74ZNS B EAV=3746.1 34                                                          
  74ZN  G 1064.35   6 18.5    15                                              C  
  74ZN  G 1670.23   10 10.8   6                                               C  
  74ZN  L 1788.9    10                                                           
- 74ZN  B               1.0   2             7.1                                  
- 74ZNS B EAV=3664 25                                                            
+ 74ZN  B               1.0   2             7.2                                  
+ 74ZNS B EAV=3688.4 35                                                          
  74ZN  G 1183      1  1.2    2                                              AC  
  74ZN  L 2099.33   13                                                           
- 74ZN  B               2.7   6             6.6                                  
- 74ZNS B EAV=3512 25                                                            
+ 74ZN  B               2.7   6             6.7                                  
+ 74ZNS B EAV=3537.3 34                                                          
  74ZN  G  680.8    7  0.4    1                                              AC  
  74ZN  G 1493.36   15 9.8    5                                               C  
  74ZN  L 2148.2     3 (1,2+)                                                    
  74ZN  B               3.6   3             6.5                                  
- 74ZNS B EAV=3489 25                                                            
+ 74ZNS B EAV=3513.5 35                                                          
  74ZN  G 1543      1  0.7    1                                              AC  
  74ZN  G 2148.1    3  3.5    3                                              B   
  74ZN  L 2353.6     9                                                           
- 74ZN  B               0.9   1             7.0                                  
- 74ZNS B EAV=3389 25                                                            
+ 74ZN  B               0.9   1             7.1                                  
+ 74ZNS B EAV=3413.5 35                                                          
  74ZN  G 935.0     9   1.0   1                                              AC  
  74ZN  L 2551.88   13                                                           
  74ZN  B               7.5   10            6.1                                  
- 74ZNS B EAV=3292 25                                                            
+ 74ZNS B EAV=3317.0 34                                                          
  74ZN  G 452.55    9 4.1     3                                               C  
  74ZN  G 881.71    17 1.9    2                                               C  
  74ZN  G 1133.05   24 4.2    3                                               C  
  74ZN  G 1946.2    3  3.1    6                                               C  
  74ZN  L 2657.6     3                                                           
  74ZN  B               1.0   1             6.9                                  
- 74ZNS B EAV=3241 25                                                            
+ 74ZNS B EAV=3265.5 35                                                          
  74ZN  G  558.24   22 1.1    1                                              HC  
  74ZN  L 2698.0    17  (1,2+)                                                   
- 74ZN  B               0.9   3             6.9                                  
- 74ZNS B EAV=3221 25                                                            
+ 74ZN  B               0.9   3             7.0                                  
+ 74ZNS B EAV=3245.8 35                                                          
  74ZN  G 2092      2  1.5    2                                              AC  
  74ZN  G 2698      3  1.8    2                                              AC  
  74ZN  L 2809.04   11                                                           
  74ZN  B               14.3  11            5.7                                  
- 74ZNS B EAV=3167 25                                                            
+ 74ZNS B EAV=3191.8 34                                                          
  74ZN  G 709.5     4  1.9    1                                               C  
  74ZN  G 1138.79   8 17.3    11                                              C  
  74ZN  L 2904.73   21                                                           
  74ZN  B               8.3   6             5.9                                  
- 74ZNS B EAV=3120 25                                                            
+ 74ZNS B EAV=3145.2 34                                                          
  74ZN  G 1486.0    3 2.2     2                                               C  
  74ZN  G 2298.89   24 8.4    6                                               C  
  74ZN  L 2969.3     3                                                           
- 74ZN  B               4.9   4             6.1                                  
- 74ZNS B EAV=3089 25                                                            
+ 74ZN  B               4.9   4             6.2                                  
+ 74ZNS B EAV=3113.8 35                                                          
  74ZN  G 1298.9    4 1.3     4                                              D  ?
  74ZN  G 1551      1 1.3     2                                              AC  
  74ZN  G 2363.3    3 4.4     3                                               C  
  74ZN  L 2985.9    20                                                           
  74ZN  B               0.9   2             6.9                                  
- 74ZNS B EAV=3081 25                                                            
+ 74ZNS B EAV=3105.7 36                                                          
  74ZN  G 2380      2   1.0   2                                              AC  
  74ZN  L 3063.9    17                                                           
  74ZN  B               2.0   2             6.5                                  
- 74ZNS B EAV=3043 25                                                            
+ 74ZNS B EAV=3067.7 35                                                          
  74ZN  G 365.95    23  2.3   2                                              BC  
  74ZN  L 3067      3                                                            
- 74ZN  B               1.1   2             6.7                                  
- 74ZNS B EAV=3041 25                                                            
+ 74ZN  B               1.1   2             6.8                                  
+ 74ZNS B EAV=3066.2 37                                                          
  74ZN  G 2461      3   1.3   2                                              AC  
  74ZN  L 3571       5                                                           
- 74ZN  B               1.0   2             6.6                                  
- 74ZNS B EAV=2796 25                                                            
+ 74ZN  B               1.0   2             6.7                                  
+ 74ZNS B EAV=2820.9 42                                                          
  74ZN  G 1901      5   1.1   2                                              AC  
  74ZN  L 4562.4     3                                                           
  74ZN  B               3.3   6             5.8                                  
- 74ZNS B EAV=2314 25                                                            
+ 74ZNS B EAV=2338.9 34                                                          
  74ZN  G 2010.52   23  3.8   7                                              EC  
  74ZN  L 4861.8    18                                                           
  74ZN  B               2.0   2             5.9                                  
- 74ZNS B EAV=2169 25                                                            
+ 74ZNS B EAV=2193.5 35                                                          
  74ZN  G 2310      2  0.8    2                                              AC  
  74ZN  G 3191      4   1.5   2                                              AC  
  74ZN  L 4896.8     6                                                           
  74ZN  B               2.2   2             5.8                                  
- 74ZNS B EAV=2152 25                                                            
+ 74ZNS B EAV=2176.5 34                                                          
  74ZN  G 2087.7    5   2.6   2                                              BC  
  74ZN  L 5628       3                                                           
- 74ZN  B               0.8   2             5.9                                  
- 74ZNS B EAV=1798 25                                                            
+ 74ZN  B               0.8   2             6.0                                  
+ 74ZNS B EAV=1822.3 37                                                          
  74ZN  G 2723      3   0.9   2                                              AC  
                                                                                 
- 74ZN    75CU B-N DECAY (1.224 S)      1985RE01                  06NDS    200607
+ 74ZN    75CU B-N DECAY (1.224 S)      1985RE01                  ENSDF    201709
+ 74ZN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74ZN  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74ZN2 H CUT=30-Apr-2006$                                                       
- 74ZN c  On-line mass separator, {+3}He proportional counter for neutrons       
- 74ZN2c  and surface barrier Si counter for |b particles. Measured              
- 74ZN3c  T{-1/2}, deduced |b delayed neutron emission probability and Q         
- 75CU  P  0.0                          1.224 S   3              3.52E3    98    
- 75CU CP T$ From 1991Kr15. Others: 1.3 S 1 (1985Re01), 1.38 S 8 (1987LUZX)      
+ 74ZN c  1985Re01: on-line mass separator, {+3}He proportional counter for      
+ 74ZN2c  neutrons and surface barrier Si counter for |b particles. Measured     
+ 74ZN3c  T{-1/2}, deduced |b delayed neutron emission probability and Q value   
+ 75CU  P  0.0         5/2(-)           1.224 S   3              3214      3     
+ 75CU cP J,T$From {+75}Cu Adopted Levels in the ENSDF database                  
+ 75CU2cP (June 2013 update)                                                     
+ 75CU cP QP$From 2017Wa10                                                       
  74ZN  N                       0.035   6                0.035 6                 
  74ZN cN BR$from %|b{+-}n=3.5 {I6} (1985Re01) which is relative to              
  74ZN2cN %|b{+-}n=3.17 {I19} for {+144}Cs                                       
  74ZN  L  0.0        0+                                                         
                                                                                 
- 74ZN    COULOMB EXCITATION            2004PEZW                  06NDS    200607
+ 74ZN    2H(74ZN,74ZN'G)               2012NI09                  ENSDF    201709
+ 74ZN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 74ZN c  2012Ni09 (also 2011Ni03): excited states in {+74}Zn populated by       
+ 74ZN2c  knockout reaction on CD{-2} target. Cocktail beam of {+73}Zn, {+74}Zn  
+ 74ZN3c  and {+72}Cu was produced in fragmentation of 60 MeV/nucleon {+76}Ge    
+ 74ZN4c  beam with 580 |mg/cm{+2} {+9}Be target. LISE spectrometer at GANIL used
+ 74ZN5c  to separate fragments. Measured level lifetimes by RDDS method using   
+ 74ZN6c  Cologne Plunger device. Gamma rays were detected by eight segmented    
+ 74ZN7c  EXOGAM Ge clovers. The time-of-flight measured between two microchannel
+ 74ZN8c  plate detectors (MCPs). Measured E|g, |g|g coin, lifetime by RDDS      
+ 74ZN9c  method. Deduced B(E2) value. Discussed systematics of N=30-50 nuclei   
+ 74ZNAc  and comparison with previous studies and shell-model calculations.     
+ 74ZN  L 0            0+                                                        
+ 74ZN  L 605.9        2+               18.7 PS   17                             
+ 74ZN cL T$measured by 2012Ni09 using RDDS method and differential decay curve  
+ 74ZN2cL method                                                                 
+ 74ZN  G 605.9                  E2                                              
+ 74ZN2 G BE2=0.0370 33 (2012Ni09)                                               
+ 74ZN cG $B(E2) deduced by authors from half-life                               
+                                                                                
+ 74ZN    COULOMB EXCITATION            2006PE13,2009VA01         ENSDF    201709
+ 74ZN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74ZN  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74ZN2 H CUT=30-Apr-2006$                                                       
- 74ZN C  2004PEZW (THESIS): 208PB(74ZN,74ZN'G) E=40 MEV/NUCLEON. MEASURED       
- 74ZN2C  G, (PARTICLE)G COIN FOLLOWING COULOMB EXCITATION OF THE PROJECTILE     
- 74ZN3C  74ZN, DEDUCED BE2 FOR the FIRST 2+ STATE.                              
+ 74ZN c  2006Pe13 (also 2004PeZW thesis): {+74}Zn beam from {+9}Be({+76}Ge,X),  
+ 74ZN2c  E=60 MeV/nucleon, followed by mass separation of fragments             
+ 74ZN3c  using LISE3 spectrometer. Target={+208}Pb. For Coulomb excitation,     
+ 74ZN2c  v/c |? 0.28. Gamma rays were measured using four segmented 'Clover' Ge 
+ 74ZN3c  detectors of the EXOGAM array, FWHM=75 keV. The emerging nuclei after  
+ 74ZN4c  the Coulomb interaction were detected in two drift chambers which      
+ 74ZN5c  allowed estimate of diameter of the beam spot at the target position.  
+ 74ZN4c  Two Si detectors were used to identify deflected nuclei. Measured |g,  
+ 74ZN5c  (particle)|g coin following Coulomb excitation of the projectile.      
+ 74ZN6c  Deduced B(E2) for the first excited 2+ state. See also 2008AzZZ        
+ 74ZN c  2009Va01 (also 2007Va20): E=2.87 MeV/nucleon {+74}Zn beam produced at  
+ 74ZN2c  Radioactive Ion Beam facility REX-ISOLDE (CERN). Target={+120}Sn. The  
+ 74ZN3c  Zn beams were produced using protons at E=1.4 GeV impinging UC{-x}     
+ 74ZN4c  target. The mass-separated Zn beam was accumulated and bunched in a    
+ 74ZN5c  Penning Trap. Measured E|g, I|g using MINIBALL array of 24 HPGe        
+ 74ZN6c  detectors. Charged particles were measured with a double-sided         
+ 74ZN7c  silicon strip detector. Comparisons with collective model predictions  
+ 74ZN8c  and large-scale shell-model calculations. Experimental results analyzed
+ 74ZN9c  using GOSIA2 code.                                                     
  74ZN  L  0            0+                                                       
- 74ZN  L  605.9        2+               17.7 PS  13                             
- 74ZN CL E,J$ FROM 'ADOPTED LEVELS'                                             
- 74ZN2 L BE2=0.196 14 (2004PEZW)                                                
- 74ZN CL BE2$ 2004PeZW obtain 0.196 14 from three independent measurements      
- 74ZN2CL giving BE2=0.185 13, 0.207 15 and 0.199 24                             
- 74ZN CL T$ DEDUCED FROM BE2(UP)                                                
+ 74ZN  L  605.9        2+               17.2 PS  14                             
+ 74ZN cL E,J$from Adopted Levels                                                
+ 74ZN2 L BE2=0.204 15 (2006Pe13) $ BE2=0.201 16 (2007Va20)                      
+ 74ZN cL T$from 2009Va01, deduced from B(E2)|_                                  
+ 74ZN cL BE2$in 2006Pe13, value is relative to B(E2)|^=0.268 {I8} for the       
+ 74ZN2cL first 2+ state of {+76}Ge                                              
  74ZN  G  605.9                                                                 
- 74ZN CG E$ FROM 'ADOPTED GAMMAS'                                               
+ 74ZN cG $B(E2)|_=0.0401 {I32} (2009Va01). This value is about the same         
+ 74ZN2cG as corresponding B(E2)|^ listed in 2007Va20                            
+ 74ZN  L 1419         4+                3.1 PS   4                              
+ 74ZN cL T$deduced by evaluator from B(E2)|_=0.051 {I7} (2009Va01)              
+ 74ZN cL $B(E2)|^=0.092 {I13} (deduced from B(E2)|_ in 2009Va01)                
+ 74ZN  G 813                                                                    
+ 74ZN cG $B(E2)|_=0.051 {I7} (2009Va01)                                         
                                                                                 
- 74ZN    76GE(14C,16O),(18O,20NE)      1984BE10,1984HA31         06NDS    200607
+ 74ZN    76GE(14C,16O),(18O,20NE)      1984BE10,1984HA31         ENSDF    201709
+ 74ZN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74ZN  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74ZN2 H CUT=30-Apr-2006$                                                       
  74ZN c  1984Be10: {+76}Ge({+14}C,{+16}O) E=72 MeV. Double focusing             
@@ -952,99 +1253,190 @@
  74ZN c  1984Ha31: {+76}Ge({+18}O,{+20}Ne) E=84 MeV. Magnetic                   
  74ZN2c  spectrograph of Q3D type. |s(|q) measured. Deduced mass excess=-65735  
  74ZN3c  {I21}. Comparison with mass model predictions.                         
- 74ZN cL E$ From {+76}Ge({+14}C,{+16}O) (1984Be10). In                          
+ 74ZN cL E$From {+76}Ge({+14}C,{+16}O) (1984Be10). In                           
  74ZN2cL {+76}Ge({+18}O,{+20}Ne) reaction only the g.s. is observed             
- 74ZN cL J$ From 'adopted levels'                                               
- 74ZN  L    0.0      0+                                                         
- 74ZN cL J         DWBA fit for J|p=0+ not good. 1984Be10 suggest that coupled  
+ 74ZN cL J$From Adopted Levels                                                  
+ 74ZN  L    0        0+                                                         
+ 74ZN cL J$DWBA fit for J|p=0+ not good. 1984Be10 suggest that coupled          
  74ZN2cL channel effects are large, which may account for the discrepancy.      
  74ZN  L  670      30 2+                                                        
- 74ZN cL J$ DWBA fit for expected L=2 not good. 1984Be10 suggest that           
+ 74ZN cL J$DWBA fit for expected L=2 not good. 1984Be10 suggest that            
  74ZN2cL coupled channel effects are probably large which may account           
  74ZN3cL for the poor fit.                                                      
  74ZN  L 1840      50                                                           
                                                                                 
- 74GA    ADOPTED LEVELS, GAMMAS                                  06NDS    200607
+ 74ZN    238U(76GE,74ZNG)              2013LO04                  ENSDF    201709
+ 74ZN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 74ZN c  2013Lo04 (also 2013Le20): E({+76}Ge)=540 MeV from LNL Tandem-ALPI      
+ 74ZN2c  accelerator complex at INFN-Legnaro. Projectile-like reaction products 
+ 74ZN3c  were analyzed at the focal plane of PRISMA magnetic spectrometer.      
+ 74ZN4c  {+238}U target was 1.4 mg/cm{+2} thick evaporated on a backing of      
+ 74ZN5c  1.2 mg/cm{+2} thick Ta. Time-of-flight of residues was measured between
+ 74ZN6c  a microchannel plate (MCP) and parallel-plate avalanche counters       
+ 74ZN7c  (PPAC). The arrangement allowed residue identification by Z, A and     
+ 74ZN8c  charge Q. Prompt |g rays were detected by AGATA Demonstrator comprised 
+ 74ZN9c  of four triple cluster modules. Measured ({+74}Zn)|g-coin, lifetimes of
+ 74ZNAc  levels by RDDS method using Cologne-type plunger device. Comparison    
+ 74ZNBc  with shell-model calculations using three different interactions.      
+ 74ZN cG $B(E2): deduced by 2013Lo04 from their level half-life measurements    
+ 74ZN cL T$From RDDS (2013Lo04)                                                 
+ 74ZN  L 0           0+                                                         
+ 74ZN  L 606       2 2+                19.8 PS   25                             
+ 74ZN  G 606       2                                                            
+ 74ZN2 G BE2=0.0352 +50-39 (2013Lo04)                                           
+ 74ZN  L 1419      3  4+               13.9 PS   +12-36                         
+ 74ZN  G 813       2                                                            
+ 74ZN2 G BE2=0.0116 +32-10 (2013Lo04)                                           
+ 74ZN  L 2621      4 (6+)                                                       
+ 74ZN  G 1202                                                                   
+ 74ZN cG E$cited by 2013Lo04 in their reference 43 (Thesis:                     
+ 74ZN2cG T. Paul, University of Strasbourg, 2007). 1187 keV {I2}                
+ 74ZN3cG in spectral figure 3 of 2013Lo04 is the shifted energy                 
+                                                                                
+ 74GA    COMMENTS                                                ENSDF    201709
+ 74GA  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
+ 74GA C  TITL$NUCLEAR DATA SHEETS FOR 74GA                                      
+ 74GA c  AUTH$BALRAJ SINGH                                                      
+ 74GA c  INST$Department of Physics and Astronomy, McMaster University,         
+ 74GA#c       Hamilton, Ontario L8S 4M1, Canada                                 
+ 74GA c  ABST$Experimental structure data for {+74}Ga have been re-evaluated    
+ 74GA2c  and updated since the previous NDS publication (2006Si19) for A=74     
+ 74GA3c  nuclides.                                                              
+ 74GA c  CUT$Literature available up to March 31, 2017 has been consulted.      
+ 74GA C  CIT$ENSDF                                                              
+ 74GA c  FUND$                                                                  
+                                                                                
+ 74GA    ADOPTED LEVELS, GAMMAS                                  ENSDF    201709
+ 74GA  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74GA  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74GA2 H CUT=30-Apr-2006$                                                       
- 74GA  Q 5373      3 6422    4 9745    4 -7498   4     2012WA38                 
- 74GA CQ Note: Current evaluation has used the following Q record               
- 74GA  Q  5373     4  6422   4  9930   40-7498   4     2003AU03                 
- 74GA d  Yield measurements: 2002Kr13, 2002Do08, 1999Ne11, 1996Co26,            
- 74GA2d  1994Bi01, 1992Ho06, 1988To08, 1980Li16, 1978Li11, 1978Ko21,            
- 74GA3d  1976Ri11, 1976Wy01, 1975Ka38, 1975Mc06                                 
- 74GA c  Mass measurement: 2005Gu36                                             
- 74GA cG E$ From {+74}Zn |b{+-} decay                                           
- 74GA CL J(B)$ INDICATION OF STRONG (>2%) B FEEDING (PROBABLE ALLOWED           
- 74GA2CL TRANSITION) FROM 0+ PARENT, ALTHOUGH ABSOLUTE B FEEDINGS ARE UNKNOWN   
+ 74GA  Q 5372.8    30 6422   3 9745    4 -7498   3     2017WA10                 
+ 74GA cQ $S(2n)=15604 {I3}, S(2p)=22845 {I3} (2017Wa10)                         
+ 74GA c  {+74}Ga produced and identified by 1956Mo39 in bombardment of natural  
+ 74GA2c  Ge target with fast neutrons and subsequent measurement of |g radiation
+ 74GA3c  from the decay of {+74}Ga. Later measurements of half-life, |g and |b  
+ 74GA4c  radiation from the decay of {+74}Ga ground state: 1958Le26, 1958Ei02,  
+ 74GA5c  1959Yt23, 1960Ma12, 1962Ei02, 1967Vi08, 1971Ca06, 1972Er05, 1975Ta03.  
+ 74GA c  2011Ma45: {+74}Ga was produced by neutron induced fission of a thick   
+ 74GA2c  uranium carbide target. Neutrons were produced by 1.4 GeV protons on   
+ 74GA3c  tantalum. Ga isotopes were ionized using RILIS laser ion source.       
+ 74GA4c  Laser spectroscopy was performed on the Ga isotopes at ISOLDE, CERN.   
+ 74GA5c  The g.s spins and moments were extracted from measured hyperfine       
+ 74GA6c  spectra. Comparison with shell model calculations.                     
+ 74GA c  2012Pr11: {+74}Ga produced in 1.4 GeV-proton bombardment of UC{-x} at  
+ 74GA2c  ISOLDE-CERN facility. Fragments diffused out of target and surface     
+ 74GA3c  ionized, then accelerated to 30 keV, followed by mass separation and   
+ 74GA4c  bunched by gas-filled Paul Trap (ISCOOL). Isotope shifts were measured 
+ 74GA5c  by collinear laser spectroscopy using COLLAPS setup at ISOLDE-CERN.    
+ 74GA6c  Deduced rms charge radius.                                             
+ 74GA c  Mass measurements: 2015Ma30, 2011Et01, 2007Gu09, 2007Ke09, 2005Gu36    
+ 74GA c  Nuclear structure (theory) references: 2012Sr01                        
+ 74GA d  Other nuclear structure (theory) article: 2015Ka46                     
+ 74GA d  Yield measurements: 2015Al19, 2015Ro11, 2007Na31, 2002Kr13, 2002Do08,  
+ 74GA2d  1999Ne11, 1996Co26, 1994Bi01, 1992Ho06, 1988To08, 1980Li16, 1978Li11,  
+ 74GA3d  1978Ko21, 1976Ri11, 1976Wy01, 1975Ka38, 1975Mc06                       
+ 74GA cG E,RI$From {+74}Zn |b{+-} decay                                         
+ 74GA cG M$Non-observation of strong K x-rays of Ga suggests dipole             
+ 74GA2cG multipolarity for low-energy transitions (less than |?100 keV)         
+ 74GA cG CC$Theoretical values from BrIcc code (2008Ki07) with Frozen-orbital   
+ 74GA2cG approximation                                                          
+ 74GA cL J(B)$Indication of strong (>2%) |b feeding (probable allowed           
+ 74GA2cL transition) from 0+ parent, although absolute |b feedings are unknown  
  74GA  XA74ZN B- DECAY (95.6 S)                                                 
  74GA  XB74GA IT DECAY (9.5 S)                                                  
  74GA PN                                                                     6  
  74GA  L    0.0       (3-)               8.12 M   12                            
- 74GAX L XREF=AB                                                                
  74GA2 L %B-=100                                                                
- 74GA cL J$ log| {Ift}=7.9 to 2+ (596 level) and 4+ (1464 level) in             
- 74GA2cL {+74}Ga |b{+-} decay. Systematics suggest 3-, 2-, 0+ for               
- 74GA3cL 0, 56.5 and 59.6 levels, respectively, as for example in {+72}Ga.      
- 74GA cL T         from {+74}Ga |b{+-} decay. Weighted average of 8.00 min {I5} 
- 74GA2cL (1975Ta03) and 8.25 min {I5} (1971Ca06). Others: 1967Vi08, 1962Ei02,   
- 74GA3cL 1960Ma12, 1959Yt23 1958Ei02, 1958Le26                                  
- 74GA  L     56.550 9(2)                31 NS    5                              
+ 74GA2 L MOMM1=0.000 75 (2011Ma45,2014STZZ)                                     
+ 74GA2 L MOME2=+0.549 40 (2011Ma45,2016ST14)                                    
  74GAX L XREF=AB                                                                
- 74GA cL J$ dipole transition to (3-); |g from 1+; systematics of neighboring   
+ 74GA cL $|d<r{+2}>({+71}Ga,{+74}Ga)=+0.223 fm{+2} {I5}(stat) {I45}(syst)       
+ 74GA2cL (2012Pr11)                                                             
+ 74GA cL $Isotope shift |d|n({+71}Ga,{+74}Ga)=-32 MHz {I2}(stat) {I6}(syst)     
+ 74GA2cL (2012Pr11)                                                             
+ 74GA cL J$from hyperfine structure measurements by 2011Ma45, J=1 is ruled out  
+ 74GA2cL by the number of atomic transitions and selection rules. J=2,3,4       
+ 74GA3cL possibilities were analyzed and reduced |h{+2} considered for the      
+ 74GA4cL fitting of the hyperfine spectrum. For {+74}Ga, J=3 is the most likely 
+ 74GA5cL choice, but J=4 could not be completely ruled out. Spins higher than 4 
+ 74GA6cL gave poorer match to the observed spectra. Negative parity is suggested
+ 74GA7cL by the comparison of measured and theoretical magnetic dipole moments  
+ 74GA8cL and electric quadrupole moments. Additional arguments in favor of J=3: 
+ 74GA9cL log| {Ift}=7.9 to 2+ and 4+ levels in {+74}Ge. Systematics suggest 3-, 
+ 74GAAcL 2-, 0+ for the 0, 56.5 and 59.6 levels, respectively, as for example   
+ 74GABcL in {+72}Ga. Shell-model calculations by 2012Sr01 using JUN45           
+ 74GACcL interaction support 3- for ground state, with also reasonable agreement
+ 74GADcL of theoretical and experimental static quadrupole moments. The 4- state
+ 74GAEcL in these calculations is at about 225 keV excitation.                  
+ 74GA cL MOMM1,MOME2$from hyperfine structure measurements (2011Ma45).          
+ 74GA2cL The values are for J=3. For J=4, |m=0.000 {I75}, Q=+0.604 {I42}        
+ 74GA3cL (2011Ma45)                                                             
+ 74GA cL T$from |g-decay curves in {+74}Ga |b{+-} decay; unweighted average of  
+ 74GA2cL 8.00 min {I5} (1975Ta03) and 8.25 min {I5} (1971Ca06). Others:         
+ 74GA3cL 1967Vi08, 8 min (1962Ei02), 7.7 min {I4} (1960Ma12), 8.0 min {I1}      
+ 74GA4cL (1959Yt23), 7.8 min {I2} (1958Ei02), 8 min {I1} (1958Le26), |?8 min    
+ 74GA5cL (1956Mo39)                                                             
+ 74GA  L     56.550 9(2-)               31 NS    5                              
+ 74GAX L XREF=AB                                                                
+ 74GA2 L %IT AP 100                                                             
+ 74GA cL J$dipole transition to (3-); |g from 1+; systematics of neighboring    
  74GA2cL nuclides support negative parity                                       
  74GA cL T         from |g|g(t) (1977Va01)                                      
- 74GA  G   56.559  10 100      (D)                     0.35   1                 
- 74GA cG M         from |a(K)exp in {+74}Ga IT decay and nonobservation of K    
- 74GAxcG x-rays                                                                 
- 74GAB G BM1W=0.0029 5$ BE1W=5.1E-5 8                                           
- 74GA  L     59.57114(0)                9.5 S    10                          M  
+ 74GA  G   56.559  10 100       (M1(+E2)) 0.17   LT    0.42   8                 
+ 74GA cG M$from |a(K)exp in {+74}Ga IT decay and nonobservation of              
+ 74GA2cG K x-rays, |DJ|p suggests M1                                            
+ 74GAB G BM1W=0.0029 5$                                                         
+ 74GA  L     59.57114(0+)               9.5 S    10                          M  
  74GAX L XREF=AB                                                                
- 74GA2 L %IT=75 25$ %B-<50                                                      
- 74GA cL E         from observation of sum peak. See {+74}Ga IT decay (1974Va08)
- 74GA cL J$ |g to (2); positive parity is suggested by the systematics of       
+ 74GA2 L %IT=75 25$ %B-=25 25                                                   
+ 74GA cL $ No |b{+-} branch observed (1974Va08). An upper limit                 
+ 74GA2cL is suggested as 50% (1974Va08)                                         
+ 74GA cL E$from observation of sum peak. See {+74}Ga IT decay (1974Va08)        
+ 74GA cL J$|g to (2); positive parity is suggested by the systematics of        
  74GA2cL neighboring nuclides; long lifetime of this level is consistent with   
  74GA3cL this assignment.                                                       
- 74GA cL T         from {+74}Ga IT decay (1974Va08)                             
- 74GA  G     3.2   2             [M2]                           100             
- 74GA cG E         from difference of sum peak at 59.7 and 56.7|g. This         
+ 74GA cL T$from {+74}Ga IT decay (1974Va08)                                     
+ 74GA  G     3.2   2             [M2]                  2.9E5  11 100            
+ 74GA cG E$from difference of sum peak at 59.7 and 56.7|g. This                 
  74GA2cG transition is expected to be almost totally converted                  
- 74GA  G   59.7                                                  10       LT   S
+ 74GA  G   59.7                  [E3]                   71    6  10       LT   S
+ 74GA cG TI$from I|g(59.7)<0.04(I|g(56.6|g)) (1974Va08); this |g was not        
+ 74GA2cG observed, but sum peak was observed by 1974Va08                        
  74GA  L    102.27614                                                           
  74GAX L XREF=A$                                                                
- 74GA  G   45.746  1784      6                                                  
- 74GA  G  102.25   3 100     8                                                  
+ 74GA  G   45.746  1784      6  [D]                    0.64   2                 
+ 74GA  G  102.25   3 100     8  [D,Q]                  0.35   29                
  74GA  L    108.65412 (1+)                                                  B   
  74GAX L XREF=A$                                                                
- 74GA  G   49.087  10100     2  [D]                    0.52    1                
- 74GA  G   52.110  14 32     11 [D]                    0.43    2                
- 74GA  G  108.635  20 1.3    11                                                 
+ 74GA  G   49.087  10100     2  [D]                    0.523  17                
+ 74GA  G   52.110  14 32     11 [D]                    0.440  13                
+ 74GA  G  108.635  20 1.3    11 [M2]                   0.546                    
  74GA  L    141.33415(1-,2,3+)                                                  
  74GAX L XREF=A$                                                                
- 74GA cL J$ |g from (1+); |g to (3-)                                            
+ 74GA cL J$|g from (1+); |g to (3-)                                             
  74GAX L XREF=A$                                                                
- 74GA  G   84.81   3  14     2                                                  
- 74GA  G  141.330  21100     8  [D,Q]                  0.11    8                
+ 74GA  G   84.81   3  14     2  [D]                    0.108  2                 
+ 74GA  G  141.330  21100     8  [D,Q]                  0.11   8                 
  74GA  L    145.03218                                                           
  74GAX L XREF=A$                                                                
- 74GA  G   85.1    4  55     11 [D]                    0.11                    ?
- 74GA  G   88.496  24 100    9  [D]                    0.95    3                
+ 74GA  G   85.1    4  56     11 [D]                    0.106  2                ?
+ 74GA  G   88.496  24 100    9  [D]                    0.095  2                 
  74GA  G  145.02   4  29     2                                                  
  74GA  L    227.80312(0,1,2,3+)                                                 
  74GAX L XREF=A$                                                                
- 74GA cL J$ |g's to and from (1+)                                               
- 74GA  G  119.149  2 100     8  [D,Q]                  0.21   17                
+ 74GA cL J$gammas to and from (1+)                                              
+ 74GA  G  119.149  2 100     8  [D,Q]                  0.20   16                
  74GA  G  125.54   3  21     4                                                  
  74GA  G  168.22   6  13     4                                                  
  74GA  G  171.13   7   6     2                                                  
  74GA  L    251.78714 (1+)                                                  B   
  74GAX L XREF=A$                                                                
- 74GA  G  106.762  22  3.7   6  [D,Q]                  0.33   28                
+ 74GA  G  106.762  22  3.7   6  [D,Q]                  0.30   25                
  74GA  G  110.461  24 2.6    2                                                  
- 74GA  G  143.137  24100     3  [D,Q]                  0.10    8                
+ 74GA  G  143.137  24100     3  [D,Q]                  0.10   8                 
  74GA  G  149.517  24  7.4   4                                                  
- 74GA  G  192.212  19 71     2  [D]                    0.011                    
- 74GA  G  195.19   4  11     1  [D,Q]                  0.03    2                
+ 74GA  G  192.212  19 71     2                                                  
+ 74GA  G  195.19   4  11     1                                                  
  74GA  G  251.89   5   2     1                                                 ?
  74GA  L     455.06 5 (1+)                                                  B   
  74GAX L XREF=A$                                                                
@@ -1071,60 +1463,68 @@
  74GA  G 1025.81   23 89     15                                                 
  74GA  G 1028.7    4  63     15                                                 
                                                                                 
- 74GA    74ZN B- DECAY (95.6 S)        1989WI14                  06NDS    200607
+ 74GA    74ZN B- DECAY (95.6 S)        1989WI14                  ENSDF    201709
+ 74GA  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74GA  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74GA2 H CUT=30-Apr-2006$                                                       
  74GA c  1989Wi14 (also 1988WiZV): measured E|g, I|g, |g|g-coin.                
- 74GA c  Others: 1983Ru06; measured |g's, |b|g, |g|g-coin.                      
+ 74GA c  Others: 1983Ru06; measured E|g, I|g, |b|g, |g|g-coin.                  
  74GA c  1981Gi17, 1974Gr29, 1972Er05: production, identification and           
  74GA3c  T{-1/2} of {+74}Zn isotope only. 1972Er05 report energies and          
  74GA4c  intensities of intense |g-transitions.                                 
- 74GA CL $ 1989WI14 LIST FOLLOWING B FEEDINGS: 3.5% (LOGFT=5.0) FOR 1086 LEVEL, 
- 74GA2CL 11.8% (LOGFT=4.7) FOR 894 LEVEL; 2.5% (LOGFT=5.8) FOR 455 LEVEL,       
- 74GA3CL 43% (LOGFT=4.7) FOR 252 LEVEL AND 39% (LOGFT=4.9) FOR 109 LEVEL        
- 74GA cL J         From 'adopted levels'                                        
- 74GA cL E         From least-squares fit to E|g's                              
- 74GA CL J(A)$ INDICATION OF STRONG (>2%) B FEEDING (PROBABLE ALLOWED           
- 74GA2CL TRANSITION) FROM 0+ PARENT, ALTHOUGH ABSOLUTE B FEEDINGS ARE UNKNOWN   
- 74ZN  P    0.0       0+               95.6 S    12             2340      50    
+ 74GA cG M$Non-observation of strong K x-rays of Ga suggests dipole             
+ 74GA2cG multipolarity for low-energy transitions (less than |?100 keV)         
+ 74GA cG CC$Theoretical values from BrIcc code (2008Ki07) with Frozen-orbital   
+ 74GA2cG approximation                                                          
+ 74GA cL $1989Wi14 list following |b feedings: 3.5% (log| {Ift}=5.0) for 1086   
+ 74GA2cL level, 11.8% (log| {Ift}=4.7) for 894 level; 2.5% (log| {Ift}=5.8) for 
+ 74GA3cL 455 level, 43% (log| {Ift}=4.7) for 252 level and 39% (log| {Ift}=4.9) 
+ 74GAxcL for 109 level                                                          
+ 74GA cL J$From Adopted Levels                                                  
+ 74GA cL E$From least-squares fit to E|g values                                 
+ 74GA cL J(A)$Indication of strong (>2%) |b feeding (probable allowed           
+ 74GA2cL transition) from 0+ parent, although absolute |b feedings are unknown  
+ 74ZN  P    0.0       0+               95.6 S    12             2293      4     
+ 74ZN cP T$From {+74}Zn Adopted Levels                                          
+ 74ZN cP QP$From 2017Wa10                                                       
  74GA  N  0.15                  1                                               
- 74GA CN NR$ FROM 1989WI14. BUT DUE TO THE LACK OF KNOWLEDGE ABOUT              
- 74GA2CN MULTIPOLARITIES OF THE MANY LOW-ENERGY TRANSITIONS WHICH INVOLVE       
- 74GA3CN LARGE CONVERSION COEFFICIENTS, NORMALIZATION FACTOR CANNOT BE          
- 74GA4CN DEDUCED WITH ANY CERTAINTY.                                            
+ 74GA cN NR$From 1989Wi14, but due to lack of knowledge about                   
+ 74GA2cN multipolarities of the many low-energy transitions which involve       
+ 74GA3cN large conversion coefficients, normalization factor cannot be          
+ 74GA4cN deduced with any certainty.                                            
  74GA PN                                                                     5  
  74GA  L    0.0      (3-)                                                       
- 74GA  L     56.550 9(2)                                                        
- 74GA  G   56.559  10 120    3     (D)                 0.35   1              C  
- 74GA cG RI$ 1989Wi14 did not include feeding from 59 level                     
- 74GA  L    59.571 14(0)                9.5 S                                M  
- 74GA  G    3.2    2                                                           S
- 74GA cG E$ unobserved |g, value deduced by 1974Va08 (see {+74}Ga IT            
+ 74GA  L     56.550 9(2-)                                                       
+ 74GA  G   56.559  10 120    3  (M1(+E2)) 0.17   LT    0.42   8              C  
+ 74GA cG RI$1989Wi14 did not include feeding from 59 level                      
+ 74GA  L    59.571 14(0+)               9.5 S    10                          M  
+ 74GA  G    3.2    2               [M2]                2.9E5  11               S
+ 74GA CG E$unobserved |g, value deduced by 1974Va08 (see {+74}Ga ^IT            
  74GA2cG decay). This transition is expected to be almost totally converted.    
  74GA  L   102.276 14                                                           
- 74GA  G  45.746   17 5.3    4                                               C  
- 74GA  G  102.25   3  6.3    5                                               C  
+ 74GA  G  45.746   17 5.3    4  [D]                    0.64   2              C  
+ 74GA  G  102.25   3  6.3    5  [D,Q]                  0.35   29             C  
  74GA  L   108.654 12 (1+)                                                  A   
- 74GA  G   49.087  10 217    5                                               C  
- 74GA  G   52.110  14 70.6   8                                               C  
- 74GA  G  108.635  20 2.8    21                                              C  
+ 74GA  G   49.087  10 217    5  [D]                    0.523  17             C  
+ 74GA  G   52.110  14 70.6   8  [D]                    0.440  13             C  
+ 74GA  G  108.635  20 2.8    21 [M2]                   0.546                 C  
  74GA  L   141.333 15(1-,2,3+)                                                  
- 74GA  G   84.81   3  3.4    5                                               C  
- 74GA  G  141.330  21 24.5   19                                              C  
+ 74GA  G   84.81   3  3.4    5  [D]                    0.108  2              C  
+ 74GA  G  141.330  21 24.5   19 [D,Q]                  0.11   8              C  
  74GA  L   145.032 18                                                           
- 74GA  G   85.1    4                                                           ?
- 74GA cG E$ reported only by 1983Ru06                                           
- 74GA  G   88.496  24 8.9    8                                               C  
+ 74GA  G   85.1    4   5     1  [D]                    0.106  2                ?
+ 74GA cG E,RI$|g reported only by 1983Ru06                                      
+ 74GA  G   88.496  24 8.9    8  [D]                    0.095  2              C  
  74GA  G  145.02   4  2.6    2                                               C  
  74GA  L   227.802 19                                                           
- 74GA  G  119.149  20 13.0   11                                              C  
+ 74GA  G  119.149  20 13.0   11 [D,Q]                  0.20   16             C  
  74GA  G  125.54   3  2.8    5                                               C  
  74GA  G  168.22   6  1.7    2                                               C  
  74GA  G  171.13   7  0.8    2                                               C  
  74GA  L   251.787 14 (1+)                                                  A   
- 74GA  G  106.762  22 5.3    8                                               C  
+ 74GA  G  106.762  22 5.3    8  [D,Q]                  0.30   25             C  
  74GA  G  110.461  24 3.7    3                                               C  
- 74GA  G  143.137  24 140    4                                               C  
+ 74GA  G  143.137  24 140    4  [D,Q]                  0.10   8              C  
  74GA  G  149.517  24 10.4   6                                               C  
  74GA  G  192.212  19 100.0  20                                              C  
  74GA  G  195.19   4  15.5   11                                              C  
@@ -1151,7 +1551,8 @@
  74GA  G 1025.81   23 4.1    7                                                  
  74GA  G 1028.7    4  2.9    7                                               C  
                                                                                 
- 74GA    74GA IT DECAY (9.5 S)         1974VA08,1977VA01,1978TA0806NDS    200607
+ 74GA    74GA IT DECAY (9.5 S)         1974VA08,1977VA01,1978TA08ENSDF    201709
+ 74GA  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-MAR-2017$                    
  74GA  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  
  74GA2 H CUT=30-Apr-2006$                                                       
  74GA c  All studies are by the same group                                      
@@ -1161,34 +1562,37 @@
  74GA c  1977Va01 use delayed coincidence summing technique (1978Ta08) to       
  74GA2c  measure T{-1/2} of 56.5 level. A single activated germanium detector   
  74GAxc  was used                                                               
- 74GA cG           No K x-rays observed with T{-1/2}|?10 s                      
- 74GA cG           From an attempt to observe |b's from the isomer,             
+ 74GA cG $No K x-rays observed with T{-1/2}|?10 s                               
+ 74GA cG $From an attempt to observe |b radiations from the isomer,             
  74GA2cG 1974Va08 estimate I(|b{+-})<50%                                        
- 74GA cG           No |b|g and |g|g coincidences observed with 56.5|g (1974Va08)
- 74GA cG           Sum peak at 59.7 observed in |g-ray spectrum from an         
+ 74GA cG $No |b|g and |g|g coincidences observed with 56.5|g (1974Va08)         
+ 74GA cG $Sum peak at 59.7 observed in |g-ray spectrum from an                  
  74GA2cG activated germanium detector                                           
- 74GA cL J$ From 'adopted levels'                                               
- 74GA  P   59.7    2 (0)                9.5 S    10                             
+ 74GA cG CC$Theoretical values from BrIcc code (2008Ki07) with Frozen-orbital   
+ 74GA2cG approximation                                                          
+ 74GA cL J$From Adopted Levels                                                  
+ 74GA  P   59.7    2 (0+)               9.5 S    10                             
  74GA  N 1            1         0.75   25                                       
- 74GA cN NT$ No |b{+-} branch observed (1974Va08). An upper limit               
- 74GA2cN is suggested at 50% (1974Va08)                                         
+ 74GA cN NT$No |b{+-} branch observed (1974Va08). An upper limit                
+ 74GA2cN is suggested as 50% (1974Va08)                                         
  74GA PN                                                                     3  
  74GA  L    0.0      (3-)                                                       
- 74GA  L   56.5    1 (2)                31 NS    5                              
- 74GA cL T$ from |g|g(t) (1977Va01,1978Ta08)                                    
- 74GA  G   56.5    1           (D)                     0.34   1  100            
- 74GA cG M$ |a(K)exp|?0.37 {I6} (1974Va08). Also no K x-rays decaying           
- 74GA2cG with T{-1/2}=10 s observed (1974Va08)                                  
- 74GA  L   59.7    2 (0)                9.5 S    10                          M  
+ 74GA  L   56.5    1 (2-)               31 NS    5                              
+ 74GA cL T$from |g|g(t) (1977Va01,1978Ta08)                                     
+ 74GA  G   56.5    1           (M1(+E2))  0.17   LT    0.42   8  100            
+ 74GA cG M,MR$from |a(K)exp|<0.43 (1974Va08). The value of |a(K)exp allows      
+ 74GA2cG also E1(+M2) with |d<0.16. Also no K x-rays decaying with T{-1/2}=10 s 
+ 74GA3cG observed (1974Va08)                                                    
+ 74GA  L   59.7    2 (0+)               9.5 S    10                          M  
  74GA cL E$ from sum peak observed at 59.7 keV (1974Va08)                       
  74GA cL T$ from 1974Va08                                                       
- 74GA  G   3.2     2 3E-4       [M2]                   3.1E+5    100           S
+ 74GA  G   3.2     2 3E-4       [M2]                   2.9E5  11 100           S
  74GA cG E$ from difference of 59.7 {I2} (sum peak) and 56.5|g                  
  74GA2cG (1974Va08) |g not observed directly.                                   
- 74GA  G   59.7                [E3,M3]                   74.1  8  10      LT   ?
+ 74GA  G   59.7                [E3]                      71   6   10      LT   ?
  74GAS G K/T=0.72 3$L/T=0.20 3                                                  
- 74GA cG RI$ <0.04(I|g(56.5|g)) (1974Va08). This |g has not been observed;      
- 74GA2cG but sum peak observed by 1974Va08                                      
+ 74GA cG TI$from I|g(59.7|g)<0.04(I|g(56.5|g)) (1974Va08). This |g has not been 
+ 74GA2cG observed; but sum peak observed by 1974Va08                            
                                                                                 
  74GE    ADOPTED LEVELS, GAMMAS                                  06NDS    200607
  74GE  H TYP=FUL$AUT=BALRAJ SINGH, AMEENAH R. FARHAN$CIT=NDS 107, 1923 (2006)$  

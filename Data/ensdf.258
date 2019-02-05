@@ -1,583 +1,845 @@
-258      COMMENTS                                                01NDS    200112
-258    H TYP=FUL$AUT=Y.A.AKOVALI$CIT=NDS 94, 131 (2001)$CUT=1-Sep-2001$         
-258   c  AUTH$Y.A.AKOVALI                                                       
-258   c  INST$Oak Ridge National Laboratory                                     
-258  #c       Oak Ridge, Tennessee 37831-6371, USA                              
-258   c  ABST$Information pertaining to the nuclear structure of all nuclei     
-258  2c  with mass number A=258 is presented. Various decay and reaction data   
-258  3c  are evaluated and compared. Adopted data, levels, spin, parity and     
-258  4c  configuration assignments are given. When there are insufficient data, 
-258  5c  expectations from systematics of nuclear properties or/and theoretical 
-258  6c  calculations are quoted. Unexpected or discrepant experimental results 
-258  7c  are also mentioned.                                                    
-258   c  CUT$All data received prior to September 2001 have been considered in  
-258  2c  adopting the properties given in this evaluation.                      
-258   c  ACKN$The evaluator thanks Eddie Browne for his thorough review of the  
-258  2c  manuscript and for his valuable comments.                              
-258   C  CIT$NDS 94, 131 (2001)                                                 
-258   c  FUND$Research sponsored by the Oak Ridge National Laboratory, managed  
-258  xc  by UT-Battelle,LLC for the U.S. Department of Energy under contract    
-258  xc  number DE-AC05-00OR22725.                                              
+258      COMMENTS                                                17NDS    201709
+258    H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258   c  TITL$NUCLEAR DATA SHEETS FOR A=258                                     
+258   c  AUTH$BALRAJ SINGH                                                      
+258   c  INST$Department of Physics and Astronomy                               
+258  #c  McMaster University, Hamilton, Ontario L8S 4M1, Canada                 
+258   c  ABST$Spectroscopic data for A=258 nuclides have been updated and       
+258  2c  re-evaluated, superseding the data presented in the previous           
+258  3c  evaluation 2001Ak11 published by Y.A. Akovali. The excited state       
+258  4c  data for A=258 nuclei are largely unknown. With the exception of three 
+258  5c  low-energy gamma rays in {+258}Db from {+262}Bh |a decay, no           
+258  6c  other gamma-ray data are available for A=258 nuclei.                   
+258   c  CUT$Literature available up to August 25, 2017 has been consulted.     
+258  2c  Main source of bibliographic search is the NSR database available      
+258  3c  at www.nndc.bnl.gov/nsr/ (2011Pr03)                                    
+258   c  ACKN$Evaluator thanks E. McCutchan (NNDC, BNL) for her help with the   
+258  2c  interpretaion of |a decays of {+262}Bh g.s. and isomer, and for her    
+258  3c  detailed review of this work, resulting in constructive comments and   
+258  4c  corrections.                                                           
+258   C  CIT$NDS 144, 297 (2017)                                                
+258   c  FUND$Work supported by the Office of Science of the Department of      
+258  2c  Energy of the United States through a contract from Brookhaven National
+258  3c  Laboratory, Upton, New York, USA.                                      
                                                                                 
-258      REFERENCES                                              01NDS    200112
-258    R 1968HU06 JOUR BAPSA 13 604, DF7                                        
-258    R 1969GH01 JOUR PRLTA 22 1317                                            
-258    R 1969NUZZ REPT UCRL-18667 P63                                           
-258    R 1969WY02 JOUR IANFA 33 1263                                            
-258    R 1970FI12 JOUR NUPAB A154 407                                           
-258    R 1971ES01 JOUR PRVCA C4 632                                             
-258    R 1971FL02 JOUR NUPAB A160 181                                           
-258    R 1971GH01 JOUR PRVCA C4 1850                                            
-258    R 1971HU03 JOUR PRLTA 26 523                                             
-258    R 1971JO13 JOUR PRLTA 27 45                                              
-258    R 1972LA05 JOUR PYLBB 38B 269                                            
-258    R 1972MU06 JOUR PRLTA 28 1536                                            
-258    R 1973IV01 JOUR IANFA 37 911                                             
-258    R 1973MU03 JOUR PRVCA C7 1519                                            
-258    R 1974HO05 JOUR HPACA 46 724                                             
-258    R 1974JU02 JOUR APASA 40 335                                             
-258    R 1974MA03 JOUR PRLTA 32 548                                             
-258    R 1975MU03 JOUR PRVCA C11 1059                                           
-258    R 1976BEZY REPT ORNL-5111,P58,Bemis                                      
-258    R 1976IW02 JOUR PTPKA 55 115                                             
-258    R 1976RA02 JOUR PRVCA C13 229                                            
-258    R 1977BEZM JOUR BAPSA 22 611 HE14,Bemis                                  
-258    R 1978PO09 JOUR NUKLA 23 125                                             
-258    R 1980HO04 JOUR PRVCA C21 972                                            
-258    R 1980LO12 JOUR NUPAB 345 134                                            
-258    R 1981MU06 JOUR ZPAAD 300 107                                            
-258    R 1981RA22 JOUR PRVCA 24 2606                                            
-258    R 1982LI01 JOUR PRVCA 25 571                                             
-258    R 1983BO15 JOUR APOBB 14 287                                             
-258    R 1983CW01 JOUR NUPAB 410 254                                            
-258    R 1984OG03 JOUR RAACA 37 113                                             
-258    R 1984RO23 JOUR JPHGB 10 1541                                            
-258    R 1985CW01 JOUR NUPAB 444 1                                              
-258    R 1985HE22 JOUR ZPAAD 322 557                                            
-258    R 1985LO17 JOUR ZPAAD 322 695                                            
-258    R 1985PO11 JOUR PRVCA 32 572                                             
-258    R 1985SO03 JOUR PRVCA 31 1801                                            
-258    R 1985ST22 JOUR PYLBB 161 227                                            
-258    R 1986BO07 JOUR PYLBB 168 35                                             
-258    R 1986HU01 JOUR PRLTA 56 313                                             
-258    R 1986HU05 JOUR PRVCA 34 1394                                            
-258    R 1986MA02 JOUR PRVCA 33 156                                             
-258    R 1986PO15 JOUR ZPAAD 325 435                                            
-258    R 1987MO16 JOUR NUPAB 469 1                                              
-258    R 1988GR05 JOUR NUPAB 481 340                                            
-258    R 1988HU13 JOUR YTHLD 10 314                                             
-258    R 1988IO02 JOUR RRPQA 33 239                                             
-258    R 1988IO04 JOUR RRPQA 33 1071                                            
-258    R 1988SA35 JOUR PHSTB T23 43                                             
-258    R 1989CW01 JOUR NUPAB 491 281                                            
-258    R 1989HU09 JOUR PRVCA 40 770                                             
-258    R 1989MO03 JOUR NUPAB 492 349                                            
-258    R 1989MU09 JOUR ZPAAD 333 163                                            
-258    R 1989ST20 JOUR NUPAB 504 589                                            
-258    R 1990PAZT REPT GSI-90-1,P80,Patyk                                       
-258    R 1991MO22 JOUR NCIAA 104 1525                                           
-258    R 1992BH03 JOUR PRVCA 45 2803                                            
-258    R 1992GR02 JOUR PRVCA 45 1058                                            
-258    R 1992MO22 JOUR NUPAB 549 84                                             
-258    R 1992SI13 JOUR JPGPE 18 1243                                            
-258    R 1993MO18 JOUR NUPAB 563 21                                             
-258    R 1993MO22 JOUR NCIAA 106 961                                            
-258    R 1993PA11 JOUR NUPAB 556 201                                            
-258    R 1994BA97 JOUR APOBB 25 1231                                            
-258    R 1994HU18 JOUR YAFIA 57,No 7,1165                                       
-258    R 1994MO31 JOUR JPGPE 20 1681                                            
-258    R 1995AU04 JOUR NUPAB 595 409                                            
-258    R 1995EF04 JOUR BRSPE 59 919                                             
-258    R 1995KOZL CONF St Petersburg,P445,Kolesnikov                            
-258    R 1996LO08 JOUR APOBB 27 531                                             
-258    R 1996RE08 JOUR PRVCA 53 2776                                            
-258    R 1996WU09 JOUR PYLBB 387 449                                            
-258    R 1997HE29 JOUR ZPAAD 359 415                                            
-258    R 1997HO14 JOUR ZPAAD 358 377                                            
-258    R 1997MO25 JOUR ADNDA 66 131                                             
-258    R 1997PO18 JOUR BRSPE 61 606                                             
-258    R 1998AK04 JOUR NDSBA 84 1                                               
-258    R 1998BE66 JOUR PRVCA 58 2126                                            
-258    R 1998HOZZ REPT GSI 98-1,P9,Hofmann                                      
-258    R 1998PO02 JOUR JPGPE 24 L23                                             
-258    R 1999CH42 JOUR PRAMC 53 619                                             
-258    R 1999HE11 JOUR JPGPE 25 877                                             
-258    R 1999MO38 JOUR APHPF 10 241                                             
-258    R 2000DE09 JOUR PRVCA 61 034606                                          
-258    R 2000MO08 JOUR PRVCA 61 047602                                          
-258    R 2000PA12 JOUR JPGPE 26 L65                                             
-258    R 2001GA20 JOUR ZAANE 10 21                                              
-258    R 2001MU06 JOUR PYLBB 500 241                                            
+258FM    ADOPTED LEVELS                                          17NDS    201709
+258FM  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258FM  Q -1260     SY 6240   SY 6270   SY 6660   SY    2017WA10                 
+258FM cQ $Estimated uncertainties (2017Wa10): 200 for Q(|b{+-}), S(n) and Q(|a),
+258FM2cQ 460 for S(p)                                                           
+258FM cQ $S(2n)=11200 {I200}, S(2p)=11190 {I370} (syst,2017Wa10)                
+258FM c  1971Hu03: {+258}Fm produced in {+257}Fm(d,p), measured T{-1/2}(SF)     
+258FM c  1971Jo13: {+258}Fm from thermal neutron capture in {+257}Fm, studied   
+258FM2c  SF distribution                                                        
+258FM c  1986Hu05: {+258}Fm from |e-decay daughter of 57-min {+258}Md;          
+258FM2c  measured time correlation of fermium K-x rays with SF fragments        
+258FM c  1989Hu09, 1986Hu01, 1980Ho04: measured fission-fragment mass and total 
+258FM2c  kinetic energy distributions                                           
+258FM c  Theoretical studies: consult the NSR database at www.nndc.bnl.gov for  
+258FM2c  about 120 references dealing with theoretical calculations of          
+258FM3c  half-lives for different decay modes, binding energies, fission        
+258FM4c  characteristics, and other nuclear structure aspects.                  
+258FM d  Theoretical calculations of fission fragments kinetic energy, average  
+258FM2d  mass and charge distributions: 1974Ma03, 1981Ra22, 1986Bo07,           
+258FM3d  1988Gr05, 1991Mo22, 1993Pa11, 1993Mo22, 1994Mo31, 1995Ef04.            
+258FM d  Theoretical calculations of fission potential energy and saddle-point  
+258FM2d  deformations: 1983Bo15, 1998Be66, 1999Mo38, 2000Mo08.                  
+258FM d  Theoretical calculations of fission barriers and discussion on         
+258FM2d  possible fission isomerism: 1983Cw01.                                  
+258FM d  Deformation energies as a function of proton numbers of fragments      
+258FM5d  were calculated by 1998Po02.                                           
+258FM d  Theoretical calculations of potential-energy surfaces: 1972Mu06,       
+258FM2d  1973Mu03, 1975Mu03, 1976Iw02, 1984Ro23, 1989Cw01, 1992Bh03, 1992Mo22,  
+258FM3d  1996Re08.                                                              
+258FM d  Theoretical calculations of single-particle energies, quadrupole and   
+258FM2d  hexadecapole moments, charge radii: 1982Li01.                          
+258FM d  Theoretical calculations of half-life for SF decay: 1974Ho05,          
+258FM2d  1976Ra02, 1978Po09, 1980Lo12, 1983Bo15, 1985Lo17, 1985St22, 1987Mo16,  
+258FM3d  1988Hu13, 1989St20, 1990PaZT, 1992Bh03, 1996Lo08.                      
+258FM d  Theoretical calculations of partial half-lives for |a decay: 1997Mo25, 
+258FM2d  1997Po18.                                                              
+258FM d  Theoretical calculations of partial half-life for pion decay: 1988Io02 
+258FM d  Theoretical calculations of half-life for cluster decay, in particular 
+258FM2d  emission of Sn nuclei: 1988Sa35.                                       
+258FM  XA258MD EC DECAY (57.0 M)                                                
+258FM  L 0           0+                370 US    14                             
+258FM2 L %SF AP 100                                                             
+258FMX L XREF=A                                                                 
+258FM cL $Only SF decay has been observed. The |b decay mode is forbidden       
+258FM cL T$average value of 370 |ms {I43} at 3|s is recommended by 1986Hu05 from
+258FM2cL their two measurements: 380 |ms {I60} (1971Hu03, with 3|s uncertainty) 
+258FM3cL and 360 |ms {I20} (1986Hu05).                                          
+258FM cL $Theoretical partial half-lives for |a decay predict very small |a     
+258FM2cL branch: T{-1/2}(|a)=12.9 y (1997Mo25), 86 d (1997Po18)                 
                                                                                 
-258FM    ADOPTED LEVELS                                          01NDS    200112
-258FM  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-258FM  Q -1.26E3   SY6.24E3  SY6.3E3   SY6.66E3  SY    2012WA38                 
-258FM CQ Note: Current evaluation has used the following Q record               
-258FM  Q -1260     SY 6240   SY 6270   SY 6660   SY    1995AU04                 
-258FM T  ASSIGNMENT:                                                            
-258FM2T    257FM(D,P), T1/2(SF) SYSTEMATICS                           (1971HU03)
-258FM3T    257FM(TH N), SF DISTRIBUTION                              (1971JO13) 
-258FM4T    EC-DECAY DAUGHTER OF 57-MIN 258MD:                                   
-258FM5T        TIME CORRELATION OF FERMIUM K-X RAYS WITH SF FRAGMENTS(1986HU05) 
-258FM6T                                                                         
-258FM C  FISSION-FRAGMENT MASS AND TOTAL KINETIC ENERGY DISTRIBUTIONS WERE      
-258FM2C  MEASURED BY 1989HU09. SEE ALSO 1986HU01 AND 1980HO04.                  
-258FM C                                                                         
-258FM C  THEORETICAL STUDIES:                                                   
-258FM C  FOR CALCULATIONS OF FISSION FRAGMENTS  KINETIC ENERGY, AVERAGE MASS AND
-258FM2C  CHARGE DISTRIBUTIONS, SEE, FOR EXAMPLE, 1974MA03, 1981RA22, 1986BO07,  
-258FM3C  1988GR05, 1991MO22, 1993PA11, 1993MO22, 1994MO31, 1995EF04.            
-258FM C  FISSION POTENTIAL ENERGY AND SADDLE-POINT DEFORMATIONS WERE CALCULATED 
-258FM2C  BY 1983BO15, 1998BE66, 1999MO38, 2000MO08. FOR CALCULATION OF FISSION  
-258FM3C  BARRIERS AND FOR DISCUSSION ON POSSIBLE FISSION ISOMERISM, SEE         
-258FM4C  1983CW01.                                                              
-258FM C  DEFORMATION ENERGIES AS A FUNCTION OF PROTON NUMBERS OF FRAGMENTS      
-258FM5C  WERE CALCULATED BY 1998PO02.                                           
-258FM C  POTENTIAL-ENERGY SURFACE WAS CALCULATED BY 1972MU06, 1973MU03,         
-258FM2C  1975MU03, 1976IW02, 1984RO23, 1989CW01, 1992BH03, 1992MO22, 1996RE08.  
-258FM C  SINGLE-PARTICLE ENERGIES, QUADRUPOLE AND HEXADECAPOLE MOMENTS, CHARGE  
-258FM2C  RADII WERE CALCULATED BY 1982LI01.                                     
-258FM C  FOR CALCULATED HALF-LIFE FOR SF DECAY, SEE 1974HO05,                   
-258FM2C  1976RA02, 1978PO09, 1980LO12, 1983BO15, 1985LO17, 1985ST22, 1987MO16,  
-258FM3C  1988HU13, 1989ST20, 1990PAZT, 1992BH03, 1996LO08.                      
-258FM C  FOR CALCULATIONS OF PARTIAL HALF-LIVES FOR A DECAY, SEE 1997MO25,      
-258FM2C  1997PO18.                                                              
-258FM C  PARTIAL HALF-LIFE FOR PION DECAY WAS CALCULATED BY 1988IO02.           
-258FM C  THEORETICAL HALF-LIFE FOR CLUSTER DECAY, IN PARTICULAR BY              
-258FM2C  TIN EMISSION, WAS CALCULATED BY 1988SA35.                              
-258FM C                                                                         
-258FM  L 0.0         0+                370 US    43                             
-258FM CL T         THE MEASURED HALF-LIVES ARE T1/2=380 US 60 (1971HU03) AND    
-258FM2CL T1/2=360 US 20 (1986HU05). THE AUTHORS OF 1986HU05 RECOMMEND           
-258FM3CL AN AVERAGE VALUE OF T1/2=370 US 43.                                    
-258FM2 L %SF LE 100                                                             
-258FM CL           ONLY SF DECAY HAS BEEN OBSERVED. THE NUCLEUS IS BETA STABLE. 
-258FM CL           THEORETICAL PARTIAL HALF-LIVES FOR ALPHA DECAY, CALCULATED   
-258FM2CL BY VARIOUS METHODS, PREDICT VERY SMALL ALPHA BRANCH:                   
-258FM3CL T1/2(A)=12.9 Y (1997MO25), 86 D (1997PO18)                             
+258FM    258MD EC DECAY (57.0 M)       1993MO18                  17NDS    201709
+258FM  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258FM c  1993Mo18: the |e decay mode of the 57.0-min {+258}Md isomer was deduced
+258FM2c  from observation of fermium K x-rays to precede the {+258}Fm SF decay. 
+258FM3c  No |g transitions in {+258}Md |e decay have been identified, thus      
+258FM4c  the decay scheme is unknown                                            
+258FM c  If J|p(57.0 min {+258}Md)=1-, the 0+ and 2+ states of {+258}Fm g.s.    
+258FM2c  band are expected to be populated with about the same intensity; if    
+258FM3c  J|p=0- (or 2-), a first-forbidden unique |b transition to 2+ (or to 0+)
+258FM4c  should be weaker.                                                      
+258FM d  An |e branch to {+258}Fm g.s. would have log| {Ift}|>5.8, calculated by
+258FM2d  assuming first-forbidden transition, using Q({+258}Md)=1260 (2017Wa10) 
+258FM3d  and by taking the upper limit of I|e|<100% per 100 |e decays. The      
+258FM4d  calculated capture and |b{++} ratios for such a branch would be:       
+258FM5d  |e/|b{++}=2.0|*10{+5},|eK/(|e+|b{++})=0.73,                            
+258FM6d  |eL/(|e+|b{++})=0.197, |eM+/(|e+|b{++})=0.073.                         
+258MD  P 0+X           (1-)            57.0 M    9               1260     SY    
+258MD cP J,T$From {+258}Md Adopted Levels                                       
+258MD cP QP$1260 {I200} (syst,2017Wa10)                                         
+258FM  N                       0.85    15                                       
+258FM cN BR$%|e>70 (or %|e=85 {I15}) (1993Mo18) for {+258}Md decay of           
+258FM2cN 57.0-min activity                                                      
+258FM  L  0           0+                                                        
+258FM cL $Assumed that the g.s. is populated in this decay                      
                                                                                 
-258FM    258MD EC DECAY (57.0 M)                                 01NDS    200112
-258FM  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-258MD  P 0.0+X                         57.0 M    9               1260     SY    
-258FM  N                       0.70    GE                                       
-258FM C  THE EC DECAY MODE OF THE 57.0-MIN 258MD ISOMER WAS DEDUCED FROM        
-258FM2C  OBSERVATION OF FERMIUM K X-RAYS TO PRECEDE THE 258FM SF DECAY. SINCE   
-258FM3C  NO GAMMA TRANSITIONS IN 258MD EC DECAY HAVE BEEN IDENTIFIED, NOR       
-258FM4C  ABSENCE OF GAMMA'S HAS BEEN CLAIMED, A COMPLETE DECAY SCHEME IS NOT    
-258FM5C  AVAILABLE AT THIS TIME.                                                
-258FM C  IF JPI(57.0 M 258MD)=1-, THE 0+ AND 2+ STATES OF 258FM GS BAND SHOULD  
-258FM2C  BE POPULATED WITH ABOUT THE SAME INTENSITY; IF JPI=0- (OR 2-),         
-258FM3C  A FIRST-FORBIDDEN UNIQUE BETA TRANSITION TO 2+ (OR TO 0+)              
-258FM4C  SHOULD BE WEAKER.                                                      
-258FM C  AN EC BRANCH TO 258FM GS WOULD HAVE LOGFT GE 5.8, CALCULATED BY        
-258FM2C  ASSUMING FIRST-FORBIDDEN TRANSITION, USING Q+(258MD)=1260              
-258FM3C  (1995AU04) AND BY TAKING THE UPPER LIMIT OF                            
-258FM4C  IEC LE 100% PER 100 EC DECAYS. THE CALCULATED CAPTURE AND B+ RATIOS    
-258FM5C  FOR SUCH A BRANCH ARE EC/B+=2.0E+5,CK/(EC+B+)=0.73, CL/(EC+B+)=0.197,  
-258FM6C  CM+/(EC+B+)=0.073.                                                     
-258FM  L 0.0          0+                                                        
+258MD    ADOPTED LEVELS                                          17NDS    201709
+258MD  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258MD  Q 210       SY 5378   4 4192    6 7271.3  19    2017WA10                 
+258MD cQ $Estimated uncertainties (2017Wa10): 100 for Q(|b{+-})                 
+258MD cQ $S(2n)=11910 {I120}, S(2p)=10080 {I100} (syst,2017Wa10)                
+258MD c  1968Hu06: first report of the identification of {+258}Md isotope       
+258MD c  1970Fi12: {+258}Md produced in {+255}Es(|a,n); measured T{-1/2}, E|a,  
+258MD2c  I|a, |a|g-coin, |a/(|a+|e) ratio                                       
+258MD c  1993Mo18: {+258}Md produced in {+254}Es({+18}O,{+14}C),                
+258MD2c  {+254}Es({+22}Ne,{+18}O) reactions followed by mass separation, and    
+258MD3c  chemical techniques                                                    
+258MD d  1986So12: calculated levels, bandhead energies, isomer T{-1/2}, K|p,   
+258MD2d  separation energies.                                                   
+258MD c  Theoretical studies: consult the NSR database at www.nndc.bnl.gov for  
+258MD2c  about 15 references dealing with theoretical calculations of half-lives
+258MD3c  for different decay modes and other nuclear structure aspects.         
+258MD d  Theoretical calculations of heavy cluster spontaneous emission rates:  
+258MD2d  1985Po11, 1986Po15, the latter for partial half-life for decay by      
+258MD2d  {+51}Ca, and the former for {+50}Ca emission                           
+258MD d  Theoretical calculations of partial half-life for spontaneous fission: 
+258MD2d  1985Lo17.                                                              
+258MD d  Theoretical calculations of fission barrier and deformation: 1985Cw01  
+258MD  L 0            (8-)             51.50 D   29                             
+258MD2 L %A=100 $ %SF+%EC+%B- LE 0.003 (1993Mo18)                               
+258MD cL $The upper limit on SF+|e+|b{+-} branching was determined by           
+258MD2cL 1993Mo18 from the number of SF events detected. Other measurements:    
+258MD3cL 1968Hu06, 1970Fi12.                                                    
+258MD cL J$analogy to {+257}Fm and {+257}Md and Gallagher-Moszkowski rule       
+258MD2cL suggests 8- with configuration=|p7/2[514] + |n9/2[615].                
+258MD cL T$measured by 1993Mo18. Other measurements: 56 d {I7} (1970Fi12),      
+258MD2cL 54 d {I5} (1968Hu06)                                                   
+258MD  L 0+X           (1-)            57.0 M    9                           M1 
+258MD2 L %EC=85 15$%SF+%B- LE 30$%A LT 1.2                                      
+258MD cL $Decay branching ratios are from 1993Mo18.                             
+258MD cL $The |e decay branching was obtained by 1993Mo18 from fermium          
+258MD2cL K x-ray counts preceding SF events from {+258}Fm decay. The            
+258MD3cL experimental K x-ray counts could not be corrected for summing of Fm K 
+258MD4cL x-rays with any possible gammas from |e decay and with Fm L x-rays.    
+258MD5cL 1993Mo18 set a lower limit of 70% for the |e decay branching           
+258MD6cL by assuming that this decay populates only the g.s. band in {+258}Fm.  
+258MD cL $Origin of the observed SF events that were not                        
+258MD2cL correlated with the fermium K x-rays due to {+258}Md |e decay,         
+258MD2cL could either be the 57.0-min {+258}Md or its |b{+-} decay daughter,    
+258MD3cL {+258}No. Since these two possibilities could not be resolved, 1993Mo18
+258MD4cL assigned the upper limit of 30% to the sum of SF and |b{+-} decay      
+258MD5cL branches.                                                              
+258MD cL $An upper limit of 1.2% for |a branch was given by                     
+258MD2cL 1993Mo18 from absence of any 57.0-min |a activity in their spectra.    
+258MD cL $Possibility of decay by an isomeric transition to the                 
+258MD2cL {+258}Md g.s. was also investigated, and an upper limit of 60% was     
+258MD3cL obtained by 1993Mo18 for this decay mode by searching for growth of the
+258MD4cL particles from {+258}Md g.s. by assuming that the ground state was not 
+258MD5cL directly produced during the production of the 57.0-min state in       
+258MD6cL {+254}Es({+18}O,{+14}C) and {+254}Es({+22}Ne,{+18}O) reactions.        
+258MD cL J$Gallagher-Moszkowski rule suggests 1- with                           
+258MD2cL configuration=|p7/2[514] - |n9/2[615]. 1993Mo18 suggest also other     
+258MD3cL K|p values with possible configurations: K|p=0- from                   
+258MD4cL |p7/2[514] - |n7/2[613] or |p3/2[521] - |n3/2[622], and K|p=2- from    
+258MD5cL |p1/2[521] + |n3/2[622]                                                
+258MD cL T$measurement of 1993Mo18. Other measurements:                         
+258MD2cL 60 min {I2} (1986Hu05), 43 min {I4} (1980Ho04).                        
+258MD cL $The isomer was produced by 1980Ho04 in {+255}Es(|a,n), and by         
+258MD2cL 1993Mo18 in {+254}Es({+18}O,{+14}C) and {+254}Es({+22}Ne,{+18}O)       
+258MDxcL reactions.                                                             
                                                                                 
-258MD    ADOPTED LEVELS                                          01NDS    200112
-258MD  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-258MD  Q 2.1E2     SY5380    5 4191    8 7271.3  19    2012WA38                 
-258MD CQ Note: Current evaluation has used the following Q record               
-258MD  Q 210       SY 5379   6  4190   8  7271.3 19    1995AU04                 
-258MD T  ASSIGNMENT:                                                            
-258MD2T    254ES(18O,14C), 254ES(22NE,18O) MASS SEPARATION, CHEM     (1993MO18) 
-258MD3T                                                                         
-258MD C  THEORETICAL STUDIES:                                                   
-258MD C  HEAVY CLUSTER SPONTANEOUS EMISSION RATES WERE STUDIED BY 1985PO11 AND  
-258MD2C  1986PO15. SEE 1986PO15 FOR CALCULATED PARTIAL HALF-LIVE FOR DECAY BY   
-258MD2C  51CA EMISSION; FOR DECAY BY 50CA EMISSION, SEE 1985PO11.               
-258MD C  PARTIAL HALF-LIFE FOR SPONTANEOUS FISSION WAS CALCULATED BY 1985LO17.  
-258MD C  FISSION BARRIER AND DEFORMATION WERE CALCULATED BY 198501.             
-258MD  L 0.0                           51.5 D    3                              
-258MD2 L %A=100 $ %SF+%EC+%B- LE 3E-3 (1993MO18)                                
-258MD CL           THE UPPER LIMIT ON SF+EC+B- BRANCHING WAS DETERMINED BY      
-258MD2CL 1993MO18 FROM THE NUMBER OF SF EVENTS DETECTED. EARLIER MEASUREMENTS:  
-258MD3CL 1968HU06,1970FI12.                                                     
-258MD CL T         MEASUREMENT OF 1993MO18. THE EARLIER MEASURED HALF-LIVES     
-258MD2CL ARE 54 D 5 (1968HU06), 56 D 7 (1970FI12).                              
-258MD CL J         ANALOGY TO 257FM AND TO 257MD SUGGESTS FOR 258MD GS THE      
-258MD2CL 8-,(p 7/2[514],n 9/2[615]) CONFIGURATION. A HIGH SPIN FOR THIS STATE   
-258MD3CL IS CONSISTENT THE UPPER LIMITS FOR THE BETA AND EC DECAYS TO THE LOW-  
-258MD4CL SPIN STATES IN 258NO AND 258FM.                                        
-258MD  L 0.0+X                         57.0 M    9                           M1 
-258MD CL T         MEASUREMENT OF 1993MO18. THE EARLIER MEASURED HALF-LIVES:    
-258MD2CL 60 MIN 2 (1986HU05), 43 MIN 4 (1980HO04).                              
-258MD CL           THE ISOMER WAS PRODUCED BY 1980HO04 IN 255ES(A,N), AND BY    
-258MD2CL 1993MO18 IN 254ES(18O,14C), 254ES(22NE,18O) REACTIONS.                 
-258MD2 L %EC GE 70 $ %SF+%B- LE 30                                              
-258MD CL           THE EC DECAY BRANCHING WAS OBTAINED BY 1993MO18 FROM FERMIUM 
-258MD2CL K X-RAY COUNTS PRECEDING SF EVENTS FROM 258FM DECAY. THE EXPERIMENTAL  
-258MD3CL K X-RAY COUNTS COULD NOT BE CORRECTED FOR SUMMING OF Fm K X-RAYS       
-258MD4CL WITH ANY POSSIBLE GAMMAS FROM EC DECAY AND WITH Fm L X-RAYS.           
-258MD5CL THE AUTHORS OF 1993MO18 SET A LOWER LIMIT FOR THE EC DECAY BRANCHING   
-258MD6CL BY ASSUMING THAT THIS DECAY POPULATES ONLY THE GS BAND IN 258FM.       
-258MD CL           ORIGIN OF THE OBSERVED SF EVENTS THAT WERE NOT               
-258MD2CL CORRELATED WITH THE FERMIUM K X-RAYS DUE TO 258MD EC DECAY,            
-258MD2CL COULD EITHER BE THE 57.0-M 258MD OR ITS B- DECAY DAUGHTER,             
-258MD3CL 258NO. SINCE THESE TWO POSSIBILITIES COULD NOT BE RESOLVED, 1993MO18   
-258MD4CL ASSIGNED THE UPPER LIMIT OF 30% TO THE SUM OF SF AND B- DECAY          
-258MD5CL BRANCHES.                                                              
-258MD CL           AN UPPER LIMIT OF 1.2% FOR ALPHA BRANCH WAS GIVEN BY         
-258MD2CL 1993MO18 FROM ABSENCE OF ANY 57.0-MIN ALPHA ACTIVITY IN THEIR SPECTRA. 
-258MD CL           POSSIBILITY OF DECAY BY AN ISOMERIC TRANSITION TO THE        
-258MD2CL 258MD GS WAS ALSO INVESTIGATED, AND AN UPPER LIMIT OF 60% WAS OBTAINED 
-258MD3CL BY 1993MO18 FOR THIS DECAY MODE BY SEARCHING GROWTH OF THE ALPHA'S     
-258MD4CL FROM 258MD GS BY ASSUMING THAT THE GROUND STATE WAS NOT DIRECTLY       
-258MD5CL PRODUCED DURING THE PRODUCTION OF THE 57.0-M STATE IN 254ES(18O,14C)   
-258MD6CL 254ES(22NE,18O) REACTIONS.                                             
-258MD CL J         EC DECAY, IF MOSTLY TO LOW-SPIN STATES OF THE GS BAND,       
-258MD2CL SUGGESTS A LOW SPIN. ANY OF THE FOLLOWING CONFIGURATIONS ,             
-258MD3CL 1-(p 7/2[514],n 9/2[615]); 0-(p 7/2[514],n 7/2[613]),                  
-258MD4CL 0-(p 3/2[521],n 3/2[622]), OR 2-(p 3/2[521],n 3/2[622]), AS            
-258MD5CL PROPOSED BY 1993MO18, WOULD BE CONSISTENT WITH THE ITS EC DECAY.       
+258NO    ADOPTED LEVELS                                          17NDS    201709
+258NO  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258NO  Q -3300     SY 6840   SY 4800   SY 8150   SY    2017WA10                 
+258NO cQ $Estimated uncertainties (2017Wa10): 140 for Q(|b{+-}), 100 for S(n),  
+258NO2cQ S(p) and Q(|a),                                                        
+258NO cQ $S(2n)=12490 {I100}, S(2p)=8590 {I100} (syst,2017Wa10)                 
+258NO c  {+258}No produced and identified by 1969NuZZ in {+248}Cm({+13}C,X)     
+258NO2c  reaction, followed by measurement of |a decay, E|a and half-life       
+258NO c  1986Hu01, 1989Hu09: {+248}Cm({+13}C,X){+258}No,E=81 MeV; measured      
+258NO2c  fission fragment mass distribution, kinetic energy partitioning from   
+258NO3c  SF decay of {+258}No                                                   
+258NO c  1985Tu01: {+238}U({+20}Ne,F),E=292 MeV; measured                       
+258NO2c  (fragment)(fragment)(|q), (fragment)(fragment)(|f); deduced linear     
+258NO3c  momentum transfer for {+258}No compound nucleus.                       
+258NO c  2009Pe09: {+232}Th({+26}Mg,F),E=148 MeV; measured |s, mass and energy  
+258NO2c  distributions of fission fragments, neutrons by time-of-flight method; 
+258NO3c  deduced ratio of widths for neutron emission and fission               
+258NO4c  (|G{-n}/|G{-F}) for the compound nucleus of {+258}No                   
+258NO c  While the half-life of {+262}Rf does not seem confirmed as yet         
+258NO2c  (most recent value being 17 ms {I16} from 2013Mu08 as opposed to       
+258NO3c  210 ms {I+128-58} by A. Gorshkov et al. in 2008 GSI annual Sci. Rep.   
+258NO4c  p140 (2009); 2.5 s {I+24-16} in 1998Tu01; 2.1 s {I2} in 1996La11;      
+258NO5c  1.2 s {I+10-5} in 1994La22; 1.3 s {I+16-8} in 1994Og04; 47 ms {I5}     
+258NO6c  in 1985So03), it is quite definite that {+262}Rf decays primarily by   
+258NO7c  SF mode. No evidence has been found for |a decay mode of {+262}Rf      
+258NO c  Theoretical studies: consult the NSR database at www.nndc.bnl.gov for  
+258NO2c  about 85 references dealing with theoretical calculations of           
+258NO3c  half-lives for different decay modes, binding energies, fission        
+258NO4c  characteristics, and other nuclear structure aspects.                  
+258NO d  1983Bo15: calculated equilibrium deformations, deformation energy,     
+258NO2d  and static electric moments.                                           
+258NO d  Fission-barrier calculations: 1989Mo03, 1988Hu13, 1983Cw01, 1974Ju02   
+258NO d  Theoretical SF decay half-lives: 1976Ra02, 1978Po09,                   
+258NO2d  1988Hu13, 1989St20, 1989Mo03, 1992Bh03, and 1994Mo31.                  
+258NO d  Theoretical partial |a-decay half-lives: 1976Ra02, 1997Po18.           
+258NO d  Decay by pion emission, theoretical: 1988Io04.                         
+258NO d  Theoretical ground-state properties, deformation parameters, Q(|a),    
+258NO2d  T{-1/2}(|a), and T{-1/2}(SF), stability of heavy and                   
+258NO3d  superheavy elements: 1994Mo31.                                         
+258NO d  Theoretical mass parameters: 1969Wy02.                                 
+258NO d  Theoretical fission-fragment kinetic energies mass distributions:      
+258NO2d  1988Gr05, 1993Mo22                                                     
+258NO  XA258MD B- DECAY (57.0 M):?                                              
+258NO  XB258LR EC DECAY (3.92 S)                                                
+258NO  L 0            0+               1.2 MS    2                              
+258NO2 L %SF AP 100                                                             
+258NO cL T$measured by 1989Hu09. Earlier measurement: T{-1/2}|?1.2 ms (1969NuZZ)
+258NO cL $Only the SF decay mode has been observed.                             
+258NO2cL Symmetric mass distribution was observed in SF, and total kinetic      
+258NO2cL energy of fission fragments were measured by 1986Hu01 and 1989Hu09.    
+258NO cL $Theoretical partial |a half-lives, log T{-1/2}(|a)=-8.89 y            
+258NO2cL (T{-1/2}(|a)=41 ms) (1976Ra02) and T{-1/2}(|a)=2.1 min                 
+258NO3cL (1997Po18), suggest %|a=3 and %|a=0.66, respectively.                  
                                                                                 
-258NO    ADOPTED LEVELS                                          01NDS    200112
-258NO  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-258NO  Q -3.30E3   SY6.84E3  SY4.81E3  SY8.15E3  SY    2012WA38                 
-258NO CQ Note: Current evaluation has used the following Q record               
-258NO  Q -3430     SY 6820   SY 4810   SY 8150   SY    1995AU04                 
-258NO C                                                                         
-258NO C  THEORETICAL STUDIES:                                                   
-258NO C  1983BO15 CALCULATED EQUILIBRIUM DEFORMATIONS, DEFORMATION ENERGY,      
-258NO2C  AND STATIC ELECTRIC MOMENTS.                                           
-258NO C  FOR FISSION-BARRIER CALCULATIONS, SEE 1989MO03, 1988HU13,              
-258NO2C  1983CW01, 1974JU02, FOR EXAMPLE.                                       
-258NO C  FOR CALCULATED SF DECAY HALF-LIVES, SEE 1976RA02, 1978PO09,            
-258NO2C  1988HU13, 1989ST20, 1989MO03, 1992BH03, AND 1994MO31.                  
-258NO C  FOR CALCULATIONS OF PARTIAL ALPHA HALF-LIVES, SEE 1976RA02, 1997PO18.  
-258NO C  DECAY BY PION EMISSION WAS STUDIED BY 1988IO04.                        
-258NO C  THE GROUND-STATE PROPERTIES, DEFORMATION PARAMETERS, QA, T1/2(A),      
-258NO2C  AND T1/2(SF) WERE CALCULATED, STABILITY OF HEAVY AND SUPERHEAVY        
-258NO3C  ELEMENTS WERE STUDIED AND REVIEWED BY 1994MO31.                        
-258NO C  MASS PARAMETERS WERE CALCULATED BY 1969WY02.                           
-258NO C  SEE 1988GR05, 1993MO22 FOR CALCULATIONS OF FISSION-FRAGMENT            
-258NO4C  KINETIC ENERGIES MASS DISTRIBUTIONS.                                   
-258NO C                                                                         
-258NO  L 0.0          0+               1.2 MS    2                              
-258NO CL T         MEASURED BY 1989HU09. EARLIER MEASUREMENT:                   
-258NO2CL T1/2 AP 1.2 MS (1969NUZZ).                                             
-258NO2 L %SF LE 100                                                             
-258NO CL           ONLY SF DECAY HAS BEEN OBSERVED.                             
-258NO CL           CALCULATED PARTIAL ALPHA HALF-LIVES, LOG T1/2(A)=-8.89 Y     
-258NO2CL (THAT IS, T1/2(A)=41 MS) (1976RA02) AND T1/2(A)=2.1 M (1997PO18),      
-258NO3CL SUGGEST %SF=3 AND SF%=0.66, RESPECTIVELY.                              
-258NO CL           SYMMETRIC MASS DISTRIBUTION WAS OBSERVED IN SF, AND          
-258NO2CL TOTAL KINETIC ENERGY OF FISSION FRAGMENTS WERE MEASURED BY 1986HU01,   
-258NO3CL 1989HU09.                                                              
-                                                                                
-258NO    258MD B- DECAY (57.0 M)                                 01NDS    200112
-258NO  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-258MD  P 0.0+X                         57.0 M    9              210       SY    
+258NO    258MD B- DECAY (57.0 M):?                               17NDS    201709
+258NO  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258NO c  See {+258}Md Adopted Levels for evidence for this decay mode of        
+258NO2c  the 57.0-min isomer. Decay scheme is unknown                           
+258MD  P 0+X          (1-)             57.0 M    9              210       SY    
+258MD cP E,J,T$From {+258}Md Adopted Levels                                     
+258MD cP QP$210 {I100} (2017Wa10)                                               
 258NO  N                       0.30    LE                                       
-258NO C  DECAY SCHEME HAS NOT BEEN STUDIED. SEE 258MD ADOPTED LEVELS FOR        
-258NO2C  EVIDENCE FOR THIS DECAY MODE.                                          
                                                                                 
-258LR    ADOPTED LEVELS                                          01NDS    200112
-258LR  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-258LR  Q -1.56E3   SY5.90E3  SY2.76E3  SY8904    19    2012WA38                 
-258LR CQ Note: Current evaluation has used the following Q record               
-258LR  Q -1570     SY 5950   SY 2600   SY 8900   20    1995AU04                 
-258LR T  ASSIGNMENT:                                                            
-258LR2T         248CM(15N,4N), 249CF(12C,P2N); EXCITATION FUNCTION (1971ES01).  
-258LR C                                                                         
-258LR C  FOR CALCULATION OF FISSION BARRIER, SEE, FOR EXAMPLE, 1985CW01.        
-258LR CL E(A)      LEVELS SEEN 262DB ALPHA DECAY. QA(262DB)=9005 AND            
-258LR2CL THE MEASURED ALPHA ENERGIES YIELD X=200 150.                           
-258LR  L 0.0                           4.1 S     3                              
-258LR CL T         MEASURED HALF-LIVES ARE 3.92 S +35-31 (1992GR02), 4.35 S 59  
-258LR2CL (1976BEZY), 4.2 S 6 (1971ES01); UNWEIGHTED AVERAGE IS ADOPTED.         
-258LR2 L %A>95$ %EC(+%SF)<5                                                     
-258LR CL           EXPECTED SF DECAY OF THE EC-DECAY DAUGHTER WAS NOT DETECTED  
-258LR2CL AND AN UPPER LIMIT OF 5% WAS GIVEN BY 1971ES01.                        
-258LR CL           T1/2(SF)>20 S, MEASURED BY 1971FL02, GIVES %SF<20.           
-258LR CL           1992GR02 RECORDED ONE ALPHA-SF CORRELATION, PROBABLY         
-258LR2CL DUE TO 262DB ALPHA FOLLOWED BY THE EC DECAY OF 258LR TO 258NO,         
-258LR3CL AND 28 ALPHA-ALPHA CORRELATIONS IN THEIR STUDY FOR 262DB A DECAY,      
-258LR4CL AND SUGGESTED THAT THE EC AND SF DECAY BRANCHES OF 258LR ACCOUNT FOR   
-258LR5CL LESS THAN A FEW PERCENT.                                               
-258LR  L 0.0+X                                                              A   
-258LR  L X+142     20                                                       A   
-258LR  L X+223     20                                                       A   
-258LR CL           FROM THE FAVORED ALPHA (THE HINDRANCE FACTOR OF AP 2.2)      
-258LR2CL DECAYING TO THIS LEVEL, THE CONFIGURATION OF THIS LEVEL IS THE SAME    
-258LR3CL AS THAT OF ITS PARENT, 262DB G.S.                                      
+258NO    258LR EC DECAY (3.92 S)       2014HA04                  17NDS    201709
+258NO  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258NO c  2014Ha04: {+258}Lr from the |a decay of {+262}Db, which was produced   
+258NO2c  in {+248}Cm({+19}F,5n),E=97.4,103.1 MeV reaction using RILAC-RIKEN     
+258NO3c  facility. The evaporation residues (EVR) were separated                
+258NO4c  in flight from beam particles and majority of nuclear transfer         
+258NO5c  products by the gas-filled recoil ion separator (GARIS) and transported
+258NO6c  to the rotating wheel apparatus MANON (Measurement system for Alpha-   
+258NO7c  particle and spontaneous fission events ON-line). Measured T{-1/2},    
+258NO8c  time-correlated |a|a and |a(SF) events using Si PIN photodiodes.       
+258NO c  Details of decay scheme are not available                              
+258LR  P 0                             3.92 S    33             3300      SY    
+258LR cP T$From {+258}Lr Adopted Levels                                         
+258LR cP QP$3300 {I140} (syst, 2017Wa10)                                        
+258NO  N                       0.026   18                                       
+258NO cN BR$%|e=2.6 {I18} (2014Ha04)                                            
                                                                                 
-258LR    262DB A DECAY                                           01NDS    200112
-258LR  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-262DB  P 0.0                           35 S      5              9005      SY    
-258LR  N                        0.67   AP                                       
-258LR CA E         MEASUREMENTS OF 1977BEZM. THE ALPHA SPECTRUM TAKEN BY        
-258LR2CA 1971GH01 HAD COMPLEX ACTIVITIES. TWO ALPHA PEAKS AT 8.45 MEV AND       
-258LR3CA 8.66 MEV WERE DETECTED WITH INTENSITIES OF AP 80% AND AP 20% OF ALPHA  
-258LR4CA DECAYS, RESPECTIVELY. THE 8.66-MEV ALPHA WAS MASKED BY ALPHA'S FROM    
-258LR5CA 258LR.                                                                 
-258LR CA IA        INTENSITY PER 100 ALPHA DECAYS, MEASURED BY 1977BEZM.        
-258LR CA HF        R0(258LR)=1.48 1, T1/2(262DB)=35 S 5 AND %A(262DB) AP 67     
-258LR2CA ARE USED IN THE CALCULATIONS.                                          
-258LR CL E         THE QA(262DB)=9005 150, OBTAINED BY 1995AU04 FROM            
-258LR2CL SYSTEMATICS SUGGESTS THAT THE 8670-KEV ALPHA GOES TO A LEVEL IN 258LR  
-258LR3CL AT X=200 150.                                                          
-258LR  L 0.0+X                                                                  
-258LR  A 8670      20 9        95      AP                                       
-258LR  L X+142                                                                  
-258LR  A 8530      20 16       19      AP                                       
-258LR  L X+223                                                                  
-258LR  A 8450      20 75       2.2     AP                                       
+258LR    ADOPTED LEVELS                                          17NDS    201709
+258LR  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258LR  Q -1560     SY 5960   SY 2750   SY 8904   19    2017WA10                 
+258LR cQ $Estimated uncertainties (2017Wa10): 110 for Q(|b{+-}) and S(n),       
+258LR2cQ 100 for S(p)                                                           
+258LR cQ $S(2n)=13110 {I130}, S(2p)=7250 {I160} (syst,2017Wa10)                 
+258LR c  1971Es01: {+258}Lr produced and identified in {+248}Cm({+15}N,4n),     
+258LR2c  and {+249}Cf({+12}C,p2n) reactions with measurement of excitation      
+258LR3c  functions                                                              
+258LR c  Theoretical studies: consult the NSR database at www.nndc.bnl.gov for  
+258LR2c  about 25 references dealing with theoretical calculations of           
+258LR3c  half-lives for different decay modes, binding energies, fission        
+258LR4c  characteristics, and other nuclear structure aspects.                  
+258LR d  Calculation of fission barrier: 1985Cw01.                              
+258LR  XA262DB A DECAY (33.8 S)                                                 
+258LR  L 0                              3.92 S   33                             
+258LR2 L %A=97.4 18 $ %EC=2.6 18 (2014Ha04)                                     
+258LRX L XREF=A                                                                 
+258LR cL T$weighted average of measured values of 3.54 s {I+46-36} (2014Ha04,   
+258LR2cL earlier values: 2.6 s {I+120-11} in 2012Mo25, 4.0 s {I+22-10} in       
+258LR3cL 2009Mo12); 4.2 s {I+15-11} (1992Sc30); 3.92 s {I+35-31} (1992Gr02);    
+258LR4cL 4.35 s {I59} (1976BeZY), and 4.2 s {I6} (1971Es01)                     
+258LR cL $Decay modes from 2014Ha04. Others: SF decay of the |e-decay daughter  
+258LR2cL was not detected and an upper limit of 5% was given by 1971Es01.       
+258LR3cL T{-1/2}(SF)>20 s, measured by 1971Fl02, gives %SF<20.                  
+258LR4cL 1992Gr02 recorded one |a-SF correlation, probably                      
+258LR6cL due to {+262}Db |a followed by the |e decay of {+258}Lr to {+258}No,   
+258LR7cL and 28 |a-|a correlations in their study of {+262}Db |a decay,         
+258LR8cL and suggested that the |e and SF decay branches of {+258}Lr account for
+258LR9cL less than a few percent.                                               
+258LR  L 0+X                                                                    
+258LRX L XREF=A                                                                 
+258LR cL E$x=235 {I105} from Q(|a)=9050 {I100} for {+262}Db (syst,2017Wa10) and 
+258LR2cL E|a=8680 {I30} (2014Ha04)                                              
+258LR  L 153+X     35                                                          ?
+258LRX L XREF=A                                                                 
+258LR cL E$this level is treated as questionable as the 8530|a is observed      
+258LR2cL by 1977BeZM only, and not identified clearly by 2014Ha04, even though  
+258LR3cL in 1977BeZM the 8530|a is claimed as stronger than the 8670|a which    
+258LR4cL was observed clearly by 2014Ha04                                       
+258LR  L 224+X     50                                                           
+258LRX L XREF=A                                                                 
+258LR cL $From the favored |a (the hindrance factor of |?3.4) transition        
+258LR2cL to this level, the configuration of this level is expected to be the   
+258LR3cL same as that of its parent, the ground state of {+262}Db g.s.          
                                                                                 
-258RF    ADOPTED LEVELS                                          01NDS    200112
-258RF  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-258RF  Q -5.5E3    SY7.60E3  4 3.55E3  SY9.19E3  3     2012WA38                 
-258RF CQ Note: Current evaluation has used the following Q record               
-258RF  Q -5470     SY 7610   SY 3600   SY 9330   SY    1995AU04                 
-258RF T  ASSIGNMENT:                                                            
-258RF2T    249CF(12C,3N) AND 249CF(13C,4N) EXCITATION FUNCTION        1969GH01  
-258RF3T    208PB(50TI,G) PARENT OF 246CF                              1984OG03  
-258RF4T    246CM(16O,4N) PRODUCTION CROSS SECTION AT E(16O)=95 MEV,             
-258RF5T                                     SYSTEMATICS OF T1/2(SF)   1985SO03  
-258RF6T                                                                         
-258RF C  THEORETICAL STUDIES:                                                   
-258RF C  POTENTIAL ENERGY SURFACES AND FISSION BARRIERS WERE CALCULATED BY      
-258RF2C  1972LA05, 1983CW01, 1986MA02.                                          
-258RF C  FOR CALCULATED HALF-LIVES FOR SF DECAY, SEE 1978PO09, 1985LO17,        
-258RF2C  1987MO16, 1989ST20, 1992BH03.                                          
-258RF C  SEE 1992SI13 FOR CLUSTER DECAY CALCULATIONS.                           
-258RF C  NONROTATIONAL LEVELS, B(E2), B(E3) VALUES WERE CALCULATED BY 1973IV01. 
-258RF C  NUCLEAR DEFORMATION, 2+ FIRST ROTATIONAL LEVEL ENERGY, QA, AND         
-258RF2C  IA(TO 2+ STATE)/IA(TO 0+ STATE) WERE CALCULATED BY 2001MU06.           
-258RF C  MASS PARAMETERS WERE CALCULATED BY 1969WY02 AND 1994BA97.              
-258RF C                                                                         
-258RF  L 0.0          0+               12 MS     2                              
-258RF CL T         MEASURED HALF-LIVES (FROM SF ACTIVITIES) ARE                 
-258RF2CL 11 MS 2 (1969GH01), 13 MS 3 (1985SO03).                                
-258RF CL           SEE 1985HE22, 1994HU18 FOR MEASUREMENTS OF TOTAL KINETIC     
-258RF2CL ENERGY DISTRIBUTION OF FISSION FRAGMENTS.                              
-258RF2 L %SF=87 2$ %A=13 2                                                      
-258RF CL           THE ALPHA DECAY OF 258RF HAS BEEN INDIRECTLY OBSERVED, AND   
-258RF2CL %A=13 WAS DETERMINED BY 1984OG03 FROM RATIO OF FISSION EVENTS          
-258RF3CL TO 246CF ALPHA COUNTS (ALPHA-DECAY PRODUCT OF 258RF)                   
-258RF CL           FROM THE REQUIREMENT OF HF(ALPHA FROM 258RF GS TO 254NO GS)  
-258RF2CL =1.0, THE HF CALCULATIONS YIELDS %A=13 2 FOR R0(254NO)=1.472 10,       
-258RF3CL EXTRAPOLATED FROM R0 SYSTEMATICS GIVEN IN 1998AK04.                    
-258RF4CL IN THE CALCULATIONS, QA(258RF)=9330 200, AND  T1/2(258RF)=12 MS 2      
-258RF5CL ARE USED, AND IA(TO 254NO GS)=85+-15 PER 100 ALPHA DECAYS IS           
-258RF6CL ASSUMED.                                                               
-258RF CL           THEORETICAL CALCULATIONS OF 1997MO25 GIVE T1/2(A)=74 MS      
-258RF2CL WHICH CORRESPONDS TO %A=16, IN AGREEMENT WITH THE BRANCHING MEASURED   
-258RF3CL 1984OG03. 1997PO18 OBTAINED ALSO T1/2(A)=74 MS FROM SEMI-EMPIRICAL     
-258RF4CL FORMULA. OTHER T1/2(A) CALCULATIONS: 1976RA02.                         
-258RF CL           THEORETICAL CALCULATIONS FOR T1/2(SF) FROM VARIOUS METHODS   
-258RF2CL GAVE RESULTS IN THE RANGE OF LOG T1/2(SF IN YEARS)=-8 TO -11.          
+258LR    262DB A DECAY (33.8 S)        2014HA04                  17NDS    201709
+258LR  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258LR c  2014Ha04: {+262}Db was produced in {+248}Cm({+19}F,5n),E=97.4,103.1 MeV
+258LR2c  at the RILAC-RIKEN facility. The evaporation residues (EVR) were       
+258LR3c  separated in flight from beam particles and majority of nuclear        
+258LR4c  transfer products by the gas-filled recoil ion separator (GARIS), and  
+258LR5c  transported to the rotating wheel apparatus MANON (Measurement system  
+258LR6c  for Alpha-particle and spontaneous fission events ON-line). Measured   
+258LR7c  time-correlated |a-|a and |a-SF events in E|a=8-9 MeV range and SF     
+258LR8c  fragment in |>30 MeV using Si PIN photodiodes                          
+258LR c  1977BeZM: measured E|a, I|a, T{-1/2}                                   
+258LR c  1971Gh01: |a spectrum taken by 1971Gh01 had complex activities. Two    
+258LR2c  |a peaks at 8.45 MeV and 8.66 MeV were detected with intensities of    
+258LR3c  |?80% and |?20%, respectively. The 8.66-MeV |a was masked by |a peaks  
+258LR4c  from {+258}Lr decay.                                                   
+258LR cA E,IA$From measurement by 2014Ha04                                      
+258LR cA HF$r{-0}({+258}Lr)=1.46 {I3}, estimated value from extrapolation of    
+258LR2cA known r{-0} values for A=150-158 No, Rf and Sg isotopes                
+262DB  P 0.0                           33.8 S    +44-35         9050      SY    
+262DB cP QP$9050 {I100} (syst,2017Wa10)                                         
+262DB cP T$From average decay time of 76 |a-|a correlated events (2014Ha04,     
+262DB2cP earlier values deduced from fewer events: 39 s {I+53-14} in 2012Mo25,  
+262DB3cP 24 s {I+14-7} in 2009Mo12, 14 s {I+26-10} in 2007Mo43, 28 s {I+140-13} 
+262DB4cP in 2004Mo42). Other half-life measurements: 27 s {I+20-11} (1999Dr09,  
+262DB5cP |a decay); 35.7 s {I+69-54} (1992Sc30); 35.3 s {I123} (1989Kr17,       
+262DB6cP correlated |a decays); 33.5 s {I94} (1989Kr17, SF decay); 28 s {I+7-5} 
+262DB7cP and 32 s {I+8-6} (1988Gr30, |a and SF decays); 35.2 s {I+104-72}       
+262DB8cP (1979Dr07, SF decay); 32.6 s {I65} (1977Be43, SF decay); 34.1 s {I46}  
+262DB9cP (1977Be43, |a decay); 40 s {I10} (1971Gh01). Weighted average of all   
+262DBAcP the independent values is 34.4 s {I+44-35} (assigning the lowest       
+262DBBcP uncertainty in the data points), however the most precise              
+262DBCcP value from 2014Ha04 is preferred here. In 2001Ak11 evaluation,         
+262DBDcP T{-1/2}=35 s {I5}                                                      
+258LR  N                       0.48    4                                        
+258LR cN BR$%SF=52 {I4} (2014Ha04), thus %|a=48 {I4}; no |e decay from {+262}Db 
+258LR2cN was observed. Others: %|a=49 {I10} (1989Kr17), |?67 (1977BeZM)         
+258LR  L 0                             3.92 S    33                             
+258LR cL T$from {+258}Lr Adopted Levels                                         
+258LR  L 0+X                                                                    
+258LR cL E$x=235 {I105} from From Q(|a)({+262}Db)=9050 {I100} (syst,2017Wa10)   
+258LR2cL and E|a=8680 {I30}                                                     
+258LR  A 8680      30 30     5  130    AP                                       
+258LR cA E$average of 23 |a energy values between 8.61-8.77 MeV energy range    
+258LR2cA (2014Ha04). Other measured E|a=8670 {I20} (1977BeZM), 8660 (1971Gh01)  
+258LR cA IA$others: 9 (1977BeZM), 20 (1971Gh01)                                 
+258LR  L 153+X     35                                                          ?
+258LR  A 8530      20                                                          ?
+258LR cA E$this |a group from 1977BeZM only, not identified clearly             
+258LR2cA by 2014Ha04, even though in 1977BeZM this |a is claimed as stronger    
+258LR3cA than the 8670|a which was observed clearly by 2014Ha04. This |a        
+258LR4cA branch is also questioned by 1989Kr17                                  
+258LR cA IA,HF$16 (1977BeZM), hindrance factor |?25                             
+258LR  L 224+X     50                                                           
+258LR  A 8460      40 70     5  2.1    AP                                       
+258LR cA E$average of 52 |a energy values between 8.30-8.55 MeV energy range.   
+258LR2cA Others: 8450 {I20} (1977BeZM), 8450 (1971Gh01)                         
+258LR cA IA$others: 75 (1977BeZM), 80 (1971Gh01)                                
                                                                                 
-258DB    ADOPTED LEVELS                                          01NDS    200112
-258DB  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-258DB  XA262BH A DECAY (102 MS)                                                 
-258DB  XB262BH A DECAY (8.0 MS)                                                 
-258DB  Q -3.4E3    SY6.5E3   SY1.4E3   SY9.50E3  5     2012WA38                 
-258DB CQ Note: Current evaluation has used the following Q record               
-258DB  Q -3460     SY6600    SY 1360   SY 9550   SY    1995AU04                 
-258DB T  ASSIGNMENT:                                                            
-258DB2T          208BI(50TI,N), PARENT OF 258RF                         1984OG03
-258DB3T                         PARENT OF 254NO,254LR,250FM,250MD:              
-258DB4T                              IDENTIFIED BY (A)(A) CORRELATION 1985HE22  
-258DB5T                         EXCITATION FUNCTION                   1998HOZZ  
-258DB6T          241AM(22NE,5N) PARENT OF 254LR (8460A)                 2001GA20
-258DB7T                                                                         
-258DB C  THEORETICAL STUDIES:                                                   
-258DB C  THE PARTIAL HALF-LIFE FOR SPONTANEOUS FISSION FROM THE GROUND-STATE WAS
-258DB2C  CALCULATED BY 1985LO17.                                                
-258DB C  THE FISSION BARRIER WAS CALCULATED BY 1985CW01.                        
-258DB C  THE PROCESS OF THE FORMATION OF 258DB BY 209BI(50TI,N) REACTION WAS    
-258DB2C  STUDIED, THE EXCITATION FUNCTION WAS CALCULATED, AND COMPARED WITH     
-258DB3C  EXPERIMENTAL PRODUCTION CROSS SECTIONS BY 1999CH42 AND 2000DE09.       
-258DB C  GROUND-STATE BINDING ENERGIES WERE CALCULATED BY 2000PA12.             
-258DB C  MASS EXCESS OF 258DB WAS CALCULATED BY 1996WU09.                       
-258DB C                                                                         
-258DB CL E(A)      RELATIVE LEVEL ENERGIES ARE CALCULATED FROM MEASURED EA'S    
-258DB2CL OF 102-MS 262BH. THE QA(262BH) VALUE OF 10220+-160, OBTAINED BY        
-258DB3CL 1995AU04 FROM QA SYSTEMATICS, SUGGESTS THAT                            
-258DB4CL E(102-MS 262BH ALPHA PARENT STATE)-E(LEVEL IN 258DB FED BY 10143A)     
-258DB5CL =80+-160. THE 10143A MAY POSSIBLY BE A TRANSITION TO THE 258DB GS,     
-258DB6CL AND THEREFORE, THE VALUE OF ^z GIVEN HERE MAY BE ZERO.                 
-258DB CL E(B)      RELATIVE LEVEL ENERGIES ARE CALCULATED FROM MEASURED EA'S    
-258DB2CL ASSIGNED TO THE 8.0-MS 262BH DECAY. FROM QA=10220+-160, OBTAINED BY    
-258DB3CL 1995AU04 FROM QA SYSTEMATICS, AND ASSUMING THAT THE ALPHA'S FEEDING    
-258DB4CL THESE LEVELS DECAY FROM THE SAME LEVEL, E(8.0-MS 262BH ALPHA PARENT    
-258DB5CL STATE)-E(LEVEL IN 258DB FED BY 10443A)=390 160. THESE LEVEL ENERGIES   
-258DB6CL SHOULD BE CONSIDERED TENTATIVE. SEE 8.0-MS 262BH A DECAY DATA.         
-258DB  L 0.0                           4.0 S     10                             
-258DB CL T         UNWIEGHTED AVERAGE OF FOLLOWING MEASURED HALF-LIVES:         
-258DB2CL 4.2 S +16-5 (1984OG03; SPONTANEOUS-FISSION DECAY OF 258RF, DAUGHTER    
-258DB3CL OF 258DB WAS DETECTED), 4.4 S +9-6 (1985HE22; ALPHAS FOLLOWING 262BH   
-258DB4CL DECAY WERE MEASURED), 3.0 S +8-6 (1989MU09; ALPHAS FOLLOWING 262BH     
-258DB5CL DECAY WERE MEASURED) 4.3 S 11 (2001GA20; FROM ALPHAS OF 258DB, PRODUCED
-258DB6CL IN 241AM(22NE,5N)) IS ADOPTED WITH AN INCREASED UNCERTAINTY.           
-258DB7CL OTHER MEASUREMENTS: 1.8 S +11-7 (1981MU06), 6.1 S +10-8 (1985HE22).    
-258DB DL           T1/2=1.8 S +11-7 WAS MEASURED BY 1981MU06 BY DETECTION OF    
-258DB2DL ALPHAS FOLLOWING 262BH A DECAY, AND 4.0 S +18-16 FOLLOWING PRODUCTION  
-258DB3DL OF 258DB IN 209BI(50TI,X)  (1981MU06); 6.1 S +10-8 WAS MEASURED BY     
-258DB4DL 1985HE22 FROM SF ACTIVITIES.                                           
-258DB2 L %A=67 +5-9 $ %EC=33 +9-5 $ %SF<1                                       
-258DB CL           ALPHA AND EC BRANCHINGS WERE DETERMINED BY 1985HE22 FROM     
-258DB2CL COMPARISON OF ALPHA COUNTS FROM 258DB AND SF EVENTS THAT WERE          
-258DB3CL ASSIGNED TO 258RF, THE EC DECAY DAUGHTER OF 258DB. THE UPPER LIMIT OF  
-258DB4CL 1% FOR SF DECAY WAS ESTIMATED BY 1985HE22 FROM COMPARISON OF THE       
-258DB5CL SPONTANEOUS FISSION HALF-LIVES OF 255RF, 256RF AND 257DB.              
-258DB6CL OTHER MEASUREMENT: %EC=25 (1984OG03).                                  
-258DB7CL                                                                        
-258DB  L 0.0+Y                         20 S      10                          M1?
-258DB CL T         DEDUCED BY 1985HE22 BASED ON DIFFERENCE IN HALF-LIVES        
-258DB2CL OBSERVED FROM A DECAY (4.4 S) AND SF (6.1 S +10-6); THE LARGER VALUE   
-258DB3CL WAS EXPLAINED BY 1985HE22 BY POSTULATING A 20-S ISOMER IN 258DB WHICH  
-258DB3CL DECAYS BY EC TO 258RF WHICH IN TURN DECAYS BY SF WITH T1/2=12 MS.      
-258DB CL           EXISTENCE OF THIS LEVEL HAS NOT BEEN ESTABLISHED.            
+258RF    ADOPTED LEVELS                                          17NDS    201709
+258RF  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258RF  Q -5460     SY 7600   30 3610   SY 9190   30    2017WA10                 
+258RF cQ $Estimated uncertainties (2017Wa10): 310 for Q(|b{+-}), 60 for S(p)    
+258RF cQ $S(2n)=14020 {I40}, S(2p)=6060 {I30} (2017Wa10)                        
+258RF c  1969Gh01: {+258}Rf produced and identified in {+249}Cf({+12}C,3n) and  
+258RF2c  {+249}Cf({+13}C,4n) reactions through measurement of excitation        
+258RF3c  functions and half-life for fission and alpha decays                   
+258RF c  1984Og03: {+258}Rf produced in {+208}Pb({+50}Ti,|g) and identified as  
+258RF2c  parent of {+246}Cf in the |a-decay chain                               
+258RF c  1985So03: {+258}Rf produced in {+246}Cm({+16}O,4n),E=95 MeV and        
+258RF2c  measured production cross section                                      
+258RF c  2008Ga08: {+258}Rf produced in {+238}U({+26}Mg{+6+},6n) reaction at    
+258RF2c  E=4.9-6.0 MeV/nucleon; {+238}UF{-4} rotating target at 88-Inch         
+258RF3c  cyclotron facility at LBNL and with Berkeley gas-filled recoil         
+258RF4c  separator (BGS) of the LBNL. Evaporation residues recoiling from the   
+258RF5c  target were separated by the BGS from the beam and other reaction      
+258RF6c  products  on the basis of magnetic rigidities in He gas. Measured      
+258RF7c  (evaporation residues)|a and (evaporation residues)|a|a correlations,  
+258RF8c  |a decay, SF decay, half-life, excitation functions.                   
+258RF c  2016He15: {+258}Rf obtained as daughter of {+258}Db, which was produced
+258RF2c  in {+209}Bi({+50}Ti,n),E=236 MeV, with {+50}Ti beam from the ECR source
+258RF3c  of the UNILAC at GSI. The Evaporation residues (ERs) were separated by 
+258RF4c  the velocity filter SHIP and implanted into a position-sensitive       
+258RF5c  16-strip Si PIPS detector for detecting ERs, conversion electrons, and 
+258RF6c  subsequent |a-decays or spontaneous fission (SF) events. Escaped       
+258RF7c  products into the backward hemisphere were detected by a box of six    
+258RF8c  Si wafers. Measured correlations between ERs, x rays, ce, |a-decay and 
+258RF9c  SF events, half-life of {+258}Rf decay from various correlations, and  
+258RFAc  %|a decay mode of {+258}Rf.                                            
+258RF c  Theoretical studies: consult the NSR database at www.nndc.bnl.gov for  
+258RF2c  about 105 references dealing with theoretical calculations of          
+258RF3c  half-lives for different decay modes, binding energies, fission        
+258RF4c  characteristics, and other nuclear structure aspects.                  
+258RF d  Theoretical potential energy surfaces and fission barriers:            
+258RF2d  1972La05, 1983Cw01, 1986Ma02.                                          
+258RF d  Theoretical half-lives for SF decay: 1978Po09, 1985Lo17,               
+258RF2d  1987Mo16, 1989St20, 1992Bh03.                                          
+258RF d  1992Si13: cluster decay calculations.                                  
+258RF d  1973Iv01: Theoretical nonrotational levels, B(E2), B(E3) values        
+258RF d  2001Mu06: Theoretical  nuclear deformation, 2+ first rotational level  
+258RF2d  energy, Q(|a), and I|a(to 2+ state)/I|a(to 0+ state)                   
+258RF d  Theoretical mass parameters: 1969Wy02 and 1994Ba97.                    
+258RF c  The decay schemes of {+258}Db activities are tentative according to    
+258RF2c  2016He15                                                               
+258RF  XA258DB EC DECAY (4.3 S)                                                 
+258RF  XB258DB EC DECAY (1.9 S)                                                 
+258RF  L 0            0+               12.0 MS   12                             
+258RF2 L %SF=95.1 16$ %A=4.9 16 (2016He15)                                      
+258RFX L XREF=AB                                                                
+258RF cL $%|a from the number of SF and |a decays correlated to ce events       
+258RF2cL (2016He15). Others: 31% {I11} (2008Ga08, from four |a-decay events, and
+258RF3cL 54 SF events, EVR-|a|a and EVR-SF correlation);                        
+258RF4cL indirect value of %|a=13 determined by 1984Og03 from ratio of          
+258RF5cL fission events to {+246}Cf |a counts (|a-daughter of {+258}Rf).        
+258RF cL T$unweighted average of 9.4 ms {I+10-6} (2016He15, weighted average of 
+258RF2cL several correlated decay curves); 14.7 ms {I+12-10} (2008Ga08);        
+258RF3cL 13 ms {I3} (1985So03) and 11 ms {I2} (1969Gh01). Weighted average      
+258RF4cL is 11.3 ms {I14}, but with a reduced |h{+2} of 5.1 as compared with    
+258RF5cL critical |h{+2}=2.6                                                    
+258RF cL T$2016He15 give the following half-lives from different sets of        
+258RF2cL correlated decay curves and also photons: 10.0 ms {I11}, 10.1 ms {I30},
+258RF3cL 10.9 ms {I+66-30}, 13.3 ms {I+58-31}, 6.2 ms {I31}, 4.7 ms {I+47-16},  
+258RF4cL 9.3 ms {I+26-17}; the last from photon decay curve. Weighted average   
+258RF5cL of all these values is 9.4 ms {I+10-6}, and unweighted average is      
+258RF6cL 9.2 ms {I11}                                                           
+258RF cL $78 EVR-SF correlation events were observed at three highest beam      
+258RF2cL energies. Four |a decay chains: {+258}Rf |a decay to {+254}No |a decay 
+258RF3cL to {+250}Fm were identified and are listed in table II of 2008Ga08.    
+258RF4cL Average E|a=9.05 MeV {I3} for decay of {+258}Rf to the g.s. of         
+258RF5cL {+254}No. One event had E|a lower by 90 keV which was interpreted as   
+258RF6cL transition to an excited state in {+254}No (2008Ga08)                  
+258RF cL $Measured cross sections: 0.31 nb {I+16-12} at 138.5 MeV,              
+258RF2cL 0.77 nb {I+20-18} at 144.5 MeV, 0.43 nb {I+13-11} at 151.4 MeV         
+258RF3cL (2008Ga08)                                                             
+258RF cL $1985He22, 1994Hu18, 1994Wi17: measurements of mass and total kinetic  
+258RF2cL energy distributions of fission fragments.                             
+258RF dL $Theoretical calculations of 1997Mo25 give T{-1/2}(|a)=74 ms which     
+258RF2dL corresponds to %|a=16, in agreement with the branching determined      
+258RF3dL in 1984Og03. 1997Po18 obtained also T{-1/2}(|a)=74 ms from             
+258RF4dL semi-empirical formula. Other T{-1/2}(|a) calculations: 1976Ra02.      
+258RF5dL Theoretical calculations for T{-1/2}(SF) from various methods          
+258RF6dL gave results in the range of log T{-1/2}(SF in years)=-8 to -11.       
+258RF  L 0+X         (2+)                                                      ?
+258RFX L XREF=B                                                                 
+258RF cL E,J$tentatively proposed by 2016He15. This level may be the first      
+258RF2cL excited 2+ state in {+258}Rf                                           
+258RF  L 0+Y                           2.4 MS    +24-8                       M1 
+258RFX L XREF=A                                                                 
+258RF2 L %SF=? $ %A=? $ %IT=?                                                   
+258RF cL T$from the time distribution of correlations between x-ray events (no  
+258RF2cL coincident ce) and subsequent ce or x-ray events that could be from    
+258RF3cL the decay of this state (2016He15)                                     
+258RF  L 0+Z                           15 US     10                          M2 
+258RFX L XREF=A                                                                 
+258RF2 L %SF=? $ %A=? $ %IT=?                                                   
+258RF cL T$from the time distribution of correlations between two consecutive ce
+258RF2cL events (2016He15)                                                      
+                                                                                
+258RF    258DB EC DECAY (4.3 S)        2016HE15                  17NDS    201709
+258RF  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258RF c  The decay scheme is tentative according to 2016He15                    
+258RF c  2016He15: {+258}Db source was produced in {+209}Bi({+50}Ti,n)          
+258RF2c  reaction at E({+50}Ti)=236 MeV. The beam from the ECR source of the    
+258RF3c  UNILAC at GSI bombarded a |?460 |mg/cm{+2} target of {+209}Bi{-2}O{-3} 
+258RF4c  evaporated on carbon foils of |?40 |mg/cm{+2} (upstream) and covered   
+258RF5c  by an |?10 |mg/cm{+2} carbon layer (downstream). Evaporation residues  
+258RF6c  (ERs) were separated by the velocity filter SHIP and implanted into a  
+258RF7c  position-sensitive 16-strip Si PIPS detector for detecting residues,   
+258RF8c  conversion electrons (ce), and subsequent |a-decays or spontaneous     
+258RF9c  fission (SF) events. Escaped products into the backward hemisphere were
+258RFac  detected by a box of six Si wafers; x-rays were detected by a Ge clover
+258RFbc  detector consisting of four crystals. Measured correlations among      
+258RFcc  ERs, x-rays, ce, |a-decay and SF events. Deduced isomeric states,      
+258RFdc  half-lives, {+258}Rf g.s. decay modes. Comparisons with theoretical    
+258RFec  calculations.                                                          
+258RF c  Tentative decay scheme is from Fig. 8 of 2016He15. Authors state that  
+258RF2c  |e decay may also populate excited states other than the isomeric      
+258RF3c  states and these high-lying states could feed the isomers              
+258RF t  -------------------------------------------------------------------    
+258RF t   Energies and relative intensities of K x-rays in                      
+258RF2t              delayed-coin with fission                                  
+258RF t  -------------------------------------------------------------------    
+258RF t                    Energy    I(x-ray)(exp)    I(x-ray)(theory)          
+258RF t   K{-|a2}     126.9 {I7}    0.95 {I24}          0.671                   
+258RF t   K{-|a1}     133.9 {I9}    1                   1                       
+258RF t   K{-|b1}     149.8 {I16}   0.50 {I24}          0.378                   
+258RF t   K{-|b'2}    155.3 {I11}   0.21 {I14}          0.139                   
+258RF t  -------------------------------------------------------------------    
+258RF cL T$From Adopted Levels                                                  
+258DB  P 0           (5+,6+)           4.3 S     5              5460      SY    
+258DB cP E,J,T$From {+258}Db Adopted Levels                                     
+258DB cP QP$5460 {I310} (syst, 2017Wa10)                                        
+258RF  N                       0.23    8                                        
+258RF cN BR$From 2009He20, %|a=77 {I8}.                                         
+258RF  L 0            0+               12.0 MS   12                             
+258RF cL $E|a=9054 MeV {I14}, mean energy of 11 |a-decay events (2016He15)      
+258RF  L 0+Y                           2.4 MS    +24-8                       M1 
+258RF  L 0+Z                           15 US     10                          M2 
+258RF cL T$from the time distribution of correlations between two consecutive ce
+258RF2cL events (2016He15)                                                      
+                                                                                
+258RF    258DB EC DECAY (1.9 S)        2016HE15                  17NDS    201709
+258RF  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258RF c  The decay scheme is tentative according to 2016He15                    
+258RF c  2016He15: {+258}Db source was produced in {+209}Bi({+50}Ti,n)          
+258RF2c  reaction at E({+50}Ti)=236 MeV. The beam from the ECR source of the    
+258RF3c  UNILAC at GSI bombarded a |?460 |mg/cm{+2} target of {+209}Bi{-2}O{-3} 
+258RF4c  evaporated on carbon foils of |?40 |mg/cm{+2} (upstream) and covered   
+258RF5c  by an |?10 |mg/cm{+2} carbon layer (downstream). Evaporation residues  
+258RF6c  (ERs) were separated by the velocity filter SHIP and implanted into a  
+258RF7c  position-sensitive 16-strip Si PIPS detector for detecting residues,   
+258RF8c  conversion electrons (ce), and subsequent |a-decays or spontaneous     
+258RF9c  fission (SF) events. Escaped products into the backward hemisphere were
+258RFac  detected by a box of six Si wafers; x-rays were detected by a Ge clover
+258RFbc  detector consisting of four crystals. Measured correlations among      
+258RFcc  ERs, x-rays, ce, |a-decay and SF events. Deduced isomeric states,      
+258RFdc  half-lives, {+258}Rf g.s. decay modes. Comparisons with theoretical    
+258RFec  calculations.                                                          
+258RF c  Tentative decay scheme is from Fig. 8 of 2016He15. Authors state that  
+258RF2c  |e decay may also populate excited states other than the isomeric      
+258RF3c  states and these high-lying states could feed the isomers              
+258RF t  -------------------------------------------------------------------    
+258RF t   Energies and relative intensities of K x-ray in                       
+258RF2t              delayed-coin with fission                                  
+258RF t  -------------------------------------------------------------------    
+258RF t                    Energy    I(x-ray)(exp)    I(x-ray)(theory)          
+258RF t   K{-|a2}     126.9 {I7}    0.95 {I24}          0.671                   
+258RF t   K{-|a1}     133.9 {I9}    1                   1                       
+258RF t   K{-|b1}     149.8 {I16}   0.50 {I24}          0.378                   
+258RF t   K{-|b'2}    155.3 {I11}   0.21 {I14}          0.139                   
+258RF t  -------------------------------------------------------------------    
+258DB  P 0+X         (1-)              1.9 S     5              5460      SY    
+258DB cP T,J$From {+258}Db Adopted Levels                                       
+258DB cP QP$5460 {I310} (syst, 2017Wa10)                                        
+258RF  N                       0.36    10                                       
+258RF cN BR$From 2009He20, %|a-decay=64 {I10}                                   
+258RF  L 0            0+               12.0 MS   12                             
+258RF cL T$from Adopted Levels                                                  
+258RF cL $E|a=9054 MeV {I14}, mean energy of 11 |a-decay events (2016He15)      
+258RF  L 0+X         (2+)                                                      ?
+258RF cL E,J$tentatively proposed by 2016He15                                   
+                                                                                
+258DB    ADOPTED LEVELS, GAMMAS                                  17NDS    201709
+258DB  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258DB  Q -3450     SY 6480   SY 1360   SY 9500   50    2017WA10                 
+258DB cQ $Estimated uncertainties (2017Wa10): 510 for Q(|b{+-}), 370 for S(n),  
+258DB2cQ 310 for S(p)                                                           
+258DB cQ $S(2n)=14840 {I390}, S(2p)=4530 {I320}, Q(|ep)=1840 {I310}             
+258DB2cQ (syst,2017Wa10)                                                        
+258DB c  1984Og03: {+258}Db produced and identified in {+208}Bi({+50}Ti,n)      
+258DB2c  and parent of {+258}Rf activity.                                       
+258DB c  1985He22: {+258}Db produced in {+208}Bi({+50}Ti,n), and identified     
+258DB2c  as parent of {+254}No, {+254}Lr, {+250}Fm, and {+250}Md through        
+258DB3c  |a|a correlations, measured half-lives.                                
+258DB c  2001Ga20: {+258}Db produced in {+241}Am({+22}Ne,5n), measured          
+258DB2c  half-lives                                                             
+258DB c  2008Ga25: {+258}Db produced in {+208}Pb({+51}V,n),({+50}Ti,n) reactions
+258DB2c  at E=4.7-5.1 MeV/nucleon, with beams of {+51}V (11+ charge state) and  
+258DB3c  {+50}Ti (12+ charge state) provided by 88-Inch Cyclotron at LBNL.      
+258DB4c  Separated and detected charged particles using BGS focal plane detector
+258DB5c  and a multiwire proportional counter. Measured E|a, I|a and half-life  
+258DB6c  of {+258}Db decay using silicon implantation detectors.                
+258DB c  2016He15: {+258}Db produced in {+209}Bi({+50}Ti,n),E=236 MeV, with     
+258DB2c  {+50}Ti beam from the ECR source of the UNILAC at GSI. The Evaporation 
+258DB3c  residues (ERs) were separated by the velocity filter SHIP and implanted
+258DB4c  into a position-sensitive 16-strip Si PIPS detector for detecting      
+258DB5c  ERs, conversion electrons, and subsequent |a-decays or spontaneous     
+258DB6c  fission (SF) events. Escaped products into the backward hemisphere were
+258DB7c  detected by a box of six Si wafers. The x rays were detected by a Ge   
+258DB8c  clover detector consisting of four crystals. Measured correlations     
+258DB9c  between ERs, x rays, ce, |a-decay and SF events. Deduced isomeric      
+258DBAc  states and half-lives.                                                 
+258DB c  Theoretical studies: consult the NSR database at www.nndc.bnl.gov for  
+258DB2c  about 40 references dealing with theoretical calculations of           
+258DB3c  half-lives for different decay modes, binding energies, fission        
+258DB4c  characteristics, and other nuclear structure aspects.                  
+258DB d  Theoretical partial half-life of spontaneous fission of the            
+258DB2d  ground-state: 1985Lo17.                                                
+258DB d  Theoretical fission barrier: 1985Cw01.                                 
+258DB d  1994Ch42, 2000De09: process of the formation of {+258}Db in            
+258DB2d  {+209}Bi({+50}Ti,n) reaction was studied and the excitation functions  
+258DB3d  were calculated, and compared with experimental production             
+258DB4d  cross sections                                                         
+258DB d  Theoretical bound-state binding energy: 2000Pa12.                      
+258DB d  Theoretical mass excess of {+258}Db: 1996Wu09.                         
+258DB  XA262BH A DECAY (83 MS)                                                  
+258DB  XB262BH A DECAY (16 MS)                                                  
+258DB  L 0.0          (5+,6+)          4.3 S     5                              
+258DB2 L %A=77 8 $ %EC+%B+=23 8 (2009He20)                                      
+258DBX L XREF=A                                                                 
+258DB cL $|e decay to excited states including two newly-proposed isomeric      
+258DB2cL states in {+258}Rf (2016He15)                                          
+258DB cL T$from 2009He20. In their later work, 2016He15 report 4.4 s {I10} and  
+258DB2cL 3.6 s {I3} activities from the time distributions of SF events,        
+258DB3cL correlated and uncorrelated with conversion electron events,           
+258DB4cL respectively, which could support the existence of two long-lived      
+258DB5cL states in {+258}Db as claimed in their |a-decay study in 2009He20, but 
+258DB6cL is not a sufficient argument for an unambiguous claim by itself in the 
+258DB7cL work of 2016He15. Others: 4.2 s {I+4-3} (2008Ga25, from 77 correlated  
+258DB8cL |a decays); 4.2 s {I+16-5} (1984Og03, SF decay of {+258}Rf,            
+258DB9cL daughter of {+258}Db was detected); 4.4 s {I+9-6} (1985He22; |a from   
+258DBAcL {+262}Bh decay); 3.0 s {I+8-6} (1989Mu09, |a from {+262}Bh decay);     
+258DBBcL 4.3 s {I11} (2001Ga20, from |a of {+258}Db decay); 1.8 s {I+11-7} and  
+258DBCcL 4.0 s {I+10-8} (1981Mu06, |a decays from {+262}Bh and {+258}Db);       
+258DBDcL 6.1 s {I+10-8} (1985He22, from SF activities).                         
+258DB cL J$from shell-model calculations (2016He15). Possible configurations:   
+258DB2cL |n11/2[725] + |p1/2[521] for 6+ or |n9/2[624] + |p1/2[620] for 5+      
+258DB dL $Production cross sections in {+208}Pb({+51}V,n) (2008Ga25):           
+258DB2dL 0.23 nb {I+52-19} at E({+51}V)=236.1 MeV,                              
+258DB3dL 2.07 nb {I+110-76} at E({+51}V)=239.7 MeV, 1.00 nb {I+46-33} at        
+258DB4dL E({+51}V)=244.1 MeV, 0.57 nb {I+55-31} at E({+51}V)=247.2 MeV,         
+258DB5dL <0.59 nb at E({+51}V)=250.8 MeV, <0.18 nb at E({+51}V)=255.0 MeV.      
+258DB dL $Production cross sections in {+209}Bi({+50}Ti,n) (2008Ga25):          
+258DB2dL 0.055 nb {I+250-45} at E({+50}Ti)=229.5 MeV,                           
+258DB3dL 2.55 nb {I+72-55} at E({+50}Ti)231.8 MeV, 5.5 nb {I+17-14} at          
+258DB4dL E({+50}Ti)=233.6 MeV, 3.4 nb {I+19-14} at E({+50}Ti)=236.0 MeV,        
+258DB5dL 2.6 nb {I+12-9} at E({+50}Ti)=238.4 MeV                                
+258DB  L 0+X         (1-)              1.9 S     5                           M1 
+258DB2 L %A=64 10 $  %EC+%B+=36 10 (2009He20)                                   
+258DB cL $|e decay to g.s. and probable low-lying states in {+258}Rf (2016He15) 
+258DB cL T$from 2016He15, taken from authors' earlier work in 2009He20.         
+258DB2cL 2016He15 report 4.4 s {I10} and 3.6 s {I3} from the time distributions 
+258DB3cL of SF events, correlated and uncorrelated with conversion electrons,   
+258DB4cL respectively, which could support the existence of two different       
+258DB5cL long-lived states in {+258}Db as claimed from their |a-decay           
+258DB6cL study in 2009He20, but not sufficient for an unambiguous claim by      
+258DB7cL itself in 2016He15.                                                    
+258DB cL J$from shell-model calculations (2016He15). Possible configuration:    
+258DB2cL |n1/2[620] + |p1/2[521] for 1-                                         
+258DB  L 0+Y                           20 S      10                          M2?
 258DB2 L %EC AP 100                                                             
-258DB CL           NO ALPHAS WERE OBSERVED (1985HE22).                          
-258DB  L 0.0+Z                                                              A   
+258DB cL $Existence of this isomer has not been established.                    
+258DB cL $No |a decays were observed from this activity (1985He22).             
+258DB cL T$deduced by 1985He22 based on difference in half-lives                
+258DB2cL observed from |a decay (4.4 s) and SF (6.1 s {I+10-6}); the larger     
+258DB3cL value was explained by 1985He22 by postulating a 20-s isomer in        
+258DB4cL {+258}Db which decays by |e to {+258}Rf which in turn decays by SF     
+258DB5cL with T{-1/2}=12 ms.                                                    
+258DB  L 0+Z                                                                    
+258DBX L XREF=B                                                                 
+258DB  L 156.5     7  (4:7)(-)                                                  
 258DBX L XREF=A                                                                 
-258DB  L Z+317                                                              A   
+258DB cL J$(E1) |g to (5+,6+)                                                   
+258DB  G 156.5     7            (E1)                                            
+258DBF G FL=0.0                                                                 
+258DB cG M$possible E1, estimated from number of observed |a|g coincidences     
+258DB  L 184+Z     50                                                           
+258DBX L XREF=B                                                                 
+258DB  L   222     20                                                           
 258DBX L XREF=A                                                                 
-258DB  L Z+386                                                              A   
+258DB  L 358       30                                                           
 258DBX L XREF=A                                                                 
-258DB  L 0.0+W                                                              B   
+258DB cL $A 38.9|g observed by 2009He20 in coin with 9810|a groups              
+258DB  L 480       20                                                           
+258DBX L XREF=A                                                                 
+258DB cL $A 38.9|g observed by 2009He20 in coin with 9671|a groups              
+258DB  L 561+Z     50                                                           
 258DBX L XREF=B                                                                 
-258DB  L W+65                                                               B   
-258DBX L XREF=B                                                                 
-258DB  L W+72                                                               B   
-258DBX L XREF=B                                                                 
-258DB  L W+234                                                              B   
-258DBX L XREF=B                                                                 
-258DB  L W+449                                                              B   
-258DBX L XREF=B                                                                 
-258DB  L W+549                                                              B   
-258DBX L XREF=B                                                                 
-258DB  L W+618                                                              B   
-258DBX L XREF=B                                                                 
-258DB  L W+650                                                              B   
-258DBX L XREF=B                                                                 
+258DB cL $A 102.4 {I5} |g observed by 2009He20 in coin with 9826|a group        
                                                                                 
-258DB    262BH A DECAY (102 MS)                                  01NDS    200112
-258DB  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-262BH  P 0.0+X                         102 MS    26             10.22E+3  16    
-258DB  N                       1.0     LE                                       
-258DB CL E         THE OBSERVED EA=10143 SUGGESTS THAT QA(262BH)=               
-258DB2CL 10300+E(LEVEL IN 258DB FED BY 10143A)-E(102-MS 262BH PARENT).          
-258DB3CL FROM THEIR QA SYSTEMATICS, THE AUTHORS OF 1995AU04 OBTAINED            
-258DB4CL QA(262BH)=10220+-160 WHICH GIVES                                       
-258DB5CL E(102-MS 262BH PARENT)-E(LEVEL IN 258DB FED BY 10143A)=80+-160.        
-258DB CA E         MEASUREMENTS OF 1997HO14. UNCERTAINTIES ON EA'S ARE NOT      
-258DB2CA GIVEN IN 1997HO14. ONE MAY ASSUME THEY WERE QUITE SIMILAR TO, PERHAPS  
-258DB3CA BETTER THAN, THOSE ACHIEVED IN THEIR EARLIER MEASUREMENT:              
-258DB4CA THE ENERGY RESOLUTION AND THE ENERGY CALIBRATION ACCURACY WERE GIVEN   
-258DB5CA IN 1989MU09 AS 27-30 KEV FWHM AND 25 KEV, RESPECTIVELY.                
-258DB CA           BECAUSE OF LOW ALPHA COUNTS, NO IA'S ARE ADOPTED.            
-258DB  L 0.0+Z                                                                  
-258DB  A 10143                                                                  
-258DB CA           SEVEN ALPHA EVENTS WERE COUNTED BY 1989MU09.                 
-258DB CA           EA=10060 WAS MEASURED BY 1989MU09.                           
-258DB  L Z+317                                                                  
-258DB  A 9831                                                                   
-258DB CA           FOUR ALPHA EVENTS WERE COUNTED BY 1989MU09.                  
-258DB CA           EA=9910 WAS MEASURED BY 1989MU09.                            
-258DB  L Z+386                                                                  
-258DB  A 9763                                                                   
-258DB CA           FOUR ALPHA EVENTS WERE COUNTED BY 1989MU09.                  
-258DB CA           EA=9740 WAS MEASURED BY 1989MU09.                            
+258DB    262BH A DECAY (83 MS)         2009HE20,2006FO02         17NDS    201709
+258DB  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258DB c  All the reported measurements related to the production cross sections,
+258DB2c  E|a, half-life and decay modes of {+262}Bh are from the GSI and LBNL   
+258DB3c  accelerator laboratories.                                              
+258DB c  2009He20: {+262}Bh produced in the {+209}Bi({+54}Cr,n) reaction,       
+258DB2c  the {+54}Cr beam delivered by the charge state injector of the UNILAC  
+258DB3c  accelerator at GSI Darmstadt. Evaporation residues were separated by   
+258DB4c  the velocity filter SHIP and implanted into a 16-strip Si PIPS         
+258DB5c  detector. A box of six Si-wafers was used to measure escaping          
+258DB6c  |a-particles. A Ge clover detector consisting of four crystals was used
+258DB7c  to measure |g rays in coincidence with particles. Measured E|a, E|g,   
+258DB8c  |a|g coin, half-lives, |s. Multiple events detected                    
+258DB c  2008Ne08: {+262}Bh produced in {+208}Pb({+55}Mn,n),E=273-283 MeV; and  
+258DB2c  {+209}Bi({+54}Cr,n), E=253.5-272.3 MeV; measured excitation functions, 
+258DB3c  E|a, |s, T{-1/2} of {+262}Bh decay. Single events detected             
+258DB c  2006Fo02: {+262}Bh produced in {+208}Pb({+55}Mn,n),E=260,264,268 MeV;  
+258DB2c  measured E|a, (evaporation residues)|a|a-correlations, excitation      
+258DB3c  functions, T{-1/2} of {+262}Bh decay                                   
+258DB c  1997Ho14: {+262}Bh source from |a-decay of {+266}Mt, measured E|a.     
+258DB2c  Single events detected                                                 
+258DB c  1989Mu09: {+262}Bh from {+209}Bi({+54}Cr,n),E=4.87-5.07 MeV/nucleon,   
+258DB2c  measured E|a, (evaporation residues)|a|a-correlations, T{-1/2}.        
+258DB3c  deduced no evidence for SF-decay of {+262}Bh                           
+258DB c  1981Mu06: {+262}Bh produced in {+209}Bi({+54}Cr,n),E=4.85 MeV/nucleon, 
+258DB2c  measured E|a, T{-1/2}                                                  
+258DB cA $2009He20 state that the |a lines were modified                        
+258DB2cA by energy summing with conversion electrons, thus |a intensities       
+258DB3cA could not be deduced unambiguously.                                    
+258DB cL J,T$From Adopted Levels                                                
+262BH  P 0.0                            83 MS    14             10319     15    
+262BH cP E$From 2017Au03                                                        
+262BH cP T$From weighted average of 83 ms {I14} (2009He20), 84 ms {I+21-16}     
+262BH2cP (2006Fo02). Others: 120 ms {I+55-29} (2008Ne08, same laboratory (LBNL) 
+262BH3cP as 2006Fo02), 102 ms {I26} (1989Mu09), 115 ms {I+231-75} (1981Mu06).   
+262BH4cP 1989Mu09 and 1981Mu06 are from the same laboratory (GSI) as 2009He20.  
+262BH5cP In 2001Ak11 evaluation, T{-1/2}=102 ms {I26}                           
+262BH cP QP$From 2017Wa10, deduced from E|a=10008 {I26} (2009He20) based on     
+262BH2cP 156.5 level                                                            
+258DB  N                       1       AP                                       
+258DB cN BR$%|a |? 100. No evidence was found by 2006Fo02 and 1989Mu09 for      
+258DB2cN fission decay mode of {+262}Bh, 2006Fo02 give an upper limit of 11%    
+258DB3cN and 1989Mu09 suggest an upper limit of 10% for SF decay mode           
+258DB  G 38.9      9                                                            
+258DB cG E$from 2009He20, |g observed in coin with 9671|a and 9810|a groups     
+258DB  L  0.0          (5+,6+)          4.3 S    5                              
+258DB  L 156.5     7   (4:7)(-)                                                 
+258DB  A 10008     15                                                           
+258DB cA E$from 2009He20; 10 events detected. Others: 10025, 10096, 10125       
+258DB2cA (2008Ne08), 10075 {I25} (2006Fo02, 5 events), 10143 (1997Ho14),        
+258DB3cA 10060 {I25} (1989Mu09)                                                 
+258DB  G 156.5     7            (E1)                                            
+258DB cG E$from 2009He20, observed in coin with 9952-10067 |a group range       
+258DB2cG (average |a energy=10008 {I26})                                        
+258DB cG M$possible E1, estimated from number of observed |a|g coincidences     
+258DB  L   222     20                                                           
+258DB  A  9943     15                                                           
+258DB cA E$from 2009He20; 6 events detected. Others: 9936 {I25} (2006Fo02, 4    
+258DB2cA events), 9910 {I25} (1989Mu09)                                         
+258DB  L 358       30                                                           
+258DB  A 9809      25                                                           
+258DB cA E$from 2006Fo02; 3 events. Other: 9831 (1997Ho14)                      
+258DB cA $38.9|g observed by 2009He20 in coin with 9810|a groups                
+258DB  L 480       20                                                           
+258DB  A 9689      15                                                           
+258DB cA E$from 2009He20; 12 events detected. Others: 9657 {I25} and            
+258DB2cA 9727 {I25} (2006Fo02, single events); 9648, 9735, 9762 (2008Ne08);     
+258DB3cA 9763 (1997Ho14); 9740 {I25} (1989Mu09); 9704 {I50} (1981Mu06)          
+258DB cA $38.9|g observed by 2009He20 in coin with 9671|a groups                
                                                                                 
-258DB    262BH A DECAY (8.0 MS)                                  01NDS    200112
-258DB  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-262BH  P 0.0+Y                         8.0 MS    21             10220     SY    
-258DB  N                       1.0     LE                                       
-258DB C  THE OBSERVED EA=10443 SUGGESTS THAT QA(262BH)=                         
-258DB2C  10605+ E(LEVEL IN 258DB FED BY 10443A)-E(8.0-MS 262BH PARENT).         
-258DB3C  QA(262BH)=10216+-152 IS GIVEN IN 1995AU04 WHICH WAS OBTAINED FROM      
-258DB4C  THEIR QA SYSTEMATICS.                                                  
-258DB C  BECAUSE OF THE COMPLEXITY OF ALPHA SPECTRA AND THE LOW ALPHA COUNTS,   
-258DB2C  ASSIGNMENTS OF THE LEVELS SHOWN AS POPULATED BY THE LISTED ALPHA'S     
-258DB3C  FROM THE SAME 262BH PARENT SHOULD BE CONSIDERED TENTATIVE, NOT         
-258DB4C  ESTABLISHED.                                                           
-258DB TA           THE ALPHA HALF-LIVES MEASURED BY 1997HO14 ARE                
-258DB2TA                                                                        
-258DB3TA               EA (MEV)                T1/2 (MS)                        
-258DB4TA            --------------         --------------                       
-258DB5TA             1.1  (ESCAPE)             15.5                             
-258DB6TA             6.4  (ESCAPE)              4.8                             
-258DB7TA             9.803                     14.6                             
-258DB8TA             9.834                      9.8                             
-258DB9TA             9.902                      5.2                             
-258DB2TA            10.001                     31                               
-258DB3TA            10.21                       9.1                             
-258DB4TA            10.213                      8.0                             
-258DB5TA            10.372                     12.0                             
-258DB6TA            10.379                     11.6                             
-258DB7TA            10.443                     12.7                             
-258DB8TA                                                                        
-258DB9TA    T1/2(10.37 MEV A)=4.7 MS +25-12, T1/2(10.24 MEV A)=12.4 MS+81-3.5   
-258DB2TA    WERE MEASURED, AND T/2(262BH PARENT STATE)=8.0 MS 21 WAS ASSIGNED   
-258DB3TA    BY 1989MU09.                                                        
-258DB CA E         ALPHA ENERGIES WERE MEASURED BY 1989MU09 AND 1997HO14. THE   
-258DB2CA ALPHAS WERE DETECTED FOLLOWING 266MT A DECAY. ALL ALPHAS WERE OBSERVED 
-258DB3CA TO BE CORRELATED WITH THE 258DB, 254LR, 254NO AND 250FM DECAYS.        
-258DB CA           BECAUSE OF LOW ALPHA COUNTS, NO IA'S ARE ADOPTED.            
-258DB CL E         RELATIVE LEVEL ENERGIES ARE CALCULATED FROM EA'S OF 1997HO14 
-258DB2CL BY ASSUMING THAT THE ALPHA'S DECAY FROM THE SAME 262BH STATE. IF THERE 
-258DB3CL ARE MORE THAN ONE PARENT LEVEL, THE RELATIVE LEVEL ENERGIES GIVEN HERE 
-258DB4CL WOULD BE INCORRECT; IF THERE IS ONE (8.0 MS) 262BH PARENT FOR THESE    
-258DB5CL ALPHA'S, THE QA VALUE OF QA(262BH)=10220 SY (1995AU04) YIELDS          
-258DB6CL E(8.0-MS 262BH PARENT STATE)-E(DAUGHTER LEVEL IN 258DB FED BY 10443A)= 
-258DB7CL (0.0+Y)-(0.0+^w) AP 390.                                               
-258DB  L 0.0+W                                                                  
-258DB  A 10443                                                                  
-258DB  L W+65                                                                   
-258DB  A 10379                                                                  
-258DB  L W+72                                                                   
-258DB  A 10372                                                                  
-258DB CA           EIGHT COUNTS WERE DETECTED BY 1989MU09 AT EA=10370.          
-258DB  L W+234                                                                  
-258DB  A 10213                                                                  
-258DB CA           SIX COUNTS WERE DETECTED BY 1989MU09 AT EA=10240.            
-258DB  L W+449                                                                  
-258DB  A 10001                                                                  
-258DB  L W+549                                                                  
-258DB  A 9902                                                                   
-258DB  L W+618                                                                  
-258DB  A 9834                                                                   
-258DB  L W+650                                                                  
-258DB  A 9803                                                                   
+258DB    262BH A DECAY (16 MS)         2009HE20,2006FO02         17NDS    201709
+258DB  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258DB c  All the reported measurements related to the production cross sections,
+258DB2c  E|a, half-life and decay modes of {+262}Bh isomer are from the GSI     
+258DB3c  and LBNL accelerator laboratories.                                     
+258DB c  2009He20: {+262}Bh produced in the {+209}Bi({+54}Cr,n) reaction,       
+258DB2c  the {+54}Cr beam delivered by the charge state injector of the UNILAC  
+258DB3c  accelerator at GSI Darmstadt. Evaporation residues were separated by   
+258DB4c  the velocity filter SHIP and implanted into a 16-strip Si PIPS         
+258DB5c  detector. A box of six Si-wafers was used to measure escaping          
+258DB6c  |a-particles. A Ge clover detector consisting of four crystals was used
+258DB7c  to measure |g rays in coincidence with particles. Measured E|a, E|g,   
+258DB8c  |a|g coin, half-lives, |s. Multiple events detected                    
+258DB c  2008Ne08: {+262}Bh produced in {+208}Pb({+55}Mn,n),E=273-283 MeV; and  
+258DB2c  {+209}Bi({+54}Cr,n), E=253.5-272.3 MeV; measured excitation functions, 
+258DB3c  E|a, |s, T{-1/2} of {+262}Bh decay. Single events detected             
+258DB c  2006Fo02: {+262}Bh produced in {+208}Pb({+55}Mn,n),E=260,264,268 MeV;  
+258DB2c  measured E|a, (evaporation residues)|a|a-correlations, excitation      
+258DB3c  functions, T{-1/2} of {+262}Bh decay                                   
+258DB c  1997Ho14: {+262}Bh source from |a-decay of {+266}Mt, measured E|a.     
+258DB2c  Single events detected                                                 
+258DB c  1989Mu09: {+262}Bh from {+209}Bi({+54}Cr,n),E=4.87-5.07 MeV/nucleon,   
+258DB2c  measured E|a, (evaporation residues)|a|a-correlations, T{-1/2}.        
+258DB3c  deduced no evidence for SF-decay of {+262}Bh                           
+258DB c  1981Mu06: {+262}Bh produced in {+209}Bi({+54}Cr,n),E=4.85 MeV/nucleon, 
+258DB2c  measured E|a, T{-1/2}                                                  
+258DB cA $1997Ho14 report separate half-lives for different observed |a groups  
+258DB2cA as follows: T{-1/2}=15.5 ms for E|a=1100 keV (escape); 4.8 ms for      
+258DB3cA E|a=6400 keV (escape); 14.6 ms for E|a=9803; 9.8 ms for E|a=9834;      
+258DB4cA 5.2 ms for E|a=9902; 31 ms for E|a=10001; 9.1 ms for E|a=10210;        
+258DB5cA 8.0 ms for E|a=10213; 12.0 ms for E|a=10372; 11.6 ms for E|a=10379;    
+258DB6cA 12.7 ms for E|a=10443.                                                 
+258DB cA $T{-1/2}(10.37 MeV |a)=4.7 ms {I+25-12}, T{-1/2}(10.24 MeV |a)=12.4 ms 
+258DB2cA {I+81-35} were measured, and T{-1/2}({+262}Bh parent state)=8.0 ms     
+258DB3cA {I21} assigned by 1989Mu09.                                            
+258DB cA $The 9902|a and 10001|a, both with single events from 1997Ho14 are not 
+258DB2cA adopted here. These could belong to the decay of the g.s. or the isomer
+258DB cA E$The |a energies were measured by 1981Mu06, 1989Mu09, 1997Ho14 and    
+258DB2cA 2009He20. The |a particles were detected following {+266}Mt |a decay.  
+258DB3cA All the |a transitions were observed to be correlated with the decays  
+258DB4cA of {+258}Db, {+254}Lr, {+254}No and {+250}Fm.                          
+258DB cA IA$Because of low |a counts, no I|a values are adopted.                
+262BH  P 210       50                   16 MS    6              10319     15    
+262BH cP E$Deduced by 2017Au03 from measured alpha-energy differences           
+262BH cP T$From unweighted average of 22 ms {I4} (2009He20) and 9.6 ms {I+36-24}
+262BH2cP (2006Fo02). Others: 16 ms {I+14-5} (2008Ne08, same laboratory (LBNL)   
+262BH3cP as 2006Fo02), 8.0 ms {I21} (1989Mu09), 8.2 ms {I22} (1988Mu15),        
+262BH4cP 4.7 ms {I+23-16} (1981Mu06). 1989Mu09, 1988Mu15 and 1981Mu06 are from  
+262BH5cP the same laboratory (GSI) as 2009He20. Weighted average of the two     
+262BH6cP values is 14 ms {I6} but with reduced |h{+2}=6.1 as compared to        
+262BH7cP critical |h{+2}=3.8. In 2001Ak11 evaluation, T{-1/2}=8.0 ms {I21}      
+262BH cP QP$From 2017Wa10, deduced from E|a=10008 {I26} (2009He20) based on     
+262BH2cP 156.5 level for the decay of the ground state of {+262}Bh              
+258DB  N                       1       AP                                       
+258DB cN BR$%|a |? 100. No evidence was found by 2006Fo02 and 1989Mu09 for      
+258DB2cN fission decay mode of {+262}Bh, 2006Fo02 give an upper limit of 24%    
+258DB3cN and 1989Mu09 suggest an upper limit of 10% for SF decay mode           
+258DB  G 102.4     5                                                            
+258DB cG E$|g observed by 2009He20 in coin with 9826|a group                    
+258DB  L 0+Z                                                                    
+258DB  A 10373     15                                                           
+258DB cA E$from 2009He20. Others: 10383 (2008Ne08), 10348 (2006Fo02),           
+258DB2cA 10372, 10379, 10443 (1997Ho14), 10370 {I25} (1989Mu09),                
+258DB3cA 10376 {I35} (1981Mu06)                                                 
+258DB  L 184+Z     50                                                           
+258DB  A 10197     15                                                           
+258DB cA E$from 2009He20. Others: 10067 (2008Ne08), 10231 {I25} (2006Fo02),     
+258DB2cA 10213 (1997Ho14), 10240 {I25} (1989Mu09), 10230 {I30} (1988Mu15)       
+258DB  L 561+Z     50                                                           
+258DB  A 9826      15                                                           
+258DB cA E$from 2009He20. Other: 9834, 9803 (1997Ho14)                          
+258DB cA $102.4 {I5} |g observed by 2009He20 in coin with 9826|a group          
                                                                                 
-258SG    ADOPTED LEVELS                                          01NDS    200112
-258SG  H TYP=FUL$AUT=Y. Akovali$CIT=NDS 94, 131 (2001)$CUT=1-Aug-2001$          
-258SG  Q                       2.3E3   SY9.6E3   SY    2012WA38                 
-258SG CQ Note: Current evaluation has used the following Q record               
-258SG  Q                       2360    SY 9670   SY    1995AU04                 
-258SG T                                                                         
-258SG T  ASSIGNMENT:                                                            
-258SG2T             209BI(51V,2N), EXCIT (1997HE29)                             
-258SG T                NINE FISSION EVENTS WERE OBSERVED AT E=4.91,ONE EVENT    
-258SG2T                AT 4.77, AND ONE EVENT AT 4.99 MEV/NUCLEON BOMBARDING    
-258SG3T                ENERGIES. THE ASSIGNMENT TO 258SG WAS MADE BY 1997HE29   
-258SG4T                ON THE BASIS OF SIMILARITY OF THE MEASURED EXCITATION    
-258SG5T                FUNCTION TO THE EXCITATION FUNCTION FOR 208PB(50TI,2N)   
-258SG6T                REACTION.                                                
-258SG7T                                                                         
-258SG C  THEORETICAL STUDIES:                                                   
-258SG C  SPONTANEOUS FISSION HALF-LIFE WAS CALCULATED BY USING NILSSON POTENTIAL
-258SG2C  BY 1985LO17 AND BY 1989ST20. EARLIER CALCULATIONS: 1978PO09.           
-258SG C  2001MU06 CALCULATED EQUILIBRIUM DEFORMATION, QA, E(2+ LEVEL) AND       
-258SG2C  IA(TO 2+)/IA(TO 0+ GS).                                                
-258SG  L 0.0           0+              2.9 MS    +13-7                          
-258SG CL T         MEASURED BY 1997HE29. SEE ALSO 1999HE11.                     
-258SG2 L %SF LE 100$                                                            
-258SG CL           ONLY SF DECAY WAS OBSERVED. NO ALPHA DECAY WAS OBSERVED, AND 
-258SG2CL AN UPPER LIMIT OF 20% WAS SET BY 1997HE29.                             
-258SG CL           PARTIAL A DECAY HALF-LIFE WAS CALCULATED FROM SEMI-EMPIRICAL 
-258SG2CL FORMULA BY 1997PO18 AS T1/2(A)=1.6 MS AND BY 1995KOZL AS 20 MS.        
-258SG3CL EA=10310 KEV AND EA=9590 KEV WERE USED BY 1997PO18 AND 1995KOZL,       
-258SG4CL RESPECTIVELY. QA=9770, RECOMMENDED BY 1995AU04, GIVES EA=9520 KEV.     
-258SG CL           PARTIAL HALF-LIVES FOR EC DECAY AND FOR SF DECAY WERE ALSO   
-258SG2CL CALCULATED BY 1995KOZL AS T1/2(EC)=10 S, T1/2(SF)=4 MS.                
-258SG3CL THE CALCULATED PARTIAL HALF-LIVES OF 1995KOZL SUGGEST %SF=87, %A=13,   
-258SG4CL %EC=0.17.                                                              
+258SG    ADOPTED LEVELS                                          17NDS    201709
+258SG  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 144, 297 (2017)$CUT=25-Aug-2017$      
+258SG  Q              8590   CA 2250   SY 9620   SY    2017WA10,1997MO25        
+258SG cQ $S(n) from 1997Mo25. S(p) and Q(|a) from 2017Wa10                      
+258SG cQ $Estimated uncertainties (2017Wa10): 460 for S(p), 300 for Q(|a)       
+258SG cQ $S(2n)=15880 (theory,1997Mo25), S(2p)=3560 {I410}, Q(|ep)=2090 {I410}  
+258SG2cQ (syst,2017Wa10)                                                        
+258SG c  1997He29 (also 1999He11): {+258}Sg produced in {+209}Bi({+51}V,2n),    
+258SG2c  E=4.77-4.99 MeV/nucleon. Nine fission events were observed at          
+258SG3c  E({+51}V)=4.91 MeV/nucleon, one each at 4.77 MeV/nucleon and           
+258SG4c  4.99 MeV/nucleon. The assignment to {+258}Sg was made on the basis of  
+258SG5c  similarity of the measured excitation function to the excitation       
+258SG6c  function for {+208}Pb({+50}Ti,2n) reaction.                            
+258SG c  2009Fo02: {+258}Sg produced in {+208}Pb({+52}Cr,2n),E=250-267 MeV at   
+258SG2c  the 88-Inch Cyclotron of the Lawrence Berkeley Laboratory. Particles   
+258SG3c  were detected using the Gas Separator (BGS) and a detector array       
+258SG4c  consisting of 48 vertically position-sensitive strips. Measured        
+258SG5c  half-life of {+258}Sg decay, branching ratios, and production          
+258SG6c  cross sections. Total of nine SF events were detected. No |a decay     
+258SG7c  events were observed                                                   
+258SG c  Theoretical studies: consult the NSR database at www.nndc.bnl.gov for  
+258SG2c  about 35 references dealing with theoretical calculations of half-lives
+258SG3c  for different decay modes, binding energies, fission characteristics,  
+258SG4c  and other nuclear structure aspects.                                   
+258SG d  1978Po09, 1985Lo17, 1989St20: theoretical spontaneous fission half-life
+258SG2d  by using Nilsson potential                                             
+258SG d  2001Mu06: calculated equilibrium deformation, Q(|a), E(2+ level) and   
+258SG2d  I|a(to 2+)/I|a(to 0+ g.s.).                                            
+258SG  L 0             0+              2.5 MS    +9-7                           
+258SG2 L %SF=90 10$ %A LE 20 (2009FO02,1997He29)                                
+258SG cL $Only the SF decay mode was observed by 2009Fo02 and 1997He29. No |a   
+258SG2cL decay was observed, with an upper limit of 20% in both 2009Fo02 and    
+258SG3cL 1997He29.                                                              
+258SG cL T$weighted average of 2.1 ms {I+10-6} (2009Fo02), 2.9 ms {I+13-7}      
+258SG2cL (1997He29, also 1999He11) and 2.7 ms {I+9-7} (quoted by 2009Fo02 from  
+258SG3cL Ph.D. thesis by J.B. Patin, University of California, Berkeley (2002)).
+258SG4cL Note that 2009Fo02 and J.B. Patin's thesis work are from the same      
+258SG5cL laboratory (LBNL), but these are results from independent experiments  
+258SG6cL using two different reactions to produce the activities:               
+258SG7cL {+208}Pb({+52}Cr,2n){+258}Sg in 2009Fo02 and                           
+258SG8cL {+209}Bi({+51}V,2n){+258}Sg in J.B. Patin's thesis                     
+258SG cL $Partial |a decay half-life was calculated from semi-empirical         
+258SG2cL formula by 1997Po18 as T{-1/2}(|a)=1.6 ms and by 1995KoZL as 20 ms.    
+258SG3cL E|a=10310 keV and E|a=9590 keV were used by 1997Po18 and 1995KoZL,     
+258SG4cL respectively. Q(|a)=9620, recommended by 2017Wa10, gives E|a=9470 keV. 
+258SG cL $Partial half-lives for |e decay and for SF decay were also            
+258SG2cL calculated by 1995KoZL as T{-1/2}(|e)=10 s, T{-1/2}(SF)=4 ms.          
+258SG3cL The calculated partial half-lives of 1995KoZL suggest %SF=87, %|a=13,  
+258SG4cL %|e=0.17.                                                              
+258SG cL $Production |s=0.04 nb {I+10-4} at E({+52}Cr)=260.0 MeV, with one      
+258SG2cL event; 0.15 nb {I+7-6} at E({+52}Cr)=266.2 MeV, with eight events      
+258SG3cL (2009Fo02)                                                             
                                                                                 

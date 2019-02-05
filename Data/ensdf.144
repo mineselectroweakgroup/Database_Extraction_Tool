@@ -432,6 +432,49 @@
 144    R 2000RO29 JOUR PRVCA 62 044306                                          
 144    R 2000SO11 JOUR PHSTB T88 153                                            
                                                                                 
+144TE    COMMENTS                                                ENSDF    201802
+144TE  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-JAN-2018$                    
+144TE C  TITL$NUCLEAR DATA SHEETS FOR 144TE                                     
+144TE c  AUTH$BALRAJ SINGH                                                      
+144TE c  INST$Department of Physics and Astronomy,                              
+144TE#c       McMaster University, Hamilton, Ontario,                           
+144TE#c       Canada, L8S 4M1                                                   
+144TE c  ABST$Information about identification of the {+144}Te nuclide from     
+144TE2c  2015Lo04 is presented.                                                 
+144TE c  CUT$Literature available up to January 31, 2018 has been consulted.    
+144TE C  CIT$ENSDF                                                              
+144TE c  FUND$                                                                  
+                                                                                
+144TE    ADOPTED LEVELS                                          ENSDF    201802
+144TE  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-JAN-2018$                    
+144TE  Q 8860      CA  4190  CA 15940  CA -4730  CA    1997MO25                 
+144TE cQ $S(2n)=6300, S(2p)=29190 (1997Mo25, theory). Q(|b{+-}n)=6190,          
+144TE2cQ Q(|b{+-}2n)=1700 (deduced by evaluator from relevant theoretical values
+144TE3cQ in 1997Mo25).                                                          
+144TE c  2015Lo04: {+144}Te nuclide produced at RIBF-RIKEN facility in          
+144TE2c  {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon with an average        
+144TE3c  intensity of 6|*10{+10} ions/s. Identification of {+144}Te was made by 
+144TE4c  determining atomic Z and mass-to-charge ratio A/Q, where Q=charge state
+144TE5c  of the ions. The selectivity of ions was based on magnetic rigidity,   
+144TE6c  time-of-flight and energy loss. The separated nuclei were implanted at 
+144TE7c  a rate of 50 ions/s in a stack of eight double-sided silicon-strip     
+144TE8c  detectors (WAS3ABi), surrounded by EURICA array of 84 HPGe detectors.  
+144TE9c  Correlations were recorded between the implanted ions and |b rays.     
+144TE d  2005Pa71: theoretical half-life                                        
+144TE  L 0             0+                                                       
+144TE2 L %B-=100 $ %B-N=? $ %B-2N=?                                             
+144TE cL $There is no measurement of any decay mode, but %|b{+-}=100 is assigned
+144TE2cL by inference as this is the only decay mode allowed, followed by       
+144TE3cL possible delayed neutron emissions.                                    
+144TE cL $Theoretical T{-1/2}=59.2 ms, %|b{+-}n=25.9, %|b{+-}2n=0.08 (2003Mo09) 
+144TE cL $Theoretical T{-1/2}=28.7 ms, %|b{+-}n=26.8, %|b{+-}2n=0.2 (2016Ma12)  
+144TE cL E$observed fragments are assumed to correspond to the ground state     
+144TE cL T$from time-of-flight, half-life is implied as >300 ns. From systematic
+144TE2cL trend of decreasing half-life with increasing neutron number in an     
+144TE3cL isotopic chain, half-life is expected to be <0.5 s from known          
+144TE4cL half-lives of 1.4 s for {+138}Te, 2.49 s for {+137}Te and 17.6 s for   
+144TE5cL {+136}Te                                                               
+                                                                                
 144I     ADOPTED LEVELS                                          01NDS    200108
 144I   H TYP=FUL$AUT=A.A. Sonzogni$CIT=NDS 93, 599 (2001)$CUT=1-Dec-2000$       
 144I  C  Produced by PB(238U,F), E=750 MEV/nucleon (1994BE24).                  

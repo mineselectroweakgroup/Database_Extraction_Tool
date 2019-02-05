@@ -333,25 +333,26 @@
 174DY3cL 1.8 s from theoretical calculations (1997Mo25)                         
 174DY cL $ Production |s=1.9 nb {I6} (2012Ku26)                                 
                                                                                 
-174HO    COMMENTS                                                ENSDF    201309
-174HO  H TYP=FUL$AUT=Balraj SINGH, Michael Birch$CIT=ENSDF$CUT=30-Sep-2013$     
+174HO    COMMENTS                                                ENSDF    201711
+174HO  H TYP=FUL$AUT=FILIP G KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                  
 174HO C  TITL$NUCLEAR DATA SHEETS FOR 174HO                                     
-174HO c  AUTH$BALRAJ SINGH AND MICHAEL BIRCH                                    
-174HO c  INST$Department of Physics and Astronomy,                              
-174HO#c       McMaster University, Hamilton, Ontario,                           
-174HO#c       Canada, L8S 4M1                                                   
-174HO c  ABST$Information about the identification of {+174}Ho nuclide          
-174HO2c  from 2012Ku26 is presented                                             
-174HO c  CUT$Literature available up to Sept 30, 2013 has been consulted.       
-174HO c  ACKN$                                                                  
-174HO c  FUND$Work supported by the office of Science of the U.S. Department    
-174HOxc  of Energy.                                                             
+174HO c  AUTH$FILIP G KONDEV                                                    
+174HO c  INST$Nuclear Engineering Division                                      
+174HO#c       Argonne National Laboratory                                       
+174HO#c       9700 South Cass Avenue                                            
+174HO#c       Argonne, Illinois 60439, USA                                      
+174HO c  ABST$Information about the nuclear structure properties of the         
+174HO2c  {+174}Ho nuclide is presented                                          
+174HO c  CUT$Literature available up to February 20, 2017 has been consulted.   
+174HO c  FUND$This work is supported by the Office of Nuclear Physics, Office   
+174HO1c  of Science, U.S. Department of Energy under contract DE-AC02-06CH11357.
 174HO C  CIT$ENSDF                                                              
                                                                                 
-174HO    ADOPTED LEVELS                                          ENSDF    201309
+174HO    ADOPTED LEVELS                                          ENSDF    201711
 174HO  H TYP=FUL$AUT=BALRAJ SINGH AND MICHAEL BIRCH$CIT=ENSDF$CUT=30-SEP-2013$  
+174HO  H TYP=FUL$AUT=F.G. KONDEV$CIT=ENSDF$CUT=20-Feb-2017$                     
 174HO  Q 6260      SY 4410   SY 9040   SY -1390  SY    2012Wa38                 
-174HO cQ $Estimated uncertainties (2012Wa38): |DQ{+-}=420, |DS(n)=420,          
+174HO cQ $Estimated uncertainties (2012Wa38): |DQ(|b{+-})=420, |DS(n)=420,      
 174HO2cQ |DS(p)=500, |DS(|a)=500                                                
 174HO cQ $S(2n)=10350 {I360}, Q(|b{+-}n)=-110 {I360} from 2012Wa38 (syst).      
 174HO2cQ S(2p)=20740 (1997Mo25, theory).                                        
@@ -360,7 +361,7 @@
 174HO3c  Target=1.6 g/cm{+2} {+9}Be placed at the entrance of projectile        
 174HO4c  Fragment Separator (FRS). Particle identification was achieved by      
 174HO5c  event-by-event in-flight analysis of time-of-flight, energy loss       
-174HO6c  measurement, and magnetic rigidity (TOF-|DE'-B|r). Time-of-flight      
+174HO6c  measurement, and magnetic rigidity (tof-|DE'-B|r). Time-of-flight      
 174HO7c  measured using two plastic scintillation detectors, energy loss or     
 174HO8c  deposit by ionization chambers (MUSIC), and magnetic rigidity by four  
 174HO9c  time-projection chambers (TPC), which also provided energy deposit     
@@ -372,17 +373,40 @@
 174HOFc  a scintillator for veto signal. Measured production cross section.     
 174HOGc  Comparison of measured |s with predictions from ABRABLA model and      
 174HOHc  EPAX-3 model                                                           
-174HO  L 0                              160 NS   GT                             
-174HO2 L %B-=?                                                                  
-174HO cL $ Only |b{+-} decay mode is expected.                                  
-174HO cL E$ the observed {+174}Ho fragments assumed to correspond to the g.s.   
-174HO cL J$ 7/2- for valence proton and 9/2+ for valence neutron                
-174HO2cL  predicted (1997Mo25)                                                  
-174HO cL T$ limiting value from time-of-flight of 160 ns in 2012Ku26. Actual    
-174HO2cL |b-decay half-life is expected to be much longer as suggested by       
-174HO3cL 8 s from systematics (2012Au07), and 1.36 s from theoretical           
-174HO4cL calculations (1997Mo25)                                                
-174HO cL $ Production |s=98 nb {I6} (2012Ku26)                                  
+174HO c  2017Wu04: The {+174}Ho nuclide was produced at the RIBF-RIKEN facility 
+174HO2c  using the {+9}Be({+238}U,F) reaction at E=345 MeV/nucleon.  Two        
+174HO3c  experiments, optimized for the transmission of {+158}Nd and {+170}Dy   
+174HO4c  ions, were carried out with average beam intensities of 7 pnA and 12   
+174HO5c  pnA, respectively. The identification of the nuclide of interest was   
+174HO6c  made in the BigRIPS separator by determining the atomic number and the 
+174HO7c  mass-to-charge ratio of the ion using the TOF-B|r-|DE method. The      
+174HO8c  reaction products were transported through the ZeroDegree Spectrometer 
+174HO9c  and implanted into the beta-counting system WAS3ABi that was surrounded
+174HOac  by the EURICA array comprising of 84 HPGe detectors. The typical       
+174HObc  implantation rate was ~~100 ions/s.  Measured: implanted ion-|b{+-}-t, 
+174HOcc  implanted ion-|b{+-}-|g-t and implanted ions-|g-t correlations.        
+174HOdc  Deduced: T{-1/2}.                                                      
+174HO  L 0.0          (8-)             3.2 S     11                             
+174HO2 L %B-=100 $ %B-N=?                                                       
+174HO cL %B-$Only |b{+-} decay mode is expected.                                
+174HO cL J$From systematics of known quasiparticle states in neighboring nuclei 
+174HO2cL and the proposed configuration (by the evaluator). The assignment is   
+174HO3cL tentative.                                                             
+174HO cL T$From 2017Wu04, using a fit to the implanted ion-|b{+-}-t spectrum    
+174HO2cL using the least-squares and maximum-likelihood methods. The data       
+174HO3cL analysis included contributions from the parent, daughter and          
+174HO4cL ground-daughter decays, as well as a constant background.              
+174HO5cL The assignment to the ground state is ambiguous, given the possible    
+174HO6cL existence of an isomeric state.                                        
+174HO cL CONF$From systematics of well-deformed nuclei in this mass region, the 
+174HO2cL |p7/2[523] and |n9/2[624] Nilsson orbitals are expected near the proton
+174HO3cL and neutron Fermi surfaces, respectively. Thus, using the              
+174HO4cL Gallagher-Moszkowski rule, one may expect the K|p=8-,                  
+174HO5cL |p7/2[523]~#|n9/2[624] configuration for the ground state. The         
+174HO6cL existence of a low-spin, K|p=1- isomer, arising from the same          
+174HO7cL configuration, is also possible. The assignment is made by the         
+174HO8cL evaluator.                                                             
+174HO cL $ Production |s(at 1 GeV/nucleon)=98 nb {I6} (2012Ku26)                
                                                                                 
 174ER    ADOPTED LEVELS                                          99NDS    199908
 174ER  H TYP=FUL$AUT=E. BROWNE, HUO JUNDE$CIT=NDS 87, 15 (1999)$CUT=1-Nov-1998$ 

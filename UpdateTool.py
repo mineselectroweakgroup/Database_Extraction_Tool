@@ -21,7 +21,7 @@ import os
 
 def main():
 #Base URL
-     
+    
     url="www.nndc.bnl.gov"
     internetAccess=0
 #Initialize variable as false
@@ -147,4 +147,4 @@ def delOld(path="Data/"):
             continue;
     return;
     
-main()
+#main()

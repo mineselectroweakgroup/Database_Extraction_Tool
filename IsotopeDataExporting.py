@@ -1,93 +1,166 @@
 import DataClass as dc
-import os
+import os, sys
 import re
 import mass_data as md
 import ionization as addion
 import time
+import Parabola_Qt, Beta_Qt, Nuc_Qt
+
 
 
 #This function is used to bulk export a range of isotopes in a given A range.
-#user_ins is the class that contains the user's search parameters for execution from the terminal
-def datExp(option,user_ins, UI=False):
+#common ancestor of beta (Will_Gammas,Will_noGUI and master)
+#def datExp(option,UI=False,Filter=False):
+
+#beta (Will_Gammas,Will_noGUI and master)
+#def datExp(option,user_ins, UI=False):
+
+#gui_yana
+def datExp(option,UI=False,Filter=False,gif=""):
 #This uses the option from the first GUI to get inputs from the correct GUI. Some of the definitions here are
 #used to maintain full use of Markus' code, such as the definition of higherBound in Beta_GUI
-    tryAgainCounter=1
+#common ancestor/Will use tryAgainCounter
+    #tryAgainCounter=1
     if option == "one":
-        try:
-            from GUI import guioutputs
-            elementName= str(guioutputs.Z)
-            lowerBound = int(guioutputs.isoLow)
-            higherBound = int(guioutputs.isoUp)
-            energyLim = int(guioutputs.E)
-            exitcount = int(guioutputs.exitcount)
-            massData = False #str(guioutputs.mass)
-            wantedSpins=str(guioutputs.J).replace(" ","")
-            energyLim=int(guioutputs.E)
-            temperature = 0
-        except: #FIXME Errortype
-        ## Catches Error from GUI
 
-            elementName= str(user_ins.Z)
-            lowerBound = int(user_ins.isoLow)
-            higherBound = int(user_ins.isoUp)
-            energyLim = int(user_ins.E)
-            exitcount = int(user_ins.exitcount)
-            massData = user_ins.mass
-            wantedSpins=str(user_ins.J).replace(" ","")
-            energyLim=int(user_ins.E)
-            temperature = 0
-        finally:
-            elementName = elementName.replace(" ","")
-            elementName = elementName.title()
-            elementName = elementName.split(',')
-            betaVariable = 'NULL' ## Required parameter of DataClass
-            
-        
-    elif option == "two":
-        try:
-            from Beta_GUI import betaoutputs
-            elementName = str(betaoutputs.Z)
-            lowerBound = int(betaoutputs.A)
-            higherBound = int(betaoutputs.A)
-            betaVariable = str(betaoutputs.B)
-            energyLim = int(betaoutputs.E)
-            massData = True 
-            wantedSpins=str(betaoutputs.J).replace(" ","")
-            temperature = float(betaoutputs.temp)
-        except:
-            elementName = str(user_ins.Z)
-            #FIXME Check what happes for a range of A
-            lowerBound = int(user_ins.isoLow)
-            higherBound = int(user_ins.isoUp)
-            betaVariable = str(user_ins.Beta)
-            energyLim = int(user_ins.E)
-            massData = user_ins.mass
-            wantedSpins=str(user_ins.J).replace(" ","")
-            temperature = float(user_ins.temp)
-        finally:
-            elementName = elementName.title()
-            elementName = elementName.replace(" ","")
-            elementName = elementName.split(',')
-            exitcount = 0
-
-    elif option == "three":
-        from Parabola_GUI import parabolaoutputs
-        elementName = str(parabolaoutputs.Z)
-        lowerBound = int(parabolaoutputs.A)
-        higherBound = int(parabolaoutputs.A)
-        energyLim = 0.0
-        massData = True
-        wantedSpins=str(parabolaoutputs.J).replace(" ","")
+#gui_yana and common ancestor      
+	Z, isoLo, isoHi, E, exitcount, mass, J = Nuc_Qt.getguioutputs(gif)
+        elementName= str(Z)
+        lowerBound = int(isoLo)
+        higherBound = int(isoHi)
+        energyLim = int(E)
+        exitcount = int(exitcount)
+        massData = str(mass)
+        wantedSpins=str(J).replace(" ","")
+        energyLim=int(E)
         elementName = elementName.replace(" ","")
+        elementName = elementName.title()
         elementName = elementName.split(',')
-        temperature = float(parabolaoutputs.T)
-        exitcount = 0
+        temperature = 0
         betaVariable = 'NULL' ## Required parameter of DataClass
 
 
-    if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
+#Will uses a try  statement
+	#try:
+            #from GUI import guioutputs
+            #elementName= str(guioutputs.Z)
+            #lowerBound = int(guioutputs.isoLow)
+            #higherBound = int(guioutputs.isoUp)
+            #energyLim = int(guioutputs.E)
+            #exitcount = int(guioutputs.exitcount)
+            #massData = False #str(guioutputs.mass)
+            #wantedSpins=str(guioutputs.J).replace(" ","")
+            #energyLim=int(guioutputs.E)
+            #temperature = 0
+        #except: #FIXME Errortype
+        ## Catches Error from GUI
+
+
+#Will uses the try and the following user_ins and finally
+            #elementName= str(user_ins.Z)
+            #lowerBound = int(user_ins.isoLow)
+            #higherBound = int(user_ins.isoUp)
+            #energyLim = int(user_ins.E)
+            #exitcount = int(user_ins.exitcount)
+            #massData = user_ins.mass
+            #wantedSpins=str(user_ins.J).replace(" ","")
+            #energyLim=int(user_ins.E)
+            #temperature = 0
+        #finally:
+            #elementName = elementName.replace(" ","")
+            #elementName = elementName.title()
+            #elementName = elementName.split(',')
+            #betaVariable = 'NULL' ## Required parameter of DataClass
+            
+        
+    elif option == "two":
+
+#yana/common ancestor
+        Z, A, J, E, B, T = Beta_Qt.getbetaoutputs(gif)
+        elementName = str(Z)
+        lowerBound = int(A)
+        higherBound = int(A)
+        betaVariable = str(B)
+        energyLim = int(E)
+        massData = "YES"
+        elementName = elementName.title()
+        wantedSpins=str(J).replace(" ","")
+
+#Common ancestor for and if loop
+	''''
+        perTable = open("ElementList.txt","r")
+        periodicTable = perTable.readline()
+        periodicTable = periodicTable.split(',')
+        for item in periodicTable:
+            if item == elementName:
+                index = periodicTable.index(item)
+                if betaVariable == "B+":
+                    elementName = periodicTable[index-1] + "," + elementName
+                if betaVariable == "B-":
+                    elementName = elementName + "," + periodicTable[index+1]
+        '''
+
+#Will uses try statement
+	#try:
+            #from Beta_GUI import betaoutputs
+            #elementName = str(betaoutputs.Z)
+            #lowerBound = int(betaoutputs.A)
+            #higherBound = int(betaoutputs.A)
+            #betaVariable = str(betaoutputs.B)
+            #energyLim = int(betaoutputs.E)
+            #massData = True 
+            #wantedSpins=str(betaoutputs.J).replace(" ","")
+            #temperature = float(betaoutputs.temp)
+        #except:
+            #elementName = str(user_ins.Z)
+            #FIXME Check what happes for a range of A
+            #lowerBound = int(user_ins.isoLow)
+            #higherBound = int(user_ins.isoUp)
+            #betaVariable = str(user_ins.Beta)
+            #energyLim = int(user_ins.E)
+            #massData = user_ins.mass
+            #wantedSpins=str(user_ins.J).replace(" ","")
+            #temperature = float(user_ins.temp)
+        #finally:
+            #elementName = elementName.title()
+            #elementName = elementName.replace(" ","")
+            #elementName = elementName.split(',')
+            #exitcount = 0
+
+#yana and common ancestor
+        elementName = elementName.replace(" ","")
+        elementName = elementName.split(',')
+
+#Will and common ancestor
+	#temperature = floart(betaoutputs.temp)
+
+        temperature = float(T)
+        exitcount = 0
+
+    elif option == "three":
+        Z, A, J, T = Parabola_Qt.getparabolaoutputs(gif)
+        elementName = str(Z)
+        lowerBound = int(A)
+        higherBound = int(A)
+        energyLim = 0.0
+        
+#Will uses the following for massData
+	#massData = True
+
+	massData = "YES"
+        wantedSpins=str(J).replace(" ","")
+        elementName = elementName.replace(" ","")
+        elementName = elementName.split(',')
+        temperature = float(T)
+        exitcount = 0
+        betaVariable = 'NULL' ## Required parameter of DataClass
+
+#yana comments out the tryAgainCounter and if statement
+    #if(type(lowerBound) is int and type(higherBound) is int and type(energyLim) is int):
+
+#Will added this comment
 #FIXME not sure what tryAgainCounter actuall does, just plots?
-            tryAgainCounter=0
+            #tryAgainCounter=0
 
     ## Create dictionaries of ionization data
     addion.make_ion_dict(temperature)
@@ -101,10 +174,17 @@ def datExp(option,user_ins, UI=False):
             indata=dc.data('ensdf.'+str(i).zfill(3),itervar,option,betaVariable,energyLim)
             indata.filterData(wantedSpins,UI)
 
+#Will uses the following if statement
             ## Include Atomic Mass Energy Data
-            if massData:
-                md.addMass(indata)
+            #if massData:
+                #md.addMass(indata)
             
+#yana and common ancestor
+            ## Include Atomic Mass Energy Data
+            if option == 'one':
+                pass
+            else:
+                md.addMass(indata) 
 
             ## Include ionization effects
             addion.addIonization(indata) 
@@ -123,21 +203,31 @@ def datExp(option,user_ins, UI=False):
 
        
 #This function will create a plt file for use in gnuplot to plot data from a eiter filtered data files or the whoel data file. This function is best used if used with datExp.
-def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,decayType,wantedSpins='',UI=False,userArgs=None,fileParsingFactor=0):
+
+#yana and common ancestor
+def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,decayType,wantedSpins='',UI=False,fileParsingFactor=0):
+
+#Will uses a different def and then a try statement
+#def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,decayType,wantedSpins='',UI=False,userArgs=None,fileParsingFactor=0):
     
-    try:
-        makePNG = userArgs.png
-        makeGIF = userArgs.gif
-    except AtrributeError: ## GUI used
-        makePNG = True
-        makeGIF = True
+    #try:
+        #makePNG = userArgs.png
+        #makeGIF = userArgs.gif
+    #except AtrributeError: ## GUI used
+        #makePNG = True
+        #makeGIF = True
 
     fileParsingFactorStr="_every_"+str(fileParsingFactor)
-    print(fileParsingFactor)
+
+#Will prints the parsing factor for some reason
+    #print(fileParsingFactor)
 
     tryAgainCounter=1
-    #while(tryAgainCounter and UI):
-    while(tryAgainCounter):
+
+#Will comments out one of the while loops in favor of the other
+#the following is yana and common ancestor
+    while(tryAgainCounter and UI):
+    #while(tryAgainCounter):
         try:
             fileParsingFactor=int(1)
             fileParsingFactorStr="_every_"+str(fileParsingFactor)
@@ -145,7 +235,9 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 tryAgainCounter=0
         except:
             print("Invalid Input")
-    print('@x2 %s'%fileParsingFactor)
+
+#Will prints another parsing factor
+    #print('@x2 %s'%fileParsingFactor)
 
     elementnamestring = "".join(elementName)
     if len(elementnamestring) > 50:
@@ -164,7 +256,10 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             with open("Output/gnuPlot/"+filenameopen, 'r') as datafile:
                 first_line = datafile.readline().rstrip()
                 first_line = first_line.split(';')
+
+#Will and common ancestor
                 #print(first_line)
+
                 nodatatest = str(first_line[2][-2:])
             if (nodatatest == "--" or nodatatest == "-*"):
                 os.remove("Output/"+"gnuPlot/"+filenameopen)
@@ -203,7 +298,10 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             elif option == "three":
                 fileName = "Parabola_"+str(lowerBound)+"_"+str(temperature)[:-2]+"K.plt"
                 create_file = True
+
+#Will has this fix me print
             #print(option) #FIXME option is reassigning somehow
+
             fileName= "Output/gnuPlot/" + fileName.replace('/','_')
             pltFile = open(fileName,'wb')
             
@@ -219,11 +317,18 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
 
         #This labels the y axis and the Title
                 pltFile.write(str.encode("set ylabel \"Energy(keV)\"\n"))
-                pltFile.write(str.encode("set term png\n"))
+
+#Will's pltFile.write
+                #pltFile.write(str.encode("set term png\n"))
+
                 if option == "one":
                     pltFile.write(str.encode("set title \"Excited States of ^{"+str(lowerBound)+"}"+elementnamestring+" to ^{"+str(higherBound)+"}"+elementnamestring+" with "+wantedSpins+" Spins up to "+str(energyLim)+" keV\"\n"))
                 elif option == "two":
                     pltFile.write(str.encode("set title \"B^{"+decayType[-1]+"} Decay Scheme for ^{"+str(lowerBound)+"}"+str(elementName[0])+" at "+str(temperature)+" K\\nup to "+str(energyLim)+" keV Excitation Energy\"\n"))
+                    
+#yana and common ancestor have this commented out
+		    #pltFile.write(str.encode("set title \"Beta Decay Scheme for ^{"+str(lowerBound)+"}"+str(elementName[0])+" and ^{"+str(higherBound)+"}"+str(elementName[1])+" at "+str(temperature)+" K\\nup to "+str(energyLim)+" keV Excitation Energy\"\n"))
+
                 elif option == "three":
                     pltFile.write(str.encode("set title \"Mass Parabola for A = "+str(lowerBound)+" at "+str(temperature)+" K\"\n"))
                 else:
@@ -352,23 +457,45 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.375):2:(0.375):4 with boxxyerrorbars linecolor rgb 'black' fillstyle solid\n").replace('/', '_')))
 
                 pltFile.write(str.encode(("replot \""+str(i)+str(element)+wantedSpins+"_Fil.dat\" using ("+str(i+1-lowerBound-removecount[element]+mostrecentiter)+"-0.75):2:(0.75):(0) with vectors nohead linecolor -1\n").replace('/', '_')))
+
                 
                 itercount = itercount + 1
             mostrecentiter = itercount   
-    try:
+
+#yana and common ancestor use if statement                
+    if UI:
+        print("Program is finished plotting")
+
+#Will uses a try statement
+    #try:
 #    if UI:
         #This defines the code required for the program to plot the information
         #as a .gif file.
         #Also in here is the font and font size for the .gif file
 
-        fileName = fileName[15:]
-        gif_filename = fileName[:-4]+'.gif'
-        png_filename = fileName[:-4]+'.png'
 
-        if makePNG:
-            bigfileName = "Large_"+png_filename
+#Will uses this for the file names and big files
+        #fileName = fileName[15:]
+        #gif_filename = fileName[:-4]+'.gif'
+        #png_filename = fileName[:-4]+'.png'
+
+        #if makePNG:
+            #bigfileName = "Large_"+png_filename
+
+#yana and common ancestor use a try statement instead
+	#if os.path.isfile(fileName):
+        try:
             pltFile.write(str.encode("set term png size 5600,4000\n"))
+
+#yana and common ancestor's filenaming and big files
+            fileName = fileName[15:].replace('.plt','.png')
+            bigfileName = "Large_"+fileName.replace(".gif",".png")
+
             pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 95\"\n"))
+
+#yana and common ancestor
+#FIXME program stops here
+
             if os.path.isfile(bigfileName):
                 os.remove(bigfileName)
             if rangecount >= 20:
@@ -385,9 +512,17 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             pltFile.write(str.encode("set output "+"'"+bigfileName+"'"+"\n"))
             pltFile.write(str.encode("replot\n"))
 
-        if makeGIF:
+#Will uses an if statement
+        #if makeGIF:
+
             pltFile.write(str.encode("set term gif size 840,600\n"))
+
+#yana and common ancestor except for pltFile (all)
+            fileName = fileName.replace('.png','.gif')
             pltFile.write(str.encode("set title font \""+os.getcwd()+"/Helvetica.ttf, 15\"\n"))
+            if os.path.isfile(fileName):
+                os.remove(fileName)
+
             if rangecount >= 20:
                 pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 7\n"))
             elif rangecount >= 15:
@@ -398,10 +533,30 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 12\n"))
             else:
                 pltFile.write(str.encode("set term gif enhanced font \""+os.getcwd()+"/Helvetica.ttf\" 15\n"))
-            pltFile.write(str.encode("set output "+"'"+gif_filename+"'"+"\n"))
+
+#yana and common ancestor
+            pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
+
+#Will
+	    pltFile.write(str.encode("set output "+"'"+gif_filename+"'"+"\n"))
+
             pltFile.write(str.encode("replot\n"))
-        print("Program is finished plotting.")
-    except:
-        print('Error generating .plt file.')
-        raise
-    exit
+            pltFile.write(str.encode("set term x11"))
+        except:
+
+#yana
+            print('Error generating .plt file: {0}'.format(sys.exc_info()))
+
+#common ancestor
+            #print('Error generating .plt file')
+
+#Will also uses raise and another print no pltFile before except
+	
+	    #print('Error generating .plt file.')
+            #raise
+        exit
+
+#Will doesn't include the final else
+    else:
+        print("Nothing to plot")
+        exit

@@ -2364,10 +2364,12 @@
 106TC  G     717.0      2.91                                                    
                                                                                 
 106RU    ADOPTED LEVELS, GAMMAS                                  08NDS    200806
+106RU  H TYP=ERR$AUT=A. NEGRET$CIT=ENSDF$DAT=29-MAR-2017$                       
+106RU2 H COM=Typo correction (removed band assignment of the 991 level)$        
 106RU  H TYP=FUL$AUT=D. DE FRENNE AND A. NEGRET$CIT=NDS 109, 943 (2008)$        
 106RU2 H CUT=1-May-2007$                                                        
 106RU  Q 39.40     228461    6 1.132E4 4 -5177   10    2012WA38                 
-106RU CQ Note: Current evaluation has used the following Q record               
+106RU cQ $Note: Current evaluation has used the following Q record              
 106RU  Q 39.40     218466    7 11320   60-5190   22    2003AU03                 
 106RU cG E         Taken from {+106}Tc |b{+-} decay, except for those |g's only 
 106RU2cG observed in (HI,xn|g) reactions.                                       
@@ -2375,7 +2377,7 @@
 106RUxcG decay                                                                  
 106RU cL E         Calculated with a least-squares fit from gammas in           
 106RU2cL {+106}Tc |b{+-} decay and (HI,xn|g) reaction. For gammas in (HI,xn|g)  
-106RU3CL reaction DE=1 keV was assumed  by the evaluators.                      
+106RU3cL reaction |DE=1 keV was assumed by the evaluators.                      
 106RU cL J         Based on measured |g mult and observed band structure, unless
 106RU2cL noted otherwise                                                        
 106RU CL BAND(A)$ GS band                                                       
@@ -2392,18 +2394,18 @@
 106RUX L XREF=ABCDEF                                                            
 106RU2 L %B-=100                                                                
 106RU cL T         From the evaluation of 2004Wo02.                             
-106RU2CL Others: 373.59 D (1980Ho17) {I15}, 371.63 d {I17} (1977DeYO), 371.7 d  
+106RU2cL Others: 373.59 d (1980Ho17) {i15}, 371.63 d {i17} (1977DeYO), 371.7 d  
 106RU3cL {I15} (1983Wa26), 366.5 d {I8} (1956Sc87), 372 d {I4} (1957Me47),      
 106RU4cL 365.8 d {I17} (1960Ea02), 371 d 1 (1961Wy01), 368.0 d {I18} (1965Fl02) 
 106RU  L 270.07    4 2+                  0.20 NS 3                          A   
 106RUX L XREF=ABCDEF                                                            
 106RU cL J         L=2 (t,p)                                                    
-106RU CL T$From time-integral perturbed angular correlations with Gammasphere   
-106RU2CL in connection with a {+252}Cf SF source (2004Sm04,2005Sm08).           
-106RU3CL T calculated  assuming the same transition quadrupole moment           
-106RU4CL as 108RU. Other: 0.26 NS 7 (1995Sc24)                                  
+106RU cL T$From time-integral perturbed angular correlations with Gammasphere   
+106RU2cL in connection with a {+252}Cf SF source (2004Sm04,2005Sm08).           
+106RU3cL T{-1/2} calculated assuming the same transition quadrupole moment      
+106RU4cL as {+108}Ru. Other: 0.26 ns {I7} (1995Sc24)                            
 106RU3 L G=+0.3 1                                                               
-106RU CL G$From 252CF SF decay (2004Sm04,2005Sm08)                              
+106RU cL G$From {+252}Cf SF decay (2004Sm04,2005Sm08)                           
 106RU  G 270.096   9 100       [E2]                                             
 106RUB G BE2W=66 10                                                             
 106RU cG E$from 1979Bo26. Others: 270.3 {I2} (1970HeZH), 269.8 {I4} (1969WiZX)  
@@ -2424,7 +2426,7 @@
 106RU  G 522.22    5 100     7 M1+E2     7.1     +16-110.0045                   
 106RU cG M         |D|p=no from decay scheme                                    
 106RU  G 792.31    5 69      5                                                  
-106RU  L 990.62    5 0+                                                     D   
+106RU  L 990.62    5 0+                                                         
 106RUX L XREF=ABC                                                               
 106RU cL J         L(t,p)=0                                                     
 106RU  G 720.55    5 100       (E2)                                             
@@ -2485,7 +2487,7 @@
 106RUX L XREF=DE(1975)                                                          
 106RU cL J         from agreement with DWBA calculations in ({+18}O,{+16}O)     
 106RU  G 677.6     4 100                                                        
-106RU CG E         From (18O,16O)                                               
+106RU cG E         From ({+18}O,{+16}O)                                         
 106RU  L 2151      8                                                            
 106RUX L XREF=B                                                                 
 106RU  L 2239.40   7 (1)                                                        
@@ -2662,7 +2664,7 @@
 106RU CL BAND(D)   POSSIBLE BETA-VIBRATIONAL BAND                               
 106TC  P 0.0         (1,2)             35.6 S    6              6547      11    
 106RU  N 0.558     17          1.0       1.0                                    
-106RU CN $Calculated under the assumption of no |b feeding of the g.s.          
+106RU cN $Calculated under the assumption of no |b feeding of the g.s.          
 106RU  G 1643.1    2 1.3     2                                                  
 106RU  G 3031.5    2 0.9     1                                                  
 106RU  L 0.0         0+                371.8 D   18                         A   
@@ -2792,15 +2794,15 @@
 106RU c  Measured E|g, |g|g using Gammasphere array of 102 Compton suppressed   
 106RU2c  Ge detectors.                                                          
 252CF  P 0.0         0+                2.645 Y   8                              
-252CF CP $%SF DECAY=3.092 8                                                     
+252CF cP $%SF decay=3.092 {I8}                                                  
 106RU  L 0.0         0+                371.8 D   18                             
 106RU cL T$ From adopted levels                                                 
 106RU  L 270.07    4 2+                  0.20 NS 3                              
 106RU cL E$From adopted levels                                                  
-106RU CL T$From time-integral perturbed angular correlations with Gammasphere   
-106RU2CL in connection with a 252CF SF source (2004Sm04,2005Sm08).              
-106RU3CL T calculated  assuming the same transition quadrupole moment as        
-106RU4CL 108RU. Other: 0.26 NS 7 (1995Sc24)                                     
+106RU cL T$From time-integral perturbed angular correlations with Gammasphere   
+106RU2cL in connection with a {+252}Cf SF source (2004Sm04,2005Sm08).           
+106RU3cL T{-1/2} calculated assuming the same transition quadrupole moment as   
+106RU4cL {+108}Ru. Other: 0.26 ns {I7} (1995Sc24)                               
 106RU3 L G=+0.3 1 (2004Sm04,2005Sm08)                                           
                                                                                 
 106RU    104RU(T,P)                    1972CA10,1970CA08         08NDS    200806
@@ -2876,11 +2878,11 @@
 106RU    (HI,XNG)                      2000DE33,1996PO06         08NDS    200806
 106RU  H TYP=FUL$AUT=D. DE FRENNE AND A. NEGRET$CIT=NDS 109, 943 (2008)$        
 106RU2 H CUT=1-May-2007$                                                        
-106RU C  2000De33: 176YB(28SI,XG): E=145 MeV.  Measured E|g and |g|g using      
+106RU c  2000De33: {+176}Yb({+28}Si,X|g): E=145 MeV. Measured E|g and |g|g using
 106RU2c  Eurogam II array consisting of 54 escape-suppressed Ge detectors.      
 106RU3c  30 of the detectors were large-volume coaxial detectors and the        
 106RU4c  remaining 24 were four-element 'clover' detectors.                     
-106RU C  1996Po06: 162DY(36S,F): E=162 MeV. Measured |g, |g|g with Eurogam      
+106RU c  1996Po06: {+162}Dy({+36}S,F): E=162 MeV. Measured |g, |g|g with Eurogam
 106RU2c  array of 30 Ge detectors. All |g rays reported here are strong         
 106RU cL E$From least-squares fit to E|g's from 2000De33, assuming |D(E|g)=1 keV
 106RU2cL for each E|g                                                           
@@ -6541,10 +6543,12 @@
 106PD  L 2980                                          (3)                  A   
                                                                                 
 106AG    ADOPTED LEVELS, GAMMAS                                  08NDS    200806
+106AG  H TYP=ERR$AUT=A. NEGRET$CIT=ENSDF$DAT=29-MAR-2017$                       
+106AG2 H COM=Corrected band assignments for the 676 and 929 levels$             
 106AG  H TYP=FUL$AUT=D. DE FRENNE AND A. NEGRET$CIT=NDS 109, 943 (2008)$        
 106AG2 H CUT=1-May-2007$                                                        
 106AG  Q 190       3 7943    6 5813    3 -2587   6     2012WA38                 
-106AG CQ Note: Current evaluation has used the following Q record               
+106AG cQ $Note: Current evaluation has used the following Q record              
 106AG  Q 195       8 7941    115813     3-2587   7     2003AU03                 
 106AG cG M         Deduced from |g(|q) and |g|g-DCOQ (directional correlation   
 106AG2cG from oriented nuclei referred to quadrupole transitions method)        
@@ -6562,18 +6566,18 @@
 106AG cL J         Unless noted otherwise, based on observed band structure,    
 106AG2cL |g|g-DCOQ, (directional correlation from oriented nuclei referred to   
 106AG3cL quadrupole transitions method) |g lin pol                              
-106AG cL BAND(A)$ Member of a cascade built on 1+ g.s.                          
+106AG CL BAND(A)$ Member of a cascade built on 1+ g.s.                          
 106AG CL BAND(X)$ (2006De15). Magnetic dipole rotational band based on 11+.     
 106AG2cL Proposed configuration=|pg{-9/2}~#|nh{-11/2}{+2}~#|n(g{-7/2}/d{-5/2})  
 106AG3cL |pg{-9/2}~#n(h{-11/2}){+2}~#|ng{-7/2} explains high spin               
 106AG4cL bands in {+106}Ag. Other bands in {+106}Ag can be described by         
 106AG5cL two quasiparticle configurations.                                      
-106AG CL BAND(F)$ |pg{+-1}{-9/2}~#|nh{-11/2}, |a=0    (2007JO01).               
-106AG CL BAND(f)$ |pg{+-1}{-9/2}~#|nh{-11/2}, |a=1    (2007JO01).               
+106AG CL BAND(F)$ |pg{+-1}{-9/2}~#|nh{-11/2}, |a=0    (2007Jo01).               
+106AG CL BAND(f)$ |pg{+-1}{-9/2}~#|nh{-11/2}, |a=1    (2007Jo01).               
 106AG CL BAND(G)$ Chiral partner of |pg{+-1}{-9/2}~#|nh{-11/2}, |a=0            
-106AG2CL (2005Jo20,2007Jo01).                                                   
+106AG2cL (2005Jo20,2007Jo01).                                                   
 106AG CL BAND(g)$ Chiral partner of |pg{+-1}{-9/2}~#|nh{-11/2}, |a=1            
-106AG2CL (2005Jo20,2007Jo01).                                                   
+106AG2cL (2005Jo20,2007Jo01).                                                   
 106AG CL BAND(C)$ |DJ=1 band based on 10-  (1994Je11).                          
 106AG CL BAND(E)$ Band based on 6+.                                             
 106AG2cL Configuration=|pg{-9/2}~#|ng{-7/2}                                     
@@ -6592,7 +6596,7 @@
 106AGxcL 1948Mo33, 1961Ra06, 1967St10                                           
 106AG cL J         J=1 from atomic beam (1958Re10,1959Ew89). |p=+ from log|     
 106AG2cL {Ift}=4.9 to 0+                                                        
-106AG3 L MOMM1=+2.85 20 (1989RA17)                                              
+106AG3 L MOMM1=+2.85 20 (1989Ra17)                                              
 106AG  L 89.66     7 6+                8.28 D    2                          EM1 
 106AGX L XREF=ABDE(85)                                                          
 106AG2 L %EC+%B+=100$                                                           
@@ -6606,7 +6610,7 @@
 106AGxcL to 5+                                                                  
 106AG cL E         based on E|g from J=4+, 503- and 712-keV states              
 106AG2cL via (|a,n|g) 1980Sa05; other: 87.95 (1975An07)                         
-106AG3 L MOMM1=(+)3.709 4 (1989RA17)                                            
+106AG3 L MOMM1=(+)3.709 4 (1989Ra17)                                            
 106AG3 L MOME2=+1.08 6                                                          
 106AG cL MOME2     Weighted average of +1.11 {I11} (1989Ra17)                   
 106AG2cL and +1.06 {I16} (1989Di12) from collinear LASER spectroscopy           
@@ -6659,12 +6663,12 @@
 106AG  G 253.77    4 100.0   26                                                 
 106AG  L 389.16     43+                                                         
 106AGX L XREF=BE(382)                                                           
-106AG CL J$suggested by 1980Sa05 in 103RH(A,NG)                                 
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 154.51    5 100.0   30                                                 
 106AG  G 278.48    5 89.1    30                                                 
 106AG  L 416.62    6 (1-)                                                       
 106AGX L XREF=B                                                                 
-106AG CL J$suggested by 1980Sa05 in 103RH(A,NG)                                 
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 139.62    8 20.9    26                                                 
 106AG  G 305.94    7 100     5                                                  
 106AG  L 425.04     5 (2,3)-                                                    
@@ -6726,7 +6730,7 @@
 106AG  G 486.73    1160.7    28                                                 
 106AG  L 602.77     8(2-,3-)                                                    
 106AGX L XREF=B                                                                 
-106AG CL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 325.73    7 100                                                        
 106AG  L 625.74     8 7+                                                        
 106AGX L XREF=ABD                                                               
@@ -6734,17 +6738,17 @@
 106AG2cL {+96}Zr({+14}N,4n|g) to J|p=6+ 89 keV level. J=7 preferred over J=5    
 106AG3cL because excitation energy is much higher than J=6 level.               
 106AG  G 293.09    4 100      6M1+E2     -0.17   8                              
-106AG CG RI$from (HI,xn|g)                                                      
+106AG cG RI$from (HI,xn|g)                                                      
 106AG  G 536.07    6 17       2M1+E2     0.5     AP                             
-106AG CG RI$FROM (HI,xn|g)                                                      
+106AG cG RI$from (HI,xn|g)                                                      
 106AG  L 661.31    8  1-                                                        
 106AGX L XREF=BEG                                                               
 106AG cL J         L=0 (p,d), L=1 ({+3}He,d)                                    
 106AG  G 384.27    7 100                                                        
-106AG  L 676.29     6(5+)                                                   f   
+106AG  L 676.29     6(5+)                                                       
 106AGX L XREF=B                                                                 
 106AG cL J         |g to (4)+                                                   
-106AG CL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 173.26    8 13.9    12                                                 
 106AG  G 227.19    5 100     3                                                  
 106AG  L 680       1  0-,1-                                                     
@@ -6757,7 +6761,7 @@
 106AG  G 421.14    7 58      3                                                  
 106AG  L 712.15     7(4+)                                                       
 106AGX L XREF=B                                                                 
-106AG CL J$JPI=4+ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                     
+106AG cL J$J|p=4+ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                     
 106AG  G 116.09    6 100     4                                                  
 106AG  G 383.28    1086      7                                                  
 106AG  L 721.5      37+                                                         
@@ -6769,11 +6773,11 @@
 106AG  G 631.9     4 67      27 D                                               
 106AG  L 730.43    13(2+)                                                       
 106AGX L XREF=B                                                                 
-106AG CL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 524.48    12100                                                        
 106AG  L 741.58     9(3+,4+)                                                    
 106AGX L XREF=B                                                                 
-106AG CL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 352.42    8 100     5                                                  
 106AG  G 535.6     1022      4                                                  
 106AG  L 749       2                                                            
@@ -6787,7 +6791,7 @@
 106AG  G 222.50    102.8     6                                                  
 106AG  G 432.40    112.8     6                                                  
 106AG  G 436.75    7 2.8     6 [E1]                                             
-106AG CG E$NO final level within 0.29 keV                                       
+106AG cG E$no final level within 0.29 keV                                       
 106AG cG M$|D|p=yes from decay scheme                                           
 106AG  G 675.52    4 100     2 E1(+M2)   0.00    13                             
 106AG  L 769.68    16 1-,2-,3-                                                  
@@ -6804,11 +6808,11 @@
 106AGxcG {+96}Zr({+14}N,4n|g)                                                   
 106AG  L 773.50    11(5+)                                                       
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 324.39    10100                                                        
 106AG  L 775.65     9 (4+,5)                                                    
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 272.62    8 100                                                        
 106AG  L 797.48    13                                                           
 106AGX L XREF=B                                                                 
@@ -6826,7 +6830,7 @@
 106AG cL J         |g branchings to 3+,5+ states suggest (4+)                   
 106AG  G 427.23    9 54      5                                                  
 106AG  G 487.76    11100     6                                                  
-106AG  L 829.41     87-                                                         
+106AG  L 829.41     87-                                                     f   
 106AGX L XREF=ABD                                                               
 106AG cL J         from |DJ(739|g,E1+M2)=-1 to 89 keV level (J|p=6+) in         
 106AG2cL {+96}Zr({+14}N,4n)                                                     
@@ -6835,7 +6839,7 @@
 106AG  G 739.79    7 22      2 E1+M2     -0.06   14                             
 106AG  L 835.39    12(2+,3+)                                                    
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 600.73    11100                                                        
 106AG  L 851       2                                                            
 106AGX L XREF=E                                                                 
@@ -6849,9 +6853,9 @@
 106AG2cL {+96}Zr({+14}N,4n)                                                     
 106AG cL T         from DSA in {+96}Zr({+14}N,4n|g) (1990VoZW)                  
 106AG  G 44.85     5 100     31                                                 
-106AG CG RI$ FROM (HI,XNG)                                                      
+106AG cG RI$from (HI,xn|g)                                                      
 106AG  G 541.57    4 41      3 E1(+M2)   0.00    2                              
-106AG CG RI$ FROM (HI,XNG)                                                      
+106AG cG RI$from (HI,xn|g)                                                      
 106AGB G BE1W=(3.5E-6 11)                                                       
 106AG  L 881.24    9 (6+)                                                       
 106AGX L XREF=BG(886)                                                           
@@ -6860,7 +6864,7 @@
 106AG  G 552.36    9 100     6                                                  
 106AG  L 887.68     8(5+)                                                       
 106AGX L XREF=BG(886)                                                           
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG cL J         L(p,d)=5,6                                                   
 106AG  G 211.43    1026      4                                                  
 106AG  G 438.55    7 100     5                                                  
@@ -6870,7 +6874,7 @@
 106AG  G 625.94    20100                                                        
 106AG  L 912.38    11(5,7)-                                                     
 106AGX L XREF=B                                                                 
-106AG CL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 147.14    7 100                                                        
 106AG  L 917.37    181-,2-,3-                                                   
 106AGX L XREF=BG                                                                
@@ -6878,11 +6882,11 @@
 106AG  G 492.32    17100                                                        
 106AG  L 923.10    13(2+,3+,4+)                                                 
 106AGX L XREF=B                                                                 
-106AG CL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 533.94    12100                                                        
 106AG  L 923.66    11(1+,2+)                                                    
 106AGX L XREF=B                                                                 
-106AG CL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 689.00    10100                                                        
 106AG  L 926.6      3 8-                                                        
 106AGX L XREF=A                                                                 
@@ -6890,13 +6894,13 @@
 106AG  L 927.26    10 (6+)                                                      
 106AGX L XREF=AB                                                                
 106AG cL J         (6+)suggested from deexcitation to (5)+, (7)+ states in      
-106AG2CL (A,NG). In disagreement with adopted JPI=8- FROM (HI,XNG)              
+106AG2cL (|a,n|g). In disagreement with adopted J|p=8- from (HI,xn|g)           
 106AG  G 594.54    1523      5                                                  
 106AG  G 598.37    7 100     5                                                  
 106AG  L 933.18    10(5+)                                                       
 106AGX L XREF=BG                                                                
 106AG cL J         L(p,d)=0 for the 933.18 and/or 936.46 levels                 
-106AG CL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 414.94    8 100                                                        
 106AG  L 936.46    10 0-,1-                                                     
 106AGX L XREF=BC                                                                
@@ -6913,10 +6917,10 @@
 106AG cL J         from |DJ(872|g,E2)=-2 to 89 keV level (J|p=6+) in            
 106AG2cL {+96}Zr({+14}N,4n)                                                     
 106AG  G 629.17    7 100     17M1+E2     6       2                              
-106AG CG RI$ FROM (HI,XNG)                                                      
+106AG cG RI$from (HI,xn|g)                                                      
 106AG cG M         |D|p=no from decay scheme                                    
 106AG  G 872.00    8 64      23E2                                               
-106AG CG RI$ FROM (HI,XNG)                                                      
+106AG cG RI$from (HI,xn|g)                                                      
 106AG  L 971       2 +                                                          
 106AGX L XREF=E                                                                 
 106AG cL J         |p=+ from L=(2) in ({+3}He,d)                                
@@ -6948,14 +6952,14 @@
 106AG  G 169.64    6 100       D+Q       0.04    2                              
 106AG  L 1063.18   11(4+,5+)                                                    
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 386.90    8 100                                                        
 106AG  L 1082      2 +                                                          
 106AGX L XREF=E                                                                 
 106AG cL J$L=2 in ({+3}He,d)                                                    
 106AG  L 1086.86   10(4-,5-)                                                    
 106AGX L XREF=BC                                                                
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 568.62    9 100                                                        
 106AG  L 1106      2 0-,1-                                                      
 106AGX L XREF=G                                                                 
@@ -6964,54 +6968,54 @@
 106AGX L XREF=B                                                                 
 106AG cL E$should be different from 1106-keV level because this level decays    
 106AG2cL only to (4)- level                                                     
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 588.09    8 100                                                        
 106AG  L 1123.55   11(5-,6-)                                                    
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 605.31    10100                                                        
 106AG  L 1133.88   16(4+)                                                       
 106AGX L XREF=BE                                                                
 106AG cL J         L({+3}He,d)=1 for 1133.83 and/or 1135.66, |g to 5+           
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 805.01    14100                                                        
 106AG  L 1135.66   12(2-,3-,4-)                                                 
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG cL J         L({+3}He,d)=1 for 1133.83 and/or 1135.66, |g to (3,4)-       
 106AG  G 274.08    8 100                                                        
 106AG  L 1145.06   11(2-,3-,4-)                                                 
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 780.62    10100                                                        
 106AG  L 1150.07   16(2+,3+,4+)                                                 
 106AGX L XREF=B                                                                 
 106AG  G 760.90    15100                                                        
 106AG  L 1166.8    3 (2-,3-,4-)                                                 
 106AGX L XREF=BC                                                                
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 802.39    28100                                                        
 106AG  L 1176      2 1-                                                         
 106AGX L XREF=G                                                                 
 106AG cL           L=0+2 (p,d)                                                  
 106AG  L 1224.67   11(6,7)-                                                     
 106AGX L XREF=BC                                                                
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 459.43    8 100                                                        
 106AG  L 1230.03   17(2-,3-,4-)                                                 
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 418.01    15100                                                        
 106AG  L 1263.13   12                                                           
 106AGX L XREF=D                                                                 
 106AG  G 219.22    7 100                                                        
 106AG  L 1288.98   16(4+,5+)                                                    
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 960.11    14100                                                        
 106AG  L 1303.26   11(5-,6-,7-)                                                 
 106AGX L XREF=B                                                                 
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 538.01    7 100                                                        
 106AG  L 1329.54   16(3-,4-)                                                    
 106AGX L XREF=BE(1333)                                                          
@@ -7028,7 +7032,7 @@
 106AG cL J         from L({+3}He,d)=2                                           
 106AG  L 1413.26   11(5,6)-                                                     
 106AGX L XREF=ABCD                                                              
-106AG CL J$ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                           
+106AG cL J$suggested by 1980Sa05 in {+103}Rh(|a,n|g)                            
 106AG  G 648.01    8 100                                                        
 106AG  L 1420.72   1110-               0.28 PS   8                          F   
 106AGX L XREF=B                                                                 
@@ -7036,7 +7040,7 @@
 106AG cL T         from DSA in {+96}Zr({+14}N,4n|g) (1990VoZW)                  
 106AG  G 376.81    5 100.0   4 D+Q       0.04    2                              
 106AG  G 546.6     2 7.3     16                                                 
-106AG CG E$NO FINAL LEVEL WITHIN 0.70 keV                                       
+106AG cG E$no final level within 0.70 keV                                       
 106AG  L 1434      2                                                            
 106AGX L XREF=E                                                                 
 106AG cL J         from L({+3}He,d)=2                                           
@@ -7096,7 +7100,7 @@
 106AG cL J         from |DJ(1204|g,Q)=-2 to 7-  829 keV  level in               
 106AG2cL {+96}Zr({+14}N,4n)                                                     
 106AG  G 989.4     4 100     3 D+Q                                              
-106AG CG M$ NO MR given                                                         
+106AG cG M$no |d given                                                          
 106AG  G 1204.2    2 31      3 Q                                                
 106AG  L 2114.51   2110+                                                    E   
 106AGX L XREF=A                                                                 
@@ -7127,18 +7131,18 @@
 106AG  L 2441.60   1311-                                                    g   
 106AGX L XREF=A                                                                 
 106AG  G 169.4     2 53      8                                                  
-106AG CG E,RI$ FROM 1981Po06 in 96ZR(14N,4N)                                    
+106AG cG E,RI$from 1981Po06 in {+96}Zr({+14}N,4n)                               
 106AG  G 408.2     2 57      6 D+Q       0.07    5                              
-106AG CG E,RI,M,MR$FROM 1981Po06 in 96ZR(14N,4N)                                
-106AG CG M,MR$ IF JPI of 2441.60 (11-), 2033.48 (9-) levels are correct D+Q is  
-106AG2CG impossible                                                             
+106AG cG E,RI,M,MR$from 1981Po06 in {+96}Zr({+14}N,4n)                          
+106AG cG M,MR$if J|p of 2441.60 (11-), 2033.48 (9-) levels are correct D+Q is   
+106AG2cG impossible                                                             
 106AG  G 678                                                                    
 106AG  G 1020.8    1 100     4 D+Q                                              
-106AG CG E,RI,M$ FROM 96ZR(14N,4N) (1981Po06)                                   
+106AG cG E,RI,M$from {+96}Zr({+14}N,4n) (1981Po06)                              
 106AG cG           |d|>-0.44, |<-0.06 or |>0.4, |<0.9                           
 106AG  G 1054.0    5 13      6                                                  
 106AG  G 1398                                                                   
-106AG CG E$FROM 100MO(10B,4NG) (2005Jo20)                                       
+106AG cG E$from {+100}Mo({+10}B,4n|g) (2005Jo20)                                
 106AG  L 2512.69   22 13-                                                   C   
 106AGX L XREF=A                                                                 
 106AG  G 265.3     1  100    12                                                 
@@ -7150,7 +7154,7 @@
 106AG  L 2660.79   1612-                                                    G   
 106AGX L XREF=A                                                                 
 106AG  G 219.2     1 100       D+Q       0.06    2                              
-106AG CG E,RI,M$ FROM 96ZR(14N,4N) (1981Po06)                                   
+106AG cG E,RI,M$from {+96}Zr({+14}N,4n) (1981Po06)                              
 106AG  G 389                                                                    
 106AG  G 407                                                                    
 106AG  G 897                                                                    
@@ -7348,12 +7352,12 @@
 106AG  G 95.28     5  482    13                                                 
 106AG  G 205.90    8  8.7    7                                                  
 106AG  L 234.65    4 (1+,2+,3+)                                                 
-106AG CL J$JPI=2+ suggested by 1980Sa05                                         
+106AG cL J$J|p=2+ suggested by 1980Sa05                                         
 106AG  G 28.70                                                                 S
 106AG cG E         from level energy differences                                
 106AG  G 234.66    5  57.3   17                                                 
 106AG  L 277.03    4 1-,2-                                                      
-106AG CL J$JPI=2- suggested by 1980Sa05                                         
+106AG cL J$J|p=2- suggested by 1980Sa05                                         
 106AG  G 166.34    10 3.3    5                                                  
 106AG  G 277.04    5  357    9                                                  
 106AG  L 328.83    7 5+                                                         
@@ -7361,7 +7365,7 @@
 106AG  L 332.62    8 7+                                                         
 106AG  G 242.94    9  330    AP                                                 
 106AG  L 364.43    4 (2,3)-                                                     
-106AG CL J$JPI=3- suggested by 1980Sa05                                         
+106AG cL J$J|p=3- suggested by 1980Sa05                                         
 106AG  G 87.40     6  51.0   14                                                 
 106AG  G 158.50    6  19.0   7                                                  
 106AG  G 253.77    5  246    7                                                  
@@ -7372,7 +7376,7 @@
 106AG  G 139.62    8  4.1    5                                                  
 106AG  G 305.94    7  19.6   9                                                  
 106AG  L 425.04    5 (2,3)-                                                     
-106AG CL J$JPI=2- suggested by 1980Sa05                                         
+106AG cL J$J|p=2- suggested by 1980Sa05                                         
 106AG  G 147.99    7  11.7   5                                                  
 106AG  G 219.10    6  14.4   8                                                  
 106AG  G 314.38    6  52.4   21                                                 
@@ -7380,19 +7384,19 @@
 106AG  G 243.18    7  186    AP                                                 
 106AG cG RI        I|g(242.76+242.94+243.18|g)=516 {I13}                        
 106AG  L 468.84    23                                                           
-106AG CL J$JPI=(2+,3+,4+) suggested by 1980Sa05                                 
+106AG cL J$J|p=(2+,3+,4+) suggested by 1980Sa05                                 
 106AG  G 262.89    22 4.2    6                                                  
 106AG  L 503.02    5 (3+,4,5+)                                                  
-106AG CL J$JPI=4+ suggested by 1980Sa05                                         
+106AG cL J$J|p=4+ suggested by 1980Sa05                                         
 106AG  G 113.88    5  47.3   13                                                 
 106AG  G 174.15    8  9.0    6                                                  
 106AG  G 297.06    6  35     2                                                  
 106AG  L 518.23    6 (3,4)-                                                     
-106AG CL J$JPI=4- suggested by 1980Sa05                                         
+106AG cL J$J|p=4- suggested by 1980Sa05                                         
 106AG  G 153.80    5  115    3                                                  
 106AG  G 312.29    7  20.9   10                                                 
 106AG  L 542.38    8 6                                                          
-106AG CL J$JPI=6+ suggested by 1980Sa05                                         
+106AG cL J$J|p=6+ suggested by 1980Sa05                                         
 106AG  G 209.84    6  21.7   10                                                 
 106AG  G 213.47    6  16.3   8                                                  
 106AG  L 556.80    7 (5+)                                                       
@@ -7400,18 +7404,18 @@
 106AG  G 107.71    5  39.3   12                                                 
 106AG  G 467.12    8  12.0   8                                                  
 106AG  L 565.14    5 (2,3)-                                                     
-106AG CL J$JPI=3- suggested by 1980Sa05                                         
+106AG cL J$J|p=3- suggested by 1980Sa05                                         
 106AG  G 140.07    8  3.5    5                                                  
 106AG  G 200.72    6  14.7   8                                                  
 106AG  G 288.18    15 7.1    7                                                  
 106AG  G 359.12    8  25.0   21                                                 
 106AG  G 454.52    7  22.3   11                                                 
 106AG  L 596.06    7  1-,2-,3-                                                  
-106AG CL J$JPI=3+ suggested by 1980Sa05                                         
+106AG cL J$J|p=3+ suggested by 1980Sa05                                         
 106AG  G 361.40    7  42.2   17                                                 
 106AG  G 485.43    10 15.6   9                                                  
 106AG  L 597.25    6 1-,2-,3-                                                   
-106AG CL J$JPI=3- suggested by 1980Sa05                                         
+106AG cL J$J|p=3- suggested by 1980Sa05                                         
 106AG  G 320.20    6  39.2   15                                                 
 106AG  G 391.20    14 5.9    7                                                  
 106AG  G 486.73    11 23.8   11                                                 
@@ -7426,7 +7430,7 @@
 106AG  G 173.26    8  6.8    6                                                  
 106AG  G 227.19    5  48.8   16                                                 
 106AG  L 698.20    6 1-,2-,3-                                                   
-106AG CL J$(3)- suggested by 1980Sa05                                           
+106AG cL J$(3)- suggested by 1980Sa05                                           
 106AG  G 333.79    7  27.8   13                                                 
 106AG  G 421.14    7  16.1   9                                                  
 106AG  L 712.14    8  4+                                                        
@@ -7448,11 +7452,11 @@
 106AG  G 675.51    9  235    AP                                                 
 106AG cG RI        from coincidence data                                        
 106AG  L 769.67    161-,2-,3-                                                   
-106AG CL J$(1,2)- suggested by 1980Sa05                                         
+106AG cL J$(1,2)- suggested by 1980Sa05                                         
 106AG  G 492.47    15 17     AP                                             @   
 106AG cG RI        I|g(492.3+492.6|g)=26.6 {I12}                                
 106AG  L 769.93    10 6                                                         
-106AG CL J$JPI=(6+) suggested by 1980Sa05                                       
+106AG cL J$J|p=(6+) suggested by 1980Sa05                                       
 106AG  G 441.09    7  21.0   10                                                 
 106AG  L 773.49    12 (5+)                                                      
 106AG  G 324.39    10 12.0   8                                                  
@@ -7475,7 +7479,7 @@
 106AG  L 835.39    12 (2+,3+)                                                   
 106AG  G 600.73    11 6.5    8                                                  
 106AG  L 861.57    9 (3-,4,5-)                                                  
-106AG CL J$ (3,4)- suggested by 1980Sa05                                        
+106AG cL J$(3,4)- suggested by 1980Sa05                                         
 106AG  G 497.14    8  31     3                                                  
 106AG cG RI        doublet=52 {I2} minus I|g(496.8|g)=21 {I2}                   
 106AG  L 874.27    108-                                                         
@@ -7488,7 +7492,7 @@
 106AG  G 211.43    10 4.4    7                                                  
 106AG  G 438.55    7  16.8   9                                                  
 106AG  L 902.97    211-,2-,3-                                                   
-106AG CL J$ (1,2)- suggested by 1980Sa05 in {+103}Rh(|a,n|g)                    
+106AG cL J$(1,2)- suggested by 1980Sa05 in {+103}Rh(|a,n|g)                     
 106AG  G 625.94    20 6.6    8                                                  
 106AG  L 912.50    11 (5,7)-                                                    
 106AG  G 147.14    7  15.3   6                                                  
@@ -7508,7 +7512,7 @@
 106AG  L 944.82    14(2+,3+,4+)                                                 
 106AG  G 738.87    13 10.4   9                                                  
 106AG  L 961.86    128+                                                         
-106AG CL J$JPI=(7+) suggested by 1980Sa05                                       
+106AG cL J$J|p=(7+) suggested by 1980Sa05                                       
 106AG  G 629.24    8  20.5   11                                                 
 106AG  L 979.21    138+                                                         
 106AG  G 353.53    8  26.5   12                                                 
@@ -7555,7 +7559,7 @@
 106AG  L 1329.54   16(3-,4-)                                                    
 106AG  G 811.30    15 9.7    10                                                 
 106AG  L 1387.52   179+                                                         
-106AG CL J$ (8)+ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                      
+106AG cL J$(8)+ suggested by 1980Sa05 in {+103}Rh(|a,n|g)                       
 106AG  G 1054.89   15 14.2   11                                                 
 106AG  L 1413.37   12(5,6)-                                                     
 106AG  G 648.01    8  24.1   12                                                 
@@ -7695,7 +7699,7 @@
 106AG  H TYP=FUL$AUT=D. DE FRENNE AND A. NEGRET$CIT=NDS 109, 943 (2008)$        
 106AG2 H CUT=1-May-2007$                                                        
 106AG c  1977Mi16: E(p)=6 MeV, measured E|g, I|g up to 2 MeV, semi              
-106AG C  1979De44: E(p)=5-7 MeV, measured E|g, |g|g; SIGMA(E,EG,THETA)          
+106AG c  1979De44: E(p)=5-7 MeV, measured E|g, |g|g; |s(E,E|g,|q)               
 106AG2c  E(p)=6.5 MeV,                                                          
 106AG2c  measured neutron tof spectra and angular distributions; J|p deduced    
 106AG3c  from neutron and |g-ray enhancements compared with Hauser-Feshbach     
@@ -7740,22 +7744,22 @@
 106AG    (HI,XNG)                                                08NDS    200806
 106AG  H TYP=FUL$AUT=D. DE FRENNE AND A. NEGRET$CIT=NDS 109, 943 (2008)$        
 106AG2 H CUT=1-May-2007$                                                        
-106AG C  1981Po06: 96ZR(14N,4NG). E(14N): 49 MEV. Measured: IG(E(14N)),         
-106AG2c  I|g(|q), p|g,|g|g(|q). Deduced: {+106}Ag levels, J|p, |d.              
-106AG3c  Two-particle-with-rotor calculations. Calculated levels, mixing ratios,
-106AG3c  branching ratios, lifetimes                                            
+106AG c  1981Po06: {+96}Zr({+14}N,4n|g). E({+14}N): 49 MeV. Measured:           
+106AG2c  I|g(E({+14}N)), I|g(|q), p|g,|g|g(|q). Deduced: {+106}Ag levels, J|p,  
+106AG3c  |d. Two-particle-with-rotor calculations. Calculated levels, mixing    
+106AG3c  ratios, branching ratios, lifetimes                                    
 106AG c  1990VoZW: {+96}Zr({+14}N,4n|g). E({+14}N)=66.7 MeV. Measured: E|g, I|g,
 106AG2c  I(|g+ce)/2. Deduced: {+106}Ag levels, B(M1)                            
 106AG c  1994Je11: {+94}Zr({+17}O,p4n|g) E=80 MeV. Measured E|g, |g|g, I|g,     
 106AG2c  |g|g(|q)(DCO), p|g coin, |a|g coin, |g rays detected with Nordball     
 106AG3c  array composed of 15 Compton-suppressed Ge detectors. The charged      
 106AG4c  particles (protons, |a) were detected with Hysterix system.            
-106AG C  2005Jo20,2007Jo01: 100MO(10B,4NG). E=42 MeV. Measured E|g, I|g, |g|g   
-106AG2C  using Gammasphere detector array.                                      
+106AG c  2005Jo20,2007Jo01: {+100}Mo({+10}B,4n|g). E=42 MeV. Measured E|g, I|g, 
+106AG2c  |g|g using Gammasphere detector array.                                 
 106AG c  2006De15: {+80}Se({+30}Si,p3n|g): E=120 MeV. Measured E|g, I|g, |g|g,  
 106AG2c  lifetimes by DSA method using an array of 12 Compton suppressed Clover 
 106AG3c  HPGe detectors.                                                        
-106AG CG M,MR$FROM 1981Po06 in 96ZR(14N,4NG)                                    
+106AG cG M,MR$From 1981Po06 in {+96}Zr({+14}N,4n|g)                             
 106AG cG           DCO(1) from (1994Je11) corresponds to gate on |DJ=1, dipole  
 106AG2cG transition(s) and DCO(2) to gate on |DJ=2, quadrupole transition(s)    
 106AG3cG The data are for detector rings at 37|' (or 143|') and 79|' (or 101|') 
@@ -7775,22 +7779,22 @@
 106AG CL BAND(F)$ |pg{+-1}{-9/2}~#|nh{-11/2}, |a=0    (2005Jo20)                
 106AG CL BAND(f)$ |pg{+-1}{-9/2}~#|nh{-11/2}, |a=1    (2005Jo20)                
 106AG CL BAND(G)$ Possible chiral partner of |pg{+-1}{-9/2}~#|nh{-11/2}, |a=0   
-106AG2CL (2005Jo20)                                                             
+106AG2cL (2005Jo20)                                                             
 106AG CL BAND(g)$ Possible chiral partner of |pg{+-1}{-9/2}~#|nh{-11/2}, |a=1   
-106AG2CL (2005Jo20)                                                             
+106AG2cL (2005Jo20)                                                             
 106AG CL BAND(C)$ |DJ=1 band based on 10-  (1994Je11)                           
 106AG CL BAND(E)$ Band based on 6+.                                             
 106AG2cL Configuration=|pg{-9/2}~#|ng{-7/2}                                     
 106AG PN                                                                     5  
 106AG  L 0.0          1+               23.96 M   4                              
-106AG2 L %EC+%B+=99.5 5$%B- LT 1 (1953BE42)                                     
+106AG2 L %EC+%B+=99.5 5$%B- LT 1 (1953Be42)                                     
 106AG cL J,T$from adopted levels                                                
 106AG  L 89.66     7  6+               8.46 D    2                          EM1 
 106AG2 L %EC+%B+=100                                                            
 106AG cL E,T$ from adopted levels for {+106}Ag                                  
 106AG DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
 106AG  L 328.96    9 5+                                                        ?
-106AG CL E$Observed only by 1981Po06 in 96ZR(14N,4NG)                           
+106AG cL E$Observed only by 1981Po06 in {+96}Zr({+14}N,4n|g)                    
 106AG  G 239.29    5           [M1+E2]   0.02    2                              
 106AG cG M,MR$ From 1981Po06                                                    
 106AG  L 332.20     9 7+                                                    E   
@@ -7798,7 +7802,7 @@
 106AG cG RI$ 86 {I4} units contributed by positive parity states, and           
 106AG2cG 43 {I5} units by negative parity states.                               
 106AG  L 542.64    9 6(+)                                                       
-106AG CL E$Observed only by 1981Po06 in 96ZR(14N,4NG)                           
+106AG cL E$Observed only by 1981Po06 in {+96}Zr({+14}N,4n|g)                    
 106AG  G 209.96    8           D(+Q)     0.2     2                              
 106AG  G 213.68    8           D(+Q)     -0.03   9                              
 106AG  G 453.0     1                                                            
@@ -7821,7 +7825,7 @@
 106AG  G 436.2     1           [E1]                                             
 106AG cG E$Observed only by 1981Po06 in {+96}Zr({+14}N,4n|g)                    
 106AG  G 675.52    5           E1(+M2)   0.00    13                             
-106AG CG E$From 1981Po06 in 96ZR(14N,4NG)                                       
+106AG cG E$From 1981Po06 in {+96}Zr({+14}N,4n|g)                                
 106AG  L 768.86    226                                                         ?
 106AG  G 439.9     2           D+Q       0.15    5                              
 106AG  L 828.78    15 7-                                                    f   
@@ -7905,7 +7909,7 @@
 106AG  G 536.9     2           D+Q       -0.3    2                              
 106AG  L 2033.3    12 9-                                                        
 106AG  G 989                   D+Q                                              
-106AG CG M$No MR given by 1981Po06                                              
+106AG cG M$No |d given by 1981Po06                                              
 106AG  G 1159                                                                   
 106AG  G 1204.2    4           Q                                               ?
 106AG cG E$Observed only by 1981Po06 in {+96}Zr({+14}N,4n|g)                    
@@ -7928,9 +7932,9 @@
 106AG  G 409.0     2  6.0    25                                                 
 106AG2 G DCO(1)=0.90 14                                                         
 106AG  G 508                                                                    
-106AG CG E$ Observed only by 2005JO20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG  G 851                                                                    
-106AG CG E$ Observed only by 2005JO20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG  G 1228.6    4  4.1    16D+Q       -0.5    3                              
 106AG  G 1398.4    4  7.8    25Q                                                
 106AG2 G DCO(1)=0.63 20                                                         
@@ -7941,11 +7945,11 @@
 106AG  G 169.4     3  32     10                                                 
 106AG  G 409                   D+Q       0.07    5                              
 106AG  G 678                                                                    
-106AG CG E$ Observed only by 2005JO20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG  G 1021.6    3  13.0   23D+Q                                              
 106AG cG           |d|>-0.44, |<-0.06 or |>0.4, |<0.9                           
 106AG  G 1398                                                                   
-106AG CG E$ Observed only by 2005JO20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG2 G DCO(1)=0.46 8                                                          
 106AG  L 2511.7     3 13-                                                   C   
 106AG  G 265.3     1  25     3                                                  
@@ -7955,19 +7959,19 @@
 106AG  L 2571.6     4 11+                                                   E   
 106AG  G 1184.6    3  10     5 Q                                                
 106AG  L 2599.8    4                                                           ?
-106AG CL E$Observed only by 1981Po06 in 96ZR(14N,4NG)                           
+106AG cL E$Observed only by 1981Po06 in {+96}Zr({+14}N,4n|g)                    
 106AG  G 1212.2    3 4.5     3 (Q)                                              
 106AG  L 2660.0     4 12-                                                   G   
 106AG  G 218.8     1  43     5 D+Q       0.06    2                              
 106AG2 G DCO(1)=0.99 6                                                          
 106AG  G 389                                                                    
-106AG CG E$ Observed only by 2005Jo20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG  G 407                                                                    
-106AG CG E$ Observed only by 2005Jo20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG  G 897                                                                    
-106AG CG E$ Observed only by 2005Jo20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG  G 1240                                                                   
-106AG CG E$ Observed only by 2005Jo20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG  L 2743.3     3 13-                0.27 PS 8                          f   
 106AG  G 490.6     4  25     5 D                                                
 106AG2 G DCO(1)=1.05 6                                                          
@@ -8001,7 +8005,7 @@
 106AG  G 596.2     3  5.9    20                                                 
 106AG2 G DCO(1)=1.0 3                                                           
 106AG  G 1003                                                                   
-106AG CG E$ Observed only by 2005JO20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG  L 3259.4     3 12+                                                   E   
 106AG  G 687.9     3  6.3    14                                                 
 106AG2 G DCO(1)=1.1 3                                                           
@@ -8023,7 +8027,7 @@
 106AG2 G DCO(1)=0.71 10                                                         
 106AG  L 3685.6     4 15-                                                   g   
 106AG  G 389                                                                    
-106AG CG E$ Observed only by 2005JO20                                           
+106AG cG E$Observed only by 2005Jo20                                            
 106AG  G 429.6     1  17     3 D+Q       0.08    6                              
 106AG2 G DCO(1)=1.01 14                                                         
 106AG  G 755.6     3  7.1    15                                                 
@@ -8037,11 +8041,11 @@
 106AG2 G DCO(2)=0.74 14                                                         
 106AG  L 3785.0     6 (12)                                                      
 106AG cL J$ 12+ in table with gamma rays assigned to decay of positive parity   
-106AG2CL states in 106AG (1994Je11), (12) in authors' level scheme              
+106AG2cL states in {+106}Ag (1994Je11), (12) in authors' level scheme           
 106AG  G 1213.4    4  7.1    26                                                 
 106AG  L 3871.0     5 (14)                                                      
 106AG cL J$ 14+ in table with gamma rays assigned to decay of positive parity   
-106AG2CL states in 106AG (1994Je11), (14) in authors' level scheme              
+106AG2cL states in {+106}Ag (1994Je11), (14) in authors' level scheme           
 106AG  G 611.5     4  7.6    18                                                 
 106AG  L 3889.4     4 15-                                                   f   
 106AG  G 593.9     2  11     3                                                  
@@ -8097,7 +8101,7 @@
 106AG  G 1192                                                                   
 106AG  L 5424       3 18+               0.215 PS +14-21                     X   
 106AG cL T$effective half-life                                                  
-106AG CL T$effective half-life. Effective half-life is obtained assuming        
+106AG cL T$effective half-life. Effective half-life is obtained assuming        
 106AG2cL 100% side-feeding into the top of the band via a cascade of 5          
 106AG3cL transitions with the same moment of inertia as the in-band transitions 
 106AG4cL The highest |g ray for which a line shape was observed was then fitted 
@@ -11413,23 +11417,25 @@
 106SN  G 1572                                                                   
                                                                                 
 106SB    ADOPTED LEVELS, GAMMAS                                  08NDS    200806
+106SB  H TYP=MOD$AUT=A. NEGRET$CIT=ENSDF$DAT=29-MAR-2017$                       
+106SB2 H COM=Corrected the spin assignment of the 4339.1 level$                 
 106SB  H TYP=FUL$AUT=D. DE FRENNE AND A. NEGRET$CIT=NDS 109, 943 (2008)$        
 106SB2 H CUT=1-May-2007$                                                        
 106SB  Q -8.25E3   1010529   23424     9 1796    9     2012WA38                 
-106SB CQ Note: Current evaluation has used the following Q record               
+106SB cQ $Note: Current evaluation has used the following Q record              
 106SB  Q -8120     SY10580   SY360     SY  1950  SY    2003AU03                 
 106SB c  Identified in {+58}Ni({+58}Ni,X) E=290 MeV, on-line mass separation,   
 106SBxc  semi (1981Pl05,1982Pl05,2005So06)                                      
-106SB C  All (HI,XNG) results here are from 2005So06.                           
+106SB c  All (HI,xn|g) results here are from 2005So06.                          
 106SB c  Others: 1977Ki11, 1978Ro19                                             
 106SB cG E(X)$Ordering of the 478-537 cascade is uncertain                      
 106SB cG E(Y)$Ordering of the 419-526 cascade is uncertain                      
-106SB CG E,RI$ From 2005So06 in 54FE(58NI,APNG)                                 
+106SB cG E,RI$From 2005So06 in {+54}Fe({+58}Ni,|apn|g)                          
 106SB cG M$ From gamma linear pol and and conversion electron measurements.     
 106SB cL E$From least-squares fit to E|g's by evaluators                        
 106SB cL E(Z)$The orderings of the 478-537 and 419-526 cascades is uncertain,   
 106SB2cL thereby making the energies of the 5349 and 6305 levels uncertain.     
-106SB CL J$ From gamma linear pol, conversion electron measurements and         
+106SB cL J$From gamma linear pol, conversion electron measurements and          
 106SB2cL proposed band structure                                                
 106SB CL BAND(A)$ (4+) BAND, |a=0                                               
 106SB CL BAND(a)$ (4+) BAND, |a=1                                               
@@ -11517,9 +11523,11 @@
 106SB  L 3991.3     6 (13-)                                                     
 106SBX L XREF=C                                                                 
 106SB  G 508.4     3  100      E1                                               
-106SB  L 4339.1     6 (13,14+)                                              A   
+106SB  L 4339.1     6 (14+)                                                 A   
 106SBX L XREF=C                                                                 
 106SB cL $Possible configuration=|pg{-7/2}|nd{+3}{-5/2}|ng{+2}{-7/2}            
+106SB cL J$2005So06 assigns (13,14+). The evaluators chose (14+) based on the   
+106SB2cL band assignment.                                                       
 106SB  G 574.8     4  100    11                                                 
 106SB  G 856.0     3  93     18                                                 
 106SB  L 4368.9     6 (14-)                                                 B   
@@ -11605,7 +11613,7 @@
 106SB cL E$From least-squares fit to E|g's (by evaluators)                      
 106SB cL E(Z)$The orderings of the 478-537 and 419-526 cascades is uncertain,   
 106SB2cL thereby making the energies of the 5349 and 6305 levels uncertain.     
-106SB CL $Other: 1994Se01                                                       
+106SB cL $Other: 1994Se01                                                       
 106SB cL J$From 2005So06                                                        
 106SB CL BAND(A)$ (4+) BAND, |a=0                                               
 106SB CL BAND(a)$ (4+) BAND, |a=1                                               
