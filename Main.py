@@ -118,7 +118,7 @@ def startup(option, gif=""):
         #try:
             #os.system("mv Output/gnuPlot/*.dat Output/gnuPlot/OutputData")
         #except:
-            raise
+           # raise
 ## CENDETcmd calls Main.function(...) on its own
 ## This will stop function(gui_option) from runnning when CENDETcmd imports this file
 #gui_option = sys.argv[-1]
