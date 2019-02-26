@@ -537,7 +537,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
 
 #Will
-            pltFile.write(str.encode("set output "+"'"+gif_filename+"'"+"\n"))
+           # pltFile.write(str.encode("set output "+"'"+gif_filename+"'"+"\n"))
 
             pltFile.write(str.encode("replot\n"))
             pltFile.write(str.encode("set term x11"))
