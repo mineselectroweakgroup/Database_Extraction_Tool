@@ -24,7 +24,7 @@ def datExp(option,UI=False,Filter=False,gif=""):
     if option == "one":
 
 #gui_yana and common ancestor      
-	Z, isoLo, isoHi, E, exitcount, mass, J = Nuc_Qt.getguioutputs(gif)
+        Z, isoLo, isoHi, E, exitcount, mass, J = Nuc_Qt.getguioutputs(gif)
         elementName= str(Z)
         lowerBound = int(isoLo)
         higherBound = int(isoHi)
@@ -87,18 +87,17 @@ def datExp(option,UI=False,Filter=False,gif=""):
         wantedSpins=str(J).replace(" ","")
 
 #Common ancestor for and if loop
-	''''
-        perTable = open("ElementList.txt","r")
-        periodicTable = perTable.readline()
-        periodicTable = periodicTable.split(',')
-        for item in periodicTable:
-            if item == elementName:
-                index = periodicTable.index(item)
-                if betaVariable == "B+":
-                    elementName = periodicTable[index-1] + "," + elementName
-                if betaVariable == "B-":
-                    elementName = elementName + "," + periodicTable[index+1]
-        '''
+	
+       # perTable = open("ElementList.txt","r")
+       # periodicTable = perTable.readline()
+       # periodicTable = periodicTable.split(',')
+       # for item in periodicTable:
+           # if item == elementName:
+               # index = periodicTable.index(item)
+               # if betaVariable == "B+":
+                   # elementName = periodicTable[index-1] + "," + elementName
+               # if betaVariable == "B-":
+                   # elementName = elementName + "," + periodicTable[index+1]
 
 #Will uses try statement
 	#try:
@@ -147,7 +146,7 @@ def datExp(option,UI=False,Filter=False,gif=""):
 #Will uses the following for massData
 	#massData = True
 
-	massData = "YES"
+        massData = "YES"
         wantedSpins=str(J).replace(" ","")
         elementName = elementName.replace(" ","")
         elementName = elementName.split(',')
@@ -538,7 +537,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             pltFile.write(str.encode("set output "+"'"+fileName+"'"+"\n"))
 
 #Will
-	    pltFile.write(str.encode("set output "+"'"+gif_filename+"'"+"\n"))
+            pltFile.write(str.encode("set output "+"'"+gif_filename+"'"+"\n"))
 
             pltFile.write(str.encode("replot\n"))
             pltFile.write(str.encode("set term x11"))
