@@ -1,0 +1,28 @@
+Python codes and basic functionality:
+	betaDictionary.py -> create a list of elements with beta decay info
+	Beta_GUI.py -> creates a gui that sorts user input (not currently used?)
+	betaMinusperiodicTableDictionary.py -> create a beta-minus file that includes stability values and appends(?) to IsotopeList.txt
+	betaPlusperiodicTableDictionary.py -> create a beta-plus file that includes stability values and appends(?) to IsotopeList.txt
+	data_array.py -> reads in mass.AME12.txt, parses through the file, and creates an array of data that includes protons, neutrons, mass, and other common and useful atomic information
+	DataClass.py -> TBD
+	Decay_Chart_GUI.py -> creates a gui that is used by StartupGUI.py
+	ECperiodicTableDictionary.py -> create an electron capture decay file that includes stability values and appends(?) to IsotopeList.txt
+	functions.py -> creates functions used in DataClass.py (To Be Updated)
+	GUI.py -> creates a gui that includes the nuclear chart
+	ionization.py -> update the uncertainty file with ionization energies based on temperature received from ionizationEnergy.txt
+	IsotopeDataExporting.py -> TBD
+	Main.py -> takes user input and makes it into a readable format for the rest of the code, creates the file for the plot, and resets the code once finished
+	mass_data.py -> convert mass from micro AMU to keV
+	Mass_GUI.py -> create a gui for handling mass
+	Parabola_GUI.py -> creates a gui for working with ElementList.txt (not currently used?)
+	RecordClasses.py -> stores data in a readable string to be called by other functions
+	renormalize.py -> TBD (uncommented file)
+	searching_function.py -> search through the array of data for the entry string that corresponds to the user input, and removes all other entries from the data array
+	StartupGUI.py -> Create a "master gui" that calls all all other *GUI.py functions within one gui  
+	uncertainty.py -> contains uncertainty equations in the form of functions to be called by other codes
+	UpdateTool.py -> searches National Nuclear Data Center website for any updated info on nuclear data, then sends the updated files into readable .txt files
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Notes on *_GUI.py files:
+	It seems many of these files create about the same graphic, potentially combine them all into one condensed GUI?
