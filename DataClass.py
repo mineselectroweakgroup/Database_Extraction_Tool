@@ -52,7 +52,7 @@ class data:##This is the main data class.
 
 
         ##open the appropriate ensdf file
-        self.f = open("Data/"+str(ENSDF),'rU')
+        self.f = open("ensdf_Data_Files/"+str(ENSDF),'rU')
 
 
         linecount = 0 ## printing linecount can help locate problem-causing lines in the ensdf file
