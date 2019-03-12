@@ -1,0 +1,11 @@
+Merge: [Will_Gamma -> master]
+	Discrepencies -> [DataClass.py, IsotopeDataExporting.py]
+		DataClass.py:
+			WG,Lines 121-138: Get Gamma Records
+			WG,Lines 302-320: def appendGamma
+		IsotopeDataExporting.py:
+			WG,Lines 106-118: Append gamma ray to datafile
+			WG,Lines 284-289: "Commented out lines"
+			WG,Line  336:     isoDic = {}
+			WG,Lines 341-343: Assign isoDic
+			WG,Lines 356-372: Plot gamma file

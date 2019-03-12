@@ -1,0 +1,4 @@
+Errors:
+	StartGui.py -> _tkinter.TclError: no display name and no $DISPLAY environment variable
+		Problem: computer has no way/nowhere to display a GUI
+		Solution: log into su/root access, type the command "vim /etc/ssh/ssh_config", then uncomment "Host *" as well as "ForwardX11 no". Update "ForwardX11 no" to "ForwardX11 yes". Then add the line "ForwardX11Trusted yes" underneath "ForwardX11 yes".
