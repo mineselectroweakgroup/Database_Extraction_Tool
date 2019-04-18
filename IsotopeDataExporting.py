@@ -265,7 +265,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                 removecount[element] = removecount[element] + 1
             else:
                 break
-        #This loop removes all datafiles above the last non-empty one
+       #This loop removes all datafiles above the last non-empty one
         removehighcount[element] = 0
         for i in range(higherBound,lowerBound-1,-fileParsingFactor):
             filenameopen = (str(i)+str(element)+wantedSpins+"_Fil.dat").replace('/','_')
@@ -275,8 +275,8 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                     first_line = first_line.split(';')
                     nodatatest = str(first_line[2][-2:])
                 if (nodatatest == "--" or nodatatest == "-*"):
-                    os.remove("Output/"+"gnuPlot/"+filenameopen)
-                    removehighcount[element] = removehighcount[element] + 1
+                   os.remove("Output/"+"gnuPlot/"+filenameopen)
+                   removehighcount[element] = removehighcount[element] + 1
                 else:
                     break
 
@@ -302,6 +302,9 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             #print(option) #FIXME option is reassigning somehow
 
             fileName= "Output/gnuPlot/" + fileName.replace('/','_')
+            fileTestBool = os.path.getsize(fileName) > 0
+            if (fileTestBool == False):
+                exit()
             pltFile = open(fileName,'wb')
             
 
