@@ -7,14 +7,12 @@ import time
 import Parabola_Qt, Beta_Qt, Nuc_Qt
 
 
-
+create_plot = True
 #This function is used to bulk export a range of isotopes in a given A range.
 #common ancestor of beta (Will_Gammas,Will_noGUI and master)
 #def datExp(option,UI=False,Filter=False):
-
 #beta (Will_Gammas,Will_noGUI and master)
 #def datExp(option,user_ins, UI=False):
-
 #gui_yana
 def datExp(option,UI=False,Filter=False,gif=""):
 #This uses the option from the first GUI to get inputs from the correct GUI. Some of the definitions here are
@@ -39,7 +37,20 @@ def datExp(option,UI=False,Filter=False,gif=""):
         temperature = 0
         betaVariable = 'NULL' ## Required parameter of DataClass
 
+        element_list = open('ElementList.txt','r')
+        element_array = element_list.read().split(',')
+        for i in elementName:
+            if i in element_array:
+                
+                #print(element_array)
+                print("Valid Element")
 
+            else:
+                print("Invalid Element")
+
+                global create_plot
+                create_plot = False
+                
 #Will uses a try  statement
 	#try:
             #from GUI import guioutputs
@@ -216,6 +227,33 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         #makePNG = True
         #makeGIF = True
 
+    #with open('ElementList.txt','r') as elist:
+        #elist = elist.split(',')
+        #print(elementName)
+        #print(x)
+
+        #if elementName in x:
+            #print("yes")
+
+        #else:
+            #exit()
+
+    #element_list = open('ElementList.txt','r')
+    #element_array = element_list.read().split(',')
+
+    #for i in elementName:
+     #   if i in element_array:
+      #      print("yes")
+       # else:
+        #    print("no")
+         #   Errorgui.App()
+            
+
+    #if elementName in element_array:
+        #print("yes")
+    #else:
+        #exit()
+
     fileParsingFactorStr="_every_"+str(fileParsingFactor)
 
 #Will prints the parsing factor for some reason
@@ -244,6 +282,9 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
 
 #These loops of (for element in elementName) go through the entire process for each element input. Multiple loops are used
 #to ensure data is recorded properly for all elements
+
+
+    
     removecount = {}
     removehighcount = {}
     create_file = False
@@ -290,6 +331,12 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
         if os.path.isfile("Output/"+"gnuPlot/"+filenameopen):
             if option == "one":
                 fileName = str(elementnamestring)+"_"+str(lowerBound)+"to"+str(higherBound)+"_"+wantedSpins+"_"+str(energyLim)+".plt"
+                #filetestBool = os.path.getsize(fileName)
+                #if filetestBool == 0:
+                    #create_file = False
+                    #exit()
+                #else:
+                    #create_file = True
                 create_file = True
             elif option == "two":
                 fileName = "Beta_"+str(lowerBound)+str(elementName[0])+"_"+str(temperature)[:-2]+"K.plt"
@@ -302,9 +349,11 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             #print(option) #FIXME option is reassigning somehow
 
             fileName= "Output/gnuPlot/" + fileName.replace('/','_')
-            fileTestBool = os.path.getsize(fileName) > 0
-            if (fileTestBool == False):
-                exit()
+            fileTestBool = os.path.getsize(fileName)
+            #if fileTestBool == 0:
+                #exit()
+            #if (fileTestBool == False):
+                #exit()
             pltFile = open(fileName,'wb')
             
 
@@ -330,7 +379,7 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
                     
 #yana and common ancestor have this commented out
 		    #pltFile.write(str.encode("set title \"Beta Decay Scheme for ^{"+str(lowerBound)+"}"+str(elementName[0])+" and ^{"+str(higherBound)+"}"+str(elementName[1])+" at "+str(temperature)+" K\\nup to "+str(energyLim)+" keV Excitation Energy\"\n"))
-
+ 
                 elif option == "three":
                     pltFile.write(str.encode("set title \"Mass Parabola for A = "+str(lowerBound)+" at "+str(temperature)+" K\"\n"))
                 else:
