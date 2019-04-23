@@ -1,0 +1,36 @@
+
+*** These modified files were found in JOE when it aborted on Mon Apr 22 18:31:11 2019
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+root
+
+*** File '/home/boucher/Database_Extraction_Tool/.git/COMMIT_EDITMSG'
+new error gui's
+
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch beta_GUI
+# Changes to be committed:
+#	modified:   ErrorGUI.py
+#	new file:   Errorgui.py
+#	modified:   IsotopeDataExporting.py
+#	modified:   Main.py
+#	new file:   errorGUI.py
+#
+
+*** File '(Unnamed)'
+.bashrc
+/home/boucher/Database_Extraction_Tool/.git/COMMIT_EDITMSG
+/home/boucher/Database_Extraction_Tool/.git/COMMIT_EDITMSG
+/home/boucher/Database_Extraction_Tool/.git/COMMIT_EDITMSG
+/home/boucher/Database_Extraction_Tool/.git/COMMIT_EDITMSG
+/home/boucher/Database_Extraction_Tool/.git/MERGE_MSG
+/home/boucher/Database_Extraction_Tool/.git/COMMIT_EDITMSG
+/home/boucher/Database_Extraction_Tool/.git/COMMIT_EDITMSG
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc

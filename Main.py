@@ -56,7 +56,7 @@ def startup(option, gif=""):
         ErrorGUI.App()
         if (ErrorGUI.buttonYes):
             os.system("python StartupQt.py")
-        
+            exit() 
         else:
             exit()
 
