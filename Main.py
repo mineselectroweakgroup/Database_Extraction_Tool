@@ -4,6 +4,8 @@ import glob
 import time
 import sys
 import renormalize as renorm
+import Errorgui
+import ErrorGUI
 
 #common ancestor between beta (Will_Gammas, Will_noGUI and master)
 #def function(option):
@@ -30,10 +32,11 @@ def startup(option, gif=""):
 #Prints the user input allowing user to make sure they inputted allowing user
 #to check what they input against the plot they are viewing
 #The sleep is a pause so the timestamps used work correctly
+    if (ided.create_plot):
+    
+        renorm.renormalize(userInput[0],userInput[1],userInput[2],userInput[3])
 
-    renorm.renormalize(userInput[0],userInput[1],userInput[2],userInput[3])
-
-    time.sleep(0.01)
+        time.sleep(0.01)
 
 #Will uses another try loop
 #Makes plot
@@ -46,7 +49,16 @@ def startup(option, gif=""):
 
 #yana and common ancestor
 #Makes plot (.012 s)
-    ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],True)
+        ided.pltFileExp(option,userInput[6],userInput[4],userInput[0],userInput[1],userInput[2],userInput[7],userInput[3],True)
+
+    else:
+        print(ided.create_plot)
+        ErrorGUI.App()
+        if (ErrorGUI.buttonYes):
+            os.system("python StartupQt.py")
+        
+        else:
+            exit()
 
 
 #This code creates the .git file which is the actual plot
