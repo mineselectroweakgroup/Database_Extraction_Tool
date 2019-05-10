@@ -349,11 +349,6 @@ def pltFileExp(option,energyLim,temperature,elementName,lowerBound,higherBound,d
             #print(option) #FIXME option is reassigning somehow
 
             fileName= "Output/gnuPlot/" + fileName.replace('/','_')
-            fileTestBool = os.path.getsize(fileName)
-            #if fileTestBool == 0:
-                #exit()
-            #if (fileTestBool == False):
-                #exit()
             pltFile = open(fileName,'wb')
             
 
