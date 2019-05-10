@@ -4,7 +4,7 @@ import glob
 import time
 import sys
 import renormalize as renorm
-import Errorgui
+#import Errorgui
 import ErrorGUI
 
 #common ancestor between beta (Will_Gammas, Will_noGUI and master)
